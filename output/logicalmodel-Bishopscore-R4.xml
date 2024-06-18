@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Bishopscore-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-bishopscore-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.bishop_score.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Bishopscore"/>
+   <title value="Bishop score"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Assessment of readiness of the cervix in anticipation of induction of labour."/>
+   <purpose value="To record the Bishop Score findings on vaginal examination of a pregnant woman."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Bishop_score">
+         <path value="Bishop_score"/>
+         <short value="Bishop score"/>
+         <definition value="Assessment of readiness of the cervix in anticipation of induction of labour."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Bishop_score"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Bishop_score.ItemTree">
+         <path value="Bishop_score.ItemTree"/>
+         <short value="ItemTree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Bishop_score.ItemTree"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Bishop_score.ItemTree.Extension">
+         <path value="Bishop_score.ItemTree.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Bishop_score.ItemTree.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Bishop_score.History">
+         <path value="Bishop_score.History"/>
+         <short value="History"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Bishop_score.History"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Bishop_score.History.Any_event">
+         <path value="Bishop_score.History.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Bishop_score.History.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Bishop_score.History.Any_event.ItemTree">
+         <path value="Bishop_score.History.Any_event.ItemTree"/>
+         <short value="ItemTree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Bishop_score.History.Any_event.ItemTree"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Bishop_score.History.Any_event.ItemTree.Position">
+         <path value="Bishop_score.History.Any_event.ItemTree.Position"/>
+         <short value="Position"/>
+         <definition value="Position of the cervix."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Bishop_score.History.Any_event.ItemTree.Position"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Bishop_score.History.Any_event.ItemTree.Position.value">
+         <path value="Bishop_score.History.Any_event.ItemTree.Position.value"/>
+         <short value="Position"/>
+         <definition value="Position of the cervix."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Bishop_score.History.Any_event.ItemTree.Position.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Bishop_score.History.Any_event.ItemTree.Consistency">
+         <path value="Bishop_score.History.Any_event.ItemTree.Consistency"/>
+         <short value="Consistency"/>
+         <definition value="The amount of softening of the cervix, indicating a decline in the tissue tensile strength."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Bishop_score.History.Any_event.ItemTree.Consistency"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Bishop_score.History.Any_event.ItemTree.Consistency.value">
+         <path value="Bishop_score.History.Any_event.ItemTree.Consistency.value"/>
+         <short value="Consistency"/>
+         <definition value="The amount of softening of the cervix, indicating a decline in the tissue tensile strength."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Bishop_score.History.Any_event.ItemTree.Consistency.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Bishop_score.History.Any_event.ItemTree.Effacement">
+         <path value="Bishop_score.History.Any_event.ItemTree.Effacement"/>
+         <short value="Effacement"/>
+         <definition value="Thinning of the cervix."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Bishop_score.History.Any_event.ItemTree.Effacement"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Bishop_score.History.Any_event.ItemTree.Effacement.value">
+         <path value="Bishop_score.History.Any_event.ItemTree.Effacement.value"/>
+         <short value="Effacement"/>
+         <definition value="Thinning of the cervix."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Bishop_score.History.Any_event.ItemTree.Effacement.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Bishop_score.History.Any_event.ItemTree.Dilation">
+         <path value="Bishop_score.History.Any_event.ItemTree.Dilation"/>
+         <short value="Dilation"/>
+         <definition value="Diameter of the cervical os."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Bishop_score.History.Any_event.ItemTree.Dilation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Bishop_score.History.Any_event.ItemTree.Dilation.value">
+         <path value="Bishop_score.History.Any_event.ItemTree.Dilation.value"/>
+         <short value="Dilation"/>
+         <definition value="Diameter of the cervical os."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Bishop_score.History.Any_event.ItemTree.Dilation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Bishop_score.History.Any_event.ItemTree.Fetal_station">
+         <path value="Bishop_score.History.Any_event.ItemTree.Fetal_station"/>
+         <short value="Fetal station"/>
+         <definition value="The position of the fetal head in relation to the ischial spines."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Bishop_score.History.Any_event.ItemTree.Fetal_station"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Bishop_score.History.Any_event.ItemTree.Fetal_station.value">
+         <path value="Bishop_score.History.Any_event.ItemTree.Fetal_station.value"/>
+         <short value="Fetal station"/>
+         <definition value="The position of the fetal head in relation to the ischial spines."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Bishop_score.History.Any_event.ItemTree.Fetal_station.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Bishop_score.History.Any_event.ItemTree.Total_score">
+         <path value="Bishop_score.History.Any_event.ItemTree.Total_score"/>
+         <short value="Total score"/>
+         <definition value="Sum of the individual scores assigned for each of the contributing variables."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Bishop_score.History.Any_event.ItemTree.Total_score"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Bishop_score.History.Any_event.ItemTree.Total_score.value">
+         <path value="Bishop_score.History.Any_event.ItemTree.Total_score.value"/>
+         <short value="Total score"/>
+         <definition value="Sum of the individual scores assigned for each of the contributing variables."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Bishop_score.History.Any_event.ItemTree.Total_score.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Bishop_score.History.Any_event.ItemTree.Comment">
+         <path value="Bishop_score.History.Any_event.ItemTree.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the overall Bishop score not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Bishop_score.History.Any_event.ItemTree.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Bishop_score.History.Any_event.ItemTree.Comment.value">
+         <path value="Bishop_score.History.Any_event.ItemTree.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the overall Bishop score not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Bishop_score.History.Any_event.ItemTree.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Feeding-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-feeding-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.infant_feeding.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Feeding"/>
+   <title value="Feeding"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Information about the feeding of the person."/>
+   <purpose value="Record details about feeding a person."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Feeding">
+         <path value="Feeding"/>
+         <short value="Feeding"/>
+         <definition value="Information about the feeding of the person."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Feeding"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Feeding.Event_Series">
+         <path value="Feeding.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Feeding.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Feeding.Event_Series.Any_event">
+         <path value="Feeding.Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="*"/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Feeding.Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Feeding.Event_Series.Any_event.data">
+         <path value="Feeding.Event_Series.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Feeding.Event_Series.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Feeding.Event_Series.Any_event.data.Description">
+         <path value="Feeding.Event_Series.Any_event.data.Description"/>
+         <short value="Description"/>
+         <definition value="*"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Feeding.Event_Series.Any_event.data.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Feeding.Event_Series.Any_event.data.Description.value">
+         <path value="Feeding.Event_Series.Any_event.data.Description.value"/>
+         <short value="Description"/>
+         <definition value="*"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Feeding.Event_Series.Any_event.data.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Feeding.Event_Series.Any_event.data.Infant_feeding_category">
+         <path value="Feeding.Event_Series.Any_event.data.Infant_feeding_category"/>
+         <short value="Infant feeding category"/>
+         <definition value="The content of the feeding."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Feeding.Event_Series.Any_event.data.Infant_feeding_category"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Feeding.Event_Series.Any_event.data.Infant_feeding_category.value">
+         <path value="Feeding.Event_Series.Any_event.data.Infant_feeding_category.value"/>
+         <short value="Infant feeding category"/>
+         <definition value="The content of the feeding."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Feeding.Event_Series.Any_event.data.Infant_feeding_category.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Feeding.Event_Series.Any_event.data.Breast_feeding">
+         <path value="Feeding.Event_Series.Any_event.data.Breast_feeding"/>
+         <short value="Breast feeding"/>
+         <definition value="Record about breast feeding."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Feeding.Event_Series.Any_event.data.Breast_feeding"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Feeding.Event_Series.Any_event.data.Breast_feeding.Proportion">
+         <path value="Feeding.Event_Series.Any_event.data.Breast_feeding.Proportion"/>
+         <short value="Proportion"/>
+         <definition value="The proportion by this method."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Feeding.Event_Series.Any_event.data.Breast_feeding.Proportion"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Feeding.Event_Series.Any_event.data.Breast_feeding.Proportion.value">
+         <path value="Feeding.Event_Series.Any_event.data.Breast_feeding.Proportion.value"/>
+         <short value="Proportion"/>
+         <definition value="The proportion by this method."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Feeding.Event_Series.Any_event.data.Breast_feeding.Proportion.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Ratio"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Feeding.Event_Series.Any_event.data.Breast_feeding.Time_taken">
+         <path value="Feeding.Event_Series.Any_event.data.Breast_feeding.Time_taken"/>
+         <short value="Time taken"/>
+         <definition value="Time feeding by this method."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Feeding.Event_Series.Any_event.data.Breast_feeding.Time_taken"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Feeding.Event_Series.Any_event.data.Breast_feeding.Time_taken.value">
+         <path value="Feeding.Event_Series.Any_event.data.Breast_feeding.Time_taken.value"/>
+         <short value="Time taken"/>
+         <definition value="Time feeding by this method."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Feeding.Event_Series.Any_event.data.Breast_feeding.Time_taken.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Feeding.Event_Series.Any_event.data.Other_method">
+         <path value="Feeding.Event_Series.Any_event.data.Other_method"/>
+         <short value="Other method"/>
+         <definition value="The method of feeding."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Feeding.Event_Series.Any_event.data.Other_method"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Feeding.Event_Series.Any_event.data.Other_method.Type">
+         <path value="Feeding.Event_Series.Any_event.data.Other_method.Type"/>
+         <short value="Type"/>
+         <definition value="Type of feeding."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Feeding.Event_Series.Any_event.data.Other_method.Type"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Feeding.Event_Series.Any_event.data.Other_method.Type.value">
+         <path value="Feeding.Event_Series.Any_event.data.Other_method.Type.value"/>
+         <short value="Type"/>
+         <definition value="Type of feeding."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Feeding.Event_Series.Any_event.data.Other_method.Type.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Feeding.Event_Series.Any_event.data.Other_method.Volume_by_this_method">
+         <path value="Feeding.Event_Series.Any_event.data.Other_method.Volume_by_this_method"/>
+         <short value="Volume by this method"/>
+         <definition value="Volume delivered by this method."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Feeding.Event_Series.Any_event.data.Other_method.Volume_by_this_method"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Feeding.Event_Series.Any_event.data.Other_method.Volume_by_this_method.value">
+         <path value="Feeding.Event_Series.Any_event.data.Other_method.Volume_by_this_method.value"/>
+         <short value="Volume by this method"/>
+         <definition value="Volume delivered by this method."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Feeding.Event_Series.Any_event.data.Other_method.Volume_by_this_method.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Feeding.Event_Series.Any_event.data.Other_method.Content">
+         <path value="Feeding.Event_Series.Any_event.data.Other_method.Content"/>
+         <short value="Content"/>
+         <definition value="The milk or other food delivered."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Feeding.Event_Series.Any_event.data.Other_method.Content"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Feeding.Event_Series.Any_event.data.Other_method.Content.value">
+         <path value="Feeding.Event_Series.Any_event.data.Other_method.Content.value"/>
+         <short value="Content"/>
+         <definition value="The milk or other food delivered."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Feeding.Event_Series.Any_event.data.Other_method.Content.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Feeding.Event_Series.Any_event.data.Other_method.ELEMENT">
+         <path value="Feeding.Event_Series.Any_event.data.Other_method.ELEMENT"/>
+         <definition value="ELEMENT"/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Feeding.Event_Series.Any_event.data.Other_method.ELEMENT"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <contentReference value="#Feeding.Event_Series.Any_event.Tree.Breast_feeding"/>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Feeding.Event_Series.Any_event.data.Other_method.ELEMENT">
+         <path value="Feeding.Event_Series.Any_event.data.Other_method.ELEMENT"/>
+         <definition value="ELEMENT"/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Feeding.Event_Series.Any_event.data.Other_method.ELEMENT"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <contentReference value="#Feeding.Event_Series.Any_event.Tree.Breast_feeding"/>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Feeding.Event_Series.Any_event.data.Function">
+         <path value="Feeding.Event_Series.Any_event.data.Function"/>
+         <short value="Function"/>
+         <definition value="*"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Feeding.Event_Series.Any_event.data.Function"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Feeding.Event_Series.Any_event.data.Function.Description">
+         <path value="Feeding.Event_Series.Any_event.data.Function.Description"/>
+         <short value="Description"/>
+         <definition value="Description of feeding."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Feeding.Event_Series.Any_event.data.Function.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Feeding.Event_Series.Any_event.data.Function.Description.value">
+         <path value="Feeding.Event_Series.Any_event.data.Function.Description.value"/>
+         <short value="Description"/>
+         <definition value="Description of feeding."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Feeding.Event_Series.Any_event.data.Function.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Feeding.Event_Series.Any_event.data.Function.Sucking">
+         <path value="Feeding.Event_Series.Any_event.data.Function.Sucking"/>
+         <short value="Sucking"/>
+         <definition value="The ability to suck."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Feeding.Event_Series.Any_event.data.Function.Sucking"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Feeding.Event_Series.Any_event.data.Function.Sucking.value">
+         <path value="Feeding.Event_Series.Any_event.data.Function.Sucking.value"/>
+         <short value="Sucking"/>
+         <definition value="The ability to suck."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Feeding.Event_Series.Any_event.data.Function.Sucking.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Feeding.Event_Series.Any_event.data.Function.Swallowing">
+         <path value="Feeding.Event_Series.Any_event.data.Function.Swallowing"/>
+         <short value="Swallowing"/>
+         <definition value="Ability to swallow."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Feeding.Event_Series.Any_event.data.Function.Swallowing"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Feeding.Event_Series.Any_event.data.Function.Swallowing.value">
+         <path value="Feeding.Event_Series.Any_event.data.Function.Swallowing.value"/>
+         <short value="Swallowing"/>
+         <definition value="Ability to swallow."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Feeding.Event_Series.Any_event.data.Function.Swallowing.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

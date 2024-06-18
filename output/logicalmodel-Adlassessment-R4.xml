@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Adlassessment-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-adlassessment-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.adl.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Adlassessment"/>
+   <title value="ADL assessment"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Details about an individual's ability to perform an identified activity of daily living."/>
+   <purpose value="To record details about an individual's ability to perform an identified activity of daily living."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="ADL_assessment">
+         <path value="ADL_assessment"/>
+         <short value="ADL assessment"/>
+         <definition value="Details about an individual's ability to perform an identified activity of daily living."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="ADL_assessment"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ADL_assessment.protocol">
+         <path value="ADL_assessment.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ADL_assessment.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ADL_assessment.protocol.Extension">
+         <path value="ADL_assessment.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models or formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="ADL_assessment.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ADL_assessment.History">
+         <path value="ADL_assessment.History"/>
+         <short value="History"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ADL_assessment.History"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ADL_assessment.History.Any_event">
+         <path value="ADL_assessment.History.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="ADL_assessment.History.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ADL_assessment.History.Any_event.data">
+         <path value="ADL_assessment.History.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ADL_assessment.History.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ADL_assessment.History.Any_event.data.Activity_name">
+         <path value="ADL_assessment.History.Any_event.data.Activity_name"/>
+         <short value="Activity name"/>
+         <definition value="The name of the activity of daily living."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ADL_assessment.History.Any_event.data.Activity_name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="ADL_assessment.History.Any_event.data.Activity_name.value">
+         <path value="ADL_assessment.History.Any_event.data.Activity_name.value"/>
+         <short value="Activity name"/>
+         <definition value="The name of the activity of daily living."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ADL_assessment.History.Any_event.data.Activity_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ADL_assessment.History.Any_event.data.Clinical_description">
+         <path value="ADL_assessment.History.Any_event.data.Clinical_description"/>
+         <short value="Clinical description"/>
+         <definition value="Narrative description about the individual's ability to perform the activity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ADL_assessment.History.Any_event.data.Clinical_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="ADL_assessment.History.Any_event.data.Clinical_description.value">
+         <path value="ADL_assessment.History.Any_event.data.Clinical_description.value"/>
+         <short value="Clinical description"/>
+         <definition value="Narrative description about the individual's ability to perform the activity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ADL_assessment.History.Any_event.data.Clinical_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ADL_assessment.History.Any_event.data.Capability">
+         <path value="ADL_assessment.History.Any_event.data.Capability"/>
+         <short value="Capability"/>
+         <definition value="Category of the ability for the individual to perform the identified activity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ADL_assessment.History.Any_event.data.Capability"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="ADL_assessment.History.Any_event.data.Capability.value_DV_CODED_TEXT">
+         <path value="ADL_assessment.History.Any_event.data.Capability.value_DV_CODED_TEXT"/>
+         <short value="Capability"/>
+         <definition value="Category of the ability for the individual to perform the identified activity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ADL_assessment.History.Any_event.data.Capability.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ADL_assessment.History.Any_event.data.Capability.value_DV_TEXT">
+         <path value="ADL_assessment.History.Any_event.data.Capability.value_DV_TEXT"/>
+         <short value="Capability"/>
+         <definition value="Category of the ability for the individual to perform the identified activity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ADL_assessment.History.Any_event.data.Capability.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ADL_assessment.History.Any_event.data.Support_description">
+         <path value="ADL_assessment.History.Any_event.data.Support_description"/>
+         <short value="Support description"/>
+         <definition value="Description about the support required to carry out the activity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ADL_assessment.History.Any_event.data.Support_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="ADL_assessment.History.Any_event.data.Support_description.value">
+         <path value="ADL_assessment.History.Any_event.data.Support_description.value"/>
+         <short value="Support description"/>
+         <definition value="Description about the support required to carry out the activity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ADL_assessment.History.Any_event.data.Support_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ADL_assessment.History.Any_event.data.Equipment_description">
+         <path value="ADL_assessment.History.Any_event.data.Equipment_description"/>
+         <short value="Equipment description"/>
+         <definition value="Description about the equipment or aide required to carry out the activity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ADL_assessment.History.Any_event.data.Equipment_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="ADL_assessment.History.Any_event.data.Equipment_description.value">
+         <path value="ADL_assessment.History.Any_event.data.Equipment_description.value"/>
+         <short value="Equipment description"/>
+         <definition value="Description about the equipment or aide required to carry out the activity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ADL_assessment.History.Any_event.data.Equipment_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ADL_assessment.History.Any_event.data.Equipment">
+         <path value="ADL_assessment.History.Any_event.data.Equipment"/>
+         <short value="Equipment"/>
+         <definition value="Structured details about the equipment required."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="ADL_assessment.History.Any_event.data.Equipment"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ADL_assessment.History.Any_event.data.Additional_details">
+         <path value="ADL_assessment.History.Any_event.data.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="Additional structured details about the ability to perform the activity."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="ADL_assessment.History.Any_event.data.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ADL_assessment.History.Any_event.data.Comment">
+         <path value="ADL_assessment.History.Any_event.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the individual's ability to perform the activity not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ADL_assessment.History.Any_event.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="ADL_assessment.History.Any_event.data.Comment.value">
+         <path value="ADL_assessment.History.Any_event.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the individual's ability to perform the activity not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ADL_assessment.History.Any_event.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

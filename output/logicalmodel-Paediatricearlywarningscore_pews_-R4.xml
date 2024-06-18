@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Paediatricearlywarningscore_pews_-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-paediatricearlywarningscore_pews_-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.pews.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Paediatricearlywarningscore_pews_"/>
+   <title value="Paediatric Early Warning Score (PEWS)"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="A simple assessment score used to identify clinical deterioration in a paediatric patient."/>
+   <purpose value="To record the value for each component variable for the PEWS and the total sum."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Paediatric_Early_Warning_Score_(PEWS)">
+         <path value="Paediatric_Early_Warning_Score_(PEWS)"/>
+         <short value="Paediatric Early Warning Score (PEWS)"/>
+         <definition value="A simple assessment score used to identify clinical deterioration in a paediatric patient."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Paediatric_Early_Warning_Score_(PEWS)"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Paediatric_Early_Warning_Score_(PEWS).protocol">
+         <path value="Paediatric_Early_Warning_Score_(PEWS).protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Paediatric_Early_Warning_Score_(PEWS).protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Paediatric_Early_Warning_Score_(PEWS).protocol.Model">
+         <path value="Paediatric_Early_Warning_Score_(PEWS).protocol.Model"/>
+         <short value="Model"/>
+         <definition value="The name of the PEWS model used in the 'PEWS components SLOT and/or the 'Total score'."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Paediatric_Early_Warning_Score_(PEWS).protocol.Model"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Paediatric_Early_Warning_Score_(PEWS).protocol.Model.value">
+         <path value="Paediatric_Early_Warning_Score_(PEWS).protocol.Model.value"/>
+         <short value="Model"/>
+         <definition value="The name of the PEWS model used in the 'PEWS components SLOT and/or the 'Total score'."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Paediatric_Early_Warning_Score_(PEWS).protocol.Model.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Paediatric_Early_Warning_Score_(PEWS).protocol.Extension">
+         <path value="Paediatric_Early_Warning_Score_(PEWS).protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Paediatric_Early_Warning_Score_(PEWS).protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Paediatric_Early_Warning_Score_(PEWS).History">
+         <path value="Paediatric_Early_Warning_Score_(PEWS).History"/>
+         <short value="History"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Paediatric_Early_Warning_Score_(PEWS).History"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Paediatric_Early_Warning_Score_(PEWS).History.Any_point_in_time_event">
+         <path value="Paediatric_Early_Warning_Score_(PEWS).History.Any_point_in_time_event"/>
+         <short value="Any point in time event"/>
+         <definition value="Default, unspecified point in time event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Paediatric_Early_Warning_Score_(PEWS).History.Any_point_in_time_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Paediatric_Early_Warning_Score_(PEWS).History.Any_point_in_time_event.data">
+         <path value="Paediatric_Early_Warning_Score_(PEWS).History.Any_point_in_time_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Paediatric_Early_Warning_Score_(PEWS).History.Any_point_in_time_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Paediatric_Early_Warning_Score_(PEWS).History.Any_point_in_time_event.data.PEWS_components">
+         <path value="Paediatric_Early_Warning_Score_(PEWS).History.Any_point_in_time_event.data.PEWS_components"/>
+         <short value="PEWS components"/>
+         <definition value="Structured details for a specific PEWS model representation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Paediatric_Early_Warning_Score_(PEWS).History.Any_point_in_time_event.data.PEWS_components"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Paediatric_Early_Warning_Score_(PEWS).History.Any_point_in_time_event.data.Total_score">
+         <path value="Paediatric_Early_Warning_Score_(PEWS).History.Any_point_in_time_event.data.Total_score"/>
+         <short value="Total score"/>
+         <definition value="The total sum of each component parameter for the PEWS."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Paediatric_Early_Warning_Score_(PEWS).History.Any_point_in_time_event.data.Total_score"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Paediatric_Early_Warning_Score_(PEWS).History.Any_point_in_time_event.data.Total_score.value">
+         <path value="Paediatric_Early_Warning_Score_(PEWS).History.Any_point_in_time_event.data.Total_score.value"/>
+         <short value="Total score"/>
+         <definition value="The total sum of each component parameter for the PEWS."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Paediatric_Early_Warning_Score_(PEWS).History.Any_point_in_time_event.data.Total_score.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Paediatric_Early_Warning_Score_(PEWS).History.Any_point_in_time_event.data.Clinical_risk_category">
+         <path value="Paediatric_Early_Warning_Score_(PEWS).History.Any_point_in_time_event.data.Clinical_risk_category"/>
+         <short value="Clinical risk category"/>
+         <definition value="Overall category representing the urgency and scale of the clinical response required in response to the component variables."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Paediatric_Early_Warning_Score_(PEWS).History.Any_point_in_time_event.data.Clinical_risk_category"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Paediatric_Early_Warning_Score_(PEWS).History.Any_point_in_time_event.data.Clinical_risk_category.value">
+         <path value="Paediatric_Early_Warning_Score_(PEWS).History.Any_point_in_time_event.data.Clinical_risk_category.value"/>
+         <short value="Clinical risk category"/>
+         <definition value="Overall category representing the urgency and scale of the clinical response required in response to the component variables."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Paediatric_Early_Warning_Score_(PEWS).History.Any_point_in_time_event.data.Clinical_risk_category.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

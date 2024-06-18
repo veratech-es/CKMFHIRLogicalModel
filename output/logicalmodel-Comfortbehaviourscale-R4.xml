@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Comfortbehaviourscale-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-comfortbehaviourscale-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.comfort_behaviour_scale.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Comfortbehaviourscale"/>
+   <title value="Comfort behaviour scale"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="A numerical scale for pain and/or sedation assessment in pediatric ICU patients."/>
+   <purpose value="The Comfort Behavioural scale is a modification of the original Comfort scale (1992), used for pain assesment in children in ICU and, complementarily, for sedation assessment in nonsurgical pediatric ICU patients."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Comfort_behaviour_scale">
+         <path value="Comfort_behaviour_scale"/>
+         <short value="Comfort behaviour scale"/>
+         <definition value="A numerical scale for pain and/or sedation assessment in pediatric ICU patients."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Comfort_behaviour_scale"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Comfort_behaviour_scale.Event_Series">
+         <path value="Comfort_behaviour_scale.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Comfort_behaviour_scale.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Comfort_behaviour_scale.Event_Series.Any_event">
+         <path value="Comfort_behaviour_scale.Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="*"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Comfort_behaviour_scale.Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Comfort_behaviour_scale.Event_Series.Any_event.data">
+         <path value="Comfort_behaviour_scale.Event_Series.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Comfort_behaviour_scale.Event_Series.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Comfort_behaviour_scale.Event_Series.Any_event.data.Alertness">
+         <path value="Comfort_behaviour_scale.Event_Series.Any_event.data.Alertness"/>
+         <short value="Alertness"/>
+         <definition value="Degree of alertness."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Comfort_behaviour_scale.Event_Series.Any_event.data.Alertness"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Comfort_behaviour_scale.Event_Series.Any_event.data.Alertness.value">
+         <path value="Comfort_behaviour_scale.Event_Series.Any_event.data.Alertness.value"/>
+         <short value="Alertness"/>
+         <definition value="Degree of alertness."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Comfort_behaviour_scale.Event_Series.Any_event.data.Alertness.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Comfort_behaviour_scale.Event_Series.Any_event.data.Calmness_Agitation">
+         <path value="Comfort_behaviour_scale.Event_Series.Any_event.data.Calmness_Agitation"/>
+         <short value="Calmness/Agitation"/>
+         <definition value="Degree of calmness or agitation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Comfort_behaviour_scale.Event_Series.Any_event.data.Calmness_Agitation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Comfort_behaviour_scale.Event_Series.Any_event.data.Calmness_Agitation.value">
+         <path value="Comfort_behaviour_scale.Event_Series.Any_event.data.Calmness_Agitation.value"/>
+         <short value="Calmness/Agitation"/>
+         <definition value="Degree of calmness or agitation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Comfort_behaviour_scale.Event_Series.Any_event.data.Calmness_Agitation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Comfort_behaviour_scale.Event_Series.Any_event.data.Respiratory_response">
+         <path value="Comfort_behaviour_scale.Event_Series.Any_event.data.Respiratory_response"/>
+         <short value="Respiratory response"/>
+         <definition value="Degree of respiratory response."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Comfort_behaviour_scale.Event_Series.Any_event.data.Respiratory_response"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Comfort_behaviour_scale.Event_Series.Any_event.data.Respiratory_response.value">
+         <path value="Comfort_behaviour_scale.Event_Series.Any_event.data.Respiratory_response.value"/>
+         <short value="Respiratory response"/>
+         <definition value="Degree of respiratory response."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Comfort_behaviour_scale.Event_Series.Any_event.data.Respiratory_response.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Comfort_behaviour_scale.Event_Series.Any_event.data.Crying">
+         <path value="Comfort_behaviour_scale.Event_Series.Any_event.data.Crying"/>
+         <short value="Crying"/>
+         <definition value="Whether the patient is crying."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Comfort_behaviour_scale.Event_Series.Any_event.data.Crying"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Comfort_behaviour_scale.Event_Series.Any_event.data.Crying.value">
+         <path value="Comfort_behaviour_scale.Event_Series.Any_event.data.Crying.value"/>
+         <short value="Crying"/>
+         <definition value="Whether the patient is crying."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Comfort_behaviour_scale.Event_Series.Any_event.data.Crying.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Comfort_behaviour_scale.Event_Series.Any_event.data.Physical_movement">
+         <path value="Comfort_behaviour_scale.Event_Series.Any_event.data.Physical_movement"/>
+         <short value="Physical movement"/>
+         <definition value="Degree of physical movement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Comfort_behaviour_scale.Event_Series.Any_event.data.Physical_movement"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Comfort_behaviour_scale.Event_Series.Any_event.data.Physical_movement.value">
+         <path value="Comfort_behaviour_scale.Event_Series.Any_event.data.Physical_movement.value"/>
+         <short value="Physical movement"/>
+         <definition value="Degree of physical movement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Comfort_behaviour_scale.Event_Series.Any_event.data.Physical_movement.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Comfort_behaviour_scale.Event_Series.Any_event.data.Muscle_tone">
+         <path value="Comfort_behaviour_scale.Event_Series.Any_event.data.Muscle_tone"/>
+         <short value="Muscle tone"/>
+         <definition value="Degree of muscle tone."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Comfort_behaviour_scale.Event_Series.Any_event.data.Muscle_tone"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Comfort_behaviour_scale.Event_Series.Any_event.data.Muscle_tone.value">
+         <path value="Comfort_behaviour_scale.Event_Series.Any_event.data.Muscle_tone.value"/>
+         <short value="Muscle tone"/>
+         <definition value="Degree of muscle tone."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Comfort_behaviour_scale.Event_Series.Any_event.data.Muscle_tone.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Comfort_behaviour_scale.Event_Series.Any_event.data.Facial_tension">
+         <path value="Comfort_behaviour_scale.Event_Series.Any_event.data.Facial_tension"/>
+         <short value="Facial tension"/>
+         <definition value="Degree of facial tension."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Comfort_behaviour_scale.Event_Series.Any_event.data.Facial_tension"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Comfort_behaviour_scale.Event_Series.Any_event.data.Facial_tension.value">
+         <path value="Comfort_behaviour_scale.Event_Series.Any_event.data.Facial_tension.value"/>
+         <short value="Facial tension"/>
+         <definition value="Degree of facial tension."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Comfort_behaviour_scale.Event_Series.Any_event.data.Facial_tension.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Comfort_behaviour_scale.Event_Series.Any_event.data.Total_score">
+         <path value="Comfort_behaviour_scale.Event_Series.Any_event.data.Total_score"/>
+         <short value="Total score"/>
+         <definition value="Total score"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Comfort_behaviour_scale.Event_Series.Any_event.data.Total_score"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Comfort_behaviour_scale.Event_Series.Any_event.data.Total_score.value">
+         <path value="Comfort_behaviour_scale.Event_Series.Any_event.data.Total_score.value"/>
+         <short value="Total score"/>
+         <definition value="Total score"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Comfort_behaviour_scale.Event_Series.Any_event.data.Total_score.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

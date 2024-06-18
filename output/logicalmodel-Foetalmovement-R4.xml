@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Foetalmovement-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-foetalmovement-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.foetal_movement.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Foetalmovement"/>
+   <title value="Foetal movement"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Spontaneous movements of the foetus in utero, as perceived by the mother. Movements include kicks, jabs, rolls, twists, and turns."/>
+   <purpose value="To record the presence and pattern of any and all spontaneous foetal movements in utero, as perceived by the mother."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Foetal_movement">
+         <path value="Foetal_movement"/>
+         <short value="Foetal movement"/>
+         <definition value="Spontaneous movements of the foetus in utero, as perceived by the mother. Movements include kicks, jabs, rolls, twists, and turns."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_movement"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Foetal_movement.Event_Series">
+         <path value="Foetal_movement.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_movement.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Foetal_movement.Event_Series.Any_event">
+         <path value="Foetal_movement.Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Foetal_movement.Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Foetal_movement.Event_Series.Any_event.data">
+         <path value="Foetal_movement.Event_Series.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_movement.Event_Series.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Foetal_movement.Event_Series.Any_event.data.Presence">
+         <path value="Foetal_movement.Event_Series.Any_event.data.Presence"/>
+         <short value="Presence"/>
+         <definition value="Presence of spontaneous foetal movements."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_movement.Event_Series.Any_event.data.Presence"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Foetal_movement.Event_Series.Any_event.data.Presence.value">
+         <path value="Foetal_movement.Event_Series.Any_event.data.Presence.value"/>
+         <short value="Presence"/>
+         <definition value="Presence of spontaneous foetal movements."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_movement.Event_Series.Any_event.data.Presence.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Foetal_movement.Event_Series.Any_event.data.Pattern">
+         <path value="Foetal_movement.Event_Series.Any_event.data.Pattern"/>
+         <short value="Pattern"/>
+         <definition value="Pattern of spontaneous foetal movements."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_movement.Event_Series.Any_event.data.Pattern"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Foetal_movement.Event_Series.Any_event.data.Pattern.value">
+         <path value="Foetal_movement.Event_Series.Any_event.data.Pattern.value"/>
+         <short value="Pattern"/>
+         <definition value="Pattern of spontaneous foetal movements."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_movement.Event_Series.Any_event.data.Pattern.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Foetal_movement.Event_Series.Any_event.data.Movements">
+         <path value="Foetal_movement.Event_Series.Any_event.data.Movements"/>
+         <short value="Movements"/>
+         <definition value="Number of spontaneous foetal movements counted during the period of observation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_movement.Event_Series.Any_event.data.Movements"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Foetal_movement.Event_Series.Any_event.data.Movements.value">
+         <path value="Foetal_movement.Event_Series.Any_event.data.Movements.value"/>
+         <short value="Movements"/>
+         <definition value="Number of spontaneous foetal movements counted during the period of observation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_movement.Event_Series.Any_event.data.Movements.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Foetal_movement.Event_Series.Any_event.data.Time_since_last_movement">
+         <path value="Foetal_movement.Event_Series.Any_event.data.Time_since_last_movement"/>
+         <short value="Time since last movement"/>
+         <definition value="Length of time since last spontaneous foetal movement was noticed by mother."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_movement.Event_Series.Any_event.data.Time_since_last_movement"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Foetal_movement.Event_Series.Any_event.data.Time_since_last_movement.value">
+         <path value="Foetal_movement.Event_Series.Any_event.data.Time_since_last_movement.value"/>
+         <short value="Time since last movement"/>
+         <definition value="Length of time since last spontaneous foetal movement was noticed by mother."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_movement.Event_Series.Any_event.data.Time_since_last_movement.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Foetal_movement.Event_Series.Any_event.data.Description">
+         <path value="Foetal_movement.Event_Series.Any_event.data.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description of the foetal movements as noted by the mother."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_movement.Event_Series.Any_event.data.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Foetal_movement.Event_Series.Any_event.data.Description.value">
+         <path value="Foetal_movement.Event_Series.Any_event.data.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description of the foetal movements as noted by the mother."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_movement.Event_Series.Any_event.data.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Foetal_movement.Event_Series.Period_of_observation">
+         <path value="Foetal_movement.Event_Series.Period_of_observation"/>
+         <short value="Period of observation"/>
+         <definition value="Period of time during which the number of spontaneous foetal movements) are counted or observed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_movement.Event_Series.Period_of_observation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Foetal_movement.Event_Series.Period_of_observation.data">
+         <path value="Foetal_movement.Event_Series.Period_of_observation.data"/>
+         <definition value="ITEM_TREE"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_movement.Event_Series.Period_of_observation.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Foetal_movement.Event_Series.Period_of_observation.data.Presence">
+         <path value="Foetal_movement.Event_Series.Period_of_observation.data.Presence"/>
+         <short value="Presence"/>
+         <definition value="Presence of spontaneous foetal movements."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_movement.Event_Series.Period_of_observation.data.Presence"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Foetal_movement.Event_Series.Period_of_observation.data.Presence.value">
+         <path value="Foetal_movement.Event_Series.Period_of_observation.data.Presence.value"/>
+         <short value="Presence"/>
+         <definition value="Presence of spontaneous foetal movements."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_movement.Event_Series.Period_of_observation.data.Presence.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Foetal_movement.Event_Series.Period_of_observation.data.Pattern">
+         <path value="Foetal_movement.Event_Series.Period_of_observation.data.Pattern"/>
+         <short value="Pattern"/>
+         <definition value="Pattern of spontaneous foetal movements."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_movement.Event_Series.Period_of_observation.data.Pattern"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Foetal_movement.Event_Series.Period_of_observation.data.Pattern.value">
+         <path value="Foetal_movement.Event_Series.Period_of_observation.data.Pattern.value"/>
+         <short value="Pattern"/>
+         <definition value="Pattern of spontaneous foetal movements."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_movement.Event_Series.Period_of_observation.data.Pattern.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Foetal_movement.Event_Series.Period_of_observation.data.Movements">
+         <path value="Foetal_movement.Event_Series.Period_of_observation.data.Movements"/>
+         <short value="Movements"/>
+         <definition value="Number of spontaneous foetal movements counted during the period of observation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_movement.Event_Series.Period_of_observation.data.Movements"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Foetal_movement.Event_Series.Period_of_observation.data.Movements.value">
+         <path value="Foetal_movement.Event_Series.Period_of_observation.data.Movements.value"/>
+         <short value="Movements"/>
+         <definition value="Number of spontaneous foetal movements counted during the period of observation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_movement.Event_Series.Period_of_observation.data.Movements.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Foetal_movement.Event_Series.Period_of_observation.data.Time_since_last_movement">
+         <path value="Foetal_movement.Event_Series.Period_of_observation.data.Time_since_last_movement"/>
+         <short value="Time since last movement"/>
+         <definition value="Length of time since last spontaneous foetal movement was noticed by mother."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_movement.Event_Series.Period_of_observation.data.Time_since_last_movement"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Foetal_movement.Event_Series.Period_of_observation.data.Time_since_last_movement.value">
+         <path value="Foetal_movement.Event_Series.Period_of_observation.data.Time_since_last_movement.value"/>
+         <short value="Time since last movement"/>
+         <definition value="Length of time since last spontaneous foetal movement was noticed by mother."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_movement.Event_Series.Period_of_observation.data.Time_since_last_movement.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Foetal_movement.Event_Series.Period_of_observation.data.Description">
+         <path value="Foetal_movement.Event_Series.Period_of_observation.data.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description of the foetal movements as noted by the mother."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_movement.Event_Series.Period_of_observation.data.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Foetal_movement.Event_Series.Period_of_observation.data.Description.value">
+         <path value="Foetal_movement.Event_Series.Period_of_observation.data.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description of the foetal movements as noted by the mother."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_movement.Event_Series.Period_of_observation.data.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Foetal_movement.Event_Series.events_Period_of_observation.math_function">
+         <path value="Foetal_movement.Event_Series.events_Period_of_observation.math_function"/>
+         <short value="Period of observation"/>
+         <definition value="Period of time during which the number of spontaneous foetal movements) are counted or observed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_movement.Event_Series.events_Period_of_observation.math_function"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

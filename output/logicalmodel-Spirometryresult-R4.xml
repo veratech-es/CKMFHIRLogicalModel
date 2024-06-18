@@ -1,0 +1,970 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Spirometryresult-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-spirometryresult-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.spirometry_result.v2"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Spirometryresult"/>
+   <title value="Spirometry result"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Pulmonary function test results using a spirometer or peak flow meter."/>
+   <purpose value="To record the results of a pulmonary function test performed using a spirometer or peak flow meter."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Spirometry_result">
+         <path value="Spirometry_result"/>
+         <short value="Spirometry result"/>
+         <definition value="Pulmonary function test results using a spirometer or peak flow meter."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Spirometry_result"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Spirometry_result.protocol">
+         <path value="Spirometry_result.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Spirometry_result.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Spirometry_result.protocol.Type_of_measurement">
+         <path value="Spirometry_result.protocol.Type_of_measurement"/>
+         <short value="Type of measurement"/>
+         <definition value="Type of measurement of spirometry."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Spirometry_result.protocol.Type_of_measurement"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Spirometry_result.protocol.Type_of_measurement.value">
+         <path value="Spirometry_result.protocol.Type_of_measurement.value"/>
+         <short value="Type of measurement"/>
+         <definition value="Type of measurement of spirometry."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Spirometry_result.protocol.Type_of_measurement.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Spirometry_result.protocol.Method">
+         <path value="Spirometry_result.protocol.Method"/>
+         <short value="Method"/>
+         <definition value="Method used to perform the test."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Spirometry_result.protocol.Method"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Spirometry_result.protocol.Method.value">
+         <path value="Spirometry_result.protocol.Method.value"/>
+         <short value="Method"/>
+         <definition value="Method used to perform the test."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Spirometry_result.protocol.Method.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Spirometry_result.protocol.Challenge_reversibility">
+         <path value="Spirometry_result.protocol.Challenge_reversibility"/>
+         <short value="Challenge/reversibility"/>
+         <definition value="Statement about whether the spirometry test was performed as a reversibility test or a bronchial challenge test."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Spirometry_result.protocol.Challenge_reversibility"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Spirometry_result.protocol.Challenge_reversibility.value">
+         <path value="Spirometry_result.protocol.Challenge_reversibility.value"/>
+         <short value="Challenge/reversibility"/>
+         <definition value="Statement about whether the spirometry test was performed as a reversibility test or a bronchial challenge test."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Spirometry_result.protocol.Challenge_reversibility.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Spirometry_result.protocol.Device">
+         <path value="Spirometry_result.protocol.Device"/>
+         <short value="Device"/>
+         <definition value="Details of the device used to measure spirometry."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Spirometry_result.protocol.Device"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Spirometry_result.protocol.Predicted_results_source">
+         <path value="Spirometry_result.protocol.Predicted_results_source"/>
+         <short value="Predicted results source"/>
+         <definition value="The knowledge base used for the predicted results."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Spirometry_result.protocol.Predicted_results_source"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Spirometry_result.protocol.Extension">
+         <path value="Spirometry_result.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Spirometry_result.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Spirometry_result.Event_Series">
+         <path value="Spirometry_result.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Spirometry_result.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Spirometry_result.Event_Series.Any_event">
+         <path value="Spirometry_result.Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Spirometry_result.Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Spirometry_result.Event_Series.Any_event.data">
+         <path value="Spirometry_result.Event_Series.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Spirometry_result.Event_Series.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Spirometry_result.Event_Series.Any_event.data.Volume">
+         <path value="Spirometry_result.Event_Series.Any_event.data.Volume"/>
+         <short value="Volume"/>
+         <definition value="Test result represented as a measured volume or calculated capacity."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Spirometry_result.Event_Series.Any_event.data.Volume"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Spirometry_result.Event_Series.Any_event.data.Volume.Result">
+         <path value="Spirometry_result.Event_Series.Any_event.data.Volume.Result"/>
+         <short value="Result"/>
+         <definition value="Measured volume."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Spirometry_result.Event_Series.Any_event.data.Volume.Result"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Spirometry_result.Event_Series.Any_event.data.Volume.Result.value">
+         <path value="Spirometry_result.Event_Series.Any_event.data.Volume.Result.value"/>
+         <short value="Result"/>
+         <definition value="Measured volume."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Spirometry_result.Event_Series.Any_event.data.Volume.Result.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Spirometry_result.Event_Series.Any_event.data.Volume.Predicted_result">
+         <path value="Spirometry_result.Event_Series.Any_event.data.Volume.Predicted_result"/>
+         <short value="Predicted result"/>
+         <definition value="Predicted volume."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Spirometry_result.Event_Series.Any_event.data.Volume.Predicted_result"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Spirometry_result.Event_Series.Any_event.data.Volume.Predicted_result.value">
+         <path value="Spirometry_result.Event_Series.Any_event.data.Volume.Predicted_result.value"/>
+         <short value="Predicted result"/>
+         <definition value="Predicted volume."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Spirometry_result.Event_Series.Any_event.data.Volume.Predicted_result.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Spirometry_result.Event_Series.Any_event.data.Volume.Measured_predicted_ratio">
+         <path value="Spirometry_result.Event_Series.Any_event.data.Volume.Measured_predicted_ratio"/>
+         <short value="Measured/predicted ratio"/>
+         <definition value="The ratio of the measured to predicted test results."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Spirometry_result.Event_Series.Any_event.data.Volume.Measured_predicted_ratio"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Spirometry_result.Event_Series.Any_event.data.Volume.Measured_predicted_ratio.value">
+         <path value="Spirometry_result.Event_Series.Any_event.data.Volume.Measured_predicted_ratio.value"/>
+         <short value="Measured/predicted ratio"/>
+         <definition value="The ratio of the measured to predicted test results."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Spirometry_result.Event_Series.Any_event.data.Volume.Measured_predicted_ratio.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Ratio"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Spirometry_result.Event_Series.Any_event.data.items_Volume.name">
+         <path value="Spirometry_result.Event_Series.Any_event.data.items_Volume.name"/>
+         <short value="Volume"/>
+         <definition value="Test result represented as a measured volume or calculated capacity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Spirometry_result.Event_Series.Any_event.data.items_Volume.name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Spirometry_result.Event_Series.Any_event.data.Flow_rate">
+         <path value="Spirometry_result.Event_Series.Any_event.data.Flow_rate"/>
+         <short value="Flow rate"/>
+         <definition value="Test result represented as a measured flow rate."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Spirometry_result.Event_Series.Any_event.data.Flow_rate"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Spirometry_result.Event_Series.Any_event.data.Flow_rate.Result">
+         <path value="Spirometry_result.Event_Series.Any_event.data.Flow_rate.Result"/>
+         <short value="Result"/>
+         <definition value="Measured flow rate."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Spirometry_result.Event_Series.Any_event.data.Flow_rate.Result"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Spirometry_result.Event_Series.Any_event.data.Flow_rate.Result.value">
+         <path value="Spirometry_result.Event_Series.Any_event.data.Flow_rate.Result.value"/>
+         <short value="Result"/>
+         <definition value="Measured flow rate."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Spirometry_result.Event_Series.Any_event.data.Flow_rate.Result.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Spirometry_result.Event_Series.Any_event.data.Flow_rate.Predicted_result">
+         <path value="Spirometry_result.Event_Series.Any_event.data.Flow_rate.Predicted_result"/>
+         <short value="Predicted result"/>
+         <definition value="Predicted flow rate."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Spirometry_result.Event_Series.Any_event.data.Flow_rate.Predicted_result"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Spirometry_result.Event_Series.Any_event.data.Flow_rate.Predicted_result.value">
+         <path value="Spirometry_result.Event_Series.Any_event.data.Flow_rate.Predicted_result.value"/>
+         <short value="Predicted result"/>
+         <definition value="Predicted flow rate."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Spirometry_result.Event_Series.Any_event.data.Flow_rate.Predicted_result.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Spirometry_result.Event_Series.Any_event.data.Flow_rate.Measured_predicted_ratio">
+         <path value="Spirometry_result.Event_Series.Any_event.data.Flow_rate.Measured_predicted_ratio"/>
+         <short value="Measured/predicted ratio"/>
+         <definition value="The ratio of measured to predicted test results."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Spirometry_result.Event_Series.Any_event.data.Flow_rate.Measured_predicted_ratio"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Spirometry_result.Event_Series.Any_event.data.Flow_rate.Measured_predicted_ratio.value">
+         <path value="Spirometry_result.Event_Series.Any_event.data.Flow_rate.Measured_predicted_ratio.value"/>
+         <short value="Measured/predicted ratio"/>
+         <definition value="The ratio of measured to predicted test results."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Spirometry_result.Event_Series.Any_event.data.Flow_rate.Measured_predicted_ratio.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Ratio"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Spirometry_result.Event_Series.Any_event.data.items_Flow_rate.name">
+         <path value="Spirometry_result.Event_Series.Any_event.data.items_Flow_rate.name"/>
+         <short value="Flow rate"/>
+         <definition value="Test result represented as a measured flow rate."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Spirometry_result.Event_Series.Any_event.data.items_Flow_rate.name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Spirometry_result.Event_Series.Any_event.data.Pressure">
+         <path value="Spirometry_result.Event_Series.Any_event.data.Pressure"/>
+         <short value="Pressure"/>
+         <definition value="Test result represented as a measured pressure."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Spirometry_result.Event_Series.Any_event.data.Pressure"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Spirometry_result.Event_Series.Any_event.data.Pressure.Result">
+         <path value="Spirometry_result.Event_Series.Any_event.data.Pressure.Result"/>
+         <short value="Result"/>
+         <definition value="Measured pressure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Spirometry_result.Event_Series.Any_event.data.Pressure.Result"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Spirometry_result.Event_Series.Any_event.data.Pressure.Result.value">
+         <path value="Spirometry_result.Event_Series.Any_event.data.Pressure.Result.value"/>
+         <short value="Result"/>
+         <definition value="Measured pressure."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Spirometry_result.Event_Series.Any_event.data.Pressure.Result.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Spirometry_result.Event_Series.Any_event.data.Pressure.Predicted_result">
+         <path value="Spirometry_result.Event_Series.Any_event.data.Pressure.Predicted_result"/>
+         <short value="Predicted result"/>
+         <definition value="Predicted pressure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Spirometry_result.Event_Series.Any_event.data.Pressure.Predicted_result"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Spirometry_result.Event_Series.Any_event.data.Pressure.Predicted_result.value">
+         <path value="Spirometry_result.Event_Series.Any_event.data.Pressure.Predicted_result.value"/>
+         <short value="Predicted result"/>
+         <definition value="Predicted pressure."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Spirometry_result.Event_Series.Any_event.data.Pressure.Predicted_result.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Spirometry_result.Event_Series.Any_event.data.Pressure.Measured_predicted_ratio">
+         <path value="Spirometry_result.Event_Series.Any_event.data.Pressure.Measured_predicted_ratio"/>
+         <short value="Measured/predicted ratio"/>
+         <definition value="The ratio of measured to predicted test results."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Spirometry_result.Event_Series.Any_event.data.Pressure.Measured_predicted_ratio"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Spirometry_result.Event_Series.Any_event.data.Pressure.Measured_predicted_ratio.value">
+         <path value="Spirometry_result.Event_Series.Any_event.data.Pressure.Measured_predicted_ratio.value"/>
+         <short value="Measured/predicted ratio"/>
+         <definition value="The ratio of measured to predicted test results."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Spirometry_result.Event_Series.Any_event.data.Pressure.Measured_predicted_ratio.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Ratio"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Spirometry_result.Event_Series.Any_event.data.items_Pressure.name">
+         <path value="Spirometry_result.Event_Series.Any_event.data.items_Pressure.name"/>
+         <short value="Pressure"/>
+         <definition value="Test result represented as a measured pressure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Spirometry_result.Event_Series.Any_event.data.items_Pressure.name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Spirometry_result.Event_Series.Any_event.data.Ratio">
+         <path value="Spirometry_result.Event_Series.Any_event.data.Ratio"/>
+         <short value="Ratio"/>
+         <definition value="A calculated test result expressed as a ratio."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Spirometry_result.Event_Series.Any_event.data.Ratio"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Spirometry_result.Event_Series.Any_event.data.Ratio.Result">
+         <path value="Spirometry_result.Event_Series.Any_event.data.Ratio.Result"/>
+         <short value="Result"/>
+         <definition value="Calculated ratio."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Spirometry_result.Event_Series.Any_event.data.Ratio.Result"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Spirometry_result.Event_Series.Any_event.data.Ratio.Result.value">
+         <path value="Spirometry_result.Event_Series.Any_event.data.Ratio.Result.value"/>
+         <short value="Result"/>
+         <definition value="Calculated ratio."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Spirometry_result.Event_Series.Any_event.data.Ratio.Result.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Ratio"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Spirometry_result.Event_Series.Any_event.data.Ratio.Predicted_result">
+         <path value="Spirometry_result.Event_Series.Any_event.data.Ratio.Predicted_result"/>
+         <short value="Predicted result"/>
+         <definition value="Predicted ratio."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Spirometry_result.Event_Series.Any_event.data.Ratio.Predicted_result"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Spirometry_result.Event_Series.Any_event.data.Ratio.Predicted_result.value">
+         <path value="Spirometry_result.Event_Series.Any_event.data.Ratio.Predicted_result.value"/>
+         <short value="Predicted result"/>
+         <definition value="Predicted ratio."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Spirometry_result.Event_Series.Any_event.data.Ratio.Predicted_result.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Ratio"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Spirometry_result.Event_Series.Any_event.data.items_Ratio.name">
+         <path value="Spirometry_result.Event_Series.Any_event.data.items_Ratio.name"/>
+         <short value="Ratio"/>
+         <definition value="A calculated test result expressed as a ratio."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Spirometry_result.Event_Series.Any_event.data.items_Ratio.name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Spirometry_result.Event_Series.Any_event.data.Forced_expiratory_time_(FET)">
+         <path value="Spirometry_result.Event_Series.Any_event.data.Forced_expiratory_time_(FET)"/>
+         <short value="Forced expiratory time (FET)"/>
+         <definition value="The time taken to complete a forced expiration."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Spirometry_result.Event_Series.Any_event.data.Forced_expiratory_time_(FET)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Spirometry_result.Event_Series.Any_event.data.Forced_expiratory_time_(FET).value">
+         <path value="Spirometry_result.Event_Series.Any_event.data.Forced_expiratory_time_(FET).value"/>
+         <short value="Forced expiratory time (FET)"/>
+         <definition value="The time taken to complete a forced expiration."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Spirometry_result.Event_Series.Any_event.data.Forced_expiratory_time_(FET).value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Spirometry_result.Event_Series.Any_event.data.Multimedia_representation">
+         <path value="Spirometry_result.Event_Series.Any_event.data.Multimedia_representation"/>
+         <short value="Multimedia representation"/>
+         <definition value="Digital representation of the test results."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Spirometry_result.Event_Series.Any_event.data.Multimedia_representation"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Spirometry_result.Event_Series.Any_event.data.Clinical_interpretation">
+         <path value="Spirometry_result.Event_Series.Any_event.data.Clinical_interpretation"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Overall clinical interpretation about all of the measurements and calculated ratios."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Spirometry_result.Event_Series.Any_event.data.Clinical_interpretation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Spirometry_result.Event_Series.Any_event.data.Clinical_interpretation.value">
+         <path value="Spirometry_result.Event_Series.Any_event.data.Clinical_interpretation.value"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Overall clinical interpretation about all of the measurements and calculated ratios."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Spirometry_result.Event_Series.Any_event.data.Clinical_interpretation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Spirometry_result.Event_Series.Any_event.data.Comment">
+         <path value="Spirometry_result.Event_Series.Any_event.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the test results and intepretation not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Spirometry_result.Event_Series.Any_event.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Spirometry_result.Event_Series.Any_event.data.Comment.value">
+         <path value="Spirometry_result.Event_Series.Any_event.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the test results and intepretation not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Spirometry_result.Event_Series.Any_event.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Spirometry_result.Event_Series.Any_event.state">
+         <path value="Spirometry_result.Event_Series.Any_event.state"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Spirometry_result.Event_Series.Any_event.state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Spirometry_result.Event_Series.Any_event.state.Position">
+         <path value="Spirometry_result.Event_Series.Any_event.state.Position"/>
+         <short value="Position"/>
+         <definition value="The body position of the individual at the time of measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Spirometry_result.Event_Series.Any_event.state.Position"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Spirometry_result.Event_Series.Any_event.state.Position.value">
+         <path value="Spirometry_result.Event_Series.Any_event.state.Position.value"/>
+         <short value="Position"/>
+         <definition value="The body position of the individual at the time of measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Spirometry_result.Event_Series.Any_event.state.Position.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Spirometry_result.Event_Series.Any_event.state.Confounding_factors">
+         <path value="Spirometry_result.Event_Series.Any_event.state.Confounding_factors"/>
+         <short value="Confounding factors"/>
+         <definition value="Record any issues or factors that may impact on the spirometry test."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Spirometry_result.Event_Series.Any_event.state.Confounding_factors"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Spirometry_result.Event_Series.Any_event.state.Confounding_factors.value">
+         <path value="Spirometry_result.Event_Series.Any_event.state.Confounding_factors.value"/>
+         <short value="Confounding factors"/>
+         <definition value="Record any issues or factors that may impact on the spirometry test."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Spirometry_result.Event_Series.Any_event.state.Confounding_factors.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Spirometry_result.Event_Series.Any_event.state.Level_of_exertion">
+         <path value="Spirometry_result.Event_Series.Any_event.state.Level_of_exertion"/>
+         <short value="Level of exertion"/>
+         <definition value="Details about physical activity undertaken at the time of spirometry recording."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Spirometry_result.Event_Series.Any_event.state.Level_of_exertion"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Spirometry_result.Event_Series.Any_event.state.Environmental_conditions">
+         <path value="Spirometry_result.Event_Series.Any_event.state.Environmental_conditions"/>
+         <short value="Environmental conditions"/>
+         <definition value="Details about environmental conditions undertaken at the time of spirometry recording."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Spirometry_result.Event_Series.Any_event.state.Environmental_conditions"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Exclusion-specific-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-exclusion-specific-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-EVALUATION.exclusion_specific.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Exclusion-specific"/>
+   <title value="Exclusion - specific"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="A statement of exclusion of a specific Problem/diagnosis, Family history, Medication, Procedure, Adverse reaction or other clinical item that is either not currently present, or have not been present in the past."/>
+   <purpose value="To record a statement of exclusion about a specific Problem/diagnosis, Family history, Medication, Procedure, Adverse reaction or other clinical item that is either not currently present, or have not been present in the past."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Exclusion___specific">
+         <path value="Exclusion___specific"/>
+         <short value="Exclusion - specific"/>
+         <definition value="A statement of exclusion of a specific Problem/diagnosis, Family history, Medication, Procedure, Adverse reaction or other clinical item that is either not currently present, or have not been present in the past."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Exclusion___specific"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Exclusion___specific.protocol">
+         <path value="Exclusion___specific.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exclusion___specific.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Exclusion___specific.protocol.Extension">
+         <path value="Exclusion___specific.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Exclusion___specific.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Exclusion___specific.data">
+         <path value="Exclusion___specific.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exclusion___specific.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Exclusion___specific.data.Exclusion_statement">
+         <path value="Exclusion___specific.data.Exclusion_statement"/>
+         <short value="Exclusion statement"/>
+         <definition value="A qualifying statement about the exclusion of a Problem/diagnosis, Family history, Medication, Procedure, Adverse reaction or other clinical item."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exclusion___specific.data.Exclusion_statement"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Exclusion___specific.data.Exclusion_statement.value">
+         <path value="Exclusion___specific.data.Exclusion_statement.value"/>
+         <short value="Exclusion statement"/>
+         <definition value="A qualifying statement about the exclusion of a Problem/diagnosis, Family history, Medication, Procedure, Adverse reaction or other clinical item."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exclusion___specific.data.Exclusion_statement.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Exclusion___specific.data.Excluded_concept">
+         <path value="Exclusion___specific.data.Excluded_concept"/>
+         <short value="Excluded concept"/>
+         <definition value="Identification of the specific concept which has been excluded."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Exclusion___specific.data.Excluded_concept"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Exclusion___specific.data.Excluded_concept.name">
+         <path value="Exclusion___specific.data.Excluded_concept.name"/>
+         <short value="Excluded concept"/>
+         <definition value="Identification of the specific concept which has been excluded."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exclusion___specific.data.Excluded_concept.name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Exclusion___specific.data.Excluded_concept.value">
+         <path value="Exclusion___specific.data.Excluded_concept.value"/>
+         <short value="Excluded concept"/>
+         <definition value="Identification of the specific concept which has been excluded."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exclusion___specific.data.Excluded_concept.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Exclusion___specific.data.Comment">
+         <path value="Exclusion___specific.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the Specific Exclusion not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exclusion___specific.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Exclusion___specific.data.Comment.value">
+         <path value="Exclusion___specific.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the Specific Exclusion not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exclusion___specific.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

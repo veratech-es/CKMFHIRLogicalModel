@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Gestationalage-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-gestationalage-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.gestational_age.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Gestationalage"/>
+   <title value="Gestational age"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="The estimate or known period or duration of the pregnancy or gestational age of the foetus or new born."/>
+   <purpose value="To record the estimated or known gestation age of a current pregnancy or new born at a point in time."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Gestational_age">
+         <path value="Gestational_age"/>
+         <short value="Gestational age"/>
+         <definition value="The estimate or known period or duration of the pregnancy or gestational age of the foetus or new born."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Gestational_age"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Gestational_age.protocol">
+         <path value="Gestational_age.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Gestational_age.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Gestational_age.protocol.Calculation_based_on">
+         <path value="Gestational_age.protocol.Calculation_based_on"/>
+         <short value="Calculation based on"/>
+         <definition value="The base for the calculation of the durataion of pregnancy."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Gestational_age.protocol.Calculation_based_on"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Gestational_age.protocol.Calculation_based_on.value">
+         <path value="Gestational_age.protocol.Calculation_based_on.value"/>
+         <short value="Calculation based on"/>
+         <definition value="The base for the calculation of the durataion of pregnancy."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Gestational_age.protocol.Calculation_based_on.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Gestational_age.Event_Series">
+         <path value="Gestational_age.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Gestational_age.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Gestational_age.Event_Series.Date_of_measurement">
+         <path value="Gestational_age.Event_Series.Date_of_measurement"/>
+         <short value="Date of measurement"/>
+         <definition value="The date and time of the measurement of gestation."/>
+         <min value="1"/>
+         <max value="*"/>
+         <base>
+            <path value="Gestational_age.Event_Series.Date_of_measurement"/>
+            <min value="1"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Gestational_age.Event_Series.Date_of_measurement.data">
+         <path value="Gestational_age.Event_Series.Date_of_measurement.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Gestational_age.Event_Series.Date_of_measurement.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Gestational_age.Event_Series.Date_of_measurement.data.Gestational_age">
+         <path value="Gestational_age.Event_Series.Date_of_measurement.data.Gestational_age"/>
+         <short value="Gestational age"/>
+         <definition value="Estimate of time since conception + 2 weeks."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Gestational_age.Event_Series.Date_of_measurement.data.Gestational_age"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Gestational_age.Event_Series.Date_of_measurement.data.Gestational_age.value">
+         <path value="Gestational_age.Event_Series.Date_of_measurement.data.Gestational_age.value"/>
+         <short value="Gestational age"/>
+         <definition value="Estimate of time since conception + 2 weeks."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Gestational_age.Event_Series.Date_of_measurement.data.Gestational_age.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Gestational_age.Event_Series.Date_of_measurement.data.Conceptional_age">
+         <path value="Gestational_age.Event_Series.Date_of_measurement.data.Conceptional_age"/>
+         <short value="Conceptional age"/>
+         <definition value="The time since conception."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Gestational_age.Event_Series.Date_of_measurement.data.Conceptional_age"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Gestational_age.Event_Series.Date_of_measurement.data.Conceptional_age.value">
+         <path value="Gestational_age.Event_Series.Date_of_measurement.data.Conceptional_age.value"/>
+         <short value="Conceptional age"/>
+         <definition value="The time since conception."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Gestational_age.Event_Series.Date_of_measurement.data.Conceptional_age.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Gestational_age.Event_Series.Date_of_measurement.data.Trimester">
+         <path value="Gestational_age.Event_Series.Date_of_measurement.data.Trimester"/>
+         <short value="Trimester"/>
+         <definition value="Duration of pregnancy grouped into 12-14 week intervals."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Gestational_age.Event_Series.Date_of_measurement.data.Trimester"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Gestational_age.Event_Series.Date_of_measurement.data.Trimester.value">
+         <path value="Gestational_age.Event_Series.Date_of_measurement.data.Trimester.value"/>
+         <short value="Trimester"/>
+         <definition value="Duration of pregnancy grouped into 12-14 week intervals."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Gestational_age.Event_Series.Date_of_measurement.data.Trimester.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Gestational_age.Event_Series.Date_of_measurement.data.Comment">
+         <path value="Gestational_age.Event_Series.Date_of_measurement.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Clinical comment on gestational or conceptional age."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Gestational_age.Event_Series.Date_of_measurement.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Gestational_age.Event_Series.Date_of_measurement.data.Comment.value">
+         <path value="Gestational_age.Event_Series.Date_of_measurement.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Clinical comment on gestational or conceptional age."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Gestational_age.Event_Series.Date_of_measurement.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

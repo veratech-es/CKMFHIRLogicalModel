@@ -1,0 +1,1378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Procedure-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-procedure-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-ACTION.procedure.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Procedure"/>
+   <title value="Procedure"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="A clinical activity carried out for screening, investigative, diagnostic, curative, therapeutic, evaluative or palliative purposes."/>
+   <purpose value="To record information about the activities required to carry out a procedure, including the planning, scheduling, performance, suspension, cancellation, documentation and completion."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Procedure">
+         <path value="Procedure"/>
+         <short value="Procedure"/>
+         <definition value="A clinical activity carried out for screening, investigative, diagnostic, curative, therapeutic, evaluative or palliative purposes."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.protocol">
+         <path value="Procedure.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.protocol.Requestor_order_identifier">
+         <path value="Procedure.protocol.Requestor_order_identifier"/>
+         <short value="Requestor order identifier"/>
+         <definition value="The local ID assigned to the order by the healthcare provider or organisation requesting the service."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.protocol.Requestor_order_identifier"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Procedure.protocol.Requestor_order_identifier.value_DV_TEXT">
+         <path value="Procedure.protocol.Requestor_order_identifier.value_DV_TEXT"/>
+         <short value="Requestor order identifier"/>
+         <definition value="The local ID assigned to the order by the healthcare provider or organisation requesting the service."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.protocol.Requestor_order_identifier.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.protocol.Requestor_order_identifier.value_DV_IDENTIFIER">
+         <path value="Procedure.protocol.Requestor_order_identifier.value_DV_IDENTIFIER"/>
+         <short value="Requestor order identifier"/>
+         <definition value="The local ID assigned to the order by the healthcare provider or organisation requesting the service."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.protocol.Requestor_order_identifier.value_DV_IDENTIFIER"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.protocol.Requestor">
+         <path value="Procedure.protocol.Requestor"/>
+         <short value="Requestor"/>
+         <definition value="Details about the healthcare provider or organisation requesting the service."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.protocol.Requestor"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.protocol.Receiver_order_identifier">
+         <path value="Procedure.protocol.Receiver_order_identifier"/>
+         <short value="Receiver order identifier"/>
+         <definition value="The ID assigned to the order by the healthcare provider or organisation receiving the request for service. This is also referred to as Filler Order Identifier."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.protocol.Receiver_order_identifier"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Procedure.protocol.Receiver_order_identifier.value_DV_TEXT">
+         <path value="Procedure.protocol.Receiver_order_identifier.value_DV_TEXT"/>
+         <short value="Receiver order identifier"/>
+         <definition value="The ID assigned to the order by the healthcare provider or organisation receiving the request for service. This is also referred to as Filler Order Identifier."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.protocol.Receiver_order_identifier.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.protocol.Receiver_order_identifier.value_DV_IDENTIFIER">
+         <path value="Procedure.protocol.Receiver_order_identifier.value_DV_IDENTIFIER"/>
+         <short value="Receiver order identifier"/>
+         <definition value="The ID assigned to the order by the healthcare provider or organisation receiving the request for service. This is also referred to as Filler Order Identifier."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.protocol.Receiver_order_identifier.value_DV_IDENTIFIER"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.protocol.Receiver">
+         <path value="Procedure.protocol.Receiver"/>
+         <short value="Receiver"/>
+         <definition value="Details about the healthcare provider or organisation receiving the request for service."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Procedure.protocol.Receiver"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.protocol.Extension">
+         <path value="Procedure.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Procedure.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.description">
+         <path value="Procedure.description"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.description.Procedure_name">
+         <path value="Procedure.description.Procedure_name"/>
+         <short value="Procedure name"/>
+         <definition value="Identification of the procedure by name."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.description.Procedure_name"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Procedure.description.Procedure_name.value">
+         <path value="Procedure.description.Procedure_name.value"/>
+         <short value="Procedure name"/>
+         <definition value="Identification of the procedure by name."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.description.Procedure_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.description.Description">
+         <path value="Procedure.description.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the procedure, as appropriate for the pathway step."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.description.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Procedure.description.Description.value">
+         <path value="Procedure.description.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the procedure, as appropriate for the pathway step."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.description.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.description.Indication">
+         <path value="Procedure.description.Indication"/>
+         <short value="Indication"/>
+         <definition value="The clinical or process-related reason for the procedure."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Procedure.description.Indication"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Procedure.description.Indication.value">
+         <path value="Procedure.description.Indication.value"/>
+         <short value="Indication"/>
+         <definition value="The clinical or process-related reason for the procedure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.description.Indication.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.description.Method">
+         <path value="Procedure.description.Method"/>
+         <short value="Method"/>
+         <definition value="Identification of specific method or technique for the procedure."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Procedure.description.Method"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Procedure.description.Method.value">
+         <path value="Procedure.description.Method.value"/>
+         <short value="Method"/>
+         <definition value="Identification of specific method or technique for the procedure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.description.Method.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.description.Urgency">
+         <path value="Procedure.description.Urgency"/>
+         <short value="Urgency"/>
+         <definition value="Urgency of the procedure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.description.Urgency"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Procedure.description.Urgency.value">
+         <path value="Procedure.description.Urgency.value"/>
+         <short value="Urgency"/>
+         <definition value="Urgency of the procedure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.description.Urgency.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.description.Body_site">
+         <path value="Procedure.description.Body_site"/>
+         <short value="Body site"/>
+         <definition value="Identification of the body site for the procedure."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Procedure.description.Body_site"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Procedure.description.Body_site.value">
+         <path value="Procedure.description.Body_site.value"/>
+         <short value="Body site"/>
+         <definition value="Identification of the body site for the procedure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.description.Body_site.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.description.Procedure_detail">
+         <path value="Procedure.description.Procedure_detail"/>
+         <short value="Procedure detail"/>
+         <definition value="Structured information about the procedure."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Procedure.description.Procedure_detail"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.description.Outcome">
+         <path value="Procedure.description.Outcome"/>
+         <short value="Outcome"/>
+         <definition value="Outcome of procedure performed."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Procedure.description.Outcome"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Procedure.description.Outcome.value">
+         <path value="Procedure.description.Outcome.value"/>
+         <short value="Outcome"/>
+         <definition value="Outcome of procedure performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.description.Outcome.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.description.Procedural_difficulty">
+         <path value="Procedure.description.Procedural_difficulty"/>
+         <short value="Procedural difficulty"/>
+         <definition value="Difficulties or issues encountered during performance of the procedure."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Procedure.description.Procedural_difficulty"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Procedure.description.Procedural_difficulty.value">
+         <path value="Procedure.description.Procedural_difficulty.value"/>
+         <short value="Procedural difficulty"/>
+         <definition value="Difficulties or issues encountered during performance of the procedure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.description.Procedural_difficulty.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.description.Complication">
+         <path value="Procedure.description.Complication"/>
+         <short value="Complication"/>
+         <definition value="Details about any complication arising from the procedure."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Procedure.description.Complication"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Procedure.description.Complication.value">
+         <path value="Procedure.description.Complication.value"/>
+         <short value="Complication"/>
+         <definition value="Details about any complication arising from the procedure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.description.Complication.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.description.Scheduled_date_time">
+         <path value="Procedure.description.Scheduled_date_time"/>
+         <short value="Scheduled date/time"/>
+         <definition value="The date and/or time on which the procedure is intended to be performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.description.Scheduled_date_time"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Procedure.description.Scheduled_date_time.value">
+         <path value="Procedure.description.Scheduled_date_time.value"/>
+         <short value="Scheduled date/time"/>
+         <definition value="The date and/or time on which the procedure is intended to be performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.description.Scheduled_date_time.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.description.Final_end_date_time">
+         <path value="Procedure.description.Final_end_date_time"/>
+         <short value="Final end date/time"/>
+         <definition value="The date and/or time when the entire procedure, or the last component of a multicomponent procedure, was finished."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.description.Final_end_date_time"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Procedure.description.Final_end_date_time.value">
+         <path value="Procedure.description.Final_end_date_time.value"/>
+         <short value="Final end date/time"/>
+         <definition value="The date and/or time when the entire procedure, or the last component of a multicomponent procedure, was finished."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.description.Final_end_date_time.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.description.Total_duration">
+         <path value="Procedure.description.Total_duration"/>
+         <short value="Total duration"/>
+         <definition value="The total amount of time taken to complete the procedure, which may include time spent during the active phase of the procedure plus time during which the procedure was suspended."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.description.Total_duration"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Procedure.description.Total_duration.value">
+         <path value="Procedure.description.Total_duration.value"/>
+         <short value="Total duration"/>
+         <definition value="The total amount of time taken to complete the procedure, which may include time spent during the active phase of the procedure plus time during which the procedure was suspended."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.description.Total_duration.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.description.Multimedia">
+         <path value="Procedure.description.Multimedia"/>
+         <short value="Multimedia"/>
+         <definition value="Mulitimedia representation of a performed procedure."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Procedure.description.Multimedia"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.description.Procedure_type">
+         <path value="Procedure.description.Procedure_type"/>
+         <short value="Procedure type"/>
+         <definition value="The type of procedure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.description.Procedure_type"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Procedure.description.Procedure_type.value">
+         <path value="Procedure.description.Procedure_type.value"/>
+         <short value="Procedure type"/>
+         <definition value="The type of procedure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.description.Procedure_type.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.description.Reason">
+         <path value="Procedure.description.Reason"/>
+         <short value="Reason"/>
+         <definition value="Reason that the activity or care pathway step for the identified procedure was carried out."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Procedure.description.Reason"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Procedure.description.Reason.value">
+         <path value="Procedure.description.Reason.value"/>
+         <short value="Reason"/>
+         <definition value="Reason that the activity or care pathway step for the identified procedure was carried out."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.description.Reason.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.description.Comment">
+         <path value="Procedure.description.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the activity or care pathway step not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.description.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Procedure.description.Comment.value">
+         <path value="Procedure.description.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the activity or care pathway step not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.description.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.Procedure_planned">
+         <path value="Procedure.Procedure_planned"/>
+         <short value="Procedure planned"/>
+         <definition value="The procedure to be undertaken is planned."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.Procedure_planned"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.ism_transition_Procedure_planned.current_state">
+         <path value="Procedure.ism_transition_Procedure_planned.current_state"/>
+         <short value="Procedure planned"/>
+         <definition value="The procedure to be undertaken is planned."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.ism_transition_Procedure_planned.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.ism_transition_Procedure_planned.careflow_step">
+         <path value="Procedure.ism_transition_Procedure_planned.careflow_step"/>
+         <short value="Procedure planned"/>
+         <definition value="The procedure to be undertaken is planned."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.ism_transition_Procedure_planned.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.X___Procedure_planned">
+         <path value="Procedure.X___Procedure_planned"/>
+         <short value="X - Procedure planned"/>
+         <definition value="This pathway step has been deprecated as it was incorrectly associated with 'initial' status - use the new 'Procedure planned' (at0004) pathway step  which is correctly associated with 'planned' status."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.X___Procedure_planned"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.ism_transition_X___Procedure_planned.current_state">
+         <path value="Procedure.ism_transition_X___Procedure_planned.current_state"/>
+         <short value="X - Procedure planned"/>
+         <definition value="This pathway step has been deprecated as it was incorrectly associated with 'initial' status - use the new 'Procedure planned' (at0004) pathway step  which is correctly associated with 'planned' status."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.ism_transition_X___Procedure_planned.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.ism_transition_X___Procedure_planned.careflow_step">
+         <path value="Procedure.ism_transition_X___Procedure_planned.careflow_step"/>
+         <short value="X - Procedure planned"/>
+         <definition value="This pathway step has been deprecated as it was incorrectly associated with 'initial' status - use the new 'Procedure planned' (at0004) pathway step  which is correctly associated with 'planned' status."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.ism_transition_X___Procedure_planned.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.Procedure_request_sent">
+         <path value="Procedure.Procedure_request_sent"/>
+         <short value="Procedure request sent"/>
+         <definition value="Request for procedure sent."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.Procedure_request_sent"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.ism_transition_Procedure_request_sent.current_state">
+         <path value="Procedure.ism_transition_Procedure_request_sent.current_state"/>
+         <short value="Procedure request sent"/>
+         <definition value="Request for procedure sent."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.ism_transition_Procedure_request_sent.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.ism_transition_Procedure_request_sent.careflow_step">
+         <path value="Procedure.ism_transition_Procedure_request_sent.careflow_step"/>
+         <short value="Procedure request sent"/>
+         <definition value="Request for procedure sent."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.ism_transition_Procedure_request_sent.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.X___Procedure_request_sent">
+         <path value="Procedure.X___Procedure_request_sent"/>
+         <short value="X - Procedure request sent"/>
+         <definition value="This pathway step has been deprecated as it was incorrectly associated with 'initial' status - use the new 'Procedure request sent' (at0007) pathway step  which is correctly associated with 'planned' status."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.X___Procedure_request_sent"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.ism_transition_X___Procedure_request_sent.current_state">
+         <path value="Procedure.ism_transition_X___Procedure_request_sent.current_state"/>
+         <short value="X - Procedure request sent"/>
+         <definition value="This pathway step has been deprecated as it was incorrectly associated with 'initial' status - use the new 'Procedure request sent' (at0007) pathway step  which is correctly associated with 'planned' status."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.ism_transition_X___Procedure_request_sent.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.ism_transition_X___Procedure_request_sent.careflow_step">
+         <path value="Procedure.ism_transition_X___Procedure_request_sent.careflow_step"/>
+         <short value="X - Procedure request sent"/>
+         <definition value="This pathway step has been deprecated as it was incorrectly associated with 'initial' status - use the new 'Procedure request sent' (at0007) pathway step  which is correctly associated with 'planned' status."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.ism_transition_X___Procedure_request_sent.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.Procedure_postponed">
+         <path value="Procedure.Procedure_postponed"/>
+         <short value="Procedure postponed"/>
+         <definition value="The procedure has been postponed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.Procedure_postponed"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.ism_transition_Procedure_postponed.current_state">
+         <path value="Procedure.ism_transition_Procedure_postponed.current_state"/>
+         <short value="Procedure postponed"/>
+         <definition value="The procedure has been postponed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.ism_transition_Procedure_postponed.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.ism_transition_Procedure_postponed.careflow_step">
+         <path value="Procedure.ism_transition_Procedure_postponed.careflow_step"/>
+         <short value="Procedure postponed"/>
+         <definition value="The procedure has been postponed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.ism_transition_Procedure_postponed.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.Procedure_cancelled">
+         <path value="Procedure.Procedure_cancelled"/>
+         <short value="Procedure cancelled"/>
+         <definition value="The planned procedure has been cancelled prior to commencement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.Procedure_cancelled"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.ism_transition_Procedure_cancelled.current_state">
+         <path value="Procedure.ism_transition_Procedure_cancelled.current_state"/>
+         <short value="Procedure cancelled"/>
+         <definition value="The planned procedure has been cancelled prior to commencement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.ism_transition_Procedure_cancelled.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.ism_transition_Procedure_cancelled.careflow_step">
+         <path value="Procedure.ism_transition_Procedure_cancelled.careflow_step"/>
+         <short value="Procedure cancelled"/>
+         <definition value="The planned procedure has been cancelled prior to commencement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.ism_transition_Procedure_cancelled.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.Procedure_scheduled">
+         <path value="Procedure.Procedure_scheduled"/>
+         <short value="Procedure scheduled"/>
+         <definition value="The procedure has been scheduled."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.Procedure_scheduled"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.ism_transition_Procedure_scheduled.current_state">
+         <path value="Procedure.ism_transition_Procedure_scheduled.current_state"/>
+         <short value="Procedure scheduled"/>
+         <definition value="The procedure has been scheduled."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.ism_transition_Procedure_scheduled.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.ism_transition_Procedure_scheduled.careflow_step">
+         <path value="Procedure.ism_transition_Procedure_scheduled.careflow_step"/>
+         <short value="Procedure scheduled"/>
+         <definition value="The procedure has been scheduled."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.ism_transition_Procedure_scheduled.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.Procedure_commenced">
+         <path value="Procedure.Procedure_commenced"/>
+         <short value="Procedure commenced"/>
+         <definition value="The procedure, or subprocedure in a multicomponent procedure, has been commenced."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.Procedure_commenced"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.ism_transition_Procedure_commenced.current_state">
+         <path value="Procedure.ism_transition_Procedure_commenced.current_state"/>
+         <short value="Procedure commenced"/>
+         <definition value="The procedure, or subprocedure in a multicomponent procedure, has been commenced."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.ism_transition_Procedure_commenced.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.ism_transition_Procedure_commenced.careflow_step">
+         <path value="Procedure.ism_transition_Procedure_commenced.careflow_step"/>
+         <short value="Procedure commenced"/>
+         <definition value="The procedure, or subprocedure in a multicomponent procedure, has been commenced."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.ism_transition_Procedure_commenced.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.Procedure_performed">
+         <path value="Procedure.Procedure_performed"/>
+         <short value="Procedure performed"/>
+         <definition value="The procedure, or subprocedure in a multicomponent procedure, has been performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.Procedure_performed"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.ism_transition_Procedure_performed.current_state">
+         <path value="Procedure.ism_transition_Procedure_performed.current_state"/>
+         <short value="Procedure performed"/>
+         <definition value="The procedure, or subprocedure in a multicomponent procedure, has been performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.ism_transition_Procedure_performed.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.ism_transition_Procedure_performed.careflow_step">
+         <path value="Procedure.ism_transition_Procedure_performed.careflow_step"/>
+         <short value="Procedure performed"/>
+         <definition value="The procedure, or subprocedure in a multicomponent procedure, has been performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.ism_transition_Procedure_performed.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.Procedure_suspended">
+         <path value="Procedure.Procedure_suspended"/>
+         <short value="Procedure suspended"/>
+         <definition value="The procedure has been suspended."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.Procedure_suspended"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.ism_transition_Procedure_suspended.current_state">
+         <path value="Procedure.ism_transition_Procedure_suspended.current_state"/>
+         <short value="Procedure suspended"/>
+         <definition value="The procedure has been suspended."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.ism_transition_Procedure_suspended.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.ism_transition_Procedure_suspended.careflow_step">
+         <path value="Procedure.ism_transition_Procedure_suspended.careflow_step"/>
+         <short value="Procedure suspended"/>
+         <definition value="The procedure has been suspended."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.ism_transition_Procedure_suspended.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.Procedure_aborted">
+         <path value="Procedure.Procedure_aborted"/>
+         <short value="Procedure aborted"/>
+         <definition value="The procedure has been aborted."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.Procedure_aborted"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.ism_transition_Procedure_aborted.current_state">
+         <path value="Procedure.ism_transition_Procedure_aborted.current_state"/>
+         <short value="Procedure aborted"/>
+         <definition value="The procedure has been aborted."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.ism_transition_Procedure_aborted.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.ism_transition_Procedure_aborted.careflow_step">
+         <path value="Procedure.ism_transition_Procedure_aborted.careflow_step"/>
+         <short value="Procedure aborted"/>
+         <definition value="The procedure has been aborted."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.ism_transition_Procedure_aborted.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.Procedure_completed">
+         <path value="Procedure.Procedure_completed"/>
+         <short value="Procedure completed"/>
+         <definition value="The procedure has been performed and all associated clinical activities completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.Procedure_completed"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.ism_transition_Procedure_completed.current_state">
+         <path value="Procedure.ism_transition_Procedure_completed.current_state"/>
+         <short value="Procedure completed"/>
+         <definition value="The procedure has been performed and all associated clinical activities completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.ism_transition_Procedure_completed.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure.ism_transition_Procedure_completed.careflow_step">
+         <path value="Procedure.ism_transition_Procedure_completed.careflow_step"/>
+         <short value="Procedure completed"/>
+         <definition value="The procedure has been performed and all associated clinical activities completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure.ism_transition_Procedure_completed.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Healthcareconsumer-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-healthcareconsumer-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-DEMOGRAPHIC-ROLE.healthcare_consumer.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Healthcareconsumer"/>
+   <title value="Healthcare consumer"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="A person performing the role of a healthcare consumer"/>
+   <purpose value="Representation of a person's data when he/she acts as a healthcare consumer"/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Healthcare_consumer">
+         <path value="Healthcare_consumer"/>
+         <short value="Healthcare consumer"/>
+         <definition value="A person performing the role of a healthcare consumer"/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Healthcare_consumer"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Healthcare_consumer.Consumer_Third_party_payer">
+         <path value="Healthcare_consumer.Consumer_Third_party_payer"/>
+         <short value="Consumer-Third party payer"/>
+         <definition value="Relationship between a healthcare consumer and a third-party payer"/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Healthcare_consumer.Consumer_Third_party_payer"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Healthcare_consumer.Consumer_Third_party_payer.Healthcare_consumer_identifiers">
+         <path value="Healthcare_consumer.Consumer_Third_party_payer.Healthcare_consumer_identifiers"/>
+         <short value="Healthcare consumer identifiers"/>
+         <definition value="Identifiers of a healthcare consumer at the third-party payer"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Healthcare_consumer.Consumer_Third_party_payer.Healthcare_consumer_identifiers"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Healthcare_consumer.Consumer_Third_party_payer.Healthcare_consumer_identifiers.Healthcare_consumer_identifier">
+         <path value="Healthcare_consumer.Consumer_Third_party_payer.Healthcare_consumer_identifiers.Healthcare_consumer_identifier"/>
+         <short value="Healthcare consumer identifier"/>
+         <definition value="Identifier of a healthcare consumer at the third-party payer"/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Healthcare_consumer.Consumer_Third_party_payer.Healthcare_consumer_identifiers.Healthcare_consumer_identifier"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Healthcare_consumer.Patient">
+         <path value="Healthcare_consumer.Patient"/>
+         <short value="Patient"/>
+         <definition value="Patient: relationship between a healthcare consumer and a healthcare provider organisation/health professional"/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Healthcare_consumer.Patient"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Healthcare_consumer.Patient.Patient_identifiers">
+         <path value="Healthcare_consumer.Patient.Patient_identifiers"/>
+         <short value="Patient identifiers"/>
+         <definition value="Patient identifiers at the related healthcare provider"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Healthcare_consumer.Patient.Patient_identifiers"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Healthcare_consumer.Patient.Patient_identifiers.Patient_identifier">
+         <path value="Healthcare_consumer.Patient.Patient_identifiers.Patient_identifier"/>
+         <short value="Patient identifier"/>
+         <definition value="A patient identifier at the related healthcare provider"/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Healthcare_consumer.Patient.Patient_identifiers.Patient_identifier"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Healthcare_consumer.Consumer_name">
+         <path value="Healthcare_consumer.Consumer_name"/>
+         <short value="Consumer name"/>
+         <definition value="Healthcare consumer's name"/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Healthcare_consumer.Consumer_name"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

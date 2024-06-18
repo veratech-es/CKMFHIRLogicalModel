@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Qsofascore-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-qsofascore-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.qsofa_score.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Qsofascore"/>
+   <title value="qSOFA score"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Quick Sepsis-related Organ Failure Assessment (qSOFA) is a simplified version of the SOFA score, which is used outside intensive care units to quickly assess sepsis risk in adults."/>
+   <purpose value="To record qSOFA answers and score."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="qSOFA_score">
+         <path value="qSOFA_score"/>
+         <short value="qSOFA score"/>
+         <definition value="Quick Sepsis-related Organ Failure Assessment (qSOFA) is a simplified version of the SOFA score, which is used outside intensive care units to quickly assess sepsis risk in adults."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="qSOFA_score"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="qSOFA_score.ItemTree">
+         <path value="qSOFA_score.ItemTree"/>
+         <short value="ItemTree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="qSOFA_score.ItemTree"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="qSOFA_score.ItemTree.Extension">
+         <path value="qSOFA_score.ItemTree.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="qSOFA_score.ItemTree.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="qSOFA_score.Event_Series">
+         <path value="qSOFA_score.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="qSOFA_score.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="qSOFA_score.Event_Series.Any_point_in_time_event">
+         <path value="qSOFA_score.Event_Series.Any_point_in_time_event"/>
+         <short value="Any point in time event"/>
+         <definition value="Unspecified point in time event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="qSOFA_score.Event_Series.Any_point_in_time_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="qSOFA_score.Event_Series.Any_point_in_time_event.ItemTree">
+         <path value="qSOFA_score.Event_Series.Any_point_in_time_event.ItemTree"/>
+         <short value="ItemTree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="qSOFA_score.Event_Series.Any_point_in_time_event.ItemTree"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="qSOFA_score.Event_Series.Any_point_in_time_event.ItemTree.Respiratory_rate">
+         <path value="qSOFA_score.Event_Series.Any_point_in_time_event.ItemTree.Respiratory_rate"/>
+         <short value="Respiratory rate"/>
+         <definition value="If the respiration rate is ≥22/min, one point is recorded."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="qSOFA_score.Event_Series.Any_point_in_time_event.ItemTree.Respiratory_rate"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="qSOFA_score.Event_Series.Any_point_in_time_event.ItemTree.Respiratory_rate.value">
+         <path value="qSOFA_score.Event_Series.Any_point_in_time_event.ItemTree.Respiratory_rate.value"/>
+         <short value="Respiratory rate"/>
+         <definition value="If the respiration rate is ≥22/min, one point is recorded."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="qSOFA_score.Event_Series.Any_point_in_time_event.ItemTree.Respiratory_rate.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="qSOFA_score.Event_Series.Any_point_in_time_event.ItemTree.Blood_pressure">
+         <path value="qSOFA_score.Event_Series.Any_point_in_time_event.ItemTree.Blood_pressure"/>
+         <short value="Blood pressure"/>
+         <definition value="If the systolic blood pressure is ≤100 mmHg, one point is recorded."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="qSOFA_score.Event_Series.Any_point_in_time_event.ItemTree.Blood_pressure"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="qSOFA_score.Event_Series.Any_point_in_time_event.ItemTree.Blood_pressure.value">
+         <path value="qSOFA_score.Event_Series.Any_point_in_time_event.ItemTree.Blood_pressure.value"/>
+         <short value="Blood pressure"/>
+         <definition value="If the systolic blood pressure is ≤100 mmHg, one point is recorded."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="qSOFA_score.Event_Series.Any_point_in_time_event.ItemTree.Blood_pressure.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="qSOFA_score.Event_Series.Any_point_in_time_event.ItemTree.Mental_status">
+         <path value="qSOFA_score.Event_Series.Any_point_in_time_event.ItemTree.Mental_status"/>
+         <short value="Mental status"/>
+         <definition value="If the individual has an altered mental status, one point is recorded."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="qSOFA_score.Event_Series.Any_point_in_time_event.ItemTree.Mental_status"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="qSOFA_score.Event_Series.Any_point_in_time_event.ItemTree.Mental_status.value">
+         <path value="qSOFA_score.Event_Series.Any_point_in_time_event.ItemTree.Mental_status.value"/>
+         <short value="Mental status"/>
+         <definition value="If the individual has an altered mental status, one point is recorded."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="qSOFA_score.Event_Series.Any_point_in_time_event.ItemTree.Mental_status.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="qSOFA_score.Event_Series.Any_point_in_time_event.ItemTree.qSOFA_score">
+         <path value="qSOFA_score.Event_Series.Any_point_in_time_event.ItemTree.qSOFA_score"/>
+         <short value="qSOFA score"/>
+         <definition value="The qSOFA score is the sum of the scores for the three parameters."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="qSOFA_score.Event_Series.Any_point_in_time_event.ItemTree.qSOFA_score"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="qSOFA_score.Event_Series.Any_point_in_time_event.ItemTree.qSOFA_score.value">
+         <path value="qSOFA_score.Event_Series.Any_point_in_time_event.ItemTree.qSOFA_score.value"/>
+         <short value="qSOFA score"/>
+         <definition value="The qSOFA score is the sum of the scores for the three parameters."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="qSOFA_score.Event_Series.Any_point_in_time_event.ItemTree.qSOFA_score.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="qSOFA_score.Event_Series.Any_point_in_time_event.ItemTree.Comment">
+         <path value="qSOFA_score.Event_Series.Any_point_in_time_event.ItemTree.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional comment about the qSOFA score not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="qSOFA_score.Event_Series.Any_point_in_time_event.ItemTree.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="qSOFA_score.Event_Series.Any_point_in_time_event.ItemTree.Comment.value">
+         <path value="qSOFA_score.Event_Series.Any_point_in_time_event.ItemTree.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional comment about the qSOFA score not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="qSOFA_score.Event_Series.Any_point_in_time_event.ItemTree.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="qSOFA_score.Event_Series.Any_point_in_time_event.state">
+         <path value="qSOFA_score.Event_Series.Any_point_in_time_event.state"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="qSOFA_score.Event_Series.Any_point_in_time_event.state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Medicationusestatement-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-medicationusestatement-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.medication_statement.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Medicationusestatement"/>
+   <title value="Medication use statement"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="An assertion about the current use of a single medication by an individual."/>
+   <purpose value="To record an assertion about the current use of a single medication by an individual at a specified point in time."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Medication_use_statement">
+         <path value="Medication_use_statement"/>
+         <short value="Medication use statement"/>
+         <definition value="An assertion about the current use of a single medication by an individual."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_use_statement"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_use_statement.protocol">
+         <path value="Medication_use_statement.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_use_statement.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_use_statement.protocol.Extension">
+         <path value="Medication_use_statement.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models or formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Medication_use_statement.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_use_statement.History">
+         <path value="Medication_use_statement.History"/>
+         <short value="History"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_use_statement.History"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_use_statement.History.Any_event">
+         <path value="Medication_use_statement.History.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Medication_use_statement.History.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_use_statement.History.Any_event.data">
+         <path value="Medication_use_statement.History.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_use_statement.History.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_use_statement.History.Any_event.data.Medication_name">
+         <path value="Medication_use_statement.History.Any_event.data.Medication_name"/>
+         <short value="Medication name"/>
+         <definition value="Name of the medication."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_use_statement.History.Any_event.data.Medication_name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medication_use_statement.History.Any_event.data.Medication_name.value">
+         <path value="Medication_use_statement.History.Any_event.data.Medication_name.value"/>
+         <short value="Medication name"/>
+         <definition value="Name of the medication."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_use_statement.History.Any_event.data.Medication_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_use_statement.History.Any_event.data.Medication_details">
+         <path value="Medication_use_statement.History.Any_event.data.Medication_details"/>
+         <short value="Medication details"/>
+         <definition value="Structured details about the overall medication including strength, form and constituent substances."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Medication_use_statement.History.Any_event.data.Medication_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_use_statement.History.Any_event.data.Overall_directions_description">
+         <path value="Medication_use_statement.History.Any_event.data.Overall_directions_description"/>
+         <short value="Overall directions description"/>
+         <definition value="Complete narrative description about how the ordered item is to be used."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_use_statement.History.Any_event.data.Overall_directions_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medication_use_statement.History.Any_event.data.Overall_directions_description.value">
+         <path value="Medication_use_statement.History.Any_event.data.Overall_directions_description.value"/>
+         <short value="Overall directions description"/>
+         <definition value="Complete narrative description about how the ordered item is to be used."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_use_statement.History.Any_event.data.Overall_directions_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_use_statement.History.Any_event.data.Structured_dose_and_timing">
+         <path value="Medication_use_statement.History.Any_event.data.Structured_dose_and_timing"/>
+         <short value="Structured dose and timing"/>
+         <definition value="Details of structured dose and timing directions."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Medication_use_statement.History.Any_event.data.Structured_dose_and_timing"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_use_statement.History.Any_event.data.Route_of_administration">
+         <path value="Medication_use_statement.History.Any_event.data.Route_of_administration"/>
+         <short value="Route of administration"/>
+         <definition value="The route by which the medication is administrated into the body."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Medication_use_statement.History.Any_event.data.Route_of_administration"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Medication_use_statement.History.Any_event.data.Route_of_administration.value">
+         <path value="Medication_use_statement.History.Any_event.data.Route_of_administration.value"/>
+         <short value="Route of administration"/>
+         <definition value="The route by which the medication is administrated into the body."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_use_statement.History.Any_event.data.Route_of_administration.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_use_statement.History.Any_event.data.Description">
+         <path value="Medication_use_statement.History.Any_event.data.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description of the use of the medication."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_use_statement.History.Any_event.data.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medication_use_statement.History.Any_event.data.Description.value">
+         <path value="Medication_use_statement.History.Any_event.data.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description of the use of the medication."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_use_statement.History.Any_event.data.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_use_statement.History.Any_event.data.Clinical_indication">
+         <path value="Medication_use_statement.History.Any_event.data.Clinical_indication"/>
+         <short value="Clinical indication"/>
+         <definition value="The clinical symptom, sign or diagnosis that necessitates the use of the medication."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Medication_use_statement.History.Any_event.data.Clinical_indication"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Medication_use_statement.History.Any_event.data.Clinical_indication.value">
+         <path value="Medication_use_statement.History.Any_event.data.Clinical_indication.value"/>
+         <short value="Clinical indication"/>
+         <definition value="The clinical symptom, sign or diagnosis that necessitates the use of the medication."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_use_statement.History.Any_event.data.Clinical_indication.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_use_statement.History.Any_event.data.Last_administered">
+         <path value="Medication_use_statement.History.Any_event.data.Last_administered"/>
+         <short value="Last administered"/>
+         <definition value="The date and time when the medication was last taken by, or administered to, the individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_use_statement.History.Any_event.data.Last_administered"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medication_use_statement.History.Any_event.data.Last_administered.value">
+         <path value="Medication_use_statement.History.Any_event.data.Last_administered.value"/>
+         <short value="Last administered"/>
+         <definition value="The date and time when the medication was last taken by, or administered to, the individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_use_statement.History.Any_event.data.Last_administered.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_use_statement.History.Any_event.data.Endpoint">
+         <path value="Medication_use_statement.History.Any_event.data.Endpoint"/>
+         <short value="Endpoint"/>
+         <definition value="The intended absolute end date for the use of the medication or a textual indication that the medication will be used indefinitely."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_use_statement.History.Any_event.data.Endpoint"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medication_use_statement.History.Any_event.data.Endpoint.value_DV_DATE_TIME">
+         <path value="Medication_use_statement.History.Any_event.data.Endpoint.value_DV_DATE_TIME"/>
+         <short value="Endpoint"/>
+         <definition value="The intended absolute end date for the use of the medication or a textual indication that the medication will be used indefinitely."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_use_statement.History.Any_event.data.Endpoint.value_DV_DATE_TIME"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_use_statement.History.Any_event.data.Endpoint.value_DV_CODED_TEXT">
+         <path value="Medication_use_statement.History.Any_event.data.Endpoint.value_DV_CODED_TEXT"/>
+         <short value="Endpoint"/>
+         <definition value="The intended absolute end date for the use of the medication or a textual indication that the medication will be used indefinitely."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_use_statement.History.Any_event.data.Endpoint.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_use_statement.History.Any_event.data.Addtional_details">
+         <path value="Medication_use_statement.History.Any_event.data.Addtional_details"/>
+         <short value="Addtional details"/>
+         <definition value="Structured details about the medication use."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Medication_use_statement.History.Any_event.data.Addtional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_use_statement.History.Any_event.data.Comment">
+         <path value="Medication_use_statement.History.Any_event.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the medication statement not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_use_statement.History.Any_event.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medication_use_statement.History.Any_event.data.Comment.value">
+         <path value="Medication_use_statement.History.Any_event.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the medication statement not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_use_statement.History.Any_event.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Housingsummary-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-housingsummary-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-EVALUATION.housing_summary.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Housingsummary"/>
+   <title value="Housing summary"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Summary or persistent information about an individual's current and past housing or accommodation situation."/>
+   <purpose value="To record summary or persistent information about an individual's current and past housing or accommodation situation."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Housing_summary">
+         <path value="Housing_summary"/>
+         <short value="Housing summary"/>
+         <definition value="Summary or persistent information about an individual's current and past housing or accommodation situation."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Housing_summary"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Housing_summary.protocol">
+         <path value="Housing_summary.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Housing_summary.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Housing_summary.protocol.Extension">
+         <path value="Housing_summary.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Housing_summary.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Housing_summary.protocol.Last_updated">
+         <path value="Housing_summary.protocol.Last_updated"/>
+         <short value="Last updated"/>
+         <definition value="Date when the housing summary or associated housing records was updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Housing_summary.protocol.Last_updated"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Housing_summary.protocol.Last_updated.value">
+         <path value="Housing_summary.protocol.Last_updated.value"/>
+         <short value="Last updated"/>
+         <definition value="Date when the housing summary or associated housing records was updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Housing_summary.protocol.Last_updated.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Housing_summary.data">
+         <path value="Housing_summary.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Housing_summary.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Housing_summary.data.Description">
+         <path value="Housing_summary.data.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the overall housing situation for the individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Housing_summary.data.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Housing_summary.data.Description.value">
+         <path value="Housing_summary.data.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the overall housing situation for the individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Housing_summary.data.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Housing_summary.data.Housing_record">
+         <path value="Housing_summary.data.Housing_record"/>
+         <short value="Housing record"/>
+         <definition value="Structured details about the each housing record, both current and past."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Housing_summary.data.Housing_record"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Housing_summary.data.Additional_details">
+         <path value="Housing_summary.data.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="Structured details about the overall housing situation for an individual."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Housing_summary.data.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Housing_summary.data.Comment">
+         <path value="Housing_summary.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the overall housing situation, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Housing_summary.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Housing_summary.data.Comment.value">
+         <path value="Housing_summary.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the overall housing situation, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Housing_summary.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

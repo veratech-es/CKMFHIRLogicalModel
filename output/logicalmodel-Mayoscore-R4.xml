@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Mayoscore-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-mayoscore-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.mayo_score.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Mayoscore"/>
+   <title value="Mayo score"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="An assessment score used to estimate the severity of ulcerative colitis."/>
+   <purpose value="To record an assessment of the severity of ulcerative colitis."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Mayo_score">
+         <path value="Mayo_score"/>
+         <short value="Mayo score"/>
+         <definition value="An assessment score used to estimate the severity of ulcerative colitis."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Mayo_score"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Mayo_score.protocol">
+         <path value="Mayo_score.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Mayo_score.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Mayo_score.protocol.Extension">
+         <path value="Mayo_score.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models or formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Mayo_score.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Mayo_score.History">
+         <path value="Mayo_score.History"/>
+         <short value="History"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Mayo_score.History"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Mayo_score.History.Any_event">
+         <path value="Mayo_score.History.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Mayo_score.History.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Mayo_score.History.Any_event.data">
+         <path value="Mayo_score.History.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Mayo_score.History.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Mayo_score.History.Any_event.data.Stool_frequency">
+         <path value="Mayo_score.History.Any_event.data.Stool_frequency"/>
+         <short value="Stool frequency"/>
+         <definition value="The number stools per day, in excess of normal for the individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Mayo_score.History.Any_event.data.Stool_frequency"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Mayo_score.History.Any_event.data.Stool_frequency.value">
+         <path value="Mayo_score.History.Any_event.data.Stool_frequency.value"/>
+         <short value="Stool frequency"/>
+         <definition value="The number stools per day, in excess of normal for the individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Mayo_score.History.Any_event.data.Stool_frequency.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Mayo_score.History.Any_event.data.Rectal_bleeding">
+         <path value="Mayo_score.History.Any_event.data.Rectal_bleeding"/>
+         <short value="Rectal bleeding"/>
+         <definition value="The most severe rectal bleeding of the day."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Mayo_score.History.Any_event.data.Rectal_bleeding"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Mayo_score.History.Any_event.data.Rectal_bleeding.value">
+         <path value="Mayo_score.History.Any_event.data.Rectal_bleeding.value"/>
+         <short value="Rectal bleeding"/>
+         <definition value="The most severe rectal bleeding of the day."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Mayo_score.History.Any_event.data.Rectal_bleeding.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Mayo_score.History.Any_event.data.Endoscopy_findings">
+         <path value="Mayo_score.History.Any_event.data.Endoscopy_findings"/>
+         <short value="Endoscopy findings"/>
+         <definition value="Assessment of the mucosal appearance during endoscopy."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Mayo_score.History.Any_event.data.Endoscopy_findings"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Mayo_score.History.Any_event.data.Endoscopy_findings.value">
+         <path value="Mayo_score.History.Any_event.data.Endoscopy_findings.value"/>
+         <short value="Endoscopy findings"/>
+         <definition value="Assessment of the mucosal appearance during endoscopy."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Mayo_score.History.Any_event.data.Endoscopy_findings.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Mayo_score.History.Any_event.data.Global_assessment">
+         <path value="Mayo_score.History.Any_event.data.Global_assessment"/>
+         <short value="Global assessment"/>
+         <definition value="Overall assessment of ulcerative colitis severity, as made by a physician."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Mayo_score.History.Any_event.data.Global_assessment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Mayo_score.History.Any_event.data.Global_assessment.value">
+         <path value="Mayo_score.History.Any_event.data.Global_assessment.value"/>
+         <short value="Global assessment"/>
+         <definition value="Overall assessment of ulcerative colitis severity, as made by a physician."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Mayo_score.History.Any_event.data.Global_assessment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Mayo_score.History.Any_event.data.Total_Mayo_score">
+         <path value="Mayo_score.History.Any_event.data.Total_Mayo_score"/>
+         <short value="Total Mayo score"/>
+         <definition value="The total sum of all 4 component parameters."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Mayo_score.History.Any_event.data.Total_Mayo_score"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Mayo_score.History.Any_event.data.Total_Mayo_score.value">
+         <path value="Mayo_score.History.Any_event.data.Total_Mayo_score.value"/>
+         <short value="Total Mayo score"/>
+         <definition value="The total sum of all 4 component parameters."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Mayo_score.History.Any_event.data.Total_Mayo_score.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Mayo_score.History.Any_event.data.Partial_Mayo_score">
+         <path value="Mayo_score.History.Any_event.data.Partial_Mayo_score"/>
+         <short value="Partial Mayo score"/>
+         <definition value="The total sum of the 3 non-invasive component parameters only."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Mayo_score.History.Any_event.data.Partial_Mayo_score"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Mayo_score.History.Any_event.data.Partial_Mayo_score.value">
+         <path value="Mayo_score.History.Any_event.data.Partial_Mayo_score.value"/>
+         <short value="Partial Mayo score"/>
+         <definition value="The total sum of the 3 non-invasive component parameters only."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Mayo_score.History.Any_event.data.Partial_Mayo_score.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Mayo_score.History.Any_event.data.Simplified_Mayo_score">
+         <path value="Mayo_score.History.Any_event.data.Simplified_Mayo_score"/>
+         <short value="Simplified Mayo score"/>
+         <definition value="The total sum of the 2 symptom-related component parameters."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Mayo_score.History.Any_event.data.Simplified_Mayo_score"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Mayo_score.History.Any_event.data.Simplified_Mayo_score.value">
+         <path value="Mayo_score.History.Any_event.data.Simplified_Mayo_score.value"/>
+         <short value="Simplified Mayo score"/>
+         <definition value="The total sum of the 2 symptom-related component parameters."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Mayo_score.History.Any_event.data.Simplified_Mayo_score.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Triage-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-triage-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-ADMIN_ENTRY.triage.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Triage"/>
+   <title value="Triage"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="The assignment of a degree of urgency to wounds or illnesses, in order to decide the order of treatment of a large number of patients or casualties."/>
+   <purpose value="To record details about the assignment of a degree of urgency to wounds or illnesses, in order to decide the order of treatment of a large number of patients or casualties."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Triage">
+         <path value="Triage"/>
+         <short value="Triage"/>
+         <definition value="The assignment of a degree of urgency to wounds or illnesses, in order to decide the order of treatment of a large number of patients or casualties."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Triage"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Triage.data">
+         <path value="Triage.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Triage.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Triage.data.Priority_assignment">
+         <path value="Triage.data.Priority_assignment"/>
+         <short value="Priority assignment"/>
+         <definition value="Clinical assessment of the degree of urgency appropriate for treatement of an injury or illness."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Triage.data.Priority_assignment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Triage.data.Priority_assignment.value">
+         <path value="Triage.data.Priority_assignment.value"/>
+         <short value="Priority assignment"/>
+         <definition value="Clinical assessment of the degree of urgency appropriate for treatement of an injury or illness."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Triage.data.Priority_assignment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Triage.data.Rationale">
+         <path value="Triage.data.Rationale"/>
+         <short value="Rationale"/>
+         <definition value="The rationale for the assessment provided."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Triage.data.Rationale"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Triage.data.Rationale.value">
+         <path value="Triage.data.Rationale.value"/>
+         <short value="Rationale"/>
+         <definition value="The rationale for the assessment provided."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Triage.data.Rationale.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Triage.data.Disposition">
+         <path value="Triage.data.Disposition"/>
+         <short value="Disposition"/>
+         <definition value="The immediate plan for continuing health care for an individual after triage has occurred."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Triage.data.Disposition"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Triage.data.Disposition.value">
+         <path value="Triage.data.Disposition.value"/>
+         <short value="Disposition"/>
+         <definition value="The immediate plan for continuing health care for an individual after triage has occurred."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Triage.data.Disposition.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

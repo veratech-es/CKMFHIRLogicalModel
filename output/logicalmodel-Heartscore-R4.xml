@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Heartscore-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-heartscore-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.heart_score.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Heartscore"/>
+   <title value="HEART score"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="An assessment tool tool used to identify patients at low, intermediate, and high risk for short-term adverse outcome resulting from Acute Coronary Syndrome (ACS)."/>
+   <purpose value="To record the results for each component parameter and their total sum for the HEART score."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="HEART_score">
+         <path value="HEART_score"/>
+         <short value="HEART score"/>
+         <definition value="An assessment tool tool used to identify patients at low, intermediate, and high risk for short-term adverse outcome resulting from Acute Coronary Syndrome (ACS)."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="HEART_score"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="HEART_score.protocol">
+         <path value="HEART_score.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HEART_score.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="HEART_score.protocol.Extension">
+         <path value="HEART_score.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="HEART_score.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="HEART_score.History">
+         <path value="HEART_score.History"/>
+         <short value="History"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HEART_score.History"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="HEART_score.History.Any_point_in_time_event">
+         <path value="HEART_score.History.Any_point_in_time_event"/>
+         <short value="Any point in time event"/>
+         <definition value="Default, unspecified point in time event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="HEART_score.History.Any_point_in_time_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="HEART_score.History.Any_point_in_time_event.data">
+         <path value="HEART_score.History.Any_point_in_time_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HEART_score.History.Any_point_in_time_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="HEART_score.History.Any_point_in_time_event.data.History">
+         <path value="HEART_score.History.Any_point_in_time_event.data.History"/>
+         <short value="History"/>
+         <definition value="The level of suspicion from patient history or anamnesis."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HEART_score.History.Any_point_in_time_event.data.History"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="HEART_score.History.Any_point_in_time_event.data.History.value">
+         <path value="HEART_score.History.Any_point_in_time_event.data.History.value"/>
+         <short value="History"/>
+         <definition value="The level of suspicion from patient history or anamnesis."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HEART_score.History.Any_point_in_time_event.data.History.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="HEART_score.History.Any_point_in_time_event.data.Electrocardiogram">
+         <path value="HEART_score.History.Any_point_in_time_event.data.Electrocardiogram"/>
+         <short value="Electrocardiogram"/>
+         <definition value="The interpretation of an electrocardiograph."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HEART_score.History.Any_point_in_time_event.data.Electrocardiogram"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="HEART_score.History.Any_point_in_time_event.data.Electrocardiogram.value">
+         <path value="HEART_score.History.Any_point_in_time_event.data.Electrocardiogram.value"/>
+         <short value="Electrocardiogram"/>
+         <definition value="The interpretation of an electrocardiograph."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HEART_score.History.Any_point_in_time_event.data.Electrocardiogram.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="HEART_score.History.Any_point_in_time_event.data.Age">
+         <path value="HEART_score.History.Any_point_in_time_event.data.Age"/>
+         <short value="Age"/>
+         <definition value="The age of the patient, defined in years."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HEART_score.History.Any_point_in_time_event.data.Age"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="HEART_score.History.Any_point_in_time_event.data.Age.value">
+         <path value="HEART_score.History.Any_point_in_time_event.data.Age.value"/>
+         <short value="Age"/>
+         <definition value="The age of the patient, defined in years."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HEART_score.History.Any_point_in_time_event.data.Age.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="HEART_score.History.Any_point_in_time_event.data.Risk_factors">
+         <path value="HEART_score.History.Any_point_in_time_event.data.Risk_factors"/>
+         <short value="Risk factors"/>
+         <definition value="Presence of risk factors for the development of coronary artery disease (CAD)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HEART_score.History.Any_point_in_time_event.data.Risk_factors"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="HEART_score.History.Any_point_in_time_event.data.Risk_factors.value">
+         <path value="HEART_score.History.Any_point_in_time_event.data.Risk_factors.value"/>
+         <short value="Risk factors"/>
+         <definition value="Presence of risk factors for the development of coronary artery disease (CAD)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HEART_score.History.Any_point_in_time_event.data.Risk_factors.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="HEART_score.History.Any_point_in_time_event.data.Troponin">
+         <path value="HEART_score.History.Any_point_in_time_event.data.Troponin"/>
+         <short value="Troponin"/>
+         <definition value="The single serum troponin obtained during the emergency department assessment."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HEART_score.History.Any_point_in_time_event.data.Troponin"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="HEART_score.History.Any_point_in_time_event.data.Troponin.value">
+         <path value="HEART_score.History.Any_point_in_time_event.data.Troponin.value"/>
+         <short value="Troponin"/>
+         <definition value="The single serum troponin obtained during the emergency department assessment."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HEART_score.History.Any_point_in_time_event.data.Troponin.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="HEART_score.History.Any_point_in_time_event.data.Total_score">
+         <path value="HEART_score.History.Any_point_in_time_event.data.Total_score"/>
+         <short value="Total score"/>
+         <definition value="Sum of points assigned for each of the component parameters."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HEART_score.History.Any_point_in_time_event.data.Total_score"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="HEART_score.History.Any_point_in_time_event.data.Total_score.value">
+         <path value="HEART_score.History.Any_point_in_time_event.data.Total_score.value"/>
+         <short value="Total score"/>
+         <definition value="Sum of points assigned for each of the component parameters."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HEART_score.History.Any_point_in_time_event.data.Total_score.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="HEART_score.History.Any_point_in_time_event.data.Risk_category">
+         <path value="HEART_score.History.Any_point_in_time_event.data.Risk_category"/>
+         <short value="Risk category"/>
+         <definition value="Risk category &amp; recommended management strategy."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HEART_score.History.Any_point_in_time_event.data.Risk_category"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="HEART_score.History.Any_point_in_time_event.data.Risk_category.value">
+         <path value="HEART_score.History.Any_point_in_time_event.data.Risk_category.value"/>
+         <short value="Risk category"/>
+         <definition value="Risk category &amp; recommended management strategy."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HEART_score.History.Any_point_in_time_event.data.Risk_category.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

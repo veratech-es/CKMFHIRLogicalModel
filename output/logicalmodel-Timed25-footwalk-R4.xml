@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Timed25-footwalk-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-timed25-footwalk-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.timed_25_foot_walk.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Timed25-footwalk"/>
+   <title value="Timed 25-Foot Walk"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Der Timed 25-Foot Walk ist eine quantitative Messung der Beweglichkeit und Motorik der unteren Extremitäten. Dieser Test bildet die erste Komponente des Multiple Sclerosis Functional Composite (MSFC), eine Reihe von drei Tests zur Verlaufsdokumentation der Multiplen Sklerose."/>
+   <purpose value="Zur Protokollierung der Messungen, die während eines Timed 25-Foot Walk aufgenommen wurden, in der Regel als Teil der Testreihe des Multiple Sclerosis Functional Composite (MSFC)."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Timed_25_Foot_Walk">
+         <path value="Timed_25_Foot_Walk"/>
+         <short value="Timed 25-Foot Walk"/>
+         <definition value="Der Timed 25-Foot Walk ist eine quantitative Messung der Beweglichkeit und Motorik der unteren Extremitäten. Dieser Test bildet die erste Komponente des Multiple Sclerosis Functional Composite (MSFC), eine Reihe von drei Tests zur Verlaufsdokumentation der Multiplen Sklerose."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Timed_25_Foot_Walk"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Timed_25_Foot_Walk.Baum">
+         <path value="Timed_25_Foot_Walk.Baum"/>
+         <short value="Baum"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timed_25_Foot_Walk.Baum"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Timed_25_Foot_Walk.Baum.Unilaterale_Gehhilfe">
+         <path value="Timed_25_Foot_Walk.Baum.Unilaterale_Gehhilfe"/>
+         <short value="Unilaterale Gehhilfe"/>
+         <definition value="Angabe, welches unterstützende Hilfsmittel verwendet wurde."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Timed_25_Foot_Walk.Baum.Unilaterale_Gehhilfe"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Timed_25_Foot_Walk.Baum.Unilaterale_Gehhilfe.value_DV_CODED_TEXT">
+         <path value="Timed_25_Foot_Walk.Baum.Unilaterale_Gehhilfe.value_DV_CODED_TEXT"/>
+         <short value="Unilaterale Gehhilfe"/>
+         <definition value="Angabe, welches unterstützende Hilfsmittel verwendet wurde."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timed_25_Foot_Walk.Baum.Unilaterale_Gehhilfe.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Timed_25_Foot_Walk.Baum.Unilaterale_Gehhilfe.value_DV_TEXT">
+         <path value="Timed_25_Foot_Walk.Baum.Unilaterale_Gehhilfe.value_DV_TEXT"/>
+         <short value="Unilaterale Gehhilfe"/>
+         <definition value="Angabe, welches unterstützende Hilfsmittel verwendet wurde."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timed_25_Foot_Walk.Baum.Unilaterale_Gehhilfe.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Timed_25_Foot_Walk.Baum.Bilaterale_Gehhilfen">
+         <path value="Timed_25_Foot_Walk.Baum.Bilaterale_Gehhilfen"/>
+         <short value="Bilaterale Gehhilfen"/>
+         <definition value="Angabe, welche unterstützenden Hilfsmittel verwendet wurden."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Timed_25_Foot_Walk.Baum.Bilaterale_Gehhilfen"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Timed_25_Foot_Walk.Baum.Bilaterale_Gehhilfen.value_DV_CODED_TEXT">
+         <path value="Timed_25_Foot_Walk.Baum.Bilaterale_Gehhilfen.value_DV_CODED_TEXT"/>
+         <short value="Bilaterale Gehhilfen"/>
+         <definition value="Angabe, welche unterstützenden Hilfsmittel verwendet wurden."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timed_25_Foot_Walk.Baum.Bilaterale_Gehhilfen.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Timed_25_Foot_Walk.Baum.Bilaterale_Gehhilfen.value_DV_TEXT">
+         <path value="Timed_25_Foot_Walk.Baum.Bilaterale_Gehhilfen.value_DV_TEXT"/>
+         <short value="Bilaterale Gehhilfen"/>
+         <definition value="Angabe, welche unterstützenden Hilfsmittel verwendet wurden."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timed_25_Foot_Walk.Baum.Bilaterale_Gehhilfen.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Timed_25_Foot_Walk.Baum.Mehr_als_zwei_Anläufe_">
+         <path value="Timed_25_Foot_Walk.Baum.Mehr_als_zwei_Anläufe_"/>
+         <short value="Mehr als zwei Anläufe?"/>
+         <definition value="Wurden mehr als zwei Anläufe benötigt, um zwei erfolgreiche Testläufe zu erhalten?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timed_25_Foot_Walk.Baum.Mehr_als_zwei_Anläufe_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Timed_25_Foot_Walk.Baum.Mehr_als_zwei_Anläufe_.value">
+         <path value="Timed_25_Foot_Walk.Baum.Mehr_als_zwei_Anläufe_.value"/>
+         <short value="Mehr als zwei Anläufe?"/>
+         <definition value="Wurden mehr als zwei Anläufe benötigt, um zwei erfolgreiche Testläufe zu erhalten?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timed_25_Foot_Walk.Baum.Mehr_als_zwei_Anläufe_.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Timed_25_Foot_Walk.Baum.Gründe_für_mehr_als_zwei_Anläufe">
+         <path value="Timed_25_Foot_Walk.Baum.Gründe_für_mehr_als_zwei_Anläufe"/>
+         <short value="Gründe für mehr als zwei Anläufe"/>
+         <definition value="Gründe für mehr als zwei Anläufe, um zwei erfolgreiche Testläufe zu erhalten."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Timed_25_Foot_Walk.Baum.Gründe_für_mehr_als_zwei_Anläufe"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Timed_25_Foot_Walk.Baum.Gründe_für_mehr_als_zwei_Anläufe.value">
+         <path value="Timed_25_Foot_Walk.Baum.Gründe_für_mehr_als_zwei_Anläufe.value"/>
+         <short value="Gründe für mehr als zwei Anläufe"/>
+         <definition value="Gründe für mehr als zwei Anläufe, um zwei erfolgreiche Testläufe zu erhalten."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timed_25_Foot_Walk.Baum.Gründe_für_mehr_als_zwei_Anläufe.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Timed_25_Foot_Walk.Event_Series">
+         <path value="Timed_25_Foot_Walk.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timed_25_Foot_Walk.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Timed_25_Foot_Walk.Event_Series.Test_1">
+         <path value="Timed_25_Foot_Walk.Event_Series.Test_1"/>
+         <short value="Test 1"/>
+         <definition value="Erster von zwei Teilen des Timed 25-Foot Walk."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timed_25_Foot_Walk.Event_Series.Test_1"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Timed_25_Foot_Walk.Event_Series.Test_1.Baum">
+         <path value="Timed_25_Foot_Walk.Event_Series.Test_1.Baum"/>
+         <short value="Baum"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timed_25_Foot_Walk.Event_Series.Test_1.Baum"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Timed_25_Foot_Walk.Event_Series.Test_1.Baum.Zeit">
+         <path value="Timed_25_Foot_Walk.Event_Series.Test_1.Baum.Zeit"/>
+         <short value="Zeit"/>
+         <definition value="Benötigte Zeit für eine erfolgreich zurückgelegte Gehstrecke von 25 Fuß."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timed_25_Foot_Walk.Event_Series.Test_1.Baum.Zeit"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Timed_25_Foot_Walk.Event_Series.Test_1.Baum.Zeit.value">
+         <path value="Timed_25_Foot_Walk.Event_Series.Test_1.Baum.Zeit.value"/>
+         <short value="Zeit"/>
+         <definition value="Benötigte Zeit für eine erfolgreich zurückgelegte Gehstrecke von 25 Fuß."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timed_25_Foot_Walk.Event_Series.Test_1.Baum.Zeit.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Timed_25_Foot_Walk.Event_Series.Test_1.Baum.Test_nicht_beendet_">
+         <path value="Timed_25_Foot_Walk.Event_Series.Test_1.Baum.Test_nicht_beendet_"/>
+         <short value="Test nicht beendet?"/>
+         <definition value="Konnte die Strecke nicht zurückgelegt werden oder wurde der Test vorzeitig abgebrochen?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timed_25_Foot_Walk.Event_Series.Test_1.Baum.Test_nicht_beendet_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Timed_25_Foot_Walk.Event_Series.Test_1.Baum.Test_nicht_beendet_.value">
+         <path value="Timed_25_Foot_Walk.Event_Series.Test_1.Baum.Test_nicht_beendet_.value"/>
+         <short value="Test nicht beendet?"/>
+         <definition value="Konnte die Strecke nicht zurückgelegt werden oder wurde der Test vorzeitig abgebrochen?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timed_25_Foot_Walk.Event_Series.Test_1.Baum.Test_nicht_beendet_.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Timed_25_Foot_Walk.Event_Series.Test_1.Baum.Gründe_für_Nichtbeenden">
+         <path value="Timed_25_Foot_Walk.Event_Series.Test_1.Baum.Gründe_für_Nichtbeenden"/>
+         <short value="Gründe für Nichtbeenden"/>
+         <definition value="Angabe der Gründe, falls die Strecke nicht zurückgelegt werden konnte oder der Test vorzeitig abgebrochen wurde."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Timed_25_Foot_Walk.Event_Series.Test_1.Baum.Gründe_für_Nichtbeenden"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Timed_25_Foot_Walk.Event_Series.Test_1.Baum.Gründe_für_Nichtbeenden.value">
+         <path value="Timed_25_Foot_Walk.Event_Series.Test_1.Baum.Gründe_für_Nichtbeenden.value"/>
+         <short value="Gründe für Nichtbeenden"/>
+         <definition value="Angabe der Gründe, falls die Strecke nicht zurückgelegt werden konnte oder der Test vorzeitig abgebrochen wurde."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timed_25_Foot_Walk.Event_Series.Test_1.Baum.Gründe_für_Nichtbeenden.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Timed_25_Foot_Walk.Event_Series.Test_1.state_Baum">
+         <path value="Timed_25_Foot_Walk.Event_Series.Test_1.state_Baum"/>
+         <short value="Baum"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timed_25_Foot_Walk.Event_Series.Test_1.state_Baum"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Timed_25_Foot_Walk.Event_Series.Test_1.state_Baum.Begleitumstände">
+         <path value="Timed_25_Foot_Walk.Event_Series.Test_1.state_Baum.Begleitumstände"/>
+         <short value="Begleitumstände"/>
+         <definition value="Angabe jedweder Umstände, welche die Leistung des Patienten beeinflusst haben könnten."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Timed_25_Foot_Walk.Event_Series.Test_1.state_Baum.Begleitumstände"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Timed_25_Foot_Walk.Event_Series.Test_1.state_Baum.Begleitumstände.value">
+         <path value="Timed_25_Foot_Walk.Event_Series.Test_1.state_Baum.Begleitumstände.value"/>
+         <short value="Begleitumstände"/>
+         <definition value="Angabe jedweder Umstände, welche die Leistung des Patienten beeinflusst haben könnten."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timed_25_Foot_Walk.Event_Series.Test_1.state_Baum.Begleitumstände.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Timed_25_Foot_Walk.Event_Series.Test_2">
+         <path value="Timed_25_Foot_Walk.Event_Series.Test_2"/>
+         <short value="Test 2"/>
+         <definition value="Zweiter von zwei Teilen des Timed 25-Foot Walk."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timed_25_Foot_Walk.Event_Series.Test_2"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Timed_25_Foot_Walk.Event_Series.Test_2.data">
+         <path value="Timed_25_Foot_Walk.Event_Series.Test_2.data"/>
+         <definition value="ITEM_TREE"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timed_25_Foot_Walk.Event_Series.Test_2.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Timed_25_Foot_Walk.Event_Series.Test_2.data.Zeit">
+         <path value="Timed_25_Foot_Walk.Event_Series.Test_2.data.Zeit"/>
+         <short value="Zeit"/>
+         <definition value="Benötigte Zeit für eine erfolgreich zurückgelegte Gehstrecke von 25 Fuß."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timed_25_Foot_Walk.Event_Series.Test_2.data.Zeit"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Timed_25_Foot_Walk.Event_Series.Test_2.data.Zeit.value">
+         <path value="Timed_25_Foot_Walk.Event_Series.Test_2.data.Zeit.value"/>
+         <short value="Zeit"/>
+         <definition value="Benötigte Zeit für eine erfolgreich zurückgelegte Gehstrecke von 25 Fuß."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timed_25_Foot_Walk.Event_Series.Test_2.data.Zeit.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Timed_25_Foot_Walk.Event_Series.Test_2.data.Test_nicht_beendet_">
+         <path value="Timed_25_Foot_Walk.Event_Series.Test_2.data.Test_nicht_beendet_"/>
+         <short value="Test nicht beendet?"/>
+         <definition value="Konnte die Strecke nicht zurückgelegt werden oder wurde der Test vorzeitig abgebrochen?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timed_25_Foot_Walk.Event_Series.Test_2.data.Test_nicht_beendet_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Timed_25_Foot_Walk.Event_Series.Test_2.data.Test_nicht_beendet_.value">
+         <path value="Timed_25_Foot_Walk.Event_Series.Test_2.data.Test_nicht_beendet_.value"/>
+         <short value="Test nicht beendet?"/>
+         <definition value="Konnte die Strecke nicht zurückgelegt werden oder wurde der Test vorzeitig abgebrochen?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timed_25_Foot_Walk.Event_Series.Test_2.data.Test_nicht_beendet_.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Timed_25_Foot_Walk.Event_Series.Test_2.data.Gründe_für_Nichtbeenden">
+         <path value="Timed_25_Foot_Walk.Event_Series.Test_2.data.Gründe_für_Nichtbeenden"/>
+         <short value="Gründe für Nichtbeenden"/>
+         <definition value="Angabe der Gründe, falls die Strecke nicht zurückgelegt werden konnte oder der Test vorzeitig abgebrochen wurde."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Timed_25_Foot_Walk.Event_Series.Test_2.data.Gründe_für_Nichtbeenden"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Timed_25_Foot_Walk.Event_Series.Test_2.data.Gründe_für_Nichtbeenden.value">
+         <path value="Timed_25_Foot_Walk.Event_Series.Test_2.data.Gründe_für_Nichtbeenden.value"/>
+         <short value="Gründe für Nichtbeenden"/>
+         <definition value="Angabe der Gründe, falls die Strecke nicht zurückgelegt werden konnte oder der Test vorzeitig abgebrochen wurde."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timed_25_Foot_Walk.Event_Series.Test_2.data.Gründe_für_Nichtbeenden.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Timed_25_Foot_Walk.Event_Series.Test_2.state">
+         <path value="Timed_25_Foot_Walk.Event_Series.Test_2.state"/>
+         <definition value="ITEM_TREE"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timed_25_Foot_Walk.Event_Series.Test_2.state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Timed_25_Foot_Walk.Event_Series.Test_2.state.Begleitumstände">
+         <path value="Timed_25_Foot_Walk.Event_Series.Test_2.state.Begleitumstände"/>
+         <short value="Begleitumstände"/>
+         <definition value="Angabe jedweder Umstände, welche die Leistung des Patienten beeinflusst haben könnten."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Timed_25_Foot_Walk.Event_Series.Test_2.state.Begleitumstände"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Timed_25_Foot_Walk.Event_Series.Test_2.state.Begleitumstände.value">
+         <path value="Timed_25_Foot_Walk.Event_Series.Test_2.state.Begleitumstände.value"/>
+         <short value="Begleitumstände"/>
+         <definition value="Angabe jedweder Umstände, welche die Leistung des Patienten beeinflusst haben könnten."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timed_25_Foot_Walk.Event_Series.Test_2.state.Begleitumstände.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

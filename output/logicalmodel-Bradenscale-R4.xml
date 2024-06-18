@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Bradenscale-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-bradenscale-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.braden_scale.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Bradenscale"/>
+   <title value="Braden scale"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="The Braden scale is a tool used to assess the risk of pressure ulcer development in adults and children over the age of five years."/>
+   <purpose value="To record information about factors used to assess the risk of pressure ulcer development, and the total Braden Scale score."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Braden_scale">
+         <path value="Braden_scale"/>
+         <short value="Braden scale"/>
+         <definition value="The Braden scale is a tool used to assess the risk of pressure ulcer development in adults and children over the age of five years."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Braden_scale"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Braden_scale.protocol">
+         <path value="Braden_scale.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Braden_scale.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Braden_scale.protocol.Extension">
+         <path value="Braden_scale.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Braden_scale.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Braden_scale.Event_Series">
+         <path value="Braden_scale.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Braden_scale.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Braden_scale.Event_Series.Any_event">
+         <path value="Braden_scale.Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Braden_scale.Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Braden_scale.Event_Series.Any_event.data">
+         <path value="Braden_scale.Event_Series.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Braden_scale.Event_Series.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Braden_scale.Event_Series.Any_event.data.Sensory_perception">
+         <path value="Braden_scale.Event_Series.Any_event.data.Sensory_perception"/>
+         <short value="Sensory perception"/>
+         <definition value="Ability to respond meaningfully to pressure-related discomfort."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Braden_scale.Event_Series.Any_event.data.Sensory_perception"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Braden_scale.Event_Series.Any_event.data.Sensory_perception.value">
+         <path value="Braden_scale.Event_Series.Any_event.data.Sensory_perception.value"/>
+         <short value="Sensory perception"/>
+         <definition value="Ability to respond meaningfully to pressure-related discomfort."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Braden_scale.Event_Series.Any_event.data.Sensory_perception.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Braden_scale.Event_Series.Any_event.data.Moisture">
+         <path value="Braden_scale.Event_Series.Any_event.data.Moisture"/>
+         <short value="Moisture"/>
+         <definition value="Degree to which skin is exposed to moisture."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Braden_scale.Event_Series.Any_event.data.Moisture"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Braden_scale.Event_Series.Any_event.data.Moisture.value">
+         <path value="Braden_scale.Event_Series.Any_event.data.Moisture.value"/>
+         <short value="Moisture"/>
+         <definition value="Degree to which skin is exposed to moisture."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Braden_scale.Event_Series.Any_event.data.Moisture.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Braden_scale.Event_Series.Any_event.data.Activity">
+         <path value="Braden_scale.Event_Series.Any_event.data.Activity"/>
+         <short value="Activity"/>
+         <definition value="Degree of physical ability."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Braden_scale.Event_Series.Any_event.data.Activity"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Braden_scale.Event_Series.Any_event.data.Activity.value">
+         <path value="Braden_scale.Event_Series.Any_event.data.Activity.value"/>
+         <short value="Activity"/>
+         <definition value="Degree of physical ability."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Braden_scale.Event_Series.Any_event.data.Activity.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Braden_scale.Event_Series.Any_event.data.Mobility">
+         <path value="Braden_scale.Event_Series.Any_event.data.Mobility"/>
+         <short value="Mobility"/>
+         <definition value="Ability to change and control body position."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Braden_scale.Event_Series.Any_event.data.Mobility"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Braden_scale.Event_Series.Any_event.data.Mobility.value">
+         <path value="Braden_scale.Event_Series.Any_event.data.Mobility.value"/>
+         <short value="Mobility"/>
+         <definition value="Ability to change and control body position."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Braden_scale.Event_Series.Any_event.data.Mobility.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Braden_scale.Event_Series.Any_event.data.Nutrition">
+         <path value="Braden_scale.Event_Series.Any_event.data.Nutrition"/>
+         <short value="Nutrition"/>
+         <definition value="Usual food intake pattern."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Braden_scale.Event_Series.Any_event.data.Nutrition"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Braden_scale.Event_Series.Any_event.data.Nutrition.value">
+         <path value="Braden_scale.Event_Series.Any_event.data.Nutrition.value"/>
+         <short value="Nutrition"/>
+         <definition value="Usual food intake pattern."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Braden_scale.Event_Series.Any_event.data.Nutrition.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Braden_scale.Event_Series.Any_event.data.Friction_and_shear">
+         <path value="Braden_scale.Event_Series.Any_event.data.Friction_and_shear"/>
+         <short value="Friction and shear"/>
+         <definition value="Friction occurs when skin moves against support surfaces. Shear occurs when skin and adjacent bony surface slide across one another."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Braden_scale.Event_Series.Any_event.data.Friction_and_shear"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Braden_scale.Event_Series.Any_event.data.Friction_and_shear.value">
+         <path value="Braden_scale.Event_Series.Any_event.data.Friction_and_shear.value"/>
+         <short value="Friction and shear"/>
+         <definition value="Friction occurs when skin moves against support surfaces. Shear occurs when skin and adjacent bony surface slide across one another."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Braden_scale.Event_Series.Any_event.data.Friction_and_shear.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Braden_scale.Event_Series.Any_event.data.Comment">
+         <path value="Braden_scale.Event_Series.Any_event.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the assessment of the Braden scale, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Braden_scale.Event_Series.Any_event.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Braden_scale.Event_Series.Any_event.data.Comment.value">
+         <path value="Braden_scale.Event_Series.Any_event.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the assessment of the Braden scale, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Braden_scale.Event_Series.Any_event.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Braden_scale.Event_Series.Any_event.data.Total_score">
+         <path value="Braden_scale.Event_Series.Any_event.data.Total_score"/>
+         <short value="Total score"/>
+         <definition value="The sum of the ordinal scores recorded for each of the six component responses."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Braden_scale.Event_Series.Any_event.data.Total_score"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Braden_scale.Event_Series.Any_event.data.Total_score.value">
+         <path value="Braden_scale.Event_Series.Any_event.data.Total_score.value"/>
+         <short value="Total score"/>
+         <definition value="The sum of the ordinal scores recorded for each of the six component responses."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Braden_scale.Event_Series.Any_event.data.Total_score.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

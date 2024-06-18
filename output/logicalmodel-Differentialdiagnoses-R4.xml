@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Differentialdiagnoses-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-differentialdiagnoses-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-EVALUATION.differential_diagnoses.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Differentialdiagnoses"/>
+   <title value="Differential diagnoses"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="One or more possible conditions, problems or diagnoses that may be responsible for a clinical presentation, examination findings and/or test results."/>
+   <purpose value="To record details about one or more differential diagnoses that may be responsible for a single clinical presentation, examination findings and/or test results."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Differential_diagnoses">
+         <path value="Differential_diagnoses"/>
+         <short value="Differential diagnoses"/>
+         <definition value="One or more possible conditions, problems or diagnoses that may be responsible for a clinical presentation, examination findings and/or test results."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Differential_diagnoses"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Differential_diagnoses.protocol">
+         <path value="Differential_diagnoses.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Differential_diagnoses.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Differential_diagnoses.protocol.Extension">
+         <path value="Differential_diagnoses.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models or formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Differential_diagnoses.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Differential_diagnoses.protocol.Last_updated">
+         <path value="Differential_diagnoses.protocol.Last_updated"/>
+         <short value="Last updated"/>
+         <definition value="The date/time the differential diagnoses were last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Differential_diagnoses.protocol.Last_updated"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Differential_diagnoses.protocol.Last_updated.value">
+         <path value="Differential_diagnoses.protocol.Last_updated.value"/>
+         <short value="Last updated"/>
+         <definition value="The date/time the differential diagnoses were last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Differential_diagnoses.protocol.Last_updated.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Differential_diagnoses.data">
+         <path value="Differential_diagnoses.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Differential_diagnoses.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Differential_diagnoses.data.Overall_description">
+         <path value="Differential_diagnoses.data.Overall_description"/>
+         <short value="Overall description"/>
+         <definition value="Narrative overview about all of the differential diagnoses identified."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Differential_diagnoses.data.Overall_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Differential_diagnoses.data.Overall_description.value">
+         <path value="Differential_diagnoses.data.Overall_description.value"/>
+         <short value="Overall description"/>
+         <definition value="Narrative overview about all of the differential diagnoses identified."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Differential_diagnoses.data.Overall_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Differential_diagnoses.data.Per_differential">
+         <path value="Differential_diagnoses.data.Per_differential"/>
+         <short value="Per differential"/>
+         <definition value="Details about a single differential diagnosis."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Differential_diagnoses.data.Per_differential"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Differential_diagnoses.data.Per_differential.Diagnosis_name">
+         <path value="Differential_diagnoses.data.Per_differential.Diagnosis_name"/>
+         <short value="Diagnosis name"/>
+         <definition value="Identification of the differential diagnosis, by name."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Differential_diagnoses.data.Per_differential.Diagnosis_name"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Differential_diagnoses.data.Per_differential.Diagnosis_name.value">
+         <path value="Differential_diagnoses.data.Per_differential.Diagnosis_name.value"/>
+         <short value="Diagnosis name"/>
+         <definition value="Identification of the differential diagnosis, by name."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Differential_diagnoses.data.Per_differential.Diagnosis_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Differential_diagnoses.data.Per_differential.Status">
+         <path value="Differential_diagnoses.data.Per_differential.Status"/>
+         <short value="Status"/>
+         <definition value="Likelihood of the differential diagnosis being responsible for the clinical situation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Differential_diagnoses.data.Per_differential.Status"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Differential_diagnoses.data.Per_differential.Status.value_DV_CODED_TEXT">
+         <path value="Differential_diagnoses.data.Per_differential.Status.value_DV_CODED_TEXT"/>
+         <short value="Status"/>
+         <definition value="Likelihood of the differential diagnosis being responsible for the clinical situation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Differential_diagnoses.data.Per_differential.Status.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Differential_diagnoses.data.Per_differential.Status.value_DV_TEXT">
+         <path value="Differential_diagnoses.data.Per_differential.Status.value_DV_TEXT"/>
+         <short value="Status"/>
+         <definition value="Likelihood of the differential diagnosis being responsible for the clinical situation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Differential_diagnoses.data.Per_differential.Status.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Differential_diagnoses.data.Per_differential.Rationale">
+         <path value="Differential_diagnoses.data.Per_differential.Rationale"/>
+         <short value="Rationale"/>
+         <definition value="Narrative description about the rationale for the diagnosis being accepted or excluded."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Differential_diagnoses.data.Per_differential.Rationale"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Differential_diagnoses.data.Per_differential.Rationale.value">
+         <path value="Differential_diagnoses.data.Per_differential.Rationale.value"/>
+         <short value="Rationale"/>
+         <definition value="Narrative description about the rationale for the diagnosis being accepted or excluded."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Differential_diagnoses.data.Per_differential.Rationale.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Differential_diagnoses.data.Per_differential.Clinical_evidence">
+         <path value="Differential_diagnoses.data.Per_differential.Clinical_evidence"/>
+         <short value="Clinical evidence"/>
+         <definition value="Structured details about clinical evidence supporting or excluding the differential diagnosis."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Differential_diagnoses.data.Per_differential.Clinical_evidence"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Differential_diagnoses.data.Per_differential.Order">
+         <path value="Differential_diagnoses.data.Per_differential.Order"/>
+         <short value="Order"/>
+         <definition value="Tag assigned to supporting ordering within a list of differential diagnoses."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Differential_diagnoses.data.Per_differential.Order"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Differential_diagnoses.data.Per_differential.Order.value">
+         <path value="Differential_diagnoses.data.Per_differential.Order.value"/>
+         <short value="Order"/>
+         <definition value="Tag assigned to supporting ordering within a list of differential diagnoses."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Differential_diagnoses.data.Per_differential.Order.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Differential_diagnoses.data.Per_differential.Comment">
+         <path value="Differential_diagnoses.data.Per_differential.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the differential diagnosis, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Differential_diagnoses.data.Per_differential.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Differential_diagnoses.data.Per_differential.Comment.value">
+         <path value="Differential_diagnoses.data.Per_differential.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the differential diagnosis, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Differential_diagnoses.data.Per_differential.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Advancecaredirective-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-advancecaredirective-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-EVALUATION.advance_care_directive.v2"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Advancecaredirective"/>
+   <title value="Advance care directive"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="A framework to communicate the preferences of an individual for future medical treatment and care."/>
+   <purpose value="To record the preferences of an individual for future medical treatment and care."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Advance_care_directive">
+         <path value="Advance_care_directive"/>
+         <short value="Advance care directive"/>
+         <definition value="A framework to communicate the preferences of an individual for future medical treatment and care."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Advance_care_directive"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Advance_care_directive.protocol">
+         <path value="Advance_care_directive.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Advance_care_directive.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Advance_care_directive.protocol.Valid_period_start">
+         <path value="Advance_care_directive.protocol.Valid_period_start"/>
+         <short value="Valid period start"/>
+         <definition value="The date/time that marks the beginning of the valid period of time for this advance care directive."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Advance_care_directive.protocol.Valid_period_start"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Advance_care_directive.protocol.Valid_period_start.value">
+         <path value="Advance_care_directive.protocol.Valid_period_start.value"/>
+         <short value="Valid period start"/>
+         <definition value="The date/time that marks the beginning of the valid period of time for this advance care directive."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Advance_care_directive.protocol.Valid_period_start.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Advance_care_directive.protocol.Valid_period_end">
+         <path value="Advance_care_directive.protocol.Valid_period_end"/>
+         <short value="Valid period end"/>
+         <definition value="The date/time that marks the conclusion of the valid period of time for this advance care directive."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Advance_care_directive.protocol.Valid_period_end"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Advance_care_directive.protocol.Valid_period_end.value">
+         <path value="Advance_care_directive.protocol.Valid_period_end.value"/>
+         <short value="Valid period end"/>
+         <definition value="The date/time that marks the conclusion of the valid period of time for this advance care directive."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Advance_care_directive.protocol.Valid_period_end.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Advance_care_directive.protocol.Review_due_date">
+         <path value="Advance_care_directive.protocol.Review_due_date"/>
+         <short value="Review due date"/>
+         <definition value="The date at which the advance care directive is due to be reviewed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Advance_care_directive.protocol.Review_due_date"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Advance_care_directive.protocol.Review_due_date.value">
+         <path value="Advance_care_directive.protocol.Review_due_date.value"/>
+         <short value="Review due date"/>
+         <definition value="The date at which the advance care directive is due to be reviewed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Advance_care_directive.protocol.Review_due_date.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Advance_care_directive.protocol.Last_updated">
+         <path value="Advance_care_directive.protocol.Last_updated"/>
+         <short value="Last updated"/>
+         <definition value="The date when this advance directive record was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Advance_care_directive.protocol.Last_updated"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Advance_care_directive.protocol.Last_updated.value">
+         <path value="Advance_care_directive.protocol.Last_updated.value"/>
+         <short value="Last updated"/>
+         <definition value="The date when this advance directive record was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Advance_care_directive.protocol.Last_updated.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Advance_care_directive.protocol.Witness">
+         <path value="Advance_care_directive.protocol.Witness"/>
+         <short value="Witness"/>
+         <definition value="Personal details of a person who witnesses the completion of the advance care directive."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Advance_care_directive.protocol.Witness"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Advance_care_directive.protocol.Mandate">
+         <path value="Advance_care_directive.protocol.Mandate"/>
+         <short value="Mandate"/>
+         <definition value="Description of any legislation or other authoritative guidance that apply."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Advance_care_directive.protocol.Mandate"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Advance_care_directive.protocol.Mandate.value_DV_TEXT">
+         <path value="Advance_care_directive.protocol.Mandate.value_DV_TEXT"/>
+         <short value="Mandate"/>
+         <definition value="Description of any legislation or other authoritative guidance that apply."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Advance_care_directive.protocol.Mandate.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Advance_care_directive.protocol.Mandate.value_DV_URI">
+         <path value="Advance_care_directive.protocol.Mandate.value_DV_URI"/>
+         <short value="Mandate"/>
+         <definition value="Description of any legislation or other authoritative guidance that apply."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Advance_care_directive.protocol.Mandate.value_DV_URI"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="string"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Advance_care_directive.protocol.Digital_representation">
+         <path value="Advance_care_directive.protocol.Digital_representation"/>
+         <short value="Digital representation"/>
+         <definition value="Digital document, image or video representing the Advance care directive."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Advance_care_directive.protocol.Digital_representation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Advance_care_directive.protocol.Directive_location">
+         <path value="Advance_care_directive.protocol.Directive_location"/>
+         <short value="Directive location"/>
+         <definition value="Information about the physical or digital location of the Advance care directive."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Advance_care_directive.protocol.Directive_location"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Advance_care_directive.protocol.Directive_location.Location">
+         <path value="Advance_care_directive.protocol.Directive_location.Location"/>
+         <short value="Location"/>
+         <definition value="Physical or digital location of the Advance care directive."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Advance_care_directive.protocol.Directive_location.Location"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Advance_care_directive.protocol.Directive_location.Location.value_DV_TEXT">
+         <path value="Advance_care_directive.protocol.Directive_location.Location.value_DV_TEXT"/>
+         <short value="Location"/>
+         <definition value="Physical or digital location of the Advance care directive."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Advance_care_directive.protocol.Directive_location.Location.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Advance_care_directive.protocol.Directive_location.Location.value_DV_URI">
+         <path value="Advance_care_directive.protocol.Directive_location.Location.value_DV_URI"/>
+         <short value="Location"/>
+         <definition value="Physical or digital location of the Advance care directive."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Advance_care_directive.protocol.Directive_location.Location.value_DV_URI"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="string"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Advance_care_directive.protocol.Directive_location.Copy_holder">
+         <path value="Advance_care_directive.protocol.Directive_location.Copy_holder"/>
+         <short value="Copy holder"/>
+         <definition value="Details of a person who has a copy of the Advance care directive."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Advance_care_directive.protocol.Directive_location.Copy_holder"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Advance_care_directive.protocol.Extension">
+         <path value="Advance_care_directive.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Advance_care_directive.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Advance_care_directive.data">
+         <path value="Advance_care_directive.data"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Advance_care_directive.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Advance_care_directive.data.Type_of_directive">
+         <path value="Advance_care_directive.data.Type_of_directive"/>
+         <short value="Type of directive"/>
+         <definition value="The type of advance care directive."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Advance_care_directive.data.Type_of_directive"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Advance_care_directive.data.Type_of_directive.value">
+         <path value="Advance_care_directive.data.Type_of_directive.value"/>
+         <short value="Type of directive"/>
+         <definition value="The type of advance care directive."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Advance_care_directive.data.Type_of_directive.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Advance_care_directive.data.Status">
+         <path value="Advance_care_directive.data.Status"/>
+         <short value="Status"/>
+         <definition value="The status of the advance care directive."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Advance_care_directive.data.Status"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Advance_care_directive.data.Status.value_DV_CODED_TEXT">
+         <path value="Advance_care_directive.data.Status.value_DV_CODED_TEXT"/>
+         <short value="Status"/>
+         <definition value="The status of the advance care directive."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Advance_care_directive.data.Status.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Advance_care_directive.data.Status.value_DV_TEXT">
+         <path value="Advance_care_directive.data.Status.value_DV_TEXT"/>
+         <short value="Status"/>
+         <definition value="The status of the advance care directive."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Advance_care_directive.data.Status.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Advance_care_directive.data.Description">
+         <path value="Advance_care_directive.data.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description of the overall advance care directive."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Advance_care_directive.data.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Advance_care_directive.data.Description.value">
+         <path value="Advance_care_directive.data.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description of the overall advance care directive."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Advance_care_directive.data.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Advance_care_directive.data.Condition">
+         <path value="Advance_care_directive.data.Condition"/>
+         <short value="Condition"/>
+         <definition value="The conditions or situations in which the individual wishes the advance care directive to apply."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Advance_care_directive.data.Condition"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Advance_care_directive.data.Condition.value">
+         <path value="Advance_care_directive.data.Condition.value"/>
+         <short value="Condition"/>
+         <definition value="The conditions or situations in which the individual wishes the advance care directive to apply."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Advance_care_directive.data.Condition.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Advance_care_directive.data.Directive_detail">
+         <path value="Advance_care_directive.data.Directive_detail"/>
+         <short value="Directive detail"/>
+         <definition value="Structured details about the advance care directive decisions."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Advance_care_directive.data.Directive_detail"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Advance_care_directive.data.Comment">
+         <path value="Advance_care_directive.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the advance care directive not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Advance_care_directive.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Advance_care_directive.data.Comment.value">
+         <path value="Advance_care_directive.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the advance care directive not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Advance_care_directive.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

@@ -1,0 +1,1311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Apgarscore-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-apgarscore-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.apgar.v2"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Apgarscore"/>
+   <title value="Apgar score"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="A tool to assess the clinical status of the newborn infant immediately after birth and their response to resuscitation."/>
+   <purpose value="To record the results for each component parameter and their total sum for the Apgar score."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Apgar_score">
+         <path value="Apgar_score"/>
+         <short value="Apgar score"/>
+         <definition value="A tool to assess the clinical status of the newborn infant immediately after birth and their response to resuscitation."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Apgar_score.protocol">
+         <path value="Apgar_score.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Apgar_score.protocol.Extension">
+         <path value="Apgar_score.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models or formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Apgar_score.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Apgar_score.History">
+         <path value="Apgar_score.History"/>
+         <short value="History"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Apgar_score.History.1_minute">
+         <path value="Apgar_score.History.1_minute"/>
+         <short value="1 minute"/>
+         <definition value="Apgar score 1 minute after birth."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.1_minute"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Apgar_score.History.1_minute.data">
+         <path value="Apgar_score.History.1_minute.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.1_minute.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Apgar_score.History.1_minute.data.Respiratory_effort">
+         <path value="Apgar_score.History.1_minute.data.Respiratory_effort"/>
+         <short value="Respiratory effort"/>
+         <definition value="Observation of the infant's respiratory effort."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.1_minute.data.Respiratory_effort"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Apgar_score.History.1_minute.data.Respiratory_effort.value">
+         <path value="Apgar_score.History.1_minute.data.Respiratory_effort.value"/>
+         <short value="Respiratory effort"/>
+         <definition value="Observation of the infant's respiratory effort."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.1_minute.data.Respiratory_effort.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Apgar_score.History.1_minute.data.Heart_rate">
+         <path value="Apgar_score.History.1_minute.data.Heart_rate"/>
+         <short value="Heart rate"/>
+         <definition value="Recording of the infant's heart rate."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.1_minute.data.Heart_rate"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Apgar_score.History.1_minute.data.Heart_rate.value">
+         <path value="Apgar_score.History.1_minute.data.Heart_rate.value"/>
+         <short value="Heart rate"/>
+         <definition value="Recording of the infant's heart rate."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.1_minute.data.Heart_rate.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Apgar_score.History.1_minute.data.Muscle_tone">
+         <path value="Apgar_score.History.1_minute.data.Muscle_tone"/>
+         <short value="Muscle tone"/>
+         <definition value="Observation of the infant's muscle tone."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.1_minute.data.Muscle_tone"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Apgar_score.History.1_minute.data.Muscle_tone.value">
+         <path value="Apgar_score.History.1_minute.data.Muscle_tone.value"/>
+         <short value="Muscle tone"/>
+         <definition value="Observation of the infant's muscle tone."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.1_minute.data.Muscle_tone.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Apgar_score.History.1_minute.data.Reflex_irritability">
+         <path value="Apgar_score.History.1_minute.data.Reflex_irritability"/>
+         <short value="Reflex irritability"/>
+         <definition value="Observation of the response of the infant to an irritant stimulation, for example, suctioning the oropharynx and nares with a soft rubber catheter."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.1_minute.data.Reflex_irritability"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Apgar_score.History.1_minute.data.Reflex_irritability.value">
+         <path value="Apgar_score.History.1_minute.data.Reflex_irritability.value"/>
+         <short value="Reflex irritability"/>
+         <definition value="Observation of the response of the infant to an irritant stimulation, for example, suctioning the oropharynx and nares with a soft rubber catheter."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.1_minute.data.Reflex_irritability.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Apgar_score.History.1_minute.data.Skin_colour">
+         <path value="Apgar_score.History.1_minute.data.Skin_colour"/>
+         <short value="Skin colour"/>
+         <definition value="Observation of the skin colour of the infant."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.1_minute.data.Skin_colour"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Apgar_score.History.1_minute.data.Skin_colour.value">
+         <path value="Apgar_score.History.1_minute.data.Skin_colour.value"/>
+         <short value="Skin colour"/>
+         <definition value="Observation of the skin colour of the infant."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.1_minute.data.Skin_colour.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Apgar_score.History.1_minute.data.Total">
+         <path value="Apgar_score.History.1_minute.data.Total"/>
+         <short value="Total"/>
+         <definition value="The total sum of each component parameter for the Apgar score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.1_minute.data.Total"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Apgar_score.History.1_minute.data.Total.value">
+         <path value="Apgar_score.History.1_minute.data.Total.value"/>
+         <short value="Total"/>
+         <definition value="The total sum of each component parameter for the Apgar score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.1_minute.data.Total.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Apgar_score.History.events_1_minute.offset">
+         <path value="Apgar_score.History.events_1_minute.offset"/>
+         <short value="1 minute"/>
+         <definition value="Apgar score 1 minute after birth."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.events_1_minute.offset"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Apgar_score.History.2_minute">
+         <path value="Apgar_score.History.2_minute"/>
+         <short value="2 minute"/>
+         <definition value="Apgar score 2 minutes after birth."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.2_minute"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Apgar_score.History.2_minute.data">
+         <path value="Apgar_score.History.2_minute.data"/>
+         <definition value="ITEM_TREE"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.2_minute.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Apgar_score.History.2_minute.data.Respiratory_effort">
+         <path value="Apgar_score.History.2_minute.data.Respiratory_effort"/>
+         <short value="Respiratory effort"/>
+         <definition value="Observation of the infant's respiratory effort."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.2_minute.data.Respiratory_effort"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Apgar_score.History.2_minute.data.Respiratory_effort.value">
+         <path value="Apgar_score.History.2_minute.data.Respiratory_effort.value"/>
+         <short value="Respiratory effort"/>
+         <definition value="Observation of the infant's respiratory effort."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.2_minute.data.Respiratory_effort.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Apgar_score.History.2_minute.data.Heart_rate">
+         <path value="Apgar_score.History.2_minute.data.Heart_rate"/>
+         <short value="Heart rate"/>
+         <definition value="Recording of the infant's heart rate."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.2_minute.data.Heart_rate"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Apgar_score.History.2_minute.data.Heart_rate.value">
+         <path value="Apgar_score.History.2_minute.data.Heart_rate.value"/>
+         <short value="Heart rate"/>
+         <definition value="Recording of the infant's heart rate."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.2_minute.data.Heart_rate.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Apgar_score.History.2_minute.data.Muscle_tone">
+         <path value="Apgar_score.History.2_minute.data.Muscle_tone"/>
+         <short value="Muscle tone"/>
+         <definition value="Observation of the infant's muscle tone."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.2_minute.data.Muscle_tone"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Apgar_score.History.2_minute.data.Muscle_tone.value">
+         <path value="Apgar_score.History.2_minute.data.Muscle_tone.value"/>
+         <short value="Muscle tone"/>
+         <definition value="Observation of the infant's muscle tone."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.2_minute.data.Muscle_tone.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Apgar_score.History.2_minute.data.Reflex_irritability">
+         <path value="Apgar_score.History.2_minute.data.Reflex_irritability"/>
+         <short value="Reflex irritability"/>
+         <definition value="Observation of the response of the infant to an irritant stimulation, for example, suctioning the oropharynx and nares with a soft rubber catheter."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.2_minute.data.Reflex_irritability"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Apgar_score.History.2_minute.data.Reflex_irritability.value">
+         <path value="Apgar_score.History.2_minute.data.Reflex_irritability.value"/>
+         <short value="Reflex irritability"/>
+         <definition value="Observation of the response of the infant to an irritant stimulation, for example, suctioning the oropharynx and nares with a soft rubber catheter."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.2_minute.data.Reflex_irritability.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Apgar_score.History.2_minute.data.Skin_colour">
+         <path value="Apgar_score.History.2_minute.data.Skin_colour"/>
+         <short value="Skin colour"/>
+         <definition value="Observation of the skin colour of the infant."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.2_minute.data.Skin_colour"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Apgar_score.History.2_minute.data.Skin_colour.value">
+         <path value="Apgar_score.History.2_minute.data.Skin_colour.value"/>
+         <short value="Skin colour"/>
+         <definition value="Observation of the skin colour of the infant."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.2_minute.data.Skin_colour.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Apgar_score.History.2_minute.data.Total">
+         <path value="Apgar_score.History.2_minute.data.Total"/>
+         <short value="Total"/>
+         <definition value="The total sum of each component parameter for the Apgar score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.2_minute.data.Total"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Apgar_score.History.2_minute.data.Total.value">
+         <path value="Apgar_score.History.2_minute.data.Total.value"/>
+         <short value="Total"/>
+         <definition value="The total sum of each component parameter for the Apgar score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.2_minute.data.Total.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Apgar_score.History.events_2_minute.offset">
+         <path value="Apgar_score.History.events_2_minute.offset"/>
+         <short value="2 minute"/>
+         <definition value="Apgar score 2 minutes after birth."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.events_2_minute.offset"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Apgar_score.History.3_minute">
+         <path value="Apgar_score.History.3_minute"/>
+         <short value="3 minute"/>
+         <definition value="Apgar score 3 minutes after birth."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.3_minute"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Apgar_score.History.3_minute.data">
+         <path value="Apgar_score.History.3_minute.data"/>
+         <definition value="ITEM_TREE"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.3_minute.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Apgar_score.History.3_minute.data.Respiratory_effort">
+         <path value="Apgar_score.History.3_minute.data.Respiratory_effort"/>
+         <short value="Respiratory effort"/>
+         <definition value="Observation of the infant's respiratory effort."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.3_minute.data.Respiratory_effort"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Apgar_score.History.3_minute.data.Respiratory_effort.value">
+         <path value="Apgar_score.History.3_minute.data.Respiratory_effort.value"/>
+         <short value="Respiratory effort"/>
+         <definition value="Observation of the infant's respiratory effort."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.3_minute.data.Respiratory_effort.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Apgar_score.History.3_minute.data.Heart_rate">
+         <path value="Apgar_score.History.3_minute.data.Heart_rate"/>
+         <short value="Heart rate"/>
+         <definition value="Recording of the infant's heart rate."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.3_minute.data.Heart_rate"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Apgar_score.History.3_minute.data.Heart_rate.value">
+         <path value="Apgar_score.History.3_minute.data.Heart_rate.value"/>
+         <short value="Heart rate"/>
+         <definition value="Recording of the infant's heart rate."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.3_minute.data.Heart_rate.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Apgar_score.History.3_minute.data.Muscle_tone">
+         <path value="Apgar_score.History.3_minute.data.Muscle_tone"/>
+         <short value="Muscle tone"/>
+         <definition value="Observation of the infant's muscle tone."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.3_minute.data.Muscle_tone"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Apgar_score.History.3_minute.data.Muscle_tone.value">
+         <path value="Apgar_score.History.3_minute.data.Muscle_tone.value"/>
+         <short value="Muscle tone"/>
+         <definition value="Observation of the infant's muscle tone."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.3_minute.data.Muscle_tone.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Apgar_score.History.3_minute.data.Reflex_irritability">
+         <path value="Apgar_score.History.3_minute.data.Reflex_irritability"/>
+         <short value="Reflex irritability"/>
+         <definition value="Observation of the response of the infant to an irritant stimulation, for example, suctioning the oropharynx and nares with a soft rubber catheter."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.3_minute.data.Reflex_irritability"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Apgar_score.History.3_minute.data.Reflex_irritability.value">
+         <path value="Apgar_score.History.3_minute.data.Reflex_irritability.value"/>
+         <short value="Reflex irritability"/>
+         <definition value="Observation of the response of the infant to an irritant stimulation, for example, suctioning the oropharynx and nares with a soft rubber catheter."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.3_minute.data.Reflex_irritability.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Apgar_score.History.3_minute.data.Skin_colour">
+         <path value="Apgar_score.History.3_minute.data.Skin_colour"/>
+         <short value="Skin colour"/>
+         <definition value="Observation of the skin colour of the infant."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.3_minute.data.Skin_colour"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Apgar_score.History.3_minute.data.Skin_colour.value">
+         <path value="Apgar_score.History.3_minute.data.Skin_colour.value"/>
+         <short value="Skin colour"/>
+         <definition value="Observation of the skin colour of the infant."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.3_minute.data.Skin_colour.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Apgar_score.History.3_minute.data.Total">
+         <path value="Apgar_score.History.3_minute.data.Total"/>
+         <short value="Total"/>
+         <definition value="The total sum of each component parameter for the Apgar score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.3_minute.data.Total"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Apgar_score.History.3_minute.data.Total.value">
+         <path value="Apgar_score.History.3_minute.data.Total.value"/>
+         <short value="Total"/>
+         <definition value="The total sum of each component parameter for the Apgar score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.3_minute.data.Total.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Apgar_score.History.events_3_minute.offset">
+         <path value="Apgar_score.History.events_3_minute.offset"/>
+         <short value="3 minute"/>
+         <definition value="Apgar score 3 minutes after birth."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.events_3_minute.offset"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Apgar_score.History.5_minute">
+         <path value="Apgar_score.History.5_minute"/>
+         <short value="5 minute"/>
+         <definition value="Apgar score 5 minutes after birth."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.5_minute"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Apgar_score.History.5_minute.data">
+         <path value="Apgar_score.History.5_minute.data"/>
+         <definition value="ITEM_TREE"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.5_minute.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Apgar_score.History.5_minute.data.Respiratory_effort">
+         <path value="Apgar_score.History.5_minute.data.Respiratory_effort"/>
+         <short value="Respiratory effort"/>
+         <definition value="Observation of the infant's respiratory effort."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.5_minute.data.Respiratory_effort"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Apgar_score.History.5_minute.data.Respiratory_effort.value">
+         <path value="Apgar_score.History.5_minute.data.Respiratory_effort.value"/>
+         <short value="Respiratory effort"/>
+         <definition value="Observation of the infant's respiratory effort."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.5_minute.data.Respiratory_effort.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Apgar_score.History.5_minute.data.Heart_rate">
+         <path value="Apgar_score.History.5_minute.data.Heart_rate"/>
+         <short value="Heart rate"/>
+         <definition value="Recording of the infant's heart rate."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.5_minute.data.Heart_rate"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Apgar_score.History.5_minute.data.Heart_rate.value">
+         <path value="Apgar_score.History.5_minute.data.Heart_rate.value"/>
+         <short value="Heart rate"/>
+         <definition value="Recording of the infant's heart rate."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.5_minute.data.Heart_rate.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Apgar_score.History.5_minute.data.Muscle_tone">
+         <path value="Apgar_score.History.5_minute.data.Muscle_tone"/>
+         <short value="Muscle tone"/>
+         <definition value="Observation of the infant's muscle tone."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.5_minute.data.Muscle_tone"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Apgar_score.History.5_minute.data.Muscle_tone.value">
+         <path value="Apgar_score.History.5_minute.data.Muscle_tone.value"/>
+         <short value="Muscle tone"/>
+         <definition value="Observation of the infant's muscle tone."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.5_minute.data.Muscle_tone.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Apgar_score.History.5_minute.data.Reflex_irritability">
+         <path value="Apgar_score.History.5_minute.data.Reflex_irritability"/>
+         <short value="Reflex irritability"/>
+         <definition value="Observation of the response of the infant to an irritant stimulation, for example, suctioning the oropharynx and nares with a soft rubber catheter."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.5_minute.data.Reflex_irritability"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Apgar_score.History.5_minute.data.Reflex_irritability.value">
+         <path value="Apgar_score.History.5_minute.data.Reflex_irritability.value"/>
+         <short value="Reflex irritability"/>
+         <definition value="Observation of the response of the infant to an irritant stimulation, for example, suctioning the oropharynx and nares with a soft rubber catheter."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.5_minute.data.Reflex_irritability.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Apgar_score.History.5_minute.data.Skin_colour">
+         <path value="Apgar_score.History.5_minute.data.Skin_colour"/>
+         <short value="Skin colour"/>
+         <definition value="Observation of the skin colour of the infant."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.5_minute.data.Skin_colour"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Apgar_score.History.5_minute.data.Skin_colour.value">
+         <path value="Apgar_score.History.5_minute.data.Skin_colour.value"/>
+         <short value="Skin colour"/>
+         <definition value="Observation of the skin colour of the infant."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.5_minute.data.Skin_colour.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Apgar_score.History.5_minute.data.Total">
+         <path value="Apgar_score.History.5_minute.data.Total"/>
+         <short value="Total"/>
+         <definition value="The total sum of each component parameter for the Apgar score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.5_minute.data.Total"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Apgar_score.History.5_minute.data.Total.value">
+         <path value="Apgar_score.History.5_minute.data.Total.value"/>
+         <short value="Total"/>
+         <definition value="The total sum of each component parameter for the Apgar score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.5_minute.data.Total.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Apgar_score.History.events_5_minute.offset">
+         <path value="Apgar_score.History.events_5_minute.offset"/>
+         <short value="5 minute"/>
+         <definition value="Apgar score 5 minutes after birth."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.events_5_minute.offset"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Apgar_score.History.10_minute">
+         <path value="Apgar_score.History.10_minute"/>
+         <short value="10 minute"/>
+         <definition value="Apgar score 10 minutes after birth."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.10_minute"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Apgar_score.History.10_minute.data">
+         <path value="Apgar_score.History.10_minute.data"/>
+         <definition value="ITEM_TREE"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.10_minute.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Apgar_score.History.10_minute.data.Respiratory_effort">
+         <path value="Apgar_score.History.10_minute.data.Respiratory_effort"/>
+         <short value="Respiratory effort"/>
+         <definition value="Observation of the infant's respiratory effort."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.10_minute.data.Respiratory_effort"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Apgar_score.History.10_minute.data.Respiratory_effort.value">
+         <path value="Apgar_score.History.10_minute.data.Respiratory_effort.value"/>
+         <short value="Respiratory effort"/>
+         <definition value="Observation of the infant's respiratory effort."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.10_minute.data.Respiratory_effort.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Apgar_score.History.10_minute.data.Heart_rate">
+         <path value="Apgar_score.History.10_minute.data.Heart_rate"/>
+         <short value="Heart rate"/>
+         <definition value="Recording of the infant's heart rate."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.10_minute.data.Heart_rate"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Apgar_score.History.10_minute.data.Heart_rate.value">
+         <path value="Apgar_score.History.10_minute.data.Heart_rate.value"/>
+         <short value="Heart rate"/>
+         <definition value="Recording of the infant's heart rate."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.10_minute.data.Heart_rate.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Apgar_score.History.10_minute.data.Muscle_tone">
+         <path value="Apgar_score.History.10_minute.data.Muscle_tone"/>
+         <short value="Muscle tone"/>
+         <definition value="Observation of the infant's muscle tone."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.10_minute.data.Muscle_tone"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Apgar_score.History.10_minute.data.Muscle_tone.value">
+         <path value="Apgar_score.History.10_minute.data.Muscle_tone.value"/>
+         <short value="Muscle tone"/>
+         <definition value="Observation of the infant's muscle tone."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.10_minute.data.Muscle_tone.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Apgar_score.History.10_minute.data.Reflex_irritability">
+         <path value="Apgar_score.History.10_minute.data.Reflex_irritability"/>
+         <short value="Reflex irritability"/>
+         <definition value="Observation of the response of the infant to an irritant stimulation, for example, suctioning the oropharynx and nares with a soft rubber catheter."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.10_minute.data.Reflex_irritability"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Apgar_score.History.10_minute.data.Reflex_irritability.value">
+         <path value="Apgar_score.History.10_minute.data.Reflex_irritability.value"/>
+         <short value="Reflex irritability"/>
+         <definition value="Observation of the response of the infant to an irritant stimulation, for example, suctioning the oropharynx and nares with a soft rubber catheter."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.10_minute.data.Reflex_irritability.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Apgar_score.History.10_minute.data.Skin_colour">
+         <path value="Apgar_score.History.10_minute.data.Skin_colour"/>
+         <short value="Skin colour"/>
+         <definition value="Observation of the skin colour of the infant."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.10_minute.data.Skin_colour"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Apgar_score.History.10_minute.data.Skin_colour.value">
+         <path value="Apgar_score.History.10_minute.data.Skin_colour.value"/>
+         <short value="Skin colour"/>
+         <definition value="Observation of the skin colour of the infant."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.10_minute.data.Skin_colour.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Apgar_score.History.10_minute.data.Total">
+         <path value="Apgar_score.History.10_minute.data.Total"/>
+         <short value="Total"/>
+         <definition value="The total sum of each component parameter for the Apgar score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.10_minute.data.Total"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Apgar_score.History.10_minute.data.Total.value">
+         <path value="Apgar_score.History.10_minute.data.Total.value"/>
+         <short value="Total"/>
+         <definition value="The total sum of each component parameter for the Apgar score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.10_minute.data.Total.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Apgar_score.History.events_10_minute.offset">
+         <path value="Apgar_score.History.events_10_minute.offset"/>
+         <short value="10 minute"/>
+         <definition value="Apgar score 10 minutes after birth."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.events_10_minute.offset"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Apgar_score.History.Any_event">
+         <path value="Apgar_score.History.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Apgar score at any additional time, as required."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Apgar_score.History.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Apgar_score.History.Any_event.data">
+         <path value="Apgar_score.History.Any_event.data"/>
+         <definition value="ITEM_TREE"/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Apgar_score.History.Any_event.data"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <contentReference value="#Apgarscore.History.1_minute"/>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

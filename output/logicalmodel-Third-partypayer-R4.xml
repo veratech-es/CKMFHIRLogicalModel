@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Third-partypayer-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-third-partypayer-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-DEMOGRAPHIC-ROLE.third_party_payer.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Third-partypayer"/>
+   <title value="Third-party payer"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Organisation in the role of a third-party payer"/>
+   <purpose value="Representation of a third-party payer demographic data"/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Third_party_payer">
+         <path value="Third_party_payer"/>
+         <short value="Third-party payer"/>
+         <definition value="Organisation in the role of a third-party payer"/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Third_party_payer"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Third_party_payer.Identifiers">
+         <path value="Third_party_payer.Identifiers"/>
+         <short value="Identifiers"/>
+         <definition value="The identifiers used by the organisation in the role of a third-party payer"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Third_party_payer.Identifiers"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Third_party_payer.Identifiers.Identifier">
+         <path value="Third_party_payer.Identifiers.Identifier"/>
+         <short value="Identifier"/>
+         <definition value="The identifier used by the organisation in the role of a third-party payer"/>
+         <min value="1"/>
+         <max value="*"/>
+         <base>
+            <path value="Third_party_payer.Identifiers.Identifier"/>
+            <min value="1"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Third_party_payer.Name">
+         <path value="Third_party_payer.Name"/>
+         <short value="Name"/>
+         <definition value="Indicates how the third-party payer is known by"/>
+         <min value="1"/>
+         <max value="*"/>
+         <base>
+            <path value="Third_party_payer.Name"/>
+            <min value="1"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

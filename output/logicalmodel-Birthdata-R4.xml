@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Birthdata-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-birthdata-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-DEMOGRAPHIC-CLUSTER.person_birth_data_iso.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Birthdata"/>
+   <title value="Birth data"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Birth demographic data"/>
+   <purpose value="Representation of a person's birth data"/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Birth_data">
+         <path value="Birth_data"/>
+         <short value="Birth data"/>
+         <definition value="Birth demographic data"/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Birth_data"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Birth_data.Birth_date">
+         <path value="Birth_data.Birth_date"/>
+         <short value="Birth date"/>
+         <definition value="The date of birth of a person"/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Birth_data.Birth_date"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Birth_data.Birth_date.value">
+         <path value="Birth_data.Birth_date.value"/>
+         <short value="Birth date"/>
+         <definition value="The date of birth of a person"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Birth_data.Birth_date.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="date"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Birth_data.Country_of_birth">
+         <path value="Birth_data.Country_of_birth"/>
+         <short value="Country of birth"/>
+         <definition value="The country where a person was born"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Birth_data.Country_of_birth"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Birth_data.Country_of_birth.value">
+         <path value="Birth_data.Country_of_birth.value"/>
+         <short value="Country of birth"/>
+         <definition value="The country where a person was born"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Birth_data.Country_of_birth.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Birth_data.Birth_plurality">
+         <path value="Birth_data.Birth_plurality"/>
+         <short value="Birth plurality"/>
+         <definition value="An indicator of multiple birth, showing the total number of births resulting from a single pregnancy"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Birth_data.Birth_plurality"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Birth_data.Birth_plurality.value">
+         <path value="Birth_data.Birth_plurality.value"/>
+         <short value="Birth plurality"/>
+         <definition value="An indicator of multiple birth, showing the total number of births resulting from a single pregnancy"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Birth_data.Birth_plurality.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Birth_data.Birth_order">
+         <path value="Birth_data.Birth_order"/>
+         <short value="Birth order"/>
+         <definition value="The sequential order of this person in a multiple birth regardless of live or still birth"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Birth_data.Birth_order"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Birth_data.Birth_order.value">
+         <path value="Birth_data.Birth_order.value"/>
+         <short value="Birth order"/>
+         <definition value="The sequential order of this person in a multiple birth regardless of live or still birth"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Birth_data.Birth_order.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Birth_data.Date_of_birth_follow_up_indicator">
+         <path value="Birth_data.Date_of_birth_follow_up_indicator"/>
+         <short value="Date of birth follow-up indicator"/>
+         <definition value="Flag that indicates when the current date of birth requires follow-up to obtain a more accurate date"/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Birth_data.Date_of_birth_follow_up_indicator"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Birth_data.Date_of_birth_follow_up_indicator.value">
+         <path value="Birth_data.Date_of_birth_follow_up_indicator.value"/>
+         <short value="Date of birth follow-up indicator"/>
+         <definition value="Flag that indicates when the current date of birth requires follow-up to obtain a more accurate date"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Birth_data.Date_of_birth_follow_up_indicator.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Birth_data.Country_specific_data">
+         <path value="Birth_data.Country_specific_data"/>
+         <short value="Country specific data"/>
+         <definition value="Additional birth data that are country specific"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Birth_data.Country_specific_data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

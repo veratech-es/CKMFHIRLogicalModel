@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Causeofdeath-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-causeofdeath-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-EVALUATION.cause_of_death.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Causeofdeath"/>
+   <title value="Cause of death"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Details about specific diseases, conditions or injuries that caused or contributed to the death of an individual."/>
+   <purpose value="To record details about specific diseases, conditions or injuries that caused or contributed to the death of an individual."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Cause_of_death">
+         <path value="Cause_of_death"/>
+         <short value="Cause of death"/>
+         <definition value="Details about specific diseases, conditions or injuries that caused or contributed to the death of an individual."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Cause_of_death"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Cause_of_death.protocol">
+         <path value="Cause_of_death.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cause_of_death.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Cause_of_death.protocol.Last_updated">
+         <path value="Cause_of_death.protocol.Last_updated"/>
+         <short value="Last updated"/>
+         <definition value="The date when the cause of death was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cause_of_death.protocol.Last_updated"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Cause_of_death.protocol.Last_updated.value">
+         <path value="Cause_of_death.protocol.Last_updated.value"/>
+         <short value="Last updated"/>
+         <definition value="The date when the cause of death was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cause_of_death.protocol.Last_updated.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Cause_of_death.protocol.Extension">
+         <path value="Cause_of_death.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Cause_of_death.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Cause_of_death.data">
+         <path value="Cause_of_death.data"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cause_of_death.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Cause_of_death.data.Description">
+         <path value="Cause_of_death.data.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the contributing diseases, injuries, conditions and events leading to death."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cause_of_death.data.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Cause_of_death.data.Description.value">
+         <path value="Cause_of_death.data.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the contributing diseases, injuries, conditions and events leading to death."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cause_of_death.data.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Cause_of_death.data.Direct_cause">
+         <path value="Cause_of_death.data.Direct_cause"/>
+         <short value="Direct cause"/>
+         <definition value="The disease, condition or injury that directly led to, or occurred closest to, the time of death."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cause_of_death.data.Direct_cause"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Cause_of_death.data.Direct_cause.value">
+         <path value="Cause_of_death.data.Direct_cause.value"/>
+         <short value="Direct cause"/>
+         <definition value="The disease, condition or injury that directly led to, or occurred closest to, the time of death."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cause_of_death.data.Direct_cause.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Cause_of_death.data.Direct_cause_duration">
+         <path value="Cause_of_death.data.Direct_cause_duration"/>
+         <short value="Direct cause duration"/>
+         <definition value="The approximate interval from onset of the identified 'Direct cause' to death."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cause_of_death.data.Direct_cause_duration"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Cause_of_death.data.Direct_cause_duration.value_DV_DURATION">
+         <path value="Cause_of_death.data.Direct_cause_duration.value_DV_DURATION"/>
+         <short value="Direct cause duration"/>
+         <definition value="The approximate interval from onset of the identified 'Direct cause' to death."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cause_of_death.data.Direct_cause_duration.value_DV_DURATION"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Cause_of_death.data.Direct_cause_duration.value_DV_INTERVAL_DV_DURATION_">
+         <path value="Cause_of_death.data.Direct_cause_duration.value_DV_INTERVAL_DV_DURATION_"/>
+         <short value="Direct cause duration"/>
+         <definition value="The approximate interval from onset of the identified 'Direct cause' to death."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cause_of_death.data.Direct_cause_duration.value_DV_INTERVAL_DV_DURATION_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Cause_of_death.data.Direct_cause_duration.value_DV_TEXT">
+         <path value="Cause_of_death.data.Direct_cause_duration.value_DV_TEXT"/>
+         <short value="Direct cause duration"/>
+         <definition value="The approximate interval from onset of the identified 'Direct cause' to death."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cause_of_death.data.Direct_cause_duration.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Cause_of_death.data.Antecedent_cause(s)">
+         <path value="Cause_of_death.data.Antecedent_cause(s)"/>
+         <short value="Antecedent cause(s)"/>
+         <definition value="Details about one or more diseases, conditions or injuries in the sequence of events preceding death, recorded in order from most recent onset to the earliest onset."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Cause_of_death.data.Antecedent_cause(s)"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Cause_of_death.data.Antecedent_cause(s).Cause">
+         <path value="Cause_of_death.data.Antecedent_cause(s).Cause"/>
+         <short value="Cause"/>
+         <definition value="Identification of an antecedent disease, condition or injury that directly contributed to the 'Direct cause'."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Cause_of_death.data.Antecedent_cause(s).Cause"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Cause_of_death.data.Antecedent_cause(s).Cause.value">
+         <path value="Cause_of_death.data.Antecedent_cause(s).Cause.value"/>
+         <short value="Cause"/>
+         <definition value="Identification of an antecedent disease, condition or injury that directly contributed to the 'Direct cause'."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cause_of_death.data.Antecedent_cause(s).Cause.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Cause_of_death.data.Antecedent_cause(s).Order">
+         <path value="Cause_of_death.data.Antecedent_cause(s).Order"/>
+         <short value="Order"/>
+         <definition value="Order of onset of the identified 'Antecedent cause' in the sequence of events leading to death."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cause_of_death.data.Antecedent_cause(s).Order"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Cause_of_death.data.Antecedent_cause(s).Order.value_DV_TEXT">
+         <path value="Cause_of_death.data.Antecedent_cause(s).Order.value_DV_TEXT"/>
+         <short value="Order"/>
+         <definition value="Order of onset of the identified 'Antecedent cause' in the sequence of events leading to death."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cause_of_death.data.Antecedent_cause(s).Order.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Cause_of_death.data.Antecedent_cause(s).Order.value_DV_CODED_TEXT">
+         <path value="Cause_of_death.data.Antecedent_cause(s).Order.value_DV_CODED_TEXT"/>
+         <short value="Order"/>
+         <definition value="Order of onset of the identified 'Antecedent cause' in the sequence of events leading to death."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cause_of_death.data.Antecedent_cause(s).Order.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Cause_of_death.data.Antecedent_cause(s).Duration">
+         <path value="Cause_of_death.data.Antecedent_cause(s).Duration"/>
+         <short value="Duration"/>
+         <definition value="The approximate interval from onset of the identified 'Cause' to death."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cause_of_death.data.Antecedent_cause(s).Duration"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Cause_of_death.data.Antecedent_cause(s).Duration.value_DV_TEXT">
+         <path value="Cause_of_death.data.Antecedent_cause(s).Duration.value_DV_TEXT"/>
+         <short value="Duration"/>
+         <definition value="The approximate interval from onset of the identified 'Cause' to death."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cause_of_death.data.Antecedent_cause(s).Duration.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Cause_of_death.data.Antecedent_cause(s).Duration.value_DV_INTERVAL_DV_DURATION_">
+         <path value="Cause_of_death.data.Antecedent_cause(s).Duration.value_DV_INTERVAL_DV_DURATION_"/>
+         <short value="Duration"/>
+         <definition value="The approximate interval from onset of the identified 'Cause' to death."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cause_of_death.data.Antecedent_cause(s).Duration.value_DV_INTERVAL_DV_DURATION_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Cause_of_death.data.Antecedent_cause(s).Duration.value_DV_DURATION">
+         <path value="Cause_of_death.data.Antecedent_cause(s).Duration.value_DV_DURATION"/>
+         <short value="Duration"/>
+         <definition value="The approximate interval from onset of the identified 'Cause' to death."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cause_of_death.data.Antecedent_cause(s).Duration.value_DV_DURATION"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Cause_of_death.data.Antecedent_cause(s).Duration.value_DV_DATE_TIME">
+         <path value="Cause_of_death.data.Antecedent_cause(s).Duration.value_DV_DATE_TIME"/>
+         <short value="Duration"/>
+         <definition value="The approximate interval from onset of the identified 'Cause' to death."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cause_of_death.data.Antecedent_cause(s).Duration.value_DV_DATE_TIME"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Cause_of_death.data.Contributing_conditions">
+         <path value="Cause_of_death.data.Contributing_conditions"/>
+         <short value="Contributing conditions"/>
+         <definition value="Details about other significant conditions that may have contributed to the death, but without a causal association."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Cause_of_death.data.Contributing_conditions"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Cause_of_death.data.Contributing_conditions.Condition">
+         <path value="Cause_of_death.data.Contributing_conditions.Condition"/>
+         <short value="Condition"/>
+         <definition value="Name of a significant condition that may have contributed to the death, but without a causal association."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Cause_of_death.data.Contributing_conditions.Condition"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Cause_of_death.data.Contributing_conditions.Condition.value">
+         <path value="Cause_of_death.data.Contributing_conditions.Condition.value"/>
+         <short value="Condition"/>
+         <definition value="Name of a significant condition that may have contributed to the death, but without a causal association."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cause_of_death.data.Contributing_conditions.Condition.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Cause_of_death.data.Contributing_conditions.Duration">
+         <path value="Cause_of_death.data.Contributing_conditions.Duration"/>
+         <short value="Duration"/>
+         <definition value="The approximate interval from onset of the identified 'Condition' to death."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cause_of_death.data.Contributing_conditions.Duration"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Cause_of_death.data.Contributing_conditions.Duration.value_DV_TEXT">
+         <path value="Cause_of_death.data.Contributing_conditions.Duration.value_DV_TEXT"/>
+         <short value="Duration"/>
+         <definition value="The approximate interval from onset of the identified 'Condition' to death."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cause_of_death.data.Contributing_conditions.Duration.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Cause_of_death.data.Contributing_conditions.Duration.value_DV_INTERVAL_DV_DURATION_">
+         <path value="Cause_of_death.data.Contributing_conditions.Duration.value_DV_INTERVAL_DV_DURATION_"/>
+         <short value="Duration"/>
+         <definition value="The approximate interval from onset of the identified 'Condition' to death."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cause_of_death.data.Contributing_conditions.Duration.value_DV_INTERVAL_DV_DURATION_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Cause_of_death.data.Contributing_conditions.Duration.value_DV_DURATION">
+         <path value="Cause_of_death.data.Contributing_conditions.Duration.value_DV_DURATION"/>
+         <short value="Duration"/>
+         <definition value="The approximate interval from onset of the identified 'Condition' to death."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cause_of_death.data.Contributing_conditions.Duration.value_DV_DURATION"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Cause_of_death.data.Contributing_conditions.Duration.value_DV_DATE_TIME">
+         <path value="Cause_of_death.data.Contributing_conditions.Duration.value_DV_DATE_TIME"/>
+         <short value="Duration"/>
+         <definition value="The approximate interval from onset of the identified 'Condition' to death."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cause_of_death.data.Contributing_conditions.Duration.value_DV_DATE_TIME"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Cause_of_death.data.Additional_details">
+         <path value="Cause_of_death.data.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="Additional details about the cause of death."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Cause_of_death.data.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Cause_of_death.data.Comment">
+         <path value="Cause_of_death.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the cause of death, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cause_of_death.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Cause_of_death.data.Comment.value">
+         <path value="Cause_of_death.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the cause of death, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cause_of_death.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

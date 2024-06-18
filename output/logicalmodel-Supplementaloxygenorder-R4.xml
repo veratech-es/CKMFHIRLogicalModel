@@ -1,0 +1,982 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Supplementaloxygenorder-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-supplementaloxygenorder-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-INSTRUCTION.supplemental_oxygen_order.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Supplementaloxygenorder"/>
+   <title value="Supplemental oxygen order"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="A request for supplemental oxygen for an individual who is breathing spontaneously."/>
+   <purpose value="To record details of a request for supplemental oxygen for an individual, in both acute care and at home."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Supplemental_oxygen_order">
+         <path value="Supplemental_oxygen_order"/>
+         <short value="Supplemental oxygen order"/>
+         <definition value="A request for supplemental oxygen for an individual who is breathing spontaneously."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Supplemental_oxygen_order.protocol">
+         <path value="Supplemental_oxygen_order.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Supplemental_oxygen_order.protocol.Requester_order_identifier">
+         <path value="Supplemental_oxygen_order.protocol.Requester_order_identifier"/>
+         <short value="Requester order identifier"/>
+         <definition value="The local identifier assigned by the requesting clinical system."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.protocol.Requester_order_identifier"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Supplemental_oxygen_order.protocol.Requester_order_identifier.value_DV_TEXT">
+         <path value="Supplemental_oxygen_order.protocol.Requester_order_identifier.value_DV_TEXT"/>
+         <short value="Requester order identifier"/>
+         <definition value="The local identifier assigned by the requesting clinical system."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.protocol.Requester_order_identifier.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Supplemental_oxygen_order.protocol.Requester_order_identifier.value_DV_IDENTIFIER">
+         <path value="Supplemental_oxygen_order.protocol.Requester_order_identifier.value_DV_IDENTIFIER"/>
+         <short value="Requester order identifier"/>
+         <definition value="The local identifier assigned by the requesting clinical system."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.protocol.Requester_order_identifier.value_DV_IDENTIFIER"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Supplemental_oxygen_order.protocol.Requester">
+         <path value="Supplemental_oxygen_order.protocol.Requester"/>
+         <short value="Requester"/>
+         <definition value="Details about the clinician or organisation ordering the supplemental oxygen."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.protocol.Requester"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Supplemental_oxygen_order.protocol.Receiver_order_identifier">
+         <path value="Supplemental_oxygen_order.protocol.Receiver_order_identifier"/>
+         <short value="Receiver order identifier"/>
+         <definition value="The local identifier assigned to the request by the clinician or organisation receiving the order."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.protocol.Receiver_order_identifier"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Supplemental_oxygen_order.protocol.Receiver_order_identifier.value_DV_TEXT">
+         <path value="Supplemental_oxygen_order.protocol.Receiver_order_identifier.value_DV_TEXT"/>
+         <short value="Receiver order identifier"/>
+         <definition value="The local identifier assigned to the request by the clinician or organisation receiving the order."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.protocol.Receiver_order_identifier.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Supplemental_oxygen_order.protocol.Receiver_order_identifier.value_DV_IDENTIFIER">
+         <path value="Supplemental_oxygen_order.protocol.Receiver_order_identifier.value_DV_IDENTIFIER"/>
+         <short value="Receiver order identifier"/>
+         <definition value="The local identifier assigned to the request by the clinician or organisation receiving the order."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.protocol.Receiver_order_identifier.value_DV_IDENTIFIER"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Supplemental_oxygen_order.protocol.Receiver">
+         <path value="Supplemental_oxygen_order.protocol.Receiver"/>
+         <short value="Receiver"/>
+         <definition value="Details about the clinician or organisation receiving the order."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.protocol.Receiver"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Supplemental_oxygen_order.protocol.Request_status">
+         <path value="Supplemental_oxygen_order.protocol.Request_status"/>
+         <short value="Request status"/>
+         <definition value="The status of the order as indicated by the requester."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.protocol.Request_status"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Supplemental_oxygen_order.protocol.Request_status.value">
+         <path value="Supplemental_oxygen_order.protocol.Request_status.value"/>
+         <short value="Request status"/>
+         <definition value="The status of the order as indicated by the requester."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.protocol.Request_status.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Supplemental_oxygen_order.protocol.Distribution_list">
+         <path value="Supplemental_oxygen_order.protocol.Distribution_list"/>
+         <short value="Distribution list"/>
+         <definition value="Details of additional clinicians, organisations or agencies who require copies of any communication."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Supplemental_oxygen_order.protocol.Distribution_list"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Supplemental_oxygen_order.protocol.Extension">
+         <path value="Supplemental_oxygen_order.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models or formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Supplemental_oxygen_order.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Supplemental_oxygen_order.Current_Activity">
+         <path value="Supplemental_oxygen_order.Current_Activity"/>
+         <short value="Current Activity"/>
+         <definition value="ACTIVITY"/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.Current_Activity"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Supplemental_oxygen_order.Current_Activity.description">
+         <path value="Supplemental_oxygen_order.Current_Activity.description"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.Current_Activity.description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Supplemental_oxygen_order.Current_Activity.description.Target_O₂_saturation">
+         <path value="Supplemental_oxygen_order.Current_Activity.description.Target_O₂_saturation"/>
+         <short value="Target O₂ saturation"/>
+         <definition value="The target levels of oxygenation that is appropriate for the individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.Current_Activity.description.Target_O₂_saturation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Supplemental_oxygen_order.Current_Activity.description.Target_O₂_saturation.value_DV_CODED_TEXT">
+         <path value="Supplemental_oxygen_order.Current_Activity.description.Target_O₂_saturation.value_DV_CODED_TEXT"/>
+         <short value="Target O₂ saturation"/>
+         <definition value="The target levels of oxygenation that is appropriate for the individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.Current_Activity.description.Target_O₂_saturation.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Supplemental_oxygen_order.Current_Activity.description.Target_O₂_saturation.value_DV_TEXT">
+         <path value="Supplemental_oxygen_order.Current_Activity.description.Target_O₂_saturation.value_DV_TEXT"/>
+         <short value="Target O₂ saturation"/>
+         <definition value="The target levels of oxygenation that is appropriate for the individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.Current_Activity.description.Target_O₂_saturation.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Supplemental_oxygen_order.Current_Activity.description.Target_O₂_saturation.value_DV_INTERVAL_DV_QUANTITY_">
+         <path value="Supplemental_oxygen_order.Current_Activity.description.Target_O₂_saturation.value_DV_INTERVAL_DV_QUANTITY_"/>
+         <short value="Target O₂ saturation"/>
+         <definition value="The target levels of oxygenation that is appropriate for the individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.Current_Activity.description.Target_O₂_saturation.value_DV_INTERVAL_DV_QUANTITY_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Supplemental_oxygen_order.Current_Activity.description.Target_O₂_saturation.value_DvQuantity">
+         <path value="Supplemental_oxygen_order.Current_Activity.description.Target_O₂_saturation.value_DvQuantity"/>
+         <short value="Target O₂ saturation"/>
+         <definition value="The target levels of oxygenation that is appropriate for the individual."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.Current_Activity.description.Target_O₂_saturation.value_DvQuantity"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Supplemental_oxygen_order.Current_Activity.description.Flow_rate">
+         <path value="Supplemental_oxygen_order.Current_Activity.description.Flow_rate"/>
+         <short value="Flow rate"/>
+         <definition value="The rate of flow of oxygen delivered to the delivery device."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.Current_Activity.description.Flow_rate"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Supplemental_oxygen_order.Current_Activity.description.Flow_rate.value_DvQuantity">
+         <path value="Supplemental_oxygen_order.Current_Activity.description.Flow_rate.value_DvQuantity"/>
+         <short value="Flow rate"/>
+         <definition value="The rate of flow of oxygen delivered to the delivery device."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.Current_Activity.description.Flow_rate.value_DvQuantity"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Supplemental_oxygen_order.Current_Activity.description.Flow_rate.value_DV_INTERVAL_DV_QUANTITY_">
+         <path value="Supplemental_oxygen_order.Current_Activity.description.Flow_rate.value_DV_INTERVAL_DV_QUANTITY_"/>
+         <short value="Flow rate"/>
+         <definition value="The rate of flow of oxygen delivered to the delivery device."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.Current_Activity.description.Flow_rate.value_DV_INTERVAL_DV_QUANTITY_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Supplemental_oxygen_order.Current_Activity.description.Delivery_device">
+         <path value="Supplemental_oxygen_order.Current_Activity.description.Delivery_device"/>
+         <short value="Delivery device"/>
+         <definition value="Type of oxygen delivery device."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.Current_Activity.description.Delivery_device"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Supplemental_oxygen_order.Current_Activity.description.Delivery_device.value_DV_CODED_TEXT">
+         <path value="Supplemental_oxygen_order.Current_Activity.description.Delivery_device.value_DV_CODED_TEXT"/>
+         <short value="Delivery device"/>
+         <definition value="Type of oxygen delivery device."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.Current_Activity.description.Delivery_device.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Supplemental_oxygen_order.Current_Activity.description.Delivery_device.value_DV_TEXT">
+         <path value="Supplemental_oxygen_order.Current_Activity.description.Delivery_device.value_DV_TEXT"/>
+         <short value="Delivery device"/>
+         <definition value="Type of oxygen delivery device."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.Current_Activity.description.Delivery_device.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Supplemental_oxygen_order.Current_Activity.description.Pattern">
+         <path value="Supplemental_oxygen_order.Current_Activity.description.Pattern"/>
+         <short value="Pattern"/>
+         <definition value="The intended approach for administration."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.Current_Activity.description.Pattern"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Supplemental_oxygen_order.Current_Activity.description.Pattern.value">
+         <path value="Supplemental_oxygen_order.Current_Activity.description.Pattern.value"/>
+         <short value="Pattern"/>
+         <definition value="The intended approach for administration."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.Current_Activity.description.Pattern.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Supplemental_oxygen_order.Current_Activity.description.Description">
+         <path value="Supplemental_oxygen_order.Current_Activity.description.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the supplemental oxygen order."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.Current_Activity.description.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Supplemental_oxygen_order.Current_Activity.description.Description.value">
+         <path value="Supplemental_oxygen_order.Current_Activity.description.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the supplemental oxygen order."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.Current_Activity.description.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Supplemental_oxygen_order.Current_Activity.description.Clinical_indication">
+         <path value="Supplemental_oxygen_order.Current_Activity.description.Clinical_indication"/>
+         <short value="Clinical indication"/>
+         <definition value="The clinical reason for supplemental use of oxygen."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Supplemental_oxygen_order.Current_Activity.description.Clinical_indication"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Supplemental_oxygen_order.Current_Activity.description.Clinical_indication.value">
+         <path value="Supplemental_oxygen_order.Current_Activity.description.Clinical_indication.value"/>
+         <short value="Clinical indication"/>
+         <definition value="The clinical reason for supplemental use of oxygen."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.Current_Activity.description.Clinical_indication.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Supplemental_oxygen_order.Current_Activity.description.Therapeutic_intent">
+         <path value="Supplemental_oxygen_order.Current_Activity.description.Therapeutic_intent"/>
+         <short value="Therapeutic intent"/>
+         <definition value="The therapeutic goal for use of supplemental oxygen."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.Current_Activity.description.Therapeutic_intent"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Supplemental_oxygen_order.Current_Activity.description.Therapeutic_intent.value">
+         <path value="Supplemental_oxygen_order.Current_Activity.description.Therapeutic_intent.value"/>
+         <short value="Therapeutic intent"/>
+         <definition value="The therapeutic goal for use of supplemental oxygen."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.Current_Activity.description.Therapeutic_intent.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Supplemental_oxygen_order.Current_Activity.description.Urgency">
+         <path value="Supplemental_oxygen_order.Current_Activity.description.Urgency"/>
+         <short value="Urgency"/>
+         <definition value="Urgency of the request for oxygen."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.Current_Activity.description.Urgency"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Supplemental_oxygen_order.Current_Activity.description.Urgency.value">
+         <path value="Supplemental_oxygen_order.Current_Activity.description.Urgency.value"/>
+         <short value="Urgency"/>
+         <definition value="Urgency of the request for oxygen."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.Current_Activity.description.Urgency.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Supplemental_oxygen_order.Current_Activity.description.Duration_per_administration">
+         <path value="Supplemental_oxygen_order.Current_Activity.description.Duration_per_administration"/>
+         <short value="Duration per administration"/>
+         <definition value="Duration of each administration of supplemental oxygen."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.Current_Activity.description.Duration_per_administration"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Supplemental_oxygen_order.Current_Activity.description.Duration_per_administration.value_DvQuantity">
+         <path value="Supplemental_oxygen_order.Current_Activity.description.Duration_per_administration.value_DvQuantity"/>
+         <short value="Duration per administration"/>
+         <definition value="Duration of each administration of supplemental oxygen."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.Current_Activity.description.Duration_per_administration.value_DvQuantity"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Supplemental_oxygen_order.Current_Activity.description.Duration_per_administration.value_DV_INTERVAL_DV_QUANTITY_">
+         <path value="Supplemental_oxygen_order.Current_Activity.description.Duration_per_administration.value_DV_INTERVAL_DV_QUANTITY_"/>
+         <short value="Duration per administration"/>
+         <definition value="Duration of each administration of supplemental oxygen."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.Current_Activity.description.Duration_per_administration.value_DV_INTERVAL_DV_QUANTITY_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Supplemental_oxygen_order.Current_Activity.description.Delivery_device_details">
+         <path value="Supplemental_oxygen_order.Current_Activity.description.Delivery_device_details"/>
+         <short value="Delivery device details"/>
+         <definition value="Structured details about the delivery device."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Supplemental_oxygen_order.Current_Activity.description.Delivery_device_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Supplemental_oxygen_order.Current_Activity.description.Duration_per_day">
+         <path value="Supplemental_oxygen_order.Current_Activity.description.Duration_per_day"/>
+         <short value="Duration per day"/>
+         <definition value="Total administration of supplemental oxygen over a 24 hour period."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.Current_Activity.description.Duration_per_day"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Supplemental_oxygen_order.Current_Activity.description.Duration_per_day.value_DvQuantity">
+         <path value="Supplemental_oxygen_order.Current_Activity.description.Duration_per_day.value_DvQuantity"/>
+         <short value="Duration per day"/>
+         <definition value="Total administration of supplemental oxygen over a 24 hour period."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.Current_Activity.description.Duration_per_day.value_DvQuantity"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Supplemental_oxygen_order.Current_Activity.description.Duration_per_day.value_DV_INTERVAL_DV_QUANTITY_">
+         <path value="Supplemental_oxygen_order.Current_Activity.description.Duration_per_day.value_DV_INTERVAL_DV_QUANTITY_"/>
+         <short value="Duration per day"/>
+         <definition value="Total administration of supplemental oxygen over a 24 hour period."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.Current_Activity.description.Duration_per_day.value_DV_INTERVAL_DV_QUANTITY_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Supplemental_oxygen_order.Current_Activity.description.Timing">
+         <path value="Supplemental_oxygen_order.Current_Activity.description.Timing"/>
+         <short value="Timing"/>
+         <definition value="Structured desciption of the timing of intermittent administration within a 24 hour period."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Supplemental_oxygen_order.Current_Activity.description.Timing"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Supplemental_oxygen_order.Current_Activity.description.Activity">
+         <path value="Supplemental_oxygen_order.Current_Activity.description.Activity"/>
+         <short value="Activity"/>
+         <definition value="Specific activity that requires supplemental oxygen."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Supplemental_oxygen_order.Current_Activity.description.Activity"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Supplemental_oxygen_order.Current_Activity.description.Activity.value">
+         <path value="Supplemental_oxygen_order.Current_Activity.description.Activity.value"/>
+         <short value="Activity"/>
+         <definition value="Specific activity that requires supplemental oxygen."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.Current_Activity.description.Activity.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Supplemental_oxygen_order.Current_Activity.description.Used_with_PAP">
+         <path value="Supplemental_oxygen_order.Current_Activity.description.Used_with_PAP"/>
+         <short value="Used with PAP"/>
+         <definition value="Flag if the order requires PAP."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.Current_Activity.description.Used_with_PAP"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Supplemental_oxygen_order.Current_Activity.description.Used_with_PAP.value">
+         <path value="Supplemental_oxygen_order.Current_Activity.description.Used_with_PAP.value"/>
+         <short value="Used with PAP"/>
+         <definition value="Flag if the order requires PAP."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.Current_Activity.description.Used_with_PAP.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Supplemental_oxygen_order.Current_Activity.description.Equipment_type">
+         <path value="Supplemental_oxygen_order.Current_Activity.description.Equipment_type"/>
+         <short value="Equipment type"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.Current_Activity.description.Equipment_type"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Supplemental_oxygen_order.Current_Activity.description.Equipment_type.value">
+         <path value="Supplemental_oxygen_order.Current_Activity.description.Equipment_type.value"/>
+         <short value="Equipment type"/>
+         <definition value="DV_CODED_TEXT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.Current_Activity.description.Equipment_type.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Supplemental_oxygen_order.Current_Activity.description.Order_start">
+         <path value="Supplemental_oxygen_order.Current_Activity.description.Order_start"/>
+         <short value="Order start"/>
+         <definition value="The date/time when supplemental oxygen order commences."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.Current_Activity.description.Order_start"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Supplemental_oxygen_order.Current_Activity.description.Order_start.value">
+         <path value="Supplemental_oxygen_order.Current_Activity.description.Order_start.value"/>
+         <short value="Order start"/>
+         <definition value="The date/time when supplemental oxygen order commences."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.Current_Activity.description.Order_start.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Supplemental_oxygen_order.Current_Activity.description.Order_end">
+         <path value="Supplemental_oxygen_order.Current_Activity.description.Order_end"/>
+         <short value="Order end"/>
+         <definition value="The date/time when supplemental oxygen order ceases."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.Current_Activity.description.Order_end"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Supplemental_oxygen_order.Current_Activity.description.Order_end.value">
+         <path value="Supplemental_oxygen_order.Current_Activity.description.Order_end.value"/>
+         <short value="Order end"/>
+         <definition value="The date/time when supplemental oxygen order ceases."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.Current_Activity.description.Order_end.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Supplemental_oxygen_order.Current_Activity.description.Indefinite">
+         <path value="Supplemental_oxygen_order.Current_Activity.description.Indefinite"/>
+         <short value="Indefinite"/>
+         <definition value="The order is open ended and has no end date."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.Current_Activity.description.Indefinite"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Supplemental_oxygen_order.Current_Activity.description.Indefinite.value">
+         <path value="Supplemental_oxygen_order.Current_Activity.description.Indefinite.value"/>
+         <short value="Indefinite"/>
+         <definition value="The order is open ended and has no end date."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.Current_Activity.description.Indefinite.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Supplemental_oxygen_order.Current_Activity.description.Comment">
+         <path value="Supplemental_oxygen_order.Current_Activity.description.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the supplemental oxygen order not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.Current_Activity.description.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Supplemental_oxygen_order.Current_Activity.description.Comment.value">
+         <path value="Supplemental_oxygen_order.Current_Activity.description.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the supplemental oxygen order not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Supplemental_oxygen_order.Current_Activity.description.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

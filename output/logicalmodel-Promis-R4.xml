@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Promis-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-promis-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.promis.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Promis"/>
+   <title value="PROMIS"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Patient Reported Outcomes Measurement Information System®, a set of over 300 measures of physical, mental, and social health for use with the general population and with individuals living with chronic conditions."/>
+   <purpose value="To record any PROMIS measure."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="PROMIS">
+         <path value="PROMIS"/>
+         <short value="PROMIS"/>
+         <definition value="Patient Reported Outcomes Measurement Information System®, a set of over 300 measures of physical, mental, and social health for use with the general population and with individuals living with chronic conditions."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="PROMIS"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="PROMIS.protocol">
+         <path value="PROMIS.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="PROMIS.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="PROMIS.protocol.Extension">
+         <path value="PROMIS.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models or formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="PROMIS.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="PROMIS.History">
+         <path value="PROMIS.History"/>
+         <short value="History"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="PROMIS.History"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="PROMIS.History.Any_event">
+         <path value="PROMIS.History.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="PROMIS.History.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="PROMIS.History.Any_event.data">
+         <path value="PROMIS.History.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="PROMIS.History.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="PROMIS.History.Any_event.data.Assessment_or_test_name">
+         <path value="PROMIS.History.Any_event.data.Assessment_or_test_name"/>
+         <short value="Assessment or test name"/>
+         <definition value="The name of the PROMIS assessment or test performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="PROMIS.History.Any_event.data.Assessment_or_test_name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="PROMIS.History.Any_event.data.Assessment_or_test_name.value">
+         <path value="PROMIS.History.Any_event.data.Assessment_or_test_name.value"/>
+         <short value="Assessment or test name"/>
+         <definition value="The name of the PROMIS assessment or test performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="PROMIS.History.Any_event.data.Assessment_or_test_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="PROMIS.History.Any_event.data.PROMIS_questions">
+         <path value="PROMIS.History.Any_event.data.PROMIS_questions"/>
+         <short value="PROMIS questions"/>
+         <definition value="Specific PROMIS questions."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="PROMIS.History.Any_event.data.PROMIS_questions"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="PROMIS.History.Any_event.data.Total_score">
+         <path value="PROMIS.History.Any_event.data.Total_score"/>
+         <short value="Total score"/>
+         <definition value="The total score of the PROMIS assessment."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="PROMIS.History.Any_event.data.Total_score"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="PROMIS.History.Any_event.data.Total_score.value">
+         <path value="PROMIS.History.Any_event.data.Total_score.value"/>
+         <short value="Total score"/>
+         <definition value="The total score of the PROMIS assessment."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="PROMIS.History.Any_event.data.Total_score.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

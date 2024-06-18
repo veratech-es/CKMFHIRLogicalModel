@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Travelevent-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-travelevent-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-ADMIN_ENTRY.travel_event.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Travelevent"/>
+   <title value="Travel event"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Details about a specific trip or travel event."/>
+   <purpose value="To record details about a specific trip or travel event, especially for the purposes of public health management."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Travel_event">
+         <path value="Travel_event"/>
+         <short value="Travel event"/>
+         <definition value="Details about a specific trip or travel event."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_event"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Travel_event.data">
+         <path value="Travel_event.data"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Travel_event.data.Origin">
+         <path value="Travel_event.data.Origin"/>
+         <short value="Origin"/>
+         <definition value="The name of the country, or the region of a country, that the individual regards as 'home' for the purpose of this episode of travel."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_event.data.Origin"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Travel_event.data.Origin.value">
+         <path value="Travel_event.data.Origin.value"/>
+         <short value="Origin"/>
+         <definition value="The name of the country, or the region of a country, that the individual regards as 'home' for the purpose of this episode of travel."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_event.data.Origin.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Travel_event.data.Date_of_departure">
+         <path value="Travel_event.data.Date_of_departure"/>
+         <short value="Date of departure"/>
+         <definition value="The date when the individual departed their location of origin."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_event.data.Date_of_departure"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Travel_event.data.Date_of_departure.value">
+         <path value="Travel_event.data.Date_of_departure.value"/>
+         <short value="Date of departure"/>
+         <definition value="The date when the individual departed their location of origin."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_event.data.Date_of_departure.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Travel_event.data.Description">
+         <path value="Travel_event.data.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the whole trip, especially about potential exposure to health risks."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_event.data.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Travel_event.data.Description.value">
+         <path value="Travel_event.data.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the whole trip, especially about potential exposure to health risks."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_event.data.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Travel_event.data.Specific_destination">
+         <path value="Travel_event.data.Specific_destination"/>
+         <short value="Specific destination"/>
+         <definition value="Details about a single location visited during travel - in country or abroad."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Travel_event.data.Specific_destination"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Travel_event.data.Specific_destination.Country">
+         <path value="Travel_event.data.Specific_destination.Country"/>
+         <short value="Country"/>
+         <definition value="The country visited."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_event.data.Specific_destination.Country"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Travel_event.data.Specific_destination.Country.value">
+         <path value="Travel_event.data.Specific_destination.Country.value"/>
+         <short value="Country"/>
+         <definition value="The country visited."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_event.data.Specific_destination.Country.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Travel_event.data.Specific_destination.State_region">
+         <path value="Travel_event.data.Specific_destination.State_region"/>
+         <short value="State/region"/>
+         <definition value="The region visited."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_event.data.Specific_destination.State_region"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Travel_event.data.Specific_destination.State_region.value">
+         <path value="Travel_event.data.Specific_destination.State_region.value"/>
+         <short value="State/region"/>
+         <definition value="The region visited."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_event.data.Specific_destination.State_region.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Travel_event.data.Specific_destination.City">
+         <path value="Travel_event.data.Specific_destination.City"/>
+         <short value="City"/>
+         <definition value="The city visited."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_event.data.Specific_destination.City"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Travel_event.data.Specific_destination.City.value">
+         <path value="Travel_event.data.Specific_destination.City.value"/>
+         <short value="City"/>
+         <definition value="The city visited."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_event.data.Specific_destination.City.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Travel_event.data.Specific_destination.Date_of_arrival">
+         <path value="Travel_event.data.Specific_destination.Date_of_arrival"/>
+         <short value="Date of arrival"/>
+         <definition value="Date of arrival to the identified destination."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_event.data.Specific_destination.Date_of_arrival"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Travel_event.data.Specific_destination.Date_of_arrival.value">
+         <path value="Travel_event.data.Specific_destination.Date_of_arrival.value"/>
+         <short value="Date of arrival"/>
+         <definition value="Date of arrival to the identified destination."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_event.data.Specific_destination.Date_of_arrival.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Travel_event.data.Specific_destination.Description">
+         <path value="Travel_event.data.Specific_destination.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the visit to the location."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_event.data.Specific_destination.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Travel_event.data.Specific_destination.Description.value">
+         <path value="Travel_event.data.Specific_destination.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the visit to the location."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_event.data.Specific_destination.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Travel_event.data.Specific_destination.Specific_place_or_person">
+         <path value="Travel_event.data.Specific_destination.Specific_place_or_person"/>
+         <short value="Specific place or person"/>
+         <definition value="The name of a specific place, person or group of people that was visited."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Travel_event.data.Specific_destination.Specific_place_or_person"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Travel_event.data.Specific_destination.Specific_place_or_person.value">
+         <path value="Travel_event.data.Specific_destination.Specific_place_or_person.value"/>
+         <short value="Specific place or person"/>
+         <definition value="The name of a specific place, person or group of people that was visited."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_event.data.Specific_destination.Specific_place_or_person.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Travel_event.data.Specific_destination.Additional_destination_details">
+         <path value="Travel_event.data.Specific_destination.Additional_destination_details"/>
+         <short value="Additional destination details"/>
+         <definition value="Additional structured details about the travel to, from and at the destination."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Travel_event.data.Specific_destination.Additional_destination_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Travel_event.data.Specific_destination.Date_of_departure">
+         <path value="Travel_event.data.Specific_destination.Date_of_departure"/>
+         <short value="Date of departure"/>
+         <definition value="Date of exit from the identified destination."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_event.data.Specific_destination.Date_of_departure"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Travel_event.data.Specific_destination.Date_of_departure.value">
+         <path value="Travel_event.data.Specific_destination.Date_of_departure.value"/>
+         <short value="Date of departure"/>
+         <definition value="Date of exit from the identified destination."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_event.data.Specific_destination.Date_of_departure.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Travel_event.data.Specific_destination.Comment">
+         <path value="Travel_event.data.Specific_destination.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the stay at the identified location, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_event.data.Specific_destination.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Travel_event.data.Specific_destination.Comment.value">
+         <path value="Travel_event.data.Specific_destination.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the stay at the identified location, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_event.data.Specific_destination.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Travel_event.data.Additional_trip_details">
+         <path value="Travel_event.data.Additional_trip_details"/>
+         <short value="Additional trip details"/>
+         <definition value="Additional structured details about the whole trip."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Travel_event.data.Additional_trip_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Travel_event.data.Return_transport">
+         <path value="Travel_event.data.Return_transport"/>
+         <short value="Return transport"/>
+         <definition value="Details about how the individual returned to their home base."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Travel_event.data.Return_transport"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Travel_event.data.Return_transport.value">
+         <path value="Travel_event.data.Return_transport.value"/>
+         <short value="Return transport"/>
+         <definition value="Details about how the individual returned to their home base."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_event.data.Return_transport.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Travel_event.data.Date_of_return">
+         <path value="Travel_event.data.Date_of_return"/>
+         <short value="Date of return"/>
+         <definition value="The date when the individual returned back to their location of origin."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_event.data.Date_of_return"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Travel_event.data.Date_of_return.value">
+         <path value="Travel_event.data.Date_of_return.value"/>
+         <short value="Date of return"/>
+         <definition value="The date when the individual returned back to their location of origin."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_event.data.Date_of_return.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Travel_event.data.Comment">
+         <path value="Travel_event.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the whole trip, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_event.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Travel_event.data.Comment.value">
+         <path value="Travel_event.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the whole trip, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_event.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

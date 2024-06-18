@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Foetalbiometry-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-foetalbiometry-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.fetal_biometry.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Foetalbiometry"/>
+   <title value="Foetal biometry"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Ultrasound and Doppler measurements of the dimensions of an embryo or foetus."/>
+   <purpose value="To record ultrasound and doppler measurements of an embryo or foetus in utero."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Foetal_biometry">
+         <path value="Foetal_biometry"/>
+         <short value="Foetal biometry"/>
+         <definition value="Ultrasound and Doppler measurements of the dimensions of an embryo or foetus."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_biometry"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Foetal_biometry.protocol">
+         <path value="Foetal_biometry.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_biometry.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Foetal_biometry.protocol.BPD_method">
+         <path value="Foetal_biometry.protocol.BPD_method"/>
+         <short value="BPD method"/>
+         <definition value="The method of measuring the biparietal diameter."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_biometry.protocol.BPD_method"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Foetal_biometry.protocol.BPD_method.value">
+         <path value="Foetal_biometry.protocol.BPD_method.value"/>
+         <short value="BPD method"/>
+         <definition value="The method of measuring the biparietal diameter."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_biometry.protocol.BPD_method.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Foetal_biometry.protocol.Extension">
+         <path value="Foetal_biometry.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Foetal_biometry.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Foetal_biometry.History">
+         <path value="Foetal_biometry.History"/>
+         <short value="History"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_biometry.History"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Foetal_biometry.History.Any_event">
+         <path value="Foetal_biometry.History.Any_event"/>
+         <short value="Any event"/>
+         <definition value="EVENT"/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Foetal_biometry.History.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Foetal_biometry.History.Any_event.data">
+         <path value="Foetal_biometry.History.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_biometry.History.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Foetal_biometry.History.Any_event.data.Crown_rump_length_(CRL)">
+         <path value="Foetal_biometry.History.Any_event.data.Crown_rump_length_(CRL)"/>
+         <short value="Crown-rump length (CRL)"/>
+         <definition value="The length of the embryo or foetus from the top of its head to bottom of its rump."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_biometry.History.Any_event.data.Crown_rump_length_(CRL)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Foetal_biometry.History.Any_event.data.Crown_rump_length_(CRL).value">
+         <path value="Foetal_biometry.History.Any_event.data.Crown_rump_length_(CRL).value"/>
+         <short value="Crown-rump length (CRL)"/>
+         <definition value="The length of the embryo or foetus from the top of its head to bottom of its rump."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_biometry.History.Any_event.data.Crown_rump_length_(CRL).value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Foetal_biometry.History.Any_event.data.Biparietal_diameter_(BPD)">
+         <path value="Foetal_biometry.History.Any_event.data.Biparietal_diameter_(BPD)"/>
+         <short value="Biparietal diameter (BPD)"/>
+         <definition value="The maximum diameter of a transverse section of the foetal skull."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_biometry.History.Any_event.data.Biparietal_diameter_(BPD)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Foetal_biometry.History.Any_event.data.Biparietal_diameter_(BPD).value">
+         <path value="Foetal_biometry.History.Any_event.data.Biparietal_diameter_(BPD).value"/>
+         <short value="Biparietal diameter (BPD)"/>
+         <definition value="The maximum diameter of a transverse section of the foetal skull."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_biometry.History.Any_event.data.Biparietal_diameter_(BPD).value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Foetal_biometry.History.Any_event.data.Occipito_frontal_diameter_(OFD)">
+         <path value="Foetal_biometry.History.Any_event.data.Occipito_frontal_diameter_(OFD)"/>
+         <short value="Occipito-frontal diameter (OFD)"/>
+         <definition value="The maximal diameter from the occiput to the frontal bone in the midline of the foetal skull."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_biometry.History.Any_event.data.Occipito_frontal_diameter_(OFD)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Foetal_biometry.History.Any_event.data.Occipito_frontal_diameter_(OFD).value">
+         <path value="Foetal_biometry.History.Any_event.data.Occipito_frontal_diameter_(OFD).value"/>
+         <short value="Occipito-frontal diameter (OFD)"/>
+         <definition value="The maximal diameter from the occiput to the frontal bone in the midline of the foetal skull."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_biometry.History.Any_event.data.Occipito_frontal_diameter_(OFD).value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Foetal_biometry.History.Any_event.data.Head_circumference_(HC)">
+         <path value="Foetal_biometry.History.Any_event.data.Head_circumference_(HC)"/>
+         <short value="Head circumference (HC)"/>
+         <definition value="The distance around the foetal head."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_biometry.History.Any_event.data.Head_circumference_(HC)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Foetal_biometry.History.Any_event.data.Head_circumference_(HC).value">
+         <path value="Foetal_biometry.History.Any_event.data.Head_circumference_(HC).value"/>
+         <short value="Head circumference (HC)"/>
+         <definition value="The distance around the foetal head."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_biometry.History.Any_event.data.Head_circumference_(HC).value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Foetal_biometry.History.Any_event.data.Trans_cerebellar_diameter_(TCD)">
+         <path value="Foetal_biometry.History.Any_event.data.Trans_cerebellar_diameter_(TCD)"/>
+         <short value="Trans-cerebellar diameter (TCD)"/>
+         <definition value="The maximum transverse diameter of the foetal cerebellum."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_biometry.History.Any_event.data.Trans_cerebellar_diameter_(TCD)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Foetal_biometry.History.Any_event.data.Trans_cerebellar_diameter_(TCD).value">
+         <path value="Foetal_biometry.History.Any_event.data.Trans_cerebellar_diameter_(TCD).value"/>
+         <short value="Trans-cerebellar diameter (TCD)"/>
+         <definition value="The maximum transverse diameter of the foetal cerebellum."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_biometry.History.Any_event.data.Trans_cerebellar_diameter_(TCD).value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Foetal_biometry.History.Any_event.data.Interocular_distance_(IOD)">
+         <path value="Foetal_biometry.History.Any_event.data.Interocular_distance_(IOD)"/>
+         <short value="Interocular distance (IOD)"/>
+         <definition value="The distance between medial osseous structures of the two orbitae."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_biometry.History.Any_event.data.Interocular_distance_(IOD)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Foetal_biometry.History.Any_event.data.Interocular_distance_(IOD).value">
+         <path value="Foetal_biometry.History.Any_event.data.Interocular_distance_(IOD).value"/>
+         <short value="Interocular distance (IOD)"/>
+         <definition value="The distance between medial osseous structures of the two orbitae."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_biometry.History.Any_event.data.Interocular_distance_(IOD).value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Foetal_biometry.History.Any_event.data.Binocular_distance_(BOD)">
+         <path value="Foetal_biometry.History.Any_event.data.Binocular_distance_(BOD)"/>
+         <short value="Binocular distance (BOD)"/>
+         <definition value="The distance between lateral osseous structures of the two orbitae."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_biometry.History.Any_event.data.Binocular_distance_(BOD)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Foetal_biometry.History.Any_event.data.Binocular_distance_(BOD).value">
+         <path value="Foetal_biometry.History.Any_event.data.Binocular_distance_(BOD).value"/>
+         <short value="Binocular distance (BOD)"/>
+         <definition value="The distance between lateral osseous structures of the two orbitae."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_biometry.History.Any_event.data.Binocular_distance_(BOD).value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Foetal_biometry.History.Any_event.data.Abdominal_circumference_(AC)">
+         <path value="Foetal_biometry.History.Any_event.data.Abdominal_circumference_(AC)"/>
+         <short value="Abdominal circumference (AC)"/>
+         <definition value="The distance around the foetal abdomen."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_biometry.History.Any_event.data.Abdominal_circumference_(AC)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Foetal_biometry.History.Any_event.data.Abdominal_circumference_(AC).value">
+         <path value="Foetal_biometry.History.Any_event.data.Abdominal_circumference_(AC).value"/>
+         <short value="Abdominal circumference (AC)"/>
+         <definition value="The distance around the foetal abdomen."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_biometry.History.Any_event.data.Abdominal_circumference_(AC).value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Foetal_biometry.History.Any_event.data.Femur_length_(FL)">
+         <path value="Foetal_biometry.History.Any_event.data.Femur_length_(FL)"/>
+         <short value="Femur length (FL)"/>
+         <definition value="The length of the diaphysis of the femur."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_biometry.History.Any_event.data.Femur_length_(FL)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Foetal_biometry.History.Any_event.data.Femur_length_(FL).value">
+         <path value="Foetal_biometry.History.Any_event.data.Femur_length_(FL).value"/>
+         <short value="Femur length (FL)"/>
+         <definition value="The length of the diaphysis of the femur."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_biometry.History.Any_event.data.Femur_length_(FL).value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Foetal_biometry.History.Any_event.data.Humeral_length_(HL)">
+         <path value="Foetal_biometry.History.Any_event.data.Humeral_length_(HL)"/>
+         <short value="Humeral length (HL)"/>
+         <definition value="The length of the diaphysis of the humerus."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_biometry.History.Any_event.data.Humeral_length_(HL)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Foetal_biometry.History.Any_event.data.Humeral_length_(HL).value">
+         <path value="Foetal_biometry.History.Any_event.data.Humeral_length_(HL).value"/>
+         <short value="Humeral length (HL)"/>
+         <definition value="The length of the diaphysis of the humerus."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_biometry.History.Any_event.data.Humeral_length_(HL).value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Foetal_biometry.History.Any_event.data.Comment">
+         <path value="Foetal_biometry.History.Any_event.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the foetal biometry, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_biometry.History.Any_event.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Foetal_biometry.History.Any_event.data.Comment.value">
+         <path value="Foetal_biometry.History.Any_event.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the foetal biometry, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Foetal_biometry.History.Any_event.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

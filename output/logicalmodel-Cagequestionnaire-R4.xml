@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Cagequestionnaire-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-cagequestionnaire-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.cage.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Cagequestionnaire"/>
+   <title value="CAGE questionnaire"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Questionnaire to screen for harmful alcohol use and potential alcohol dependency."/>
+   <purpose value="To record the results of the CAGE questionnaire."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="CAGE_questionnaire">
+         <path value="CAGE_questionnaire"/>
+         <short value="CAGE questionnaire"/>
+         <definition value="Questionnaire to screen for harmful alcohol use and potential alcohol dependency."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="CAGE_questionnaire"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="CAGE_questionnaire.ItemTree">
+         <path value="CAGE_questionnaire.ItemTree"/>
+         <short value="ItemTree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="CAGE_questionnaire.ItemTree"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="CAGE_questionnaire.ItemTree.Extension">
+         <path value="CAGE_questionnaire.ItemTree.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="CAGE_questionnaire.ItemTree.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="CAGE_questionnaire.Event_Series">
+         <path value="CAGE_questionnaire.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="CAGE_questionnaire.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="CAGE_questionnaire.Event_Series.Any_event">
+         <path value="CAGE_questionnaire.Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="CAGE_questionnaire.Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="CAGE_questionnaire.Event_Series.Any_event.data">
+         <path value="CAGE_questionnaire.Event_Series.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="CAGE_questionnaire.Event_Series.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="CAGE_questionnaire.Event_Series.Any_event.data.Cut_down_">
+         <path value="CAGE_questionnaire.Event_Series.Any_event.data.Cut_down_"/>
+         <short value="Cut down?"/>
+         <definition value="Have you ever felt you needed to cut down on your drinking?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="CAGE_questionnaire.Event_Series.Any_event.data.Cut_down_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="CAGE_questionnaire.Event_Series.Any_event.data.Cut_down_.value">
+         <path value="CAGE_questionnaire.Event_Series.Any_event.data.Cut_down_.value"/>
+         <short value="Cut down?"/>
+         <definition value="Have you ever felt you needed to cut down on your drinking?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="CAGE_questionnaire.Event_Series.Any_event.data.Cut_down_.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="CAGE_questionnaire.Event_Series.Any_event.data.Annoyed_">
+         <path value="CAGE_questionnaire.Event_Series.Any_event.data.Annoyed_"/>
+         <short value="Annoyed?"/>
+         <definition value="Have you ever felt you needed to cut down on your drinking?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="CAGE_questionnaire.Event_Series.Any_event.data.Annoyed_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="CAGE_questionnaire.Event_Series.Any_event.data.Annoyed_.value">
+         <path value="CAGE_questionnaire.Event_Series.Any_event.data.Annoyed_.value"/>
+         <short value="Annoyed?"/>
+         <definition value="Have you ever felt you needed to cut down on your drinking?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="CAGE_questionnaire.Event_Series.Any_event.data.Annoyed_.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="CAGE_questionnaire.Event_Series.Any_event.data.Guilty_">
+         <path value="CAGE_questionnaire.Event_Series.Any_event.data.Guilty_"/>
+         <short value="Guilty?"/>
+         <definition value="Have you ever felt guilty about drinking?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="CAGE_questionnaire.Event_Series.Any_event.data.Guilty_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="CAGE_questionnaire.Event_Series.Any_event.data.Guilty_.value">
+         <path value="CAGE_questionnaire.Event_Series.Any_event.data.Guilty_.value"/>
+         <short value="Guilty?"/>
+         <definition value="Have you ever felt guilty about drinking?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="CAGE_questionnaire.Event_Series.Any_event.data.Guilty_.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="CAGE_questionnaire.Event_Series.Any_event.data.Eye_opener_">
+         <path value="CAGE_questionnaire.Event_Series.Any_event.data.Eye_opener_"/>
+         <short value="Eye opener?"/>
+         <definition value="Have you ever felt you needed a drink first thing in the morning (eye-opener) to steady your nerves or to get rid of a hangover?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="CAGE_questionnaire.Event_Series.Any_event.data.Eye_opener_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="CAGE_questionnaire.Event_Series.Any_event.data.Eye_opener_.value">
+         <path value="CAGE_questionnaire.Event_Series.Any_event.data.Eye_opener_.value"/>
+         <short value="Eye opener?"/>
+         <definition value="Have you ever felt you needed a drink first thing in the morning (eye-opener) to steady your nerves or to get rid of a hangover?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="CAGE_questionnaire.Event_Series.Any_event.data.Eye_opener_.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="CAGE_questionnaire.Event_Series.Any_event.data.Total_score">
+         <path value="CAGE_questionnaire.Event_Series.Any_event.data.Total_score"/>
+         <short value="Total score"/>
+         <definition value="Sum of the individual scores assigned for each of the contributing variables."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="CAGE_questionnaire.Event_Series.Any_event.data.Total_score"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="CAGE_questionnaire.Event_Series.Any_event.data.Total_score.value">
+         <path value="CAGE_questionnaire.Event_Series.Any_event.data.Total_score.value"/>
+         <short value="Total score"/>
+         <definition value="Sum of the individual scores assigned for each of the contributing variables."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="CAGE_questionnaire.Event_Series.Any_event.data.Total_score.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

@@ -1,0 +1,2780 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Audiogramtestresult-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-audiogramtestresult-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.audiogram_result.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Audiogramtestresult"/>
+   <title value="Audiogram test result"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Measurement of hearing acuity using a calibrated hearing test device, and associated clinical interpretation."/>
+   <purpose value="To record measurements of hearing acuity using a calibrated hearing test device, and their interpretation by a clinician."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Audiogram_test_result">
+         <path value="Audiogram_test_result"/>
+         <short value="Audiogram test result"/>
+         <definition value="Measurement of hearing acuity using a calibrated hearing test device, and associated clinical interpretation."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.protocol">
+         <path value="Audiogram_test_result.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.protocol.Extension">
+         <path value="Audiogram_test_result.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Audiogram_test_result.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.protocol.Air_presentation">
+         <path value="Audiogram_test_result.protocol.Air_presentation"/>
+         <short value="Air presentation"/>
+         <definition value="Presentation of the air conduction test stimulus indirectly to the inner ear through the atmosphere, via the auditory canal and middle ear structures."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.protocol.Air_presentation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.protocol.Air_presentation.value">
+         <path value="Audiogram_test_result.protocol.Air_presentation.value"/>
+         <short value="Air presentation"/>
+         <definition value="Presentation of the air conduction test stimulus indirectly to the inner ear through the atmosphere, via the auditory canal and middle ear structures."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.protocol.Air_presentation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.protocol.Bone_presentation">
+         <path value="Audiogram_test_result.protocol.Bone_presentation"/>
+         <short value="Bone presentation"/>
+         <definition value="Presentation of the bone conduction test stimulus directly to the inner ear via the cranial bones."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.protocol.Bone_presentation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.protocol.Bone_presentation.value">
+         <path value="Audiogram_test_result.protocol.Bone_presentation.value"/>
+         <short value="Bone presentation"/>
+         <definition value="Presentation of the bone conduction test stimulus directly to the inner ear via the cranial bones."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.protocol.Bone_presentation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.protocol.Test_environment">
+         <path value="Audiogram_test_result.protocol.Test_environment"/>
+         <short value="Test environment"/>
+         <definition value="The environment in which the audiometric test is administered."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.protocol.Test_environment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.protocol.Test_environment.value">
+         <path value="Audiogram_test_result.protocol.Test_environment.value"/>
+         <short value="Test environment"/>
+         <definition value="The environment in which the audiometric test is administered."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.protocol.Test_environment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.protocol.Background_noise">
+         <path value="Audiogram_test_result.protocol.Background_noise"/>
+         <short value="Background noise"/>
+         <definition value="The amount and nature of noise in the environment that may influence the test results."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.protocol.Background_noise"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.protocol.Background_noise.value">
+         <path value="Audiogram_test_result.protocol.Background_noise.value"/>
+         <short value="Background noise"/>
+         <definition value="The amount and nature of noise in the environment that may influence the test results."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.protocol.Background_noise.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.protocol.Test_stimulus">
+         <path value="Audiogram_test_result.protocol.Test_stimulus"/>
+         <short value="Test stimulus"/>
+         <definition value="Identification of the stimulus used in the hearing test to measure the hearing threshold."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.protocol.Test_stimulus"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.protocol.Test_stimulus.value">
+         <path value="Audiogram_test_result.protocol.Test_stimulus.value"/>
+         <short value="Test stimulus"/>
+         <definition value="Identification of the stimulus used in the hearing test to measure the hearing threshold."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.protocol.Test_stimulus.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.protocol.Click_stimulus_specification">
+         <path value="Audiogram_test_result.protocol.Click_stimulus_specification"/>
+         <short value="Click stimulus specification"/>
+         <definition value="Identification of parameters specifying a click stimulus."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.protocol.Click_stimulus_specification"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.protocol.Click_stimulus_specification.Onset_ramp">
+         <path value="Audiogram_test_result.protocol.Click_stimulus_specification.Onset_ramp"/>
+         <short value="Onset ramp"/>
+         <definition value="Time over which the stimulus grows to full amplitude."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.protocol.Click_stimulus_specification.Onset_ramp"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.protocol.Click_stimulus_specification.Onset_ramp.value">
+         <path value="Audiogram_test_result.protocol.Click_stimulus_specification.Onset_ramp.value"/>
+         <short value="Onset ramp"/>
+         <definition value="Time over which the stimulus grows to full amplitude."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.protocol.Click_stimulus_specification.Onset_ramp.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.protocol.Click_stimulus_specification.Offset_ramp">
+         <path value="Audiogram_test_result.protocol.Click_stimulus_specification.Offset_ramp"/>
+         <short value="Offset ramp"/>
+         <definition value="Time over which the stimulus depletes to zero amplitude."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.protocol.Click_stimulus_specification.Offset_ramp"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.protocol.Click_stimulus_specification.Offset_ramp.value">
+         <path value="Audiogram_test_result.protocol.Click_stimulus_specification.Offset_ramp.value"/>
+         <short value="Offset ramp"/>
+         <definition value="Time over which the stimulus depletes to zero amplitude."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.protocol.Click_stimulus_specification.Offset_ramp.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.protocol.Click_stimulus_specification.Total_duration">
+         <path value="Audiogram_test_result.protocol.Click_stimulus_specification.Total_duration"/>
+         <short value="Total duration"/>
+         <definition value="Total duration of the click stimulus."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.protocol.Click_stimulus_specification.Total_duration"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.protocol.Click_stimulus_specification.Total_duration.value">
+         <path value="Audiogram_test_result.protocol.Click_stimulus_specification.Total_duration.value"/>
+         <short value="Total duration"/>
+         <definition value="Total duration of the click stimulus."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.protocol.Click_stimulus_specification.Total_duration.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.protocol.Threshold_determination_protocol">
+         <path value="Audiogram_test_result.protocol.Threshold_determination_protocol"/>
+         <short value="Threshold determination protocol"/>
+         <definition value="Protocol used to measure the hearing threshold for pure tone, play and visual reinforcement orientation audiometry only."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.protocol.Threshold_determination_protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.protocol.Threshold_determination_protocol.Threshold_definition">
+         <path value="Audiogram_test_result.protocol.Threshold_determination_protocol.Threshold_definition"/>
+         <short value="Threshold definition"/>
+         <definition value="Definition of the protocol used to define the threshold level used in the test."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.protocol.Threshold_determination_protocol.Threshold_definition"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.protocol.Threshold_determination_protocol.Threshold_definition.value">
+         <path value="Audiogram_test_result.protocol.Threshold_determination_protocol.Threshold_definition.value"/>
+         <short value="Threshold definition"/>
+         <definition value="Definition of the protocol used to define the threshold level used in the test."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.protocol.Threshold_determination_protocol.Threshold_definition.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.protocol.Threshold_determination_protocol.Step_size">
+         <path value="Audiogram_test_result.protocol.Threshold_determination_protocol.Step_size"/>
+         <short value="Step size"/>
+         <definition value="The step size (in decibels) of the change in the stimulus intensity for threshold determination."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.protocol.Threshold_determination_protocol.Step_size"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.protocol.Threshold_determination_protocol.Step_size.value">
+         <path value="Audiogram_test_result.protocol.Threshold_determination_protocol.Step_size.value"/>
+         <short value="Step size"/>
+         <definition value="The step size (in decibels) of the change in the stimulus intensity for threshold determination."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.protocol.Threshold_determination_protocol.Step_size.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.protocol.Threshold_determination_protocol.Direction">
+         <path value="Audiogram_test_result.protocol.Threshold_determination_protocol.Direction"/>
+         <short value="Direction"/>
+         <definition value="The direction of change in the stimulus intensity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.protocol.Threshold_determination_protocol.Direction"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.protocol.Threshold_determination_protocol.Direction.value">
+         <path value="Audiogram_test_result.protocol.Threshold_determination_protocol.Direction.value"/>
+         <short value="Direction"/>
+         <definition value="The direction of change in the stimulus intensity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.protocol.Threshold_determination_protocol.Direction.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.protocol.Test_instrument">
+         <path value="Audiogram_test_result.protocol.Test_instrument"/>
+         <short value="Test instrument"/>
+         <definition value="Details of device used to conduct the test."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Audiogram_test_result.protocol.Test_instrument"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.protocol.Hearing_device">
+         <path value="Audiogram_test_result.protocol.Hearing_device"/>
+         <short value="Hearing device"/>
+         <definition value="Details of the hearing device used."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Audiogram_test_result.protocol.Hearing_device"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.protocol.Reliability">
+         <path value="Audiogram_test_result.protocol.Reliability"/>
+         <short value="Reliability"/>
+         <definition value="Narrative description of the reliability of the test results."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Audiogram_test_result.protocol.Reliability"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.protocol.Reliability.value">
+         <path value="Audiogram_test_result.protocol.Reliability.value"/>
+         <short value="Reliability"/>
+         <definition value="Narrative description of the reliability of the test results."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.protocol.Reliability.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.protocol.Test_modifications_required">
+         <path value="Audiogram_test_result.protocol.Test_modifications_required"/>
+         <short value="Test modifications required"/>
+         <definition value="Narrative description of any modfications to the standard methodology required to enable successful completion of the test."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.protocol.Test_modifications_required"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.protocol.Test_modifications_required.value">
+         <path value="Audiogram_test_result.protocol.Test_modifications_required.value"/>
+         <short value="Test modifications required"/>
+         <definition value="Narrative description of any modfications to the standard methodology required to enable successful completion of the test."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.protocol.Test_modifications_required.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.protocol.Calibration_reference_dB">
+         <path value="Audiogram_test_result.protocol.Calibration_reference_dB"/>
+         <short value="Calibration reference dB"/>
+         <definition value="Scale used for acoustic calibration of the test signal."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.protocol.Calibration_reference_dB"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.protocol.Calibration_reference_dB.value">
+         <path value="Audiogram_test_result.protocol.Calibration_reference_dB.value"/>
+         <short value="Calibration reference dB"/>
+         <definition value="Scale used for acoustic calibration of the test signal."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.protocol.Calibration_reference_dB.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.protocol.Criteria_for_pure_tone_average">
+         <path value="Audiogram_test_result.protocol.Criteria_for_pure_tone_average"/>
+         <short value="Criteria for pure tone average"/>
+         <definition value="The criteria on which the Pure Tone Average is calculated. The average is based on air conduction thresholds and masked thresholds replace unmasked thresholds when applying the formula."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.protocol.Criteria_for_pure_tone_average"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.protocol.Criteria_for_pure_tone_average.value_DV_CODED_TEXT">
+         <path value="Audiogram_test_result.protocol.Criteria_for_pure_tone_average.value_DV_CODED_TEXT"/>
+         <short value="Criteria for pure tone average"/>
+         <definition value="The criteria on which the Pure Tone Average is calculated. The average is based on air conduction thresholds and masked thresholds replace unmasked thresholds when applying the formula."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.protocol.Criteria_for_pure_tone_average.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.protocol.Criteria_for_pure_tone_average.value_DV_TEXT">
+         <path value="Audiogram_test_result.protocol.Criteria_for_pure_tone_average.value_DV_TEXT"/>
+         <short value="Criteria for pure tone average"/>
+         <definition value="The criteria on which the Pure Tone Average is calculated. The average is based on air conduction thresholds and masked thresholds replace unmasked thresholds when applying the formula."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.protocol.Criteria_for_pure_tone_average.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.protocol.Criteria_for_asymmetry">
+         <path value="Audiogram_test_result.protocol.Criteria_for_asymmetry"/>
+         <short value="Criteria for asymmetry"/>
+         <definition value="The criteria on which asymmetry is defined in the test result interpretation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.protocol.Criteria_for_asymmetry"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.protocol.Criteria_for_asymmetry.value">
+         <path value="Audiogram_test_result.protocol.Criteria_for_asymmetry.value"/>
+         <short value="Criteria for asymmetry"/>
+         <definition value="The criteria on which asymmetry is defined in the test result interpretation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.protocol.Criteria_for_asymmetry.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.protocol.Comment">
+         <path value="Audiogram_test_result.protocol.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the protocol for the audiogram not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.protocol.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.protocol.Comment.value">
+         <path value="Audiogram_test_result.protocol.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the protocol for the audiogram not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.protocol.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series">
+         <path value="Audiogram_test_result.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event"/>
+         <short value="Any point in time event"/>
+         <definition value="Default, unspecified point in time which may be explicitly defined in a template or at run-time. For example, in a template, this event can be cloned and specifically identified to be the first and/or second test conducted as a part of a comprehensive assessment, such as a Hearing Conservation or Industrial Audiometric Assessment."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Test_result_name">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Test_result_name"/>
+         <short value="Test result name"/>
+         <definition value="Identification of the Audiometry test performed."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Test_result_name"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Test_result_name.value">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Test_result_name.value"/>
+         <short value="Test result name"/>
+         <definition value="Identification of the Audiometry test performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Test_result_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details"/>
+         <short value="Result details"/>
+         <definition value="The test result measurements and interpretations which can be recorded per ear, or for both ears simultaneously."/>
+         <min value="0"/>
+         <max value="3"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details"/>
+            <min value="0"/>
+            <max value="3"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Test_ear">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Test_ear"/>
+         <short value="Test ear"/>
+         <definition value="Identification of the ear(s) to which the test stimulus is being presented."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Test_ear"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Test_ear.value">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Test_ear.value"/>
+         <short value="Test ear"/>
+         <definition value="Identification of the ear(s) to which the test stimulus is being presented."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Test_ear.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Air_conduction_result">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Air_conduction_result"/>
+         <short value="Air conduction result"/>
+         <definition value="The thresholds obtained using air conduction testing."/>
+         <min value="0"/>
+         <max value="2"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Air_conduction_result"/>
+            <min value="0"/>
+            <max value="2"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Air_conduction_result.Air_conduction_masking">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Air_conduction_result.Air_conduction_masking"/>
+         <short value="Air conduction masking"/>
+         <definition value="A masking stimulus was applied to the non-test ear to obtain specified air conduction thresholds."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Air_conduction_result.Air_conduction_masking"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Air_conduction_result.Air_conduction_masking.value">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Air_conduction_result.Air_conduction_masking.value"/>
+         <short value="Air conduction masking"/>
+         <definition value="A masking stimulus was applied to the non-test ear to obtain specified air conduction thresholds."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Air_conduction_result.Air_conduction_masking.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Air_conduction_result.Measurement">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Air_conduction_result.Measurement"/>
+         <short value="Measurement"/>
+         <definition value="The measured frequency/threshold dB level pair for air conduction results."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Air_conduction_result.Measurement"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Air_conduction_result.Measurement.Frequency">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Air_conduction_result.Measurement.Frequency"/>
+         <short value="Frequency"/>
+         <definition value="The stimulus frequency tested."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Air_conduction_result.Measurement.Frequency"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Air_conduction_result.Measurement.Frequency.value">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Air_conduction_result.Measurement.Frequency.value"/>
+         <short value="Frequency"/>
+         <definition value="The stimulus frequency tested."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Air_conduction_result.Measurement.Frequency.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Air_conduction_result.Measurement.Threshold_level">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Air_conduction_result.Measurement.Threshold_level"/>
+         <short value="Threshold level"/>
+         <definition value="The stimulus intensity at threshold for the test frequency."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Air_conduction_result.Measurement.Threshold_level"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Air_conduction_result.Measurement.Threshold_level.value">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Air_conduction_result.Measurement.Threshold_level.value"/>
+         <short value="Threshold level"/>
+         <definition value="The stimulus intensity at threshold for the test frequency."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Air_conduction_result.Measurement.Threshold_level.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Air_conduction_result.Measurement.Threshold_level.null_flavour">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Air_conduction_result.Measurement.Threshold_level.null_flavour"/>
+         <short value="Threshold level"/>
+         <definition value="The stimulus intensity at threshold for the test frequency."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Air_conduction_result.Measurement.Threshold_level.null_flavour"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Air_conduction_result.Measurement.No_response">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Air_conduction_result.Measurement.No_response"/>
+         <short value="No response"/>
+         <definition value="No response from subject at identified frequency."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Air_conduction_result.Measurement.No_response"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Air_conduction_result.Measurement.No_response.value">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Air_conduction_result.Measurement.No_response.value"/>
+         <short value="No response"/>
+         <definition value="No response from subject at identified frequency."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Air_conduction_result.Measurement.No_response.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Air_conduction_result.No_test_result">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Air_conduction_result.No_test_result"/>
+         <short value="No test result"/>
+         <definition value="No air conduction test result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Air_conduction_result.No_test_result"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Air_conduction_result.No_test_result.value">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Air_conduction_result.No_test_result.value"/>
+         <short value="No test result"/>
+         <definition value="No air conduction test result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Air_conduction_result.No_test_result.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Air_conduction_result.Reason_for_no_result">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Air_conduction_result.Reason_for_no_result"/>
+         <short value="Reason for no result"/>
+         <definition value="Reason why no air conduction result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Air_conduction_result.Reason_for_no_result"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Air_conduction_result.Reason_for_no_result.value">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Air_conduction_result.Reason_for_no_result.value"/>
+         <short value="Reason for no result"/>
+         <definition value="Reason why no air conduction result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Air_conduction_result.Reason_for_no_result.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Bone_conduction_result">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Bone_conduction_result"/>
+         <short value="Bone conduction result"/>
+         <definition value="The thresholds obtained using bone conduction testing."/>
+         <min value="0"/>
+         <max value="2"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Bone_conduction_result"/>
+            <min value="0"/>
+            <max value="2"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Bone_conduction_result.Bone_conduction_masking">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Bone_conduction_result.Bone_conduction_masking"/>
+         <short value="Bone conduction masking"/>
+         <definition value="A masking stimulus was applied to the non-test ear to obtain specified bone conduction thresholds."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Bone_conduction_result.Bone_conduction_masking"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Bone_conduction_result.Bone_conduction_masking.value">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Bone_conduction_result.Bone_conduction_masking.value"/>
+         <short value="Bone conduction masking"/>
+         <definition value="A masking stimulus was applied to the non-test ear to obtain specified bone conduction thresholds."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Bone_conduction_result.Bone_conduction_masking.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Bone_conduction_result.Measurement">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Bone_conduction_result.Measurement"/>
+         <short value="Measurement"/>
+         <definition value="The measured frequency/threshold dB level pair for bone conduction results."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Bone_conduction_result.Measurement"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Bone_conduction_result.Measurement.Frequency">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Bone_conduction_result.Measurement.Frequency"/>
+         <short value="Frequency"/>
+         <definition value="The stimulus frequency of the test signal."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Bone_conduction_result.Measurement.Frequency"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Bone_conduction_result.Measurement.Frequency.value">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Bone_conduction_result.Measurement.Frequency.value"/>
+         <short value="Frequency"/>
+         <definition value="The stimulus frequency of the test signal."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Bone_conduction_result.Measurement.Frequency.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Bone_conduction_result.Measurement.Threshold_level">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Bone_conduction_result.Measurement.Threshold_level"/>
+         <short value="Threshold level"/>
+         <definition value="The intensity of the test stimulus at the subject's threshold for the test frequency."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Bone_conduction_result.Measurement.Threshold_level"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Bone_conduction_result.Measurement.Threshold_level.value">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Bone_conduction_result.Measurement.Threshold_level.value"/>
+         <short value="Threshold level"/>
+         <definition value="The intensity of the test stimulus at the subject's threshold for the test frequency."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Bone_conduction_result.Measurement.Threshold_level.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Bone_conduction_result.Measurement.No_response">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Bone_conduction_result.Measurement.No_response"/>
+         <short value="No response"/>
+         <definition value="No response from subject at identified frequency."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Bone_conduction_result.Measurement.No_response"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Bone_conduction_result.Measurement.No_response.value">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Bone_conduction_result.Measurement.No_response.value"/>
+         <short value="No response"/>
+         <definition value="No response from subject at identified frequency."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Bone_conduction_result.Measurement.No_response.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Bone_conduction_result.No_test_result">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Bone_conduction_result.No_test_result"/>
+         <short value="No test result"/>
+         <definition value="No bone conduction test result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Bone_conduction_result.No_test_result"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Bone_conduction_result.No_test_result.value">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Bone_conduction_result.No_test_result.value"/>
+         <short value="No test result"/>
+         <definition value="No bone conduction test result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Bone_conduction_result.No_test_result.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Bone_conduction_result.Reason_for_no_result">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Bone_conduction_result.Reason_for_no_result"/>
+         <short value="Reason for no result"/>
+         <definition value="Reason why no bone conduction result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Bone_conduction_result.Reason_for_no_result"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Bone_conduction_result.Reason_for_no_result.value">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Bone_conduction_result.Reason_for_no_result.value"/>
+         <short value="Reason for no result"/>
+         <definition value="Reason why no bone conduction result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Bone_conduction_result.Reason_for_no_result.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Hearing_threshold_interpretation">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Hearing_threshold_interpretation"/>
+         <short value="Hearing threshold interpretation"/>
+         <definition value="Interpretation of a series of audiometric measurements for purposes of hearing threshold assessment."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Hearing_threshold_interpretation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Hearing_threshold_interpretation.Pure_tone_average">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Hearing_threshold_interpretation.Pure_tone_average"/>
+         <short value="Pure tone average"/>
+         <definition value="The average pure tone threshold according to the specified averaging criteria."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Hearing_threshold_interpretation.Pure_tone_average"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Hearing_threshold_interpretation.Pure_tone_average.value">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Hearing_threshold_interpretation.Pure_tone_average.value"/>
+         <short value="Pure tone average"/>
+         <definition value="The average pure tone threshold according to the specified averaging criteria."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Hearing_threshold_interpretation.Pure_tone_average.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Hearing_threshold_interpretation.Degree_of_loss">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Hearing_threshold_interpretation.Degree_of_loss"/>
+         <short value="Degree of loss"/>
+         <definition value="Category of the degree of hearing loss derived from the dB threshold values using specified criteria."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Hearing_threshold_interpretation.Degree_of_loss"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Hearing_threshold_interpretation.Degree_of_loss.value">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Hearing_threshold_interpretation.Degree_of_loss.value"/>
+         <short value="Degree of loss"/>
+         <definition value="Category of the degree of hearing loss derived from the dB threshold values using specified criteria."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Hearing_threshold_interpretation.Degree_of_loss.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Hearing_threshold_interpretation.Type_of_loss">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Hearing_threshold_interpretation.Type_of_loss"/>
+         <short value="Type of loss"/>
+         <definition value="Identified type of hearing loss for the test ear, based on all measurements."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Hearing_threshold_interpretation.Type_of_loss"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Hearing_threshold_interpretation.Type_of_loss.value">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Hearing_threshold_interpretation.Type_of_loss.value"/>
+         <short value="Type of loss"/>
+         <definition value="Identified type of hearing loss for the test ear, based on all measurements."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Hearing_threshold_interpretation.Type_of_loss.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Hearing_threshold_interpretation.Clinical_interpretation">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Hearing_threshold_interpretation.Clinical_interpretation"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Clinical interpretation of all measurements for the test ear."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Hearing_threshold_interpretation.Clinical_interpretation"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Hearing_threshold_interpretation.Clinical_interpretation.value">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Hearing_threshold_interpretation.Clinical_interpretation.value"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Clinical interpretation of all measurements for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Hearing_threshold_interpretation.Clinical_interpretation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Hearing_threshold_interpretation.Articulation_index">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Hearing_threshold_interpretation.Articulation_index"/>
+         <short value="Articulation index"/>
+         <definition value="An algorithm to predict the amount of speech that is audible to a patient with a specific hearing loss."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Hearing_threshold_interpretation.Articulation_index"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Hearing_threshold_interpretation.Articulation_index.value">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Hearing_threshold_interpretation.Articulation_index.value"/>
+         <short value="Articulation index"/>
+         <definition value="An algorithm to predict the amount of speech that is audible to a patient with a specific hearing loss."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Hearing_threshold_interpretation.Articulation_index.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Ratio"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Hearing_threshold_interpretation.Comment">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Hearing_threshold_interpretation.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the hearing threshold interpretation not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Hearing_threshold_interpretation.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Hearing_threshold_interpretation.Comment.value">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Hearing_threshold_interpretation.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the hearing threshold interpretation not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Result_details.Hearing_threshold_interpretation.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Sensorineural_symmetry">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Sensorineural_symmetry"/>
+         <short value="Sensorineural symmetry"/>
+         <definition value="An interpretation about the symmetry of sensorineural component of hearing loss, based on bone conduction measurements for both ears."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Sensorineural_symmetry"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Sensorineural_symmetry.value">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Sensorineural_symmetry.value"/>
+         <short value="Sensorineural symmetry"/>
+         <definition value="An interpretation about the symmetry of sensorineural component of hearing loss, based on bone conduction measurements for both ears."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Sensorineural_symmetry.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Laterality_of_loss">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Laterality_of_loss"/>
+         <short value="Laterality of loss"/>
+         <definition value="An interpretation about the laterality of hearing loss, based on all hearing acuity measurements for both ears."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Laterality_of_loss"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Laterality_of_loss.value">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Laterality_of_loss.value"/>
+         <short value="Laterality of loss"/>
+         <definition value="An interpretation about the laterality of hearing loss, based on all hearing acuity measurements for both ears."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Laterality_of_loss.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Degree_of_impairment">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Degree_of_impairment"/>
+         <short value="Degree of impairment"/>
+         <definition value="Category of the degree of overall hearing impairment  derived from the dB threshold values using specified criteria based on the better hearing ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Degree_of_impairment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Degree_of_impairment.value">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Degree_of_impairment.value"/>
+         <short value="Degree of impairment"/>
+         <definition value="Category of the degree of overall hearing impairment  derived from the dB threshold values using specified criteria based on the better hearing ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Degree_of_impairment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Multimedia">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Multimedia"/>
+         <short value="Multimedia"/>
+         <definition value="Digital representation of the test results."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Multimedia"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Overall_interpretation">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Overall_interpretation"/>
+         <short value="Overall interpretation"/>
+         <definition value="Overall clinical interpretation of the measurements and related findings using an audiometer."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Overall_interpretation"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Overall_interpretation.value">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Overall_interpretation.value"/>
+         <short value="Overall interpretation"/>
+         <definition value="Overall clinical interpretation of the measurements and related findings using an audiometer."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Overall_interpretation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Test_not_done">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Test_not_done"/>
+         <short value="Test not done"/>
+         <definition value="Details to explicitly record that this test was not performed."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Test_not_done"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Comment">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the test results and intepretation not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Comment.value">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the test results and intepretation not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.state">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.state"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.state.Aided_status">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.state.Aided_status"/>
+         <short value="Aided status"/>
+         <definition value="Indication regarding use of an assistive listening device by the test subject during the test."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.state.Aided_status"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.state.Aided_status.value">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.state.Aided_status.value"/>
+         <short value="Aided status"/>
+         <definition value="Indication regarding use of an assistive listening device by the test subject during the test."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.state.Aided_status.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.state.Confounding_factors">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.state.Confounding_factors"/>
+         <short value="Confounding factors"/>
+         <definition value="Narrative description of factors, not recorded elsewhere, that may influence the threshold measurements."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.state.Confounding_factors"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Any_point_in_time_event.state.Confounding_factors.value">
+         <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.state.Confounding_factors.value"/>
+         <short value="Confounding factors"/>
+         <definition value="Narrative description of factors, not recorded elsewhere, that may influence the threshold measurements."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Any_point_in_time_event.state.Confounding_factors.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average">
+         <path value="Audiogram_test_result.Event_Series.Average"/>
+         <short value="Average"/>
+         <definition value="Record of the average measured results from more than one test. For example, the average of the 3000Hz to 6000Hz measurements in a Hearing Conservation or Industrial Audiometry Assessment. The data elements required in this use case may be quite limited and relevant ones revealed via templating."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data">
+         <path value="Audiogram_test_result.Event_Series.Average.data"/>
+         <definition value="ITEM_TREE"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Test_result_name">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Test_result_name"/>
+         <short value="Test result name"/>
+         <definition value="Identification of the Audiometry test performed."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Test_result_name"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Test_result_name.value">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Test_result_name.value"/>
+         <short value="Test result name"/>
+         <definition value="Identification of the Audiometry test performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Test_result_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Result_details">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Result_details"/>
+         <short value="Result details"/>
+         <definition value="The test result measurements and interpretations which can be recorded per ear, or for both ears simultaneously."/>
+         <min value="0"/>
+         <max value="3"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Result_details"/>
+            <min value="0"/>
+            <max value="3"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Result_details.Test_ear">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Test_ear"/>
+         <short value="Test ear"/>
+         <definition value="Identification of the ear(s) to which the test stimulus is being presented."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Test_ear"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Result_details.Test_ear.value">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Test_ear.value"/>
+         <short value="Test ear"/>
+         <definition value="Identification of the ear(s) to which the test stimulus is being presented."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Test_ear.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Result_details.Air_conduction_result">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Air_conduction_result"/>
+         <short value="Air conduction result"/>
+         <definition value="The thresholds obtained using air conduction testing."/>
+         <min value="0"/>
+         <max value="2"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Air_conduction_result"/>
+            <min value="0"/>
+            <max value="2"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Result_details.Air_conduction_result.Air_conduction_masking">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Air_conduction_result.Air_conduction_masking"/>
+         <short value="Air conduction masking"/>
+         <definition value="A masking stimulus was applied to the non-test ear to obtain specified air conduction thresholds."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Air_conduction_result.Air_conduction_masking"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Result_details.Air_conduction_result.Air_conduction_masking.value">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Air_conduction_result.Air_conduction_masking.value"/>
+         <short value="Air conduction masking"/>
+         <definition value="A masking stimulus was applied to the non-test ear to obtain specified air conduction thresholds."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Air_conduction_result.Air_conduction_masking.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Result_details.Air_conduction_result.Measurement">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Air_conduction_result.Measurement"/>
+         <short value="Measurement"/>
+         <definition value="The measured frequency/threshold dB level pair for air conduction results."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Air_conduction_result.Measurement"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Result_details.Air_conduction_result.Measurement.Frequency">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Air_conduction_result.Measurement.Frequency"/>
+         <short value="Frequency"/>
+         <definition value="The stimulus frequency tested."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Air_conduction_result.Measurement.Frequency"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Result_details.Air_conduction_result.Measurement.Frequency.value">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Air_conduction_result.Measurement.Frequency.value"/>
+         <short value="Frequency"/>
+         <definition value="The stimulus frequency tested."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Air_conduction_result.Measurement.Frequency.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Result_details.Air_conduction_result.Measurement.Threshold_level">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Air_conduction_result.Measurement.Threshold_level"/>
+         <short value="Threshold level"/>
+         <definition value="The stimulus intensity at threshold for the test frequency."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Air_conduction_result.Measurement.Threshold_level"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Result_details.Air_conduction_result.Measurement.Threshold_level.value">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Air_conduction_result.Measurement.Threshold_level.value"/>
+         <short value="Threshold level"/>
+         <definition value="The stimulus intensity at threshold for the test frequency."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Air_conduction_result.Measurement.Threshold_level.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Result_details.Air_conduction_result.Measurement.Threshold_level.null_flavour">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Air_conduction_result.Measurement.Threshold_level.null_flavour"/>
+         <short value="Threshold level"/>
+         <definition value="The stimulus intensity at threshold for the test frequency."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Air_conduction_result.Measurement.Threshold_level.null_flavour"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Result_details.Air_conduction_result.Measurement.No_response">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Air_conduction_result.Measurement.No_response"/>
+         <short value="No response"/>
+         <definition value="No response from subject at identified frequency."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Air_conduction_result.Measurement.No_response"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Result_details.Air_conduction_result.Measurement.No_response.value">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Air_conduction_result.Measurement.No_response.value"/>
+         <short value="No response"/>
+         <definition value="No response from subject at identified frequency."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Air_conduction_result.Measurement.No_response.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Result_details.Air_conduction_result.No_test_result">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Air_conduction_result.No_test_result"/>
+         <short value="No test result"/>
+         <definition value="No air conduction test result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Air_conduction_result.No_test_result"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Result_details.Air_conduction_result.No_test_result.value">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Air_conduction_result.No_test_result.value"/>
+         <short value="No test result"/>
+         <definition value="No air conduction test result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Air_conduction_result.No_test_result.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Result_details.Air_conduction_result.Reason_for_no_result">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Air_conduction_result.Reason_for_no_result"/>
+         <short value="Reason for no result"/>
+         <definition value="Reason why no air conduction result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Air_conduction_result.Reason_for_no_result"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Result_details.Air_conduction_result.Reason_for_no_result.value">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Air_conduction_result.Reason_for_no_result.value"/>
+         <short value="Reason for no result"/>
+         <definition value="Reason why no air conduction result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Air_conduction_result.Reason_for_no_result.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Result_details.Bone_conduction_result">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Bone_conduction_result"/>
+         <short value="Bone conduction result"/>
+         <definition value="The thresholds obtained using bone conduction testing."/>
+         <min value="0"/>
+         <max value="2"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Bone_conduction_result"/>
+            <min value="0"/>
+            <max value="2"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Result_details.Bone_conduction_result.Bone_conduction_masking">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Bone_conduction_result.Bone_conduction_masking"/>
+         <short value="Bone conduction masking"/>
+         <definition value="A masking stimulus was applied to the non-test ear to obtain specified bone conduction thresholds."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Bone_conduction_result.Bone_conduction_masking"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Result_details.Bone_conduction_result.Bone_conduction_masking.value">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Bone_conduction_result.Bone_conduction_masking.value"/>
+         <short value="Bone conduction masking"/>
+         <definition value="A masking stimulus was applied to the non-test ear to obtain specified bone conduction thresholds."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Bone_conduction_result.Bone_conduction_masking.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Result_details.Bone_conduction_result.Measurement">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Bone_conduction_result.Measurement"/>
+         <short value="Measurement"/>
+         <definition value="The measured frequency/threshold dB level pair for bone conduction results."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Bone_conduction_result.Measurement"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Result_details.Bone_conduction_result.Measurement.Frequency">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Bone_conduction_result.Measurement.Frequency"/>
+         <short value="Frequency"/>
+         <definition value="The stimulus frequency of the test signal."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Bone_conduction_result.Measurement.Frequency"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Result_details.Bone_conduction_result.Measurement.Frequency.value">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Bone_conduction_result.Measurement.Frequency.value"/>
+         <short value="Frequency"/>
+         <definition value="The stimulus frequency of the test signal."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Bone_conduction_result.Measurement.Frequency.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Result_details.Bone_conduction_result.Measurement.Threshold_level">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Bone_conduction_result.Measurement.Threshold_level"/>
+         <short value="Threshold level"/>
+         <definition value="The intensity of the test stimulus at the subject's threshold for the test frequency."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Bone_conduction_result.Measurement.Threshold_level"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Result_details.Bone_conduction_result.Measurement.Threshold_level.value">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Bone_conduction_result.Measurement.Threshold_level.value"/>
+         <short value="Threshold level"/>
+         <definition value="The intensity of the test stimulus at the subject's threshold for the test frequency."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Bone_conduction_result.Measurement.Threshold_level.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Result_details.Bone_conduction_result.Measurement.No_response">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Bone_conduction_result.Measurement.No_response"/>
+         <short value="No response"/>
+         <definition value="No response from subject at identified frequency."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Bone_conduction_result.Measurement.No_response"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Result_details.Bone_conduction_result.Measurement.No_response.value">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Bone_conduction_result.Measurement.No_response.value"/>
+         <short value="No response"/>
+         <definition value="No response from subject at identified frequency."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Bone_conduction_result.Measurement.No_response.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Result_details.Bone_conduction_result.No_test_result">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Bone_conduction_result.No_test_result"/>
+         <short value="No test result"/>
+         <definition value="No bone conduction test result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Bone_conduction_result.No_test_result"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Result_details.Bone_conduction_result.No_test_result.value">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Bone_conduction_result.No_test_result.value"/>
+         <short value="No test result"/>
+         <definition value="No bone conduction test result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Bone_conduction_result.No_test_result.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Result_details.Bone_conduction_result.Reason_for_no_result">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Bone_conduction_result.Reason_for_no_result"/>
+         <short value="Reason for no result"/>
+         <definition value="Reason why no bone conduction result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Bone_conduction_result.Reason_for_no_result"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Result_details.Bone_conduction_result.Reason_for_no_result.value">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Bone_conduction_result.Reason_for_no_result.value"/>
+         <short value="Reason for no result"/>
+         <definition value="Reason why no bone conduction result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Bone_conduction_result.Reason_for_no_result.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Result_details.Hearing_threshold_interpretation">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Hearing_threshold_interpretation"/>
+         <short value="Hearing threshold interpretation"/>
+         <definition value="Interpretation of a series of audiometric measurements for purposes of hearing threshold assessment."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Hearing_threshold_interpretation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Result_details.Hearing_threshold_interpretation.Pure_tone_average">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Hearing_threshold_interpretation.Pure_tone_average"/>
+         <short value="Pure tone average"/>
+         <definition value="The average pure tone threshold according to the specified averaging criteria."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Hearing_threshold_interpretation.Pure_tone_average"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Result_details.Hearing_threshold_interpretation.Pure_tone_average.value">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Hearing_threshold_interpretation.Pure_tone_average.value"/>
+         <short value="Pure tone average"/>
+         <definition value="The average pure tone threshold according to the specified averaging criteria."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Hearing_threshold_interpretation.Pure_tone_average.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Result_details.Hearing_threshold_interpretation.Degree_of_loss">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Hearing_threshold_interpretation.Degree_of_loss"/>
+         <short value="Degree of loss"/>
+         <definition value="Category of the degree of hearing loss derived from the dB threshold values using specified criteria."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Hearing_threshold_interpretation.Degree_of_loss"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Result_details.Hearing_threshold_interpretation.Degree_of_loss.value">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Hearing_threshold_interpretation.Degree_of_loss.value"/>
+         <short value="Degree of loss"/>
+         <definition value="Category of the degree of hearing loss derived from the dB threshold values using specified criteria."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Hearing_threshold_interpretation.Degree_of_loss.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Result_details.Hearing_threshold_interpretation.Type_of_loss">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Hearing_threshold_interpretation.Type_of_loss"/>
+         <short value="Type of loss"/>
+         <definition value="Identified type of hearing loss for the test ear, based on all measurements."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Hearing_threshold_interpretation.Type_of_loss"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Result_details.Hearing_threshold_interpretation.Type_of_loss.value">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Hearing_threshold_interpretation.Type_of_loss.value"/>
+         <short value="Type of loss"/>
+         <definition value="Identified type of hearing loss for the test ear, based on all measurements."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Hearing_threshold_interpretation.Type_of_loss.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Result_details.Hearing_threshold_interpretation.Clinical_interpretation">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Hearing_threshold_interpretation.Clinical_interpretation"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Clinical interpretation of all measurements for the test ear."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Hearing_threshold_interpretation.Clinical_interpretation"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Result_details.Hearing_threshold_interpretation.Clinical_interpretation.value">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Hearing_threshold_interpretation.Clinical_interpretation.value"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Clinical interpretation of all measurements for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Hearing_threshold_interpretation.Clinical_interpretation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Result_details.Hearing_threshold_interpretation.Articulation_index">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Hearing_threshold_interpretation.Articulation_index"/>
+         <short value="Articulation index"/>
+         <definition value="An algorithm to predict the amount of speech that is audible to a patient with a specific hearing loss."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Hearing_threshold_interpretation.Articulation_index"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Result_details.Hearing_threshold_interpretation.Articulation_index.value">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Hearing_threshold_interpretation.Articulation_index.value"/>
+         <short value="Articulation index"/>
+         <definition value="An algorithm to predict the amount of speech that is audible to a patient with a specific hearing loss."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Hearing_threshold_interpretation.Articulation_index.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Ratio"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Result_details.Hearing_threshold_interpretation.Comment">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Hearing_threshold_interpretation.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the hearing threshold interpretation not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Hearing_threshold_interpretation.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Result_details.Hearing_threshold_interpretation.Comment.value">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Hearing_threshold_interpretation.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the hearing threshold interpretation not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Result_details.Hearing_threshold_interpretation.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Sensorineural_symmetry">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Sensorineural_symmetry"/>
+         <short value="Sensorineural symmetry"/>
+         <definition value="An interpretation about the symmetry of sensorineural component of hearing loss, based on bone conduction measurements for both ears."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Sensorineural_symmetry"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Sensorineural_symmetry.value">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Sensorineural_symmetry.value"/>
+         <short value="Sensorineural symmetry"/>
+         <definition value="An interpretation about the symmetry of sensorineural component of hearing loss, based on bone conduction measurements for both ears."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Sensorineural_symmetry.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Laterality_of_loss">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Laterality_of_loss"/>
+         <short value="Laterality of loss"/>
+         <definition value="An interpretation about the laterality of hearing loss, based on all hearing acuity measurements for both ears."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Laterality_of_loss"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Laterality_of_loss.value">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Laterality_of_loss.value"/>
+         <short value="Laterality of loss"/>
+         <definition value="An interpretation about the laterality of hearing loss, based on all hearing acuity measurements for both ears."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Laterality_of_loss.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Degree_of_impairment">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Degree_of_impairment"/>
+         <short value="Degree of impairment"/>
+         <definition value="Category of the degree of overall hearing impairment  derived from the dB threshold values using specified criteria based on the better hearing ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Degree_of_impairment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Degree_of_impairment.value">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Degree_of_impairment.value"/>
+         <short value="Degree of impairment"/>
+         <definition value="Category of the degree of overall hearing impairment  derived from the dB threshold values using specified criteria based on the better hearing ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Degree_of_impairment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Multimedia">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Multimedia"/>
+         <short value="Multimedia"/>
+         <definition value="Digital representation of the test results."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Multimedia"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Overall_interpretation">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Overall_interpretation"/>
+         <short value="Overall interpretation"/>
+         <definition value="Overall clinical interpretation of the measurements and related findings using an audiometer."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Overall_interpretation"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Overall_interpretation.value">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Overall_interpretation.value"/>
+         <short value="Overall interpretation"/>
+         <definition value="Overall clinical interpretation of the measurements and related findings using an audiometer."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Overall_interpretation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Test_not_done">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Test_not_done"/>
+         <short value="Test not done"/>
+         <definition value="Details to explicitly record that this test was not performed."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Test_not_done"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Comment">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the test results and intepretation not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.data.Comment.value">
+         <path value="Audiogram_test_result.Event_Series.Average.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the test results and intepretation not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.state">
+         <path value="Audiogram_test_result.Event_Series.Average.state"/>
+         <definition value="ITEM_TREE"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.state.Aided_status">
+         <path value="Audiogram_test_result.Event_Series.Average.state.Aided_status"/>
+         <short value="Aided status"/>
+         <definition value="Indication regarding use of an assistive listening device by the test subject during the test."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.state.Aided_status"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.state.Aided_status.value">
+         <path value="Audiogram_test_result.Event_Series.Average.state.Aided_status.value"/>
+         <short value="Aided status"/>
+         <definition value="Indication regarding use of an assistive listening device by the test subject during the test."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.state.Aided_status.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.state.Confounding_factors">
+         <path value="Audiogram_test_result.Event_Series.Average.state.Confounding_factors"/>
+         <short value="Confounding factors"/>
+         <definition value="Narrative description of factors, not recorded elsewhere, that may influence the threshold measurements."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.state.Confounding_factors"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.Average.state.Confounding_factors.value">
+         <path value="Audiogram_test_result.Event_Series.Average.state.Confounding_factors.value"/>
+         <short value="Confounding factors"/>
+         <definition value="Narrative description of factors, not recorded elsewhere, that may influence the threshold measurements."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.Average.state.Confounding_factors.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiogram_test_result.Event_Series.events_Average.math_function">
+         <path value="Audiogram_test_result.Event_Series.events_Average.math_function"/>
+         <short value="Average"/>
+         <definition value="Record of the average measured results from more than one test. For example, the average of the 3000Hz to 6000Hz measurements in a Hearing Conservation or Industrial Audiometry Assessment. The data elements required in this use case may be quite limited and relevant ones revealed via templating."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiogram_test_result.Event_Series.events_Average.math_function"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

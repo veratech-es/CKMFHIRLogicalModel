@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Infectiousdiseaseinvestigationclassification-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-infectiousdiseaseinvestigationclassification-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-EVALUATION.infectious_disease_investigation_classification.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Infectiousdiseaseinvestigationclassification"/>
+   <title value="Infectious disease investigation classification"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Classification for an identified infectious disease as part of a disease surveillance investigation."/>
+   <purpose value="To record the disease classification for an identified infectious disease as part of a disease surveillance investigation."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Infectious_disease_investigation_classification">
+         <path value="Infectious_disease_investigation_classification"/>
+         <short value="Infectious disease investigation classification"/>
+         <definition value="Classification for an identified infectious disease as part of a disease surveillance investigation."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Infectious_disease_investigation_classification"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Infectious_disease_investigation_classification.protocol">
+         <path value="Infectious_disease_investigation_classification.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infectious_disease_investigation_classification.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Infectious_disease_investigation_classification.protocol.Extension">
+         <path value="Infectious_disease_investigation_classification.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models or formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Infectious_disease_investigation_classification.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Infectious_disease_investigation_classification.protocol.Last_updated">
+         <path value="Infectious_disease_investigation_classification.protocol.Last_updated"/>
+         <short value="Last updated"/>
+         <definition value="The date when this infectious disease investigation classification was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infectious_disease_investigation_classification.protocol.Last_updated"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Infectious_disease_investigation_classification.protocol.Last_updated.value">
+         <path value="Infectious_disease_investigation_classification.protocol.Last_updated.value"/>
+         <short value="Last updated"/>
+         <definition value="The date when this infectious disease investigation classification was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infectious_disease_investigation_classification.protocol.Last_updated.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Infectious_disease_investigation_classification.data">
+         <path value="Infectious_disease_investigation_classification.data"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infectious_disease_investigation_classification.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Infectious_disease_investigation_classification.data.Index_disease">
+         <path value="Infectious_disease_investigation_classification.data.Index_disease"/>
+         <short value="Index disease"/>
+         <definition value="The name of the infectious disease under investigation."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Infectious_disease_investigation_classification.data.Index_disease"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Infectious_disease_investigation_classification.data.Index_disease.value">
+         <path value="Infectious_disease_investigation_classification.data.Index_disease.value"/>
+         <short value="Index disease"/>
+         <definition value="The name of the infectious disease under investigation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infectious_disease_investigation_classification.data.Index_disease.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Infectious_disease_investigation_classification.data.Initial_classification">
+         <path value="Infectious_disease_investigation_classification.data.Initial_classification"/>
+         <short value="Initial classification"/>
+         <definition value="Classification of the likelihood of the 'Index disease' as causal at the initiation of a case investigation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infectious_disease_investigation_classification.data.Initial_classification"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Infectious_disease_investigation_classification.data.Initial_classification.value_DV_CODED_TEXT">
+         <path value="Infectious_disease_investigation_classification.data.Initial_classification.value_DV_CODED_TEXT"/>
+         <short value="Initial classification"/>
+         <definition value="Classification of the likelihood of the 'Index disease' as causal at the initiation of a case investigation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infectious_disease_investigation_classification.data.Initial_classification.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Infectious_disease_investigation_classification.data.Initial_classification.value_DV_TEXT">
+         <path value="Infectious_disease_investigation_classification.data.Initial_classification.value_DV_TEXT"/>
+         <short value="Initial classification"/>
+         <definition value="Classification of the likelihood of the 'Index disease' as causal at the initiation of a case investigation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infectious_disease_investigation_classification.data.Initial_classification.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Infectious_disease_investigation_classification.data.Final_classification">
+         <path value="Infectious_disease_investigation_classification.data.Final_classification"/>
+         <short value="Final classification"/>
+         <definition value="Classification of the likelihood of the 'Index disease' as causal after completion of a case investigation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infectious_disease_investigation_classification.data.Final_classification"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Infectious_disease_investigation_classification.data.Final_classification.value_DV_CODED_TEXT">
+         <path value="Infectious_disease_investigation_classification.data.Final_classification.value_DV_CODED_TEXT"/>
+         <short value="Final classification"/>
+         <definition value="Classification of the likelihood of the 'Index disease' as causal after completion of a case investigation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infectious_disease_investigation_classification.data.Final_classification.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Infectious_disease_investigation_classification.data.Final_classification.value_DV_TEXT">
+         <path value="Infectious_disease_investigation_classification.data.Final_classification.value_DV_TEXT"/>
+         <short value="Final classification"/>
+         <definition value="Classification of the likelihood of the 'Index disease' as causal after completion of a case investigation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infectious_disease_investigation_classification.data.Final_classification.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Infectious_disease_investigation_classification.data.Reason_for_classification">
+         <path value="Infectious_disease_investigation_classification.data.Reason_for_classification"/>
+         <short value="Reason for classification"/>
+         <definition value="The broad category of the reason for the classification."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Infectious_disease_investigation_classification.data.Reason_for_classification"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Infectious_disease_investigation_classification.data.Reason_for_classification.value">
+         <path value="Infectious_disease_investigation_classification.data.Reason_for_classification.value"/>
+         <short value="Reason for classification"/>
+         <definition value="The broad category of the reason for the classification."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infectious_disease_investigation_classification.data.Reason_for_classification.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Infectious_disease_investigation_classification.data.Reason_description">
+         <path value="Infectious_disease_investigation_classification.data.Reason_description"/>
+         <short value="Reason description"/>
+         <definition value="Narrative description about the reason for the classification."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Infectious_disease_investigation_classification.data.Reason_description"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Infectious_disease_investigation_classification.data.Reason_description.value">
+         <path value="Infectious_disease_investigation_classification.data.Reason_description.value"/>
+         <short value="Reason description"/>
+         <definition value="Narrative description about the reason for the classification."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infectious_disease_investigation_classification.data.Reason_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Infectious_disease_investigation_classification.data.Epidemiological_link">
+         <path value="Infectious_disease_investigation_classification.data.Epidemiological_link"/>
+         <short value="Epidemiological link"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infectious_disease_investigation_classification.data.Epidemiological_link"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Infectious_disease_investigation_classification.data.Epidemiological_link.value_DV_TEXT">
+         <path value="Infectious_disease_investigation_classification.data.Epidemiological_link.value_DV_TEXT"/>
+         <short value="Epidemiological link"/>
+         <definition value="DV_TEXT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infectious_disease_investigation_classification.data.Epidemiological_link.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Infectious_disease_investigation_classification.data.Epidemiological_link.value_DV_CODED_TEXT">
+         <path value="Infectious_disease_investigation_classification.data.Epidemiological_link.value_DV_CODED_TEXT"/>
+         <short value="Epidemiological link"/>
+         <definition value="DV_CODED_TEXT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infectious_disease_investigation_classification.data.Epidemiological_link.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Infectious_disease_investigation_classification.data.Aetiology_category">
+         <path value="Infectious_disease_investigation_classification.data.Aetiology_category"/>
+         <short value="Aetiology category"/>
+         <definition value="The category for the cause of infection."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infectious_disease_investigation_classification.data.Aetiology_category"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Infectious_disease_investigation_classification.data.Aetiology_category.value_DV_TEXT">
+         <path value="Infectious_disease_investigation_classification.data.Aetiology_category.value_DV_TEXT"/>
+         <short value="Aetiology category"/>
+         <definition value="The category for the cause of infection."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infectious_disease_investigation_classification.data.Aetiology_category.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Infectious_disease_investigation_classification.data.Aetiology_category.value_DV_CODED_TEXT">
+         <path value="Infectious_disease_investigation_classification.data.Aetiology_category.value_DV_CODED_TEXT"/>
+         <short value="Aetiology category"/>
+         <definition value="The category for the cause of infection."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infectious_disease_investigation_classification.data.Aetiology_category.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Infectious_disease_investigation_classification.data.Aetiology_description">
+         <path value="Infectious_disease_investigation_classification.data.Aetiology_description"/>
+         <short value="Aetiology description"/>
+         <definition value="Narrative description about the cause of infection."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infectious_disease_investigation_classification.data.Aetiology_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Infectious_disease_investigation_classification.data.Aetiology_description.value">
+         <path value="Infectious_disease_investigation_classification.data.Aetiology_description.value"/>
+         <short value="Aetiology description"/>
+         <definition value="Narrative description about the cause of infection."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infectious_disease_investigation_classification.data.Aetiology_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Infectious_disease_investigation_classification.data.Source_country">
+         <path value="Infectious_disease_investigation_classification.data.Source_country"/>
+         <short value="Source country"/>
+         <definition value="Country identified as the (likely or probable) source for an imported or import-related case."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Infectious_disease_investigation_classification.data.Source_country"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Infectious_disease_investigation_classification.data.Source_country.value">
+         <path value="Infectious_disease_investigation_classification.data.Source_country.value"/>
+         <short value="Source country"/>
+         <definition value="Country identified as the (likely or probable) source for an imported or import-related case."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infectious_disease_investigation_classification.data.Source_country.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Infectious_disease_investigation_classification.data.Endemic_source_category">
+         <path value="Infectious_disease_investigation_classification.data.Endemic_source_category"/>
+         <short value="Endemic source category"/>
+         <definition value="The category for the source of an endemic case."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infectious_disease_investigation_classification.data.Endemic_source_category"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Infectious_disease_investigation_classification.data.Endemic_source_category.value">
+         <path value="Infectious_disease_investigation_classification.data.Endemic_source_category.value"/>
+         <short value="Endemic source category"/>
+         <definition value="The category for the source of an endemic case."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infectious_disease_investigation_classification.data.Endemic_source_category.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Infectious_disease_investigation_classification.data.Endemic_source_description">
+         <path value="Infectious_disease_investigation_classification.data.Endemic_source_description"/>
+         <short value="Endemic source description"/>
+         <definition value="Narrative description about the source of an endemic case."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infectious_disease_investigation_classification.data.Endemic_source_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Infectious_disease_investigation_classification.data.Endemic_source_description.value">
+         <path value="Infectious_disease_investigation_classification.data.Endemic_source_description.value"/>
+         <short value="Endemic source description"/>
+         <definition value="Narrative description about the source of an endemic case."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infectious_disease_investigation_classification.data.Endemic_source_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Infectious_disease_investigation_classification.data.Contribution_to_patient_death">
+         <path value="Infectious_disease_investigation_classification.data.Contribution_to_patient_death"/>
+         <short value="Contribution to patient death"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infectious_disease_investigation_classification.data.Contribution_to_patient_death"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Infectious_disease_investigation_classification.data.Contribution_to_patient_death.value_DV_TEXT">
+         <path value="Infectious_disease_investigation_classification.data.Contribution_to_patient_death.value_DV_TEXT"/>
+         <short value="Contribution to patient death"/>
+         <definition value="DV_TEXT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infectious_disease_investigation_classification.data.Contribution_to_patient_death.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Infectious_disease_investigation_classification.data.Contribution_to_patient_death.value_DV_CODED_TEXT">
+         <path value="Infectious_disease_investigation_classification.data.Contribution_to_patient_death.value_DV_CODED_TEXT"/>
+         <short value="Contribution to patient death"/>
+         <definition value="DV_CODED_TEXT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infectious_disease_investigation_classification.data.Contribution_to_patient_death.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Infectious_disease_investigation_classification.data.Additional_details">
+         <path value="Infectious_disease_investigation_classification.data.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="Additional structured details about the classification."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Infectious_disease_investigation_classification.data.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Infectious_disease_investigation_classification.data.Comment">
+         <path value="Infectious_disease_investigation_classification.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the classification, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infectious_disease_investigation_classification.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Infectious_disease_investigation_classification.data.Comment.value">
+         <path value="Infectious_disease_investigation_classification.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the classification, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infectious_disease_investigation_classification.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

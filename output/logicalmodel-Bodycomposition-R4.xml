@@ -1,0 +1,1384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Bodycomposition-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-bodycomposition-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.body_composition.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Bodycomposition"/>
+   <title value="Body composition"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Measurement of the amounts and percentages of fat, bone, water and muscle in the body of an individual."/>
+   <purpose value="To record the measurement of the amounts and percentages of fat, bone, water and muscle in the body of an individual."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Body_composition">
+         <path value="Body_composition"/>
+         <short value="Body composition"/>
+         <definition value="Measurement of the amounts and percentages of fat, bone, water and muscle in the body of an individual."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_composition.protocol">
+         <path value="Body_composition.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_composition.protocol.Method">
+         <path value="Body_composition.protocol.Method"/>
+         <short value="Method"/>
+         <definition value="The methods used to measure body composition."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.protocol.Method"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_composition.protocol.Method.value">
+         <path value="Body_composition.protocol.Method.value"/>
+         <short value="Method"/>
+         <definition value="The methods used to measure body composition."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.protocol.Method.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_composition.protocol.Device">
+         <path value="Body_composition.protocol.Device"/>
+         <short value="Device"/>
+         <definition value="Details about devices used to measurement of body composition."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Body_composition.protocol.Device"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_composition.protocol.Fat_percentage_formula">
+         <path value="Body_composition.protocol.Fat_percentage_formula"/>
+         <short value="Fat percentage formula"/>
+         <definition value="Formula used to calculate the fat percentage by skinfold thickness."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.protocol.Fat_percentage_formula"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_composition.protocol.Fat_percentage_formula.value">
+         <path value="Body_composition.protocol.Fat_percentage_formula.value"/>
+         <short value="Fat percentage formula"/>
+         <definition value="Formula used to calculate the fat percentage by skinfold thickness."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.protocol.Fat_percentage_formula.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_composition.protocol.Location_of_measurement">
+         <path value="Body_composition.protocol.Location_of_measurement"/>
+         <short value="Location of measurement"/>
+         <definition value="Body site where the measurement was performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.protocol.Location_of_measurement"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_composition.protocol.Location_of_measurement.value">
+         <path value="Body_composition.protocol.Location_of_measurement.value"/>
+         <short value="Location of measurement"/>
+         <definition value="Body site where the measurement was performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.protocol.Location_of_measurement.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_composition.Event_Series">
+         <path value="Body_composition.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event">
+         <path value="Body_composition.Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data">
+         <path value="Body_composition.Event_Series.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Basic_model">
+         <path value="Body_composition.Event_Series.Any_event.data.Basic_model"/>
+         <short value="Basic model"/>
+         <definition value="Two compartment model with partitions into fat mass (FM) and fat-free mass (FFM)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Basic_model"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Basic_model.Fat_mass">
+         <path value="Body_composition.Event_Series.Any_event.data.Basic_model.Fat_mass"/>
+         <short value="Fat mass"/>
+         <definition value="Body fat measurement in mass."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Basic_model.Fat_mass"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Basic_model.Fat_mass.value">
+         <path value="Body_composition.Event_Series.Any_event.data.Basic_model.Fat_mass.value"/>
+         <short value="Fat mass"/>
+         <definition value="Body fat measurement in mass."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Basic_model.Fat_mass.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Basic_model.Fat_percentage">
+         <path value="Body_composition.Event_Series.Any_event.data.Basic_model.Fat_percentage"/>
+         <short value="Fat percentage"/>
+         <definition value="Body fat measurement in percentage."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Basic_model.Fat_percentage"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Basic_model.Fat_percentage.value">
+         <path value="Body_composition.Event_Series.Any_event.data.Basic_model.Fat_percentage.value"/>
+         <short value="Fat percentage"/>
+         <definition value="Body fat measurement in percentage."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Basic_model.Fat_percentage.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Ratio"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Basic_model.Fat_free_mass">
+         <path value="Body_composition.Event_Series.Any_event.data.Basic_model.Fat_free_mass"/>
+         <short value="Fat free mass"/>
+         <definition value="Measurement of fat free mass (FFM) which corresponds to protein, water and  minerals."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Basic_model.Fat_free_mass"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Basic_model.Fat_free_mass.value">
+         <path value="Body_composition.Event_Series.Any_event.data.Basic_model.Fat_free_mass.value"/>
+         <short value="Fat free mass"/>
+         <definition value="Measurement of fat free mass (FFM) which corresponds to protein, water and  minerals."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Basic_model.Fat_free_mass.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Atomic_level">
+         <path value="Body_composition.Event_Series.Any_event.data.Atomic_level"/>
+         <short value="Atomic level"/>
+         <definition value="Measurement of four compartments model of body composition."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Atomic_level"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Atomic_level.Chemical_elements">
+         <path value="Body_composition.Event_Series.Any_event.data.Atomic_level.Chemical_elements"/>
+         <short value="Chemical elements"/>
+         <definition value="Assessment of chemical elements eg: N, Ca, P, S, Na, K, Cl ; H, C and O."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Atomic_level.Chemical_elements"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Atomic_level.Chemical_elements.value">
+         <path value="Body_composition.Event_Series.Any_event.data.Atomic_level.Chemical_elements.value"/>
+         <short value="Chemical elements"/>
+         <definition value="Assessment of chemical elements eg: N, Ca, P, S, Na, K, Cl ; H, C and O."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Atomic_level.Chemical_elements.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Atomic_level.Hydrogen">
+         <path value="Body_composition.Event_Series.Any_event.data.Atomic_level.Hydrogen"/>
+         <short value="Hydrogen"/>
+         <definition value="Assessment of chemical element hydrogen."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Atomic_level.Hydrogen"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Atomic_level.Hydrogen.value">
+         <path value="Body_composition.Event_Series.Any_event.data.Atomic_level.Hydrogen.value"/>
+         <short value="Hydrogen"/>
+         <definition value="Assessment of chemical element hydrogen."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Atomic_level.Hydrogen.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Atomic_level.Carbon">
+         <path value="Body_composition.Event_Series.Any_event.data.Atomic_level.Carbon"/>
+         <short value="Carbon"/>
+         <definition value="Assessment of chemical element carbon."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Atomic_level.Carbon"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Atomic_level.Carbon.value">
+         <path value="Body_composition.Event_Series.Any_event.data.Atomic_level.Carbon.value"/>
+         <short value="Carbon"/>
+         <definition value="Assessment of chemical element carbon."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Atomic_level.Carbon.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Atomic_level.Oxygen">
+         <path value="Body_composition.Event_Series.Any_event.data.Atomic_level.Oxygen"/>
+         <short value="Oxygen"/>
+         <definition value="Assessment of chemical element oxygen."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Atomic_level.Oxygen"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Atomic_level.Oxygen.value">
+         <path value="Body_composition.Event_Series.Any_event.data.Atomic_level.Oxygen.value"/>
+         <short value="Oxygen"/>
+         <definition value="Assessment of chemical element oxygen."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Atomic_level.Oxygen.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Molecular_level">
+         <path value="Body_composition.Event_Series.Any_event.data.Molecular_level"/>
+         <short value="Molecular level"/>
+         <definition value="Measurement of four compartments  model of body composition, eg: Minerals, protein, fat and water."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Molecular_level"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Molecular_level.Minerals">
+         <path value="Body_composition.Event_Series.Any_event.data.Molecular_level.Minerals"/>
+         <short value="Minerals"/>
+         <definition value="Assessment of body minerals."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Molecular_level.Minerals"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Molecular_level.Minerals.value">
+         <path value="Body_composition.Event_Series.Any_event.data.Molecular_level.Minerals.value"/>
+         <short value="Minerals"/>
+         <definition value="Assessment of body minerals."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Molecular_level.Minerals.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Molecular_level.Protein">
+         <path value="Body_composition.Event_Series.Any_event.data.Molecular_level.Protein"/>
+         <short value="Protein"/>
+         <definition value="Assessment of body protein."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Molecular_level.Protein"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Molecular_level.Protein.value">
+         <path value="Body_composition.Event_Series.Any_event.data.Molecular_level.Protein.value"/>
+         <short value="Protein"/>
+         <definition value="Assessment of body protein."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Molecular_level.Protein.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Molecular_level.Fat">
+         <path value="Body_composition.Event_Series.Any_event.data.Molecular_level.Fat"/>
+         <short value="Fat"/>
+         <definition value="Assessment of body fat."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Molecular_level.Fat"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Molecular_level.Fat.value">
+         <path value="Body_composition.Event_Series.Any_event.data.Molecular_level.Fat.value"/>
+         <short value="Fat"/>
+         <definition value="Assessment of body fat."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Molecular_level.Fat.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Molecular_level.Water">
+         <path value="Body_composition.Event_Series.Any_event.data.Molecular_level.Water"/>
+         <short value="Water"/>
+         <definition value="Assessment of body water."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Molecular_level.Water"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Molecular_level.Water.value">
+         <path value="Body_composition.Event_Series.Any_event.data.Molecular_level.Water.value"/>
+         <short value="Water"/>
+         <definition value="Assessment of body water."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Molecular_level.Water.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Cellular_level">
+         <path value="Body_composition.Event_Series.Any_event.data.Cellular_level"/>
+         <short value="Cellular level"/>
+         <definition value="Measurement of three compartments model of body composition. eg: fat mass, lean body mass and bone."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Cellular_level"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Cellular_level.Extracellular_solids">
+         <path value="Body_composition.Event_Series.Any_event.data.Cellular_level.Extracellular_solids"/>
+         <short value="Extracellular solids"/>
+         <definition value="Measurement of extracellular solids."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Cellular_level.Extracellular_solids"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Cellular_level.Extracellular_solids.value">
+         <path value="Body_composition.Event_Series.Any_event.data.Cellular_level.Extracellular_solids.value"/>
+         <short value="Extracellular solids"/>
+         <definition value="Measurement of extracellular solids."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Cellular_level.Extracellular_solids.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Cellular_level.Extracellular_fluids">
+         <path value="Body_composition.Event_Series.Any_event.data.Cellular_level.Extracellular_fluids"/>
+         <short value="Extracellular fluids"/>
+         <definition value="Measurement of extracellular fluids."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Cellular_level.Extracellular_fluids"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Cellular_level.Extracellular_fluids.value">
+         <path value="Body_composition.Event_Series.Any_event.data.Cellular_level.Extracellular_fluids.value"/>
+         <short value="Extracellular fluids"/>
+         <definition value="Measurement of extracellular fluids."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Cellular_level.Extracellular_fluids.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Cellular_level.Cell_mass">
+         <path value="Body_composition.Event_Series.Any_event.data.Cellular_level.Cell_mass"/>
+         <short value="Cell mass"/>
+         <definition value="Measurement of cellular mass."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Cellular_level.Cell_mass"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Cellular_level.Cell_mass.value">
+         <path value="Body_composition.Event_Series.Any_event.data.Cellular_level.Cell_mass.value"/>
+         <short value="Cell mass"/>
+         <definition value="Measurement of cellular mass."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Cellular_level.Cell_mass.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Tissue_system_level">
+         <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level"/>
+         <short value="Tissue-system level"/>
+         <definition value="Measurement of five compartments  model of body composition, eg: other tissue, visceral organs, bone, skeletel muscle and adipose tissue."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Other_tissues">
+         <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Other_tissues"/>
+         <short value="Other tissues"/>
+         <definition value="Measurement of other body tissues."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Other_tissues"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Other_tissues.value">
+         <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Other_tissues.value"/>
+         <short value="Other tissues"/>
+         <definition value="Measurement of other body tissues."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Other_tissues.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Visceral_organs">
+         <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Visceral_organs"/>
+         <short value="Visceral organs"/>
+         <definition value="Measurement of visceral organs."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Visceral_organs"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Visceral_organs.value">
+         <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Visceral_organs.value"/>
+         <short value="Visceral organs"/>
+         <definition value="Measurement of visceral organs."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Visceral_organs.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Bone">
+         <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Bone"/>
+         <short value="Bone"/>
+         <definition value="Measurement of body bone."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Bone"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Bone.value">
+         <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Bone.value"/>
+         <short value="Bone"/>
+         <definition value="Measurement of body bone."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Bone.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Skeletal_muscle">
+         <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Skeletal_muscle"/>
+         <short value="Skeletal muscle"/>
+         <definition value="Measurement of skeletal muscle."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Skeletal_muscle"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Skeletal_muscle.value">
+         <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Skeletal_muscle.value"/>
+         <short value="Skeletal muscle"/>
+         <definition value="Measurement of skeletal muscle."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Skeletal_muscle.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Total_adipose_tissue">
+         <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Total_adipose_tissue"/>
+         <short value="Total adipose tissue"/>
+         <definition value="Measurement of adipose tissue (TAT)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Total_adipose_tissue"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Total_adipose_tissue.value">
+         <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Total_adipose_tissue.value"/>
+         <short value="Total adipose tissue"/>
+         <definition value="Measurement of adipose tissue (TAT)."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Total_adipose_tissue.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Adipose_Tissue">
+         <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Adipose_Tissue"/>
+         <short value="Adipose Tissue"/>
+         <definition value="Adipose tissue is defined as sum of adipose tissue, usually excluding bone marrow and adipose tissue&#xD;&#xA; in the head, hands, and feet."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Adipose_Tissue"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Adipose_Tissue.Visceral_adipose_tissue_mass">
+         <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Adipose_Tissue.Visceral_adipose_tissue_mass"/>
+         <short value="Visceral adipose tissue mass"/>
+         <definition value="Measurement of visceral adipose tissue (VAT) mass."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Adipose_Tissue.Visceral_adipose_tissue_mass"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Adipose_Tissue.Visceral_adipose_tissue_mass.value">
+         <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Adipose_Tissue.Visceral_adipose_tissue_mass.value"/>
+         <short value="Visceral adipose tissue mass"/>
+         <definition value="Measurement of visceral adipose tissue (VAT) mass."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Adipose_Tissue.Visceral_adipose_tissue_mass.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Adipose_Tissue.Visceral_adipose_tissue_area">
+         <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Adipose_Tissue.Visceral_adipose_tissue_area"/>
+         <short value="Visceral adipose tissue area"/>
+         <definition value="Measurement of visceral adipose tissue (VAT) area."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Adipose_Tissue.Visceral_adipose_tissue_area"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Adipose_Tissue.Visceral_adipose_tissue_area.value">
+         <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Adipose_Tissue.Visceral_adipose_tissue_area.value"/>
+         <short value="Visceral adipose tissue area"/>
+         <definition value="Measurement of visceral adipose tissue (VAT) area."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Adipose_Tissue.Visceral_adipose_tissue_area.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Adipose_Tissue.Visceral_adipose_tissue_volume">
+         <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Adipose_Tissue.Visceral_adipose_tissue_volume"/>
+         <short value="Visceral adipose tissue volume"/>
+         <definition value="Measurement of visceral adipose tissue (VAT) volume."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Adipose_Tissue.Visceral_adipose_tissue_volume"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Adipose_Tissue.Visceral_adipose_tissue_volume.value">
+         <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Adipose_Tissue.Visceral_adipose_tissue_volume.value"/>
+         <short value="Visceral adipose tissue volume"/>
+         <definition value="Measurement of visceral adipose tissue (VAT) volume."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Adipose_Tissue.Visceral_adipose_tissue_volume.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Adipose_Tissue.Subcutaneous_adipose_tissue_volume">
+         <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Adipose_Tissue.Subcutaneous_adipose_tissue_volume"/>
+         <short value="Subcutaneous adipose tissue volume"/>
+         <definition value="Measurement of subcutaneous adipose tissue (SAT) volume."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Adipose_Tissue.Subcutaneous_adipose_tissue_volume"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Adipose_Tissue.Subcutaneous_adipose_tissue_volume.value">
+         <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Adipose_Tissue.Subcutaneous_adipose_tissue_volume.value"/>
+         <short value="Subcutaneous adipose tissue volume"/>
+         <definition value="Measurement of subcutaneous adipose tissue (SAT) volume."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Adipose_Tissue.Subcutaneous_adipose_tissue_volume.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Adipose_Tissue.Subcutaneous_adipose_tissue_mass">
+         <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Adipose_Tissue.Subcutaneous_adipose_tissue_mass"/>
+         <short value="Subcutaneous adipose tissue mass"/>
+         <definition value="Measurement of subcutaneous adipose tissue (SAT) mass."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Adipose_Tissue.Subcutaneous_adipose_tissue_mass"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Adipose_Tissue.Subcutaneous_adipose_tissue_mass.value">
+         <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Adipose_Tissue.Subcutaneous_adipose_tissue_mass.value"/>
+         <short value="Subcutaneous adipose tissue mass"/>
+         <definition value="Measurement of subcutaneous adipose tissue (SAT) mass."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Adipose_Tissue.Subcutaneous_adipose_tissue_mass.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Adipose_Tissue.Subcutaneous_adipose_tissue_area">
+         <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Adipose_Tissue.Subcutaneous_adipose_tissue_area"/>
+         <short value="Subcutaneous adipose tissue area"/>
+         <definition value="Measurement of subcutaneous adipose tissue (SAT) area."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Adipose_Tissue.Subcutaneous_adipose_tissue_area"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Adipose_Tissue.Subcutaneous_adipose_tissue_area.value">
+         <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Adipose_Tissue.Subcutaneous_adipose_tissue_area.value"/>
+         <short value="Subcutaneous adipose tissue area"/>
+         <definition value="Measurement of subcutaneous adipose tissue (SAT) area."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Adipose_Tissue.Subcutaneous_adipose_tissue_area.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Adipose_Tissue.Interstitial_adipose_tissue_area">
+         <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Adipose_Tissue.Interstitial_adipose_tissue_area"/>
+         <short value="Interstitial adipose tissue area"/>
+         <definition value="Measurement of Intersticial adipose tissue (IAT)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Adipose_Tissue.Interstitial_adipose_tissue_area"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Adipose_Tissue.Interstitial_adipose_tissue_area.value">
+         <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Adipose_Tissue.Interstitial_adipose_tissue_area.value"/>
+         <short value="Interstitial adipose tissue area"/>
+         <definition value="Measurement of Intersticial adipose tissue (IAT)."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Tissue_system_level.Adipose_Tissue.Interstitial_adipose_tissue_area.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Whole_body">
+         <path value="Body_composition.Event_Series.Any_event.data.Whole_body"/>
+         <short value="Whole body"/>
+         <definition value="Measurement of five compartments  model of body composition, eg: lower limbs, upper limbs, trunk, neck and head."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Whole_body"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Whole_body.Lower_limbs">
+         <path value="Body_composition.Event_Series.Any_event.data.Whole_body.Lower_limbs"/>
+         <short value="Lower limbs"/>
+         <definition value="Measurement of lower limbs."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Whole_body.Lower_limbs"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Whole_body.Lower_limbs.value">
+         <path value="Body_composition.Event_Series.Any_event.data.Whole_body.Lower_limbs.value"/>
+         <short value="Lower limbs"/>
+         <definition value="Measurement of lower limbs."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Whole_body.Lower_limbs.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Whole_body.Upper_limbs">
+         <path value="Body_composition.Event_Series.Any_event.data.Whole_body.Upper_limbs"/>
+         <short value="Upper limbs"/>
+         <definition value="Measurement of upper limbs."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Whole_body.Upper_limbs"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Whole_body.Upper_limbs.value">
+         <path value="Body_composition.Event_Series.Any_event.data.Whole_body.Upper_limbs.value"/>
+         <short value="Upper limbs"/>
+         <definition value="Measurement of upper limbs."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Whole_body.Upper_limbs.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Whole_body.Trunk">
+         <path value="Body_composition.Event_Series.Any_event.data.Whole_body.Trunk"/>
+         <short value="Trunk"/>
+         <definition value="Measurement of trunk."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Whole_body.Trunk"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Whole_body.Trunk.value">
+         <path value="Body_composition.Event_Series.Any_event.data.Whole_body.Trunk.value"/>
+         <short value="Trunk"/>
+         <definition value="Measurement of trunk."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Whole_body.Trunk.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Whole_body.Neck">
+         <path value="Body_composition.Event_Series.Any_event.data.Whole_body.Neck"/>
+         <short value="Neck"/>
+         <definition value="Measurement of neck."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Whole_body.Neck"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Whole_body.Neck.value">
+         <path value="Body_composition.Event_Series.Any_event.data.Whole_body.Neck.value"/>
+         <short value="Neck"/>
+         <definition value="Measurement of neck."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Whole_body.Neck.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Whole_body.Head">
+         <path value="Body_composition.Event_Series.Any_event.data.Whole_body.Head"/>
+         <short value="Head"/>
+         <definition value="Measurement of head."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Whole_body.Head"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.data.Whole_body.Head.value">
+         <path value="Body_composition.Event_Series.Any_event.data.Whole_body.Head.value"/>
+         <short value="Head"/>
+         <definition value="Measurement of head."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.data.Whole_body.Head.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.state">
+         <path value="Body_composition.Event_Series.Any_event.state"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.state.State_of_dress">
+         <path value="Body_composition.Event_Series.Any_event.state.State_of_dress"/>
+         <short value="State of dress"/>
+         <definition value="Description of the state of dress of the individual at the time of measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.state.State_of_dress"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.state.State_of_dress.value">
+         <path value="Body_composition.Event_Series.Any_event.state.State_of_dress.value"/>
+         <short value="State of dress"/>
+         <definition value="Description of the state of dress of the individual at the time of measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.state.State_of_dress.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.state.Confounding_factors">
+         <path value="Body_composition.Event_Series.Any_event.state.Confounding_factors"/>
+         <short value="Confounding factors"/>
+         <definition value="Other incidental factors that may impact on the body composition measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.state.Confounding_factors"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.state.Confounding_factors.value">
+         <path value="Body_composition.Event_Series.Any_event.state.Confounding_factors.value"/>
+         <short value="Confounding factors"/>
+         <definition value="Other incidental factors that may impact on the body composition measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.state.Confounding_factors.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_composition.Event_Series.Any_event.state.Menstrual_cycle">
+         <path value="Body_composition.Event_Series.Any_event.state.Menstrual_cycle"/>
+         <short value="Menstrual cycle"/>
+         <definition value="Details of women's menstrual cycle."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Body_composition.Event_Series.Any_event.state.Menstrual_cycle"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+   </snapshot>
+</StructureDefinition>

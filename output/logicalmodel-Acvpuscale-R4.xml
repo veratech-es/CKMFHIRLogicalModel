@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Acvpuscale-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-acvpuscale-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.acvpu.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Acvpuscale"/>
+   <title value="ACVPU scale"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Simple scale used as part of an assessment to measure and record an individual's level of consciousness."/>
+   <purpose value="To record an individual's level of consciousness."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="ACVPU_scale">
+         <path value="ACVPU_scale"/>
+         <short value="ACVPU scale"/>
+         <definition value="Simple scale used as part of an assessment to measure and record an individual's level of consciousness."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="ACVPU_scale"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ACVPU_scale.protocol">
+         <path value="ACVPU_scale.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ACVPU_scale.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ACVPU_scale.protocol.Extension">
+         <path value="ACVPU_scale.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="ACVPU_scale.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ACVPU_scale.Event_Series">
+         <path value="ACVPU_scale.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ACVPU_scale.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ACVPU_scale.Event_Series.Any_point_in_time_event">
+         <path value="ACVPU_scale.Event_Series.Any_point_in_time_event"/>
+         <short value="Any point in time event"/>
+         <definition value="Default, unspecified point in time event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="ACVPU_scale.Event_Series.Any_point_in_time_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ACVPU_scale.Event_Series.Any_point_in_time_event.data">
+         <path value="ACVPU_scale.Event_Series.Any_point_in_time_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ACVPU_scale.Event_Series.Any_point_in_time_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ACVPU_scale.Event_Series.Any_point_in_time_event.data.ACVPU">
+         <path value="ACVPU_scale.Event_Series.Any_point_in_time_event.data.ACVPU"/>
+         <short value="ACVPU"/>
+         <definition value="The assessment of the patient's level of consciousness."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="ACVPU_scale.Event_Series.Any_point_in_time_event.data.ACVPU"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="ACVPU_scale.Event_Series.Any_point_in_time_event.data.ACVPU.value">
+         <path value="ACVPU_scale.Event_Series.Any_point_in_time_event.data.ACVPU.value"/>
+         <short value="ACVPU"/>
+         <definition value="The assessment of the patient's level of consciousness."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ACVPU_scale.Event_Series.Any_point_in_time_event.data.ACVPU.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ACVPU_scale.Event_Series.Any_point_in_time_event.state">
+         <path value="ACVPU_scale.Event_Series.Any_point_in_time_event.state"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ACVPU_scale.Event_Series.Any_point_in_time_event.state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

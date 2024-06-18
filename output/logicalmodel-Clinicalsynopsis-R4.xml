@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Clinicalsynopsis-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-clinicalsynopsis-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-EVALUATION.clinical_synopsis.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Clinicalsynopsis"/>
+   <title value="Clinical synopsis"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Narrative summary or overview about a patient, specifically from the perspective of a healthcare provider, and with or without associated interpretations."/>
+   <purpose value="To manually synthesise and record a narrative summary about a patient, from the perspective of a healthcare provider."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Clinical_synopsis">
+         <path value="Clinical_synopsis"/>
+         <short value="Clinical synopsis"/>
+         <definition value="Narrative summary or overview about a patient, specifically from the perspective of a healthcare provider, and with or without associated interpretations."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_synopsis"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Clinical_synopsis.protocol">
+         <path value="Clinical_synopsis.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_synopsis.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Clinical_synopsis.protocol.Extension">
+         <path value="Clinical_synopsis.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Clinical_synopsis.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Clinical_synopsis.List">
+         <path value="Clinical_synopsis.List"/>
+         <short value="List"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_synopsis.List"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Clinical_synopsis.List.Synopsis">
+         <path value="Clinical_synopsis.List.Synopsis"/>
+         <short value="Synopsis"/>
+         <definition value="The summary, assessment, conclusions or evaluation of the clinical findings."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_synopsis.List.Synopsis"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Clinical_synopsis.List.Synopsis.value">
+         <path value="Clinical_synopsis.List.Synopsis.value"/>
+         <short value="Synopsis"/>
+         <definition value="The summary, assessment, conclusions or evaluation of the clinical findings."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_synopsis.List.Synopsis.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

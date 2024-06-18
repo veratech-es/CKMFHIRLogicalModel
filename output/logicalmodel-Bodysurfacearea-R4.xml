@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Bodysurfacearea-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-bodysurfacearea-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.body_surface_area.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Bodysurfacearea"/>
+   <title value="Body surface area"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="The measured or calculated surface area of a human body."/>
+   <purpose value="To record the measured or calculated surface area of a human body."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Body_surface_area">
+         <path value="Body_surface_area"/>
+         <short value="Body surface area"/>
+         <definition value="The measured or calculated surface area of a human body."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_surface_area"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_surface_area.protocol">
+         <path value="Body_surface_area.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_surface_area.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_surface_area.protocol.Method">
+         <path value="Body_surface_area.protocol.Method"/>
+         <short value="Method"/>
+         <definition value="The method by which the body surface area was entered into the clinical system."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_surface_area.protocol.Method"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_surface_area.protocol.Method.value">
+         <path value="Body_surface_area.protocol.Method.value"/>
+         <short value="Method"/>
+         <definition value="The method by which the body surface area was entered into the clinical system."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_surface_area.protocol.Method.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_surface_area.protocol.Formula">
+         <path value="Body_surface_area.protocol.Formula"/>
+         <short value="Formula"/>
+         <definition value="Formula used to calculate the BSA."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_surface_area.protocol.Formula"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_surface_area.protocol.Formula.value_DV_CODED_TEXT">
+         <path value="Body_surface_area.protocol.Formula.value_DV_CODED_TEXT"/>
+         <short value="Formula"/>
+         <definition value="Formula used to calculate the BSA."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_surface_area.protocol.Formula.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_surface_area.protocol.Formula.value_DV_TEXT">
+         <path value="Body_surface_area.protocol.Formula.value_DV_TEXT"/>
+         <short value="Formula"/>
+         <definition value="Formula used to calculate the BSA."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_surface_area.protocol.Formula.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_surface_area.protocol.Device">
+         <path value="Body_surface_area.protocol.Device"/>
+         <short value="Device"/>
+         <definition value="The device used to measure or estimate the body surface area."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Body_surface_area.protocol.Device"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_surface_area.protocol.Extension">
+         <path value="Body_surface_area.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Body_surface_area.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_surface_area.Event_Series">
+         <path value="Body_surface_area.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_surface_area.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_surface_area.Event_Series.Any_event">
+         <path value="Body_surface_area.Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Body_surface_area.Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_surface_area.Event_Series.Any_event.data">
+         <path value="Body_surface_area.Event_Series.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_surface_area.Event_Series.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_surface_area.Event_Series.Any_event.data.Body_Surface_Area">
+         <path value="Body_surface_area.Event_Series.Any_event.data.Body_Surface_Area"/>
+         <short value="Body Surface Area"/>
+         <definition value="The measured or calculated surface area of a human body."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_surface_area.Event_Series.Any_event.data.Body_Surface_Area"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_surface_area.Event_Series.Any_event.data.Body_Surface_Area.value">
+         <path value="Body_surface_area.Event_Series.Any_event.data.Body_Surface_Area.value"/>
+         <short value="Body Surface Area"/>
+         <definition value="The measured or calculated surface area of a human body."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_surface_area.Event_Series.Any_event.data.Body_Surface_Area.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_surface_area.Event_Series.Any_event.data.Comment">
+         <path value="Body_surface_area.Event_Series.Any_event.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the measurement, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_surface_area.Event_Series.Any_event.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_surface_area.Event_Series.Any_event.data.Comment.value">
+         <path value="Body_surface_area.Event_Series.Any_event.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the measurement, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_surface_area.Event_Series.Any_event.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_surface_area.Event_Series.Any_event.state">
+         <path value="Body_surface_area.Event_Series.Any_event.state"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_surface_area.Event_Series.Any_event.state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_surface_area.Event_Series.Any_event.state.Confounding_factors">
+         <path value="Body_surface_area.Event_Series.Any_event.state.Confounding_factors"/>
+         <short value="Confounding factors"/>
+         <definition value="Record of any issues or factors that may impact on the measurement or calculation of body surface area."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_surface_area.Event_Series.Any_event.state.Confounding_factors"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_surface_area.Event_Series.Any_event.state.Confounding_factors.value">
+         <path value="Body_surface_area.Event_Series.Any_event.state.Confounding_factors.value"/>
+         <short value="Confounding factors"/>
+         <definition value="Record of any issues or factors that may impact on the measurement or calculation of body surface area."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_surface_area.Event_Series.Any_event.state.Confounding_factors.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

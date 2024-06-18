@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Fluidinput-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-fluidinput-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.fluid_input.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Fluidinput"/>
+   <title value="Fluid input"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="The amount of fluid ingested or administered to the individual."/>
+   <purpose value="To record details of measured fluid input, often used as part of fluid balance calculation."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Fluid_input">
+         <path value="Fluid_input"/>
+         <short value="Fluid input"/>
+         <definition value="The amount of fluid ingested or administered to the individual."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Fluid_input"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fluid_input.List">
+         <path value="Fluid_input.List"/>
+         <short value="List"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fluid_input.List"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fluid_input.List.Method">
+         <path value="Fluid_input.List.Method"/>
+         <short value="Method"/>
+         <definition value="The approach used to quantify the volume of fluid."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fluid_input.List.Method"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fluid_input.List.Method.value">
+         <path value="Fluid_input.List.Method.value"/>
+         <short value="Method"/>
+         <definition value="The approach used to quantify the volume of fluid."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fluid_input.List.Method.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fluid_input.List.Input_device">
+         <path value="Fluid_input.List.Input_device"/>
+         <short value="Input device"/>
+         <definition value="The device used to administer or deliver the fluid."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fluid_input.List.Input_device"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fluid_input.List.Measurement_device">
+         <path value="Fluid_input.List.Measurement_device"/>
+         <short value="Measurement device"/>
+         <definition value="The device used to measure the volume of fluid."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fluid_input.List.Measurement_device"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fluid_input.List.Extension">
+         <path value="Fluid_input.List.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Fluid_input.List.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fluid_input.Event_Series">
+         <path value="Fluid_input.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fluid_input.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fluid_input.Event_Series.Any_event">
+         <path value="Fluid_input.Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Fluid_input.Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fluid_input.Event_Series.Any_event.List">
+         <path value="Fluid_input.Event_Series.Any_event.List"/>
+         <short value="List"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fluid_input.Event_Series.Any_event.List"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fluid_input.Event_Series.Any_event.List.Fluid_name">
+         <path value="Fluid_input.Event_Series.Any_event.List.Fluid_name"/>
+         <short value="Fluid name"/>
+         <definition value="Identification of the fluid ingested or administered."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fluid_input.Event_Series.Any_event.List.Fluid_name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fluid_input.Event_Series.Any_event.List.Fluid_name.value">
+         <path value="Fluid_input.Event_Series.Any_event.List.Fluid_name.value"/>
+         <short value="Fluid name"/>
+         <definition value="Identification of the fluid ingested or administered."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fluid_input.Event_Series.Any_event.List.Fluid_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fluid_input.Event_Series.Any_event.List.Route">
+         <path value="Fluid_input.Event_Series.Any_event.List.Route"/>
+         <short value="Route"/>
+         <definition value="The delivery route of the fluid."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fluid_input.Event_Series.Any_event.List.Route"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fluid_input.Event_Series.Any_event.List.Route.value">
+         <path value="Fluid_input.Event_Series.Any_event.List.Route.value"/>
+         <short value="Route"/>
+         <definition value="The delivery route of the fluid."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fluid_input.Event_Series.Any_event.List.Route.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fluid_input.Event_Series.Any_event.List.Volume">
+         <path value="Fluid_input.Event_Series.Any_event.List.Volume"/>
+         <short value="Volume"/>
+         <definition value="The volume of fluid ingested or administered."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fluid_input.Event_Series.Any_event.List.Volume"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fluid_input.Event_Series.Any_event.List.Volume.value">
+         <path value="Fluid_input.Event_Series.Any_event.List.Volume.value"/>
+         <short value="Volume"/>
+         <definition value="The volume of fluid ingested or administered."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Fluid_input.Event_Series.Any_event.List.Volume.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fluid_input.Event_Series.Any_event.List.Fluid_details">
+         <path value="Fluid_input.Event_Series.Any_event.List.Fluid_details"/>
+         <short value="Fluid details"/>
+         <definition value="Additonal details about the fluid."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Fluid_input.Event_Series.Any_event.List.Fluid_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fluid_input.Event_Series.Any_event.List.Comment">
+         <path value="Fluid_input.Event_Series.Any_event.List.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the fluid input not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fluid_input.Event_Series.Any_event.List.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fluid_input.Event_Series.Any_event.List.Comment.value">
+         <path value="Fluid_input.Event_Series.Any_event.List.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the fluid input not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fluid_input.Event_Series.Any_event.List.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

@@ -1,0 +1,1096 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Smokelesstobaccosummary-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-smokelesstobaccosummary-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-EVALUATION.smokeless_tobacco_summary.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Smokelesstobaccosummary"/>
+   <title value="Smokeless tobacco summary"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Summary or persistent information about smokeless tobacco use by an individual."/>
+   <purpose value="To record summary or persistent information about smokeless tobacco use by an individual."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Smokeless_tobacco_summary">
+         <path value="Smokeless_tobacco_summary"/>
+         <short value="Smokeless tobacco summary"/>
+         <definition value="Summary or persistent information about smokeless tobacco use by an individual."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Smokeless_tobacco_summary.protocol">
+         <path value="Smokeless_tobacco_summary.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Smokeless_tobacco_summary.protocol.Extension">
+         <path value="Smokeless_tobacco_summary.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Smokeless_tobacco_summary.protocol.Quit_date_definition">
+         <path value="Smokeless_tobacco_summary.protocol.Quit_date_definition"/>
+         <short value="Quit date definition"/>
+         <definition value="The applied definition for the 'Quit date' data elements used in this archetype."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.protocol.Quit_date_definition"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Smokeless_tobacco_summary.protocol.Quit_date_definition.value">
+         <path value="Smokeless_tobacco_summary.protocol.Quit_date_definition.value"/>
+         <short value="Quit date definition"/>
+         <definition value="The applied definition for the 'Quit date' data elements used in this archetype."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.protocol.Quit_date_definition.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Smokeless_tobacco_summary.protocol.Quit_attempt_definition">
+         <path value="Smokeless_tobacco_summary.protocol.Quit_attempt_definition"/>
+         <short value="Quit attempt definition"/>
+         <definition value="The applied definition for a Quit attempt used to determine value for the 'Number of quit attempts' data element used in this archetype."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.protocol.Quit_attempt_definition"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Smokeless_tobacco_summary.protocol.Quit_attempt_definition.value">
+         <path value="Smokeless_tobacco_summary.protocol.Quit_attempt_definition.value"/>
+         <short value="Quit attempt definition"/>
+         <definition value="The applied definition for a Quit attempt used to determine value for the 'Number of quit attempts' data element used in this archetype."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.protocol.Quit_attempt_definition.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Smokeless_tobacco_summary.protocol.Current_user_definition">
+         <path value="Smokeless_tobacco_summary.protocol.Current_user_definition"/>
+         <short value="Current user definition"/>
+         <definition value="The applied definition for the 'Current user' value in each of the 'Status' data elements used in this archetype."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.protocol.Current_user_definition"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Smokeless_tobacco_summary.protocol.Current_user_definition.value">
+         <path value="Smokeless_tobacco_summary.protocol.Current_user_definition.value"/>
+         <short value="Current user definition"/>
+         <definition value="The applied definition for the 'Current user' value in each of the 'Status' data elements used in this archetype."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.protocol.Current_user_definition.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Smokeless_tobacco_summary.protocol.Former_user_definition">
+         <path value="Smokeless_tobacco_summary.protocol.Former_user_definition"/>
+         <short value="Former user definition"/>
+         <definition value="The applied definition for the 'Former user' value in each of the 'Status' data elements used in this archetype."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.protocol.Former_user_definition"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Smokeless_tobacco_summary.protocol.Former_user_definition.value">
+         <path value="Smokeless_tobacco_summary.protocol.Former_user_definition.value"/>
+         <short value="Former user definition"/>
+         <definition value="The applied definition for the 'Former user' value in each of the 'Status' data elements used in this archetype."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.protocol.Former_user_definition.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Smokeless_tobacco_summary.protocol.Never_used_definition">
+         <path value="Smokeless_tobacco_summary.protocol.Never_used_definition"/>
+         <short value="Never used definition"/>
+         <definition value="The applied definition for the 'Never used' value in each of the 'Status' data elements used in this archetype."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.protocol.Never_used_definition"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Smokeless_tobacco_summary.protocol.Never_used_definition.value">
+         <path value="Smokeless_tobacco_summary.protocol.Never_used_definition.value"/>
+         <short value="Never used definition"/>
+         <definition value="The applied definition for the 'Never used' value in each of the 'Status' data elements used in this archetype."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.protocol.Never_used_definition.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Smokeless_tobacco_summary.protocol.Pack_definition">
+         <path value="Smokeless_tobacco_summary.protocol.Pack_definition"/>
+         <short value="Pack definition"/>
+         <definition value="The definition of the size of pack used as part of the algorithm for calculating 'Pack years' data elements used in this archetype."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.protocol.Pack_definition"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Smokeless_tobacco_summary.protocol.Pack_definition.value_DV_COUNT">
+         <path value="Smokeless_tobacco_summary.protocol.Pack_definition.value_DV_COUNT"/>
+         <short value="Pack definition"/>
+         <definition value="The definition of the size of pack used as part of the algorithm for calculating 'Pack years' data elements used in this archetype."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.protocol.Pack_definition.value_DV_COUNT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Smokeless_tobacco_summary.protocol.Pack_definition.value_DvQuantity">
+         <path value="Smokeless_tobacco_summary.protocol.Pack_definition.value_DvQuantity"/>
+         <short value="Pack definition"/>
+         <definition value="The definition of the size of pack used as part of the algorithm for calculating 'Pack years' data elements used in this archetype."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.protocol.Pack_definition.value_DvQuantity"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Smokeless_tobacco_summary.protocol.Last_updated">
+         <path value="Smokeless_tobacco_summary.protocol.Last_updated"/>
+         <short value="Last updated"/>
+         <definition value="The date this smokeless tobacco summary was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.protocol.Last_updated"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Smokeless_tobacco_summary.protocol.Last_updated.value">
+         <path value="Smokeless_tobacco_summary.protocol.Last_updated.value"/>
+         <short value="Last updated"/>
+         <definition value="The date this smokeless tobacco summary was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.protocol.Last_updated.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Smokeless_tobacco_summary.data">
+         <path value="Smokeless_tobacco_summary.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Smokeless_tobacco_summary.data.Overall_status">
+         <path value="Smokeless_tobacco_summary.data.Overall_status"/>
+         <short value="Overall status"/>
+         <definition value="Statement about current use of all types of smokeless tobacco."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.data.Overall_status"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Smokeless_tobacco_summary.data.Overall_status.value">
+         <path value="Smokeless_tobacco_summary.data.Overall_status.value"/>
+         <short value="Overall status"/>
+         <definition value="Statement about current use of all types of smokeless tobacco."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.data.Overall_status.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Smokeless_tobacco_summary.data.Overall_description">
+         <path value="Smokeless_tobacco_summary.data.Overall_description"/>
+         <short value="Overall description"/>
+         <definition value="Narrative summary about the individual's overall smokeless tobacco use pattern and history."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.data.Overall_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Smokeless_tobacco_summary.data.Overall_description.value">
+         <path value="Smokeless_tobacco_summary.data.Overall_description.value"/>
+         <short value="Overall description"/>
+         <definition value="Narrative summary about the individual's overall smokeless tobacco use pattern and history."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.data.Overall_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Smokeless_tobacco_summary.data.Regular_use_commenced">
+         <path value="Smokeless_tobacco_summary.data.Regular_use_commenced"/>
+         <short value="Regular use commenced"/>
+         <definition value="The date or partial date when the individual first started frequent or regular, but non-daily, use of smokeless tobacco of any type."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.data.Regular_use_commenced"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Smokeless_tobacco_summary.data.Regular_use_commenced.value">
+         <path value="Smokeless_tobacco_summary.data.Regular_use_commenced.value"/>
+         <short value="Regular use commenced"/>
+         <definition value="The date or partial date when the individual first started frequent or regular, but non-daily, use of smokeless tobacco of any type."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.data.Regular_use_commenced.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="date"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Smokeless_tobacco_summary.data.Daily_use_commenced">
+         <path value="Smokeless_tobacco_summary.data.Daily_use_commenced"/>
+         <short value="Daily use commenced"/>
+         <definition value="The date or partial date when the individual first started daily use of smokeless tobacco of any type."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.data.Daily_use_commenced"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Smokeless_tobacco_summary.data.Daily_use_commenced.value">
+         <path value="Smokeless_tobacco_summary.data.Daily_use_commenced.value"/>
+         <short value="Daily use commenced"/>
+         <definition value="The date or partial date when the individual first started daily use of smokeless tobacco of any type."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.data.Daily_use_commenced.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="date"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Smokeless_tobacco_summary.data.Per_type">
+         <path value="Smokeless_tobacco_summary.data.Per_type"/>
+         <short value="Per type"/>
+         <definition value="Details about use of a specified type of smokeless tobacco."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.data.Per_type"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Smokeless_tobacco_summary.data.Per_type.Type">
+         <path value="Smokeless_tobacco_summary.data.Per_type.Type"/>
+         <short value="Type"/>
+         <definition value="The name of the specific type or grouping of smokeless tobacco."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.data.Per_type.Type"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Smokeless_tobacco_summary.data.Per_type.Type.value">
+         <path value="Smokeless_tobacco_summary.data.Per_type.Type.value"/>
+         <short value="Type"/>
+         <definition value="The name of the specific type or grouping of smokeless tobacco."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.data.Per_type.Type.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Smokeless_tobacco_summary.data.Per_type.Status">
+         <path value="Smokeless_tobacco_summary.data.Per_type.Status"/>
+         <short value="Status"/>
+         <definition value="Statement about current use of the specified type of smokeless tobacco."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.data.Per_type.Status"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Smokeless_tobacco_summary.data.Per_type.Status.value">
+         <path value="Smokeless_tobacco_summary.data.Per_type.Status.value"/>
+         <short value="Status"/>
+         <definition value="Statement about current use of the specified type of smokeless tobacco."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.data.Per_type.Status.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Smokeless_tobacco_summary.data.Per_type.Description">
+         <path value="Smokeless_tobacco_summary.data.Per_type.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative summary about use of the specified type of smokeless tobacco."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.data.Per_type.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Smokeless_tobacco_summary.data.Per_type.Description.value">
+         <path value="Smokeless_tobacco_summary.data.Per_type.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative summary about use of the specified type of smokeless tobacco."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.data.Per_type.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Smokeless_tobacco_summary.data.Per_type.Per_episode">
+         <path value="Smokeless_tobacco_summary.data.Per_type.Per_episode"/>
+         <short value="Per episode"/>
+         <definition value="Details about a discrete period of use of the specified type of smokeless tobacco."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.data.Per_type.Per_episode"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Smokeless_tobacco_summary.data.Per_type.Per_episode.Episode_label">
+         <path value="Smokeless_tobacco_summary.data.Per_type.Per_episode.Episode_label"/>
+         <short value="Episode label"/>
+         <definition value="Identification of an episode of smokeless tobacco use."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.data.Per_type.Per_episode.Episode_label"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Smokeless_tobacco_summary.data.Per_type.Per_episode.Episode_label.value_DV_COUNT">
+         <path value="Smokeless_tobacco_summary.data.Per_type.Per_episode.Episode_label.value_DV_COUNT"/>
+         <short value="Episode label"/>
+         <definition value="Identification of an episode of smokeless tobacco use."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.data.Per_type.Per_episode.Episode_label.value_DV_COUNT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Smokeless_tobacco_summary.data.Per_type.Per_episode.Episode_label.value_DV_TEXT">
+         <path value="Smokeless_tobacco_summary.data.Per_type.Per_episode.Episode_label.value_DV_TEXT"/>
+         <short value="Episode label"/>
+         <definition value="Identification of an episode of smokeless tobacco use."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.data.Per_type.Per_episode.Episode_label.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Smokeless_tobacco_summary.data.Per_type.Per_episode.Episode_start_date">
+         <path value="Smokeless_tobacco_summary.data.Per_type.Per_episode.Episode_start_date"/>
+         <short value="Episode start date"/>
+         <definition value="Date when this episode commenced."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.data.Per_type.Per_episode.Episode_start_date"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Smokeless_tobacco_summary.data.Per_type.Per_episode.Episode_start_date.value">
+         <path value="Smokeless_tobacco_summary.data.Per_type.Per_episode.Episode_start_date.value"/>
+         <short value="Episode start date"/>
+         <definition value="Date when this episode commenced."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.data.Per_type.Per_episode.Episode_start_date.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="date"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Smokeless_tobacco_summary.data.Per_type.Per_episode.Episode_end_date">
+         <path value="Smokeless_tobacco_summary.data.Per_type.Per_episode.Episode_end_date"/>
+         <short value="Episode end date"/>
+         <definition value="Date when this episode ceased."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.data.Per_type.Per_episode.Episode_end_date"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Smokeless_tobacco_summary.data.Per_type.Per_episode.Episode_end_date.value">
+         <path value="Smokeless_tobacco_summary.data.Per_type.Per_episode.Episode_end_date.value"/>
+         <short value="Episode end date"/>
+         <definition value="Date when this episode ceased."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.data.Per_type.Per_episode.Episode_end_date.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="date"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Smokeless_tobacco_summary.data.Per_type.Per_episode.Pattern">
+         <path value="Smokeless_tobacco_summary.data.Per_type.Per_episode.Pattern"/>
+         <short value="Pattern"/>
+         <definition value="Details about a discrete period of use of the specified type of smokeless tobacco."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.data.Per_type.Per_episode.Pattern"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Smokeless_tobacco_summary.data.Per_type.Per_episode.Pattern.value_DV_CODED_TEXT">
+         <path value="Smokeless_tobacco_summary.data.Per_type.Per_episode.Pattern.value_DV_CODED_TEXT"/>
+         <short value="Pattern"/>
+         <definition value="Details about a discrete period of use of the specified type of smokeless tobacco."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.data.Per_type.Per_episode.Pattern.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Smokeless_tobacco_summary.data.Per_type.Per_episode.Pattern.value_DV_TEXT">
+         <path value="Smokeless_tobacco_summary.data.Per_type.Per_episode.Pattern.value_DV_TEXT"/>
+         <short value="Pattern"/>
+         <definition value="Details about a discrete period of use of the specified type of smokeless tobacco."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.data.Per_type.Per_episode.Pattern.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Smokeless_tobacco_summary.data.Per_type.Per_episode.Typical_use">
+         <path value="Smokeless_tobacco_summary.data.Per_type.Per_episode.Typical_use"/>
+         <short value="Typical use"/>
+         <definition value="Estimate of the amount of loose tobacco used."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.data.Per_type.Per_episode.Typical_use"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Smokeless_tobacco_summary.data.Per_type.Per_episode.Typical_use.value">
+         <path value="Smokeless_tobacco_summary.data.Per_type.Per_episode.Typical_use.value"/>
+         <short value="Typical use"/>
+         <definition value="Estimate of the amount of loose tobacco used."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.data.Per_type.Per_episode.Typical_use.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Smokeless_tobacco_summary.data.Per_type.Per_episode.Typical_frequency">
+         <path value="Smokeless_tobacco_summary.data.Per_type.Per_episode.Typical_frequency"/>
+         <short value="Typical frequency"/>
+         <definition value="Estimate of number of times that an individual uses smokeless tobacco per time period."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.data.Per_type.Per_episode.Typical_frequency"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Smokeless_tobacco_summary.data.Per_type.Per_episode.Typical_frequency.value">
+         <path value="Smokeless_tobacco_summary.data.Per_type.Per_episode.Typical_frequency.value"/>
+         <short value="Typical frequency"/>
+         <definition value="Estimate of number of times that an individual uses smokeless tobacco per time period."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.data.Per_type.Per_episode.Typical_frequency.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Smokeless_tobacco_summary.data.Per_type.Per_episode.Number_of_quit_attempts">
+         <path value="Smokeless_tobacco_summary.data.Per_type.Per_episode.Number_of_quit_attempts"/>
+         <short value="Number of quit attempts"/>
+         <definition value="Total number of times the individual has attempted to stop using the specified type of smokeless tobacco within this episode."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.data.Per_type.Per_episode.Number_of_quit_attempts"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Smokeless_tobacco_summary.data.Per_type.Per_episode.Number_of_quit_attempts.value">
+         <path value="Smokeless_tobacco_summary.data.Per_type.Per_episode.Number_of_quit_attempts.value"/>
+         <short value="Number of quit attempts"/>
+         <definition value="Total number of times the individual has attempted to stop using the specified type of smokeless tobacco within this episode."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.data.Per_type.Per_episode.Number_of_quit_attempts.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Smokeless_tobacco_summary.data.Per_type.Per_episode.Episode_details">
+         <path value="Smokeless_tobacco_summary.data.Per_type.Per_episode.Episode_details"/>
+         <short value="Episode details"/>
+         <definition value="Additional structured details about the specified episode of smokeless tobacco use."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.data.Per_type.Per_episode.Episode_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Smokeless_tobacco_summary.data.Per_type.Per_episode.Episode_comment">
+         <path value="Smokeless_tobacco_summary.data.Per_type.Per_episode.Episode_comment"/>
+         <short value="Episode comment"/>
+         <definition value="Details about a discrete period of use of the specified type of smokeless tobacco."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.data.Per_type.Per_episode.Episode_comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Smokeless_tobacco_summary.data.Per_type.Per_episode.Episode_comment.value">
+         <path value="Smokeless_tobacco_summary.data.Per_type.Per_episode.Episode_comment.value"/>
+         <short value="Episode comment"/>
+         <definition value="Details about a discrete period of use of the specified type of smokeless tobacco."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.data.Per_type.Per_episode.Episode_comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Smokeless_tobacco_summary.data.Per_type.Quit_date">
+         <path value="Smokeless_tobacco_summary.data.Per_type.Quit_date"/>
+         <short value="Quit date"/>
+         <definition value="Date when the individual last used the specified type of tobacco."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.data.Per_type.Quit_date"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Smokeless_tobacco_summary.data.Per_type.Quit_date.value">
+         <path value="Smokeless_tobacco_summary.data.Per_type.Quit_date.value"/>
+         <short value="Quit date"/>
+         <definition value="Date when the individual last used the specified type of tobacco."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.data.Per_type.Quit_date.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="date"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Smokeless_tobacco_summary.data.Per_type.Type_details">
+         <path value="Smokeless_tobacco_summary.data.Per_type.Type_details"/>
+         <short value="Type details"/>
+         <definition value="Additional structured details relating to the specified type of smokeless tobacco use."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.data.Per_type.Type_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Smokeless_tobacco_summary.data.Per_type.Pack_years">
+         <path value="Smokeless_tobacco_summary.data.Per_type.Pack_years"/>
+         <short value="Pack years"/>
+         <definition value="Estimate of the cumulative amount of smokeless tobacco used over a lifetime, for the specified type of smokeless tobacco."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.data.Per_type.Pack_years"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Smokeless_tobacco_summary.data.Per_type.Pack_years.value">
+         <path value="Smokeless_tobacco_summary.data.Per_type.Pack_years.value"/>
+         <short value="Pack years"/>
+         <definition value="Estimate of the cumulative amount of smokeless tobacco used over a lifetime, for the specified type of smokeless tobacco."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.data.Per_type.Pack_years.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Smokeless_tobacco_summary.data.Per_type.Comment">
+         <path value="Smokeless_tobacco_summary.data.Per_type.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the use of the specified type of smokeless tobacco, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.data.Per_type.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Smokeless_tobacco_summary.data.Per_type.Comment.value">
+         <path value="Smokeless_tobacco_summary.data.Per_type.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the use of the specified type of smokeless tobacco, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.data.Per_type.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Smokeless_tobacco_summary.data.Overall_details">
+         <path value="Smokeless_tobacco_summary.data.Overall_details"/>
+         <short value="Overall details"/>
+         <definition value="Additional structured details about the overall smokeless tobacco use."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.data.Overall_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Smokeless_tobacco_summary.data.Overall_quit_date">
+         <path value="Smokeless_tobacco_summary.data.Overall_quit_date"/>
+         <short value="Overall quit date"/>
+         <definition value="The date when the individual last ceased using smokeless tobacco of any type."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.data.Overall_quit_date"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Smokeless_tobacco_summary.data.Overall_quit_date.value">
+         <path value="Smokeless_tobacco_summary.data.Overall_quit_date.value"/>
+         <short value="Overall quit date"/>
+         <definition value="The date when the individual last ceased using smokeless tobacco of any type."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.data.Overall_quit_date.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="date"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Smokeless_tobacco_summary.data.Overall_pack_years">
+         <path value="Smokeless_tobacco_summary.data.Overall_pack_years"/>
+         <short value="Overall pack years"/>
+         <definition value="Estimate of the cumulative amount of smokeless tobacco used over a lifetime, for all types of smokeless tobacco."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.data.Overall_pack_years"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Smokeless_tobacco_summary.data.Overall_pack_years.value">
+         <path value="Smokeless_tobacco_summary.data.Overall_pack_years.value"/>
+         <short value="Overall pack years"/>
+         <definition value="Estimate of the cumulative amount of smokeless tobacco used over a lifetime, for all types of smokeless tobacco."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.data.Overall_pack_years.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Smokeless_tobacco_summary.data.Overall_comment">
+         <path value="Smokeless_tobacco_summary.data.Overall_comment"/>
+         <short value="Overall comment"/>
+         <definition value="Additional narrative about all smokeless tobacco use, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.data.Overall_comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Smokeless_tobacco_summary.data.Overall_comment.value">
+         <path value="Smokeless_tobacco_summary.data.Overall_comment.value"/>
+         <short value="Overall comment"/>
+         <definition value="Additional narrative about all smokeless tobacco use, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Smokeless_tobacco_summary.data.Overall_comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

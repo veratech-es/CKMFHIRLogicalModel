@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Atriastrokeriskscore-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-atriastrokeriskscore-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.atria_stroke_risk.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Atriastrokeriskscore"/>
+   <title value="ATRIA stroke risk score"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="An assessment tool used to determine the risk of stroke in patients with atrial fibrillation."/>
+   <purpose value="To record the results for each component parameter and their total sum for the ATRIA stroke risk score."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="ATRIA_stroke_risk_score">
+         <path value="ATRIA_stroke_risk_score"/>
+         <short value="ATRIA stroke risk score"/>
+         <definition value="An assessment tool used to determine the risk of stroke in patients with atrial fibrillation."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="ATRIA_stroke_risk_score"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ATRIA_stroke_risk_score.protocol">
+         <path value="ATRIA_stroke_risk_score.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ATRIA_stroke_risk_score.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ATRIA_stroke_risk_score.protocol.Extension">
+         <path value="ATRIA_stroke_risk_score.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="ATRIA_stroke_risk_score.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ATRIA_stroke_risk_score.Event_Series">
+         <path value="ATRIA_stroke_risk_score.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ATRIA_stroke_risk_score.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ATRIA_stroke_risk_score.Event_Series.Any_event">
+         <path value="ATRIA_stroke_risk_score.Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="*"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ATRIA_stroke_risk_score.Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ATRIA_stroke_risk_score.Event_Series.Any_event.data">
+         <path value="ATRIA_stroke_risk_score.Event_Series.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ATRIA_stroke_risk_score.Event_Series.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ATRIA_stroke_risk_score.Event_Series.Any_event.data.History_of_stroke">
+         <path value="ATRIA_stroke_risk_score.Event_Series.Any_event.data.History_of_stroke"/>
+         <short value="History of stroke"/>
+         <definition value="Does the individual have a history of cerebrovascular accident/stroke?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ATRIA_stroke_risk_score.Event_Series.Any_event.data.History_of_stroke"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="ATRIA_stroke_risk_score.Event_Series.Any_event.data.History_of_stroke.value">
+         <path value="ATRIA_stroke_risk_score.Event_Series.Any_event.data.History_of_stroke.value"/>
+         <short value="History of stroke"/>
+         <definition value="Does the individual have a history of cerebrovascular accident/stroke?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ATRIA_stroke_risk_score.Event_Series.Any_event.data.History_of_stroke.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ATRIA_stroke_risk_score.Event_Series.Any_event.data.Age">
+         <path value="ATRIA_stroke_risk_score.Event_Series.Any_event.data.Age"/>
+         <short value="Age"/>
+         <definition value="What is the age and has the individual ever had a prior stroke?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ATRIA_stroke_risk_score.Event_Series.Any_event.data.Age"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="ATRIA_stroke_risk_score.Event_Series.Any_event.data.Age.value">
+         <path value="ATRIA_stroke_risk_score.Event_Series.Any_event.data.Age.value"/>
+         <short value="Age"/>
+         <definition value="What is the age and has the individual ever had a prior stroke?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ATRIA_stroke_risk_score.Event_Series.Any_event.data.Age.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ATRIA_stroke_risk_score.Event_Series.Any_event.data.Sex">
+         <path value="ATRIA_stroke_risk_score.Event_Series.Any_event.data.Sex"/>
+         <short value="Sex"/>
+         <definition value="Is the individual male or female?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ATRIA_stroke_risk_score.Event_Series.Any_event.data.Sex"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="ATRIA_stroke_risk_score.Event_Series.Any_event.data.Sex.value">
+         <path value="ATRIA_stroke_risk_score.Event_Series.Any_event.data.Sex.value"/>
+         <short value="Sex"/>
+         <definition value="Is the individual male or female?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ATRIA_stroke_risk_score.Event_Series.Any_event.data.Sex.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ATRIA_stroke_risk_score.Event_Series.Any_event.data.History_of_diabetes_mellitus">
+         <path value="ATRIA_stroke_risk_score.Event_Series.Any_event.data.History_of_diabetes_mellitus"/>
+         <short value="History of diabetes mellitus"/>
+         <definition value="Does the individual have a history of diabetes mellitus?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ATRIA_stroke_risk_score.Event_Series.Any_event.data.History_of_diabetes_mellitus"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="ATRIA_stroke_risk_score.Event_Series.Any_event.data.History_of_diabetes_mellitus.value">
+         <path value="ATRIA_stroke_risk_score.Event_Series.Any_event.data.History_of_diabetes_mellitus.value"/>
+         <short value="History of diabetes mellitus"/>
+         <definition value="Does the individual have a history of diabetes mellitus?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ATRIA_stroke_risk_score.Event_Series.Any_event.data.History_of_diabetes_mellitus.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ATRIA_stroke_risk_score.Event_Series.Any_event.data.History_of_congestive_heart_failure">
+         <path value="ATRIA_stroke_risk_score.Event_Series.Any_event.data.History_of_congestive_heart_failure"/>
+         <short value="History of congestive heart failure"/>
+         <definition value="Does the individual have a history of congestive heart failure?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ATRIA_stroke_risk_score.Event_Series.Any_event.data.History_of_congestive_heart_failure"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="ATRIA_stroke_risk_score.Event_Series.Any_event.data.History_of_congestive_heart_failure.value">
+         <path value="ATRIA_stroke_risk_score.Event_Series.Any_event.data.History_of_congestive_heart_failure.value"/>
+         <short value="History of congestive heart failure"/>
+         <definition value="Does the individual have a history of congestive heart failure?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ATRIA_stroke_risk_score.Event_Series.Any_event.data.History_of_congestive_heart_failure.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ATRIA_stroke_risk_score.Event_Series.Any_event.data.History_of_hypertension">
+         <path value="ATRIA_stroke_risk_score.Event_Series.Any_event.data.History_of_hypertension"/>
+         <short value="History of hypertension"/>
+         <definition value="Does the individual have a history of hypertension?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ATRIA_stroke_risk_score.Event_Series.Any_event.data.History_of_hypertension"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="ATRIA_stroke_risk_score.Event_Series.Any_event.data.History_of_hypertension.value">
+         <path value="ATRIA_stroke_risk_score.Event_Series.Any_event.data.History_of_hypertension.value"/>
+         <short value="History of hypertension"/>
+         <definition value="Does the individual have a history of hypertension?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ATRIA_stroke_risk_score.Event_Series.Any_event.data.History_of_hypertension.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ATRIA_stroke_risk_score.Event_Series.Any_event.data.Proteinuria">
+         <path value="ATRIA_stroke_risk_score.Event_Series.Any_event.data.Proteinuria"/>
+         <short value="Proteinuria"/>
+         <definition value="Does the individual have proteinuria?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ATRIA_stroke_risk_score.Event_Series.Any_event.data.Proteinuria"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="ATRIA_stroke_risk_score.Event_Series.Any_event.data.Proteinuria.value">
+         <path value="ATRIA_stroke_risk_score.Event_Series.Any_event.data.Proteinuria.value"/>
+         <short value="Proteinuria"/>
+         <definition value="Does the individual have proteinuria?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ATRIA_stroke_risk_score.Event_Series.Any_event.data.Proteinuria.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ATRIA_stroke_risk_score.Event_Series.Any_event.data.eGFR">
+         <path value="ATRIA_stroke_risk_score.Event_Series.Any_event.data.eGFR"/>
+         <short value="eGFR"/>
+         <definition value="The estimated glomerular filtration rate (based on MDRD equation) or presence of end-stage renal disease (ESRD)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ATRIA_stroke_risk_score.Event_Series.Any_event.data.eGFR"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="ATRIA_stroke_risk_score.Event_Series.Any_event.data.eGFR.value">
+         <path value="ATRIA_stroke_risk_score.Event_Series.Any_event.data.eGFR.value"/>
+         <short value="eGFR"/>
+         <definition value="The estimated glomerular filtration rate (based on MDRD equation) or presence of end-stage renal disease (ESRD)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ATRIA_stroke_risk_score.Event_Series.Any_event.data.eGFR.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ATRIA_stroke_risk_score.Event_Series.Any_event.data.Total_score">
+         <path value="ATRIA_stroke_risk_score.Event_Series.Any_event.data.Total_score"/>
+         <short value="Total score"/>
+         <definition value="Sum of points assigned for each of the component parameters."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ATRIA_stroke_risk_score.Event_Series.Any_event.data.Total_score"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="ATRIA_stroke_risk_score.Event_Series.Any_event.data.Total_score.value">
+         <path value="ATRIA_stroke_risk_score.Event_Series.Any_event.data.Total_score.value"/>
+         <short value="Total score"/>
+         <definition value="Sum of points assigned for each of the component parameters."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ATRIA_stroke_risk_score.Event_Series.Any_event.data.Total_score.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

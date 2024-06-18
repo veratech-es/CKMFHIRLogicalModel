@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Specimensummary-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-specimensummary-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-EVALUATION.specimen_summary.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Specimensummary"/>
+   <title value="Specimen summary"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Summary or persistent information about a single specimen."/>
+   <purpose value="To record summary or persistent record about the use and storage of a single specimen until final disposition."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Specimen_summary">
+         <path value="Specimen_summary"/>
+         <short value="Specimen summary"/>
+         <definition value="Summary or persistent information about a single specimen."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_summary"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_summary.protocol">
+         <path value="Specimen_summary.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_summary.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_summary.protocol.Last_updated">
+         <path value="Specimen_summary.protocol.Last_updated"/>
+         <short value="Last updated"/>
+         <definition value="The date this specimen summary was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_summary.protocol.Last_updated"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Specimen_summary.protocol.Last_updated.value">
+         <path value="Specimen_summary.protocol.Last_updated.value"/>
+         <short value="Last updated"/>
+         <definition value="The date this specimen summary was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_summary.protocol.Last_updated.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_summary.protocol.Extension">
+         <path value="Specimen_summary.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models or formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Specimen_summary.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_summary.data">
+         <path value="Specimen_summary.data"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_summary.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_summary.data.Specimen_label">
+         <path value="Specimen_summary.data.Specimen_label"/>
+         <short value="Specimen label"/>
+         <definition value="Name, type or label of the specimen."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Specimen_summary.data.Specimen_label"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Specimen_summary.data.Specimen_label.value">
+         <path value="Specimen_summary.data.Specimen_label.value"/>
+         <short value="Specimen label"/>
+         <definition value="Name, type or label of the specimen."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_summary.data.Specimen_label.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_summary.data.Description">
+         <path value="Specimen_summary.data.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the history or/and the context of the specimen."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_summary.data.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Specimen_summary.data.Description.value">
+         <path value="Specimen_summary.data.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the history or/and the context of the specimen."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_summary.data.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_summary.data.Stored_specimen_ID">
+         <path value="Specimen_summary.data.Stored_specimen_ID"/>
+         <short value="Stored specimen ID"/>
+         <definition value="Unique identifier for the specimen."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Specimen_summary.data.Stored_specimen_ID"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Specimen_summary.data.Stored_specimen_ID.value_DV_IDENTIFIER">
+         <path value="Specimen_summary.data.Stored_specimen_ID.value_DV_IDENTIFIER"/>
+         <short value="Stored specimen ID"/>
+         <definition value="Unique identifier for the specimen."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_summary.data.Stored_specimen_ID.value_DV_IDENTIFIER"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_summary.data.Stored_specimen_ID.value_DV_TEXT">
+         <path value="Specimen_summary.data.Stored_specimen_ID.value_DV_TEXT"/>
+         <short value="Stored specimen ID"/>
+         <definition value="Unique identifier for the specimen."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_summary.data.Stored_specimen_ID.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_summary.data.Storage_started">
+         <path value="Specimen_summary.data.Storage_started"/>
+         <short value="Storage started"/>
+         <definition value="The date/time when the specimen was stored."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_summary.data.Storage_started"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Specimen_summary.data.Storage_started.value">
+         <path value="Specimen_summary.data.Storage_started.value"/>
+         <short value="Storage started"/>
+         <definition value="The date/time when the specimen was stored."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_summary.data.Storage_started.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_summary.data.Specimen_details">
+         <path value="Specimen_summary.data.Specimen_details"/>
+         <short value="Specimen details"/>
+         <definition value="Details about the biospecimen."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Specimen_summary.data.Specimen_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_summary.data.Use">
+         <path value="Specimen_summary.data.Use"/>
+         <short value="Use"/>
+         <definition value="Details about use of the specimen."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Specimen_summary.data.Use"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_summary.data.Use.Reason_for_use">
+         <path value="Specimen_summary.data.Use.Reason_for_use"/>
+         <short value="Reason for use"/>
+         <definition value="The reason for the use of the specimen."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_summary.data.Use.Reason_for_use"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Specimen_summary.data.Use.Reason_for_use.value">
+         <path value="Specimen_summary.data.Use.Reason_for_use.value"/>
+         <short value="Reason for use"/>
+         <definition value="The reason for the use of the specimen."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_summary.data.Use.Reason_for_use.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_summary.data.Use.Date_of_use">
+         <path value="Specimen_summary.data.Use.Date_of_use"/>
+         <short value="Date of use"/>
+         <definition value="The date and time when the specimen was used."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_summary.data.Use.Date_of_use"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Specimen_summary.data.Use.Date_of_use.value">
+         <path value="Specimen_summary.data.Use.Date_of_use.value"/>
+         <short value="Date of use"/>
+         <definition value="The date and time when the specimen was used."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_summary.data.Use.Date_of_use.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_summary.data.Use.Amount_used">
+         <path value="Specimen_summary.data.Use.Amount_used"/>
+         <short value="Amount used"/>
+         <definition value="The amount of the specimen that was used."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Specimen_summary.data.Use.Amount_used"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_summary.data.Use.Number_used">
+         <path value="Specimen_summary.data.Use.Number_used"/>
+         <short value="Number used"/>
+         <definition value="The number of units of the specimen used."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_summary.data.Use.Number_used"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Specimen_summary.data.Use.Number_used.value">
+         <path value="Specimen_summary.data.Use.Number_used.value"/>
+         <short value="Number used"/>
+         <definition value="The number of units of the specimen used."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_summary.data.Use.Number_used.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_summary.data.Use.Use_comment">
+         <path value="Specimen_summary.data.Use.Use_comment"/>
+         <short value="Use comment"/>
+         <definition value="Comment about the use of the specimen."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_summary.data.Use.Use_comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Specimen_summary.data.Use.Use_comment.value">
+         <path value="Specimen_summary.data.Use.Use_comment.value"/>
+         <short value="Use comment"/>
+         <definition value="Comment about the use of the specimen."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_summary.data.Use.Use_comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_summary.data.Amount_remaining">
+         <path value="Specimen_summary.data.Amount_remaining"/>
+         <short value="Amount remaining"/>
+         <definition value="The residual amount of the specimen available for use."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_summary.data.Amount_remaining"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_summary.data.Number_remaining">
+         <path value="Specimen_summary.data.Number_remaining"/>
+         <short value="Number remaining"/>
+         <definition value="The remaining units of the specimen available for use."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_summary.data.Number_remaining"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Specimen_summary.data.Number_remaining.value">
+         <path value="Specimen_summary.data.Number_remaining.value"/>
+         <short value="Number remaining"/>
+         <definition value="The remaining units of the specimen available for use."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_summary.data.Number_remaining.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_summary.data.Use_by_date">
+         <path value="Specimen_summary.data.Use_by_date"/>
+         <short value="Use by date"/>
+         <definition value="The date beyond the specimen is not to be used."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Specimen_summary.data.Use_by_date"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Specimen_summary.data.Use_by_date.value">
+         <path value="Specimen_summary.data.Use_by_date.value"/>
+         <short value="Use by date"/>
+         <definition value="The date beyond the specimen is not to be used."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_summary.data.Use_by_date.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_summary.data.Legally_expiry_date">
+         <path value="Specimen_summary.data.Legally_expiry_date"/>
+         <short value="Legally expiry date"/>
+         <definition value="The date beyond the specimen is not to be used based on a expiration date determend by operation of law."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_summary.data.Legally_expiry_date"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Specimen_summary.data.Legally_expiry_date.value">
+         <path value="Specimen_summary.data.Legally_expiry_date.value"/>
+         <short value="Legally expiry date"/>
+         <definition value="The date beyond the specimen is not to be used based on a expiration date determend by operation of law."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_summary.data.Legally_expiry_date.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_summary.data.Disposal_reason">
+         <path value="Specimen_summary.data.Disposal_reason"/>
+         <short value="Disposal reason"/>
+         <definition value="The reason for disposal of the specimen."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_summary.data.Disposal_reason"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Specimen_summary.data.Disposal_reason.value">
+         <path value="Specimen_summary.data.Disposal_reason.value"/>
+         <short value="Disposal reason"/>
+         <definition value="The reason for disposal of the specimen."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_summary.data.Disposal_reason.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_summary.data.Date_of_disposal">
+         <path value="Specimen_summary.data.Date_of_disposal"/>
+         <short value="Date of disposal"/>
+         <definition value="The date/time for the final disposal of the specimen."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_summary.data.Date_of_disposal"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Specimen_summary.data.Date_of_disposal.value">
+         <path value="Specimen_summary.data.Date_of_disposal.value"/>
+         <short value="Date of disposal"/>
+         <definition value="The date/time for the final disposal of the specimen."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_summary.data.Date_of_disposal.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_summary.data.Biobank_location">
+         <path value="Specimen_summary.data.Biobank_location"/>
+         <short value="Biobank location"/>
+         <definition value="Details about the biobank/storage of the specimen."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Specimen_summary.data.Biobank_location"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_summary.data.Specimen_storage">
+         <path value="Specimen_summary.data.Specimen_storage"/>
+         <short value="Specimen storage"/>
+         <definition value="The storage location of the specimen within the biobank/organisation."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Specimen_summary.data.Specimen_storage"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Specimen_summary.data.Specimen_storage.value">
+         <path value="Specimen_summary.data.Specimen_storage.value"/>
+         <short value="Specimen storage"/>
+         <definition value="The storage location of the specimen within the biobank/organisation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_summary.data.Specimen_storage.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_summary.data.Additional_details">
+         <path value="Specimen_summary.data.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="Additional structured details related to the stored specimen."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Specimen_summary.data.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_summary.data.Comment">
+         <path value="Specimen_summary.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the specimen, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_summary.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Specimen_summary.data.Comment.value">
+         <path value="Specimen_summary.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the specimen, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_summary.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

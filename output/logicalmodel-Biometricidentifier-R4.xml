@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Biometricidentifier-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-biometricidentifier-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-DEMOGRAPHIC-CLUSTER.biometric_identifier_iso.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Biometricidentifier"/>
+   <title value="Biometric identifier"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="A person's biometric identifier"/>
+   <purpose value="Representation of data about a person's biometric identifier"/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Biometric_identifier">
+         <path value="Biometric_identifier"/>
+         <short value="Biometric identifier"/>
+         <definition value="A person's biometric identifier"/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Biometric_identifier"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Biometric_identifier.Type_of_biometric">
+         <path value="Biometric_identifier.Type_of_biometric"/>
+         <short value="Type of biometric"/>
+         <definition value="Identification of the type of biometric identifier described by this set of data"/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Biometric_identifier.Type_of_biometric"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Biometric_identifier.Type_of_biometric.value">
+         <path value="Biometric_identifier.Type_of_biometric.value"/>
+         <short value="Type of biometric"/>
+         <definition value="Identification of the type of biometric identifier described by this set of data"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Biometric_identifier.Type_of_biometric.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Biometric_identifier.Biometric_data_template">
+         <path value="Biometric_identifier.Biometric_data_template"/>
+         <short value="Biometric data template"/>
+         <definition value="The format for a BIR that is fully-defined by a CBEFF patron"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Biometric_identifier.Biometric_data_template"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Biometric_identifier.Biometric_data_template.value">
+         <path value="Biometric_identifier.Biometric_data_template.value"/>
+         <short value="Biometric data template"/>
+         <definition value="The format for a BIR that is fully-defined by a CBEFF patron"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Biometric_identifier.Biometric_data_template.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Biometric_identifier.Biometric_enrolment_quality">
+         <path value="Biometric_identifier.Biometric_enrolment_quality"/>
+         <short value="Biometric enrolment quality"/>
+         <definition value="A numeric indicator of the quality of the biometric object"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Biometric_identifier.Biometric_enrolment_quality"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Biometric_identifier.Biometric_enrolment_quality.value">
+         <path value="Biometric_identifier.Biometric_enrolment_quality.value"/>
+         <short value="Biometric enrolment quality"/>
+         <definition value="A numeric indicator of the quality of the biometric object"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Biometric_identifier.Biometric_enrolment_quality.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Ratio"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Biometric_identifier.Biometric_creating_authority">
+         <path value="Biometric_identifier.Biometric_creating_authority"/>
+         <short value="Biometric creating authority"/>
+         <definition value="This indicates the organization that created the biometric"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Biometric_identifier.Biometric_creating_authority"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Biometric_identifier.Biometric_creating_authority.value">
+         <path value="Biometric_identifier.Biometric_creating_authority.value"/>
+         <short value="Biometric creating authority"/>
+         <definition value="This indicates the organization that created the biometric"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Biometric_identifier.Biometric_creating_authority.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Biometric_identifier.Location_of_biometric_identifier">
+         <path value="Biometric_identifier.Location_of_biometric_identifier"/>
+         <short value="Location of biometric identifier"/>
+         <definition value="Where the biometric could represent a number of alternative options, the specific location should be identified. If the biometric represents more than one, multiple locations should be indicated"/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Biometric_identifier.Location_of_biometric_identifier"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Biometric_identifier.Location_of_biometric_identifier.value">
+         <path value="Biometric_identifier.Location_of_biometric_identifier.value"/>
+         <short value="Location of biometric identifier"/>
+         <definition value="Where the biometric could represent a number of alternative options, the specific location should be identified. If the biometric represents more than one, multiple locations should be indicated"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Biometric_identifier.Location_of_biometric_identifier.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Biometric_identifier.Biometric_schema">
+         <path value="Biometric_identifier.Biometric_schema"/>
+         <short value="Biometric schema"/>
+         <definition value="An identifier assigned to a biometric product that unambiguously identifies the biometric product within the biometric products that have been assigned an identifier by a biometric product owner"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Biometric_identifier.Biometric_schema"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Biometric_identifier.Biometric_schema.value">
+         <path value="Biometric_identifier.Biometric_schema.value"/>
+         <short value="Biometric schema"/>
+         <definition value="An identifier assigned to a biometric product that unambiguously identifies the biometric product within the biometric products that have been assigned an identifier by a biometric product owner"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Biometric_identifier.Biometric_schema.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Biometric_identifier.Biometric_device_identification">
+         <path value="Biometric_identifier.Biometric_device_identification"/>
+         <short value="Biometric device identification"/>
+         <definition value="The transformation of a BIR in an initial patron format into a BIR in a target patron format"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Biometric_identifier.Biometric_device_identification"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Biometric_identifier.Biometric_device_identification.value">
+         <path value="Biometric_identifier.Biometric_device_identification.value"/>
+         <short value="Biometric device identification"/>
+         <definition value="The transformation of a BIR in an initial patron format into a BIR in a target patron format"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Biometric_identifier.Biometric_device_identification.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Biometric_identifier.Biometric_version">
+         <path value="Biometric_identifier.Biometric_version"/>
+         <short value="Biometric version"/>
+         <definition value="Version of the process used to produce this biometric. This relates to the software used, rather than the device specification. Abstract value(s) defined by the patron format specification that identify a version of the patron format"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Biometric_identifier.Biometric_version"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Biometric_identifier.Biometric_version.value">
+         <path value="Biometric_identifier.Biometric_version.value"/>
+         <short value="Biometric version"/>
+         <definition value="Version of the process used to produce this biometric. This relates to the software used, rather than the device specification. Abstract value(s) defined by the patron format specification that identify a version of the patron format"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Biometric_identifier.Biometric_version.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Biometric_identifier.Biometric_date_of_creation">
+         <path value="Biometric_identifier.Biometric_date_of_creation"/>
+         <short value="Biometric date of creation"/>
+         <definition value="The date upon which the biometric identifier was created"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Biometric_identifier.Biometric_date_of_creation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Biometric_identifier.Biometric_date_of_creation.value">
+         <path value="Biometric_identifier.Biometric_date_of_creation.value"/>
+         <short value="Biometric date of creation"/>
+         <definition value="The date upon which the biometric identifier was created"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Biometric_identifier.Biometric_date_of_creation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="date"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

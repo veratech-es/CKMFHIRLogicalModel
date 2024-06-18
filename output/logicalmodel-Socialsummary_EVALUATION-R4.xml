@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Socialsummary_EVALUATION-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-socialsummary_EVALUATION-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-EVALUATION.social_summary.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Socialsummary_EVALUATION"/>
+   <title value="Social summary"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Summary information about social circumstances or experiences that may have a potential impact on an individual's health."/>
+   <purpose value="To record a narrative summary about social circumstances or experiences that may have a potential impact on an individual's health, and to provide a framework in which to nest detailed CLUSTER archetypes, each of which will describe the various aspects of social circumstances or experiences in detail."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Social_summary">
+         <path value="Social_summary"/>
+         <short value="Social summary"/>
+         <definition value="Summary information about social circumstances or experiences that may have a potential impact on an individual's health."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Social_summary"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Social_summary.protocol">
+         <path value="Social_summary.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Social_summary.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Social_summary.protocol.Last_updated">
+         <path value="Social_summary.protocol.Last_updated"/>
+         <short value="Last updated"/>
+         <definition value="The date this social summary was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Social_summary.protocol.Last_updated"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Social_summary.protocol.Last_updated.value">
+         <path value="Social_summary.protocol.Last_updated.value"/>
+         <short value="Last updated"/>
+         <definition value="The date this social summary was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Social_summary.protocol.Last_updated.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Social_summary.protocol.Extension">
+         <path value="Social_summary.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Social_summary.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Social_summary.data">
+         <path value="Social_summary.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Social_summary.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Social_summary.data.Summary">
+         <path value="Social_summary.data.Summary"/>
+         <short value="Summary"/>
+         <definition value="Narrative description about social circumstances or experiences that may have a potential impact on an individual's health."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Social_summary.data.Summary"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Social_summary.data.Summary.value">
+         <path value="Social_summary.data.Summary.value"/>
+         <short value="Summary"/>
+         <definition value="Narrative description about social circumstances or experiences that may have a potential impact on an individual's health."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Social_summary.data.Summary.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Social_summary.data.Details">
+         <path value="Social_summary.data.Details"/>
+         <short value="Details"/>
+         <definition value="Structured detail about the social circumstances and experiences."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Social_summary.data.Details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

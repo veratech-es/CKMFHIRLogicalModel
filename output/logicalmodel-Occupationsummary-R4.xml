@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Occupationsummary-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-occupationsummary-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-EVALUATION.occupation_summary.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Occupationsummary"/>
+   <title value="Occupation summary"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Summary or persistent information about an individual's current and past jobs and/or roles."/>
+   <purpose value="To record a summary or persistent information about an individual's current and past jobs and/or roles."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Occupation_summary">
+         <path value="Occupation_summary"/>
+         <short value="Occupation summary"/>
+         <definition value="Summary or persistent information about an individual's current and past jobs and/or roles."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Occupation_summary"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Occupation_summary.protocol">
+         <path value="Occupation_summary.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Occupation_summary.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Occupation_summary.protocol.Extension">
+         <path value="Occupation_summary.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Occupation_summary.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Occupation_summary.protocol.Last_updated">
+         <path value="Occupation_summary.protocol.Last_updated"/>
+         <short value="Last updated"/>
+         <definition value="Date when the occupation summary or associated occupation records were was updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Occupation_summary.protocol.Last_updated"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Occupation_summary.protocol.Last_updated.value">
+         <path value="Occupation_summary.protocol.Last_updated.value"/>
+         <short value="Last updated"/>
+         <definition value="Date when the occupation summary or associated occupation records were was updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Occupation_summary.protocol.Last_updated.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Occupation_summary.data">
+         <path value="Occupation_summary.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Occupation_summary.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Occupation_summary.data.Description">
+         <path value="Occupation_summary.data.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the entire occupation history of the individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Occupation_summary.data.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Occupation_summary.data.Description.value">
+         <path value="Occupation_summary.data.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the entire occupation history of the individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Occupation_summary.data.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Occupation_summary.data.Employment_status">
+         <path value="Occupation_summary.data.Employment_status"/>
+         <short value="Employment status"/>
+         <definition value="Statement about the individual's current employment."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Occupation_summary.data.Employment_status"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Occupation_summary.data.Employment_status.value">
+         <path value="Occupation_summary.data.Employment_status.value"/>
+         <short value="Employment status"/>
+         <definition value="Statement about the individual's current employment."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Occupation_summary.data.Employment_status.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Occupation_summary.data.Occupation_episode">
+         <path value="Occupation_summary.data.Occupation_episode"/>
+         <short value="Occupation episode"/>
+         <definition value="Structured details about each job or role, both current and past."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Occupation_summary.data.Occupation_episode"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Occupation_summary.data.Additional_details">
+         <path value="Occupation_summary.data.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="Additional details about the current jobs or roles, or previous occupation history of an individual."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Occupation_summary.data.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Occupation_summary.data.Comment">
+         <path value="Occupation_summary.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about an individual's current occupation or history of occupations not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Occupation_summary.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Occupation_summary.data.Comment.value">
+         <path value="Occupation_summary.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about an individual's current occupation or history of occupations not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Occupation_summary.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

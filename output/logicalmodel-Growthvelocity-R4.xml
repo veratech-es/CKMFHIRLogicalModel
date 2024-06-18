@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Growthvelocity-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-growthvelocity-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.growth_velocity.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Growthvelocity"/>
+   <title value="Growth velocity"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="The rate of growth, or change in growth measurements, over a period of time."/>
+   <purpose value="To record the rate of growth for common measurements, over a known period of time."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Growth_velocity">
+         <path value="Growth_velocity"/>
+         <short value="Growth velocity"/>
+         <definition value="The rate of growth, or change in growth measurements, over a period of time."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Growth_velocity"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Growth_velocity.protocol">
+         <path value="Growth_velocity.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Growth_velocity.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Growth_velocity.protocol.Extension">
+         <path value="Growth_velocity.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Growth_velocity.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Growth_velocity.Event_Series">
+         <path value="Growth_velocity.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Growth_velocity.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Growth_velocity.Event_Series.Point_in_time_event">
+         <path value="Growth_velocity.Event_Series.Point_in_time_event"/>
+         <short value="Point in time event"/>
+         <definition value="Unspecified point in time event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Growth_velocity.Event_Series.Point_in_time_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Growth_velocity.Event_Series.Point_in_time_event.data">
+         <path value="Growth_velocity.Event_Series.Point_in_time_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Growth_velocity.Event_Series.Point_in_time_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Growth_velocity.Event_Series.Point_in_time_event.data.Body_weight">
+         <path value="Growth_velocity.Event_Series.Point_in_time_event.data.Body_weight"/>
+         <short value="Body weight"/>
+         <definition value="The rate of change of body weight for an individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Growth_velocity.Event_Series.Point_in_time_event.data.Body_weight"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Growth_velocity.Event_Series.Point_in_time_event.data.Body_weight.value">
+         <path value="Growth_velocity.Event_Series.Point_in_time_event.data.Body_weight.value"/>
+         <short value="Body weight"/>
+         <definition value="The rate of change of body weight for an individual."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Growth_velocity.Event_Series.Point_in_time_event.data.Body_weight.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Growth_velocity.Event_Series.Point_in_time_event.data.Body_length_height">
+         <path value="Growth_velocity.Event_Series.Point_in_time_event.data.Body_length_height"/>
+         <short value="Body length/height"/>
+         <definition value="The rate of change in the length or height of an individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Growth_velocity.Event_Series.Point_in_time_event.data.Body_length_height"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Growth_velocity.Event_Series.Point_in_time_event.data.Body_length_height.value">
+         <path value="Growth_velocity.Event_Series.Point_in_time_event.data.Body_length_height.value"/>
+         <short value="Body length/height"/>
+         <definition value="The rate of change in the length or height of an individual."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Growth_velocity.Event_Series.Point_in_time_event.data.Body_length_height.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Growth_velocity.Event_Series.Point_in_time_event.data.Head_circumference">
+         <path value="Growth_velocity.Event_Series.Point_in_time_event.data.Head_circumference"/>
+         <short value="Head circumference"/>
+         <definition value="The rate of change in the head circumference of an individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Growth_velocity.Event_Series.Point_in_time_event.data.Head_circumference"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Growth_velocity.Event_Series.Point_in_time_event.data.Head_circumference.value">
+         <path value="Growth_velocity.Event_Series.Point_in_time_event.data.Head_circumference.value"/>
+         <short value="Head circumference"/>
+         <definition value="The rate of change in the head circumference of an individual."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Growth_velocity.Event_Series.Point_in_time_event.data.Head_circumference.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Growth_velocity.Event_Series.Point_in_time_event.data.Comment">
+         <path value="Growth_velocity.Event_Series.Point_in_time_event.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the velocity measurements, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Growth_velocity.Event_Series.Point_in_time_event.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Growth_velocity.Event_Series.Point_in_time_event.data.Comment.value">
+         <path value="Growth_velocity.Event_Series.Point_in_time_event.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the velocity measurements, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Growth_velocity.Event_Series.Point_in_time_event.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

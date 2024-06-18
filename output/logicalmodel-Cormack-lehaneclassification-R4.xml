@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Cormack-lehaneclassification-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-cormack-lehaneclassification-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.cormack_lehane.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Cormack-lehaneclassification"/>
+   <title value="Cormack-Lehane classification"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="The Cormack-Lehane system classifies views obtained by direct laryngoscopy based on the structures seen."/>
+   <purpose value="To describe the structures visible during direct laryngoscopy and indirectly to indicate the likely difficulty of laryngeal intubation."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Cormack_Lehane_classification">
+         <path value="Cormack_Lehane_classification"/>
+         <short value="Cormack-Lehane classification"/>
+         <definition value="The Cormack-Lehane system classifies views obtained by direct laryngoscopy based on the structures seen."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Cormack_Lehane_classification"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Cormack_Lehane_classification.protocol">
+         <path value="Cormack_Lehane_classification.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cormack_Lehane_classification.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Cormack_Lehane_classification.protocol.Extension">
+         <path value="Cormack_Lehane_classification.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local context or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Cormack_Lehane_classification.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Cormack_Lehane_classification.Event_Series">
+         <path value="Cormack_Lehane_classification.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cormack_Lehane_classification.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Cormack_Lehane_classification.Event_Series.Any_point_in_time_event">
+         <path value="Cormack_Lehane_classification.Event_Series.Any_point_in_time_event"/>
+         <short value="Any point in time event"/>
+         <definition value="Unspecified point in time event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Cormack_Lehane_classification.Event_Series.Any_point_in_time_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Cormack_Lehane_classification.Event_Series.Any_point_in_time_event.data">
+         <path value="Cormack_Lehane_classification.Event_Series.Any_point_in_time_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cormack_Lehane_classification.Event_Series.Any_point_in_time_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Cormack_Lehane_classification.Event_Series.Any_point_in_time_event.data.Grading">
+         <path value="Cormack_Lehane_classification.Event_Series.Any_point_in_time_event.data.Grading"/>
+         <short value="Grading"/>
+         <definition value="A grading of the laryngeal anatomical visibility."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cormack_Lehane_classification.Event_Series.Any_point_in_time_event.data.Grading"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Cormack_Lehane_classification.Event_Series.Any_point_in_time_event.data.Grading.value">
+         <path value="Cormack_Lehane_classification.Event_Series.Any_point_in_time_event.data.Grading.value"/>
+         <short value="Grading"/>
+         <definition value="A grading of the laryngeal anatomical visibility."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cormack_Lehane_classification.Event_Series.Any_point_in_time_event.data.Grading.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Cormack_Lehane_classification.Event_Series.Any_point_in_time_event.data.Comment">
+         <path value="Cormack_Lehane_classification.Event_Series.Any_point_in_time_event.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Narrative comment about the Cormack-Lehane grading."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cormack_Lehane_classification.Event_Series.Any_point_in_time_event.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Cormack_Lehane_classification.Event_Series.Any_point_in_time_event.data.Comment.value">
+         <path value="Cormack_Lehane_classification.Event_Series.Any_point_in_time_event.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Narrative comment about the Cormack-Lehane grading."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cormack_Lehane_classification.Event_Series.Any_point_in_time_event.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

@@ -1,0 +1,2104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Medicationmanagement-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-medicationmanagement-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-ACTION.medication.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Medicationmanagement"/>
+   <title value="Medication management"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Any activity related to the planning, scheduling, prescription management, dispensing, administration, cessation and other use of a medication, vaccine, nutritional product or other therapeutic item."/>
+   <purpose value="For recording details about any activity related to the planning, scheduling, prescription management, dispensing, administration, cessation and other use of a medication, vaccine, nutritional product or other therapeutic item."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Medication_management">
+         <path value="Medication_management"/>
+         <short value="Medication management"/>
+         <definition value="Any activity related to the planning, scheduling, prescription management, dispensing, administration, cessation and other use of a medication, vaccine, nutritional product or other therapeutic item."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.protocol">
+         <path value="Medication_management.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.protocol.Order_ID">
+         <path value="Medication_management.protocol.Order_ID"/>
+         <short value="Order ID"/>
+         <definition value="Unique identifier for the medication order."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Medication_management.protocol.Order_ID"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Medication_management.protocol.Order_ID.value">
+         <path value="Medication_management.protocol.Order_ID.value"/>
+         <short value="Order ID"/>
+         <definition value="Unique identifier for the medication order."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.protocol.Order_ID.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.protocol.Extension">
+         <path value="Medication_management.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Medication_management.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.description">
+         <path value="Medication_management.description"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.description.Medication_item">
+         <path value="Medication_management.description.Medication_item"/>
+         <short value="Medication item"/>
+         <definition value="Name of the medication, vaccine or other therapeutic/prescribable item which was the focus of the activity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.description.Medication_item"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medication_management.description.Medication_item.value">
+         <path value="Medication_management.description.Medication_item.value"/>
+         <short value="Medication item"/>
+         <definition value="Name of the medication, vaccine or other therapeutic/prescribable item which was the focus of the activity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.description.Medication_item.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.description.Medication_details">
+         <path value="Medication_management.description.Medication_details"/>
+         <short value="Medication details"/>
+         <definition value="Structured details about the medication including strength, form and constituent substances."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.description.Medication_details"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.description.Amount">
+         <path value="Medication_management.description.Amount"/>
+         <short value="Amount"/>
+         <definition value="Specific details about the amount of the medication item."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.description.Amount"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.description.Clinical_indication">
+         <path value="Medication_management.description.Clinical_indication"/>
+         <short value="Clinical indication"/>
+         <definition value="The clinical reason for the medication activity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.description.Clinical_indication"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medication_management.description.Clinical_indication.value">
+         <path value="Medication_management.description.Clinical_indication.value"/>
+         <short value="Clinical indication"/>
+         <definition value="The clinical reason for the medication activity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.description.Clinical_indication.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.description.Substitution">
+         <path value="Medication_management.description.Substitution"/>
+         <short value="Substitution"/>
+         <definition value="Subsitution action taken by the person administering or dispensing the drug."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.description.Substitution"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medication_management.description.Substitution.value">
+         <path value="Medication_management.description.Substitution.value"/>
+         <short value="Substitution"/>
+         <definition value="Subsitution action taken by the person administering or dispensing the drug."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.description.Substitution.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.description.Substitution_reason">
+         <path value="Medication_management.description.Substitution_reason"/>
+         <short value="Substitution reason"/>
+         <definition value="The reason or justification for the substitution action taken."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.description.Substitution_reason"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medication_management.description.Substitution_reason.value">
+         <path value="Medication_management.description.Substitution_reason.value"/>
+         <short value="Substitution reason"/>
+         <definition value="The reason or justification for the substitution action taken."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.description.Substitution_reason.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.description.Original_scheduled_date_time">
+         <path value="Medication_management.description.Original_scheduled_date_time"/>
+         <short value="Original scheduled date/time"/>
+         <definition value="The datetime at which the medication action was scheduled to occur."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.description.Original_scheduled_date_time"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medication_management.description.Original_scheduled_date_time.value">
+         <path value="Medication_management.description.Original_scheduled_date_time.value"/>
+         <short value="Original scheduled date/time"/>
+         <definition value="The datetime at which the medication action was scheduled to occur."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.description.Original_scheduled_date_time.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.description.Restart_date_time">
+         <path value="Medication_management.description.Restart_date_time"/>
+         <short value="Restart date/time"/>
+         <definition value="The date/time on which the medication course is set to restart, as per the \&#34;Administrations suspended\&#34; pathway step."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.description.Restart_date_time"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medication_management.description.Restart_date_time.value">
+         <path value="Medication_management.description.Restart_date_time.value"/>
+         <short value="Restart date/time"/>
+         <definition value="The date/time on which the medication course is set to restart, as per the \&#34;Administrations suspended\&#34; pathway step."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.description.Restart_date_time.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.description.Restart_criterion">
+         <path value="Medication_management.description.Restart_criterion"/>
+         <short value="Restart criterion"/>
+         <definition value="The criterion which triggers the medication course to restart, as per the \&#34;Administrations suspended\&#34; pathway step."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.description.Restart_criterion"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medication_management.description.Restart_criterion.value">
+         <path value="Medication_management.description.Restart_criterion.value"/>
+         <short value="Restart criterion"/>
+         <definition value="The criterion which triggers the medication course to restart, as per the \&#34;Administrations suspended\&#34; pathway step."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.description.Restart_criterion.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.description.Reason">
+         <path value="Medication_management.description.Reason"/>
+         <short value="Reason"/>
+         <definition value="Reason that the pathway step for the identified medication was carried out."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Medication_management.description.Reason"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Medication_management.description.Reason.value">
+         <path value="Medication_management.description.Reason.value"/>
+         <short value="Reason"/>
+         <definition value="Reason that the pathway step for the identified medication was carried out."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.description.Reason.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.description.Administration_details">
+         <path value="Medication_management.description.Administration_details"/>
+         <short value="Administration details"/>
+         <definition value="Details of body site and administration of the medication."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.description.Administration_details"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.description.Administration_details.Route">
+         <path value="Medication_management.description.Administration_details.Route"/>
+         <short value="Route"/>
+         <definition value="The route by which the ordered item was, or is to be, administered into the subject's body."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.description.Administration_details.Route"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medication_management.description.Administration_details.Route.value">
+         <path value="Medication_management.description.Administration_details.Route.value"/>
+         <short value="Route"/>
+         <definition value="The route by which the ordered item was, or is to be, administered into the subject's body."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.description.Administration_details.Route.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.description.Administration_details.Body_site">
+         <path value="Medication_management.description.Administration_details.Body_site"/>
+         <short value="Body site"/>
+         <definition value="Structured description of the site of administration of the ordered item."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.description.Administration_details.Body_site"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medication_management.description.Administration_details.Body_site.value">
+         <path value="Medication_management.description.Administration_details.Body_site.value"/>
+         <short value="Body site"/>
+         <definition value="Structured description of the site of administration of the ordered item."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.description.Administration_details.Body_site.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.description.Administration_details.Structured_body_site">
+         <path value="Medication_management.description.Administration_details.Structured_body_site"/>
+         <short value="Structured body site"/>
+         <definition value="Structured description of the site of administration of the medication, vaccine or therapeutic good."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.description.Administration_details.Structured_body_site"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.description.Administration_details.Administration_method">
+         <path value="Medication_management.description.Administration_details.Administration_method"/>
+         <short value="Administration method"/>
+         <definition value="The technique or device by which the ordered item was, or is to be, administered."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Medication_management.description.Administration_details.Administration_method"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Medication_management.description.Administration_details.Administration_method.value">
+         <path value="Medication_management.description.Administration_details.Administration_method.value"/>
+         <short value="Administration method"/>
+         <definition value="The technique or device by which the ordered item was, or is to be, administered."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.description.Administration_details.Administration_method.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.description.Administration_details.Administration_device">
+         <path value="Medication_management.description.Administration_details.Administration_device"/>
+         <short value="Administration device"/>
+         <definition value="Details of the medical device used to assist administration of the medication."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Medication_management.description.Administration_details.Administration_device"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.description.Additional_details">
+         <path value="Medication_management.description.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="Further structured details of the action, possibly specific to a pathway step."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Medication_management.description.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.description.Patient_guidance">
+         <path value="Medication_management.description.Patient_guidance"/>
+         <short value="Patient guidance"/>
+         <definition value="Any guidance, instructions or advice given to the subject of care or personal carer at the time of the pathway step."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Medication_management.description.Patient_guidance"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Medication_management.description.Patient_guidance.value">
+         <path value="Medication_management.description.Patient_guidance.value"/>
+         <short value="Patient guidance"/>
+         <definition value="Any guidance, instructions or advice given to the subject of care or personal carer at the time of the pathway step."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.description.Patient_guidance.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.description.Double_checked_">
+         <path value="Medication_management.description.Double_checked_"/>
+         <short value="Double-checked?"/>
+         <definition value="The pathway step has been checked by a separate individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.description.Double_checked_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medication_management.description.Double_checked_.value">
+         <path value="Medication_management.description.Double_checked_.value"/>
+         <short value="Double-checked?"/>
+         <definition value="The pathway step has been checked by a separate individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.description.Double_checked_.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.description.Sequence_number">
+         <path value="Medication_management.description.Sequence_number"/>
+         <short value="Sequence number"/>
+         <definition value="The sequence number specific to the pathway step being recorded."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.description.Sequence_number"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medication_management.description.Sequence_number.value">
+         <path value="Medication_management.description.Sequence_number.value"/>
+         <short value="Sequence number"/>
+         <definition value="The sequence number specific to the pathway step being recorded."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.description.Sequence_number.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.description.Comment">
+         <path value="Medication_management.description.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the activity or pathway step not captured in other fields, including details of any variance between the intended action and the action actually performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.description.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medication_management.description.Comment.value">
+         <path value="Medication_management.description.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the activity or pathway step not captured in other fields, including details of any variance between the intended action and the action actually performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.description.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.Medication_recommended">
+         <path value="Medication_management.Medication_recommended"/>
+         <short value="Medication recommended"/>
+         <definition value="The medication has been recommended but no steps have been taken to initiate prescribing."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.Medication_recommended"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Medication_recommended.current_state">
+         <path value="Medication_management.ism_transition_Medication_recommended.current_state"/>
+         <short value="Medication recommended"/>
+         <definition value="The medication has been recommended but no steps have been taken to initiate prescribing."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Medication_recommended.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Medication_recommended.careflow_step">
+         <path value="Medication_management.ism_transition_Medication_recommended.careflow_step"/>
+         <short value="Medication recommended"/>
+         <definition value="The medication has been recommended but no steps have been taken to initiate prescribing."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Medication_recommended.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.Prescription_awaiting_authorisation">
+         <path value="Medication_management.Prescription_awaiting_authorisation"/>
+         <short value="Prescription awaiting authorisation"/>
+         <definition value="Draft prescription has been prepared and is awaiting confirmation from an authorised clinician. May be used where reauthorisations are performed as a batch. This careflow_step may have a status of 'planned' or 'active', reflecting the need to to handle new orders as well as re-authorised orders."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.Prescription_awaiting_authorisation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Prescription_awaiting_authorisation.current_state">
+         <path value="Medication_management.ism_transition_Prescription_awaiting_authorisation.current_state"/>
+         <short value="Prescription awaiting authorisation"/>
+         <definition value="Draft prescription has been prepared and is awaiting confirmation from an authorised clinician. May be used where reauthorisations are performed as a batch. This careflow_step may have a status of 'planned' or 'active', reflecting the need to to handle new orders as well as re-authorised orders."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Prescription_awaiting_authorisation.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Prescription_awaiting_authorisation.careflow_step">
+         <path value="Medication_management.ism_transition_Prescription_awaiting_authorisation.careflow_step"/>
+         <short value="Prescription awaiting authorisation"/>
+         <definition value="Draft prescription has been prepared and is awaiting confirmation from an authorised clinician. May be used where reauthorisations are performed as a batch. This careflow_step may have a status of 'planned' or 'active', reflecting the need to to handle new orders as well as re-authorised orders."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Prescription_awaiting_authorisation.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.Medication_course_postponed">
+         <path value="Medication_management.Medication_course_postponed"/>
+         <short value="Medication course postponed"/>
+         <definition value="The scheduled medication course has been postponed prior to any administration."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.Medication_course_postponed"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Medication_course_postponed.current_state">
+         <path value="Medication_management.ism_transition_Medication_course_postponed.current_state"/>
+         <short value="Medication course postponed"/>
+         <definition value="The scheduled medication course has been postponed prior to any administration."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Medication_course_postponed.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Medication_course_postponed.careflow_step">
+         <path value="Medication_management.ism_transition_Medication_course_postponed.careflow_step"/>
+         <short value="Medication course postponed"/>
+         <definition value="The scheduled medication course has been postponed prior to any administration."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Medication_course_postponed.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.Medication_course_cancelled">
+         <path value="Medication_management.Medication_course_cancelled"/>
+         <short value="Medication course cancelled"/>
+         <definition value="The planned course of medication has been cancelled prior to any administration."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.Medication_course_cancelled"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Medication_course_cancelled.current_state">
+         <path value="Medication_management.ism_transition_Medication_course_cancelled.current_state"/>
+         <short value="Medication course cancelled"/>
+         <definition value="The planned course of medication has been cancelled prior to any administration."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Medication_course_cancelled.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Medication_course_cancelled.careflow_step">
+         <path value="Medication_management.ism_transition_Medication_course_cancelled.careflow_step"/>
+         <short value="Medication course cancelled"/>
+         <definition value="The planned course of medication has been cancelled prior to any administration."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Medication_course_cancelled.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.Prescription_cancelled">
+         <path value="Medication_management.Prescription_cancelled"/>
+         <short value="Prescription cancelled"/>
+         <definition value="The prescription was cancelled prior to being issued."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.Prescription_cancelled"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Prescription_cancelled.current_state">
+         <path value="Medication_management.ism_transition_Prescription_cancelled.current_state"/>
+         <short value="Prescription cancelled"/>
+         <definition value="The prescription was cancelled prior to being issued."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Prescription_cancelled.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Prescription_cancelled.careflow_step">
+         <path value="Medication_management.ism_transition_Prescription_cancelled.careflow_step"/>
+         <short value="Prescription cancelled"/>
+         <definition value="The prescription was cancelled prior to being issued."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Prescription_cancelled.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.Medication_start_date_condition_set">
+         <path value="Medication_management.Medication_start_date_condition_set"/>
+         <short value="Medication start date/condition set"/>
+         <definition value="The time to start the medication, or other starting condition, has been set."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.Medication_start_date_condition_set"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Medication_start_date_condition_set.current_state">
+         <path value="Medication_management.ism_transition_Medication_start_date_condition_set.current_state"/>
+         <short value="Medication start date/condition set"/>
+         <definition value="The time to start the medication, or other starting condition, has been set."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Medication_start_date_condition_set.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Medication_start_date_condition_set.careflow_step">
+         <path value="Medication_management.ism_transition_Medication_start_date_condition_set.careflow_step"/>
+         <short value="Medication start date/condition set"/>
+         <definition value="The time to start the medication, or other starting condition, has been set."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Medication_start_date_condition_set.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.Medication_authorised">
+         <path value="Medication_management.Medication_authorised"/>
+         <short value="Medication authorised"/>
+         <definition value="The medication has been formally authorised for use."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.Medication_authorised"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Medication_authorised.current_state">
+         <path value="Medication_management.ism_transition_Medication_authorised.current_state"/>
+         <short value="Medication authorised"/>
+         <definition value="The medication has been formally authorised for use."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Medication_authorised.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Medication_authorised.careflow_step">
+         <path value="Medication_management.ism_transition_Medication_authorised.careflow_step"/>
+         <short value="Medication authorised"/>
+         <definition value="The medication has been formally authorised for use."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Medication_authorised.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.Prescription_issued">
+         <path value="Medication_management.Prescription_issued"/>
+         <short value="Prescription issued"/>
+         <definition value="A prescription has been issued for the medication."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.Prescription_issued"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Prescription_issued.current_state">
+         <path value="Medication_management.ism_transition_Prescription_issued.current_state"/>
+         <short value="Prescription issued"/>
+         <definition value="A prescription has been issued for the medication."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Prescription_issued.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Prescription_issued.careflow_step">
+         <path value="Medication_management.ism_transition_Prescription_issued.careflow_step"/>
+         <short value="Prescription issued"/>
+         <definition value="A prescription has been issued for the medication."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Prescription_issued.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.Prescription_dispensed">
+         <path value="Medication_management.Prescription_dispensed"/>
+         <short value="Prescription dispensed"/>
+         <definition value="The ordered medication has been dispensed, for example from a pharmacy to the patient."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.Prescription_dispensed"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Prescription_dispensed.current_state">
+         <path value="Medication_management.ism_transition_Prescription_dispensed.current_state"/>
+         <short value="Prescription dispensed"/>
+         <definition value="The ordered medication has been dispensed, for example from a pharmacy to the patient."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Prescription_dispensed.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Prescription_dispensed.careflow_step">
+         <path value="Medication_management.ism_transition_Prescription_dispensed.careflow_step"/>
+         <short value="Prescription dispensed"/>
+         <definition value="The ordered medication has been dispensed, for example from a pharmacy to the patient."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Prescription_dispensed.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.Prescription_re_authorised">
+         <path value="Medication_management.Prescription_re_authorised"/>
+         <short value="Prescription re-authorised"/>
+         <definition value="The original medication order has been re-authorised to allow repeat prescription or dispensing. In some jurisdictions an entirely new order must be issued in these circumstances."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.Prescription_re_authorised"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Prescription_re_authorised.current_state">
+         <path value="Medication_management.ism_transition_Prescription_re_authorised.current_state"/>
+         <short value="Prescription re-authorised"/>
+         <definition value="The original medication order has been re-authorised to allow repeat prescription or dispensing. In some jurisdictions an entirely new order must be issued in these circumstances."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Prescription_re_authorised.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Prescription_re_authorised.careflow_step">
+         <path value="Medication_management.ism_transition_Prescription_re_authorised.careflow_step"/>
+         <short value="Prescription re-authorised"/>
+         <definition value="The original medication order has been re-authorised to allow repeat prescription or dispensing. In some jurisdictions an entirely new order must be issued in these circumstances."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Prescription_re_authorised.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.Prescription_re_issued">
+         <path value="Medication_management.Prescription_re_issued"/>
+         <short value="Prescription re-issued"/>
+         <definition value="A prescription has been re-issued for an existing medication order."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.Prescription_re_issued"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Prescription_re_issued.current_state">
+         <path value="Medication_management.ism_transition_Prescription_re_issued.current_state"/>
+         <short value="Prescription re-issued"/>
+         <definition value="A prescription has been re-issued for an existing medication order."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Prescription_re_issued.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Prescription_re_issued.careflow_step">
+         <path value="Medication_management.ism_transition_Prescription_re_issued.careflow_step"/>
+         <short value="Prescription re-issued"/>
+         <definition value="A prescription has been re-issued for an existing medication order."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Prescription_re_issued.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.Medication_prepared">
+         <path value="Medication_management.Medication_prepared"/>
+         <short value="Medication prepared"/>
+         <definition value="The medication has been physically prepared. For example: preparation of an intravenous mixture."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.Medication_prepared"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Medication_prepared.current_state">
+         <path value="Medication_management.ism_transition_Medication_prepared.current_state"/>
+         <short value="Medication prepared"/>
+         <definition value="The medication has been physically prepared. For example: preparation of an intravenous mixture."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Medication_prepared.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Medication_prepared.careflow_step">
+         <path value="Medication_management.ism_transition_Medication_prepared.careflow_step"/>
+         <short value="Medication prepared"/>
+         <definition value="The medication has been physically prepared. For example: preparation of an intravenous mixture."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Medication_prepared.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.Medication_course_commenced">
+         <path value="Medication_management.Medication_course_commenced"/>
+         <short value="Medication course commenced"/>
+         <definition value="The medication has been taken by, or administered to, the patient for the first time. Although in some settings this significant date may be computable as the first of several administrations, in other settings, such as primary care, specific administration dates are not readily available."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.Medication_course_commenced"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Medication_course_commenced.current_state">
+         <path value="Medication_management.ism_transition_Medication_course_commenced.current_state"/>
+         <short value="Medication course commenced"/>
+         <definition value="The medication has been taken by, or administered to, the patient for the first time. Although in some settings this significant date may be computable as the first of several administrations, in other settings, such as primary care, specific administration dates are not readily available."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Medication_course_commenced.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Medication_course_commenced.careflow_step">
+         <path value="Medication_management.ism_transition_Medication_course_commenced.careflow_step"/>
+         <short value="Medication course commenced"/>
+         <definition value="The medication has been taken by, or administered to, the patient for the first time. Although in some settings this significant date may be computable as the first of several administrations, in other settings, such as primary care, specific administration dates are not readily available."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Medication_course_commenced.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.Minor_change_to_order">
+         <path value="Medication_management.Minor_change_to_order"/>
+         <short value="Minor change to order"/>
+         <definition value="The medication order has been changed in a manner which does not require a new instruction/order to be issued, according to local clinical rules."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.Minor_change_to_order"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Minor_change_to_order.current_state">
+         <path value="Medication_management.ism_transition_Minor_change_to_order.current_state"/>
+         <short value="Minor change to order"/>
+         <definition value="The medication order has been changed in a manner which does not require a new instruction/order to be issued, according to local clinical rules."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Minor_change_to_order.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Minor_change_to_order.careflow_step">
+         <path value="Medication_management.ism_transition_Minor_change_to_order.careflow_step"/>
+         <short value="Minor change to order"/>
+         <definition value="The medication order has been changed in a manner which does not require a new instruction/order to be issued, according to local clinical rules."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Minor_change_to_order.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.Medication_reassessed">
+         <path value="Medication_management.Medication_reassessed"/>
+         <short value="Medication reassessed"/>
+         <definition value="The individual medication has been reassessed, for example whether the medication should still be taken. This is not intended to capture review of the medication list."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.Medication_reassessed"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Medication_reassessed.current_state">
+         <path value="Medication_management.ism_transition_Medication_reassessed.current_state"/>
+         <short value="Medication reassessed"/>
+         <definition value="The individual medication has been reassessed, for example whether the medication should still be taken. This is not intended to capture review of the medication list."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Medication_reassessed.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Medication_reassessed.careflow_step">
+         <path value="Medication_management.ism_transition_Medication_reassessed.careflow_step"/>
+         <short value="Medication reassessed"/>
+         <definition value="The individual medication has been reassessed, for example whether the medication should still be taken. This is not intended to capture review of the medication list."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Medication_reassessed.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.Dose_administered">
+         <path value="Medication_management.Dose_administered"/>
+         <short value="Dose administered"/>
+         <definition value="A single administration of the medication has taken place."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.Dose_administered"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Dose_administered.current_state">
+         <path value="Medication_management.ism_transition_Dose_administered.current_state"/>
+         <short value="Dose administered"/>
+         <definition value="A single administration of the medication has taken place."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Dose_administered.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Dose_administered.careflow_step">
+         <path value="Medication_management.ism_transition_Dose_administered.careflow_step"/>
+         <short value="Dose administered"/>
+         <definition value="A single administration of the medication has taken place."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Dose_administered.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.Dose_administration_omitted">
+         <path value="Medication_management.Dose_administration_omitted"/>
+         <short value="Dose administration omitted"/>
+         <definition value="An administration of the medication has been withheld and not given. There is no expectation that it will be given later, though the next dose (if any) should be administered according to the original order."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.Dose_administration_omitted"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Dose_administration_omitted.current_state">
+         <path value="Medication_management.ism_transition_Dose_administration_omitted.current_state"/>
+         <short value="Dose administration omitted"/>
+         <definition value="An administration of the medication has been withheld and not given. There is no expectation that it will be given later, though the next dose (if any) should be administered according to the original order."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Dose_administration_omitted.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Dose_administration_omitted.careflow_step">
+         <path value="Medication_management.ism_transition_Dose_administration_omitted.careflow_step"/>
+         <short value="Dose administration omitted"/>
+         <definition value="An administration of the medication has been withheld and not given. There is no expectation that it will be given later, though the next dose (if any) should be administered according to the original order."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Dose_administration_omitted.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.Dose_administration_deferred">
+         <path value="Medication_management.Dose_administration_deferred"/>
+         <short value="Dose administration deferred"/>
+         <definition value="An administration of a dose of the medication has been delayed but is expected to be given as soon as possible."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.Dose_administration_deferred"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Dose_administration_deferred.current_state">
+         <path value="Medication_management.ism_transition_Dose_administration_deferred.current_state"/>
+         <short value="Dose administration deferred"/>
+         <definition value="An administration of a dose of the medication has been delayed but is expected to be given as soon as possible."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Dose_administration_deferred.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Dose_administration_deferred.careflow_step">
+         <path value="Medication_management.ism_transition_Dose_administration_deferred.careflow_step"/>
+         <short value="Dose administration deferred"/>
+         <definition value="An administration of a dose of the medication has been delayed but is expected to be given as soon as possible."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Dose_administration_deferred.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.Prescription_supply_delayed">
+         <path value="Medication_management.Prescription_supply_delayed"/>
+         <short value="Prescription supply delayed"/>
+         <definition value="The prescription has not been dispensed due to a technical or pharamaceutical supply issue."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.Prescription_supply_delayed"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Prescription_supply_delayed.current_state">
+         <path value="Medication_management.ism_transition_Prescription_supply_delayed.current_state"/>
+         <short value="Prescription supply delayed"/>
+         <definition value="The prescription has not been dispensed due to a technical or pharamaceutical supply issue."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Prescription_supply_delayed.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Prescription_supply_delayed.careflow_step">
+         <path value="Medication_management.ism_transition_Prescription_supply_delayed.careflow_step"/>
+         <short value="Prescription supply delayed"/>
+         <definition value="The prescription has not been dispensed due to a technical or pharamaceutical supply issue."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Prescription_supply_delayed.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.Administrations_suspended">
+         <path value="Medication_management.Administrations_suspended"/>
+         <short value="Administrations suspended"/>
+         <definition value="The administration of the medication has been suspended until further notice. No further doses should be given until the restart date or conditions have been met. When setting the date/conditions for restart after suspending, a step from ‘Administrations suspended’ and back to 'Medication start date/condition set' should be performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.Administrations_suspended"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Administrations_suspended.current_state">
+         <path value="Medication_management.ism_transition_Administrations_suspended.current_state"/>
+         <short value="Administrations suspended"/>
+         <definition value="The administration of the medication has been suspended until further notice. No further doses should be given until the restart date or conditions have been met. When setting the date/conditions for restart after suspending, a step from ‘Administrations suspended’ and back to 'Medication start date/condition set' should be performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Administrations_suspended.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Administrations_suspended.careflow_step">
+         <path value="Medication_management.ism_transition_Administrations_suspended.careflow_step"/>
+         <short value="Administrations suspended"/>
+         <definition value="The administration of the medication has been suspended until further notice. No further doses should be given until the restart date or conditions have been met. When setting the date/conditions for restart after suspending, a step from ‘Administrations suspended’ and back to 'Medication start date/condition set' should be performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Administrations_suspended.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.Prescription_re_authorisation_pending">
+         <path value="Medication_management.Prescription_re_authorisation_pending"/>
+         <short value="Prescription re-authorisation pending"/>
+         <definition value="Issue of the prescription is awaiting re-authorisation by a clinician."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.Prescription_re_authorisation_pending"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Prescription_re_authorisation_pending.current_state">
+         <path value="Medication_management.ism_transition_Prescription_re_authorisation_pending.current_state"/>
+         <short value="Prescription re-authorisation pending"/>
+         <definition value="Issue of the prescription is awaiting re-authorisation by a clinician."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Prescription_re_authorisation_pending.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Prescription_re_authorisation_pending.careflow_step">
+         <path value="Medication_management.ism_transition_Prescription_re_authorisation_pending.careflow_step"/>
+         <short value="Prescription re-authorisation pending"/>
+         <definition value="Issue of the prescription is awaiting re-authorisation by a clinician."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Prescription_re_authorisation_pending.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.Medication_course_stopped">
+         <path value="Medication_management.Medication_course_stopped"/>
+         <short value="Medication course stopped"/>
+         <definition value="Administration of the medication has been ceased during the period of the intended course."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.Medication_course_stopped"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Medication_course_stopped.current_state">
+         <path value="Medication_management.ism_transition_Medication_course_stopped.current_state"/>
+         <short value="Medication course stopped"/>
+         <definition value="Administration of the medication has been ceased during the period of the intended course."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Medication_course_stopped.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Medication_course_stopped.careflow_step">
+         <path value="Medication_management.ism_transition_Medication_course_stopped.careflow_step"/>
+         <short value="Medication course stopped"/>
+         <definition value="Administration of the medication has been ceased during the period of the intended course."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Medication_course_stopped.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.Major_change_to_order">
+         <path value="Medication_management.Major_change_to_order"/>
+         <short value="Major change to order"/>
+         <definition value="A major change to the order was required, resulting in this order being stopped and a replacement order being started."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.Major_change_to_order"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Major_change_to_order.current_state">
+         <path value="Medication_management.ism_transition_Major_change_to_order.current_state"/>
+         <short value="Major change to order"/>
+         <definition value="A major change to the order was required, resulting in this order being stopped and a replacement order being started."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Major_change_to_order.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Major_change_to_order.careflow_step">
+         <path value="Medication_management.ism_transition_Major_change_to_order.careflow_step"/>
+         <short value="Major change to order"/>
+         <definition value="A major change to the order was required, resulting in this order being stopped and a replacement order being started."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Major_change_to_order.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.Prescription_invalid_or_expired">
+         <path value="Medication_management.Prescription_invalid_or_expired"/>
+         <short value="Prescription invalid or expired"/>
+         <definition value="Prescription has been invalidated or has expired without being fulfilled."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.Prescription_invalid_or_expired"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Prescription_invalid_or_expired.current_state">
+         <path value="Medication_management.ism_transition_Prescription_invalid_or_expired.current_state"/>
+         <short value="Prescription invalid or expired"/>
+         <definition value="Prescription has been invalidated or has expired without being fulfilled."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Prescription_invalid_or_expired.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Prescription_invalid_or_expired.careflow_step">
+         <path value="Medication_management.ism_transition_Prescription_invalid_or_expired.careflow_step"/>
+         <short value="Prescription invalid or expired"/>
+         <definition value="Prescription has been invalidated or has expired without being fulfilled."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Prescription_invalid_or_expired.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.Medication_course_completed">
+         <path value="Medication_management.Medication_course_completed"/>
+         <short value="Medication course completed"/>
+         <definition value="The medication course has been completed as planned."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.Medication_course_completed"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Medication_course_completed.current_state">
+         <path value="Medication_management.ism_transition_Medication_course_completed.current_state"/>
+         <short value="Medication course completed"/>
+         <definition value="The medication course has been completed as planned."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Medication_course_completed.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Medication_course_completed.careflow_step">
+         <path value="Medication_management.ism_transition_Medication_course_completed.careflow_step"/>
+         <short value="Medication course completed"/>
+         <definition value="The medication course has been completed as planned."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Medication_course_completed.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.Prescription_fulfilled">
+         <path value="Medication_management.Prescription_fulfilled"/>
+         <short value="Prescription fulfilled"/>
+         <definition value="The prescription has been fulfilled successfully."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.Prescription_fulfilled"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Prescription_fulfilled.current_state">
+         <path value="Medication_management.ism_transition_Prescription_fulfilled.current_state"/>
+         <short value="Prescription fulfilled"/>
+         <definition value="The prescription has been fulfilled successfully."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Prescription_fulfilled.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_management.ism_transition_Prescription_fulfilled.careflow_step">
+         <path value="Medication_management.ism_transition_Prescription_fulfilled.careflow_step"/>
+         <short value="Prescription fulfilled"/>
+         <definition value="The prescription has been fulfilled successfully."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_management.ism_transition_Prescription_fulfilled.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

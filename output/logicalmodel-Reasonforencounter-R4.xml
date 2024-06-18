@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Reasonforencounter-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-reasonforencounter-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-EVALUATION.reason_for_encounter.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Reasonforencounter"/>
+   <title value="Reason for encounter"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="The reason for initiation of any healthcare encounter or contact by the individual who is the subject of care."/>
+   <purpose value="To record the reason, or reasons, for initiation of any type of healthcare encounter or contact by the individual who is the subject of care."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Reason_for_encounter">
+         <path value="Reason_for_encounter"/>
+         <short value="Reason for encounter"/>
+         <definition value="The reason for initiation of any healthcare encounter or contact by the individual who is the subject of care."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Reason_for_encounter"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Reason_for_encounter.data">
+         <path value="Reason_for_encounter.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Reason_for_encounter.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Reason_for_encounter.data.Contact_type">
+         <path value="Reason_for_encounter.data.Contact_type"/>
+         <short value="Contact type"/>
+         <definition value="Identification of the type, or administrative category, of healthcare sought or required by the subject of care."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Reason_for_encounter.data.Contact_type"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Reason_for_encounter.data.Contact_type.value">
+         <path value="Reason_for_encounter.data.Contact_type.value"/>
+         <short value="Contact type"/>
+         <definition value="Identification of the type, or administrative category, of healthcare sought or required by the subject of care."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Reason_for_encounter.data.Contact_type.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Reason_for_encounter.data.Presenting_problem">
+         <path value="Reason_for_encounter.data.Presenting_problem"/>
+         <short value="Presenting problem"/>
+         <definition value="Identification of the clinical or social problem motivating the subject of care to seeking healthcare."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Reason_for_encounter.data.Presenting_problem"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Reason_for_encounter.data.Presenting_problem.value">
+         <path value="Reason_for_encounter.data.Presenting_problem.value"/>
+         <short value="Presenting problem"/>
+         <definition value="Identification of the clinical or social problem motivating the subject of care to seeking healthcare."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Reason_for_encounter.data.Presenting_problem.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

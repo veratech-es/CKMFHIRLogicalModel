@@ -1,0 +1,1154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Bloodpressure-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-bloodpressure-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.blood_pressure.v2"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Bloodpressure"/>
+   <title value="Blood pressure"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="The local measurement of arterial blood pressure which is a surrogate for arterial pressure in the systemic circulation."/>
+   <purpose value="To record the systemic arterial blood pressure of an individual."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Blood_pressure">
+         <path value="Blood_pressure"/>
+         <short value="Blood pressure"/>
+         <definition value="The local measurement of arterial blood pressure which is a surrogate for arterial pressure in the systemic circulation."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Blood_pressure.protocol">
+         <path value="Blood_pressure.protocol"/>
+         <short value="Tree"/>
+         <definition value="List structure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Blood_pressure.protocol.Cuff_size">
+         <path value="Blood_pressure.protocol.Cuff_size"/>
+         <short value="Cuff size"/>
+         <definition value="The size of the cuff used for blood pressure measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.protocol.Cuff_size"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Blood_pressure.protocol.Cuff_size.value">
+         <path value="Blood_pressure.protocol.Cuff_size.value"/>
+         <short value="Cuff size"/>
+         <definition value="The size of the cuff used for blood pressure measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.protocol.Cuff_size.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Blood_pressure.protocol.Location_of_measurement">
+         <path value="Blood_pressure.protocol.Location_of_measurement"/>
+         <short value="Location of measurement"/>
+         <definition value="Simple body site where blood pressure was measured."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.protocol.Location_of_measurement"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Blood_pressure.protocol.Location_of_measurement.value_DV_CODED_TEXT">
+         <path value="Blood_pressure.protocol.Location_of_measurement.value_DV_CODED_TEXT"/>
+         <short value="Location of measurement"/>
+         <definition value="Simple body site where blood pressure was measured."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.protocol.Location_of_measurement.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Blood_pressure.protocol.Location_of_measurement.value_DV_TEXT">
+         <path value="Blood_pressure.protocol.Location_of_measurement.value_DV_TEXT"/>
+         <short value="Location of measurement"/>
+         <definition value="Simple body site where blood pressure was measured."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.protocol.Location_of_measurement.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Blood_pressure.protocol.Structured_measurement_location">
+         <path value="Blood_pressure.protocol.Structured_measurement_location"/>
+         <short value="Structured measurement location"/>
+         <definition value="Structured anatomical location of where the measurement was taken."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Blood_pressure.protocol.Structured_measurement_location"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Blood_pressure.protocol.Method">
+         <path value="Blood_pressure.protocol.Method"/>
+         <short value="Method"/>
+         <definition value="Method of measurement of blood pressure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.protocol.Method"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Blood_pressure.protocol.Method.value">
+         <path value="Blood_pressure.protocol.Method.value"/>
+         <short value="Method"/>
+         <definition value="Method of measurement of blood pressure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.protocol.Method.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Blood_pressure.protocol.Mean_arterial_pressure_formula">
+         <path value="Blood_pressure.protocol.Mean_arterial_pressure_formula"/>
+         <short value="Mean arterial pressure formula"/>
+         <definition value="Formula used to calculate the Mean Arterial Pressure (if recorded in data)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.protocol.Mean_arterial_pressure_formula"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Blood_pressure.protocol.Mean_arterial_pressure_formula.value">
+         <path value="Blood_pressure.protocol.Mean_arterial_pressure_formula.value"/>
+         <short value="Mean arterial pressure formula"/>
+         <definition value="Formula used to calculate the Mean Arterial Pressure (if recorded in data)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.protocol.Mean_arterial_pressure_formula.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Blood_pressure.protocol.Systolic_pressure_formula">
+         <path value="Blood_pressure.protocol.Systolic_pressure_formula"/>
+         <short value="Systolic pressure formula"/>
+         <definition value="Formula used to calculate the systolic pressure from from mean arterial pressure (if recorded in data)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.protocol.Systolic_pressure_formula"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Blood_pressure.protocol.Systolic_pressure_formula.value">
+         <path value="Blood_pressure.protocol.Systolic_pressure_formula.value"/>
+         <short value="Systolic pressure formula"/>
+         <definition value="Formula used to calculate the systolic pressure from from mean arterial pressure (if recorded in data)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.protocol.Systolic_pressure_formula.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Blood_pressure.protocol.Diastolic_pressure_formula">
+         <path value="Blood_pressure.protocol.Diastolic_pressure_formula"/>
+         <short value="Diastolic pressure formula"/>
+         <definition value="Formula used to calculate the diastolic pressure from mean arterial pressure (if recorded in data)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.protocol.Diastolic_pressure_formula"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Blood_pressure.protocol.Diastolic_pressure_formula.value">
+         <path value="Blood_pressure.protocol.Diastolic_pressure_formula.value"/>
+         <short value="Diastolic pressure formula"/>
+         <definition value="Formula used to calculate the diastolic pressure from mean arterial pressure (if recorded in data)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.protocol.Diastolic_pressure_formula.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Blood_pressure.protocol.Diastolic_endpoint">
+         <path value="Blood_pressure.protocol.Diastolic_endpoint"/>
+         <short value="Diastolic endpoint"/>
+         <definition value="Record which Korotkoff sound is used for determining diastolic pressure using auscultative method."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.protocol.Diastolic_endpoint"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Blood_pressure.protocol.Diastolic_endpoint.value">
+         <path value="Blood_pressure.protocol.Diastolic_endpoint.value"/>
+         <short value="Diastolic endpoint"/>
+         <definition value="Record which Korotkoff sound is used for determining diastolic pressure using auscultative method."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.protocol.Diastolic_endpoint.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Blood_pressure.protocol.Device">
+         <path value="Blood_pressure.protocol.Device"/>
+         <short value="Device"/>
+         <definition value="Details about sphygmomanometer or other device used to measure the blood pressure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.protocol.Device"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Blood_pressure.protocol.Extension">
+         <path value="Blood_pressure.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local context or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Blood_pressure.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Blood_pressure.History">
+         <path value="Blood_pressure.History"/>
+         <short value="History"/>
+         <definition value="History Structural node."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.History"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Blood_pressure.History.Any_event">
+         <path value="Blood_pressure.History.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Blood_pressure.History.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Blood_pressure.History.Any_event.blood_pressure">
+         <path value="Blood_pressure.History.Any_event.blood_pressure"/>
+         <short value="blood pressure"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.History.Any_event.blood_pressure"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Blood_pressure.History.Any_event.blood_pressure.Systolic">
+         <path value="Blood_pressure.History.Any_event.blood_pressure.Systolic"/>
+         <short value="Systolic"/>
+         <definition value="Peak systemic arterial blood pressure  - measured in systolic or contraction phase of the heart cycle."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.History.Any_event.blood_pressure.Systolic"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Blood_pressure.History.Any_event.blood_pressure.Systolic.value">
+         <path value="Blood_pressure.History.Any_event.blood_pressure.Systolic.value"/>
+         <short value="Systolic"/>
+         <definition value="Peak systemic arterial blood pressure  - measured in systolic or contraction phase of the heart cycle."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.History.Any_event.blood_pressure.Systolic.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Blood_pressure.History.Any_event.blood_pressure.Diastolic">
+         <path value="Blood_pressure.History.Any_event.blood_pressure.Diastolic"/>
+         <short value="Diastolic"/>
+         <definition value="Minimum systemic arterial blood pressure - measured in the diastolic or relaxation phase of the heart cycle."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.History.Any_event.blood_pressure.Diastolic"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Blood_pressure.History.Any_event.blood_pressure.Diastolic.value">
+         <path value="Blood_pressure.History.Any_event.blood_pressure.Diastolic.value"/>
+         <short value="Diastolic"/>
+         <definition value="Minimum systemic arterial blood pressure - measured in the diastolic or relaxation phase of the heart cycle."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.History.Any_event.blood_pressure.Diastolic.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Blood_pressure.History.Any_event.blood_pressure.Mean_arterial_pressure">
+         <path value="Blood_pressure.History.Any_event.blood_pressure.Mean_arterial_pressure"/>
+         <short value="Mean arterial pressure"/>
+         <definition value="The average arterial pressure that occurs over the entire course of the heart contraction and relaxation cycle."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.History.Any_event.blood_pressure.Mean_arterial_pressure"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Blood_pressure.History.Any_event.blood_pressure.Mean_arterial_pressure.value">
+         <path value="Blood_pressure.History.Any_event.blood_pressure.Mean_arterial_pressure.value"/>
+         <short value="Mean arterial pressure"/>
+         <definition value="The average arterial pressure that occurs over the entire course of the heart contraction and relaxation cycle."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.History.Any_event.blood_pressure.Mean_arterial_pressure.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Blood_pressure.History.Any_event.blood_pressure.Pulse_pressure">
+         <path value="Blood_pressure.History.Any_event.blood_pressure.Pulse_pressure"/>
+         <short value="Pulse pressure"/>
+         <definition value="The difference between the systolic and diastolic pressure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.History.Any_event.blood_pressure.Pulse_pressure"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Blood_pressure.History.Any_event.blood_pressure.Pulse_pressure.value">
+         <path value="Blood_pressure.History.Any_event.blood_pressure.Pulse_pressure.value"/>
+         <short value="Pulse pressure"/>
+         <definition value="The difference between the systolic and diastolic pressure."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.History.Any_event.blood_pressure.Pulse_pressure.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Blood_pressure.History.Any_event.blood_pressure.Clinical_interpretation">
+         <path value="Blood_pressure.History.Any_event.blood_pressure.Clinical_interpretation"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Single word, phrase or brief description that represents the clinical meaning and significance of the blood pressure measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.History.Any_event.blood_pressure.Clinical_interpretation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Blood_pressure.History.Any_event.blood_pressure.Clinical_interpretation.value">
+         <path value="Blood_pressure.History.Any_event.blood_pressure.Clinical_interpretation.value"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Single word, phrase or brief description that represents the clinical meaning and significance of the blood pressure measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.History.Any_event.blood_pressure.Clinical_interpretation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Blood_pressure.History.Any_event.blood_pressure.Comment">
+         <path value="Blood_pressure.History.Any_event.blood_pressure.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the measurement, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.History.Any_event.blood_pressure.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Blood_pressure.History.Any_event.blood_pressure.Comment.value">
+         <path value="Blood_pressure.History.Any_event.blood_pressure.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the measurement, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.History.Any_event.blood_pressure.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Blood_pressure.History.Any_event.state_structure">
+         <path value="Blood_pressure.History.Any_event.state_structure"/>
+         <short value="state structure"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.History.Any_event.state_structure"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Blood_pressure.History.Any_event.state_structure.Position">
+         <path value="Blood_pressure.History.Any_event.state_structure.Position"/>
+         <short value="Position"/>
+         <definition value="The position of the individual at the time of measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.History.Any_event.state_structure.Position"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Blood_pressure.History.Any_event.state_structure.Position.value">
+         <path value="Blood_pressure.History.Any_event.state_structure.Position.value"/>
+         <short value="Position"/>
+         <definition value="The position of the individual at the time of measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.History.Any_event.state_structure.Position.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Blood_pressure.History.Any_event.state_structure.Confounding_factors">
+         <path value="Blood_pressure.History.Any_event.state_structure.Confounding_factors"/>
+         <short value="Confounding factors"/>
+         <definition value="Comment on and record other incidental factors that may be contributing to the blood pressure measurement.  For example, level of anxiety or 'white coat syndrome'; pain or fever; changes in atmospheric pressure etc."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.History.Any_event.state_structure.Confounding_factors"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Blood_pressure.History.Any_event.state_structure.Confounding_factors.value">
+         <path value="Blood_pressure.History.Any_event.state_structure.Confounding_factors.value"/>
+         <short value="Confounding factors"/>
+         <definition value="Comment on and record other incidental factors that may be contributing to the blood pressure measurement.  For example, level of anxiety or 'white coat syndrome'; pain or fever; changes in atmospheric pressure etc."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.History.Any_event.state_structure.Confounding_factors.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Blood_pressure.History.Any_event.state_structure.Exertion">
+         <path value="Blood_pressure.History.Any_event.state_structure.Exertion"/>
+         <short value="Exertion"/>
+         <definition value="Details about physical activity undertaken at the time of blood pressure measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.History.Any_event.state_structure.Exertion"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Blood_pressure.History.Any_event.state_structure.Sleep_status">
+         <path value="Blood_pressure.History.Any_event.state_structure.Sleep_status"/>
+         <short value="Sleep status"/>
+         <definition value="Sleep status - supports interpretation of 24 hour ambulatory blood pressure records."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.History.Any_event.state_structure.Sleep_status"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Blood_pressure.History.Any_event.state_structure.Sleep_status.value">
+         <path value="Blood_pressure.History.Any_event.state_structure.Sleep_status.value"/>
+         <short value="Sleep status"/>
+         <definition value="Sleep status - supports interpretation of 24 hour ambulatory blood pressure records."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.History.Any_event.state_structure.Sleep_status.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Blood_pressure.History.Any_event.state_structure.Tilt">
+         <path value="Blood_pressure.History.Any_event.state_structure.Tilt"/>
+         <short value="Tilt"/>
+         <definition value="The craniocaudal tilt of the surface on which the person is lying at the time of measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.History.Any_event.state_structure.Tilt"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Blood_pressure.History.Any_event.state_structure.Tilt.value">
+         <path value="Blood_pressure.History.Any_event.state_structure.Tilt.value"/>
+         <short value="Tilt"/>
+         <definition value="The craniocaudal tilt of the surface on which the person is lying at the time of measurement."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.History.Any_event.state_structure.Tilt.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Blood_pressure.History.24_hour_average">
+         <path value="Blood_pressure.History.24_hour_average"/>
+         <short value="24 hour average"/>
+         <definition value="Estimate of the average blood pressure over a 24 hour period."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.History.24_hour_average"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Blood_pressure.History.24_hour_average.data">
+         <path value="Blood_pressure.History.24_hour_average.data"/>
+         <definition value="ITEM_TREE"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.History.24_hour_average.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Blood_pressure.History.24_hour_average.data.Systolic">
+         <path value="Blood_pressure.History.24_hour_average.data.Systolic"/>
+         <short value="Systolic"/>
+         <definition value="Peak systemic arterial blood pressure  - measured in systolic or contraction phase of the heart cycle."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.History.24_hour_average.data.Systolic"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Blood_pressure.History.24_hour_average.data.Systolic.value">
+         <path value="Blood_pressure.History.24_hour_average.data.Systolic.value"/>
+         <short value="Systolic"/>
+         <definition value="Peak systemic arterial blood pressure  - measured in systolic or contraction phase of the heart cycle."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.History.24_hour_average.data.Systolic.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Blood_pressure.History.24_hour_average.data.Diastolic">
+         <path value="Blood_pressure.History.24_hour_average.data.Diastolic"/>
+         <short value="Diastolic"/>
+         <definition value="Minimum systemic arterial blood pressure - measured in the diastolic or relaxation phase of the heart cycle."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.History.24_hour_average.data.Diastolic"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Blood_pressure.History.24_hour_average.data.Diastolic.value">
+         <path value="Blood_pressure.History.24_hour_average.data.Diastolic.value"/>
+         <short value="Diastolic"/>
+         <definition value="Minimum systemic arterial blood pressure - measured in the diastolic or relaxation phase of the heart cycle."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.History.24_hour_average.data.Diastolic.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Blood_pressure.History.24_hour_average.data.Mean_arterial_pressure">
+         <path value="Blood_pressure.History.24_hour_average.data.Mean_arterial_pressure"/>
+         <short value="Mean arterial pressure"/>
+         <definition value="The average arterial pressure that occurs over the entire course of the heart contraction and relaxation cycle."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.History.24_hour_average.data.Mean_arterial_pressure"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Blood_pressure.History.24_hour_average.data.Mean_arterial_pressure.value">
+         <path value="Blood_pressure.History.24_hour_average.data.Mean_arterial_pressure.value"/>
+         <short value="Mean arterial pressure"/>
+         <definition value="The average arterial pressure that occurs over the entire course of the heart contraction and relaxation cycle."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.History.24_hour_average.data.Mean_arterial_pressure.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Blood_pressure.History.24_hour_average.data.Pulse_pressure">
+         <path value="Blood_pressure.History.24_hour_average.data.Pulse_pressure"/>
+         <short value="Pulse pressure"/>
+         <definition value="The difference between the systolic and diastolic pressure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.History.24_hour_average.data.Pulse_pressure"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Blood_pressure.History.24_hour_average.data.Pulse_pressure.value">
+         <path value="Blood_pressure.History.24_hour_average.data.Pulse_pressure.value"/>
+         <short value="Pulse pressure"/>
+         <definition value="The difference between the systolic and diastolic pressure."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.History.24_hour_average.data.Pulse_pressure.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Blood_pressure.History.24_hour_average.data.Clinical_interpretation">
+         <path value="Blood_pressure.History.24_hour_average.data.Clinical_interpretation"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Single word, phrase or brief description that represents the clinical meaning and significance of the blood pressure measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.History.24_hour_average.data.Clinical_interpretation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Blood_pressure.History.24_hour_average.data.Clinical_interpretation.value">
+         <path value="Blood_pressure.History.24_hour_average.data.Clinical_interpretation.value"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Single word, phrase or brief description that represents the clinical meaning and significance of the blood pressure measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.History.24_hour_average.data.Clinical_interpretation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Blood_pressure.History.24_hour_average.data.Comment">
+         <path value="Blood_pressure.History.24_hour_average.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the measurement, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.History.24_hour_average.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Blood_pressure.History.24_hour_average.data.Comment.value">
+         <path value="Blood_pressure.History.24_hour_average.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the measurement, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.History.24_hour_average.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Blood_pressure.History.24_hour_average.state">
+         <path value="Blood_pressure.History.24_hour_average.state"/>
+         <definition value="ITEM_TREE"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.History.24_hour_average.state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Blood_pressure.History.24_hour_average.state.Position">
+         <path value="Blood_pressure.History.24_hour_average.state.Position"/>
+         <short value="Position"/>
+         <definition value="The position of the individual at the time of measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.History.24_hour_average.state.Position"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Blood_pressure.History.24_hour_average.state.Position.value">
+         <path value="Blood_pressure.History.24_hour_average.state.Position.value"/>
+         <short value="Position"/>
+         <definition value="The position of the individual at the time of measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.History.24_hour_average.state.Position.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Blood_pressure.History.24_hour_average.state.Confounding_factors">
+         <path value="Blood_pressure.History.24_hour_average.state.Confounding_factors"/>
+         <short value="Confounding factors"/>
+         <definition value="Comment on and record other incidental factors that may be contributing to the blood pressure measurement.  For example, level of anxiety or 'white coat syndrome'; pain or fever; changes in atmospheric pressure etc."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.History.24_hour_average.state.Confounding_factors"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Blood_pressure.History.24_hour_average.state.Confounding_factors.value">
+         <path value="Blood_pressure.History.24_hour_average.state.Confounding_factors.value"/>
+         <short value="Confounding factors"/>
+         <definition value="Comment on and record other incidental factors that may be contributing to the blood pressure measurement.  For example, level of anxiety or 'white coat syndrome'; pain or fever; changes in atmospheric pressure etc."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.History.24_hour_average.state.Confounding_factors.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Blood_pressure.History.24_hour_average.state.Exertion">
+         <path value="Blood_pressure.History.24_hour_average.state.Exertion"/>
+         <short value="Exertion"/>
+         <definition value="Details about physical activity undertaken at the time of blood pressure measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.History.24_hour_average.state.Exertion"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Blood_pressure.History.24_hour_average.state.Sleep_status">
+         <path value="Blood_pressure.History.24_hour_average.state.Sleep_status"/>
+         <short value="Sleep status"/>
+         <definition value="Sleep status - supports interpretation of 24 hour ambulatory blood pressure records."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.History.24_hour_average.state.Sleep_status"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Blood_pressure.History.24_hour_average.state.Sleep_status.value">
+         <path value="Blood_pressure.History.24_hour_average.state.Sleep_status.value"/>
+         <short value="Sleep status"/>
+         <definition value="Sleep status - supports interpretation of 24 hour ambulatory blood pressure records."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.History.24_hour_average.state.Sleep_status.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Blood_pressure.History.24_hour_average.state.Tilt">
+         <path value="Blood_pressure.History.24_hour_average.state.Tilt"/>
+         <short value="Tilt"/>
+         <definition value="The craniocaudal tilt of the surface on which the person is lying at the time of measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.History.24_hour_average.state.Tilt"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Blood_pressure.History.24_hour_average.state.Tilt.value">
+         <path value="Blood_pressure.History.24_hour_average.state.Tilt.value"/>
+         <short value="Tilt"/>
+         <definition value="The craniocaudal tilt of the surface on which the person is lying at the time of measurement."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.History.24_hour_average.state.Tilt.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Blood_pressure.History.events_24_hour_average.width">
+         <path value="Blood_pressure.History.events_24_hour_average.width"/>
+         <short value="24 hour average"/>
+         <definition value="Estimate of the average blood pressure over a 24 hour period."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.History.events_24_hour_average.width"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Blood_pressure.History.events_24_hour_average.math_function">
+         <path value="Blood_pressure.History.events_24_hour_average.math_function"/>
+         <short value="24 hour average"/>
+         <definition value="Estimate of the average blood pressure over a 24 hour period."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_pressure.History.events_24_hour_average.math_function"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

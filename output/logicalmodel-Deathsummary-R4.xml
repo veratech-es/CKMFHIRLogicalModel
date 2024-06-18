@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Deathsummary-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-deathsummary-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-EVALUATION.death_summary.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Deathsummary"/>
+   <title value="Death summary"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Summary information about the circumstances and context of the death of an individual, excluding the cause(s) of death."/>
+   <purpose value="To record summary information about the circumstances and context of the death of an individual, excluding the cause(s) of death."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Death_summary">
+         <path value="Death_summary"/>
+         <short value="Death summary"/>
+         <definition value="Summary information about the circumstances and context of the death of an individual, excluding the cause(s) of death."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Death_summary"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Death_summary.protocol">
+         <path value="Death_summary.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Death_summary.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Death_summary.protocol.Information_source(s)">
+         <path value="Death_summary.protocol.Information_source(s)"/>
+         <short value="Information source(s)"/>
+         <definition value="Narrative description about source(s) of information."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Death_summary.protocol.Information_source(s)"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Death_summary.protocol.Information_source(s).value">
+         <path value="Death_summary.protocol.Information_source(s).value"/>
+         <short value="Information source(s)"/>
+         <definition value="Narrative description about source(s) of information."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Death_summary.protocol.Information_source(s).value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Death_summary.protocol.Last_updated">
+         <path value="Death_summary.protocol.Last_updated"/>
+         <short value="Last updated"/>
+         <definition value="The date when the death summary was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Death_summary.protocol.Last_updated"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Death_summary.protocol.Last_updated.value">
+         <path value="Death_summary.protocol.Last_updated.value"/>
+         <short value="Last updated"/>
+         <definition value="The date when the death summary was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Death_summary.protocol.Last_updated.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Death_summary.protocol.Extension">
+         <path value="Death_summary.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Death_summary.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Death_summary.data">
+         <path value="Death_summary.data"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Death_summary.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Death_summary.data.Date_time_of_death">
+         <path value="Death_summary.data.Date_time_of_death"/>
+         <short value="Date/time of death"/>
+         <definition value="The known, or assumed, date and time of death."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Death_summary.data.Date_time_of_death"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Death_summary.data.Date_time_of_death.value_DV_DATE_TIME">
+         <path value="Death_summary.data.Date_time_of_death.value_DV_DATE_TIME"/>
+         <short value="Date/time of death"/>
+         <definition value="The known, or assumed, date and time of death."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Death_summary.data.Date_time_of_death.value_DV_DATE_TIME"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Death_summary.data.Date_time_of_death.value_DV_INTERVAL_DV_DATE_TIME_">
+         <path value="Death_summary.data.Date_time_of_death.value_DV_INTERVAL_DV_DATE_TIME_"/>
+         <short value="Date/time of death"/>
+         <definition value="The known, or assumed, date and time of death."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Death_summary.data.Date_time_of_death.value_DV_INTERVAL_DV_DATE_TIME_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Death_summary.data.Date_of_death_alternatives">
+         <path value="Death_summary.data.Date_of_death_alternatives"/>
+         <short value="Date of death alternatives"/>
+         <definition value="Additional details about possible alternative dates of death."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Death_summary.data.Date_of_death_alternatives"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Death_summary.data.Manner_of_death">
+         <path value="Death_summary.data.Manner_of_death"/>
+         <short value="Manner of death"/>
+         <definition value="Context or setting of the death."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Death_summary.data.Manner_of_death"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Death_summary.data.Manner_of_death.value">
+         <path value="Death_summary.data.Manner_of_death.value"/>
+         <short value="Manner of death"/>
+         <definition value="Context or setting of the death."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Death_summary.data.Manner_of_death.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Death_summary.data.Manner_description">
+         <path value="Death_summary.data.Manner_description"/>
+         <short value="Manner description"/>
+         <definition value="Narrative description about the context or setting of the death."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Death_summary.data.Manner_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Death_summary.data.Manner_description.value">
+         <path value="Death_summary.data.Manner_description.value"/>
+         <short value="Manner description"/>
+         <definition value="Narrative description about the context or setting of the death."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Death_summary.data.Manner_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Death_summary.data.Place_category">
+         <path value="Death_summary.data.Place_category"/>
+         <short value="Place category"/>
+         <definition value="The category of the place where the individual died."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Death_summary.data.Place_category"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Death_summary.data.Place_category.value">
+         <path value="Death_summary.data.Place_category.value"/>
+         <short value="Place category"/>
+         <definition value="The category of the place where the individual died."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Death_summary.data.Place_category.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Death_summary.data.Place_of_death">
+         <path value="Death_summary.data.Place_of_death"/>
+         <short value="Place of death"/>
+         <definition value="The simple name, address or landmark of the place where the individual died."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Death_summary.data.Place_of_death"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Death_summary.data.Place_of_death.value">
+         <path value="Death_summary.data.Place_of_death.value"/>
+         <short value="Place of death"/>
+         <definition value="The simple name, address or landmark of the place where the individual died."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Death_summary.data.Place_of_death.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Death_summary.data.Structured_place_of_death">
+         <path value="Death_summary.data.Structured_place_of_death"/>
+         <short value="Structured place of death"/>
+         <definition value="Structured detail about the place where the individual died."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Death_summary.data.Structured_place_of_death"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Death_summary.data.Age_at_death">
+         <path value="Death_summary.data.Age_at_death"/>
+         <short value="Age at death"/>
+         <definition value="The age of the individual at the time of death."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Death_summary.data.Age_at_death"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Death_summary.data.Age_at_death.value">
+         <path value="Death_summary.data.Age_at_death.value"/>
+         <short value="Age at death"/>
+         <definition value="The age of the individual at the time of death."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Death_summary.data.Age_at_death.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Death_summary.data.Place_of_injury">
+         <path value="Death_summary.data.Place_of_injury"/>
+         <short value="Place of injury"/>
+         <definition value="The category of the place where the injury contributing to death occurred."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Death_summary.data.Place_of_injury"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Death_summary.data.Place_of_injury.value">
+         <path value="Death_summary.data.Place_of_injury.value"/>
+         <short value="Place of injury"/>
+         <definition value="The category of the place where the injury contributing to death occurred."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Death_summary.data.Place_of_injury.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Death_summary.data.Date_of_injury">
+         <path value="Death_summary.data.Date_of_injury"/>
+         <short value="Date of injury"/>
+         <definition value="The known, or assumed, date and time of injury."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Death_summary.data.Date_of_injury"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Death_summary.data.Date_of_injury.value">
+         <path value="Death_summary.data.Date_of_injury.value"/>
+         <short value="Date of injury"/>
+         <definition value="The known, or assumed, date and time of injury."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Death_summary.data.Date_of_injury.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Death_summary.data.Activity_at_the_time_of_injury">
+         <path value="Death_summary.data.Activity_at_the_time_of_injury"/>
+         <short value="Activity at the time of injury"/>
+         <definition value="Type of activity at the time of injury."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Death_summary.data.Activity_at_the_time_of_injury"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Death_summary.data.Activity_at_the_time_of_injury.value">
+         <path value="Death_summary.data.Activity_at_the_time_of_injury.value"/>
+         <short value="Activity at the time of injury"/>
+         <definition value="Type of activity at the time of injury."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Death_summary.data.Activity_at_the_time_of_injury.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Death_summary.data.Pregnancy_context">
+         <path value="Death_summary.data.Pregnancy_context"/>
+         <short value="Pregnancy context"/>
+         <definition value="Timing of a woman's death categorised as a phase of the active pregnancy."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Death_summary.data.Pregnancy_context"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Death_summary.data.Pregnancy_context.value_DV_CODED_TEXT">
+         <path value="Death_summary.data.Pregnancy_context.value_DV_CODED_TEXT"/>
+         <short value="Pregnancy context"/>
+         <definition value="Timing of a woman's death categorised as a phase of the active pregnancy."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Death_summary.data.Pregnancy_context.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Death_summary.data.Pregnancy_context.value_DV_TEXT">
+         <path value="Death_summary.data.Pregnancy_context.value_DV_TEXT"/>
+         <short value="Pregnancy context"/>
+         <definition value="Timing of a woman's death categorised as a phase of the active pregnancy."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Death_summary.data.Pregnancy_context.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Death_summary.data.Days_post_partum">
+         <path value="Death_summary.data.Days_post_partum"/>
+         <short value="Days post partum"/>
+         <definition value="The number of days after birth to the death of a mother."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Death_summary.data.Days_post_partum"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Death_summary.data.Days_post_partum.value">
+         <path value="Death_summary.data.Days_post_partum.value"/>
+         <short value="Days post partum"/>
+         <definition value="The number of days after birth to the death of a mother."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Death_summary.data.Days_post_partum.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Death_summary.data.Gestation_at_death">
+         <path value="Death_summary.data.Gestation_at_death"/>
+         <short value="Gestation at death"/>
+         <definition value="Number of completed weeks of gestation of the foetus at the time of foetal death."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Death_summary.data.Gestation_at_death"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Death_summary.data.Gestation_at_death.value">
+         <path value="Death_summary.data.Gestation_at_death.value"/>
+         <short value="Gestation at death"/>
+         <definition value="Number of completed weeks of gestation of the foetus at the time of foetal death."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Death_summary.data.Gestation_at_death.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Death_summary.data.Stillbirth_context">
+         <path value="Death_summary.data.Stillbirth_context"/>
+         <short value="Stillbirth context"/>
+         <definition value="Timing of a stillborn foetus' death categorised as a phase of pregnancy."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Death_summary.data.Stillbirth_context"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Death_summary.data.Stillbirth_context.value_DV_CODED_TEXT">
+         <path value="Death_summary.data.Stillbirth_context.value_DV_CODED_TEXT"/>
+         <short value="Stillbirth context"/>
+         <definition value="Timing of a stillborn foetus' death categorised as a phase of pregnancy."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Death_summary.data.Stillbirth_context.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Death_summary.data.Stillbirth_context.value_DV_TEXT">
+         <path value="Death_summary.data.Stillbirth_context.value_DV_TEXT"/>
+         <short value="Stillbirth context"/>
+         <definition value="Timing of a stillborn foetus' death categorised as a phase of pregnancy."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Death_summary.data.Stillbirth_context.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Death_summary.data.Additional_details">
+         <path value="Death_summary.data.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="Additional structured details related to the death."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Death_summary.data.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Death_summary.data.Comment">
+         <path value="Death_summary.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the death, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Death_summary.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Death_summary.data.Comment.value">
+         <path value="Death_summary.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the death, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Death_summary.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

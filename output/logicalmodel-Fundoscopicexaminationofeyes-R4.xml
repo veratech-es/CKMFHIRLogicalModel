@@ -1,0 +1,1060 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Fundoscopicexaminationofeyes-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-fundoscopicexaminationofeyes-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.fundoscopic_examination.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Fundoscopicexaminationofeyes"/>
+   <title value="Fundoscopic examination of eyes"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Record of clinical findings on fundoscopy of eyes."/>
+   <purpose value="To record details about clinical findings on fundoscopy of eyes."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Fundoscopic_examination_of_eyes">
+         <path value="Fundoscopic_examination_of_eyes"/>
+         <short value="Fundoscopic examination of eyes"/>
+         <definition value="Record of clinical findings on fundoscopy of eyes."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.protocol">
+         <path value="Fundoscopic_examination_of_eyes.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.protocol.Method">
+         <path value="Fundoscopic_examination_of_eyes.protocol.Method"/>
+         <short value="Method"/>
+         <definition value="Method chosen to perform the funduscopic examination."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.protocol.Method"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.protocol.Method.value">
+         <path value="Fundoscopic_examination_of_eyes.protocol.Method.value"/>
+         <short value="Method"/>
+         <definition value="Method chosen to perform the funduscopic examination."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.protocol.Method.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.protocol.Device_details">
+         <path value="Fundoscopic_examination_of_eyes.protocol.Device_details"/>
+         <short value="Device details"/>
+         <definition value="Details of the device used to acquire eye fundus images."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.protocol.Device_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.protocol.Field_angle">
+         <path value="Fundoscopic_examination_of_eyes.protocol.Field_angle"/>
+         <short value="Field angle"/>
+         <definition value="Describes the optical acceptance angle of the lens used during the test."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.protocol.Field_angle"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.protocol.Field_angle.value">
+         <path value="Fundoscopic_examination_of_eyes.protocol.Field_angle.value"/>
+         <short value="Field angle"/>
+         <definition value="Describes the optical acceptance angle of the lens used during the test."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.protocol.Field_angle.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.protocol.Attempts">
+         <path value="Fundoscopic_examination_of_eyes.protocol.Attempts"/>
+         <short value="Attempts"/>
+         <definition value="Number of attempts before obtaining the acquisition (doesn't compute if test is repeated by a specific recognized technical failure)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.protocol.Attempts"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.protocol.Attempts.value">
+         <path value="Fundoscopic_examination_of_eyes.protocol.Attempts.value"/>
+         <short value="Attempts"/>
+         <definition value="Number of attempts before obtaining the acquisition (doesn't compute if test is repeated by a specific recognized technical failure)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.protocol.Attempts.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.protocol.Subdivision_of_the_retina">
+         <path value="Fundoscopic_examination_of_eyes.protocol.Subdivision_of_the_retina"/>
+         <short value="Subdivision of the retina"/>
+         <definition value="Subdivision of the retina identifying eye fundus image locations."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.protocol.Subdivision_of_the_retina"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.protocol.items_Subdivision_of_the_retina.name">
+         <path value="Fundoscopic_examination_of_eyes.protocol.items_Subdivision_of_the_retina.name"/>
+         <short value="Subdivision of the retina"/>
+         <definition value="Subdivision of the retina identifying eye fundus image locations."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.protocol.items_Subdivision_of_the_retina.name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.protocol.items_Subdivision_of_the_retina.ETRDS_fields">
+         <path value="Fundoscopic_examination_of_eyes.protocol.items_Subdivision_of_the_retina.ETRDS_fields"/>
+         <short value="ETRDS fields"/>
+         <definition value="Subdivision of the retina based on Diabetic Retinopathy Study fields."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.protocol.items_Subdivision_of_the_retina.ETRDS_fields"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.protocol.items_Subdivision_of_the_retina.ETRDS_fields.name">
+         <path value="Fundoscopic_examination_of_eyes.protocol.items_Subdivision_of_the_retina.ETRDS_fields.name"/>
+         <short value="ETRDS fields"/>
+         <definition value="Subdivision of the retina based on Diabetic Retinopathy Study fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.protocol.items_Subdivision_of_the_retina.ETRDS_fields.name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.protocol.items_Subdivision_of_the_retina.ETRDS_fields.value">
+         <path value="Fundoscopic_examination_of_eyes.protocol.items_Subdivision_of_the_retina.ETRDS_fields.value"/>
+         <short value="ETRDS fields"/>
+         <definition value="Subdivision of the retina based on Diabetic Retinopathy Study fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.protocol.items_Subdivision_of_the_retina.ETRDS_fields.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.protocol.items_Subdivision_of_the_retina.Mosaic_and_peripherals">
+         <path value="Fundoscopic_examination_of_eyes.protocol.items_Subdivision_of_the_retina.Mosaic_and_peripherals"/>
+         <short value="Mosaic and peripherals"/>
+         <definition value="Division of the retina in quadrants + mosaic obtained from the combination of them."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.protocol.items_Subdivision_of_the_retina.Mosaic_and_peripherals"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.protocol.items_Subdivision_of_the_retina.Mosaic_and_peripherals.value">
+         <path value="Fundoscopic_examination_of_eyes.protocol.items_Subdivision_of_the_retina.Mosaic_and_peripherals.value"/>
+         <short value="Mosaic and peripherals"/>
+         <definition value="Division of the retina in quadrants + mosaic obtained from the combination of them."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.protocol.items_Subdivision_of_the_retina.Mosaic_and_peripherals.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.protocol.Shadow_artifact">
+         <path value="Fundoscopic_examination_of_eyes.protocol.Shadow_artifact"/>
+         <short value="Shadow artifact"/>
+         <definition value="True if shadow artifact is present on the border of the image."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.protocol.Shadow_artifact"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.protocol.Shadow_artifact.value">
+         <path value="Fundoscopic_examination_of_eyes.protocol.Shadow_artifact.value"/>
+         <short value="Shadow artifact"/>
+         <definition value="True if shadow artifact is present on the border of the image."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.protocol.Shadow_artifact.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.protocol.Cataract_artifact">
+         <path value="Fundoscopic_examination_of_eyes.protocol.Cataract_artifact"/>
+         <short value="Cataract artifact"/>
+         <definition value="True if cataract obstructs the visualization of eye fundus."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.protocol.Cataract_artifact"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.protocol.Cataract_artifact.value">
+         <path value="Fundoscopic_examination_of_eyes.protocol.Cataract_artifact.value"/>
+         <short value="Cataract artifact"/>
+         <definition value="True if cataract obstructs the visualization of eye fundus."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.protocol.Cataract_artifact.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.protocol.Quality_of_visualisation">
+         <path value="Fundoscopic_examination_of_eyes.protocol.Quality_of_visualisation"/>
+         <short value="Quality of visualisation"/>
+         <definition value="Levels quantifying the quality of each acquisition, based in the ease to visualize the structures on the eye fundus."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.protocol.Quality_of_visualisation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.protocol.Quality_of_visualisation.value">
+         <path value="Fundoscopic_examination_of_eyes.protocol.Quality_of_visualisation.value"/>
+         <short value="Quality of visualisation"/>
+         <definition value="Levels quantifying the quality of each acquisition, based in the ease to visualize the structures on the eye fundus."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.protocol.Quality_of_visualisation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.protocol.Visualisation_description">
+         <path value="Fundoscopic_examination_of_eyes.protocol.Visualisation_description"/>
+         <short value="Visualisation description"/>
+         <definition value="Narrative description about visualisation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.protocol.Visualisation_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.protocol.Visualisation_description.value">
+         <path value="Fundoscopic_examination_of_eyes.protocol.Visualisation_description.value"/>
+         <short value="Visualisation description"/>
+         <definition value="Narrative description about visualisation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.protocol.Visualisation_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.protocol.High_refraction">
+         <path value="Fundoscopic_examination_of_eyes.protocol.High_refraction"/>
+         <short value="High refraction"/>
+         <definition value="True if the refraction of the eye exceeds the range from -12D to +15D."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.protocol.High_refraction"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.protocol.High_refraction.value">
+         <path value="Fundoscopic_examination_of_eyes.protocol.High_refraction.value"/>
+         <short value="High refraction"/>
+         <definition value="True if the refraction of the eye exceeds the range from -12D to +15D."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.protocol.High_refraction.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.protocol.Extension">
+         <path value="Fundoscopic_examination_of_eyes.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.Event_Series">
+         <path value="Fundoscopic_examination_of_eyes.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.Event_Series.Any_event">
+         <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data">
+         <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result">
+         <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result"/>
+         <short value="Test Result"/>
+         <definition value="Details of the funduscopic examination test result for each eye."/>
+         <min value="0"/>
+         <max value="2"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result"/>
+            <min value="0"/>
+            <max value="2"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Eye_examined">
+         <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Eye_examined"/>
+         <short value="Eye examined"/>
+         <definition value="Identification of the eye which is being examined."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Eye_examined"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Eye_examined.value">
+         <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Eye_examined.value"/>
+         <short value="Eye examined"/>
+         <definition value="Identification of the eye which is being examined."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Eye_examined.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Clinical_description">
+         <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Clinical_description"/>
+         <short value="Clinical description"/>
+         <definition value="Narrative description of the overall findings observed during the physical examination of the eye examined."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Clinical_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Clinical_description.value">
+         <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Clinical_description.value"/>
+         <short value="Clinical description"/>
+         <definition value="Narrative description of the overall findings observed during the physical examination of the eye examined."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Clinical_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Red_reflex">
+         <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Red_reflex"/>
+         <short value="Red reflex"/>
+         <definition value="True if Red Reflex is present."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Red_reflex"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Red_reflex.value">
+         <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Red_reflex.value"/>
+         <short value="Red reflex"/>
+         <definition value="True if Red Reflex is present."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Red_reflex.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Optic_disc_description">
+         <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Optic_disc_description"/>
+         <short value="Optic disc description"/>
+         <definition value="Narrative description about the optic disc."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Optic_disc_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Optic_disc_description.value">
+         <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Optic_disc_description.value"/>
+         <short value="Optic disc description"/>
+         <definition value="Narrative description about the optic disc."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Optic_disc_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Macula_description">
+         <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Macula_description"/>
+         <short value="Macula description"/>
+         <definition value="Narrative description about the macula."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Macula_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Macula_description.value">
+         <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Macula_description.value"/>
+         <short value="Macula description"/>
+         <definition value="Narrative description about the macula."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Macula_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Retinal_arteries_description">
+         <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Retinal_arteries_description"/>
+         <short value="Retinal arteries description"/>
+         <definition value="Narrative description about the retinal arteries."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Retinal_arteries_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Retinal_arteries_description.value">
+         <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Retinal_arteries_description.value"/>
+         <short value="Retinal arteries description"/>
+         <definition value="Narrative description about the retinal arteries."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Retinal_arteries_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Retinal_veins_description">
+         <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Retinal_veins_description"/>
+         <short value="Retinal veins description"/>
+         <definition value="Narrative description about the retinal veins."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Retinal_veins_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Retinal_veins_description.value">
+         <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Retinal_veins_description.value"/>
+         <short value="Retinal veins description"/>
+         <definition value="Narrative description about the retinal veins."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Retinal_veins_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Retinal_background_description">
+         <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Retinal_background_description"/>
+         <short value="Retinal background description"/>
+         <definition value="Narrative description about the retinal background."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Retinal_background_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Retinal_background_description.value">
+         <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Retinal_background_description.value"/>
+         <short value="Retinal background description"/>
+         <definition value="Narrative description about the retinal background."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Retinal_background_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Vitreous_description">
+         <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Vitreous_description"/>
+         <short value="Vitreous description"/>
+         <definition value="Narrative description about the vitreous humour."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Vitreous_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Vitreous_description.value">
+         <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Vitreous_description.value"/>
+         <short value="Vitreous description"/>
+         <definition value="Narrative description about the vitreous humour."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Vitreous_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Clinical_interpretation">
+         <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Clinical_interpretation"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Single word, phrase or brief description that represents the clinical meaning and significance of the physical examination findings for the eye examined."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Clinical_interpretation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Clinical_interpretation.value">
+         <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Clinical_interpretation.value"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Single word, phrase or brief description that represents the clinical meaning and significance of the physical examination findings for the eye examined."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Clinical_interpretation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Multimedia_representation">
+         <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Multimedia_representation"/>
+         <short value="Multimedia representation"/>
+         <definition value="Digital image, video or diagram representing the physical examination findings."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Multimedia_representation"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Additional_findings">
+         <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Additional_findings"/>
+         <short value="Additional findings"/>
+         <definition value="Additional structured details about the physical examination findings."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Additional_findings"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Examination_not_done">
+         <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Examination_not_done"/>
+         <short value="Examination not done"/>
+         <definition value="Details to explicitly record that this examination was not performed."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Examination_not_done"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Comment">
+         <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the physical examination findings, not captured in other fields."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Comment"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Comment.value">
+         <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the physical examination findings, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.data.Test_Result.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.Event_Series.Any_event.state">
+         <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.state"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.Event_Series.Any_event.state.Confounding_factors">
+         <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.state.Confounding_factors"/>
+         <short value="Confounding factors"/>
+         <definition value="Narrative description of factors, not recorded elsewhere, that may influence the clinical findings."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.state.Confounding_factors"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.Event_Series.Any_event.state.Confounding_factors.value">
+         <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.state.Confounding_factors.value"/>
+         <short value="Confounding factors"/>
+         <definition value="Narrative description of factors, not recorded elsewhere, that may influence the clinical findings."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.state.Confounding_factors.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.Event_Series.Any_event.state.Mydriatic_used">
+         <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.state.Mydriatic_used"/>
+         <short value="Mydriatic used"/>
+         <definition value="True if mydriatic is used."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.state.Mydriatic_used"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.Event_Series.Any_event.state.Mydriatic_used.value">
+         <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.state.Mydriatic_used.value"/>
+         <short value="Mydriatic used"/>
+         <definition value="True if mydriatic is used."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.state.Mydriatic_used.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.Event_Series.Any_event.state.Small_pupil">
+         <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.state.Small_pupil"/>
+         <short value="Small pupil"/>
+         <definition value="True if during the acquisition, pupil diameter is smaller than normal (3,3mm)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.state.Small_pupil"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.Event_Series.Any_event.state.Small_pupil.value">
+         <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.state.Small_pupil.value"/>
+         <short value="Small pupil"/>
+         <definition value="True if during the acquisition, pupil diameter is smaller than normal (3,3mm)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.state.Small_pupil.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.Event_Series.Any_event.state.Uncooperative_patient">
+         <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.state.Uncooperative_patient"/>
+         <short value="Uncooperative patient"/>
+         <definition value="True if patient doesn't collaborate during the image acquisition."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.state.Uncooperative_patient"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fundoscopic_examination_of_eyes.Event_Series.Any_event.state.Uncooperative_patient.value">
+         <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.state.Uncooperative_patient.value"/>
+         <short value="Uncooperative patient"/>
+         <definition value="True if patient doesn't collaborate during the image acquisition."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fundoscopic_examination_of_eyes.Event_Series.Any_event.state.Uncooperative_patient.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

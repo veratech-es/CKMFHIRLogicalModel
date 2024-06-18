@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Notification_INSTRUCTION-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-notification_INSTRUCTION-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-INSTRUCTION.notification.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Notification_INSTRUCTION"/>
+   <title value="Notification"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Order for generation of a notice or announcement containing non-clinical information, which will be triggered at certain time/s or by occurrence of an event."/>
+   <purpose value="To enable clinical systems to generate a notice or announcement containing non-clinical information, which will be triggered at certain time/s or by occurrence of an event."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Notification">
+         <path value="Notification"/>
+         <short value="Notification"/>
+         <definition value="Order for generation of a notice or announcement containing non-clinical information, which will be triggered at certain time/s or by occurrence of an event."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Notification"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Notification.Current_Activity">
+         <path value="Notification.Current_Activity"/>
+         <short value="Current Activity"/>
+         <definition value="Current Activity"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Notification.Current_Activity"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Notification.Current_Activity.description">
+         <path value="Notification.Current_Activity.description"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Notification.Current_Activity.description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Notification.Current_Activity.description.Topic_name">
+         <path value="Notification.Current_Activity.description.Topic_name"/>
+         <short value="Topic name"/>
+         <definition value="Identification of the topic of the notification, by name."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Notification.Current_Activity.description.Topic_name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Notification.Current_Activity.description.Topic_name.value">
+         <path value="Notification.Current_Activity.description.Topic_name.value"/>
+         <short value="Topic name"/>
+         <definition value="Identification of the topic of the notification, by name."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Notification.Current_Activity.description.Topic_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Notification.Current_Activity.description.Timing">
+         <path value="Notification.Current_Activity.description.Timing"/>
+         <short value="Timing"/>
+         <definition value="Structured details to describe the timing of a single instance of notification or a repetitive pattern of notifications."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Notification.Current_Activity.description.Timing"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Notification.Current_Activity.description.Description">
+         <path value="Notification.Current_Activity.description.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description or note about the notification."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Notification.Current_Activity.description.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Notification.Current_Activity.description.Description.value">
+         <path value="Notification.Current_Activity.description.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description or note about the notification."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Notification.Current_Activity.description.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

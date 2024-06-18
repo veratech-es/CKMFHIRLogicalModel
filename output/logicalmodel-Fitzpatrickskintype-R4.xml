@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Fitzpatrickskintype-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-fitzpatrickskintype-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.fitzpatrick_skin_type.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Fitzpatrickskintype"/>
+   <title value="Fitzpatrick skin type"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Numerical schema for classifying skin colour type based on reaction to ultraviolet radiation exposure."/>
+   <purpose value="The concept of skin typing was developed in 1975 in order to select correct ultraviolet A dosage for treatment of psoriasis with oral methoxsalen, known as photochemotherapy (PUVA).  It was further developed in subsequent years to include 6 types, ranging from white to black skin, characterised based on skin tolerance of ultraviolet radiation exposure."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Fitzpatrick_skin_type">
+         <path value="Fitzpatrick_skin_type"/>
+         <short value="Fitzpatrick skin type"/>
+         <definition value="Numerical schema for classifying skin colour type based on reaction to ultraviolet radiation exposure."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Fitzpatrick_skin_type"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fitzpatrick_skin_type.protocol">
+         <path value="Fitzpatrick_skin_type.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fitzpatrick_skin_type.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fitzpatrick_skin_type.protocol.Extension">
+         <path value="Fitzpatrick_skin_type.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Fitzpatrick_skin_type.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fitzpatrick_skin_type.Event_Series">
+         <path value="Fitzpatrick_skin_type.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fitzpatrick_skin_type.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fitzpatrick_skin_type.Event_Series.Any_event">
+         <path value="Fitzpatrick_skin_type.Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Fitzpatrick_skin_type.Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fitzpatrick_skin_type.Event_Series.Any_event.data">
+         <path value="Fitzpatrick_skin_type.Event_Series.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fitzpatrick_skin_type.Event_Series.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fitzpatrick_skin_type.Event_Series.Any_event.data.Skin_type">
+         <path value="Fitzpatrick_skin_type.Event_Series.Any_event.data.Skin_type"/>
+         <short value="Skin type"/>
+         <definition value="The Fitzpatrick Skin type."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fitzpatrick_skin_type.Event_Series.Any_event.data.Skin_type"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fitzpatrick_skin_type.Event_Series.Any_event.data.Skin_type.value">
+         <path value="Fitzpatrick_skin_type.Event_Series.Any_event.data.Skin_type.value"/>
+         <short value="Skin type"/>
+         <definition value="The Fitzpatrick Skin type."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fitzpatrick_skin_type.Event_Series.Any_event.data.Skin_type.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

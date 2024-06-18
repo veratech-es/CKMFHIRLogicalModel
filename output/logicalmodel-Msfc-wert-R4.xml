@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Msfc-wert-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-msfc-wert-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.msfc_score.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Msfc-wert"/>
+   <title value="MSFC-Wert"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Das Multiple Sclerosis Functional Composite (MSFC) ist ein dreiteiliges, quantitatives und standardisiertes Beurteilungsinstrument für klinische Untersuchungen und Studien zur Multiplen Sklerose."/>
+   <purpose value="Zur Aufzeichnung des MSFC-Werts einer Person bezüglich einer Referenzpopulation. Das MSFC wurde von der Clinical Outcomes Assessment Task Force der National Multiple Sclerosis Society entwickelt. Der MSFC-Wert bildet eine Gesamtgröße, die mit der Schwere der Erkrankung bezüglich einer Referenzpopulation korreliert. Dabei werden in drei einzelnen Tests (Timed 25-Foot Walk, Nine Hole Peg Test und Paced Auditory Serial Addition Test) verschiedene Aspekte höherer Gehirnfunktionen gemessen. Die Ergebnisse dieser drei Test werden in Z-Werten normiert und im MSFC-Wert zusammengeführt."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="MSFC_Wert">
+         <path value="MSFC_Wert"/>
+         <short value="MSFC-Wert"/>
+         <definition value="Das Multiple Sclerosis Functional Composite (MSFC) ist ein dreiteiliges, quantitatives und standardisiertes Beurteilungsinstrument für klinische Untersuchungen und Studien zur Multiplen Sklerose."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="MSFC_Wert"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="MSFC_Wert.Baum">
+         <path value="MSFC_Wert.Baum"/>
+         <short value="Baum"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="MSFC_Wert.Baum"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="MSFC_Wert.Baum.Referenzpopulation">
+         <path value="MSFC_Wert.Baum.Referenzpopulation"/>
+         <short value="Referenzpopulation"/>
+         <definition value="Angabe der zugrundeliegenden Referenzpopulation."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="MSFC_Wert.Baum.Referenzpopulation"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="MSFC_Wert.Baum.Referenzpopulation.value">
+         <path value="MSFC_Wert.Baum.Referenzpopulation.value"/>
+         <short value="Referenzpopulation"/>
+         <definition value="Angabe der zugrundeliegenden Referenzpopulation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="MSFC_Wert.Baum.Referenzpopulation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="MSFC_Wert.Baum.Aufzeichnung_des_Timed_25_Foot_Walk">
+         <path value="MSFC_Wert.Baum.Aufzeichnung_des_Timed_25_Foot_Walk"/>
+         <short value="Aufzeichnung des Timed 25-Foot Walk"/>
+         <definition value="Link zur detaillierten Originalaufzeichnung des Timed 25-Foot Walk."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="MSFC_Wert.Baum.Aufzeichnung_des_Timed_25_Foot_Walk"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="MSFC_Wert.Baum.Aufzeichnung_des_Timed_25_Foot_Walk.value">
+         <path value="MSFC_Wert.Baum.Aufzeichnung_des_Timed_25_Foot_Walk.value"/>
+         <short value="Aufzeichnung des Timed 25-Foot Walk"/>
+         <definition value="Link zur detaillierten Originalaufzeichnung des Timed 25-Foot Walk."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="MSFC_Wert.Baum.Aufzeichnung_des_Timed_25_Foot_Walk.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="MSFC_Wert.Baum.Aufzeichnung_des_Nine_Hole_Peg_Test">
+         <path value="MSFC_Wert.Baum.Aufzeichnung_des_Nine_Hole_Peg_Test"/>
+         <short value="Aufzeichnung des Nine Hole Peg Test"/>
+         <definition value="Link zur detaillierten Originalaufzeichnung des Nine Hole Peg Test."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="MSFC_Wert.Baum.Aufzeichnung_des_Nine_Hole_Peg_Test"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="MSFC_Wert.Baum.Aufzeichnung_des_Nine_Hole_Peg_Test.value">
+         <path value="MSFC_Wert.Baum.Aufzeichnung_des_Nine_Hole_Peg_Test.value"/>
+         <short value="Aufzeichnung des Nine Hole Peg Test"/>
+         <definition value="Link zur detaillierten Originalaufzeichnung des Nine Hole Peg Test."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="MSFC_Wert.Baum.Aufzeichnung_des_Nine_Hole_Peg_Test.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="MSFC_Wert.Baum.Aufzeichnung_des_Paced_Auditory_Serial_Addition_Test">
+         <path value="MSFC_Wert.Baum.Aufzeichnung_des_Paced_Auditory_Serial_Addition_Test"/>
+         <short value="Aufzeichnung des Paced Auditory Serial Addition Test"/>
+         <definition value="Link zur detaillierten Originalaufzeichnung des Paced Auditory Serial Addition Test."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="MSFC_Wert.Baum.Aufzeichnung_des_Paced_Auditory_Serial_Addition_Test"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="MSFC_Wert.Baum.Aufzeichnung_des_Paced_Auditory_Serial_Addition_Test.value">
+         <path value="MSFC_Wert.Baum.Aufzeichnung_des_Paced_Auditory_Serial_Addition_Test.value"/>
+         <short value="Aufzeichnung des Paced Auditory Serial Addition Test"/>
+         <definition value="Link zur detaillierten Originalaufzeichnung des Paced Auditory Serial Addition Test."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="MSFC_Wert.Baum.Aufzeichnung_des_Paced_Auditory_Serial_Addition_Test.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="MSFC_Wert.Event_Series">
+         <path value="MSFC_Wert.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="MSFC_Wert.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="MSFC_Wert.Event_Series.Jedes_Ereignis">
+         <path value="MSFC_Wert.Event_Series.Jedes_Ereignis"/>
+         <short value="Jedes Ereignis"/>
+         <definition value="Jedes unspezifizierte Ereignis."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="MSFC_Wert.Event_Series.Jedes_Ereignis"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="MSFC_Wert.Event_Series.Jedes_Ereignis.Baum">
+         <path value="MSFC_Wert.Event_Series.Jedes_Ereignis.Baum"/>
+         <short value="Baum"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="MSFC_Wert.Event_Series.Jedes_Ereignis.Baum"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="MSFC_Wert.Event_Series.Jedes_Ereignis.Baum.MSFC_Wert">
+         <path value="MSFC_Wert.Event_Series.Jedes_Ereignis.Baum.MSFC_Wert"/>
+         <short value="MSFC-Wert"/>
+         <definition value="Angabe des MSFC-Werts."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="MSFC_Wert.Event_Series.Jedes_Ereignis.Baum.MSFC_Wert"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="MSFC_Wert.Event_Series.Jedes_Ereignis.Baum.MSFC_Wert.value">
+         <path value="MSFC_Wert.Event_Series.Jedes_Ereignis.Baum.MSFC_Wert.value"/>
+         <short value="MSFC-Wert"/>
+         <definition value="Angabe des MSFC-Werts."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="MSFC_Wert.Event_Series.Jedes_Ereignis.Baum.MSFC_Wert.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

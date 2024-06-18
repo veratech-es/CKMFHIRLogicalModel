@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Therapeuticitemorder-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-therapeuticitemorder-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-INSTRUCTION.therapeutic_item_order.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Therapeuticitemorder"/>
+   <title value="Therapeutic item order"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="An order for a therapeutic item, including a medical device, used by the individual or a carer as part of direct provision of healthcare or to mitigate a healthcare risk."/>
+   <purpose value="To record an order for a therapeutic item, including a medical device, used by the individual or a carer as part of direct provision of healthcare or to mitigate a healthcare risk."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Therapeutic_item_order">
+         <path value="Therapeutic_item_order"/>
+         <short value="Therapeutic item order"/>
+         <definition value="An order for a therapeutic item, including a medical device, used by the individual or a carer as part of direct provision of healthcare or to mitigate a healthcare risk."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Therapeutic_item_order"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Therapeutic_item_order.protocol">
+         <path value="Therapeutic_item_order.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Therapeutic_item_order.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Therapeutic_item_order.protocol.Order_identifier">
+         <path value="Therapeutic_item_order.protocol.Order_identifier"/>
+         <short value="Order identifier"/>
+         <definition value="Unique identifier for the order."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Therapeutic_item_order.protocol.Order_identifier"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Therapeutic_item_order.protocol.Order_identifier.value">
+         <path value="Therapeutic_item_order.protocol.Order_identifier.value"/>
+         <short value="Order identifier"/>
+         <definition value="Unique identifier for the order."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Therapeutic_item_order.protocol.Order_identifier.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Therapeutic_item_order.protocol.Extension">
+         <path value="Therapeutic_item_order.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Therapeutic_item_order.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Therapeutic_item_order.Order">
+         <path value="Therapeutic_item_order.Order"/>
+         <short value="Order"/>
+         <definition value="Details of the requested order."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Therapeutic_item_order.Order"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Therapeutic_item_order.Order.description">
+         <path value="Therapeutic_item_order.Order.description"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Therapeutic_item_order.Order.description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Therapeutic_item_order.Order.description.Item_name">
+         <path value="Therapeutic_item_order.Order.description.Item_name"/>
+         <short value="Item name"/>
+         <definition value="Name of the item ordered."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Therapeutic_item_order.Order.description.Item_name"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Therapeutic_item_order.Order.description.Item_name.value">
+         <path value="Therapeutic_item_order.Order.description.Item_name.value"/>
+         <short value="Item name"/>
+         <definition value="Name of the item ordered."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Therapeutic_item_order.Order.description.Item_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Therapeutic_item_order.Order.description.Item_details">
+         <path value="Therapeutic_item_order.Order.description.Item_details"/>
+         <short value="Item details"/>
+         <definition value="Structured details about the item."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Therapeutic_item_order.Order.description.Item_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Therapeutic_item_order.Order.description.Body_site">
+         <path value="Therapeutic_item_order.Order.description.Body_site"/>
+         <short value="Body site"/>
+         <definition value="Name of the body site where the item is intended to be used."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Therapeutic_item_order.Order.description.Body_site"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Therapeutic_item_order.Order.description.Body_site.value">
+         <path value="Therapeutic_item_order.Order.description.Body_site.value"/>
+         <short value="Body site"/>
+         <definition value="Name of the body site where the item is intended to be used."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Therapeutic_item_order.Order.description.Body_site.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Therapeutic_item_order.Order.description.Structured_body_site">
+         <path value="Therapeutic_item_order.Order.description.Structured_body_site"/>
+         <short value="Structured body site"/>
+         <definition value="Structured description of the body site where the item is intended to be used."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Therapeutic_item_order.Order.description.Structured_body_site"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Therapeutic_item_order.Order.description.Directions">
+         <path value="Therapeutic_item_order.Order.description.Directions"/>
+         <short value="Directions"/>
+         <definition value="Narrative description about the intended use of the item."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Therapeutic_item_order.Order.description.Directions"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Therapeutic_item_order.Order.description.Directions.value">
+         <path value="Therapeutic_item_order.Order.description.Directions.value"/>
+         <short value="Directions"/>
+         <definition value="Narrative description about the intended use of the item."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Therapeutic_item_order.Order.description.Directions.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Therapeutic_item_order.Order.description.Monitoring_instruction">
+         <path value="Therapeutic_item_order.Order.description.Monitoring_instruction"/>
+         <short value="Monitoring instruction"/>
+         <definition value="Description about monitoring required for use of the item."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Therapeutic_item_order.Order.description.Monitoring_instruction"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Therapeutic_item_order.Order.description.Monitoring_instruction.value">
+         <path value="Therapeutic_item_order.Order.description.Monitoring_instruction.value"/>
+         <short value="Monitoring instruction"/>
+         <definition value="Description about monitoring required for use of the item."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Therapeutic_item_order.Order.description.Monitoring_instruction.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Therapeutic_item_order.Order.description.Clinical_indication">
+         <path value="Therapeutic_item_order.Order.description.Clinical_indication"/>
+         <short value="Clinical indication"/>
+         <definition value="The clinical reason for use of the ordered item."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Therapeutic_item_order.Order.description.Clinical_indication"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Therapeutic_item_order.Order.description.Clinical_indication.value">
+         <path value="Therapeutic_item_order.Order.description.Clinical_indication.value"/>
+         <short value="Clinical indication"/>
+         <definition value="The clinical reason for use of the ordered item."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Therapeutic_item_order.Order.description.Clinical_indication.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Therapeutic_item_order.Order.description.Therapeutic_intent">
+         <path value="Therapeutic_item_order.Order.description.Therapeutic_intent"/>
+         <short value="Therapeutic intent"/>
+         <definition value="The therapeutic intent of the item."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Therapeutic_item_order.Order.description.Therapeutic_intent"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Therapeutic_item_order.Order.description.Therapeutic_intent.value">
+         <path value="Therapeutic_item_order.Order.description.Therapeutic_intent.value"/>
+         <short value="Therapeutic intent"/>
+         <definition value="The therapeutic intent of the item."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Therapeutic_item_order.Order.description.Therapeutic_intent.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Therapeutic_item_order.Order.description.Start_date_time">
+         <path value="Therapeutic_item_order.Order.description.Start_date_time"/>
+         <short value="Start date/time"/>
+         <definition value="Date/time when use of the item should commence."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Therapeutic_item_order.Order.description.Start_date_time"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Therapeutic_item_order.Order.description.Start_date_time.value">
+         <path value="Therapeutic_item_order.Order.description.Start_date_time.value"/>
+         <short value="Start date/time"/>
+         <definition value="Date/time when use of the item should commence."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Therapeutic_item_order.Order.description.Start_date_time.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Therapeutic_item_order.Order.description.Stop_date_time">
+         <path value="Therapeutic_item_order.Order.description.Stop_date_time"/>
+         <short value="Stop date/time"/>
+         <definition value="Date/time when use of the item should stop."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Therapeutic_item_order.Order.description.Stop_date_time"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Therapeutic_item_order.Order.description.Stop_date_time.value">
+         <path value="Therapeutic_item_order.Order.description.Stop_date_time.value"/>
+         <short value="Stop date/time"/>
+         <definition value="Date/time when use of the item should stop."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Therapeutic_item_order.Order.description.Stop_date_time.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Therapeutic_item_order.Order.description.Start_criterion">
+         <path value="Therapeutic_item_order.Order.description.Start_criterion"/>
+         <short value="Start criterion"/>
+         <definition value="Criteria which triggers commencement of use."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Therapeutic_item_order.Order.description.Start_criterion"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Therapeutic_item_order.Order.description.Start_criterion.value">
+         <path value="Therapeutic_item_order.Order.description.Start_criterion.value"/>
+         <short value="Start criterion"/>
+         <definition value="Criteria which triggers commencement of use."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Therapeutic_item_order.Order.description.Start_criterion.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Therapeutic_item_order.Order.description.Stop_criterion">
+         <path value="Therapeutic_item_order.Order.description.Stop_criterion"/>
+         <short value="Stop criterion"/>
+         <definition value="Criteria which triggers cessation of use."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Therapeutic_item_order.Order.description.Stop_criterion"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Therapeutic_item_order.Order.description.Stop_criterion.value">
+         <path value="Therapeutic_item_order.Order.description.Stop_criterion.value"/>
+         <short value="Stop criterion"/>
+         <definition value="Criteria which triggers cessation of use."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Therapeutic_item_order.Order.description.Stop_criterion.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Therapeutic_item_order.Order.description.Additional_details">
+         <path value="Therapeutic_item_order.Order.description.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="Additional structured details about the order not captured in other fields."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Therapeutic_item_order.Order.description.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Therapeutic_item_order.Order.description.Comment">
+         <path value="Therapeutic_item_order.Order.description.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the order not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Therapeutic_item_order.Order.description.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Therapeutic_item_order.Order.description.Comment.value">
+         <path value="Therapeutic_item_order.Order.description.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the order not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Therapeutic_item_order.Order.description.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

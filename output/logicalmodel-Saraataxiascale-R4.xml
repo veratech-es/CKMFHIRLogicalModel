@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Saraataxiascale-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-saraataxiascale-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.sara_scale.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Saraataxiascale"/>
+   <title value="SARA ataxia scale"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Scale for the assessment and rating of ataxia."/>
+   <purpose value="SARA is a clinical scale that is based on a semiquantitative assessment of cerebellar ataxia on an impairment level. SARA has 8 items that are related to gait, stance, sitting, speech, finger-chase test, nose-finger test, fast alternating movements and heel-shin test. Although the cerebellum is directly involved in the coordination of eye movements, oculomotor functions are not considered, as the validation trials indicated that they are determined by other factors than appendicular and midline ataxia. SARA underwent a rigorous validation procedure involving three large multi-center trials in SCA and non-SCA ataxia patients, as well as controls."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="SARA_ataxia_scale">
+         <path value="SARA_ataxia_scale"/>
+         <short value="SARA ataxia scale"/>
+         <definition value="Scale for the assessment and rating of ataxia."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="SARA_ataxia_scale"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="SARA_ataxia_scale.protocol">
+         <path value="SARA_ataxia_scale.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SARA_ataxia_scale.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="SARA_ataxia_scale.protocol.Extension">
+         <path value="SARA_ataxia_scale.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local context or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="SARA_ataxia_scale.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="SARA_ataxia_scale.Event_Series">
+         <path value="SARA_ataxia_scale.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SARA_ataxia_scale.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="SARA_ataxia_scale.Event_Series.Point_in_time">
+         <path value="SARA_ataxia_scale.Event_Series.Point_in_time"/>
+         <short value="Point in time"/>
+         <definition value="A specific date and/or time which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SARA_ataxia_scale.Event_Series.Point_in_time"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="SARA_ataxia_scale.Event_Series.Point_in_time.data">
+         <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="SARA_ataxia_scale.Event_Series.Point_in_time.data.1__Gait">
+         <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.1__Gait"/>
+         <short value="1. Gait"/>
+         <definition value="Assessment of gait."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.1__Gait"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="SARA_ataxia_scale.Event_Series.Point_in_time.data.1__Gait.value">
+         <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.1__Gait.value"/>
+         <short value="1. Gait"/>
+         <definition value="Assessment of gait."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.1__Gait.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="SARA_ataxia_scale.Event_Series.Point_in_time.data.2__Stance">
+         <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.2__Stance"/>
+         <short value="2. Stance"/>
+         <definition value="Assessment of stance."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.2__Stance"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="SARA_ataxia_scale.Event_Series.Point_in_time.data.2__Stance.value">
+         <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.2__Stance.value"/>
+         <short value="2. Stance"/>
+         <definition value="Assessment of stance."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.2__Stance.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="SARA_ataxia_scale.Event_Series.Point_in_time.data.3__Sitting">
+         <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.3__Sitting"/>
+         <short value="3. Sitting"/>
+         <definition value="Assessment of sitting."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.3__Sitting"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="SARA_ataxia_scale.Event_Series.Point_in_time.data.3__Sitting.value">
+         <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.3__Sitting.value"/>
+         <short value="3. Sitting"/>
+         <definition value="Assessment of sitting."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.3__Sitting.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="SARA_ataxia_scale.Event_Series.Point_in_time.data.4__Speech_disturbance">
+         <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.4__Speech_disturbance"/>
+         <short value="4. Speech disturbance"/>
+         <definition value="Assessment of speech."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.4__Speech_disturbance"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="SARA_ataxia_scale.Event_Series.Point_in_time.data.4__Speech_disturbance.value">
+         <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.4__Speech_disturbance.value"/>
+         <short value="4. Speech disturbance"/>
+         <definition value="Assessment of speech."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.4__Speech_disturbance.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="SARA_ataxia_scale.Event_Series.Point_in_time.data.5L__Finger_chase_left">
+         <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.5L__Finger_chase_left"/>
+         <short value="5L. Finger chase left"/>
+         <definition value="Assessment of ability to follow movements with left index finger."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.5L__Finger_chase_left"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="SARA_ataxia_scale.Event_Series.Point_in_time.data.5L__Finger_chase_left.value">
+         <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.5L__Finger_chase_left.value"/>
+         <short value="5L. Finger chase left"/>
+         <definition value="Assessment of ability to follow movements with left index finger."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.5L__Finger_chase_left.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="SARA_ataxia_scale.Event_Series.Point_in_time.data.5R__Finger_chase_right">
+         <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.5R__Finger_chase_right"/>
+         <short value="5R. Finger chase right"/>
+         <definition value="Assessment of ability to follow movements with right index finger."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.5R__Finger_chase_right"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="SARA_ataxia_scale.Event_Series.Point_in_time.data.5R__Finger_chase_right.value">
+         <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.5R__Finger_chase_right.value"/>
+         <short value="5R. Finger chase right"/>
+         <definition value="Assessment of ability to follow movements with right index finger."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.5R__Finger_chase_right.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="SARA_ataxia_scale.Event_Series.Point_in_time.data.5__Finger_chase_mean_score">
+         <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.5__Finger_chase_mean_score"/>
+         <short value="5. Finger chase mean score"/>
+         <definition value="Mean score for both sides of finger chase assessment."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.5__Finger_chase_mean_score"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="SARA_ataxia_scale.Event_Series.Point_in_time.data.5__Finger_chase_mean_score.value">
+         <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.5__Finger_chase_mean_score.value"/>
+         <short value="5. Finger chase mean score"/>
+         <definition value="Mean score for both sides of finger chase assessment."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.5__Finger_chase_mean_score.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="SARA_ataxia_scale.Event_Series.Point_in_time.data.6L__Nose_finger_test_left">
+         <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.6L__Nose_finger_test_left"/>
+         <short value="6L. Nose-finger test left"/>
+         <definition value="Assessment of ability to point with left index finger from proband's nose to examiner's finger."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.6L__Nose_finger_test_left"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="SARA_ataxia_scale.Event_Series.Point_in_time.data.6L__Nose_finger_test_left.value">
+         <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.6L__Nose_finger_test_left.value"/>
+         <short value="6L. Nose-finger test left"/>
+         <definition value="Assessment of ability to point with left index finger from proband's nose to examiner's finger."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.6L__Nose_finger_test_left.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="SARA_ataxia_scale.Event_Series.Point_in_time.data.6R__Nose_finger_test_right">
+         <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.6R__Nose_finger_test_right"/>
+         <short value="6R. Nose-finger test right"/>
+         <definition value="Assessment of ability to point with right index finger from proband's nose to examiner's finger."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.6R__Nose_finger_test_right"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="SARA_ataxia_scale.Event_Series.Point_in_time.data.6R__Nose_finger_test_right.value">
+         <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.6R__Nose_finger_test_right.value"/>
+         <short value="6R. Nose-finger test right"/>
+         <definition value="Assessment of ability to point with right index finger from proband's nose to examiner's finger."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.6R__Nose_finger_test_right.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="SARA_ataxia_scale.Event_Series.Point_in_time.data.6__Nose_finger_test_mean_score">
+         <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.6__Nose_finger_test_mean_score"/>
+         <short value="6. Nose-finger test mean score"/>
+         <definition value="Mean score for both sides of nose-finger test."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.6__Nose_finger_test_mean_score"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="SARA_ataxia_scale.Event_Series.Point_in_time.data.6__Nose_finger_test_mean_score.value">
+         <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.6__Nose_finger_test_mean_score.value"/>
+         <short value="6. Nose-finger test mean score"/>
+         <definition value="Mean score for both sides of nose-finger test."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.6__Nose_finger_test_mean_score.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="SARA_ataxia_scale.Event_Series.Point_in_time.data.7L__Fast_alternating_hand_movements_left">
+         <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.7L__Fast_alternating_hand_movements_left"/>
+         <short value="7L. Fast alternating hand movements left"/>
+         <definition value="Assessment of ability to perform fast alternating left hand movements."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.7L__Fast_alternating_hand_movements_left"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="SARA_ataxia_scale.Event_Series.Point_in_time.data.7L__Fast_alternating_hand_movements_left.value">
+         <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.7L__Fast_alternating_hand_movements_left.value"/>
+         <short value="7L. Fast alternating hand movements left"/>
+         <definition value="Assessment of ability to perform fast alternating left hand movements."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.7L__Fast_alternating_hand_movements_left.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="SARA_ataxia_scale.Event_Series.Point_in_time.data.7R__Fast_alternating_hand_movements_right">
+         <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.7R__Fast_alternating_hand_movements_right"/>
+         <short value="7R. Fast alternating hand movements right"/>
+         <definition value="Assessment of ability to perform fast alternating left hand movements."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.7R__Fast_alternating_hand_movements_right"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="SARA_ataxia_scale.Event_Series.Point_in_time.data.7R__Fast_alternating_hand_movements_right.value">
+         <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.7R__Fast_alternating_hand_movements_right.value"/>
+         <short value="7R. Fast alternating hand movements right"/>
+         <definition value="Assessment of ability to perform fast alternating left hand movements."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.7R__Fast_alternating_hand_movements_right.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="SARA_ataxia_scale.Event_Series.Point_in_time.data.7__Fast_alternating_hand_movements_mean_score">
+         <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.7__Fast_alternating_hand_movements_mean_score"/>
+         <short value="7. Fast alternating hand movements mean score"/>
+         <definition value="Mean score for both sides of the fast alternating hand movements test."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.7__Fast_alternating_hand_movements_mean_score"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="SARA_ataxia_scale.Event_Series.Point_in_time.data.7__Fast_alternating_hand_movements_mean_score.value">
+         <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.7__Fast_alternating_hand_movements_mean_score.value"/>
+         <short value="7. Fast alternating hand movements mean score"/>
+         <definition value="Mean score for both sides of the fast alternating hand movements test."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.7__Fast_alternating_hand_movements_mean_score.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="SARA_ataxia_scale.Event_Series.Point_in_time.data.8L__Heel_shin_slide_left">
+         <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.8L__Heel_shin_slide_left"/>
+         <short value="8L. Heel-shin slide left"/>
+         <definition value="Assessment of ability to perform heel-shin slide with the left leg."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.8L__Heel_shin_slide_left"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="SARA_ataxia_scale.Event_Series.Point_in_time.data.8L__Heel_shin_slide_left.value">
+         <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.8L__Heel_shin_slide_left.value"/>
+         <short value="8L. Heel-shin slide left"/>
+         <definition value="Assessment of ability to perform heel-shin slide with the left leg."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.8L__Heel_shin_slide_left.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="SARA_ataxia_scale.Event_Series.Point_in_time.data.8R__Heel_shin_slide_right">
+         <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.8R__Heel_shin_slide_right"/>
+         <short value="8R. Heel-shin slide right"/>
+         <definition value="Assessment of ability to perform heel-shin slide with the right leg."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.8R__Heel_shin_slide_right"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="SARA_ataxia_scale.Event_Series.Point_in_time.data.8R__Heel_shin_slide_right.value">
+         <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.8R__Heel_shin_slide_right.value"/>
+         <short value="8R. Heel-shin slide right"/>
+         <definition value="Assessment of ability to perform heel-shin slide with the right leg."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.8R__Heel_shin_slide_right.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="SARA_ataxia_scale.Event_Series.Point_in_time.data.8__Heel_shin_slide_mean_score">
+         <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.8__Heel_shin_slide_mean_score"/>
+         <short value="8. Heel-shin slide mean score"/>
+         <definition value="Mean score for heel-shin slide assessment on both sides."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.8__Heel_shin_slide_mean_score"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="SARA_ataxia_scale.Event_Series.Point_in_time.data.8__Heel_shin_slide_mean_score.value">
+         <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.8__Heel_shin_slide_mean_score.value"/>
+         <short value="8. Heel-shin slide mean score"/>
+         <definition value="Mean score for heel-shin slide assessment on both sides."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.8__Heel_shin_slide_mean_score.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="SARA_ataxia_scale.Event_Series.Point_in_time.data.Total_score">
+         <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.Total_score"/>
+         <short value="Total score"/>
+         <definition value="Total score obtained from the sum of the individual scores for 1. to 4. and the sum of the mean scores for 5. to 8."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.Total_score"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="SARA_ataxia_scale.Event_Series.Point_in_time.data.Total_score.value">
+         <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.Total_score.value"/>
+         <short value="Total score"/>
+         <definition value="Total score obtained from the sum of the individual scores for 1. to 4. and the sum of the mean scores for 5. to 8."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="SARA_ataxia_scale.Event_Series.Point_in_time.data.Total_score.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="SARA_ataxia_scale.Event_Series.Point_in_time.state">
+         <path value="SARA_ataxia_scale.Event_Series.Point_in_time.state"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SARA_ataxia_scale.Event_Series.Point_in_time.state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="SARA_ataxia_scale.Event_Series.Point_in_time.state.Confounding_factors">
+         <path value="SARA_ataxia_scale.Event_Series.Point_in_time.state.Confounding_factors"/>
+         <short value="Confounding factors"/>
+         <definition value="Record any issues or factors that may impact on the use of the scale and the overall score."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="SARA_ataxia_scale.Event_Series.Point_in_time.state.Confounding_factors"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="SARA_ataxia_scale.Event_Series.Point_in_time.state.Confounding_factors.value">
+         <path value="SARA_ataxia_scale.Event_Series.Point_in_time.state.Confounding_factors.value"/>
+         <short value="Confounding factors"/>
+         <definition value="Record any issues or factors that may impact on the use of the scale and the overall score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SARA_ataxia_scale.Event_Series.Point_in_time.state.Confounding_factors.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

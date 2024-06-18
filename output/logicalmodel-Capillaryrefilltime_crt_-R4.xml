@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Capillaryrefilltime_crt_-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-capillaryrefilltime_crt_-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.capillary_refill.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Capillaryrefilltime_crt_"/>
+   <title value="Capillary refill time (CRT)"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Measurement of the time taken for color to return to an external capillary bed after pressure is applied to cause blanching."/>
+   <purpose value="To record findings related to the capillary refill time."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Capillary_refill_time_(CRT)">
+         <path value="Capillary_refill_time_(CRT)"/>
+         <short value="Capillary refill time (CRT)"/>
+         <definition value="Measurement of the time taken for color to return to an external capillary bed after pressure is applied to cause blanching."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Capillary_refill_time_(CRT)"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Capillary_refill_time_(CRT).protocol">
+         <path value="Capillary_refill_time_(CRT).protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Capillary_refill_time_(CRT).protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Capillary_refill_time_(CRT).protocol.Location_of_measurement">
+         <path value="Capillary_refill_time_(CRT).protocol.Location_of_measurement"/>
+         <short value="Location of measurement"/>
+         <definition value="Simple body site where the capillary filling time was measured."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Capillary_refill_time_(CRT).protocol.Location_of_measurement"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Capillary_refill_time_(CRT).protocol.Location_of_measurement.value">
+         <path value="Capillary_refill_time_(CRT).protocol.Location_of_measurement.value"/>
+         <short value="Location of measurement"/>
+         <definition value="Simple body site where the capillary filling time was measured."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Capillary_refill_time_(CRT).protocol.Location_of_measurement.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Capillary_refill_time_(CRT).protocol.Structured_measurement_location">
+         <path value="Capillary_refill_time_(CRT).protocol.Structured_measurement_location"/>
+         <short value="Structured measurement location"/>
+         <definition value="Structured anatomical location of where the measurement was taken."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Capillary_refill_time_(CRT).protocol.Structured_measurement_location"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Capillary_refill_time_(CRT).protocol.Measurement_method">
+         <path value="Capillary_refill_time_(CRT).protocol.Measurement_method"/>
+         <short value="Measurement method"/>
+         <definition value="Narrative description of the method used for measuring the capillary refill time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Capillary_refill_time_(CRT).protocol.Measurement_method"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Capillary_refill_time_(CRT).protocol.Measurement_method.value">
+         <path value="Capillary_refill_time_(CRT).protocol.Measurement_method.value"/>
+         <short value="Measurement method"/>
+         <definition value="Narrative description of the method used for measuring the capillary refill time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Capillary_refill_time_(CRT).protocol.Measurement_method.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Capillary_refill_time_(CRT).protocol.Device">
+         <path value="Capillary_refill_time_(CRT).protocol.Device"/>
+         <short value="Device"/>
+         <definition value="Details about any device used to measure capillary refill time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Capillary_refill_time_(CRT).protocol.Device"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Capillary_refill_time_(CRT).protocol.Extension">
+         <path value="Capillary_refill_time_(CRT).protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models or formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Capillary_refill_time_(CRT).protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Capillary_refill_time_(CRT).History">
+         <path value="Capillary_refill_time_(CRT).History"/>
+         <short value="History"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Capillary_refill_time_(CRT).History"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Capillary_refill_time_(CRT).History.Any_event">
+         <path value="Capillary_refill_time_(CRT).History.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Capillary_refill_time_(CRT).History.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Capillary_refill_time_(CRT).History.Any_event.data">
+         <path value="Capillary_refill_time_(CRT).History.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Capillary_refill_time_(CRT).History.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Capillary_refill_time_(CRT).History.Any_event.data.Refill_time">
+         <path value="Capillary_refill_time_(CRT).History.Any_event.data.Refill_time"/>
+         <short value="Refill time"/>
+         <definition value="The measured time taken for color to return after blanching."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Capillary_refill_time_(CRT).History.Any_event.data.Refill_time"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Capillary_refill_time_(CRT).History.Any_event.data.Refill_time.value">
+         <path value="Capillary_refill_time_(CRT).History.Any_event.data.Refill_time.value"/>
+         <short value="Refill time"/>
+         <definition value="The measured time taken for color to return after blanching."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Capillary_refill_time_(CRT).History.Any_event.data.Refill_time.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Capillary_refill_time_(CRT).History.Any_event.data.Clinical_interpretation">
+         <path value="Capillary_refill_time_(CRT).History.Any_event.data.Clinical_interpretation"/>
+         <short value="Clinical interpretation"/>
+         <definition value="A clinical interpretation of the capillary refill time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Capillary_refill_time_(CRT).History.Any_event.data.Clinical_interpretation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Capillary_refill_time_(CRT).History.Any_event.data.Clinical_interpretation.value_DV_CODED_TEXT">
+         <path value="Capillary_refill_time_(CRT).History.Any_event.data.Clinical_interpretation.value_DV_CODED_TEXT"/>
+         <short value="Clinical interpretation"/>
+         <definition value="A clinical interpretation of the capillary refill time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Capillary_refill_time_(CRT).History.Any_event.data.Clinical_interpretation.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Capillary_refill_time_(CRT).History.Any_event.data.Clinical_interpretation.value_DV_TEXT">
+         <path value="Capillary_refill_time_(CRT).History.Any_event.data.Clinical_interpretation.value_DV_TEXT"/>
+         <short value="Clinical interpretation"/>
+         <definition value="A clinical interpretation of the capillary refill time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Capillary_refill_time_(CRT).History.Any_event.data.Clinical_interpretation.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Capillary_refill_time_(CRT).History.Any_event.data.Comment">
+         <path value="Capillary_refill_time_(CRT).History.Any_event.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the capillary refill time not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Capillary_refill_time_(CRT).History.Any_event.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Capillary_refill_time_(CRT).History.Any_event.data.Comment.value">
+         <path value="Capillary_refill_time_(CRT).History.Any_event.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the capillary refill time not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Capillary_refill_time_(CRT).History.Any_event.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Capillary_refill_time_(CRT).History.Any_event.state">
+         <path value="Capillary_refill_time_(CRT).History.Any_event.state"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Capillary_refill_time_(CRT).History.Any_event.state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Capillary_refill_time_(CRT).History.Any_event.state.Confounding_factors">
+         <path value="Capillary_refill_time_(CRT).History.Any_event.state.Confounding_factors"/>
+         <short value="Confounding factors"/>
+         <definition value="Issues or factors that may impact on measurement of the capillary refill time, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Capillary_refill_time_(CRT).History.Any_event.state.Confounding_factors"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Capillary_refill_time_(CRT).History.Any_event.state.Confounding_factors.value">
+         <path value="Capillary_refill_time_(CRT).History.Any_event.state.Confounding_factors.value"/>
+         <short value="Confounding factors"/>
+         <definition value="Issues or factors that may impact on measurement of the capillary refill time, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Capillary_refill_time_(CRT).History.Any_event.state.Confounding_factors.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

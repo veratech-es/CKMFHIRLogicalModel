@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Transferofcaresummary-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-transferofcaresummary-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-COMPOSITION.transfer_summary.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Transferofcaresummary"/>
+   <title value="Transfer of care summary"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Summary document to support transfer of critical clinical information from the sending healthcare organisation/provider to the receiving healthcare organisation/provider."/>
+   <purpose value="To share critical clinical information recorded by the sending healthcare organisation/provider to the healthcare organisation/provider who is taking over responsbility for provision of health care for the subject."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Transfer_of_care_summary">
+         <path value="Transfer_of_care_summary"/>
+         <short value="Transfer of care summary"/>
+         <definition value="Summary document to support transfer of critical clinical information from the sending healthcare organisation/provider to the receiving healthcare organisation/provider."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfer_of_care_summary"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfer_of_care_summary.category">
+         <path value="Transfer_of_care_summary.category"/>
+         <short value="Transfer of care summary"/>
+         <definition value="Summary document to support transfer of critical clinical information from the sending healthcare organisation/provider to the receiving healthcare organisation/provider."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfer_of_care_summary.category"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfer_of_care_summary.EVENT_CONTEXT">
+         <path value="Transfer_of_care_summary.EVENT_CONTEXT"/>
+         <definition value="EVENT_CONTEXT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfer_of_care_summary.EVENT_CONTEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfer_of_care_summary.EVENT_CONTEXT.other_context">
+         <path value="Transfer_of_care_summary.EVENT_CONTEXT.other_context"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfer_of_care_summary.EVENT_CONTEXT.other_context"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfer_of_care_summary.EVENT_CONTEXT.other_context.Extension">
+         <path value="Transfer_of_care_summary.EVENT_CONTEXT.other_context.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local context or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Transfer_of_care_summary.EVENT_CONTEXT.other_context.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

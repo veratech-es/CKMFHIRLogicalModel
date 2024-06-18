@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Speech-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-speech-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.speech.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Speech"/>
+   <title value="Speech"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="To record observations of a ptient's speech pattern or quality"/>
+   <purpose value="To record obervations of a patient's speech"/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Speech">
+         <path value="Speech"/>
+         <short value="Speech"/>
+         <definition value="To record observations of a ptient's speech pattern or quality"/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Speech"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Speech.Event_Series">
+         <path value="Speech.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Speech.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Speech.Event_Series.Any_event">
+         <path value="Speech.Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="*"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Speech.Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Speech.Event_Series.Any_event.data">
+         <path value="Speech.Event_Series.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Speech.Event_Series.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Speech.Event_Series.Any_event.data.Clarity_of_speech">
+         <path value="Speech.Event_Series.Any_event.data.Clarity_of_speech"/>
+         <short value="Clarity of speech"/>
+         <definition value="*"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Speech.Event_Series.Any_event.data.Clarity_of_speech"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Speech.Event_Series.Any_event.data.Clarity_of_speech.value">
+         <path value="Speech.Event_Series.Any_event.data.Clarity_of_speech.value"/>
+         <short value="Clarity of speech"/>
+         <definition value="*"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Speech.Event_Series.Any_event.data.Clarity_of_speech.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

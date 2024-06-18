@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Fluidbalance-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-fluidbalance-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.fluid_balance.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Fluidbalance"/>
+   <title value="Fluid balance"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="The difference between fluid input and output during a specified interval of time."/>
+   <purpose value="To record the cumulative or total amounts of fluid input and output, plus an estimation of the fluid balance status of an individual over specified intervals of time.&#xD;&#xA;&#xD;&#xA;To record the estimation of the difference between fluid input and output during a specified interval of time."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Fluid_balance">
+         <path value="Fluid_balance"/>
+         <short value="Fluid balance"/>
+         <definition value="The difference between fluid input and output during a specified interval of time."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Fluid_balance"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fluid_balance.protocol">
+         <path value="Fluid_balance.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fluid_balance.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fluid_balance.protocol.Insensible_loss_formula">
+         <path value="Fluid_balance.protocol.Insensible_loss_formula"/>
+         <short value="Insensible loss formula"/>
+         <definition value="The formula used to calculate the amount of insensible loss."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fluid_balance.protocol.Insensible_loss_formula"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fluid_balance.protocol.Insensible_loss_formula.value">
+         <path value="Fluid_balance.protocol.Insensible_loss_formula.value"/>
+         <short value="Insensible loss formula"/>
+         <definition value="The formula used to calculate the amount of insensible loss."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fluid_balance.protocol.Insensible_loss_formula.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fluid_balance.protocol.Extension">
+         <path value="Fluid_balance.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Fluid_balance.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fluid_balance.Event_Series">
+         <path value="Fluid_balance.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fluid_balance.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fluid_balance.Event_Series.Any_interval_event">
+         <path value="Fluid_balance.Event_Series.Any_interval_event"/>
+         <short value="Any interval event"/>
+         <definition value="Unspecified interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Fluid_balance.Event_Series.Any_interval_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fluid_balance.Event_Series.Any_interval_event.data">
+         <path value="Fluid_balance.Event_Series.Any_interval_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fluid_balance.Event_Series.Any_interval_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fluid_balance.Event_Series.Any_interval_event.data.Total_input">
+         <path value="Fluid_balance.Event_Series.Any_interval_event.data.Total_input"/>
+         <short value="Total input"/>
+         <definition value="The total amount of fluid administered or ingested during a specified interval of time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fluid_balance.Event_Series.Any_interval_event.data.Total_input"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fluid_balance.Event_Series.Any_interval_event.data.Total_input.value">
+         <path value="Fluid_balance.Event_Series.Any_interval_event.data.Total_input.value"/>
+         <short value="Total input"/>
+         <definition value="The total amount of fluid administered or ingested during a specified interval of time."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Fluid_balance.Event_Series.Any_interval_event.data.Total_input.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fluid_balance.Event_Series.Any_interval_event.data.Total_output">
+         <path value="Fluid_balance.Event_Series.Any_interval_event.data.Total_output"/>
+         <short value="Total output"/>
+         <definition value="The total amount of fluid lost or excreted during a specified interval of time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fluid_balance.Event_Series.Any_interval_event.data.Total_output"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fluid_balance.Event_Series.Any_interval_event.data.Total_output.value">
+         <path value="Fluid_balance.Event_Series.Any_interval_event.data.Total_output.value"/>
+         <short value="Total output"/>
+         <definition value="The total amount of fluid lost or excreted during a specified interval of time."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Fluid_balance.Event_Series.Any_interval_event.data.Total_output.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fluid_balance.Event_Series.Any_interval_event.data.Insensible_loss">
+         <path value="Fluid_balance.Event_Series.Any_interval_event.data.Insensible_loss"/>
+         <short value="Insensible loss"/>
+         <definition value="The amount of fluid loss by evaporation from the skin and respiratory tract."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fluid_balance.Event_Series.Any_interval_event.data.Insensible_loss"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fluid_balance.Event_Series.Any_interval_event.data.Insensible_loss.value">
+         <path value="Fluid_balance.Event_Series.Any_interval_event.data.Insensible_loss.value"/>
+         <short value="Insensible loss"/>
+         <definition value="The amount of fluid loss by evaporation from the skin and respiratory tract."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Fluid_balance.Event_Series.Any_interval_event.data.Insensible_loss.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fluid_balance.Event_Series.Any_interval_event.data.Fluid_balance">
+         <path value="Fluid_balance.Event_Series.Any_interval_event.data.Fluid_balance"/>
+         <short value="Fluid balance"/>
+         <definition value="The difference between fluid input and output during a specified interval of time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fluid_balance.Event_Series.Any_interval_event.data.Fluid_balance"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fluid_balance.Event_Series.Any_interval_event.data.Fluid_balance.value">
+         <path value="Fluid_balance.Event_Series.Any_interval_event.data.Fluid_balance.value"/>
+         <short value="Fluid balance"/>
+         <definition value="The difference between fluid input and output during a specified interval of time."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Fluid_balance.Event_Series.Any_interval_event.data.Fluid_balance.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fluid_balance.Event_Series.24_hour_total">
+         <path value="Fluid_balance.Event_Series.24_hour_total"/>
+         <short value="24 hour total"/>
+         <definition value="Total fluid volume recorded during an interval of 24 hour duration."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fluid_balance.Event_Series.24_hour_total"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fluid_balance.Event_Series.24_hour_total.data">
+         <path value="Fluid_balance.Event_Series.24_hour_total.data"/>
+         <definition value="ITEM_TREE"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fluid_balance.Event_Series.24_hour_total.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fluid_balance.Event_Series.24_hour_total.data.Total_input">
+         <path value="Fluid_balance.Event_Series.24_hour_total.data.Total_input"/>
+         <short value="Total input"/>
+         <definition value="The total amount of fluid administered or ingested during a specified interval of time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fluid_balance.Event_Series.24_hour_total.data.Total_input"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fluid_balance.Event_Series.24_hour_total.data.Total_input.value">
+         <path value="Fluid_balance.Event_Series.24_hour_total.data.Total_input.value"/>
+         <short value="Total input"/>
+         <definition value="The total amount of fluid administered or ingested during a specified interval of time."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Fluid_balance.Event_Series.24_hour_total.data.Total_input.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fluid_balance.Event_Series.24_hour_total.data.Total_output">
+         <path value="Fluid_balance.Event_Series.24_hour_total.data.Total_output"/>
+         <short value="Total output"/>
+         <definition value="The total amount of fluid lost or excreted during a specified interval of time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fluid_balance.Event_Series.24_hour_total.data.Total_output"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fluid_balance.Event_Series.24_hour_total.data.Total_output.value">
+         <path value="Fluid_balance.Event_Series.24_hour_total.data.Total_output.value"/>
+         <short value="Total output"/>
+         <definition value="The total amount of fluid lost or excreted during a specified interval of time."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Fluid_balance.Event_Series.24_hour_total.data.Total_output.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fluid_balance.Event_Series.24_hour_total.data.Insensible_loss">
+         <path value="Fluid_balance.Event_Series.24_hour_total.data.Insensible_loss"/>
+         <short value="Insensible loss"/>
+         <definition value="The amount of fluid loss by evaporation from the skin and respiratory tract."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fluid_balance.Event_Series.24_hour_total.data.Insensible_loss"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fluid_balance.Event_Series.24_hour_total.data.Insensible_loss.value">
+         <path value="Fluid_balance.Event_Series.24_hour_total.data.Insensible_loss.value"/>
+         <short value="Insensible loss"/>
+         <definition value="The amount of fluid loss by evaporation from the skin and respiratory tract."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Fluid_balance.Event_Series.24_hour_total.data.Insensible_loss.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fluid_balance.Event_Series.24_hour_total.data.Fluid_balance">
+         <path value="Fluid_balance.Event_Series.24_hour_total.data.Fluid_balance"/>
+         <short value="Fluid balance"/>
+         <definition value="The difference between fluid input and output during a specified interval of time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fluid_balance.Event_Series.24_hour_total.data.Fluid_balance"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fluid_balance.Event_Series.24_hour_total.data.Fluid_balance.value">
+         <path value="Fluid_balance.Event_Series.24_hour_total.data.Fluid_balance.value"/>
+         <short value="Fluid balance"/>
+         <definition value="The difference between fluid input and output during a specified interval of time."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Fluid_balance.Event_Series.24_hour_total.data.Fluid_balance.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fluid_balance.Event_Series.events_24_hour_total.width">
+         <path value="Fluid_balance.Event_Series.events_24_hour_total.width"/>
+         <short value="24 hour total"/>
+         <definition value="Total fluid volume recorded during an interval of 24 hour duration."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fluid_balance.Event_Series.events_24_hour_total.width"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fluid_balance.Event_Series.events_24_hour_total.math_function">
+         <path value="Fluid_balance.Event_Series.events_24_hour_total.math_function"/>
+         <short value="24 hour total"/>
+         <definition value="Total fluid volume recorded during an interval of 24 hour duration."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fluid_balance.Event_Series.events_24_hour_total.math_function"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

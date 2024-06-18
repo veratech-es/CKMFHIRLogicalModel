@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Managementscreeningquestionnaire-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-managementscreeningquestionnaire-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.management_screening.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Managementscreeningquestionnaire"/>
+   <title value="Management screening questionnaire"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Series of questions and associated answers used to screen for clinical management including, but not limited to treatments, therapies and hospitalisation."/>
+   <purpose value="To create a framework for recording answers to pre-defined screening questions about the broad range of clinical management that has been carried out in the past, with the exception of medications or surgical/operative procedures."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Management_screening_questionnaire">
+         <path value="Management_screening_questionnaire"/>
+         <short value="Management screening questionnaire"/>
+         <definition value="Series of questions and associated answers used to screen for clinical management including, but not limited to treatments, therapies and hospitalisation."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Management_screening_questionnaire"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Management_screening_questionnaire.protocol">
+         <path value="Management_screening_questionnaire.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Management_screening_questionnaire.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Management_screening_questionnaire.protocol.Extension">
+         <path value="Management_screening_questionnaire.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models or formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Management_screening_questionnaire.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Management_screening_questionnaire.History">
+         <path value="Management_screening_questionnaire.History"/>
+         <short value="History"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Management_screening_questionnaire.History"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Management_screening_questionnaire.History.Any_event">
+         <path value="Management_screening_questionnaire.History.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Management_screening_questionnaire.History.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Management_screening_questionnaire.History.Any_event.data">
+         <path value="Management_screening_questionnaire.History.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Management_screening_questionnaire.History.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Management_screening_questionnaire.History.Any_event.data.Screening_purpose">
+         <path value="Management_screening_questionnaire.History.Any_event.data.Screening_purpose"/>
+         <short value="Screening purpose"/>
+         <definition value="The context or reason for screening."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Management_screening_questionnaire.History.Any_event.data.Screening_purpose"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Management_screening_questionnaire.History.Any_event.data.Screening_purpose.value">
+         <path value="Management_screening_questionnaire.History.Any_event.data.Screening_purpose.value"/>
+         <short value="Screening purpose"/>
+         <definition value="The context or reason for screening."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Management_screening_questionnaire.History.Any_event.data.Screening_purpose.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Management_screening_questionnaire.History.Any_event.data.Any_management_">
+         <path value="Management_screening_questionnaire.History.Any_event.data.Any_management_"/>
+         <short value="Any management?"/>
+         <definition value="Is there a history of management or treatment activities relevant for the screening purpose?"/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Management_screening_questionnaire.History.Any_event.data.Any_management_"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Management_screening_questionnaire.History.Any_event.data.Any_management_.value_DV_CODED_TEXT">
+         <path value="Management_screening_questionnaire.History.Any_event.data.Any_management_.value_DV_CODED_TEXT"/>
+         <short value="Any management?"/>
+         <definition value="Is there a history of management or treatment activities relevant for the screening purpose?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Management_screening_questionnaire.History.Any_event.data.Any_management_.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Management_screening_questionnaire.History.Any_event.data.Any_management_.value_DV_TEXT">
+         <path value="Management_screening_questionnaire.History.Any_event.data.Any_management_.value_DV_TEXT"/>
+         <short value="Any management?"/>
+         <definition value="Is there a history of management or treatment activities relevant for the screening purpose?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Management_screening_questionnaire.History.Any_event.data.Any_management_.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Management_screening_questionnaire.History.Any_event.data.Any_management_.value_DV_BOOLEAN">
+         <path value="Management_screening_questionnaire.History.Any_event.data.Any_management_.value_DV_BOOLEAN"/>
+         <short value="Any management?"/>
+         <definition value="Is there a history of management or treatment activities relevant for the screening purpose?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Management_screening_questionnaire.History.Any_event.data.Any_management_.value_DV_BOOLEAN"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Management_screening_questionnaire.History.Any_event.data.Description">
+         <path value="Management_screening_questionnaire.History.Any_event.data.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the history of any management or treatment activities relevant for the screening purpose."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Management_screening_questionnaire.History.Any_event.data.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Management_screening_questionnaire.History.Any_event.data.Description.value">
+         <path value="Management_screening_questionnaire.History.Any_event.data.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the history of any management or treatment activities relevant for the screening purpose."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Management_screening_questionnaire.History.Any_event.data.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Management_screening_questionnaire.History.Any_event.data.Management_activity">
+         <path value="Management_screening_questionnaire.History.Any_event.data.Management_activity"/>
+         <short value="Management activity"/>
+         <definition value="Details about a specific management or treatment activity or grouping of management or treatment activities relevant for the screening purpose."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Management_screening_questionnaire.History.Any_event.data.Management_activity"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Management_screening_questionnaire.History.Any_event.data.Management_activity.Management_name">
+         <path value="Management_screening_questionnaire.History.Any_event.data.Management_activity.Management_name"/>
+         <short value="Management name"/>
+         <definition value="Name of a specific management or treatment activity or grouping of management or treatment activities."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Management_screening_questionnaire.History.Any_event.data.Management_activity.Management_name"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Management_screening_questionnaire.History.Any_event.data.Management_activity.Management_name.value">
+         <path value="Management_screening_questionnaire.History.Any_event.data.Management_activity.Management_name.value"/>
+         <short value="Management name"/>
+         <definition value="Name of a specific management or treatment activity or grouping of management or treatment activities."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Management_screening_questionnaire.History.Any_event.data.Management_activity.Management_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Management_screening_questionnaire.History.Any_event.data.Management_activity.Specific_management_">
+         <path value="Management_screening_questionnaire.History.Any_event.data.Management_activity.Specific_management_"/>
+         <short value="Specific management?"/>
+         <definition value="Is there a history of the specific management or treatment activity?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Management_screening_questionnaire.History.Any_event.data.Management_activity.Specific_management_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Management_screening_questionnaire.History.Any_event.data.Management_activity.Specific_management_.value_DV_CODED_TEXT">
+         <path value="Management_screening_questionnaire.History.Any_event.data.Management_activity.Specific_management_.value_DV_CODED_TEXT"/>
+         <short value="Specific management?"/>
+         <definition value="Is there a history of the specific management or treatment activity?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Management_screening_questionnaire.History.Any_event.data.Management_activity.Specific_management_.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Management_screening_questionnaire.History.Any_event.data.Management_activity.Specific_management_.value_DV_TEXT">
+         <path value="Management_screening_questionnaire.History.Any_event.data.Management_activity.Specific_management_.value_DV_TEXT"/>
+         <short value="Specific management?"/>
+         <definition value="Is there a history of the specific management or treatment activity?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Management_screening_questionnaire.History.Any_event.data.Management_activity.Specific_management_.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Management_screening_questionnaire.History.Any_event.data.Management_activity.Specific_management_.value_DV_BOOLEAN">
+         <path value="Management_screening_questionnaire.History.Any_event.data.Management_activity.Specific_management_.value_DV_BOOLEAN"/>
+         <short value="Specific management?"/>
+         <definition value="Is there a history of the specific management or treatment activity?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Management_screening_questionnaire.History.Any_event.data.Management_activity.Specific_management_.value_DV_BOOLEAN"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Management_screening_questionnaire.History.Any_event.data.Management_activity.Start">
+         <path value="Management_screening_questionnaire.History.Any_event.data.Management_activity.Start"/>
+         <short value="Start"/>
+         <definition value="When the managment or treatment started."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Management_screening_questionnaire.History.Any_event.data.Management_activity.Start"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Management_screening_questionnaire.History.Any_event.data.Management_activity.Start.value_DV_DATE_TIME">
+         <path value="Management_screening_questionnaire.History.Any_event.data.Management_activity.Start.value_DV_DATE_TIME"/>
+         <short value="Start"/>
+         <definition value="When the managment or treatment started."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Management_screening_questionnaire.History.Any_event.data.Management_activity.Start.value_DV_DATE_TIME"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Management_screening_questionnaire.History.Any_event.data.Management_activity.Start.value_DV_INTERVAL_DV_DATE_TIME_">
+         <path value="Management_screening_questionnaire.History.Any_event.data.Management_activity.Start.value_DV_INTERVAL_DV_DATE_TIME_"/>
+         <short value="Start"/>
+         <definition value="When the managment or treatment started."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Management_screening_questionnaire.History.Any_event.data.Management_activity.Start.value_DV_INTERVAL_DV_DATE_TIME_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Management_screening_questionnaire.History.Any_event.data.Management_activity.Start.value_DV_TEXT">
+         <path value="Management_screening_questionnaire.History.Any_event.data.Management_activity.Start.value_DV_TEXT"/>
+         <short value="Start"/>
+         <definition value="When the managment or treatment started."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Management_screening_questionnaire.History.Any_event.data.Management_activity.Start.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Management_screening_questionnaire.History.Any_event.data.Management_activity.Start.value_DV_DURATION">
+         <path value="Management_screening_questionnaire.History.Any_event.data.Management_activity.Start.value_DV_DURATION"/>
+         <short value="Start"/>
+         <definition value="When the managment or treatment started."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Management_screening_questionnaire.History.Any_event.data.Management_activity.Start.value_DV_DURATION"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Management_screening_questionnaire.History.Any_event.data.Management_activity.Start.value_DV_INTERVAL_DV_DURATION_">
+         <path value="Management_screening_questionnaire.History.Any_event.data.Management_activity.Start.value_DV_INTERVAL_DV_DURATION_"/>
+         <short value="Start"/>
+         <definition value="When the managment or treatment started."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Management_screening_questionnaire.History.Any_event.data.Management_activity.Start.value_DV_INTERVAL_DV_DURATION_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Management_screening_questionnaire.History.Any_event.data.Management_activity.Stopped">
+         <path value="Management_screening_questionnaire.History.Any_event.data.Management_activity.Stopped"/>
+         <short value="Stopped"/>
+         <definition value="When the managment or treatment ceased."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Management_screening_questionnaire.History.Any_event.data.Management_activity.Stopped"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Management_screening_questionnaire.History.Any_event.data.Management_activity.Stopped.value_DV_DATE_TIME">
+         <path value="Management_screening_questionnaire.History.Any_event.data.Management_activity.Stopped.value_DV_DATE_TIME"/>
+         <short value="Stopped"/>
+         <definition value="When the managment or treatment ceased."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Management_screening_questionnaire.History.Any_event.data.Management_activity.Stopped.value_DV_DATE_TIME"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Management_screening_questionnaire.History.Any_event.data.Management_activity.Stopped.value_DV_INTERVAL_DV_DATE_TIME_">
+         <path value="Management_screening_questionnaire.History.Any_event.data.Management_activity.Stopped.value_DV_INTERVAL_DV_DATE_TIME_"/>
+         <short value="Stopped"/>
+         <definition value="When the managment or treatment ceased."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Management_screening_questionnaire.History.Any_event.data.Management_activity.Stopped.value_DV_INTERVAL_DV_DATE_TIME_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Management_screening_questionnaire.History.Any_event.data.Management_activity.Stopped.value_DV_TEXT">
+         <path value="Management_screening_questionnaire.History.Any_event.data.Management_activity.Stopped.value_DV_TEXT"/>
+         <short value="Stopped"/>
+         <definition value="When the managment or treatment ceased."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Management_screening_questionnaire.History.Any_event.data.Management_activity.Stopped.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Management_screening_questionnaire.History.Any_event.data.Management_activity.Stopped.value_DV_DURATION">
+         <path value="Management_screening_questionnaire.History.Any_event.data.Management_activity.Stopped.value_DV_DURATION"/>
+         <short value="Stopped"/>
+         <definition value="When the managment or treatment ceased."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Management_screening_questionnaire.History.Any_event.data.Management_activity.Stopped.value_DV_DURATION"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Management_screening_questionnaire.History.Any_event.data.Management_activity.Stopped.value_DV_INTERVAL_DV_DURATION_">
+         <path value="Management_screening_questionnaire.History.Any_event.data.Management_activity.Stopped.value_DV_INTERVAL_DV_DURATION_"/>
+         <short value="Stopped"/>
+         <definition value="When the managment or treatment ceased."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Management_screening_questionnaire.History.Any_event.data.Management_activity.Stopped.value_DV_INTERVAL_DV_DURATION_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Management_screening_questionnaire.History.Any_event.data.Management_activity.Additional_details">
+         <path value="Management_screening_questionnaire.History.Any_event.data.Management_activity.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="Structured details or questions about the specific management or treatment activity."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Management_screening_questionnaire.History.Any_event.data.Management_activity.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Management_screening_questionnaire.History.Any_event.data.Management_activity.Comment">
+         <path value="Management_screening_questionnaire.History.Any_event.data.Management_activity.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about a specific management or treatment question, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Management_screening_questionnaire.History.Any_event.data.Management_activity.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Management_screening_questionnaire.History.Any_event.data.Management_activity.Comment.value">
+         <path value="Management_screening_questionnaire.History.Any_event.data.Management_activity.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about a specific management or treatment question, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Management_screening_questionnaire.History.Any_event.data.Management_activity.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Management_screening_questionnaire.History.Any_event.data.Additional_details">
+         <path value="Management_screening_questionnaire.History.Any_event.data.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="Structured details or questions about screening for management or treatment."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Management_screening_questionnaire.History.Any_event.data.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

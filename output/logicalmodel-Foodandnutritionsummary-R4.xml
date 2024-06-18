@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Foodandnutritionsummary-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-foodandnutritionsummary-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-EVALUATION.food_nutrition_summary.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Foodandnutritionsummary"/>
+   <title value="Food and nutrition summary"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Summary of the food and nutritional situation for an individual."/>
+   <purpose value="To record an overview of the food and nutritional situation for an individual, including the impact on social determinants of health."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Food_and_nutrition_summary">
+         <path value="Food_and_nutrition_summary"/>
+         <short value="Food and nutrition summary"/>
+         <definition value="Summary of the food and nutritional situation for an individual."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_and_nutrition_summary"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_and_nutrition_summary.protocol">
+         <path value="Food_and_nutrition_summary.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_and_nutrition_summary.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_and_nutrition_summary.protocol.Last_updated">
+         <path value="Food_and_nutrition_summary.protocol.Last_updated"/>
+         <short value="Last updated"/>
+         <definition value="The date this summary was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_and_nutrition_summary.protocol.Last_updated"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Food_and_nutrition_summary.protocol.Last_updated.value">
+         <path value="Food_and_nutrition_summary.protocol.Last_updated.value"/>
+         <short value="Last updated"/>
+         <definition value="The date this summary was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_and_nutrition_summary.protocol.Last_updated.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_and_nutrition_summary.protocol.Extension">
+         <path value="Food_and_nutrition_summary.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Food_and_nutrition_summary.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_and_nutrition_summary.data">
+         <path value="Food_and_nutrition_summary.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_and_nutrition_summary.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_and_nutrition_summary.data.Description">
+         <path value="Food_and_nutrition_summary.data.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the individual's diet and eating patterns."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_and_nutrition_summary.data.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Food_and_nutrition_summary.data.Description.value">
+         <path value="Food_and_nutrition_summary.data.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the individual's diet and eating patterns."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_and_nutrition_summary.data.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_and_nutrition_summary.data.Food_security_status">
+         <path value="Food_and_nutrition_summary.data.Food_security_status"/>
+         <short value="Food security status"/>
+         <definition value="Category describing the individual's perception about about secure and reliable access to food that is adequate in quantity and nutritional quality; culturally acceptable; safe; and acquired in socially acceptable ways."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_and_nutrition_summary.data.Food_security_status"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Food_and_nutrition_summary.data.Food_security_status.value">
+         <path value="Food_and_nutrition_summary.data.Food_security_status.value"/>
+         <short value="Food security status"/>
+         <definition value="Category describing the individual's perception about about secure and reliable access to food that is adequate in quantity and nutritional quality; culturally acceptable; safe; and acquired in socially acceptable ways."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_and_nutrition_summary.data.Food_security_status.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_and_nutrition_summary.data.Food_security_description">
+         <path value="Food_and_nutrition_summary.data.Food_security_description"/>
+         <short value="Food security description"/>
+         <definition value="Narrative description about the individual's ability to access appropriate food."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_and_nutrition_summary.data.Food_security_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Food_and_nutrition_summary.data.Food_security_description.value">
+         <path value="Food_and_nutrition_summary.data.Food_security_description.value"/>
+         <short value="Food security description"/>
+         <definition value="Narrative description about the individual's ability to access appropriate food."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_and_nutrition_summary.data.Food_security_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_and_nutrition_summary.data.Nutrition_status">
+         <path value="Food_and_nutrition_summary.data.Nutrition_status"/>
+         <short value="Nutrition status"/>
+         <definition value="Description of the individual's nutritional status as assessed by a clinician, for example, malnourished or well nourished. Coding with a terminology is desirable, where possible."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_and_nutrition_summary.data.Nutrition_status"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Food_and_nutrition_summary.data.Nutrition_status.value">
+         <path value="Food_and_nutrition_summary.data.Nutrition_status.value"/>
+         <short value="Nutrition status"/>
+         <definition value="Description of the individual's nutritional status as assessed by a clinician, for example, malnourished or well nourished. Coding with a terminology is desirable, where possible."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_and_nutrition_summary.data.Nutrition_status.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_and_nutrition_summary.data.Weight_status">
+         <path value="Food_and_nutrition_summary.data.Weight_status"/>
+         <short value="Weight status"/>
+         <definition value="Assessment of the individual's weight status."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_and_nutrition_summary.data.Weight_status"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Food_and_nutrition_summary.data.Weight_status.value">
+         <path value="Food_and_nutrition_summary.data.Weight_status.value"/>
+         <short value="Weight status"/>
+         <definition value="Assessment of the individual's weight status."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_and_nutrition_summary.data.Weight_status.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_and_nutrition_summary.data.Dietary_preference">
+         <path value="Food_and_nutrition_summary.data.Dietary_preference"/>
+         <short value="Dietary preference"/>
+         <definition value="A description of an individual's dietary preference."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_and_nutrition_summary.data.Dietary_preference"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Food_and_nutrition_summary.data.Dietary_preference.value">
+         <path value="Food_and_nutrition_summary.data.Dietary_preference.value"/>
+         <short value="Dietary preference"/>
+         <definition value="A description of an individual's dietary preference."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_and_nutrition_summary.data.Dietary_preference.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_and_nutrition_summary.data.Dietary_constraints">
+         <path value="Food_and_nutrition_summary.data.Dietary_constraints"/>
+         <short value="Dietary constraints"/>
+         <definition value="Description of a special dietary requirements or constraints."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Food_and_nutrition_summary.data.Dietary_constraints"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Food_and_nutrition_summary.data.Dietary_constraints.value">
+         <path value="Food_and_nutrition_summary.data.Dietary_constraints.value"/>
+         <short value="Dietary constraints"/>
+         <definition value="Description of a special dietary requirements or constraints."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_and_nutrition_summary.data.Dietary_constraints.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_and_nutrition_summary.data.Milk_supply">
+         <path value="Food_and_nutrition_summary.data.Milk_supply"/>
+         <short value="Milk supply"/>
+         <definition value="The type of milk available for consumption."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_and_nutrition_summary.data.Milk_supply"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Food_and_nutrition_summary.data.Milk_supply.value">
+         <path value="Food_and_nutrition_summary.data.Milk_supply.value"/>
+         <short value="Milk supply"/>
+         <definition value="The type of milk available for consumption."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_and_nutrition_summary.data.Milk_supply.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_and_nutrition_summary.data.Comment">
+         <path value="Food_and_nutrition_summary.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Comment about the individual's nutrition."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_and_nutrition_summary.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Food_and_nutrition_summary.data.Comment.value">
+         <path value="Food_and_nutrition_summary.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Comment about the individual's nutrition."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_and_nutrition_summary.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

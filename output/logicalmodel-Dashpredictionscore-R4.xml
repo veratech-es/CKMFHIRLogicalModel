@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Dashpredictionscore-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-dashpredictionscore-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.dash_score.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Dashpredictionscore"/>
+   <title value="DASH prediction score"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Assessment tool used to predict the risk of recurring venous thromboembolism (VTE)."/>
+   <purpose value="To record individual DASH prediction score parameters and total score."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="DASH_prediction_score">
+         <path value="DASH_prediction_score"/>
+         <short value="DASH prediction score"/>
+         <definition value="Assessment tool used to predict the risk of recurring venous thromboembolism (VTE)."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="DASH_prediction_score"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="DASH_prediction_score.protocol">
+         <path value="DASH_prediction_score.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="DASH_prediction_score.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="DASH_prediction_score.protocol.Extension">
+         <path value="DASH_prediction_score.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models or formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="DASH_prediction_score.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="DASH_prediction_score.Event_Series">
+         <path value="DASH_prediction_score.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="DASH_prediction_score.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="DASH_prediction_score.Event_Series.Any_event">
+         <path value="DASH_prediction_score.Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="DASH_prediction_score.Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="DASH_prediction_score.Event_Series.Any_event.data">
+         <path value="DASH_prediction_score.Event_Series.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="DASH_prediction_score.Event_Series.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="DASH_prediction_score.Event_Series.Any_event.data.D_Dimer_abnormal">
+         <path value="DASH_prediction_score.Event_Series.Any_event.data.D_Dimer_abnormal"/>
+         <short value="D-Dimer abnormal"/>
+         <definition value="Measured ~1 month after stopping anticoagulation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="DASH_prediction_score.Event_Series.Any_event.data.D_Dimer_abnormal"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="DASH_prediction_score.Event_Series.Any_event.data.D_Dimer_abnormal.value">
+         <path value="DASH_prediction_score.Event_Series.Any_event.data.D_Dimer_abnormal.value"/>
+         <short value="D-Dimer abnormal"/>
+         <definition value="Measured ~1 month after stopping anticoagulation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="DASH_prediction_score.Event_Series.Any_event.data.D_Dimer_abnormal.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="DASH_prediction_score.Event_Series.Any_event.data.Age_≤_50_years">
+         <path value="DASH_prediction_score.Event_Series.Any_event.data.Age_≤_50_years"/>
+         <short value="Age ≤ 50 years"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="DASH_prediction_score.Event_Series.Any_event.data.Age_≤_50_years"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="DASH_prediction_score.Event_Series.Any_event.data.Age_≤_50_years.value">
+         <path value="DASH_prediction_score.Event_Series.Any_event.data.Age_≤_50_years.value"/>
+         <short value="Age ≤ 50 years"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="DASH_prediction_score.Event_Series.Any_event.data.Age_≤_50_years.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="DASH_prediction_score.Event_Series.Any_event.data.Male_patient">
+         <path value="DASH_prediction_score.Event_Series.Any_event.data.Male_patient"/>
+         <short value="Male patient"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="DASH_prediction_score.Event_Series.Any_event.data.Male_patient"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="DASH_prediction_score.Event_Series.Any_event.data.Male_patient.value">
+         <path value="DASH_prediction_score.Event_Series.Any_event.data.Male_patient.value"/>
+         <short value="Male patient"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="DASH_prediction_score.Event_Series.Any_event.data.Male_patient.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="DASH_prediction_score.Event_Series.Any_event.data.Hormone_use_at_VTE_onset">
+         <path value="DASH_prediction_score.Event_Series.Any_event.data.Hormone_use_at_VTE_onset"/>
+         <short value="Hormone use at VTE onset"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="DASH_prediction_score.Event_Series.Any_event.data.Hormone_use_at_VTE_onset"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="DASH_prediction_score.Event_Series.Any_event.data.Hormone_use_at_VTE_onset.value">
+         <path value="DASH_prediction_score.Event_Series.Any_event.data.Hormone_use_at_VTE_onset.value"/>
+         <short value="Hormone use at VTE onset"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="DASH_prediction_score.Event_Series.Any_event.data.Hormone_use_at_VTE_onset.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="DASH_prediction_score.Event_Series.Any_event.data.Total_score">
+         <path value="DASH_prediction_score.Event_Series.Any_event.data.Total_score"/>
+         <short value="Total score"/>
+         <definition value="The total sum of each component parameter for the DASH score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="DASH_prediction_score.Event_Series.Any_event.data.Total_score"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="DASH_prediction_score.Event_Series.Any_event.data.Total_score.value">
+         <path value="DASH_prediction_score.Event_Series.Any_event.data.Total_score.value"/>
+         <short value="Total score"/>
+         <definition value="The total sum of each component parameter for the DASH score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="DASH_prediction_score.Event_Series.Any_event.data.Total_score.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

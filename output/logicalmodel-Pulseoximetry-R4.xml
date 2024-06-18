@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Pulseoximetry-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-pulseoximetry-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.pulse_oximetry.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Pulseoximetry"/>
+   <title value="Pulse oximetry"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Blood oxygen and related measurements, measured by pulse oximetry or pulse CO-oximetry."/>
+   <purpose value="To record blood oxygen and related measurements, measured by pulse oximetry or pulse CO-oximetry."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Pulse_oximetry">
+         <path value="Pulse_oximetry"/>
+         <short value="Pulse oximetry"/>
+         <definition value="Blood oxygen and related measurements, measured by pulse oximetry or pulse CO-oximetry."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_oximetry"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_oximetry.List">
+         <path value="Pulse_oximetry.List"/>
+         <short value="List"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_oximetry.List"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_oximetry.List.Sensor_site">
+         <path value="Pulse_oximetry.List.Sensor_site"/>
+         <short value="Sensor site"/>
+         <definition value="The site of the measurement sensor."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_oximetry.List.Sensor_site"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pulse_oximetry.List.Sensor_site.value">
+         <path value="Pulse_oximetry.List.Sensor_site.value"/>
+         <short value="Sensor site"/>
+         <definition value="The site of the measurement sensor."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_oximetry.List.Sensor_site.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_oximetry.List.Pre_post_ductal">
+         <path value="Pulse_oximetry.List.Pre_post_ductal"/>
+         <short value="Pre/post-ductal"/>
+         <definition value="Sensor site relative to the ductus arteriosus in neonates, to determine whether the blood supply to limb of the sensor site is pre- or post-ductal in cases of patent ductus arteriosus."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_oximetry.List.Pre_post_ductal"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pulse_oximetry.List.Pre_post_ductal.value">
+         <path value="Pulse_oximetry.List.Pre_post_ductal.value"/>
+         <short value="Pre/post-ductal"/>
+         <definition value="Sensor site relative to the ductus arteriosus in neonates, to determine whether the blood supply to limb of the sensor site is pre- or post-ductal in cases of patent ductus arteriosus."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_oximetry.List.Pre_post_ductal.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_oximetry.List.Oximetry_device">
+         <path value="Pulse_oximetry.List.Oximetry_device"/>
+         <short value="Oximetry device"/>
+         <definition value="Details of the non-invasive oximetry device used."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_oximetry.List.Oximetry_device"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_oximetry.List.Extension">
+         <path value="Pulse_oximetry.List.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local context or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pulse_oximetry.List.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_oximetry.Event_Series">
+         <path value="Pulse_oximetry.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_oximetry.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_oximetry.Event_Series.Any_event">
+         <path value="Pulse_oximetry.Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pulse_oximetry.Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_oximetry.Event_Series.Any_event.data">
+         <path value="Pulse_oximetry.Event_Series.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_oximetry.Event_Series.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_oximetry.Event_Series.Any_event.data.SpO₂">
+         <path value="Pulse_oximetry.Event_Series.Any_event.data.SpO₂"/>
+         <short value="SpO₂"/>
+         <definition value="The saturation of oxygen in the peripheral blood, measured via pulse oximetry."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_oximetry.Event_Series.Any_event.data.SpO₂"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pulse_oximetry.Event_Series.Any_event.data.SpO₂.value">
+         <path value="Pulse_oximetry.Event_Series.Any_event.data.SpO₂.value"/>
+         <short value="SpO₂"/>
+         <definition value="The saturation of oxygen in the peripheral blood, measured via pulse oximetry."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_oximetry.Event_Series.Any_event.data.SpO₂.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Ratio"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_oximetry.Event_Series.Any_event.data.SpOC">
+         <path value="Pulse_oximetry.Event_Series.Any_event.data.SpOC"/>
+         <short value="SpOC"/>
+         <definition value="The oxygen content of the peripheral blood, calculated based on pulse oximetry and pulse CO-oximetry."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_oximetry.Event_Series.Any_event.data.SpOC"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pulse_oximetry.Event_Series.Any_event.data.SpOC.value">
+         <path value="Pulse_oximetry.Event_Series.Any_event.data.SpOC.value"/>
+         <short value="SpOC"/>
+         <definition value="The oxygen content of the peripheral blood, calculated based on pulse oximetry and pulse CO-oximetry."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_oximetry.Event_Series.Any_event.data.SpOC.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_oximetry.Event_Series.Any_event.data.SpCO">
+         <path value="Pulse_oximetry.Event_Series.Any_event.data.SpCO"/>
+         <short value="SpCO"/>
+         <definition value="The saturation of carboxyhaemoglobin in the peripheral blood, measured via pulse CO-oximetry."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_oximetry.Event_Series.Any_event.data.SpCO"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pulse_oximetry.Event_Series.Any_event.data.SpCO.value">
+         <path value="Pulse_oximetry.Event_Series.Any_event.data.SpCO.value"/>
+         <short value="SpCO"/>
+         <definition value="The saturation of carboxyhaemoglobin in the peripheral blood, measured via pulse CO-oximetry."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_oximetry.Event_Series.Any_event.data.SpCO.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Ratio"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_oximetry.Event_Series.Any_event.data.SpMet">
+         <path value="Pulse_oximetry.Event_Series.Any_event.data.SpMet"/>
+         <short value="SpMet"/>
+         <definition value="The saturation of methaemoglobin in the peripheral blood, measured via pulse CO-oximetry."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_oximetry.Event_Series.Any_event.data.SpMet"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pulse_oximetry.Event_Series.Any_event.data.SpMet.value">
+         <path value="Pulse_oximetry.Event_Series.Any_event.data.SpMet.value"/>
+         <short value="SpMet"/>
+         <definition value="The saturation of methaemoglobin in the peripheral blood, measured via pulse CO-oximetry."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_oximetry.Event_Series.Any_event.data.SpMet.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Ratio"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_oximetry.Event_Series.Any_event.data.Waveform">
+         <path value="Pulse_oximetry.Event_Series.Any_event.data.Waveform"/>
+         <short value="Waveform"/>
+         <definition value="A waveform reading associated with the oximetry measurement."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pulse_oximetry.Event_Series.Any_event.data.Waveform"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_oximetry.Event_Series.Any_event.data.Multimedia_image">
+         <path value="Pulse_oximetry.Event_Series.Any_event.data.Multimedia_image"/>
+         <short value="Multimedia image"/>
+         <definition value="Details of a series of oximetry readings, other than waveforms, expressed as a multimedia image or series of images. Waveforms should be recorded using the Waveform slot and associated cluster archetype."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pulse_oximetry.Event_Series.Any_event.data.Multimedia_image"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_oximetry.Event_Series.Any_event.data.Interpretation">
+         <path value="Pulse_oximetry.Event_Series.Any_event.data.Interpretation"/>
+         <short value="Interpretation"/>
+         <definition value="Single word, phrase or brief description which represents the clinical meaning and significance of the measurements."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pulse_oximetry.Event_Series.Any_event.data.Interpretation"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Pulse_oximetry.Event_Series.Any_event.data.Interpretation.value">
+         <path value="Pulse_oximetry.Event_Series.Any_event.data.Interpretation.value"/>
+         <short value="Interpretation"/>
+         <definition value="Single word, phrase or brief description which represents the clinical meaning and significance of the measurements."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_oximetry.Event_Series.Any_event.data.Interpretation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_oximetry.Event_Series.Any_event.data.Comment">
+         <path value="Pulse_oximetry.Event_Series.Any_event.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="A text comment about the pulse oximetry result."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_oximetry.Event_Series.Any_event.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pulse_oximetry.Event_Series.Any_event.data.Comment.value">
+         <path value="Pulse_oximetry.Event_Series.Any_event.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="A text comment about the pulse oximetry result."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_oximetry.Event_Series.Any_event.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_oximetry.Event_Series.Any_event.state">
+         <path value="Pulse_oximetry.Event_Series.Any_event.state"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_oximetry.Event_Series.Any_event.state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_oximetry.Event_Series.Any_event.state.Exertion">
+         <path value="Pulse_oximetry.Event_Series.Any_event.state.Exertion"/>
+         <short value="Exertion"/>
+         <definition value="Details about physical activity undertaken at the time of measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_oximetry.Event_Series.Any_event.state.Exertion"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_oximetry.Event_Series.Any_event.state.Inspired_oxygen">
+         <path value="Pulse_oximetry.Event_Series.Any_event.state.Inspired_oxygen"/>
+         <short value="Inspired oxygen"/>
+         <definition value="Details of the amount of oxygen available to the subject at the time of observation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_oximetry.Event_Series.Any_event.state.Inspired_oxygen"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_oximetry.Event_Series.Any_event.state.Confounding_factors">
+         <path value="Pulse_oximetry.Event_Series.Any_event.state.Confounding_factors"/>
+         <short value="Confounding factors"/>
+         <definition value="Comment on and record other incidental factors that may be affect interpretation of the observation."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pulse_oximetry.Event_Series.Any_event.state.Confounding_factors"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Pulse_oximetry.Event_Series.Any_event.state.Confounding_factors.value">
+         <path value="Pulse_oximetry.Event_Series.Any_event.state.Confounding_factors.value"/>
+         <short value="Confounding factors"/>
+         <definition value="Comment on and record other incidental factors that may be affect interpretation of the observation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_oximetry.Event_Series.Any_event.state.Confounding_factors.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

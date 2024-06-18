@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Healtheducationrequest-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-healtheducationrequest-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-INSTRUCTION.health_education_request.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Healtheducationrequest"/>
+   <title value="Health education request"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Communication to improve health literacy and life skills."/>
+   <purpose value="To record an order for communication to improve health literacy and life skills."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Health_education_request">
+         <path value="Health_education_request"/>
+         <short value="Health education request"/>
+         <definition value="Communication to improve health literacy and life skills."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education_request"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education_request.protocol">
+         <path value="Health_education_request.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education_request.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education_request.protocol.Extension">
+         <path value="Health_education_request.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Health_education_request.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education_request.Current_Activity">
+         <path value="Health_education_request.Current_Activity"/>
+         <short value="Current Activity"/>
+         <definition value="Current Activity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education_request.Current_Activity"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education_request.Current_Activity.description">
+         <path value="Health_education_request.Current_Activity.description"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education_request.Current_Activity.description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education_request.Current_Activity.description.Topic">
+         <path value="Health_education_request.Current_Activity.description.Topic"/>
+         <short value="Topic"/>
+         <definition value="The headline topic of the education."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education_request.Current_Activity.description.Topic"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Health_education_request.Current_Activity.description.Topic.value">
+         <path value="Health_education_request.Current_Activity.description.Topic.value"/>
+         <short value="Topic"/>
+         <definition value="The headline topic of the education."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education_request.Current_Activity.description.Topic.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education_request.Current_Activity.description.Details">
+         <path value="Health_education_request.Current_Activity.description.Details"/>
+         <short value="Details"/>
+         <definition value="Narrative description about the proposed education."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Health_education_request.Current_Activity.description.Details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Health_education_request.Current_Activity.description.Details.value">
+         <path value="Health_education_request.Current_Activity.description.Details.value"/>
+         <short value="Details"/>
+         <definition value="Narrative description about the proposed education."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education_request.Current_Activity.description.Details.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education_request.Current_Activity.description.Number_of_sessions">
+         <path value="Health_education_request.Current_Activity.description.Number_of_sessions"/>
+         <short value="Number of sessions"/>
+         <definition value="The number of educational sessions to be undertaken."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education_request.Current_Activity.description.Number_of_sessions"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Health_education_request.Current_Activity.description.Number_of_sessions.value">
+         <path value="Health_education_request.Current_Activity.description.Number_of_sessions.value"/>
+         <short value="Number of sessions"/>
+         <definition value="The number of educational sessions to be undertaken."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education_request.Current_Activity.description.Number_of_sessions.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education_request.Current_Activity.description.Reason">
+         <path value="Health_education_request.Current_Activity.description.Reason"/>
+         <short value="Reason"/>
+         <definition value="The reason for undertaking this education process."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education_request.Current_Activity.description.Reason"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Health_education_request.Current_Activity.description.Reason.value">
+         <path value="Health_education_request.Current_Activity.description.Reason.value"/>
+         <short value="Reason"/>
+         <definition value="The reason for undertaking this education process."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education_request.Current_Activity.description.Reason.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education_request.Current_Activity.description.Proposed_outcome">
+         <path value="Health_education_request.Current_Activity.description.Proposed_outcome"/>
+         <short value="Proposed outcome"/>
+         <definition value="Narrative description about the goals or proposed outcome of the education."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education_request.Current_Activity.description.Proposed_outcome"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Health_education_request.Current_Activity.description.Proposed_outcome.value">
+         <path value="Health_education_request.Current_Activity.description.Proposed_outcome.value"/>
+         <short value="Proposed outcome"/>
+         <definition value="Narrative description about the goals or proposed outcome of the education."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education_request.Current_Activity.description.Proposed_outcome.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

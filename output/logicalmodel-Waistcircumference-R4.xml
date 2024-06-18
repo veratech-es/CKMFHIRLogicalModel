@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Waistcircumference-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-waistcircumference-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.waist_circumference.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Waistcircumference"/>
+   <title value="Waist circumference"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="The measurement of the distance around the waist."/>
+   <purpose value="To record the measurement of the circumference of the waist."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Waist_circumference">
+         <path value="Waist_circumference"/>
+         <short value="Waist circumference"/>
+         <definition value="The measurement of the distance around the waist."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Waist_circumference"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waist_circumference.protocol">
+         <path value="Waist_circumference.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waist_circumference.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waist_circumference.protocol.Method">
+         <path value="Waist_circumference.protocol.Method"/>
+         <short value="Method"/>
+         <definition value="The method how the waist circumference was measured."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waist_circumference.protocol.Method"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Waist_circumference.protocol.Method.value">
+         <path value="Waist_circumference.protocol.Method.value"/>
+         <short value="Method"/>
+         <definition value="The method how the waist circumference was measured."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waist_circumference.protocol.Method.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waist_circumference.protocol.Device">
+         <path value="Waist_circumference.protocol.Device"/>
+         <short value="Device"/>
+         <definition value="Details about the device used for the measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waist_circumference.protocol.Device"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waist_circumference.protocol.Extension">
+         <path value="Waist_circumference.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local context or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Waist_circumference.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waist_circumference.Event_Series">
+         <path value="Waist_circumference.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waist_circumference.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waist_circumference.Event_Series.Any_event">
+         <path value="Waist_circumference.Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Waist_circumference.Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waist_circumference.Event_Series.Any_event.data">
+         <path value="Waist_circumference.Event_Series.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waist_circumference.Event_Series.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waist_circumference.Event_Series.Any_event.data.Waist_circumference">
+         <path value="Waist_circumference.Event_Series.Any_event.data.Waist_circumference"/>
+         <short value="Waist circumference"/>
+         <definition value="The measurement of the circumference of the waist."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Waist_circumference.Event_Series.Any_event.data.Waist_circumference"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Waist_circumference.Event_Series.Any_event.data.Waist_circumference.value">
+         <path value="Waist_circumference.Event_Series.Any_event.data.Waist_circumference.value"/>
+         <short value="Waist circumference"/>
+         <definition value="The measurement of the circumference of the waist."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Waist_circumference.Event_Series.Any_event.data.Waist_circumference.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waist_circumference.Event_Series.Any_event.data.Comment">
+         <path value="Waist_circumference.Event_Series.Any_event.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the measurement of waist circumference not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waist_circumference.Event_Series.Any_event.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Waist_circumference.Event_Series.Any_event.data.Comment.value">
+         <path value="Waist_circumference.Event_Series.Any_event.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the measurement of waist circumference not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waist_circumference.Event_Series.Any_event.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waist_circumference.Event_Series.Any_event.state">
+         <path value="Waist_circumference.Event_Series.Any_event.state"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waist_circumference.Event_Series.Any_event.state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waist_circumference.Event_Series.Any_event.state.Confounding_factors">
+         <path value="Waist_circumference.Event_Series.Any_event.state.Confounding_factors"/>
+         <short value="Confounding factors"/>
+         <definition value="Narrative description of any issues or factors that may impact on the measurement."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Waist_circumference.Event_Series.Any_event.state.Confounding_factors"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Waist_circumference.Event_Series.Any_event.state.Confounding_factors.value">
+         <path value="Waist_circumference.Event_Series.Any_event.state.Confounding_factors.value"/>
+         <short value="Confounding factors"/>
+         <definition value="Narrative description of any issues or factors that may impact on the measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waist_circumference.Event_Series.Any_event.state.Confounding_factors.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

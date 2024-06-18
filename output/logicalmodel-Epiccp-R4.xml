@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Epiccp-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-epiccp-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.epic_cp.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Epiccp"/>
+   <title value="EPIC CP"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="EPIC CP is short for Expanded Prostate Cancer Index Composite for Clinical Practice, and is a clinical tool to measure urinary, bowel, sexual and vitality/hormonal health with an overall prostate cancer quality of life score."/>
+   <purpose value="To record urinary, bowel, sexual and vitality/hormonal health.&#xD;&#xA;EPIC-CP is an assessment tool constructed to record urinary incontinence, urinary irritation, bowel, sexual and hormonal health related quality of life domains."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="EPIC_CP">
+         <path value="EPIC_CP"/>
+         <short value="EPIC CP"/>
+         <definition value="EPIC CP is short for Expanded Prostate Cancer Index Composite for Clinical Practice, and is a clinical tool to measure urinary, bowel, sexual and vitality/hormonal health with an overall prostate cancer quality of life score."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="EPIC_CP"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="EPIC_CP.protocol">
+         <path value="EPIC_CP.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="EPIC_CP.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="EPIC_CP.protocol.Extension">
+         <path value="EPIC_CP.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local context or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="EPIC_CP.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="EPIC_CP.History">
+         <path value="EPIC_CP.History"/>
+         <short value="History"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="EPIC_CP.History"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="EPIC_CP.History.Any_event">
+         <path value="EPIC_CP.History.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="EPIC_CP.History.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="EPIC_CP.History.Any_event.data">
+         <path value="EPIC_CP.History.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="EPIC_CP.History.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="EPIC_CP.History.Any_event.data.1_Urinary_function">
+         <path value="EPIC_CP.History.Any_event.data.1_Urinary_function"/>
+         <short value="1 Urinary function"/>
+         <definition value="Overall, how much of a problem has your urinary function been for you?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="EPIC_CP.History.Any_event.data.1_Urinary_function"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="EPIC_CP.History.Any_event.data.1_Urinary_function.value">
+         <path value="EPIC_CP.History.Any_event.data.1_Urinary_function.value"/>
+         <short value="1 Urinary function"/>
+         <definition value="Overall, how much of a problem has your urinary function been for you?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="EPIC_CP.History.Any_event.data.1_Urinary_function.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="EPIC_CP.History.Any_event.data.2_Urinary_control">
+         <path value="EPIC_CP.History.Any_event.data.2_Urinary_control"/>
+         <short value="2 Urinary control"/>
+         <definition value="Which of the following best describes your urinary control?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="EPIC_CP.History.Any_event.data.2_Urinary_control"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="EPIC_CP.History.Any_event.data.2_Urinary_control.value">
+         <path value="EPIC_CP.History.Any_event.data.2_Urinary_control.value"/>
+         <short value="2 Urinary control"/>
+         <definition value="Which of the following best describes your urinary control?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="EPIC_CP.History.Any_event.data.2_Urinary_control.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="EPIC_CP.History.Any_event.data.3_Pads_or_adult_diapers">
+         <path value="EPIC_CP.History.Any_event.data.3_Pads_or_adult_diapers"/>
+         <short value="3 Pads or adult diapers"/>
+         <definition value="How many pads or adult diapers per day have you been using for urinary leakage?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="EPIC_CP.History.Any_event.data.3_Pads_or_adult_diapers"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="EPIC_CP.History.Any_event.data.3_Pads_or_adult_diapers.value">
+         <path value="EPIC_CP.History.Any_event.data.3_Pads_or_adult_diapers.value"/>
+         <short value="3 Pads or adult diapers"/>
+         <definition value="How many pads or adult diapers per day have you been using for urinary leakage?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="EPIC_CP.History.Any_event.data.3_Pads_or_adult_diapers.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="EPIC_CP.History.Any_event.data.4_Urinary_dripping_or_leakage">
+         <path value="EPIC_CP.History.Any_event.data.4_Urinary_dripping_or_leakage"/>
+         <short value="4 Urinary dripping or leakage"/>
+         <definition value="How big a problem, if any, has urinary dripping or leakage been for you?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="EPIC_CP.History.Any_event.data.4_Urinary_dripping_or_leakage"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="EPIC_CP.History.Any_event.data.4_Urinary_dripping_or_leakage.value">
+         <path value="EPIC_CP.History.Any_event.data.4_Urinary_dripping_or_leakage.value"/>
+         <short value="4 Urinary dripping or leakage"/>
+         <definition value="How big a problem, if any, has urinary dripping or leakage been for you?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="EPIC_CP.History.Any_event.data.4_Urinary_dripping_or_leakage.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="EPIC_CP.History.Any_event.data.Urinary_Incontinence_Symptom_Score">
+         <path value="EPIC_CP.History.Any_event.data.Urinary_Incontinence_Symptom_Score"/>
+         <short value="Urinary Incontinence Symptom Score"/>
+         <definition value="ADD the answers from questions 2‐4 to calculate&#xD;&#xA;the Urinary Incontinence Symptom Score (out of 12)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="EPIC_CP.History.Any_event.data.Urinary_Incontinence_Symptom_Score"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="EPIC_CP.History.Any_event.data.Urinary_Incontinence_Symptom_Score.value">
+         <path value="EPIC_CP.History.Any_event.data.Urinary_Incontinence_Symptom_Score.value"/>
+         <short value="Urinary Incontinence Symptom Score"/>
+         <definition value="ADD the answers from questions 2‐4 to calculate&#xD;&#xA;the Urinary Incontinence Symptom Score (out of 12)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="EPIC_CP.History.Any_event.data.Urinary_Incontinence_Symptom_Score.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="EPIC_CP.History.Any_event.data.5a_Pain_or_burning_with_urination">
+         <path value="EPIC_CP.History.Any_event.data.5a_Pain_or_burning_with_urination"/>
+         <short value="5a Pain or burning with urination"/>
+         <definition value="How big a problem, if any, has the following been for you?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="EPIC_CP.History.Any_event.data.5a_Pain_or_burning_with_urination"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="EPIC_CP.History.Any_event.data.5a_Pain_or_burning_with_urination.value">
+         <path value="EPIC_CP.History.Any_event.data.5a_Pain_or_burning_with_urination.value"/>
+         <short value="5a Pain or burning with urination"/>
+         <definition value="How big a problem, if any, has the following been for you?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="EPIC_CP.History.Any_event.data.5a_Pain_or_burning_with_urination.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="EPIC_CP.History.Any_event.data.5b_Weak_urine_stream_incomplete_bladder_emptying">
+         <path value="EPIC_CP.History.Any_event.data.5b_Weak_urine_stream_incomplete_bladder_emptying"/>
+         <short value="5b Weak urine stream/incomplete bladder emptying"/>
+         <definition value="How big a problem, if any, has the following been for you?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="EPIC_CP.History.Any_event.data.5b_Weak_urine_stream_incomplete_bladder_emptying"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="EPIC_CP.History.Any_event.data.5b_Weak_urine_stream_incomplete_bladder_emptying.value">
+         <path value="EPIC_CP.History.Any_event.data.5b_Weak_urine_stream_incomplete_bladder_emptying.value"/>
+         <short value="5b Weak urine stream/incomplete bladder emptying"/>
+         <definition value="How big a problem, if any, has the following been for you?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="EPIC_CP.History.Any_event.data.5b_Weak_urine_stream_incomplete_bladder_emptying.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="EPIC_CP.History.Any_event.data.5c_Need_to_urinate_frequently">
+         <path value="EPIC_CP.History.Any_event.data.5c_Need_to_urinate_frequently"/>
+         <short value="5c Need to urinate frequently"/>
+         <definition value="How big a problem, if any, has the following been for you?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="EPIC_CP.History.Any_event.data.5c_Need_to_urinate_frequently"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="EPIC_CP.History.Any_event.data.5c_Need_to_urinate_frequently.value">
+         <path value="EPIC_CP.History.Any_event.data.5c_Need_to_urinate_frequently.value"/>
+         <short value="5c Need to urinate frequently"/>
+         <definition value="How big a problem, if any, has the following been for you?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="EPIC_CP.History.Any_event.data.5c_Need_to_urinate_frequently.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="EPIC_CP.History.Any_event.data.Urinary_Irritation_Obstruction_Symptom_Score">
+         <path value="EPIC_CP.History.Any_event.data.Urinary_Irritation_Obstruction_Symptom_Score"/>
+         <short value="Urinary Irritation/Obstruction Symptom Score"/>
+         <definition value="ADD the answers from questions 5a‐5c to calculate the&#xD;&#xA;Urinary Irritation/Obstruction Symptom Score (out of 12)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="EPIC_CP.History.Any_event.data.Urinary_Irritation_Obstruction_Symptom_Score"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="EPIC_CP.History.Any_event.data.Urinary_Irritation_Obstruction_Symptom_Score.value">
+         <path value="EPIC_CP.History.Any_event.data.Urinary_Irritation_Obstruction_Symptom_Score.value"/>
+         <short value="Urinary Irritation/Obstruction Symptom Score"/>
+         <definition value="ADD the answers from questions 5a‐5c to calculate the&#xD;&#xA;Urinary Irritation/Obstruction Symptom Score (out of 12)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="EPIC_CP.History.Any_event.data.Urinary_Irritation_Obstruction_Symptom_Score.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="EPIC_CP.History.Any_event.data.6a_Rectal_pain_or_urgency_of_bowel_movements">
+         <path value="EPIC_CP.History.Any_event.data.6a_Rectal_pain_or_urgency_of_bowel_movements"/>
+         <short value="6a Rectal pain or urgency of bowel movements"/>
+         <definition value="How big a problem, if any, has the following been for you?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="EPIC_CP.History.Any_event.data.6a_Rectal_pain_or_urgency_of_bowel_movements"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="EPIC_CP.History.Any_event.data.6a_Rectal_pain_or_urgency_of_bowel_movements.value">
+         <path value="EPIC_CP.History.Any_event.data.6a_Rectal_pain_or_urgency_of_bowel_movements.value"/>
+         <short value="6a Rectal pain or urgency of bowel movements"/>
+         <definition value="How big a problem, if any, has the following been for you?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="EPIC_CP.History.Any_event.data.6a_Rectal_pain_or_urgency_of_bowel_movements.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="EPIC_CP.History.Any_event.data.6b_Increased_frequency_of_your_bowel_movements">
+         <path value="EPIC_CP.History.Any_event.data.6b_Increased_frequency_of_your_bowel_movements"/>
+         <short value="6b Increased frequency of your bowel movements"/>
+         <definition value="How big a problem, if any, has the following been for you?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="EPIC_CP.History.Any_event.data.6b_Increased_frequency_of_your_bowel_movements"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="EPIC_CP.History.Any_event.data.6b_Increased_frequency_of_your_bowel_movements.value">
+         <path value="EPIC_CP.History.Any_event.data.6b_Increased_frequency_of_your_bowel_movements.value"/>
+         <short value="6b Increased frequency of your bowel movements"/>
+         <definition value="How big a problem, if any, has the following been for you?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="EPIC_CP.History.Any_event.data.6b_Increased_frequency_of_your_bowel_movements.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="EPIC_CP.History.Any_event.data.6c_Overall_problems_with_your_bowel_habits">
+         <path value="EPIC_CP.History.Any_event.data.6c_Overall_problems_with_your_bowel_habits"/>
+         <short value="6c Overall problems with your bowel habits"/>
+         <definition value="How big a problem, if any, has the following been for you?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="EPIC_CP.History.Any_event.data.6c_Overall_problems_with_your_bowel_habits"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="EPIC_CP.History.Any_event.data.6c_Overall_problems_with_your_bowel_habits.value">
+         <path value="EPIC_CP.History.Any_event.data.6c_Overall_problems_with_your_bowel_habits.value"/>
+         <short value="6c Overall problems with your bowel habits"/>
+         <definition value="How big a problem, if any, has the following been for you?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="EPIC_CP.History.Any_event.data.6c_Overall_problems_with_your_bowel_habits.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="EPIC_CP.History.Any_event.data.Bowel_Symptom_Score">
+         <path value="EPIC_CP.History.Any_event.data.Bowel_Symptom_Score"/>
+         <short value="Bowel Symptom Score"/>
+         <definition value="ADD the answers from questions 6a‐6c&#xD;&#xA;to calculate the Bowel Symptom Score (out of 12)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="EPIC_CP.History.Any_event.data.Bowel_Symptom_Score"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="EPIC_CP.History.Any_event.data.Bowel_Symptom_Score.value">
+         <path value="EPIC_CP.History.Any_event.data.Bowel_Symptom_Score.value"/>
+         <short value="Bowel Symptom Score"/>
+         <definition value="ADD the answers from questions 6a‐6c&#xD;&#xA;to calculate the Bowel Symptom Score (out of 12)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="EPIC_CP.History.Any_event.data.Bowel_Symptom_Score.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="EPIC_CP.History.Any_event.data.7_Orgasm_(Climax)">
+         <path value="EPIC_CP.History.Any_event.data.7_Orgasm_(Climax)"/>
+         <short value="7 Orgasm (Climax)"/>
+         <definition value="How would you rate your ability to reach orgasm (climax)?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="EPIC_CP.History.Any_event.data.7_Orgasm_(Climax)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="EPIC_CP.History.Any_event.data.7_Orgasm_(Climax).value">
+         <path value="EPIC_CP.History.Any_event.data.7_Orgasm_(Climax).value"/>
+         <short value="7 Orgasm (Climax)"/>
+         <definition value="How would you rate your ability to reach orgasm (climax)?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="EPIC_CP.History.Any_event.data.7_Orgasm_(Climax).value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="EPIC_CP.History.Any_event.data.8_Erection_quality">
+         <path value="EPIC_CP.History.Any_event.data.8_Erection_quality"/>
+         <short value="8 Erection quality"/>
+         <definition value="How would you describe the usual quality of your erections?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="EPIC_CP.History.Any_event.data.8_Erection_quality"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="EPIC_CP.History.Any_event.data.8_Erection_quality.value">
+         <path value="EPIC_CP.History.Any_event.data.8_Erection_quality.value"/>
+         <short value="8 Erection quality"/>
+         <definition value="How would you describe the usual quality of your erections?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="EPIC_CP.History.Any_event.data.8_Erection_quality.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="EPIC_CP.History.Any_event.data.9_Sexual_function">
+         <path value="EPIC_CP.History.Any_event.data.9_Sexual_function"/>
+         <short value="9 Sexual function"/>
+         <definition value="Overall, how much of a problem has your sexual function or lack of sexual function been for you?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="EPIC_CP.History.Any_event.data.9_Sexual_function"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="EPIC_CP.History.Any_event.data.9_Sexual_function.value">
+         <path value="EPIC_CP.History.Any_event.data.9_Sexual_function.value"/>
+         <short value="9 Sexual function"/>
+         <definition value="Overall, how much of a problem has your sexual function or lack of sexual function been for you?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="EPIC_CP.History.Any_event.data.9_Sexual_function.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="EPIC_CP.History.Any_event.data.Sexual_Symptom_Score">
+         <path value="EPIC_CP.History.Any_event.data.Sexual_Symptom_Score"/>
+         <short value="Sexual Symptom Score"/>
+         <definition value="ADD the answers from questions 7‐9 to&#xD;&#xA;calculate the Sexual Symptom Score (out of 12)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="EPIC_CP.History.Any_event.data.Sexual_Symptom_Score"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="EPIC_CP.History.Any_event.data.Sexual_Symptom_Score.value">
+         <path value="EPIC_CP.History.Any_event.data.Sexual_Symptom_Score.value"/>
+         <short value="Sexual Symptom Score"/>
+         <definition value="ADD the answers from questions 7‐9 to&#xD;&#xA;calculate the Sexual Symptom Score (out of 12)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="EPIC_CP.History.Any_event.data.Sexual_Symptom_Score.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="EPIC_CP.History.Any_event.data.10a_Hot_flashes_or_breast_tenderness_enlargement">
+         <path value="EPIC_CP.History.Any_event.data.10a_Hot_flashes_or_breast_tenderness_enlargement"/>
+         <short value="10a Hot flashes or breast tenderness/enlargement"/>
+         <definition value="How big a problem, if any, has the following been for you?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="EPIC_CP.History.Any_event.data.10a_Hot_flashes_or_breast_tenderness_enlargement"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="EPIC_CP.History.Any_event.data.10a_Hot_flashes_or_breast_tenderness_enlargement.value">
+         <path value="EPIC_CP.History.Any_event.data.10a_Hot_flashes_or_breast_tenderness_enlargement.value"/>
+         <short value="10a Hot flashes or breast tenderness/enlargement"/>
+         <definition value="How big a problem, if any, has the following been for you?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="EPIC_CP.History.Any_event.data.10a_Hot_flashes_or_breast_tenderness_enlargement.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="EPIC_CP.History.Any_event.data.10b_Feeling_depressed">
+         <path value="EPIC_CP.History.Any_event.data.10b_Feeling_depressed"/>
+         <short value="10b Feeling depressed"/>
+         <definition value="How big a problem, if any, has the following been for you?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="EPIC_CP.History.Any_event.data.10b_Feeling_depressed"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="EPIC_CP.History.Any_event.data.10b_Feeling_depressed.value">
+         <path value="EPIC_CP.History.Any_event.data.10b_Feeling_depressed.value"/>
+         <short value="10b Feeling depressed"/>
+         <definition value="How big a problem, if any, has the following been for you?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="EPIC_CP.History.Any_event.data.10b_Feeling_depressed.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="EPIC_CP.History.Any_event.data.10c_Lack_of_energy">
+         <path value="EPIC_CP.History.Any_event.data.10c_Lack_of_energy"/>
+         <short value="10c Lack of energy"/>
+         <definition value="How big a problem, if any, has the following been for you?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="EPIC_CP.History.Any_event.data.10c_Lack_of_energy"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="EPIC_CP.History.Any_event.data.10c_Lack_of_energy.value">
+         <path value="EPIC_CP.History.Any_event.data.10c_Lack_of_energy.value"/>
+         <short value="10c Lack of energy"/>
+         <definition value="How big a problem, if any, has the following been for you?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="EPIC_CP.History.Any_event.data.10c_Lack_of_energy.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="EPIC_CP.History.Any_event.data.Vitality_Hormonal_Symptom_Score">
+         <path value="EPIC_CP.History.Any_event.data.Vitality_Hormonal_Symptom_Score"/>
+         <short value="Vitality/Hormonal Symptom Score"/>
+         <definition value="ADD the answers from questions 10a‐10c to calculate&#xD;&#xA;the Vitality/Hormonal Symptom Score (out of 12)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="EPIC_CP.History.Any_event.data.Vitality_Hormonal_Symptom_Score"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="EPIC_CP.History.Any_event.data.Vitality_Hormonal_Symptom_Score.value">
+         <path value="EPIC_CP.History.Any_event.data.Vitality_Hormonal_Symptom_Score.value"/>
+         <short value="Vitality/Hormonal Symptom Score"/>
+         <definition value="ADD the answers from questions 10a‐10c to calculate&#xD;&#xA;the Vitality/Hormonal Symptom Score (out of 12)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="EPIC_CP.History.Any_event.data.Vitality_Hormonal_Symptom_Score.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="EPIC_CP.History.Any_event.data.Overall_Prostate_Cancer_QOL_Score">
+         <path value="EPIC_CP.History.Any_event.data.Overall_Prostate_Cancer_QOL_Score"/>
+         <short value="Overall Prostate Cancer QOL Score"/>
+         <definition value="Add the five domain summary scores to calculate the Overall Prostate Cancer QOL Score (out of 60)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="EPIC_CP.History.Any_event.data.Overall_Prostate_Cancer_QOL_Score"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="EPIC_CP.History.Any_event.data.Overall_Prostate_Cancer_QOL_Score.value">
+         <path value="EPIC_CP.History.Any_event.data.Overall_Prostate_Cancer_QOL_Score.value"/>
+         <short value="Overall Prostate Cancer QOL Score"/>
+         <definition value="Add the five domain summary scores to calculate the Overall Prostate Cancer QOL Score (out of 60)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="EPIC_CP.History.Any_event.data.Overall_Prostate_Cancer_QOL_Score.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

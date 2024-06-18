@@ -1,0 +1,838 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Substanceusesummary-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-substanceusesummary-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-EVALUATION.substance_use_summary.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Substanceusesummary"/>
+   <title value="Substance use summary"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Summary or persistent information about typical use of a specific substance or class of substances that may harm an individual's health or social well-being."/>
+   <purpose value="To record summary or persistent information about the typical use of a specific substance or class of substances that may harm an individual's health or social well-being."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Substance_use_summary">
+         <path value="Substance_use_summary"/>
+         <short value="Substance use summary"/>
+         <definition value="Summary or persistent information about typical use of a specific substance or class of substances that may harm an individual's health or social well-being."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_use_summary"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Substance_use_summary.protocol">
+         <path value="Substance_use_summary.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_use_summary.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Substance_use_summary.protocol.Last_updated">
+         <path value="Substance_use_summary.protocol.Last_updated"/>
+         <short value="Last updated"/>
+         <definition value="The date this Substance use summary was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_use_summary.protocol.Last_updated"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Substance_use_summary.protocol.Last_updated.value">
+         <path value="Substance_use_summary.protocol.Last_updated.value"/>
+         <short value="Last updated"/>
+         <definition value="The date this Substance use summary was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_use_summary.protocol.Last_updated.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Substance_use_summary.protocol.Extension">
+         <path value="Substance_use_summary.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models or formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Substance_use_summary.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Substance_use_summary.data">
+         <path value="Substance_use_summary.data"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_use_summary.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Substance_use_summary.data.Substance_name">
+         <path value="Substance_use_summary.data.Substance_name"/>
+         <short value="Substance name"/>
+         <definition value="The name of the substance or class of substance."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_use_summary.data.Substance_name"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Substance_use_summary.data.Substance_name.value">
+         <path value="Substance_use_summary.data.Substance_name.value"/>
+         <short value="Substance name"/>
+         <definition value="The name of the substance or class of substance."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_use_summary.data.Substance_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Substance_use_summary.data.Overall_status">
+         <path value="Substance_use_summary.data.Overall_status"/>
+         <short value="Overall status"/>
+         <definition value="Statement about current use of the substance, by all routes."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_use_summary.data.Overall_status"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Substance_use_summary.data.Overall_status.value">
+         <path value="Substance_use_summary.data.Overall_status.value"/>
+         <short value="Overall status"/>
+         <definition value="Statement about current use of the substance, by all routes."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_use_summary.data.Overall_status.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Substance_use_summary.data.Overall_description">
+         <path value="Substance_use_summary.data.Overall_description"/>
+         <short value="Overall description"/>
+         <definition value="Narrative summary about the use of the substance over the lifetime of the individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_use_summary.data.Overall_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Substance_use_summary.data.Overall_description.value">
+         <path value="Substance_use_summary.data.Overall_description.value"/>
+         <short value="Overall description"/>
+         <definition value="Narrative summary about the use of the substance over the lifetime of the individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_use_summary.data.Overall_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Substance_use_summary.data.First_ever_use">
+         <path value="Substance_use_summary.data.First_ever_use"/>
+         <short value="First ever use"/>
+         <definition value="Date when the individual first used the substance."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_use_summary.data.First_ever_use"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Substance_use_summary.data.First_ever_use.value">
+         <path value="Substance_use_summary.data.First_ever_use.value"/>
+         <short value="First ever use"/>
+         <definition value="Date when the individual first used the substance."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_use_summary.data.First_ever_use.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Substance_use_summary.data.Regular_use_commenced">
+         <path value="Substance_use_summary.data.Regular_use_commenced"/>
+         <short value="Regular use commenced"/>
+         <definition value="The date when the individual first started frequent or regular, but usually non-daily, use of the substance."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_use_summary.data.Regular_use_commenced"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Substance_use_summary.data.Regular_use_commenced.value">
+         <path value="Substance_use_summary.data.Regular_use_commenced.value"/>
+         <short value="Regular use commenced"/>
+         <definition value="The date when the individual first started frequent or regular, but usually non-daily, use of the substance."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_use_summary.data.Regular_use_commenced.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Substance_use_summary.data.Daily_use_commenced">
+         <path value="Substance_use_summary.data.Daily_use_commenced"/>
+         <short value="Daily use commenced"/>
+         <definition value="The date when the individual first started daily use of the substance."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_use_summary.data.Daily_use_commenced"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Substance_use_summary.data.Daily_use_commenced.value">
+         <path value="Substance_use_summary.data.Daily_use_commenced.value"/>
+         <short value="Daily use commenced"/>
+         <definition value="The date when the individual first started daily use of the substance."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_use_summary.data.Daily_use_commenced.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Substance_use_summary.data.Per_episode">
+         <path value="Substance_use_summary.data.Per_episode"/>
+         <short value="Per episode"/>
+         <definition value="Details about a period of use of the substance identified in 'Substance name' or, if a class of substance is used in 'Substance name, to provide details about the use of a specific substance."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Substance_use_summary.data.Per_episode"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Substance_use_summary.data.Per_episode.Episode_label">
+         <path value="Substance_use_summary.data.Per_episode.Episode_label"/>
+         <short value="Episode label"/>
+         <definition value="Identification of an episode of substance use - either as a number in a sequence or a named event."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_use_summary.data.Per_episode.Episode_label"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Substance_use_summary.data.Per_episode.Episode_label.value_DV_COUNT">
+         <path value="Substance_use_summary.data.Per_episode.Episode_label.value_DV_COUNT"/>
+         <short value="Episode label"/>
+         <definition value="Identification of an episode of substance use - either as a number in a sequence or a named event."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_use_summary.data.Per_episode.Episode_label.value_DV_COUNT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Substance_use_summary.data.Per_episode.Episode_label.value_DV_TEXT">
+         <path value="Substance_use_summary.data.Per_episode.Episode_label.value_DV_TEXT"/>
+         <short value="Episode label"/>
+         <definition value="Identification of an episode of substance use - either as a number in a sequence or a named event."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_use_summary.data.Per_episode.Episode_label.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Substance_use_summary.data.Per_episode.Episode_start_date">
+         <path value="Substance_use_summary.data.Per_episode.Episode_start_date"/>
+         <short value="Episode start date"/>
+         <definition value="Date when this episode commenced."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_use_summary.data.Per_episode.Episode_start_date"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Substance_use_summary.data.Per_episode.Episode_start_date.value">
+         <path value="Substance_use_summary.data.Per_episode.Episode_start_date.value"/>
+         <short value="Episode start date"/>
+         <definition value="Date when this episode commenced."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_use_summary.data.Per_episode.Episode_start_date.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Substance_use_summary.data.Per_episode.Specific_substance_name">
+         <path value="Substance_use_summary.data.Per_episode.Specific_substance_name"/>
+         <short value="Specific substance name"/>
+         <definition value="The name of the specific substance used during the episode."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_use_summary.data.Per_episode.Specific_substance_name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Substance_use_summary.data.Per_episode.Specific_substance_name.value">
+         <path value="Substance_use_summary.data.Per_episode.Specific_substance_name.value"/>
+         <short value="Specific substance name"/>
+         <definition value="The name of the specific substance used during the episode."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_use_summary.data.Per_episode.Specific_substance_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Substance_use_summary.data.Per_episode.Status">
+         <path value="Substance_use_summary.data.Per_episode.Status"/>
+         <short value="Status"/>
+         <definition value="Reported usage of the specific substance during the episode."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_use_summary.data.Per_episode.Status"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Substance_use_summary.data.Per_episode.Status.value">
+         <path value="Substance_use_summary.data.Per_episode.Status.value"/>
+         <short value="Status"/>
+         <definition value="Reported usage of the specific substance during the episode."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_use_summary.data.Per_episode.Status.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Substance_use_summary.data.Per_episode.Episode_description">
+         <path value="Substance_use_summary.data.Per_episode.Episode_description"/>
+         <short value="Episode description"/>
+         <definition value="Narrative summary about use of the specific substance during the episode."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_use_summary.data.Per_episode.Episode_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Substance_use_summary.data.Per_episode.Episode_description.value">
+         <path value="Substance_use_summary.data.Per_episode.Episode_description.value"/>
+         <short value="Episode description"/>
+         <definition value="Narrative summary about use of the specific substance during the episode."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_use_summary.data.Per_episode.Episode_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Substance_use_summary.data.Per_episode.Pattern">
+         <path value="Substance_use_summary.data.Per_episode.Pattern"/>
+         <short value="Pattern"/>
+         <definition value="The typical pattern of frequency of use of the specific substance during the episode."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Substance_use_summary.data.Per_episode.Pattern"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Substance_use_summary.data.Per_episode.Pattern.value_DV_TEXT">
+         <path value="Substance_use_summary.data.Per_episode.Pattern.value_DV_TEXT"/>
+         <short value="Pattern"/>
+         <definition value="The typical pattern of frequency of use of the specific substance during the episode."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_use_summary.data.Per_episode.Pattern.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Substance_use_summary.data.Per_episode.Pattern.value_DV_CODED_TEXT">
+         <path value="Substance_use_summary.data.Per_episode.Pattern.value_DV_CODED_TEXT"/>
+         <short value="Pattern"/>
+         <definition value="The typical pattern of frequency of use of the specific substance during the episode."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_use_summary.data.Per_episode.Pattern.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Substance_use_summary.data.Per_episode.Pattern.value_DvQuantity">
+         <path value="Substance_use_summary.data.Per_episode.Pattern.value_DvQuantity"/>
+         <short value="Pattern"/>
+         <definition value="The typical pattern of frequency of use of the specific substance during the episode."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_use_summary.data.Per_episode.Pattern.value_DvQuantity"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Substance_use_summary.data.Per_episode.Typical_amount">
+         <path value="Substance_use_summary.data.Per_episode.Typical_amount"/>
+         <short value="Typical amount"/>
+         <definition value="Typical amount of use of the specified substance during the episode."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_use_summary.data.Per_episode.Typical_amount"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Substance_use_summary.data.Per_episode.Typical_amount.value_DvQuantity">
+         <path value="Substance_use_summary.data.Per_episode.Typical_amount.value_DvQuantity"/>
+         <short value="Typical amount"/>
+         <definition value="Typical amount of use of the specified substance during the episode."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_use_summary.data.Per_episode.Typical_amount.value_DvQuantity"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Substance_use_summary.data.Per_episode.Typical_amount.value_DV_TEXT">
+         <path value="Substance_use_summary.data.Per_episode.Typical_amount.value_DV_TEXT"/>
+         <short value="Typical amount"/>
+         <definition value="Typical amount of use of the specified substance during the episode."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_use_summary.data.Per_episode.Typical_amount.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Substance_use_summary.data.Per_episode.Route">
+         <path value="Substance_use_summary.data.Per_episode.Route"/>
+         <short value="Route"/>
+         <definition value="The name of the route of administration of the specified substance during the episode."/>
+         <min value="1"/>
+         <max value="*"/>
+         <base>
+            <path value="Substance_use_summary.data.Per_episode.Route"/>
+            <min value="1"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Substance_use_summary.data.Per_episode.Route.value">
+         <path value="Substance_use_summary.data.Per_episode.Route.value"/>
+         <short value="Route"/>
+         <definition value="The name of the route of administration of the specified substance during the episode."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_use_summary.data.Per_episode.Route.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Substance_use_summary.data.Per_episode.Episode_end_date">
+         <path value="Substance_use_summary.data.Per_episode.Episode_end_date"/>
+         <short value="Episode end date"/>
+         <definition value="Date when this episode ceased."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_use_summary.data.Per_episode.Episode_end_date"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Substance_use_summary.data.Per_episode.Episode_end_date.value">
+         <path value="Substance_use_summary.data.Per_episode.Episode_end_date.value"/>
+         <short value="Episode end date"/>
+         <definition value="Date when this episode ceased."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_use_summary.data.Per_episode.Episode_end_date.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Substance_use_summary.data.Per_episode.Number_of_quit_attempts">
+         <path value="Substance_use_summary.data.Per_episode.Number_of_quit_attempts"/>
+         <short value="Number of quit attempts"/>
+         <definition value="Total number of times the individual has attempted to stop using the specified substance within this episode."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_use_summary.data.Per_episode.Number_of_quit_attempts"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Substance_use_summary.data.Per_episode.Number_of_quit_attempts.value">
+         <path value="Substance_use_summary.data.Per_episode.Number_of_quit_attempts.value"/>
+         <short value="Number of quit attempts"/>
+         <definition value="Total number of times the individual has attempted to stop using the specified substance within this episode."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_use_summary.data.Per_episode.Number_of_quit_attempts.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Substance_use_summary.data.Per_episode.Episode_details">
+         <path value="Substance_use_summary.data.Per_episode.Episode_details"/>
+         <short value="Episode details"/>
+         <definition value="Additional details about the episode."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Substance_use_summary.data.Per_episode.Episode_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Substance_use_summary.data.Per_episode.Episode_comment">
+         <path value="Substance_use_summary.data.Per_episode.Episode_comment"/>
+         <short value="Episode comment"/>
+         <definition value="Additional narrative about use of the specific substance during this episode, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_use_summary.data.Per_episode.Episode_comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Substance_use_summary.data.Per_episode.Episode_comment.value">
+         <path value="Substance_use_summary.data.Per_episode.Episode_comment.value"/>
+         <short value="Episode comment"/>
+         <definition value="Additional narrative about use of the specific substance during this episode, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_use_summary.data.Per_episode.Episode_comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Substance_use_summary.data.Overall_details">
+         <path value="Substance_use_summary.data.Overall_details"/>
+         <short value="Overall details"/>
+         <definition value="Additional structured details about the overall use of the substance."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Substance_use_summary.data.Overall_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Substance_use_summary.data.Overall_quit_date">
+         <path value="Substance_use_summary.data.Overall_quit_date"/>
+         <short value="Overall quit date"/>
+         <definition value="The date when the individual last used the substance."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_use_summary.data.Overall_quit_date"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Substance_use_summary.data.Overall_quit_date.value">
+         <path value="Substance_use_summary.data.Overall_quit_date.value"/>
+         <short value="Overall quit date"/>
+         <definition value="The date when the individual last used the substance."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_use_summary.data.Overall_quit_date.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Substance_use_summary.data.Overall_comment">
+         <path value="Substance_use_summary.data.Overall_comment"/>
+         <short value="Overall comment"/>
+         <definition value="Additional narrative about the overall use of the substance that has not been captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_use_summary.data.Overall_comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Substance_use_summary.data.Overall_comment.value">
+         <path value="Substance_use_summary.data.Overall_comment.value"/>
+         <short value="Overall comment"/>
+         <definition value="Additional narrative about the overall use of the substance that has not been captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_use_summary.data.Overall_comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

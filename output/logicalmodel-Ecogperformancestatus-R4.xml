@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Ecogperformancestatus-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-ecogperformancestatus-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.ecog.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Ecogperformancestatus"/>
+   <title value="ECOG performance status"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="A scale used by clinicians to assess the functional performance status of a patient with a diagnosis of cancer. Also known as the WHO performance status or Zubrod performance status."/>
+   <purpose value="To record the measurement of the functional performance status of a patient with a diagnosis of cancer."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="ECOG_performance_status">
+         <path value="ECOG_performance_status"/>
+         <short value="ECOG performance status"/>
+         <definition value="A scale used by clinicians to assess the functional performance status of a patient with a diagnosis of cancer. Also known as the WHO performance status or Zubrod performance status."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="ECOG_performance_status"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ECOG_performance_status.protocol">
+         <path value="ECOG_performance_status.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ECOG_performance_status.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ECOG_performance_status.protocol.Extension">
+         <path value="ECOG_performance_status.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="ECOG_performance_status.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ECOG_performance_status.Event_Series">
+         <path value="ECOG_performance_status.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ECOG_performance_status.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ECOG_performance_status.Event_Series.Any_event">
+         <path value="ECOG_performance_status.Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="ECOG_performance_status.Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ECOG_performance_status.Event_Series.Any_event.data">
+         <path value="ECOG_performance_status.Event_Series.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ECOG_performance_status.Event_Series.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ECOG_performance_status.Event_Series.Any_event.data.ECOG_performance_status">
+         <path value="ECOG_performance_status.Event_Series.Any_event.data.ECOG_performance_status"/>
+         <short value="ECOG performance status"/>
+         <definition value="The functional performance status of a patient with a diagnosis of cancer."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="ECOG_performance_status.Event_Series.Any_event.data.ECOG_performance_status"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="ECOG_performance_status.Event_Series.Any_event.data.ECOG_performance_status.value">
+         <path value="ECOG_performance_status.Event_Series.Any_event.data.ECOG_performance_status.value"/>
+         <short value="ECOG performance status"/>
+         <definition value="The functional performance status of a patient with a diagnosis of cancer."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ECOG_performance_status.Event_Series.Any_event.data.ECOG_performance_status.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ECOG_performance_status.Event_Series.Any_event.data.Comment">
+         <path value="ECOG_performance_status.Event_Series.Any_event.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the overall ECOG performance status not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ECOG_performance_status.Event_Series.Any_event.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="ECOG_performance_status.Event_Series.Any_event.data.Comment.value">
+         <path value="ECOG_performance_status.Event_Series.Any_event.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the overall ECOG performance status not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ECOG_performance_status.Event_Series.Any_event.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

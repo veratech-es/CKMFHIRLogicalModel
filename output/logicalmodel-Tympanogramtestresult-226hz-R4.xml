@@ -1,0 +1,3049 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Tympanogramtestresult-226hz-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-tympanogramtestresult-226hz-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.tympanogram_226hz.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Tympanogramtestresult-226hz"/>
+   <title value="Tympanogram test result - 226Hz"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Record of measurements of movement at the tympanic membrane in response to a 226Hz probe tone and changes in air pressure in the ear canal, and their clinical interpretation as an indication of middle ear function."/>
+   <purpose value="To record measurements based on a 226 Hz probe tone, of the admittance or impedance of the middle ear system as a function of changing the external ear canal pressure.&#xD;&#xA;&#xD;&#xA;To infer middle ear function from objective measurements based on a fixed 226Hz probe tone, taken at the tympanic membrane of the mobility of the tympanic membrane, in reponse to varying air pressure in the ear canal."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Tympanogram_test_result___226Hz">
+         <path value="Tympanogram_test_result___226Hz"/>
+         <short value="Tympanogram test result - 226Hz"/>
+         <definition value="Record of measurements of movement at the tympanic membrane in response to a 226Hz probe tone and changes in air pressure in the ear canal, and their clinical interpretation as an indication of middle ear function."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.protocol">
+         <path value="Tympanogram_test_result___226Hz.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.protocol.Direction_of_pressure_change">
+         <path value="Tympanogram_test_result___226Hz.protocol.Direction_of_pressure_change"/>
+         <short value="Direction of pressure change"/>
+         <definition value="The dirction of change of pressure administered via the ear canal."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.protocol.Direction_of_pressure_change"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.protocol.Direction_of_pressure_change.value">
+         <path value="Tympanogram_test_result___226Hz.protocol.Direction_of_pressure_change.value"/>
+         <short value="Direction of pressure change"/>
+         <definition value="The dirction of change of pressure administered via the ear canal."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.protocol.Direction_of_pressure_change.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.protocol.Rate_of_pressure_change">
+         <path value="Tympanogram_test_result___226Hz.protocol.Rate_of_pressure_change"/>
+         <short value="Rate of pressure change"/>
+         <definition value="The rate of change of pressure used in tympanometry."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.protocol.Rate_of_pressure_change"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.protocol.Rate_of_pressure_change.value">
+         <path value="Tympanogram_test_result___226Hz.protocol.Rate_of_pressure_change.value"/>
+         <short value="Rate of pressure change"/>
+         <definition value="The rate of change of pressure used in tympanometry."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.protocol.Rate_of_pressure_change.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.protocol.Admittance_measurement">
+         <path value="Tympanogram_test_result___226Hz.protocol.Admittance_measurement"/>
+         <short value="Admittance measurement"/>
+         <definition value="Method of acoustic admittance measurement used in the test."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.protocol.Admittance_measurement"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.protocol.Admittance_measurement.value">
+         <path value="Tympanogram_test_result___226Hz.protocol.Admittance_measurement.value"/>
+         <short value="Admittance measurement"/>
+         <definition value="Method of acoustic admittance measurement used in the test."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.protocol.Admittance_measurement.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.protocol.Pressure_range">
+         <path value="Tympanogram_test_result___226Hz.protocol.Pressure_range"/>
+         <short value="Pressure range"/>
+         <definition value="The range of air pressure used to determine the tympanogram."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.protocol.Pressure_range"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.protocol.Pressure_range.Start_pressure">
+         <path value="Tympanogram_test_result___226Hz.protocol.Pressure_range.Start_pressure"/>
+         <short value="Start pressure"/>
+         <definition value="The pressure value in daPa at which the pressure sweep for tympanometry begins. It is a positive pressure if the direction of pressure change is descending and a negative pressure if the direction of pressure change is ascending."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.protocol.Pressure_range.Start_pressure"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.protocol.Pressure_range.Start_pressure.value">
+         <path value="Tympanogram_test_result___226Hz.protocol.Pressure_range.Start_pressure.value"/>
+         <short value="Start pressure"/>
+         <definition value="The pressure value in daPa at which the pressure sweep for tympanometry begins. It is a positive pressure if the direction of pressure change is descending and a negative pressure if the direction of pressure change is ascending."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.protocol.Pressure_range.Start_pressure.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.protocol.Pressure_range.Stop_pressure">
+         <path value="Tympanogram_test_result___226Hz.protocol.Pressure_range.Stop_pressure"/>
+         <short value="Stop pressure"/>
+         <definition value="The pressure value in daPa at which the pressure sweep for tympanometry ends. It is a negative pressure if the direction of pressure change is descending and a positive pressure if the direction of pressure change is ascending."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.protocol.Pressure_range.Stop_pressure"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.protocol.Pressure_range.Stop_pressure.value">
+         <path value="Tympanogram_test_result___226Hz.protocol.Pressure_range.Stop_pressure.value"/>
+         <short value="Stop pressure"/>
+         <definition value="The pressure value in daPa at which the pressure sweep for tympanometry ends. It is a negative pressure if the direction of pressure change is descending and a positive pressure if the direction of pressure change is ascending."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.protocol.Pressure_range.Stop_pressure.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.protocol.Tympanometer">
+         <path value="Tympanogram_test_result___226Hz.protocol.Tympanometer"/>
+         <short value="Tympanometer"/>
+         <definition value="Details of tympanometer used to conduct the test."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.protocol.Tympanometer"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.protocol.Pre_test_calibration_cavity_size">
+         <path value="Tympanogram_test_result___226Hz.protocol.Pre_test_calibration_cavity_size"/>
+         <short value="Pre-test calibration cavity size"/>
+         <definition value="A cavity with a known volume used to check the calibration of the tympanometer."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.protocol.Pre_test_calibration_cavity_size"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.protocol.Pre_test_calibration_cavity_size.value">
+         <path value="Tympanogram_test_result___226Hz.protocol.Pre_test_calibration_cavity_size.value"/>
+         <short value="Pre-test calibration cavity size"/>
+         <definition value="A cavity with a known volume used to check the calibration of the tympanometer."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.protocol.Pre_test_calibration_cavity_size.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.protocol.Comment">
+         <path value="Tympanogram_test_result___226Hz.protocol.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the protocol for the tympanogram not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.protocol.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.protocol.Comment.value">
+         <path value="Tympanogram_test_result___226Hz.protocol.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the protocol for the tympanogram not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.protocol.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series">
+         <path value="Tympanogram_test_result___226Hz.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Any_event">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Any_event.data">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details"/>
+         <short value="Result details"/>
+         <definition value="The tympanogram test result measurements and interpretations, recorded per ear."/>
+         <min value="0"/>
+         <max value="2"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details"/>
+            <min value="0"/>
+            <max value="2"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Test_ear">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Test_ear"/>
+         <short value="Test ear"/>
+         <definition value="Identification of the ear being tested."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Test_ear"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Test_ear.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Test_ear.value"/>
+         <short value="Test ear"/>
+         <definition value="Identification of the ear being tested."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Test_ear.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details"/>
+         <short value="Measurement details"/>
+         <definition value="Measurements of the tympanogram to infer middle ear function."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement"/>
+         <short value="Pressure vs compliance measurement"/>
+         <definition value="The Pressure/Compliance measurement pair, captured from a tympanometer and used to define a continuous tympanogram curve."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Pressure">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Pressure"/>
+         <short value="Pressure"/>
+         <definition value="The pressure measured in the ear canal."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Pressure"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Pressure.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Pressure.value"/>
+         <short value="Pressure"/>
+         <definition value="The pressure measured in the ear canal."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Pressure.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Compliance_(volume)">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Compliance_(volume)"/>
+         <short value="Compliance (volume)"/>
+         <definition value="The amount of acoustic energy absorbed by the middle ear system at a specified pressure, measured in cc3 or ml."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Compliance_(volume)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Compliance_(volume).value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Compliance_(volume).value"/>
+         <short value="Compliance (volume)"/>
+         <definition value="The amount of acoustic energy absorbed by the middle ear system at a specified pressure, measured in cc3 or ml."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Compliance_(volume).value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Compliance_(conductance)">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Compliance_(conductance)"/>
+         <short value="Compliance (conductance)"/>
+         <definition value="The amount of acoustic energy absorbed by the middle ear system at a specified pressure, measured in mmHo."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Compliance_(conductance)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Compliance_(conductance).value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Compliance_(conductance).value"/>
+         <short value="Compliance (conductance)"/>
+         <definition value="The amount of acoustic energy absorbed by the middle ear system at a specified pressure, measured in mmHo."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Compliance_(conductance).value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Peak_pressure">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Peak_pressure"/>
+         <short value="Peak pressure"/>
+         <definition value="Peak pressure (also called tympanometric peak pressure or middle ear pressure or MEP) is the ear canal pressure at which the peak of the tympanogram occurs."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Peak_pressure"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Peak_pressure.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Peak_pressure.value"/>
+         <short value="Peak pressure"/>
+         <definition value="Peak pressure (also called tympanometric peak pressure or middle ear pressure or MEP) is the ear canal pressure at which the peak of the tympanogram occurs."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Peak_pressure.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Static_compliance_(volume)">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Static_compliance_(volume)"/>
+         <short value="Static compliance (volume)"/>
+         <definition value="Static compliance (SC) is the greatest amount of acoustic energy absorbed by the middle ear system (the vertical peak of the tympanogram curve)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Static_compliance_(volume)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Static_compliance_(volume).value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Static_compliance_(volume).value"/>
+         <short value="Static compliance (volume)"/>
+         <definition value="Static compliance (SC) is the greatest amount of acoustic energy absorbed by the middle ear system (the vertical peak of the tympanogram curve)."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Static_compliance_(volume).value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Static_compliance_(conductance)">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Static_compliance_(conductance)"/>
+         <short value="Static compliance (conductance)"/>
+         <definition value="Static compliance (SC) is the greatest amount of acoustic energy absorbed by the middle ear system (the vertical peak of the tympanogram curve)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Static_compliance_(conductance)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Static_compliance_(conductance).value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Static_compliance_(conductance).value"/>
+         <short value="Static compliance (conductance)"/>
+         <definition value="Static compliance (SC) is the greatest amount of acoustic energy absorbed by the middle ear system (the vertical peak of the tympanogram curve)."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Static_compliance_(conductance).value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Ear_canal_volume">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Ear_canal_volume"/>
+         <short value="Ear canal volume"/>
+         <definition value="An estimate of the volume of air between the probe tip and the tympanic membrane if the tympanic membrane is intact, or the volume of the ear canal and the middle ear space if the tympanic membrane is perforated. (Fowler &amp; Shanks, 2002, p. 180)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Ear_canal_volume"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Ear_canal_volume.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Ear_canal_volume.value"/>
+         <short value="Ear canal volume"/>
+         <definition value="An estimate of the volume of air between the probe tip and the tympanic membrane if the tympanic membrane is intact, or the volume of the ear canal and the middle ear space if the tympanic membrane is perforated. (Fowler &amp; Shanks, 2002, p. 180)."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Ear_canal_volume.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Tympanometric_width">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Tympanometric_width"/>
+         <short value="Tympanometric width"/>
+         <definition value="The pressure interval corresponding to a 50% reduction in the peak static admittance."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Tympanometric_width"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Tympanometric_width.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Tympanometric_width.value"/>
+         <short value="Tympanometric width"/>
+         <definition value="The pressure interval corresponding to a 50% reduction in the peak static admittance."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Tympanometric_width.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Tympanometric_gradient">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Tympanometric_gradient"/>
+         <short value="Tympanometric gradient"/>
+         <definition value="The steepness of the slope of the tympanogram near the peak."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Tympanometric_gradient"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Tympanometric_gradient.value_DvQuantity">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Tympanometric_gradient.value_DvQuantity"/>
+         <short value="Tympanometric gradient"/>
+         <definition value="The steepness of the slope of the tympanogram near the peak."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Tympanometric_gradient.value_DvQuantity"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Tympanometric_gradient.value_DV_PROPORTION">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Tympanometric_gradient.value_DV_PROPORTION"/>
+         <short value="Tympanometric gradient"/>
+         <definition value="The steepness of the slope of the tympanogram near the peak."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Measurement_details.Tympanometric_gradient.value_DV_PROPORTION"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Ratio"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.No_test_result">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.No_test_result"/>
+         <short value="No test result"/>
+         <definition value="No test result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.No_test_result"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.No_test_result.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.No_test_result.value"/>
+         <short value="No test result"/>
+         <definition value="No test result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.No_test_result.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Reason_for_no_test_result">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Reason_for_no_test_result"/>
+         <short value="Reason for no test result"/>
+         <definition value="Reason why no result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Reason_for_no_test_result"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Reason_for_no_test_result.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Reason_for_no_test_result.value"/>
+         <short value="Reason for no test result"/>
+         <definition value="Reason why no result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Reason_for_no_test_result.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Tympanogram_type">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Tympanogram_type"/>
+         <short value="Tympanogram type"/>
+         <definition value="Description of the the shape of the tympanogram curve, based on the Jerger categories."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Tympanogram_type"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Tympanogram_type.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Tympanogram_type.value"/>
+         <short value="Tympanogram type"/>
+         <definition value="Description of the the shape of the tympanogram curve, based on the Jerger categories."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Tympanogram_type.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Tympanogram_type_B_subtype">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Tympanogram_type_B_subtype"/>
+         <short value="Tympanogram type B subtype"/>
+         <definition value="Subclassification of the tympanograms with a flat curve."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Tympanogram_type_B_subtype"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Tympanogram_type_B_subtype.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Tympanogram_type_B_subtype.value"/>
+         <short value="Tympanogram type B subtype"/>
+         <definition value="Subclassification of the tympanograms with a flat curve."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Tympanogram_type_B_subtype.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Tympanogram_type_C_subtype">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Tympanogram_type_C_subtype"/>
+         <short value="Tympanogram type C subtype"/>
+         <definition value="Subclassification of the tympanograms with negative peak pressure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Tympanogram_type_C_subtype"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Tympanogram_type_C_subtype.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Tympanogram_type_C_subtype.value"/>
+         <short value="Tympanogram type C subtype"/>
+         <definition value="Subclassification of the tympanograms with negative peak pressure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Tympanogram_type_C_subtype.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Clinical_interpretation">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Clinical_interpretation"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Clinical interpretation of all measurements for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Clinical_interpretation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Clinical_interpretation.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Clinical_interpretation.value"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Clinical interpretation of all measurements for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Result_details.Clinical_interpretation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Overall_interpretation">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Overall_interpretation"/>
+         <short value="Overall interpretation"/>
+         <definition value="Overall clinical interpretation of the measurements and related findings using an tympanometer."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Overall_interpretation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Overall_interpretation.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Overall_interpretation.value"/>
+         <short value="Overall interpretation"/>
+         <definition value="Overall clinical interpretation of the measurements and related findings using an tympanometer."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Overall_interpretation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Test_result_image">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Test_result_image"/>
+         <short value="Test result image"/>
+         <definition value="Digital representation of the entire result."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Test_result_image"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Test_result_image.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Test_result_image.value"/>
+         <short value="Test result image"/>
+         <definition value="Digital representation of the entire result."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Test_result_image.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Attachment"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Comment">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the test results and intepretation not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Comment.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the test results and intepretation not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Any_event.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Baseline">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline"/>
+         <short value="Baseline"/>
+         <definition value="Measurement collection recorded as the basis for comparison with following measurement collections that may include other variables of time or patient state."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Baseline.data">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data"/>
+         <definition value="ITEM_TREE"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details"/>
+         <short value="Result details"/>
+         <definition value="The tympanogram test result measurements and interpretations, recorded per ear."/>
+         <min value="0"/>
+         <max value="2"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details"/>
+            <min value="0"/>
+            <max value="2"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Test_ear">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Test_ear"/>
+         <short value="Test ear"/>
+         <definition value="Identification of the ear being tested."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Test_ear"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Test_ear.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Test_ear.value"/>
+         <short value="Test ear"/>
+         <definition value="Identification of the ear being tested."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Test_ear.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details"/>
+         <short value="Measurement details"/>
+         <definition value="Measurements of the tympanogram to infer middle ear function."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement"/>
+         <short value="Pressure vs compliance measurement"/>
+         <definition value="The Pressure/Compliance measurement pair, captured from a tympanometer and used to define a continuous tympanogram curve."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Pressure">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Pressure"/>
+         <short value="Pressure"/>
+         <definition value="The pressure measured in the ear canal."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Pressure"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Pressure.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Pressure.value"/>
+         <short value="Pressure"/>
+         <definition value="The pressure measured in the ear canal."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Pressure.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Compliance_(volume)">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Compliance_(volume)"/>
+         <short value="Compliance (volume)"/>
+         <definition value="The amount of acoustic energy absorbed by the middle ear system at a specified pressure, measured in cc3 or ml."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Compliance_(volume)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Compliance_(volume).value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Compliance_(volume).value"/>
+         <short value="Compliance (volume)"/>
+         <definition value="The amount of acoustic energy absorbed by the middle ear system at a specified pressure, measured in cc3 or ml."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Compliance_(volume).value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Compliance_(conductance)">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Compliance_(conductance)"/>
+         <short value="Compliance (conductance)"/>
+         <definition value="The amount of acoustic energy absorbed by the middle ear system at a specified pressure, measured in mmHo."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Compliance_(conductance)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Compliance_(conductance).value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Compliance_(conductance).value"/>
+         <short value="Compliance (conductance)"/>
+         <definition value="The amount of acoustic energy absorbed by the middle ear system at a specified pressure, measured in mmHo."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Compliance_(conductance).value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Peak_pressure">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Peak_pressure"/>
+         <short value="Peak pressure"/>
+         <definition value="Peak pressure (also called tympanometric peak pressure or middle ear pressure or MEP) is the ear canal pressure at which the peak of the tympanogram occurs."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Peak_pressure"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Peak_pressure.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Peak_pressure.value"/>
+         <short value="Peak pressure"/>
+         <definition value="Peak pressure (also called tympanometric peak pressure or middle ear pressure or MEP) is the ear canal pressure at which the peak of the tympanogram occurs."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Peak_pressure.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Static_compliance_(volume)">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Static_compliance_(volume)"/>
+         <short value="Static compliance (volume)"/>
+         <definition value="Static compliance (SC) is the greatest amount of acoustic energy absorbed by the middle ear system (the vertical peak of the tympanogram curve)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Static_compliance_(volume)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Static_compliance_(volume).value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Static_compliance_(volume).value"/>
+         <short value="Static compliance (volume)"/>
+         <definition value="Static compliance (SC) is the greatest amount of acoustic energy absorbed by the middle ear system (the vertical peak of the tympanogram curve)."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Static_compliance_(volume).value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Static_compliance_(conductance)">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Static_compliance_(conductance)"/>
+         <short value="Static compliance (conductance)"/>
+         <definition value="Static compliance (SC) is the greatest amount of acoustic energy absorbed by the middle ear system (the vertical peak of the tympanogram curve)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Static_compliance_(conductance)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Static_compliance_(conductance).value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Static_compliance_(conductance).value"/>
+         <short value="Static compliance (conductance)"/>
+         <definition value="Static compliance (SC) is the greatest amount of acoustic energy absorbed by the middle ear system (the vertical peak of the tympanogram curve)."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Static_compliance_(conductance).value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Ear_canal_volume">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Ear_canal_volume"/>
+         <short value="Ear canal volume"/>
+         <definition value="An estimate of the volume of air between the probe tip and the tympanic membrane if the tympanic membrane is intact, or the volume of the ear canal and the middle ear space if the tympanic membrane is perforated. (Fowler &amp; Shanks, 2002, p. 180)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Ear_canal_volume"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Ear_canal_volume.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Ear_canal_volume.value"/>
+         <short value="Ear canal volume"/>
+         <definition value="An estimate of the volume of air between the probe tip and the tympanic membrane if the tympanic membrane is intact, or the volume of the ear canal and the middle ear space if the tympanic membrane is perforated. (Fowler &amp; Shanks, 2002, p. 180)."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Ear_canal_volume.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Tympanometric_width">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Tympanometric_width"/>
+         <short value="Tympanometric width"/>
+         <definition value="The pressure interval corresponding to a 50% reduction in the peak static admittance."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Tympanometric_width"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Tympanometric_width.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Tympanometric_width.value"/>
+         <short value="Tympanometric width"/>
+         <definition value="The pressure interval corresponding to a 50% reduction in the peak static admittance."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Tympanometric_width.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Tympanometric_gradient">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Tympanometric_gradient"/>
+         <short value="Tympanometric gradient"/>
+         <definition value="The steepness of the slope of the tympanogram near the peak."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Tympanometric_gradient"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Tympanometric_gradient.value_DvQuantity">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Tympanometric_gradient.value_DvQuantity"/>
+         <short value="Tympanometric gradient"/>
+         <definition value="The steepness of the slope of the tympanogram near the peak."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Tympanometric_gradient.value_DvQuantity"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Tympanometric_gradient.value_DV_PROPORTION">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Tympanometric_gradient.value_DV_PROPORTION"/>
+         <short value="Tympanometric gradient"/>
+         <definition value="The steepness of the slope of the tympanogram near the peak."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Measurement_details.Tympanometric_gradient.value_DV_PROPORTION"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Ratio"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.No_test_result">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.No_test_result"/>
+         <short value="No test result"/>
+         <definition value="No test result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.No_test_result"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.No_test_result.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.No_test_result.value"/>
+         <short value="No test result"/>
+         <definition value="No test result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.No_test_result.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Reason_for_no_test_result">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Reason_for_no_test_result"/>
+         <short value="Reason for no test result"/>
+         <definition value="Reason why no result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Reason_for_no_test_result"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Reason_for_no_test_result.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Reason_for_no_test_result.value"/>
+         <short value="Reason for no test result"/>
+         <definition value="Reason why no result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Reason_for_no_test_result.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Tympanogram_type">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Tympanogram_type"/>
+         <short value="Tympanogram type"/>
+         <definition value="Description of the the shape of the tympanogram curve, based on the Jerger categories."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Tympanogram_type"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Tympanogram_type.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Tympanogram_type.value"/>
+         <short value="Tympanogram type"/>
+         <definition value="Description of the the shape of the tympanogram curve, based on the Jerger categories."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Tympanogram_type.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Tympanogram_type_B_subtype">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Tympanogram_type_B_subtype"/>
+         <short value="Tympanogram type B subtype"/>
+         <definition value="Subclassification of the tympanograms with a flat curve."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Tympanogram_type_B_subtype"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Tympanogram_type_B_subtype.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Tympanogram_type_B_subtype.value"/>
+         <short value="Tympanogram type B subtype"/>
+         <definition value="Subclassification of the tympanograms with a flat curve."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Tympanogram_type_B_subtype.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Tympanogram_type_C_subtype">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Tympanogram_type_C_subtype"/>
+         <short value="Tympanogram type C subtype"/>
+         <definition value="Subclassification of the tympanograms with negative peak pressure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Tympanogram_type_C_subtype"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Tympanogram_type_C_subtype.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Tympanogram_type_C_subtype.value"/>
+         <short value="Tympanogram type C subtype"/>
+         <definition value="Subclassification of the tympanograms with negative peak pressure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Tympanogram_type_C_subtype.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Clinical_interpretation">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Clinical_interpretation"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Clinical interpretation of all measurements for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Clinical_interpretation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Clinical_interpretation.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Clinical_interpretation.value"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Clinical interpretation of all measurements for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Result_details.Clinical_interpretation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Overall_interpretation">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Overall_interpretation"/>
+         <short value="Overall interpretation"/>
+         <definition value="Overall clinical interpretation of the measurements and related findings using an tympanometer."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Overall_interpretation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Overall_interpretation.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Overall_interpretation.value"/>
+         <short value="Overall interpretation"/>
+         <definition value="Overall clinical interpretation of the measurements and related findings using an tympanometer."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Overall_interpretation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Test_result_image">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Test_result_image"/>
+         <short value="Test result image"/>
+         <definition value="Digital representation of the entire result."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Test_result_image"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Test_result_image.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Test_result_image.value"/>
+         <short value="Test result image"/>
+         <definition value="Digital representation of the entire result."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Test_result_image.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Attachment"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Comment">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the test results and intepretation not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Comment.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the test results and intepretation not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Baseline.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva"/>
+         <short value="Post-Valsalva"/>
+         <definition value="Measurements are recorded after the patient has performed a valsalva manoeuvre."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data"/>
+         <definition value="ITEM_TREE"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details"/>
+         <short value="Result details"/>
+         <definition value="The tympanogram test result measurements and interpretations, recorded per ear."/>
+         <min value="0"/>
+         <max value="2"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details"/>
+            <min value="0"/>
+            <max value="2"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Test_ear">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Test_ear"/>
+         <short value="Test ear"/>
+         <definition value="Identification of the ear being tested."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Test_ear"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Test_ear.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Test_ear.value"/>
+         <short value="Test ear"/>
+         <definition value="Identification of the ear being tested."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Test_ear.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details"/>
+         <short value="Measurement details"/>
+         <definition value="Measurements of the tympanogram to infer middle ear function."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement"/>
+         <short value="Pressure vs compliance measurement"/>
+         <definition value="The Pressure/Compliance measurement pair, captured from a tympanometer and used to define a continuous tympanogram curve."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Pressure">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Pressure"/>
+         <short value="Pressure"/>
+         <definition value="The pressure measured in the ear canal."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Pressure"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Pressure.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Pressure.value"/>
+         <short value="Pressure"/>
+         <definition value="The pressure measured in the ear canal."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Pressure.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Compliance_(volume)">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Compliance_(volume)"/>
+         <short value="Compliance (volume)"/>
+         <definition value="The amount of acoustic energy absorbed by the middle ear system at a specified pressure, measured in cc3 or ml."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Compliance_(volume)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Compliance_(volume).value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Compliance_(volume).value"/>
+         <short value="Compliance (volume)"/>
+         <definition value="The amount of acoustic energy absorbed by the middle ear system at a specified pressure, measured in cc3 or ml."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Compliance_(volume).value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Compliance_(conductance)">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Compliance_(conductance)"/>
+         <short value="Compliance (conductance)"/>
+         <definition value="The amount of acoustic energy absorbed by the middle ear system at a specified pressure, measured in mmHo."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Compliance_(conductance)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Compliance_(conductance).value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Compliance_(conductance).value"/>
+         <short value="Compliance (conductance)"/>
+         <definition value="The amount of acoustic energy absorbed by the middle ear system at a specified pressure, measured in mmHo."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Compliance_(conductance).value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Peak_pressure">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Peak_pressure"/>
+         <short value="Peak pressure"/>
+         <definition value="Peak pressure (also called tympanometric peak pressure or middle ear pressure or MEP) is the ear canal pressure at which the peak of the tympanogram occurs."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Peak_pressure"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Peak_pressure.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Peak_pressure.value"/>
+         <short value="Peak pressure"/>
+         <definition value="Peak pressure (also called tympanometric peak pressure or middle ear pressure or MEP) is the ear canal pressure at which the peak of the tympanogram occurs."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Peak_pressure.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Static_compliance_(volume)">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Static_compliance_(volume)"/>
+         <short value="Static compliance (volume)"/>
+         <definition value="Static compliance (SC) is the greatest amount of acoustic energy absorbed by the middle ear system (the vertical peak of the tympanogram curve)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Static_compliance_(volume)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Static_compliance_(volume).value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Static_compliance_(volume).value"/>
+         <short value="Static compliance (volume)"/>
+         <definition value="Static compliance (SC) is the greatest amount of acoustic energy absorbed by the middle ear system (the vertical peak of the tympanogram curve)."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Static_compliance_(volume).value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Static_compliance_(conductance)">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Static_compliance_(conductance)"/>
+         <short value="Static compliance (conductance)"/>
+         <definition value="Static compliance (SC) is the greatest amount of acoustic energy absorbed by the middle ear system (the vertical peak of the tympanogram curve)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Static_compliance_(conductance)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Static_compliance_(conductance).value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Static_compliance_(conductance).value"/>
+         <short value="Static compliance (conductance)"/>
+         <definition value="Static compliance (SC) is the greatest amount of acoustic energy absorbed by the middle ear system (the vertical peak of the tympanogram curve)."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Static_compliance_(conductance).value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Ear_canal_volume">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Ear_canal_volume"/>
+         <short value="Ear canal volume"/>
+         <definition value="An estimate of the volume of air between the probe tip and the tympanic membrane if the tympanic membrane is intact, or the volume of the ear canal and the middle ear space if the tympanic membrane is perforated. (Fowler &amp; Shanks, 2002, p. 180)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Ear_canal_volume"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Ear_canal_volume.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Ear_canal_volume.value"/>
+         <short value="Ear canal volume"/>
+         <definition value="An estimate of the volume of air between the probe tip and the tympanic membrane if the tympanic membrane is intact, or the volume of the ear canal and the middle ear space if the tympanic membrane is perforated. (Fowler &amp; Shanks, 2002, p. 180)."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Ear_canal_volume.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Tympanometric_width">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Tympanometric_width"/>
+         <short value="Tympanometric width"/>
+         <definition value="The pressure interval corresponding to a 50% reduction in the peak static admittance."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Tympanometric_width"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Tympanometric_width.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Tympanometric_width.value"/>
+         <short value="Tympanometric width"/>
+         <definition value="The pressure interval corresponding to a 50% reduction in the peak static admittance."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Tympanometric_width.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Tympanometric_gradient">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Tympanometric_gradient"/>
+         <short value="Tympanometric gradient"/>
+         <definition value="The steepness of the slope of the tympanogram near the peak."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Tympanometric_gradient"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Tympanometric_gradient.value_DvQuantity">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Tympanometric_gradient.value_DvQuantity"/>
+         <short value="Tympanometric gradient"/>
+         <definition value="The steepness of the slope of the tympanogram near the peak."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Tympanometric_gradient.value_DvQuantity"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Tympanometric_gradient.value_DV_PROPORTION">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Tympanometric_gradient.value_DV_PROPORTION"/>
+         <short value="Tympanometric gradient"/>
+         <definition value="The steepness of the slope of the tympanogram near the peak."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Tympanometric_gradient.value_DV_PROPORTION"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Ratio"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.No_test_result">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.No_test_result"/>
+         <short value="No test result"/>
+         <definition value="No test result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.No_test_result"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.No_test_result.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.No_test_result.value"/>
+         <short value="No test result"/>
+         <definition value="No test result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.No_test_result.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Reason_for_no_test_result">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Reason_for_no_test_result"/>
+         <short value="Reason for no test result"/>
+         <definition value="Reason why no result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Reason_for_no_test_result"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Reason_for_no_test_result.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Reason_for_no_test_result.value"/>
+         <short value="Reason for no test result"/>
+         <definition value="Reason why no result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Reason_for_no_test_result.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Tympanogram_type">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Tympanogram_type"/>
+         <short value="Tympanogram type"/>
+         <definition value="Description of the the shape of the tympanogram curve, based on the Jerger categories."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Tympanogram_type"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Tympanogram_type.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Tympanogram_type.value"/>
+         <short value="Tympanogram type"/>
+         <definition value="Description of the the shape of the tympanogram curve, based on the Jerger categories."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Tympanogram_type.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Tympanogram_type_B_subtype">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Tympanogram_type_B_subtype"/>
+         <short value="Tympanogram type B subtype"/>
+         <definition value="Subclassification of the tympanograms with a flat curve."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Tympanogram_type_B_subtype"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Tympanogram_type_B_subtype.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Tympanogram_type_B_subtype.value"/>
+         <short value="Tympanogram type B subtype"/>
+         <definition value="Subclassification of the tympanograms with a flat curve."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Tympanogram_type_B_subtype.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Tympanogram_type_C_subtype">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Tympanogram_type_C_subtype"/>
+         <short value="Tympanogram type C subtype"/>
+         <definition value="Subclassification of the tympanograms with negative peak pressure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Tympanogram_type_C_subtype"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Tympanogram_type_C_subtype.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Tympanogram_type_C_subtype.value"/>
+         <short value="Tympanogram type C subtype"/>
+         <definition value="Subclassification of the tympanograms with negative peak pressure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Tympanogram_type_C_subtype.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Clinical_interpretation">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Clinical_interpretation"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Clinical interpretation of all measurements for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Clinical_interpretation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Clinical_interpretation.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Clinical_interpretation.value"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Clinical interpretation of all measurements for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Result_details.Clinical_interpretation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Overall_interpretation">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Overall_interpretation"/>
+         <short value="Overall interpretation"/>
+         <definition value="Overall clinical interpretation of the measurements and related findings using an tympanometer."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Overall_interpretation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Overall_interpretation.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Overall_interpretation.value"/>
+         <short value="Overall interpretation"/>
+         <definition value="Overall clinical interpretation of the measurements and related findings using an tympanometer."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Overall_interpretation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Test_result_image">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Test_result_image"/>
+         <short value="Test result image"/>
+         <definition value="Digital representation of the entire result."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Test_result_image"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Test_result_image.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Test_result_image.value"/>
+         <short value="Test result image"/>
+         <definition value="Digital representation of the entire result."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Test_result_image.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Attachment"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Comment">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the test results and intepretation not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Comment.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the test results and intepretation not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Valsalva.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee"/>
+         <short value="Post-Toynbee"/>
+         <definition value="Measurements are recorded after the patient has performed a toynbee manoeuvre."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data"/>
+         <definition value="ITEM_TREE"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details"/>
+         <short value="Result details"/>
+         <definition value="The tympanogram test result measurements and interpretations, recorded per ear."/>
+         <min value="0"/>
+         <max value="2"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details"/>
+            <min value="0"/>
+            <max value="2"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Test_ear">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Test_ear"/>
+         <short value="Test ear"/>
+         <definition value="Identification of the ear being tested."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Test_ear"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Test_ear.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Test_ear.value"/>
+         <short value="Test ear"/>
+         <definition value="Identification of the ear being tested."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Test_ear.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details"/>
+         <short value="Measurement details"/>
+         <definition value="Measurements of the tympanogram to infer middle ear function."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement"/>
+         <short value="Pressure vs compliance measurement"/>
+         <definition value="The Pressure/Compliance measurement pair, captured from a tympanometer and used to define a continuous tympanogram curve."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Pressure">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Pressure"/>
+         <short value="Pressure"/>
+         <definition value="The pressure measured in the ear canal."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Pressure"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Pressure.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Pressure.value"/>
+         <short value="Pressure"/>
+         <definition value="The pressure measured in the ear canal."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Pressure.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Compliance_(volume)">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Compliance_(volume)"/>
+         <short value="Compliance (volume)"/>
+         <definition value="The amount of acoustic energy absorbed by the middle ear system at a specified pressure, measured in cc3 or ml."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Compliance_(volume)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Compliance_(volume).value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Compliance_(volume).value"/>
+         <short value="Compliance (volume)"/>
+         <definition value="The amount of acoustic energy absorbed by the middle ear system at a specified pressure, measured in cc3 or ml."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Compliance_(volume).value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Compliance_(conductance)">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Compliance_(conductance)"/>
+         <short value="Compliance (conductance)"/>
+         <definition value="The amount of acoustic energy absorbed by the middle ear system at a specified pressure, measured in mmHo."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Compliance_(conductance)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Compliance_(conductance).value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Compliance_(conductance).value"/>
+         <short value="Compliance (conductance)"/>
+         <definition value="The amount of acoustic energy absorbed by the middle ear system at a specified pressure, measured in mmHo."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Pressure_vs_compliance_measurement.Compliance_(conductance).value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Peak_pressure">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Peak_pressure"/>
+         <short value="Peak pressure"/>
+         <definition value="Peak pressure (also called tympanometric peak pressure or middle ear pressure or MEP) is the ear canal pressure at which the peak of the tympanogram occurs."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Peak_pressure"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Peak_pressure.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Peak_pressure.value"/>
+         <short value="Peak pressure"/>
+         <definition value="Peak pressure (also called tympanometric peak pressure or middle ear pressure or MEP) is the ear canal pressure at which the peak of the tympanogram occurs."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Peak_pressure.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Static_compliance_(volume)">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Static_compliance_(volume)"/>
+         <short value="Static compliance (volume)"/>
+         <definition value="Static compliance (SC) is the greatest amount of acoustic energy absorbed by the middle ear system (the vertical peak of the tympanogram curve)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Static_compliance_(volume)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Static_compliance_(volume).value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Static_compliance_(volume).value"/>
+         <short value="Static compliance (volume)"/>
+         <definition value="Static compliance (SC) is the greatest amount of acoustic energy absorbed by the middle ear system (the vertical peak of the tympanogram curve)."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Static_compliance_(volume).value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Static_compliance_(conductance)">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Static_compliance_(conductance)"/>
+         <short value="Static compliance (conductance)"/>
+         <definition value="Static compliance (SC) is the greatest amount of acoustic energy absorbed by the middle ear system (the vertical peak of the tympanogram curve)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Static_compliance_(conductance)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Static_compliance_(conductance).value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Static_compliance_(conductance).value"/>
+         <short value="Static compliance (conductance)"/>
+         <definition value="Static compliance (SC) is the greatest amount of acoustic energy absorbed by the middle ear system (the vertical peak of the tympanogram curve)."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Static_compliance_(conductance).value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Ear_canal_volume">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Ear_canal_volume"/>
+         <short value="Ear canal volume"/>
+         <definition value="An estimate of the volume of air between the probe tip and the tympanic membrane if the tympanic membrane is intact, or the volume of the ear canal and the middle ear space if the tympanic membrane is perforated. (Fowler &amp; Shanks, 2002, p. 180)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Ear_canal_volume"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Ear_canal_volume.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Ear_canal_volume.value"/>
+         <short value="Ear canal volume"/>
+         <definition value="An estimate of the volume of air between the probe tip and the tympanic membrane if the tympanic membrane is intact, or the volume of the ear canal and the middle ear space if the tympanic membrane is perforated. (Fowler &amp; Shanks, 2002, p. 180)."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Ear_canal_volume.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Tympanometric_width">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Tympanometric_width"/>
+         <short value="Tympanometric width"/>
+         <definition value="The pressure interval corresponding to a 50% reduction in the peak static admittance."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Tympanometric_width"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Tympanometric_width.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Tympanometric_width.value"/>
+         <short value="Tympanometric width"/>
+         <definition value="The pressure interval corresponding to a 50% reduction in the peak static admittance."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Tympanometric_width.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Tympanometric_gradient">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Tympanometric_gradient"/>
+         <short value="Tympanometric gradient"/>
+         <definition value="The steepness of the slope of the tympanogram near the peak."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Tympanometric_gradient"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Tympanometric_gradient.value_DvQuantity">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Tympanometric_gradient.value_DvQuantity"/>
+         <short value="Tympanometric gradient"/>
+         <definition value="The steepness of the slope of the tympanogram near the peak."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Tympanometric_gradient.value_DvQuantity"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Tympanometric_gradient.value_DV_PROPORTION">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Tympanometric_gradient.value_DV_PROPORTION"/>
+         <short value="Tympanometric gradient"/>
+         <definition value="The steepness of the slope of the tympanogram near the peak."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Tympanometric_gradient.value_DV_PROPORTION"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Ratio"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.No_test_result">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.No_test_result"/>
+         <short value="No test result"/>
+         <definition value="No test result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.No_test_result"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.No_test_result.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.No_test_result.value"/>
+         <short value="No test result"/>
+         <definition value="No test result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.No_test_result.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Reason_for_no_test_result">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Reason_for_no_test_result"/>
+         <short value="Reason for no test result"/>
+         <definition value="Reason why no result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Reason_for_no_test_result"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Reason_for_no_test_result.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Reason_for_no_test_result.value"/>
+         <short value="Reason for no test result"/>
+         <definition value="Reason why no result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Reason_for_no_test_result.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Tympanogram_type">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Tympanogram_type"/>
+         <short value="Tympanogram type"/>
+         <definition value="Description of the the shape of the tympanogram curve, based on the Jerger categories."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Tympanogram_type"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Tympanogram_type.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Tympanogram_type.value"/>
+         <short value="Tympanogram type"/>
+         <definition value="Description of the the shape of the tympanogram curve, based on the Jerger categories."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Tympanogram_type.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Tympanogram_type_B_subtype">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Tympanogram_type_B_subtype"/>
+         <short value="Tympanogram type B subtype"/>
+         <definition value="Subclassification of the tympanograms with a flat curve."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Tympanogram_type_B_subtype"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Tympanogram_type_B_subtype.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Tympanogram_type_B_subtype.value"/>
+         <short value="Tympanogram type B subtype"/>
+         <definition value="Subclassification of the tympanograms with a flat curve."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Tympanogram_type_B_subtype.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Tympanogram_type_C_subtype">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Tympanogram_type_C_subtype"/>
+         <short value="Tympanogram type C subtype"/>
+         <definition value="Subclassification of the tympanograms with negative peak pressure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Tympanogram_type_C_subtype"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Tympanogram_type_C_subtype.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Tympanogram_type_C_subtype.value"/>
+         <short value="Tympanogram type C subtype"/>
+         <definition value="Subclassification of the tympanograms with negative peak pressure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Tympanogram_type_C_subtype.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Clinical_interpretation">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Clinical_interpretation"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Clinical interpretation of all measurements for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Clinical_interpretation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Clinical_interpretation.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Clinical_interpretation.value"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Clinical interpretation of all measurements for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Result_details.Clinical_interpretation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Overall_interpretation">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Overall_interpretation"/>
+         <short value="Overall interpretation"/>
+         <definition value="Overall clinical interpretation of the measurements and related findings using an tympanometer."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Overall_interpretation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Overall_interpretation.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Overall_interpretation.value"/>
+         <short value="Overall interpretation"/>
+         <definition value="Overall clinical interpretation of the measurements and related findings using an tympanometer."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Overall_interpretation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Test_result_image">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Test_result_image"/>
+         <short value="Test result image"/>
+         <definition value="Digital representation of the entire result."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Test_result_image"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Test_result_image.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Test_result_image.value"/>
+         <short value="Test result image"/>
+         <definition value="Digital representation of the entire result."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Test_result_image.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Attachment"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Comment">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the test results and intepretation not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Comment.value">
+         <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the test results and intepretation not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___226Hz.Event_Series.Post_Toynbee.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

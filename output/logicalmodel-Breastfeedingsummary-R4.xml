@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Breastfeedingsummary-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-breastfeedingsummary-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-EVALUATION.breast_feeding_summary.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Breastfeedingsummary"/>
+   <title value="Breast feeding summary"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Summary or persistent information about the all breastfeeding experience of an individual."/>
+   <purpose value="To record summary information about the breastfeeding experience of an individual."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Breast_feeding_summary">
+         <path value="Breast_feeding_summary"/>
+         <short value="Breast feeding summary"/>
+         <definition value="Summary or persistent information about the all breastfeeding experience of an individual."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Breast_feeding_summary"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Breast_feeding_summary.protocol">
+         <path value="Breast_feeding_summary.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Breast_feeding_summary.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Breast_feeding_summary.protocol.Last_updated">
+         <path value="Breast_feeding_summary.protocol.Last_updated"/>
+         <short value="Last updated"/>
+         <definition value="The date when the breast feeding summary was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Breast_feeding_summary.protocol.Last_updated"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Breast_feeding_summary.protocol.Last_updated.value">
+         <path value="Breast_feeding_summary.protocol.Last_updated.value"/>
+         <short value="Last updated"/>
+         <definition value="The date when the breast feeding summary was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Breast_feeding_summary.protocol.Last_updated.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Breast_feeding_summary.protocol.Extension">
+         <path value="Breast_feeding_summary.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models or formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Breast_feeding_summary.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Breast_feeding_summary.data">
+         <path value="Breast_feeding_summary.data"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Breast_feeding_summary.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Breast_feeding_summary.data.Status">
+         <path value="Breast_feeding_summary.data.Status"/>
+         <short value="Status"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Breast_feeding_summary.data.Status"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Breast_feeding_summary.data.Status.value">
+         <path value="Breast_feeding_summary.data.Status.value"/>
+         <short value="Status"/>
+         <definition value="DV_CODED_TEXT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Breast_feeding_summary.data.Status.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Breast_feeding_summary.data.Description">
+         <path value="Breast_feeding_summary.data.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the overall breastfeeding history for an individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Breast_feeding_summary.data.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Breast_feeding_summary.data.Description.value">
+         <path value="Breast_feeding_summary.data.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the overall breastfeeding history for an individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Breast_feeding_summary.data.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Breast_feeding_summary.data.Per_episode">
+         <path value="Breast_feeding_summary.data.Per_episode"/>
+         <short value="Per episode"/>
+         <definition value="Detail about a discrete episode of breastfeeding activity."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Breast_feeding_summary.data.Per_episode"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Breast_feeding_summary.data.Per_episode.Episode_label">
+         <path value="Breast_feeding_summary.data.Per_episode.Episode_label"/>
+         <short value="Episode label"/>
+         <definition value="Identification of an episode of breastfeeding - either as a number in a sequence and/or a named event."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Breast_feeding_summary.data.Per_episode.Episode_label"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Breast_feeding_summary.data.Per_episode.Episode_label.value">
+         <path value="Breast_feeding_summary.data.Per_episode.Episode_label.value"/>
+         <short value="Episode label"/>
+         <definition value="Identification of an episode of breastfeeding - either as a number in a sequence and/or a named event."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Breast_feeding_summary.data.Per_episode.Episode_label.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Breast_feeding_summary.data.Per_episode.Episode_description">
+         <path value="Breast_feeding_summary.data.Per_episode.Episode_description"/>
+         <short value="Episode description"/>
+         <definition value="Narrative description about breastfeeding during the identified episode."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Breast_feeding_summary.data.Per_episode.Episode_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Breast_feeding_summary.data.Per_episode.Episode_description.value">
+         <path value="Breast_feeding_summary.data.Per_episode.Episode_description.value"/>
+         <short value="Episode description"/>
+         <definition value="Narrative description about breastfeeding during the identified episode."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Breast_feeding_summary.data.Per_episode.Episode_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Breast_feeding_summary.data.Per_episode.Start_date">
+         <path value="Breast_feeding_summary.data.Per_episode.Start_date"/>
+         <short value="Start date"/>
+         <definition value="The date when the episode of breastfeeding commenced."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Breast_feeding_summary.data.Per_episode.Start_date"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Breast_feeding_summary.data.Per_episode.Start_date.value">
+         <path value="Breast_feeding_summary.data.Per_episode.Start_date.value"/>
+         <short value="Start date"/>
+         <definition value="The date when the episode of breastfeeding commenced."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Breast_feeding_summary.data.Per_episode.Start_date.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="date"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Breast_feeding_summary.data.Per_episode.Stop_date">
+         <path value="Breast_feeding_summary.data.Per_episode.Stop_date"/>
+         <short value="Stop date"/>
+         <definition value="The date when the episode of breastfeeding ceased."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Breast_feeding_summary.data.Per_episode.Stop_date"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Breast_feeding_summary.data.Per_episode.Stop_date.value">
+         <path value="Breast_feeding_summary.data.Per_episode.Stop_date.value"/>
+         <short value="Stop date"/>
+         <definition value="The date when the episode of breastfeeding ceased."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Breast_feeding_summary.data.Per_episode.Stop_date.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="date"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Breast_feeding_summary.data.Comment">
+         <path value="Breast_feeding_summary.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about all breastfeeding not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Breast_feeding_summary.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Breast_feeding_summary.data.Comment.value">
+         <path value="Breast_feeding_summary.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about all breastfeeding not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Breast_feeding_summary.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

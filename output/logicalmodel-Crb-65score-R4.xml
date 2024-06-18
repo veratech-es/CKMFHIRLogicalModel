@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Crb-65score-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-crb-65score-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.crb_65.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Crb-65score"/>
+   <title value="CRB-65 score"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="An assessment score used within a community or primary care setting to estimate the severity of community-acquired pneumonia."/>
+   <purpose value="To record the results for each component parameter and their total sum for the CRB-65 score."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="CRB_65_score">
+         <path value="CRB_65_score"/>
+         <short value="CRB-65 score"/>
+         <definition value="An assessment score used within a community or primary care setting to estimate the severity of community-acquired pneumonia."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="CRB_65_score"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="CRB_65_score.protocol">
+         <path value="CRB_65_score.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="CRB_65_score.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="CRB_65_score.protocol.Extension_SLOT">
+         <path value="CRB_65_score.protocol.Extension_SLOT"/>
+         <short value="Extension SLOT"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models or formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="CRB_65_score.protocol.Extension_SLOT"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="CRB_65_score.History">
+         <path value="CRB_65_score.History"/>
+         <short value="History"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="CRB_65_score.History"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="CRB_65_score.History.Any_point_in_time_event">
+         <path value="CRB_65_score.History.Any_point_in_time_event"/>
+         <short value="Any point in time event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="CRB_65_score.History.Any_point_in_time_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="CRB_65_score.History.Any_point_in_time_event.data">
+         <path value="CRB_65_score.History.Any_point_in_time_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="CRB_65_score.History.Any_point_in_time_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="CRB_65_score.History.Any_point_in_time_event.data.Confusion">
+         <path value="CRB_65_score.History.Any_point_in_time_event.data.Confusion"/>
+         <short value="Confusion"/>
+         <definition value="Does the patient have recent onset confusion?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="CRB_65_score.History.Any_point_in_time_event.data.Confusion"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="CRB_65_score.History.Any_point_in_time_event.data.Confusion.value">
+         <path value="CRB_65_score.History.Any_point_in_time_event.data.Confusion.value"/>
+         <short value="Confusion"/>
+         <definition value="Does the patient have recent onset confusion?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="CRB_65_score.History.Any_point_in_time_event.data.Confusion.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="CRB_65_score.History.Any_point_in_time_event.data.Respiratory_rate">
+         <path value="CRB_65_score.History.Any_point_in_time_event.data.Respiratory_rate"/>
+         <short value="Respiratory rate"/>
+         <definition value="Does the patient have a respiratory rate equal to or greater than 30 /min?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="CRB_65_score.History.Any_point_in_time_event.data.Respiratory_rate"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="CRB_65_score.History.Any_point_in_time_event.data.Respiratory_rate.value">
+         <path value="CRB_65_score.History.Any_point_in_time_event.data.Respiratory_rate.value"/>
+         <short value="Respiratory rate"/>
+         <definition value="Does the patient have a respiratory rate equal to or greater than 30 /min?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="CRB_65_score.History.Any_point_in_time_event.data.Respiratory_rate.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="CRB_65_score.History.Any_point_in_time_event.data.Blood_pressure">
+         <path value="CRB_65_score.History.Any_point_in_time_event.data.Blood_pressure"/>
+         <short value="Blood pressure"/>
+         <definition value="Does the patient have a systolic blood pressure &lt;90 OR a diastolic blood pressure ≤60 mmHg?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="CRB_65_score.History.Any_point_in_time_event.data.Blood_pressure"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="CRB_65_score.History.Any_point_in_time_event.data.Blood_pressure.value">
+         <path value="CRB_65_score.History.Any_point_in_time_event.data.Blood_pressure.value"/>
+         <short value="Blood pressure"/>
+         <definition value="Does the patient have a systolic blood pressure &lt;90 OR a diastolic blood pressure ≤60 mmHg?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="CRB_65_score.History.Any_point_in_time_event.data.Blood_pressure.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="CRB_65_score.History.Any_point_in_time_event.data.Age">
+         <path value="CRB_65_score.History.Any_point_in_time_event.data.Age"/>
+         <short value="Age"/>
+         <definition value="Is the patient 65 years or older?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="CRB_65_score.History.Any_point_in_time_event.data.Age"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="CRB_65_score.History.Any_point_in_time_event.data.Age.value">
+         <path value="CRB_65_score.History.Any_point_in_time_event.data.Age.value"/>
+         <short value="Age"/>
+         <definition value="Is the patient 65 years or older?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="CRB_65_score.History.Any_point_in_time_event.data.Age.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="CRB_65_score.History.Any_point_in_time_event.data.Total_score">
+         <path value="CRB_65_score.History.Any_point_in_time_event.data.Total_score"/>
+         <short value="Total score"/>
+         <definition value="The total sum of each component variable for the CRB-65 score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="CRB_65_score.History.Any_point_in_time_event.data.Total_score"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="CRB_65_score.History.Any_point_in_time_event.data.Total_score.value">
+         <path value="CRB_65_score.History.Any_point_in_time_event.data.Total_score.value"/>
+         <short value="Total score"/>
+         <definition value="The total sum of each component variable for the CRB-65 score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="CRB_65_score.History.Any_point_in_time_event.data.Total_score.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="CRB_65_score.History.Any_point_in_time_event.data.Grade">
+         <path value="CRB_65_score.History.Any_point_in_time_event.data.Grade"/>
+         <short value="Grade"/>
+         <definition value="Assessment of severity based on the CRB-65 score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="CRB_65_score.History.Any_point_in_time_event.data.Grade"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="CRB_65_score.History.Any_point_in_time_event.data.Grade.value">
+         <path value="CRB_65_score.History.Any_point_in_time_event.data.Grade.value"/>
+         <short value="Grade"/>
+         <definition value="Assessment of severity based on the CRB-65 score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="CRB_65_score.History.Any_point_in_time_event.data.Grade.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Exposure-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-exposure-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-EVALUATION.exposure.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Exposure"/>
+   <title value="Exposure"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Exposure of the subject to a chemical, physical or biological agent within their environment that has caused, or may possibly cause in the future, a negative impact on health."/>
+   <purpose value="To record summary details of exposure of the subject to a chemical, physical or biological agent within their environment that has caused, or may possibly cause in the future, a negative impact on health."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Exposure">
+         <path value="Exposure"/>
+         <short value="Exposure"/>
+         <definition value="Exposure of the subject to a chemical, physical or biological agent within their environment that has caused, or may possibly cause in the future, a negative impact on health."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Exposure"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Exposure.protocol">
+         <path value="Exposure.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exposure.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Exposure.protocol.Date_Updated">
+         <path value="Exposure.protocol.Date_Updated"/>
+         <short value="Date Updated"/>
+         <definition value="The date this exposure summary was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exposure.protocol.Date_Updated"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Exposure.protocol.Date_Updated.value">
+         <path value="Exposure.protocol.Date_Updated.value"/>
+         <short value="Date Updated"/>
+         <definition value="The date this exposure summary was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exposure.protocol.Date_Updated.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Exposure.data">
+         <path value="Exposure.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exposure.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Exposure.data.Agent">
+         <path value="Exposure.data.Agent"/>
+         <short value="Agent"/>
+         <definition value="Identification of the chemical, physical or biological agent to which the subject was exposed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exposure.data.Agent"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Exposure.data.Agent.value">
+         <path value="Exposure.data.Agent.value"/>
+         <short value="Agent"/>
+         <definition value="Identification of the chemical, physical or biological agent to which the subject was exposed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exposure.data.Agent.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Exposure.data.Overall_Description">
+         <path value="Exposure.data.Overall_Description"/>
+         <short value="Overall Description"/>
+         <definition value="Overall description of the exposure to the identified substance."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exposure.data.Overall_Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Exposure.data.Overall_Description.value">
+         <path value="Exposure.data.Overall_Description.value"/>
+         <short value="Overall Description"/>
+         <definition value="Overall description of the exposure to the identified substance."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exposure.data.Overall_Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Exposure.data.Category">
+         <path value="Exposure.data.Category"/>
+         <short value="Category"/>
+         <definition value="Type of exposure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exposure.data.Category"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Exposure.data.Category.value">
+         <path value="Exposure.data.Category.value"/>
+         <short value="Category"/>
+         <definition value="Type of exposure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exposure.data.Category.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Exposure.data.Ongoing_Exposure">
+         <path value="Exposure.data.Ongoing_Exposure"/>
+         <short value="Ongoing Exposure"/>
+         <definition value="Does the subject remain exposed to the substance to a degree that could be regarded as a potential risk to health?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exposure.data.Ongoing_Exposure"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Exposure.data.Ongoing_Exposure.value">
+         <path value="Exposure.data.Ongoing_Exposure.value"/>
+         <short value="Ongoing Exposure"/>
+         <definition value="Does the subject remain exposed to the substance to a degree that could be regarded as a potential risk to health?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exposure.data.Ongoing_Exposure.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Exposure.data.Exposure_Details">
+         <path value="Exposure.data.Exposure_Details"/>
+         <short value="Exposure Details"/>
+         <definition value="Detailed information about an episode of exposure to the agent."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Exposure.data.Exposure_Details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Exposure.data.Exposure_Details.Date_of_Onset">
+         <path value="Exposure.data.Exposure_Details.Date_of_Onset"/>
+         <short value="Date of Onset"/>
+         <definition value="Date of onset of exposure to the agent."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exposure.data.Exposure_Details.Date_of_Onset"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Exposure.data.Exposure_Details.Date_of_Onset.value">
+         <path value="Exposure.data.Exposure_Details.Date_of_Onset.value"/>
+         <short value="Date of Onset"/>
+         <definition value="Date of onset of exposure to the agent."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exposure.data.Exposure_Details.Date_of_Onset.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Exposure.data.Exposure_Details.Description">
+         <path value="Exposure.data.Exposure_Details.Description"/>
+         <short value="Description"/>
+         <definition value="Detailed description of an episode of exposure to the identified substance."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exposure.data.Exposure_Details.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Exposure.data.Exposure_Details.Description.value">
+         <path value="Exposure.data.Exposure_Details.Description.value"/>
+         <short value="Description"/>
+         <definition value="Detailed description of an episode of exposure to the identified substance."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exposure.data.Exposure_Details.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Exposure.data.Exposure_Details.Date_Ceased">
+         <path value="Exposure.data.Exposure_Details.Date_Ceased"/>
+         <short value="Date Ceased"/>
+         <definition value="Date of cessation of exposure to the agent."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exposure.data.Exposure_Details.Date_Ceased"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Exposure.data.Exposure_Details.Date_Ceased.value">
+         <path value="Exposure.data.Exposure_Details.Date_Ceased.value"/>
+         <short value="Date Ceased"/>
+         <definition value="Date of cessation of exposure to the agent."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exposure.data.Exposure_Details.Date_Ceased.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

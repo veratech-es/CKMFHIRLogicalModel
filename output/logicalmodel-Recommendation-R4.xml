@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Recommendation-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-recommendation-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-EVALUATION.recommendation.v2"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Recommendation"/>
+   <title value="Recommendation"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="A suggestion, advice or proposal for clinical management."/>
+   <purpose value="To record a suggestion, advice or proposal for clinical management at a specific time."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Recommendation">
+         <path value="Recommendation"/>
+         <short value="Recommendation"/>
+         <definition value="A suggestion, advice or proposal for clinical management."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Recommendation"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Recommendation.protocol">
+         <path value="Recommendation.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Recommendation.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Recommendation.protocol.Last_updated">
+         <path value="Recommendation.protocol.Last_updated"/>
+         <short value="Last updated"/>
+         <definition value="The date this recommendation was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Recommendation.protocol.Last_updated"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Recommendation.protocol.Last_updated.value">
+         <path value="Recommendation.protocol.Last_updated.value"/>
+         <short value="Last updated"/>
+         <definition value="The date this recommendation was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Recommendation.protocol.Last_updated.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Recommendation.protocol.Extension">
+         <path value="Recommendation.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models or formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Recommendation.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Recommendation.data">
+         <path value="Recommendation.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Recommendation.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Recommendation.data.Topic">
+         <path value="Recommendation.data.Topic"/>
+         <short value="Topic"/>
+         <definition value="The topic or subject of the recommendation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Recommendation.data.Topic"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Recommendation.data.Topic.value">
+         <path value="Recommendation.data.Topic.value"/>
+         <short value="Topic"/>
+         <definition value="The topic or subject of the recommendation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Recommendation.data.Topic.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Recommendation.data.Recommendation">
+         <path value="Recommendation.data.Recommendation"/>
+         <short value="Recommendation"/>
+         <definition value="Narrative description of the recommendation."/>
+         <min value="1"/>
+         <max value="*"/>
+         <base>
+            <path value="Recommendation.data.Recommendation"/>
+            <min value="1"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Recommendation.data.Recommendation.value">
+         <path value="Recommendation.data.Recommendation.value"/>
+         <short value="Recommendation"/>
+         <definition value="Narrative description of the recommendation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Recommendation.data.Recommendation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Recommendation.data.Rationale">
+         <path value="Recommendation.data.Rationale"/>
+         <short value="Rationale"/>
+         <definition value="Justifications for the recommendation."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Recommendation.data.Rationale"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Recommendation.data.Rationale.value">
+         <path value="Recommendation.data.Rationale.value"/>
+         <short value="Rationale"/>
+         <definition value="Justifications for the recommendation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Recommendation.data.Rationale.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

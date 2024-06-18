@@ -1,0 +1,3055 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Tympanogramtestresult-highfrequency-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-tympanogramtestresult-highfrequency-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.tympanogram_hf.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Tympanogramtestresult-highfrequency"/>
+   <title value="Tympanogram test result - high frequency"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Record of measurements of movement at the tympanic membrane in response to a multifrequency probe tone, or a probe tone higher than 226Hz, and changes in air pressure in the ear canal, and their clinical interpretation as an indication of middle ear function."/>
+   <purpose value="To record measurements based on a multi-frequency (or sweep frequency) probe tone, or a probe tone higher than 226Hz, of the admittance or impedance of the middle ear system as a function of the pressure in the external ear canal pressure.&#xD;&#xA;&#xD;&#xA;To infer middle ear function from objective measurements based on a high frequency probe tone, taken at the tympanic membrane of the mobility of the tympanic membrane, in reponse to varying air pressure in the ear canal.&#xD;&#xA;&#xD;&#xA;To infer middle ear function from objective measurements based on a multi-frequency probe tone, taken at the tympanic membrane of the mobility of the tympanic membrane, in reponse to a specified air pressure in the ear canal."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Tympanogram_test_result___high_frequency">
+         <path value="Tympanogram_test_result___high_frequency"/>
+         <short value="Tympanogram test result - high frequency"/>
+         <definition value="Record of measurements of movement at the tympanic membrane in response to a multifrequency probe tone, or a probe tone higher than 226Hz, and changes in air pressure in the ear canal, and their clinical interpretation as an indication of middle ear function."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.protocol">
+         <path value="Tympanogram_test_result___high_frequency.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.protocol.Sweep_pressure">
+         <path value="Tympanogram_test_result___high_frequency.protocol.Sweep_pressure"/>
+         <short value="Sweep pressure"/>
+         <definition value="Parameters used for Sweep Pressure high frequency probe tone tympanometry."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.protocol.Sweep_pressure"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.protocol.Sweep_pressure.Probe_tone_frequency">
+         <path value="Tympanogram_test_result___high_frequency.protocol.Sweep_pressure.Probe_tone_frequency"/>
+         <short value="Probe tone frequency"/>
+         <definition value="The frequency of the probe tone played into the ear canal for tympanometry measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.protocol.Sweep_pressure.Probe_tone_frequency"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.protocol.Sweep_pressure.Probe_tone_frequency.value">
+         <path value="Tympanogram_test_result___high_frequency.protocol.Sweep_pressure.Probe_tone_frequency.value"/>
+         <short value="Probe tone frequency"/>
+         <definition value="The frequency of the probe tone played into the ear canal for tympanometry measurement."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.protocol.Sweep_pressure.Probe_tone_frequency.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.protocol.Sweep_pressure.Rate_of_pressure_change">
+         <path value="Tympanogram_test_result___high_frequency.protocol.Sweep_pressure.Rate_of_pressure_change"/>
+         <short value="Rate of pressure change"/>
+         <definition value="The rate of change of pressure used in tympanometry."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.protocol.Sweep_pressure.Rate_of_pressure_change"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.protocol.Sweep_pressure.Rate_of_pressure_change.value">
+         <path value="Tympanogram_test_result___high_frequency.protocol.Sweep_pressure.Rate_of_pressure_change.value"/>
+         <short value="Rate of pressure change"/>
+         <definition value="The rate of change of pressure used in tympanometry."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.protocol.Sweep_pressure.Rate_of_pressure_change.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.protocol.Sweep_pressure.Start_pressure">
+         <path value="Tympanogram_test_result___high_frequency.protocol.Sweep_pressure.Start_pressure"/>
+         <short value="Start pressure"/>
+         <definition value="The pressure value at which the pressure sweep for tympanometry begins."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.protocol.Sweep_pressure.Start_pressure"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.protocol.Sweep_pressure.Start_pressure.value">
+         <path value="Tympanogram_test_result___high_frequency.protocol.Sweep_pressure.Start_pressure.value"/>
+         <short value="Start pressure"/>
+         <definition value="The pressure value at which the pressure sweep for tympanometry begins."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.protocol.Sweep_pressure.Start_pressure.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.protocol.Sweep_pressure.Stop_pressure">
+         <path value="Tympanogram_test_result___high_frequency.protocol.Sweep_pressure.Stop_pressure"/>
+         <short value="Stop pressure"/>
+         <definition value="The pressure value at which the pressure sweep for tympanometry ends. It is a negative pressure if the direction of pressure change is descending and a positive pressure if the direction of pressure change is ascending."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.protocol.Sweep_pressure.Stop_pressure"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.protocol.Sweep_pressure.Stop_pressure.value">
+         <path value="Tympanogram_test_result___high_frequency.protocol.Sweep_pressure.Stop_pressure.value"/>
+         <short value="Stop pressure"/>
+         <definition value="The pressure value at which the pressure sweep for tympanometry ends. It is a negative pressure if the direction of pressure change is descending and a positive pressure if the direction of pressure change is ascending."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.protocol.Sweep_pressure.Stop_pressure.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.protocol.Multi_frequency">
+         <path value="Tympanogram_test_result___high_frequency.protocol.Multi_frequency"/>
+         <short value="Multi-frequency"/>
+         <definition value="Parameters used for multi-frequency tympanometry."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.protocol.Multi_frequency"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.protocol.Multi_frequency.Pressure">
+         <path value="Tympanogram_test_result___high_frequency.protocol.Multi_frequency.Pressure"/>
+         <short value="Pressure"/>
+         <definition value="The fixed pressure in the ear canal."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.protocol.Multi_frequency.Pressure"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.protocol.Multi_frequency.Pressure.value">
+         <path value="Tympanogram_test_result___high_frequency.protocol.Multi_frequency.Pressure.value"/>
+         <short value="Pressure"/>
+         <definition value="The fixed pressure in the ear canal."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.protocol.Multi_frequency.Pressure.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.protocol.Multi_frequency.Rate_of_frequency_change">
+         <path value="Tympanogram_test_result___high_frequency.protocol.Multi_frequency.Rate_of_frequency_change"/>
+         <short value="Rate of frequency change"/>
+         <definition value="The rate of change of the probe tone frequency used in tympanometry."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.protocol.Multi_frequency.Rate_of_frequency_change"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.protocol.Multi_frequency.Rate_of_frequency_change.value">
+         <path value="Tympanogram_test_result___high_frequency.protocol.Multi_frequency.Rate_of_frequency_change.value"/>
+         <short value="Rate of frequency change"/>
+         <definition value="The rate of change of the probe tone frequency used in tympanometry."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.protocol.Multi_frequency.Rate_of_frequency_change.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.protocol.Multi_frequency.Start_frequency">
+         <path value="Tympanogram_test_result___high_frequency.protocol.Multi_frequency.Start_frequency"/>
+         <short value="Start frequency"/>
+         <definition value="The frequncy value at which the frequency sweep for tympanometry begins."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.protocol.Multi_frequency.Start_frequency"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.protocol.Multi_frequency.Start_frequency.value">
+         <path value="Tympanogram_test_result___high_frequency.protocol.Multi_frequency.Start_frequency.value"/>
+         <short value="Start frequency"/>
+         <definition value="The frequncy value at which the frequency sweep for tympanometry begins."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.protocol.Multi_frequency.Start_frequency.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.protocol.Multi_frequency.Stop_frequency">
+         <path value="Tympanogram_test_result___high_frequency.protocol.Multi_frequency.Stop_frequency"/>
+         <short value="Stop frequency"/>
+         <definition value="The frequncy value at which the frequency sweep for tympanometry ends."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.protocol.Multi_frequency.Stop_frequency"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.protocol.Multi_frequency.Stop_frequency.value">
+         <path value="Tympanogram_test_result___high_frequency.protocol.Multi_frequency.Stop_frequency.value"/>
+         <short value="Stop frequency"/>
+         <definition value="The frequncy value at which the frequency sweep for tympanometry ends."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.protocol.Multi_frequency.Stop_frequency.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.protocol.Tympanometer">
+         <path value="Tympanogram_test_result___high_frequency.protocol.Tympanometer"/>
+         <short value="Tympanometer"/>
+         <definition value="Details of tympanometer used to conduct the test."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.protocol.Tympanometer"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.protocol.Comment">
+         <path value="Tympanogram_test_result___high_frequency.protocol.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the protocol for the tympanogram not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.protocol.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.protocol.Comment.value">
+         <path value="Tympanogram_test_result___high_frequency.protocol.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the protocol for the tympanogram not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.protocol.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Any_event">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details"/>
+         <short value="Result details"/>
+         <definition value="The tympanogram test result details, recorded per ear."/>
+         <min value="0"/>
+         <max value="2"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details"/>
+            <min value="0"/>
+            <max value="2"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Test_ear">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Test_ear"/>
+         <short value="Test ear"/>
+         <definition value="Identification of the ear being tested."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Test_ear"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Test_ear.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Test_ear.value"/>
+         <short value="Test ear"/>
+         <definition value="Identification of the ear being tested."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Test_ear.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details"/>
+         <short value="Measurement details"/>
+         <definition value="Measurements derived from the tympanomgram."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Peak_pressure">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Peak_pressure"/>
+         <short value="Peak pressure"/>
+         <definition value="Peak pressure (also called tympanometric peak pressure or middle ear pressure or MEP) is the ear canal pressure at which the peak(s) of the tympanogram occurs."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Peak_pressure"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Peak_pressure.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Peak_pressure.value"/>
+         <short value="Peak pressure"/>
+         <definition value="Peak pressure (also called tympanometric peak pressure or middle ear pressure or MEP) is the ear canal pressure at which the peak(s) of the tympanogram occurs."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Peak_pressure.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Y_peak">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Y_peak"/>
+         <short value="Y peak"/>
+         <definition value="Peak compensated static admittance."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Y_peak"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Y_peak.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Y_peak.value"/>
+         <short value="Y peak"/>
+         <definition value="Peak compensated static admittance."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Y_peak.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Y+200">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Y+200"/>
+         <short value="Y+200"/>
+         <definition value="Admittance at +200 daPa."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Y+200"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Y+200.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Y+200.value"/>
+         <short value="Y+200"/>
+         <definition value="Admittance at +200 daPa."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Y+200.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Y_400">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Y_400"/>
+         <short value="Y-400"/>
+         <definition value="Admittance at -400 daPa."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Y_400"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Y_400.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Y_400.value"/>
+         <short value="Y-400"/>
+         <definition value="Admittance at -400 daPa."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Y_400.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Ear_canal_volume">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Ear_canal_volume"/>
+         <short value="Ear canal volume"/>
+         <definition value="An estimate of the volume of air between the probe tip and the tympanic membrane if the tympanic membrane is intact, or the volume of the ear canal and the middle ear space if the tympanic membrane is perforated. (Fowler &amp; Shanks, 2002, p. 180)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Ear_canal_volume"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Ear_canal_volume.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Ear_canal_volume.value"/>
+         <short value="Ear canal volume"/>
+         <definition value="An estimate of the volume of air between the probe tip and the tympanic membrane if the tympanic membrane is intact, or the volume of the ear canal and the middle ear space if the tympanic membrane is perforated. (Fowler &amp; Shanks, 2002, p. 180)."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Ear_canal_volume.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Ear_baseline_value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Ear_baseline_value"/>
+         <short value="Ear baseline value"/>
+         <definition value="Derived ear canal volume."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Ear_baseline_value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Ear_baseline_value.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Ear_baseline_value.value"/>
+         <short value="Ear baseline value"/>
+         <definition value="Derived ear canal volume."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Ear_baseline_value.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Resonant_frequency">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Resonant_frequency"/>
+         <short value="Resonant frequency"/>
+         <definition value="Frequency at which the total susceptance is zero."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Resonant_frequency"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Resonant_frequency.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Resonant_frequency.value"/>
+         <short value="Resonant frequency"/>
+         <definition value="Frequency at which the total susceptance is zero."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Resonant_frequency.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.F45_degree">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.F45_degree"/>
+         <short value="F45 degree"/>
+         <definition value="The frequency corresponding to a 45° phase angle."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.F45_degree"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.F45_degree.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.F45_degree.value"/>
+         <short value="F45 degree"/>
+         <definition value="The frequency corresponding to a 45° phase angle."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.F45_degree.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Tympanometric_width">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Tympanometric_width"/>
+         <short value="Tympanometric width"/>
+         <definition value="The pressure interval corresponding to a 50% reduction in the peak static admittance."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Tympanometric_width"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Tympanometric_width.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Tympanometric_width.value"/>
+         <short value="Tympanometric width"/>
+         <definition value="The pressure interval corresponding to a 50% reduction in the peak static admittance."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Tympanometric_width.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Tympanometric_gradient">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Tympanometric_gradient"/>
+         <short value="Tympanometric gradient"/>
+         <definition value="The steepness of the slope of the tympanogram near the peak."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Tympanometric_gradient"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Tympanometric_gradient.value_DvQuantity">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Tympanometric_gradient.value_DvQuantity"/>
+         <short value="Tympanometric gradient"/>
+         <definition value="The steepness of the slope of the tympanogram near the peak."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Tympanometric_gradient.value_DvQuantity"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Tympanometric_gradient.value_DV_PROPORTION">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Tympanometric_gradient.value_DV_PROPORTION"/>
+         <short value="Tympanometric gradient"/>
+         <definition value="The steepness of the slope of the tympanogram near the peak."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Measurement_details.Tympanometric_gradient.value_DV_PROPORTION"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Ratio"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.No_test_result">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.No_test_result"/>
+         <short value="No test result"/>
+         <definition value="No test result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.No_test_result"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.No_test_result.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.No_test_result.value"/>
+         <short value="No test result"/>
+         <definition value="No test result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.No_test_result.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Reason_for_no_test_result">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Reason_for_no_test_result"/>
+         <short value="Reason for no test result"/>
+         <definition value="Reason why no result is available for the test ear."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Reason_for_no_test_result"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Reason_for_no_test_result.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Reason_for_no_test_result.value"/>
+         <short value="Reason for no test result"/>
+         <definition value="Reason why no result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Reason_for_no_test_result.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Tympanogram_type">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Tympanogram_type"/>
+         <short value="Tympanogram type"/>
+         <definition value="Classification of the the shape of the tympanogram curve."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Tympanogram_type"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Tympanogram_type.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Tympanogram_type.value"/>
+         <short value="Tympanogram type"/>
+         <definition value="Classification of the the shape of the tympanogram curve."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Tympanogram_type.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Vanhuyse_classification_type">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Vanhuyse_classification_type"/>
+         <short value="Vanhuyse classification type"/>
+         <definition value="Classification of tympanogram type based on Vanhuyse classification system."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Vanhuyse_classification_type"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Vanhuyse_classification_type.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Vanhuyse_classification_type.value"/>
+         <short value="Vanhuyse classification type"/>
+         <definition value="Classification of tympanogram type based on Vanhuyse classification system."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Vanhuyse_classification_type.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Clinical_interpretation">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Clinical_interpretation"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Clinical interpretation of all measurements for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Clinical_interpretation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Clinical_interpretation.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Clinical_interpretation.value"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Clinical interpretation of all measurements for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Result_details.Clinical_interpretation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Overall_interpretation">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Overall_interpretation"/>
+         <short value="Overall interpretation"/>
+         <definition value="Overall clinical interpretation of the measurements and related findings using an tympanometer."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Overall_interpretation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Overall_interpretation.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Overall_interpretation.value"/>
+         <short value="Overall interpretation"/>
+         <definition value="Overall clinical interpretation of the measurements and related findings using an tympanometer."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Overall_interpretation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Test_result_image">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Test_result_image"/>
+         <short value="Test result image"/>
+         <definition value="Digital representation of the entire result."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Test_result_image"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Test_result_image.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Test_result_image.value"/>
+         <short value="Test result image"/>
+         <definition value="Digital representation of the entire result."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Test_result_image.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Attachment"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Comment">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the test results and intepretation not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Comment.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the test results and intepretation not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Any_event.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Baseline">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline"/>
+         <short value="Baseline"/>
+         <definition value="Measurement collection recorded as the basis for comparison with following measurement collections that may included other variables of time or patient state."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data"/>
+         <definition value="ITEM_TREE"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details"/>
+         <short value="Result details"/>
+         <definition value="The tympanogram test result details, recorded per ear."/>
+         <min value="0"/>
+         <max value="2"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details"/>
+            <min value="0"/>
+            <max value="2"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Test_ear">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Test_ear"/>
+         <short value="Test ear"/>
+         <definition value="Identification of the ear being tested."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Test_ear"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Test_ear.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Test_ear.value"/>
+         <short value="Test ear"/>
+         <definition value="Identification of the ear being tested."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Test_ear.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details"/>
+         <short value="Measurement details"/>
+         <definition value="Measurements derived from the tympanomgram."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Peak_pressure">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Peak_pressure"/>
+         <short value="Peak pressure"/>
+         <definition value="Peak pressure (also called tympanometric peak pressure or middle ear pressure or MEP) is the ear canal pressure at which the peak(s) of the tympanogram occurs."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Peak_pressure"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Peak_pressure.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Peak_pressure.value"/>
+         <short value="Peak pressure"/>
+         <definition value="Peak pressure (also called tympanometric peak pressure or middle ear pressure or MEP) is the ear canal pressure at which the peak(s) of the tympanogram occurs."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Peak_pressure.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Y_peak">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Y_peak"/>
+         <short value="Y peak"/>
+         <definition value="Peak compensated static admittance."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Y_peak"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Y_peak.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Y_peak.value"/>
+         <short value="Y peak"/>
+         <definition value="Peak compensated static admittance."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Y_peak.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Y+200">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Y+200"/>
+         <short value="Y+200"/>
+         <definition value="Admittance at +200 daPa."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Y+200"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Y+200.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Y+200.value"/>
+         <short value="Y+200"/>
+         <definition value="Admittance at +200 daPa."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Y+200.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Y_400">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Y_400"/>
+         <short value="Y-400"/>
+         <definition value="Admittance at -400 daPa."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Y_400"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Y_400.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Y_400.value"/>
+         <short value="Y-400"/>
+         <definition value="Admittance at -400 daPa."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Y_400.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Ear_canal_volume">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Ear_canal_volume"/>
+         <short value="Ear canal volume"/>
+         <definition value="An estimate of the volume of air between the probe tip and the tympanic membrane if the tympanic membrane is intact, or the volume of the ear canal and the middle ear space if the tympanic membrane is perforated. (Fowler &amp; Shanks, 2002, p. 180)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Ear_canal_volume"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Ear_canal_volume.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Ear_canal_volume.value"/>
+         <short value="Ear canal volume"/>
+         <definition value="An estimate of the volume of air between the probe tip and the tympanic membrane if the tympanic membrane is intact, or the volume of the ear canal and the middle ear space if the tympanic membrane is perforated. (Fowler &amp; Shanks, 2002, p. 180)."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Ear_canal_volume.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Ear_baseline_value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Ear_baseline_value"/>
+         <short value="Ear baseline value"/>
+         <definition value="Derived ear canal volume."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Ear_baseline_value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Ear_baseline_value.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Ear_baseline_value.value"/>
+         <short value="Ear baseline value"/>
+         <definition value="Derived ear canal volume."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Ear_baseline_value.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Resonant_frequency">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Resonant_frequency"/>
+         <short value="Resonant frequency"/>
+         <definition value="Frequency at which the total susceptance is zero."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Resonant_frequency"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Resonant_frequency.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Resonant_frequency.value"/>
+         <short value="Resonant frequency"/>
+         <definition value="Frequency at which the total susceptance is zero."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Resonant_frequency.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.F45_degree">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.F45_degree"/>
+         <short value="F45 degree"/>
+         <definition value="The frequency corresponding to a 45° phase angle."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.F45_degree"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.F45_degree.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.F45_degree.value"/>
+         <short value="F45 degree"/>
+         <definition value="The frequency corresponding to a 45° phase angle."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.F45_degree.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Tympanometric_width">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Tympanometric_width"/>
+         <short value="Tympanometric width"/>
+         <definition value="The pressure interval corresponding to a 50% reduction in the peak static admittance."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Tympanometric_width"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Tympanometric_width.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Tympanometric_width.value"/>
+         <short value="Tympanometric width"/>
+         <definition value="The pressure interval corresponding to a 50% reduction in the peak static admittance."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Tympanometric_width.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Tympanometric_gradient">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Tympanometric_gradient"/>
+         <short value="Tympanometric gradient"/>
+         <definition value="The steepness of the slope of the tympanogram near the peak."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Tympanometric_gradient"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Tympanometric_gradient.value_DvQuantity">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Tympanometric_gradient.value_DvQuantity"/>
+         <short value="Tympanometric gradient"/>
+         <definition value="The steepness of the slope of the tympanogram near the peak."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Tympanometric_gradient.value_DvQuantity"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Tympanometric_gradient.value_DV_PROPORTION">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Tympanometric_gradient.value_DV_PROPORTION"/>
+         <short value="Tympanometric gradient"/>
+         <definition value="The steepness of the slope of the tympanogram near the peak."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Measurement_details.Tympanometric_gradient.value_DV_PROPORTION"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Ratio"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.No_test_result">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.No_test_result"/>
+         <short value="No test result"/>
+         <definition value="No test result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.No_test_result"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.No_test_result.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.No_test_result.value"/>
+         <short value="No test result"/>
+         <definition value="No test result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.No_test_result.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Reason_for_no_test_result">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Reason_for_no_test_result"/>
+         <short value="Reason for no test result"/>
+         <definition value="Reason why no result is available for the test ear."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Reason_for_no_test_result"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Reason_for_no_test_result.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Reason_for_no_test_result.value"/>
+         <short value="Reason for no test result"/>
+         <definition value="Reason why no result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Reason_for_no_test_result.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Tympanogram_type">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Tympanogram_type"/>
+         <short value="Tympanogram type"/>
+         <definition value="Classification of the the shape of the tympanogram curve."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Tympanogram_type"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Tympanogram_type.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Tympanogram_type.value"/>
+         <short value="Tympanogram type"/>
+         <definition value="Classification of the the shape of the tympanogram curve."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Tympanogram_type.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Vanhuyse_classification_type">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Vanhuyse_classification_type"/>
+         <short value="Vanhuyse classification type"/>
+         <definition value="Classification of tympanogram type based on Vanhuyse classification system."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Vanhuyse_classification_type"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Vanhuyse_classification_type.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Vanhuyse_classification_type.value"/>
+         <short value="Vanhuyse classification type"/>
+         <definition value="Classification of tympanogram type based on Vanhuyse classification system."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Vanhuyse_classification_type.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Clinical_interpretation">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Clinical_interpretation"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Clinical interpretation of all measurements for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Clinical_interpretation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Clinical_interpretation.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Clinical_interpretation.value"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Clinical interpretation of all measurements for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Result_details.Clinical_interpretation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Overall_interpretation">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Overall_interpretation"/>
+         <short value="Overall interpretation"/>
+         <definition value="Overall clinical interpretation of the measurements and related findings using an tympanometer."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Overall_interpretation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Overall_interpretation.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Overall_interpretation.value"/>
+         <short value="Overall interpretation"/>
+         <definition value="Overall clinical interpretation of the measurements and related findings using an tympanometer."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Overall_interpretation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Test_result_image">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Test_result_image"/>
+         <short value="Test result image"/>
+         <definition value="Digital representation of the entire result."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Test_result_image"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Test_result_image.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Test_result_image.value"/>
+         <short value="Test result image"/>
+         <definition value="Digital representation of the entire result."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Test_result_image.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Attachment"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Comment">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the test results and intepretation not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Comment.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the test results and intepretation not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Baseline.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva"/>
+         <short value="Post-Valsalva"/>
+         <definition value="Measurements are recorded after the patient has performed a valsalva manoeuvre."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data"/>
+         <definition value="ITEM_TREE"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details"/>
+         <short value="Result details"/>
+         <definition value="The tympanogram test result details, recorded per ear."/>
+         <min value="0"/>
+         <max value="2"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details"/>
+            <min value="0"/>
+            <max value="2"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Test_ear">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Test_ear"/>
+         <short value="Test ear"/>
+         <definition value="Identification of the ear being tested."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Test_ear"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Test_ear.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Test_ear.value"/>
+         <short value="Test ear"/>
+         <definition value="Identification of the ear being tested."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Test_ear.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details"/>
+         <short value="Measurement details"/>
+         <definition value="Measurements derived from the tympanomgram."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Peak_pressure">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Peak_pressure"/>
+         <short value="Peak pressure"/>
+         <definition value="Peak pressure (also called tympanometric peak pressure or middle ear pressure or MEP) is the ear canal pressure at which the peak(s) of the tympanogram occurs."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Peak_pressure"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Peak_pressure.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Peak_pressure.value"/>
+         <short value="Peak pressure"/>
+         <definition value="Peak pressure (also called tympanometric peak pressure or middle ear pressure or MEP) is the ear canal pressure at which the peak(s) of the tympanogram occurs."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Peak_pressure.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Y_peak">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Y_peak"/>
+         <short value="Y peak"/>
+         <definition value="Peak compensated static admittance."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Y_peak"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Y_peak.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Y_peak.value"/>
+         <short value="Y peak"/>
+         <definition value="Peak compensated static admittance."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Y_peak.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Y+200">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Y+200"/>
+         <short value="Y+200"/>
+         <definition value="Admittance at +200 daPa."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Y+200"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Y+200.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Y+200.value"/>
+         <short value="Y+200"/>
+         <definition value="Admittance at +200 daPa."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Y+200.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Y_400">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Y_400"/>
+         <short value="Y-400"/>
+         <definition value="Admittance at -400 daPa."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Y_400"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Y_400.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Y_400.value"/>
+         <short value="Y-400"/>
+         <definition value="Admittance at -400 daPa."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Y_400.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Ear_canal_volume">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Ear_canal_volume"/>
+         <short value="Ear canal volume"/>
+         <definition value="An estimate of the volume of air between the probe tip and the tympanic membrane if the tympanic membrane is intact, or the volume of the ear canal and the middle ear space if the tympanic membrane is perforated. (Fowler &amp; Shanks, 2002, p. 180)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Ear_canal_volume"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Ear_canal_volume.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Ear_canal_volume.value"/>
+         <short value="Ear canal volume"/>
+         <definition value="An estimate of the volume of air between the probe tip and the tympanic membrane if the tympanic membrane is intact, or the volume of the ear canal and the middle ear space if the tympanic membrane is perforated. (Fowler &amp; Shanks, 2002, p. 180)."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Ear_canal_volume.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Ear_baseline_value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Ear_baseline_value"/>
+         <short value="Ear baseline value"/>
+         <definition value="Derived ear canal volume."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Ear_baseline_value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Ear_baseline_value.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Ear_baseline_value.value"/>
+         <short value="Ear baseline value"/>
+         <definition value="Derived ear canal volume."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Ear_baseline_value.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Resonant_frequency">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Resonant_frequency"/>
+         <short value="Resonant frequency"/>
+         <definition value="Frequency at which the total susceptance is zero."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Resonant_frequency"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Resonant_frequency.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Resonant_frequency.value"/>
+         <short value="Resonant frequency"/>
+         <definition value="Frequency at which the total susceptance is zero."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Resonant_frequency.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.F45_degree">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.F45_degree"/>
+         <short value="F45 degree"/>
+         <definition value="The frequency corresponding to a 45° phase angle."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.F45_degree"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.F45_degree.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.F45_degree.value"/>
+         <short value="F45 degree"/>
+         <definition value="The frequency corresponding to a 45° phase angle."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.F45_degree.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Tympanometric_width">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Tympanometric_width"/>
+         <short value="Tympanometric width"/>
+         <definition value="The pressure interval corresponding to a 50% reduction in the peak static admittance."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Tympanometric_width"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Tympanometric_width.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Tympanometric_width.value"/>
+         <short value="Tympanometric width"/>
+         <definition value="The pressure interval corresponding to a 50% reduction in the peak static admittance."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Tympanometric_width.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Tympanometric_gradient">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Tympanometric_gradient"/>
+         <short value="Tympanometric gradient"/>
+         <definition value="The steepness of the slope of the tympanogram near the peak."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Tympanometric_gradient"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Tympanometric_gradient.value_DvQuantity">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Tympanometric_gradient.value_DvQuantity"/>
+         <short value="Tympanometric gradient"/>
+         <definition value="The steepness of the slope of the tympanogram near the peak."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Tympanometric_gradient.value_DvQuantity"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Tympanometric_gradient.value_DV_PROPORTION">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Tympanometric_gradient.value_DV_PROPORTION"/>
+         <short value="Tympanometric gradient"/>
+         <definition value="The steepness of the slope of the tympanogram near the peak."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Measurement_details.Tympanometric_gradient.value_DV_PROPORTION"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Ratio"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.No_test_result">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.No_test_result"/>
+         <short value="No test result"/>
+         <definition value="No test result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.No_test_result"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.No_test_result.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.No_test_result.value"/>
+         <short value="No test result"/>
+         <definition value="No test result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.No_test_result.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Reason_for_no_test_result">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Reason_for_no_test_result"/>
+         <short value="Reason for no test result"/>
+         <definition value="Reason why no result is available for the test ear."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Reason_for_no_test_result"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Reason_for_no_test_result.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Reason_for_no_test_result.value"/>
+         <short value="Reason for no test result"/>
+         <definition value="Reason why no result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Reason_for_no_test_result.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Tympanogram_type">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Tympanogram_type"/>
+         <short value="Tympanogram type"/>
+         <definition value="Classification of the the shape of the tympanogram curve."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Tympanogram_type"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Tympanogram_type.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Tympanogram_type.value"/>
+         <short value="Tympanogram type"/>
+         <definition value="Classification of the the shape of the tympanogram curve."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Tympanogram_type.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Vanhuyse_classification_type">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Vanhuyse_classification_type"/>
+         <short value="Vanhuyse classification type"/>
+         <definition value="Classification of tympanogram type based on Vanhuyse classification system."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Vanhuyse_classification_type"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Vanhuyse_classification_type.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Vanhuyse_classification_type.value"/>
+         <short value="Vanhuyse classification type"/>
+         <definition value="Classification of tympanogram type based on Vanhuyse classification system."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Vanhuyse_classification_type.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Clinical_interpretation">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Clinical_interpretation"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Clinical interpretation of all measurements for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Clinical_interpretation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Clinical_interpretation.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Clinical_interpretation.value"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Clinical interpretation of all measurements for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Result_details.Clinical_interpretation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Overall_interpretation">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Overall_interpretation"/>
+         <short value="Overall interpretation"/>
+         <definition value="Overall clinical interpretation of the measurements and related findings using an tympanometer."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Overall_interpretation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Overall_interpretation.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Overall_interpretation.value"/>
+         <short value="Overall interpretation"/>
+         <definition value="Overall clinical interpretation of the measurements and related findings using an tympanometer."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Overall_interpretation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Test_result_image">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Test_result_image"/>
+         <short value="Test result image"/>
+         <definition value="Digital representation of the entire result."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Test_result_image"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Test_result_image.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Test_result_image.value"/>
+         <short value="Test result image"/>
+         <definition value="Digital representation of the entire result."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Test_result_image.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Attachment"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Comment">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the test results and intepretation not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Comment.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the test results and intepretation not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Valsalva.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee"/>
+         <short value="Post-Toynbee"/>
+         <definition value="Measurements are recorded after the patient has performed a toynbee manoeuvre."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data"/>
+         <definition value="ITEM_TREE"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details"/>
+         <short value="Result details"/>
+         <definition value="The tympanogram test result details, recorded per ear."/>
+         <min value="0"/>
+         <max value="2"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details"/>
+            <min value="0"/>
+            <max value="2"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Test_ear">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Test_ear"/>
+         <short value="Test ear"/>
+         <definition value="Identification of the ear being tested."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Test_ear"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Test_ear.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Test_ear.value"/>
+         <short value="Test ear"/>
+         <definition value="Identification of the ear being tested."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Test_ear.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details"/>
+         <short value="Measurement details"/>
+         <definition value="Measurements derived from the tympanomgram."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Peak_pressure">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Peak_pressure"/>
+         <short value="Peak pressure"/>
+         <definition value="Peak pressure (also called tympanometric peak pressure or middle ear pressure or MEP) is the ear canal pressure at which the peak(s) of the tympanogram occurs."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Peak_pressure"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Peak_pressure.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Peak_pressure.value"/>
+         <short value="Peak pressure"/>
+         <definition value="Peak pressure (also called tympanometric peak pressure or middle ear pressure or MEP) is the ear canal pressure at which the peak(s) of the tympanogram occurs."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Peak_pressure.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Y_peak">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Y_peak"/>
+         <short value="Y peak"/>
+         <definition value="Peak compensated static admittance."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Y_peak"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Y_peak.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Y_peak.value"/>
+         <short value="Y peak"/>
+         <definition value="Peak compensated static admittance."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Y_peak.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Y+200">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Y+200"/>
+         <short value="Y+200"/>
+         <definition value="Admittance at +200 daPa."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Y+200"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Y+200.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Y+200.value"/>
+         <short value="Y+200"/>
+         <definition value="Admittance at +200 daPa."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Y+200.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Y_400">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Y_400"/>
+         <short value="Y-400"/>
+         <definition value="Admittance at -400 daPa."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Y_400"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Y_400.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Y_400.value"/>
+         <short value="Y-400"/>
+         <definition value="Admittance at -400 daPa."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Y_400.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Ear_canal_volume">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Ear_canal_volume"/>
+         <short value="Ear canal volume"/>
+         <definition value="An estimate of the volume of air between the probe tip and the tympanic membrane if the tympanic membrane is intact, or the volume of the ear canal and the middle ear space if the tympanic membrane is perforated. (Fowler &amp; Shanks, 2002, p. 180)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Ear_canal_volume"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Ear_canal_volume.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Ear_canal_volume.value"/>
+         <short value="Ear canal volume"/>
+         <definition value="An estimate of the volume of air between the probe tip and the tympanic membrane if the tympanic membrane is intact, or the volume of the ear canal and the middle ear space if the tympanic membrane is perforated. (Fowler &amp; Shanks, 2002, p. 180)."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Ear_canal_volume.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Ear_baseline_value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Ear_baseline_value"/>
+         <short value="Ear baseline value"/>
+         <definition value="Derived ear canal volume."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Ear_baseline_value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Ear_baseline_value.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Ear_baseline_value.value"/>
+         <short value="Ear baseline value"/>
+         <definition value="Derived ear canal volume."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Ear_baseline_value.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Resonant_frequency">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Resonant_frequency"/>
+         <short value="Resonant frequency"/>
+         <definition value="Frequency at which the total susceptance is zero."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Resonant_frequency"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Resonant_frequency.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Resonant_frequency.value"/>
+         <short value="Resonant frequency"/>
+         <definition value="Frequency at which the total susceptance is zero."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Resonant_frequency.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.F45_degree">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.F45_degree"/>
+         <short value="F45 degree"/>
+         <definition value="The frequency corresponding to a 45° phase angle."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.F45_degree"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.F45_degree.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.F45_degree.value"/>
+         <short value="F45 degree"/>
+         <definition value="The frequency corresponding to a 45° phase angle."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.F45_degree.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Tympanometric_width">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Tympanometric_width"/>
+         <short value="Tympanometric width"/>
+         <definition value="The pressure interval corresponding to a 50% reduction in the peak static admittance."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Tympanometric_width"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Tympanometric_width.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Tympanometric_width.value"/>
+         <short value="Tympanometric width"/>
+         <definition value="The pressure interval corresponding to a 50% reduction in the peak static admittance."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Tympanometric_width.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Tympanometric_gradient">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Tympanometric_gradient"/>
+         <short value="Tympanometric gradient"/>
+         <definition value="The steepness of the slope of the tympanogram near the peak."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Tympanometric_gradient"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Tympanometric_gradient.value_DvQuantity">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Tympanometric_gradient.value_DvQuantity"/>
+         <short value="Tympanometric gradient"/>
+         <definition value="The steepness of the slope of the tympanogram near the peak."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Tympanometric_gradient.value_DvQuantity"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Tympanometric_gradient.value_DV_PROPORTION">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Tympanometric_gradient.value_DV_PROPORTION"/>
+         <short value="Tympanometric gradient"/>
+         <definition value="The steepness of the slope of the tympanogram near the peak."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Measurement_details.Tympanometric_gradient.value_DV_PROPORTION"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Ratio"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.No_test_result">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.No_test_result"/>
+         <short value="No test result"/>
+         <definition value="No test result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.No_test_result"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.No_test_result.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.No_test_result.value"/>
+         <short value="No test result"/>
+         <definition value="No test result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.No_test_result.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Reason_for_no_test_result">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Reason_for_no_test_result"/>
+         <short value="Reason for no test result"/>
+         <definition value="Reason why no result is available for the test ear."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Reason_for_no_test_result"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Reason_for_no_test_result.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Reason_for_no_test_result.value"/>
+         <short value="Reason for no test result"/>
+         <definition value="Reason why no result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Reason_for_no_test_result.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Tympanogram_type">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Tympanogram_type"/>
+         <short value="Tympanogram type"/>
+         <definition value="Classification of the the shape of the tympanogram curve."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Tympanogram_type"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Tympanogram_type.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Tympanogram_type.value"/>
+         <short value="Tympanogram type"/>
+         <definition value="Classification of the the shape of the tympanogram curve."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Tympanogram_type.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Vanhuyse_classification_type">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Vanhuyse_classification_type"/>
+         <short value="Vanhuyse classification type"/>
+         <definition value="Classification of tympanogram type based on Vanhuyse classification system."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Vanhuyse_classification_type"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Vanhuyse_classification_type.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Vanhuyse_classification_type.value"/>
+         <short value="Vanhuyse classification type"/>
+         <definition value="Classification of tympanogram type based on Vanhuyse classification system."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Vanhuyse_classification_type.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Clinical_interpretation">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Clinical_interpretation"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Clinical interpretation of all measurements for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Clinical_interpretation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Clinical_interpretation.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Clinical_interpretation.value"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Clinical interpretation of all measurements for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Result_details.Clinical_interpretation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Overall_interpretation">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Overall_interpretation"/>
+         <short value="Overall interpretation"/>
+         <definition value="Overall clinical interpretation of the measurements and related findings using an tympanometer."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Overall_interpretation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Overall_interpretation.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Overall_interpretation.value"/>
+         <short value="Overall interpretation"/>
+         <definition value="Overall clinical interpretation of the measurements and related findings using an tympanometer."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Overall_interpretation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Test_result_image">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Test_result_image"/>
+         <short value="Test result image"/>
+         <definition value="Digital representation of the entire result."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Test_result_image"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Test_result_image.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Test_result_image.value"/>
+         <short value="Test result image"/>
+         <definition value="Digital representation of the entire result."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Test_result_image.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Attachment"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Comment">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the test results and intepretation not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Comment.value">
+         <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the test results and intepretation not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Tympanogram_test_result___high_frequency.Event_Series.Post_Toynbee.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

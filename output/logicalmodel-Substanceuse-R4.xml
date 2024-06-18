@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Substanceuse-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-substanceuse-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.substance_use.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Substanceuse"/>
+   <title value="Substance Use"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Generic archetype to record the actual use or consumption of a defined substance at the present time, a specific time or over a period of time. "/>
+   <purpose value="This is a generic archetype used to record details of the use of any and all substances. "/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Substance_Use">
+         <path value="Substance_Use"/>
+         <short value="Substance Use"/>
+         <definition value="Generic archetype to record the actual use or consumption of a defined substance at the present time, a specific time or over a period of time. "/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_Use"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Substance_Use.Event_Series">
+         <path value="Substance_Use.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_Use.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Substance_Use.Event_Series.Any_event">
+         <path value="Substance_Use.Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Any event"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_Use.Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Substance_Use.Event_Series.Any_event.data">
+         <path value="Substance_Use.Event_Series.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_Use.Event_Series.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Substance_Use.Event_Series.Any_event.data.Substance">
+         <path value="Substance_Use.Event_Series.Any_event.data.Substance"/>
+         <short value="Substance"/>
+         <definition value="Identification of substance "/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_Use.Event_Series.Any_event.data.Substance"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Substance_Use.Event_Series.Any_event.data.Substance.value">
+         <path value="Substance_Use.Event_Series.Any_event.data.Substance.value"/>
+         <short value="Substance"/>
+         <definition value="Identification of substance "/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_Use.Event_Series.Any_event.data.Substance.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Substance_Use.Event_Series.Any_event.data.Consumption_details">
+         <path value="Substance_Use.Event_Series.Any_event.data.Consumption_details"/>
+         <short value="Consumption details"/>
+         <definition value="Details about the consumption of the substance"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_Use.Event_Series.Any_event.data.Consumption_details"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Substance_Use.Event_Series.Any_event.data.Consumption_details.Form">
+         <path value="Substance_Use.Event_Series.Any_event.data.Consumption_details.Form"/>
+         <short value="Form"/>
+         <definition value="Form of the substance used"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_Use.Event_Series.Any_event.data.Consumption_details.Form"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Substance_Use.Event_Series.Any_event.data.Consumption_details.Form.value">
+         <path value="Substance_Use.Event_Series.Any_event.data.Consumption_details.Form.value"/>
+         <short value="Form"/>
+         <definition value="Form of the substance used"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_Use.Event_Series.Any_event.data.Consumption_details.Form.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Substance_Use.Event_Series.Any_event.data.Consumption_details.Method_of_use">
+         <path value="Substance_Use.Event_Series.Any_event.data.Consumption_details.Method_of_use"/>
+         <short value="Method of use"/>
+         <definition value="Method of use or consumption of the substance"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_Use.Event_Series.Any_event.data.Consumption_details.Method_of_use"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Substance_Use.Event_Series.Any_event.data.Consumption_details.Method_of_use.value">
+         <path value="Substance_Use.Event_Series.Any_event.data.Consumption_details.Method_of_use.value"/>
+         <short value="Method of use"/>
+         <definition value="Method of use or consumption of the substance"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_Use.Event_Series.Any_event.data.Consumption_details.Method_of_use.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Substance_Use.Event_Series.Any_event.data.Consumption_details.Frequency">
+         <path value="Substance_Use.Event_Series.Any_event.data.Consumption_details.Frequency"/>
+         <short value="Frequency"/>
+         <definition value="Frequency of use of substance"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_Use.Event_Series.Any_event.data.Consumption_details.Frequency"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Substance_Use.Event_Series.Any_event.data.Consumption_details.Frequency.value">
+         <path value="Substance_Use.Event_Series.Any_event.data.Consumption_details.Frequency.value"/>
+         <short value="Frequency"/>
+         <definition value="Frequency of use of substance"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_Use.Event_Series.Any_event.data.Consumption_details.Frequency.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Substance_Use.Event_Series.Any_event.data.Consumption_details.Amount">
+         <path value="Substance_Use.Event_Series.Any_event.data.Consumption_details.Amount"/>
+         <short value="Amount"/>
+         <definition value="Amount of substance consumed.  Data type can be further specified in specialised archetypes or in templates"/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Substance_Use.Event_Series.Any_event.data.Consumption_details.Amount"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Substance_Use.Event_Series.Any_event.data.Triggers">
+         <path value="Substance_Use.Event_Series.Any_event.data.Triggers"/>
+         <short value="Triggers"/>
+         <definition value="Identified triggers which stimulate or cause use"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_Use.Event_Series.Any_event.data.Triggers"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Substance_Use.Event_Series.Any_event.data.Triggers.value">
+         <path value="Substance_Use.Event_Series.Any_event.data.Triggers.value"/>
+         <short value="Triggers"/>
+         <definition value="Identified triggers which stimulate or cause use"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_Use.Event_Series.Any_event.data.Triggers.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Substance_Use.Event_Series.Any_event.data.Readiness_for_change">
+         <path value="Substance_Use.Event_Series.Any_event.data.Readiness_for_change"/>
+         <short value="Readiness for change"/>
+         <definition value="Details about the readiness to change use or consumption of substance"/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Substance_Use.Event_Series.Any_event.data.Readiness_for_change"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Substance_Use.Event_Series.Any_event.data.Evidence_of_dependence">
+         <path value="Substance_Use.Event_Series.Any_event.data.Evidence_of_dependence"/>
+         <short value="Evidence of dependence"/>
+         <definition value="Description of any evidence of dependence on the substance"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_Use.Event_Series.Any_event.data.Evidence_of_dependence"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Substance_Use.Event_Series.Any_event.data.Evidence_of_dependence.value">
+         <path value="Substance_Use.Event_Series.Any_event.data.Evidence_of_dependence.value"/>
+         <short value="Evidence of dependence"/>
+         <definition value="Description of any evidence of dependence on the substance"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Substance_Use.Event_Series.Any_event.data.Evidence_of_dependence.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

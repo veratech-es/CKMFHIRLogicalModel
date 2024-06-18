@@ -1,0 +1,874 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Familyhistory_EVALUATION-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-familyhistory_EVALUATION-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-EVALUATION.family_history.v2"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Familyhistory_EVALUATION"/>
+   <title value="Family history"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Summary information about the significant health-related problems found in family members."/>
+   <purpose value="To record information about the occurrence of significant health-related problems in genetic and non-genetic family members - both alive and deceased. &#xD;&#xA;&#xD;&#xA;The intended scope of this archetype is deliberately kept loose to include the broadest range of problems or issues that might be found within families. It specifically includes known problems and diagnoses, identified biological markers, plus any relevant psychosocial factors and environmental factors."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Family_history">
+         <path value="Family_history"/>
+         <short value="Family history"/>
+         <definition value="Summary information about the significant health-related problems found in family members."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_history"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Family_history.protocol">
+         <path value="Family_history.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_history.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Family_history.protocol.Last_Updated">
+         <path value="Family_history.protocol.Last_Updated"/>
+         <short value="Last Updated"/>
+         <definition value="The date this family history summary was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_history.protocol.Last_Updated"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Family_history.protocol.Last_Updated.value">
+         <path value="Family_history.protocol.Last_Updated.value"/>
+         <short value="Last Updated"/>
+         <definition value="The date this family history summary was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_history.protocol.Last_Updated.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Family_history.protocol.Extension">
+         <path value="Family_history.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Family_history.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Family_history.data">
+         <path value="Family_history.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_history.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Family_history.data.Summary">
+         <path value="Family_history.data.Summary"/>
+         <short value="Summary"/>
+         <definition value="Narrative overview about problems, diagnoses, psychosocial, environmental and genetic markers that have been identified in family members."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_history.data.Summary"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Family_history.data.Summary.value">
+         <path value="Family_history.data.Summary.value"/>
+         <short value="Summary"/>
+         <definition value="Narrative overview about problems, diagnoses, psychosocial, environmental and genetic markers that have been identified in family members."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_history.data.Summary.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Family_history.data.Per_problem">
+         <path value="Family_history.data.Per_problem"/>
+         <short value="Per problem"/>
+         <definition value="Details about the presence of a specific problem or diagnosis in family members."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Family_history.data.Per_problem"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Family_history.data.Per_problem.Problem_diagnosis_name">
+         <path value="Family_history.data.Per_problem.Problem_diagnosis_name"/>
+         <short value="Problem/diagnosis name"/>
+         <definition value="Identification of the significant problem or diagnosis in the family overall."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_history.data.Per_problem.Problem_diagnosis_name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Family_history.data.Per_problem.Problem_diagnosis_name.value">
+         <path value="Family_history.data.Per_problem.Problem_diagnosis_name.value"/>
+         <short value="Problem/diagnosis name"/>
+         <definition value="Identification of the significant problem or diagnosis in the family overall."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_history.data.Per_problem.Problem_diagnosis_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Family_history.data.Per_problem.Description">
+         <path value="Family_history.data.Per_problem.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description about occurrence of the problem or diagnosis in family members."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_history.data.Per_problem.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Family_history.data.Per_problem.Description.value">
+         <path value="Family_history.data.Per_problem.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description about occurrence of the problem or diagnosis in family members."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_history.data.Per_problem.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Family_history.data.Per_problem.Problem_details">
+         <path value="Family_history.data.Per_problem.Problem_details"/>
+         <short value="Problem details"/>
+         <definition value="Structured details about the identified problem or diagnosis."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Family_history.data.Per_problem.Problem_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Family_history.data.Per_family_member">
+         <path value="Family_history.data.Per_family_member"/>
+         <short value="Per family member"/>
+         <definition value="Details about a specific family member."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Family_history.data.Per_family_member"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Family_history.data.Per_family_member.Family_member_name">
+         <path value="Family_history.data.Per_family_member.Family_member_name"/>
+         <short value="Family member name"/>
+         <definition value="Name of family member."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_history.data.Per_family_member.Family_member_name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Family_history.data.Per_family_member.Family_member_name.value">
+         <path value="Family_history.data.Per_family_member.Family_member_name.value"/>
+         <short value="Family member name"/>
+         <definition value="Name of family member."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_history.data.Per_family_member.Family_member_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Family_history.data.Per_family_member.Alias">
+         <path value="Family_history.data.Per_family_member.Alias"/>
+         <short value="Alias"/>
+         <definition value="An alternative name or label to uniquely identify a family member, without using a personal name which might publicly identify the individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_history.data.Per_family_member.Alias"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Family_history.data.Per_family_member.Alias.value">
+         <path value="Family_history.data.Per_family_member.Alias.value"/>
+         <short value="Alias"/>
+         <definition value="An alternative name or label to uniquely identify a family member, without using a personal name which might publicly identify the individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_history.data.Per_family_member.Alias.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Family_history.data.Per_family_member.Family_member_details">
+         <path value="Family_history.data.Per_family_member.Family_member_details"/>
+         <short value="Family member details"/>
+         <definition value="Structured detail about the identified family member."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Family_history.data.Per_family_member.Family_member_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Family_history.data.Per_family_member.Biological_sex">
+         <path value="Family_history.data.Per_family_member.Biological_sex"/>
+         <short value="Biological sex"/>
+         <definition value="The family member's biological sex."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_history.data.Per_family_member.Biological_sex"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Family_history.data.Per_family_member.Biological_sex.value">
+         <path value="Family_history.data.Per_family_member.Biological_sex.value"/>
+         <short value="Biological sex"/>
+         <definition value="The family member's biological sex."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_history.data.Per_family_member.Biological_sex.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Family_history.data.Per_family_member.Relationship">
+         <path value="Family_history.data.Per_family_member.Relationship"/>
+         <short value="Relationship"/>
+         <definition value="The relationship of the family member to the subject of care."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_history.data.Per_family_member.Relationship"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Family_history.data.Per_family_member.Relationship.value">
+         <path value="Family_history.data.Per_family_member.Relationship.value"/>
+         <short value="Relationship"/>
+         <definition value="The relationship of the family member to the subject of care."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_history.data.Per_family_member.Relationship.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Family_history.data.Per_family_member.Relationship_degree">
+         <path value="Family_history.data.Per_family_member.Relationship_degree"/>
+         <short value="Relationship degree"/>
+         <definition value="The degree of relationship between the subject of care and the family member."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_history.data.Per_family_member.Relationship_degree"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Family_history.data.Per_family_member.Relationship_degree.value">
+         <path value="Family_history.data.Per_family_member.Relationship_degree.value"/>
+         <short value="Relationship degree"/>
+         <definition value="The degree of relationship between the subject of care and the family member."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_history.data.Per_family_member.Relationship_degree.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Family_history.data.Per_family_member.Family_line">
+         <path value="Family_history.data.Per_family_member.Family_line"/>
+         <short value="Family line"/>
+         <definition value="Identification of the maternal or paternal family line in the relationship."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_history.data.Per_family_member.Family_line"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Family_history.data.Per_family_member.Family_line.value">
+         <path value="Family_history.data.Per_family_member.Family_line.value"/>
+         <short value="Family line"/>
+         <definition value="Identification of the maternal or paternal family line in the relationship."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_history.data.Per_family_member.Family_line.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Family_history.data.Per_family_member.Date_of_birth">
+         <path value="Family_history.data.Per_family_member.Date_of_birth"/>
+         <short value="Date of birth"/>
+         <definition value="Full or partial date of birth of the family member."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_history.data.Per_family_member.Date_of_birth"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Family_history.data.Per_family_member.Date_of_birth.value">
+         <path value="Family_history.data.Per_family_member.Date_of_birth.value"/>
+         <short value="Date of birth"/>
+         <definition value="Full or partial date of birth of the family member."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_history.data.Per_family_member.Date_of_birth.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Family_history.data.Per_family_member.Deceased_">
+         <path value="Family_history.data.Per_family_member.Deceased_"/>
+         <short value="Deceased?"/>
+         <definition value="Is the family member deceased?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_history.data.Per_family_member.Deceased_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Family_history.data.Per_family_member.Deceased_.value">
+         <path value="Family_history.data.Per_family_member.Deceased_.value"/>
+         <short value="Deceased?"/>
+         <definition value="Is the family member deceased?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_history.data.Per_family_member.Deceased_.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Family_history.data.Per_family_member.Age_at_death">
+         <path value="Family_history.data.Per_family_member.Age_at_death"/>
+         <short value="Age at death"/>
+         <definition value="Exact or estimated age of the family member at death."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_history.data.Per_family_member.Age_at_death"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Family_history.data.Per_family_member.Age_at_death.value">
+         <path value="Family_history.data.Per_family_member.Age_at_death.value"/>
+         <short value="Age at death"/>
+         <definition value="Exact or estimated age of the family member at death."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_history.data.Per_family_member.Age_at_death.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Family_history.data.Per_family_member.Date_of_death">
+         <path value="Family_history.data.Per_family_member.Date_of_death"/>
+         <short value="Date of death"/>
+         <definition value="Full or partial date of death of the family member."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_history.data.Per_family_member.Date_of_death"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Family_history.data.Per_family_member.Date_of_death.value">
+         <path value="Family_history.data.Per_family_member.Date_of_death.value"/>
+         <short value="Date of death"/>
+         <definition value="Full or partial date of death of the family member."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_history.data.Per_family_member.Date_of_death.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Family_history.data.Per_family_member.Clinical_history">
+         <path value="Family_history.data.Per_family_member.Clinical_history"/>
+         <short value="Clinical history"/>
+         <definition value="Detail about problems or diagnoses for the family member."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Family_history.data.Per_family_member.Clinical_history"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Family_history.data.Per_family_member.Clinical_history.Problem_diagnosis_name">
+         <path value="Family_history.data.Per_family_member.Clinical_history.Problem_diagnosis_name"/>
+         <short value="Problem/diagnosis name"/>
+         <definition value="Identification of the significant problem or diagnosis in the identified family member."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_history.data.Per_family_member.Clinical_history.Problem_diagnosis_name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Family_history.data.Per_family_member.Clinical_history.Problem_diagnosis_name.value">
+         <path value="Family_history.data.Per_family_member.Clinical_history.Problem_diagnosis_name.value"/>
+         <short value="Problem/diagnosis name"/>
+         <definition value="Identification of the significant problem or diagnosis in the identified family member."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_history.data.Per_family_member.Clinical_history.Problem_diagnosis_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Family_history.data.Per_family_member.Clinical_history.Clinical_description">
+         <path value="Family_history.data.Per_family_member.Clinical_history.Clinical_description"/>
+         <short value="Clinical description"/>
+         <definition value="Narrative description or comments about clinical aspects of the family member's problem/diagnosis."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_history.data.Per_family_member.Clinical_history.Clinical_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Family_history.data.Per_family_member.Clinical_history.Clinical_description.value">
+         <path value="Family_history.data.Per_family_member.Clinical_history.Clinical_description.value"/>
+         <short value="Clinical description"/>
+         <definition value="Narrative description or comments about clinical aspects of the family member's problem/diagnosis."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_history.data.Per_family_member.Clinical_history.Clinical_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Family_history.data.Per_family_member.Clinical_history.Age_at_onset">
+         <path value="Family_history.data.Per_family_member.Clinical_history.Age_at_onset"/>
+         <short value="Age at onset"/>
+         <definition value="Estimated or actual age of the family member when the problem/diagnosis was clinically recognised."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_history.data.Per_family_member.Clinical_history.Age_at_onset"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Family_history.data.Per_family_member.Clinical_history.Age_at_onset.value">
+         <path value="Family_history.data.Per_family_member.Clinical_history.Age_at_onset.value"/>
+         <short value="Age at onset"/>
+         <definition value="Estimated or actual age of the family member when the problem/diagnosis was clinically recognised."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_history.data.Per_family_member.Clinical_history.Age_at_onset.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Family_history.data.Per_family_member.Clinical_history.Cause_of_death_">
+         <path value="Family_history.data.Per_family_member.Clinical_history.Cause_of_death_"/>
+         <short value="Cause of death?"/>
+         <definition value="Relationship of the problem/diagnosis to the death of this family member."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_history.data.Per_family_member.Clinical_history.Cause_of_death_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Family_history.data.Per_family_member.Clinical_history.Cause_of_death_.value_DV_CODED_TEXT">
+         <path value="Family_history.data.Per_family_member.Clinical_history.Cause_of_death_.value_DV_CODED_TEXT"/>
+         <short value="Cause of death?"/>
+         <definition value="Relationship of the problem/diagnosis to the death of this family member."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_history.data.Per_family_member.Clinical_history.Cause_of_death_.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Family_history.data.Per_family_member.Clinical_history.Cause_of_death_.value_DV_TEXT">
+         <path value="Family_history.data.Per_family_member.Clinical_history.Cause_of_death_.value_DV_TEXT"/>
+         <short value="Cause of death?"/>
+         <definition value="Relationship of the problem/diagnosis to the death of this family member."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_history.data.Per_family_member.Clinical_history.Cause_of_death_.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Family_history.data.Per_family_member.Comment">
+         <path value="Family_history.data.Per_family_member.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the family member not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_history.data.Per_family_member.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Family_history.data.Per_family_member.Comment.value">
+         <path value="Family_history.data.Per_family_member.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the family member not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_history.data.Per_family_member.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Family_history.data.Per_family_member.Biomarkers">
+         <path value="Family_history.data.Per_family_member.Biomarkers"/>
+         <short value="Biomarkers"/>
+         <definition value="Detailed information about measurable indicators of a biological state or condition of the family member."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_history.data.Per_family_member.Biomarkers"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Family_history.data.Per_family_member.Biomarkers.Biomarker_description">
+         <path value="Family_history.data.Per_family_member.Biomarkers.Biomarker_description"/>
+         <short value="Biomarker description"/>
+         <definition value="Description of risk-related biological markers identified in this family member."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_history.data.Per_family_member.Biomarkers.Biomarker_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Family_history.data.Per_family_member.Biomarkers.Biomarker_description.value">
+         <path value="Family_history.data.Per_family_member.Biomarkers.Biomarker_description.value"/>
+         <short value="Biomarker description"/>
+         <definition value="Description of risk-related biological markers identified in this family member."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_history.data.Per_family_member.Biomarkers.Biomarker_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Family_history.data.Per_family_member.Biomarkers.Biomarker_details">
+         <path value="Family_history.data.Per_family_member.Biomarkers.Biomarker_details"/>
+         <short value="Biomarker details"/>
+         <definition value="Structured details about biological markers."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Family_history.data.Per_family_member.Biomarkers.Biomarker_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Family_history.data.Multimedia">
+         <path value="Family_history.data.Multimedia"/>
+         <short value="Multimedia"/>
+         <definition value="Multimedia representation of the family history."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Family_history.data.Multimedia"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

@@ -1,0 +1,1024 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Visualfieldmeasurement-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-visualfieldmeasurement-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.visual_field_measurement.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Visualfieldmeasurement"/>
+   <title value="Visual field measurement"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Results of visual field testing / perimetry."/>
+   <purpose value="To record the results of visual field testing or perimetry."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Visual_field_measurement">
+         <path value="Visual_field_measurement"/>
+         <short value="Visual field measurement"/>
+         <definition value="Results of visual field testing / perimetry."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_field_measurement.protocol">
+         <path value="Visual_field_measurement.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_field_measurement.protocol.Device_details">
+         <path value="Visual_field_measurement.protocol.Device_details"/>
+         <short value="Device details"/>
+         <definition value="Details of the device used to measure visual fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.protocol.Device_details"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_field_measurement.protocol.Acquisition_details">
+         <path value="Visual_field_measurement.protocol.Acquisition_details"/>
+         <short value="Acquisition details"/>
+         <definition value="Details about the strategy to conduct the visual field test."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Visual_field_measurement.protocol.Acquisition_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_field_measurement.Event_Series">
+         <path value="Visual_field_measurement.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event">
+         <path value="Visual_field_measurement.Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.data">
+         <path value="Visual_field_measurement.Event_Series.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.data.Test_result_name">
+         <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result_name"/>
+         <short value="Test result name"/>
+         <definition value="Identification of the visual field test being performed, by name."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result_name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.data.Test_result_name.value">
+         <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result_name.value"/>
+         <short value="Test result name"/>
+         <definition value="Identification of the visual field test being performed, by name."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.data.Clinical_description">
+         <path value="Visual_field_measurement.Event_Series.Any_event.data.Clinical_description"/>
+         <short value="Clinical description"/>
+         <definition value="Narrative description of the overall findings observed during the test."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.data.Clinical_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.data.Clinical_description.value">
+         <path value="Visual_field_measurement.Event_Series.Any_event.data.Clinical_description.value"/>
+         <short value="Clinical description"/>
+         <definition value="Narrative description of the overall findings observed during the test."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.data.Clinical_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.data.Test_result">
+         <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result"/>
+         <short value="Test result"/>
+         <definition value="Details of the visual field test result for each eye."/>
+         <min value="0"/>
+         <max value="2"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result"/>
+            <min value="0"/>
+            <max value="2"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Eye_examined">
+         <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Eye_examined"/>
+         <short value="Eye examined"/>
+         <definition value="The eye which is being examined."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Eye_examined"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Eye_examined.value">
+         <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Eye_examined.value"/>
+         <short value="Eye examined"/>
+         <definition value="The eye which is being examined."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Eye_examined.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Glaucoma_Hemifield_Test_(GHT)">
+         <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Glaucoma_Hemifield_Test_(GHT)"/>
+         <short value="Glaucoma Hemifield Test (GHT)"/>
+         <definition value="A coded intepretation of the Glaucoma Hemifield Test (GHT)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Glaucoma_Hemifield_Test_(GHT)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Glaucoma_Hemifield_Test_(GHT).value">
+         <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Glaucoma_Hemifield_Test_(GHT).value"/>
+         <short value="Glaucoma Hemifield Test (GHT)"/>
+         <definition value="A coded intepretation of the Glaucoma Hemifield Test (GHT)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Glaucoma_Hemifield_Test_(GHT).value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Foveal_sensitivity_measured">
+         <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Foveal_sensitivity_measured"/>
+         <short value="Foveal sensitivity measured"/>
+         <definition value="Whether foveal sensitivity was measured."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Foveal_sensitivity_measured"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Foveal_sensitivity_measured.value">
+         <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Foveal_sensitivity_measured.value"/>
+         <short value="Foveal sensitivity measured"/>
+         <definition value="Whether foveal sensitivity was measured."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Foveal_sensitivity_measured.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Foveal_sensitivity">
+         <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Foveal_sensitivity"/>
+         <short value="Foveal sensitivity"/>
+         <definition value="Foveal Sensitivity is the reciprocal of foveal threshold (1/foveal threshold), in dB."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Foveal_sensitivity"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Foveal_sensitivity.value">
+         <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Foveal_sensitivity.value"/>
+         <short value="Foveal sensitivity"/>
+         <definition value="Foveal Sensitivity is the reciprocal of foveal threshold (1/foveal threshold), in dB."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Foveal_sensitivity.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Visual_Field_Index_(VFI)">
+         <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Visual_Field_Index_(VFI)"/>
+         <short value="Visual Field Index (VFI)"/>
+         <definition value="Visual Field Index result."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Visual_Field_Index_(VFI)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Visual_Field_Index_(VFI).value">
+         <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Visual_Field_Index_(VFI).value"/>
+         <short value="Visual Field Index (VFI)"/>
+         <definition value="Visual Field Index result."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Visual_Field_Index_(VFI).value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Ratio"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Mean_Deviation_(MD)">
+         <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Mean_Deviation_(MD)"/>
+         <short value="Mean Deviation (MD)"/>
+         <definition value="Weighted average deviation from the age corrected normal field, in dB."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Mean_Deviation_(MD)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Mean_Deviation_(MD).value">
+         <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Mean_Deviation_(MD).value"/>
+         <short value="Mean Deviation (MD)"/>
+         <definition value="Weighted average deviation from the age corrected normal field, in dB."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Mean_Deviation_(MD).value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Mean_Deviation_P_(MD)">
+         <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Mean_Deviation_P_(MD)"/>
+         <short value="Mean Deviation P (MD)"/>
+         <definition value="The P value of the Mean Deviation result."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Mean_Deviation_P_(MD)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Mean_Deviation_P_(MD).value">
+         <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Mean_Deviation_P_(MD).value"/>
+         <short value="Mean Deviation P (MD)"/>
+         <definition value="The P value of the Mean Deviation result."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Mean_Deviation_P_(MD).value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Ratio"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Pattern_Standard_Deviation_(PSD)">
+         <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Pattern_Standard_Deviation_(PSD)"/>
+         <short value="Pattern Standard Deviation (PSD)"/>
+         <definition value="Average of non-uniform visual field loss or weighted square root of loss variance, in dB."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Pattern_Standard_Deviation_(PSD)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Pattern_Standard_Deviation_(PSD).value">
+         <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Pattern_Standard_Deviation_(PSD).value"/>
+         <short value="Pattern Standard Deviation (PSD)"/>
+         <definition value="Average of non-uniform visual field loss or weighted square root of loss variance, in dB."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Pattern_Standard_Deviation_(PSD).value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Pattern_Standard_Deviation_P_(PSD)">
+         <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Pattern_Standard_Deviation_P_(PSD)"/>
+         <short value="Pattern Standard Deviation P (PSD)"/>
+         <definition value="The P value of the Pattern Standard deviation result."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Pattern_Standard_Deviation_P_(PSD)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Pattern_Standard_Deviation_P_(PSD).value">
+         <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Pattern_Standard_Deviation_P_(PSD).value"/>
+         <short value="Pattern Standard Deviation P (PSD)"/>
+         <definition value="The P value of the Pattern Standard deviation result."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Pattern_Standard_Deviation_P_(PSD).value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Ratio"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Short_Term_Fluctuation_(SF)">
+         <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Short_Term_Fluctuation_(SF)"/>
+         <short value="Short-Term Fluctuation (SF)"/>
+         <definition value="Average deviation of sensitivity for the repeated test locations, in dB. This is used to determine the consistency of the patient’s responses."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Short_Term_Fluctuation_(SF)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Short_Term_Fluctuation_(SF).value">
+         <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Short_Term_Fluctuation_(SF).value"/>
+         <short value="Short-Term Fluctuation (SF)"/>
+         <definition value="Average deviation of sensitivity for the repeated test locations, in dB. This is used to determine the consistency of the patient’s responses."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Short_Term_Fluctuation_(SF).value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Corrected_Pattern_Standard_Deviation_(CPSD)">
+         <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Corrected_Pattern_Standard_Deviation_(CPSD)"/>
+         <short value="Corrected Pattern Standard Deviation (CPSD)"/>
+         <definition value="Weighted square root of loss variance corrected for short term fluctuation, in dB."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Corrected_Pattern_Standard_Deviation_(CPSD)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Corrected_Pattern_Standard_Deviation_(CPSD).value">
+         <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Corrected_Pattern_Standard_Deviation_(CPSD).value"/>
+         <short value="Corrected Pattern Standard Deviation (CPSD)"/>
+         <definition value="Weighted square root of loss variance corrected for short term fluctuation, in dB."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Corrected_Pattern_Standard_Deviation_(CPSD).value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Perimetry_test_interpretation">
+         <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Perimetry_test_interpretation"/>
+         <short value="Perimetry test interpretation"/>
+         <definition value="A coded intepretation of the Visual field test result."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Perimetry_test_interpretation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Perimetry_test_interpretation.value">
+         <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Perimetry_test_interpretation.value"/>
+         <short value="Perimetry test interpretation"/>
+         <definition value="A coded intepretation of the Visual field test result."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Perimetry_test_interpretation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.data.Test_result.No_test_result">
+         <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.No_test_result"/>
+         <short value="No test result"/>
+         <definition value="No visual field test result is available for the eye examined."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.No_test_result"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.data.Test_result.No_test_result.value">
+         <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.No_test_result.value"/>
+         <short value="No test result"/>
+         <definition value="No visual field test result is available for the eye examined."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.No_test_result.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Reason_for_no_test_result">
+         <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Reason_for_no_test_result"/>
+         <short value="Reason for no test result"/>
+         <definition value="Reason why no visual field test result is available for the eye examined."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Reason_for_no_test_result"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Reason_for_no_test_result.value">
+         <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Reason_for_no_test_result.value"/>
+         <short value="Reason for no test result"/>
+         <definition value="Reason why no visual field test result is available for the eye examined."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Reason_for_no_test_result.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Multimedia">
+         <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Multimedia"/>
+         <short value="Multimedia"/>
+         <definition value="Digital representation of the test results."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Multimedia"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Clinical_interpretation">
+         <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Clinical_interpretation"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Clinical interpretation of all measurements for the test eye."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Clinical_interpretation"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Clinical_interpretation.value">
+         <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Clinical_interpretation.value"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Clinical interpretation of all measurements for the test eye."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Clinical_interpretation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Comment">
+         <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the visual field testing for the eye examined, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Comment.value">
+         <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the visual field testing for the eye examined, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_result.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.data.Overall_interpretation">
+         <path value="Visual_field_measurement.Event_Series.Any_event.data.Overall_interpretation"/>
+         <short value="Overall interpretation"/>
+         <definition value="Overall clinical interpretation of the measurements and related findings of visual field testing."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.data.Overall_interpretation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.data.Overall_interpretation.value">
+         <path value="Visual_field_measurement.Event_Series.Any_event.data.Overall_interpretation.value"/>
+         <short value="Overall interpretation"/>
+         <definition value="Overall clinical interpretation of the measurements and related findings of visual field testing."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.data.Overall_interpretation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.data.Test_not_done">
+         <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_not_done"/>
+         <short value="Test not done"/>
+         <definition value="Details to explicitly record that this test was not performed."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.data.Test_not_done"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.data.Comment">
+         <path value="Visual_field_measurement.Event_Series.Any_event.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the overall test results and intepretation not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.data.Comment.value">
+         <path value="Visual_field_measurement.Event_Series.Any_event.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the overall test results and intepretation not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.state">
+         <path value="Visual_field_measurement.Event_Series.Any_event.state"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.state.Fixation_checked_quantity">
+         <path value="Visual_field_measurement.Event_Series.Any_event.state.Fixation_checked_quantity"/>
+         <short value="Fixation checked quantity"/>
+         <definition value="The number of times that the patient’s gaze fixation is checked."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.state.Fixation_checked_quantity"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.state.Fixation_checked_quantity.value">
+         <path value="Visual_field_measurement.Event_Series.Any_event.state.Fixation_checked_quantity.value"/>
+         <short value="Fixation checked quantity"/>
+         <definition value="The number of times that the patient’s gaze fixation is checked."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.state.Fixation_checked_quantity.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.state.Patient_not_properly_fixated_quantity">
+         <path value="Visual_field_measurement.Event_Series.Any_event.state.Patient_not_properly_fixated_quantity"/>
+         <short value="Patient not properly fixated quantity"/>
+         <definition value="The number of times the patient’s gaze is not properly fixated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.state.Patient_not_properly_fixated_quantity"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.state.Patient_not_properly_fixated_quantity.value">
+         <path value="Visual_field_measurement.Event_Series.Any_event.state.Patient_not_properly_fixated_quantity.value"/>
+         <short value="Patient not properly fixated quantity"/>
+         <definition value="The number of times the patient’s gaze is not properly fixated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.state.Patient_not_properly_fixated_quantity.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.state.False_positives_estimate">
+         <path value="Visual_field_measurement.Event_Series.Any_event.state.False_positives_estimate"/>
+         <short value="False positives estimate"/>
+         <definition value="Estimated percentage of all patient responses that occurred at a time when no visual stimulus was present (false positive responses), as percent."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.state.False_positives_estimate"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.state.False_positives_estimate.value">
+         <path value="Visual_field_measurement.Event_Series.Any_event.state.False_positives_estimate.value"/>
+         <short value="False positives estimate"/>
+         <definition value="Estimated percentage of all patient responses that occurred at a time when no visual stimulus was present (false positive responses), as percent."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.state.False_positives_estimate.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Ratio"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.state.False_negatives_estimate">
+         <path value="Visual_field_measurement.Event_Series.Any_event.state.False_negatives_estimate"/>
+         <short value="False negatives estimate"/>
+         <definition value="Estimated percentage of all stimuli that were not seen by the patient but were previously seen at a lower luminance earlier in the visual field test (false negative responses), as percent. Matches to DICOM (0024,0046) attribute."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.state.False_negatives_estimate"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.state.False_negatives_estimate.value">
+         <path value="Visual_field_measurement.Event_Series.Any_event.state.False_negatives_estimate.value"/>
+         <short value="False negatives estimate"/>
+         <definition value="Estimated percentage of all stimuli that were not seen by the patient but were previously seen at a lower luminance earlier in the visual field test (false negative responses), as percent. Matches to DICOM (0024,0046) attribute."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.state.False_negatives_estimate.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Ratio"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.state.Confounding_factors">
+         <path value="Visual_field_measurement.Event_Series.Any_event.state.Confounding_factors"/>
+         <short value="Confounding factors"/>
+         <definition value="Patient circumstances which may affect interpretation of the result."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.state.Confounding_factors"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.state.Confounding_factors.value">
+         <path value="Visual_field_measurement.Event_Series.Any_event.state.Confounding_factors.value"/>
+         <short value="Confounding factors"/>
+         <definition value="Patient circumstances which may affect interpretation of the result."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.state.Confounding_factors.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.state.Refractive_correction">
+         <path value="Visual_field_measurement.Event_Series.Any_event.state.Refractive_correction"/>
+         <short value="Refractive correction"/>
+         <definition value="Details of refractive correction applied to each eye."/>
+         <min value="0"/>
+         <max value="2"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.state.Refractive_correction"/>
+            <min value="0"/>
+            <max value="2"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_field_measurement.Event_Series.Any_event.state.Examination_findings___pupils">
+         <path value="Visual_field_measurement.Event_Series.Any_event.state.Examination_findings___pupils"/>
+         <short value="Examination findings - pupils"/>
+         <definition value="Details of pupils from the patient during the test."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Visual_field_measurement.Event_Series.Any_event.state.Examination_findings___pupils"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

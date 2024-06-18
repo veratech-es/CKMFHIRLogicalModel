@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Precaution-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-precaution-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-EVALUATION.precaution.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Precaution"/>
+   <title value="Precaution"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="A condition or state of the individual that is clinically significant and unique or idiosyncratic for this individual, and is considered vital information when making treatment decisions."/>
+   <purpose value="To record a condition or state of the individual that is clinically significant and unique or idiosyncratic for this individual, and is considered vital information when making treatment decisions."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Precaution">
+         <path value="Precaution"/>
+         <short value="Precaution"/>
+         <definition value="A condition or state of the individual that is clinically significant and unique or idiosyncratic for this individual, and is considered vital information when making treatment decisions."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Precaution"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Precaution.protocol">
+         <path value="Precaution.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Precaution.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Precaution.protocol.Extension">
+         <path value="Precaution.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Precaution.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Precaution.protocol.Valid_period_start">
+         <path value="Precaution.protocol.Valid_period_start"/>
+         <short value="Valid period start"/>
+         <definition value="Date/time after which the 'Condition' is regarded as active."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Precaution.protocol.Valid_period_start"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Precaution.protocol.Valid_period_start.value">
+         <path value="Precaution.protocol.Valid_period_start.value"/>
+         <short value="Valid period start"/>
+         <definition value="Date/time after which the 'Condition' is regarded as active."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Precaution.protocol.Valid_period_start.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Precaution.protocol.Valid_period_end">
+         <path value="Precaution.protocol.Valid_period_end"/>
+         <short value="Valid period end"/>
+         <definition value="Date/time after which the 'Condition' is regarded as inactive."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Precaution.protocol.Valid_period_end"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Precaution.protocol.Valid_period_end.value">
+         <path value="Precaution.protocol.Valid_period_end.value"/>
+         <short value="Valid period end"/>
+         <definition value="Date/time after which the 'Condition' is regarded as inactive."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Precaution.protocol.Valid_period_end.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Precaution.protocol.Review_date">
+         <path value="Precaution.protocol.Review_date"/>
+         <short value="Review date"/>
+         <definition value="Date when next due for review by a clinician."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Precaution.protocol.Review_date"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Precaution.protocol.Review_date.value">
+         <path value="Precaution.protocol.Review_date.value"/>
+         <short value="Review date"/>
+         <definition value="Date when next due for review by a clinician."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Precaution.protocol.Review_date.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Precaution.protocol.Last_updated">
+         <path value="Precaution.protocol.Last_updated"/>
+         <short value="Last updated"/>
+         <definition value="Date when the precaution information was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Precaution.protocol.Last_updated"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Precaution.protocol.Last_updated.value">
+         <path value="Precaution.protocol.Last_updated.value"/>
+         <short value="Last updated"/>
+         <definition value="Date when the precaution information was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Precaution.protocol.Last_updated.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Precaution.data">
+         <path value="Precaution.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Precaution.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Precaution.data.Condition">
+         <path value="Precaution.data.Condition"/>
+         <short value="Condition"/>
+         <definition value="Identification, by name, of a condition or state."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Precaution.data.Condition"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Precaution.data.Condition.value">
+         <path value="Precaution.data.Condition.value"/>
+         <short value="Condition"/>
+         <definition value="Identification, by name, of a condition or state."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Precaution.data.Condition.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Precaution.data.Status">
+         <path value="Precaution.data.Status"/>
+         <short value="Status"/>
+         <definition value="Assertion about the current state of the identified 'Precaution'."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Precaution.data.Status"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Precaution.data.Status.value_DV_CODED_TEXT">
+         <path value="Precaution.data.Status.value_DV_CODED_TEXT"/>
+         <short value="Status"/>
+         <definition value="Assertion about the current state of the identified 'Precaution'."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Precaution.data.Status.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Precaution.data.Status.value_DV_TEXT">
+         <path value="Precaution.data.Status.value_DV_TEXT"/>
+         <short value="Status"/>
+         <definition value="Assertion about the current state of the identified 'Precaution'."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Precaution.data.Status.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Precaution.data.Evidence">
+         <path value="Precaution.data.Evidence"/>
+         <short value="Evidence"/>
+         <definition value="Description of the evidence identified to support the precaution."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Precaution.data.Evidence"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Precaution.data.Evidence.value">
+         <path value="Precaution.data.Evidence.value"/>
+         <short value="Evidence"/>
+         <definition value="Description of the evidence identified to support the precaution."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Precaution.data.Evidence.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Precaution.data.Category">
+         <path value="Precaution.data.Category"/>
+         <short value="Category"/>
+         <definition value="Type of the 'Condition' identified."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Precaution.data.Category"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Precaution.data.Category.value">
+         <path value="Precaution.data.Category.value"/>
+         <short value="Category"/>
+         <definition value="Type of the 'Condition' identified."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Precaution.data.Category.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Precaution.data.Additional_details">
+         <path value="Precaution.data.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="Additional structured details about the precaution."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Precaution.data.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Precaution.data.Comment">
+         <path value="Precaution.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the precaution, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Precaution.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Precaution.data.Comment.value">
+         <path value="Precaution.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the precaution, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Precaution.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

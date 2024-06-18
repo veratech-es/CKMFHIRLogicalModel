@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Healthcareproviderorganisation-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-healthcareproviderorganisation-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-DEMOGRAPHIC-ROLE.healthcare_provider_organisation.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Healthcareproviderorganisation"/>
+   <title value="Healthcare Provider Organisation"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Organisation in the role of a healthcare provider"/>
+   <purpose value="Representation of an organisations's demographic data in the role of healthcare provider"/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Healthcare_Provider_Organisation">
+         <path value="Healthcare_Provider_Organisation"/>
+         <short value="Healthcare Provider Organisation"/>
+         <definition value="Organisation in the role of a healthcare provider"/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Healthcare_Provider_Organisation"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Healthcare_Provider_Organisation.Third_party_payer_relationship">
+         <path value="Healthcare_Provider_Organisation.Third_party_payer_relationship"/>
+         <short value="Third-party payer relationship"/>
+         <definition value="relationship between the healthcare provider organisation and a third-party payer"/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Healthcare_Provider_Organisation.Third_party_payer_relationship"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Healthcare_Provider_Organisation.Third_party_payer_relationship.Details">
+         <path value="Healthcare_Provider_Organisation.Third_party_payer_relationship.Details"/>
+         <short value="Details"/>
+         <definition value="Relationship details"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Healthcare_Provider_Organisation.Third_party_payer_relationship.Details"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Healthcare_Provider_Organisation.Third_party_payer_relationship.Details.identifier_used_in_the_relationship">
+         <path value="Healthcare_Provider_Organisation.Third_party_payer_relationship.Details.identifier_used_in_the_relationship"/>
+         <short value="identifier used in the relationship"/>
+         <definition value="Identifier used by the healthcare provider in the relationship with the third-party payer"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Healthcare_Provider_Organisation.Third_party_payer_relationship.Details.identifier_used_in_the_relationship"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Healthcare_Provider_Organisation.Identifiers">
+         <path value="Healthcare_Provider_Organisation.Identifiers"/>
+         <short value="Identifiers"/>
+         <definition value="The identifiers used by the organisation acting as a healthcare provider organisation"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Healthcare_Provider_Organisation.Identifiers"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Healthcare_Provider_Organisation.Identifiers.Identifier">
+         <path value="Healthcare_Provider_Organisation.Identifiers.Identifier"/>
+         <short value="Identifier"/>
+         <definition value="The identifier used by the organisation in the role of a healthcare provider organisation"/>
+         <min value="1"/>
+         <max value="*"/>
+         <base>
+            <path value="Healthcare_Provider_Organisation.Identifiers.Identifier"/>
+            <min value="1"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Healthcare_Provider_Organisation.Provider_name">
+         <path value="Healthcare_Provider_Organisation.Provider_name"/>
+         <short value="Provider name"/>
+         <definition value="Indicates how the healthcare provider organisation is known by"/>
+         <min value="1"/>
+         <max value="*"/>
+         <base>
+            <path value="Healthcare_Provider_Organisation.Provider_name"/>
+            <min value="1"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

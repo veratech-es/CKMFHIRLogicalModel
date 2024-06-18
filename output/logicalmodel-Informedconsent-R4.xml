@@ -1,0 +1,1192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Informedconsent-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-informedconsent-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-ACTION.informed_consent.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Informedconsent"/>
+   <title value="Informed consent"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Record of status and details of informed consent from an individual (or the individual's agent/proxy) for a proposed procedure, trial or other healthcare-related activity (including treatments and investigations), based upon a clear appreciation and understanding of the facts, implications, and possible future consequences by the consenting party."/>
+   <purpose value="To record the status of a request for, or record of, informed consent prior to performing a procedure, clinical trial or healthcare-related activity."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Informed_consent">
+         <path value="Informed_consent"/>
+         <short value="Informed consent"/>
+         <definition value="Record of status and details of informed consent from an individual (or the individual's agent/proxy) for a proposed procedure, trial or other healthcare-related activity (including treatments and investigations), based upon a clear appreciation and understanding of the facts, implications, and possible future consequences by the consenting party."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.protocol">
+         <path value="Informed_consent.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.protocol.Consent_document_used">
+         <path value="Informed_consent.protocol.Consent_document_used"/>
+         <short value="Consent document used"/>
+         <definition value="Identification of the form or document used to obtain consent."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.protocol.Consent_document_used"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Informed_consent.protocol.Consent_document_used.value">
+         <path value="Informed_consent.protocol.Consent_document_used.value"/>
+         <short value="Consent document used"/>
+         <definition value="Identification of the form or document used to obtain consent."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.protocol.Consent_document_used.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.protocol.Review_date">
+         <path value="Informed_consent.protocol.Review_date"/>
+         <short value="Review date"/>
+         <definition value="Date when consent status is due for review."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.protocol.Review_date"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Informed_consent.protocol.Review_date.value">
+         <path value="Informed_consent.protocol.Review_date.value"/>
+         <short value="Review date"/>
+         <definition value="Date when consent status is due for review."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.protocol.Review_date.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.protocol.Consent_requester">
+         <path value="Informed_consent.protocol.Consent_requester"/>
+         <short value="Consent requester"/>
+         <definition value="Details about the healthcare provider who is requesting or recording the consent."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Informed_consent.protocol.Consent_requester"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.protocol.Consent_provider">
+         <path value="Informed_consent.protocol.Consent_provider"/>
+         <short value="Consent provider"/>
+         <definition value="Details about the subject (or subject's agent) who is being requested for, or providing, the consent for the procedure, clinical trial or healthcare-related activity."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Informed_consent.protocol.Consent_provider"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.protocol.Patient_information">
+         <path value="Informed_consent.protocol.Patient_information"/>
+         <short value="Patient information"/>
+         <definition value="Details about Patient Information made available to the subject or subject's agent."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Informed_consent.protocol.Patient_information"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.protocol.Patient_information.Name">
+         <path value="Informed_consent.protocol.Patient_information.Name"/>
+         <short value="Name"/>
+         <definition value="Identification of the information made available."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.protocol.Patient_information.Name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Informed_consent.protocol.Patient_information.Name.value">
+         <path value="Informed_consent.protocol.Patient_information.Name.value"/>
+         <short value="Name"/>
+         <definition value="Identification of the information made available."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.protocol.Patient_information.Name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.protocol.Patient_information.Description">
+         <path value="Informed_consent.protocol.Patient_information.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description of the patient information made available."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.protocol.Patient_information.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Informed_consent.protocol.Patient_information.Description.value">
+         <path value="Informed_consent.protocol.Patient_information.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description of the patient information made available."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.protocol.Patient_information.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.protocol.Patient_information.Multimedia_representation">
+         <path value="Informed_consent.protocol.Patient_information.Multimedia_representation"/>
+         <short value="Multimedia representation"/>
+         <definition value="Digital representation of the evidence of consent."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Informed_consent.protocol.Patient_information.Multimedia_representation"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.description">
+         <path value="Informed_consent.description"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.description.Procedure_Trial_Activity">
+         <path value="Informed_consent.description.Procedure_Trial_Activity"/>
+         <short value="Procedure/Trial/Activity"/>
+         <definition value="Identification of the procedure, clinical trial or healthcare-related activity (including correct side/correct site, where appropriate) against which the consent status and details are recorded."/>
+         <min value="1"/>
+         <max value="*"/>
+         <base>
+            <path value="Informed_consent.description.Procedure_Trial_Activity"/>
+            <min value="1"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Informed_consent.description.Procedure_Trial_Activity.value">
+         <path value="Informed_consent.description.Procedure_Trial_Activity.value"/>
+         <short value="Procedure/Trial/Activity"/>
+         <definition value="Identification of the procedure, clinical trial or healthcare-related activity (including correct side/correct site, where appropriate) against which the consent status and details are recorded."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.description.Procedure_Trial_Activity.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.description.Procedure_Trial_Activity_description">
+         <path value="Informed_consent.description.Procedure_Trial_Activity_description"/>
+         <short value="Procedure/Trial/Activity description"/>
+         <definition value="Narrative description of the procedure, clinical trial or healthcare-related activity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.description.Procedure_Trial_Activity_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Informed_consent.description.Procedure_Trial_Activity_description.value">
+         <path value="Informed_consent.description.Procedure_Trial_Activity_description.value"/>
+         <short value="Procedure/Trial/Activity description"/>
+         <definition value="Narrative description of the procedure, clinical trial or healthcare-related activity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.description.Procedure_Trial_Activity_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.description.Intent">
+         <path value="Informed_consent.description.Intent"/>
+         <short value="Intent"/>
+         <definition value="Description of the intent of the procedure, clinical trial or healthcare-related activity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.description.Intent"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Informed_consent.description.Intent.value">
+         <path value="Informed_consent.description.Intent.value"/>
+         <short value="Intent"/>
+         <definition value="Description of the intent of the procedure, clinical trial or healthcare-related activity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.description.Intent.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.description.Consent_description">
+         <path value="Informed_consent.description.Consent_description"/>
+         <short value="Consent description"/>
+         <definition value="Narrative description of the informed consent required or recorded prior to performing the proposed procedure, clinical trial or healthcare-related activity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.description.Consent_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Informed_consent.description.Consent_description.value">
+         <path value="Informed_consent.description.Consent_description.value"/>
+         <short value="Consent description"/>
+         <definition value="Narrative description of the informed consent required or recorded prior to performing the proposed procedure, clinical trial or healthcare-related activity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.description.Consent_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.description.Details">
+         <path value="Informed_consent.description.Details"/>
+         <short value="Details"/>
+         <definition value="Additional structured details about the procedure/trial/activity itself or additional structured consent details."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Informed_consent.description.Details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.description.Form_of_consent">
+         <path value="Informed_consent.description.Form_of_consent"/>
+         <short value="Form of consent"/>
+         <definition value="Form of the consent sought or provided."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.description.Form_of_consent"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Informed_consent.description.Form_of_consent.value">
+         <path value="Informed_consent.description.Form_of_consent.value"/>
+         <short value="Form of consent"/>
+         <definition value="Form of the consent sought or provided."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.description.Form_of_consent.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.description.Reason">
+         <path value="Informed_consent.description.Reason"/>
+         <short value="Reason"/>
+         <definition value="Reason that the care pathway step for the identified procedure, clinical trial or healthcare-related activity was carried out."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.description.Reason"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Informed_consent.description.Reason.value">
+         <path value="Informed_consent.description.Reason.value"/>
+         <short value="Reason"/>
+         <definition value="Reason that the care pathway step for the identified procedure, clinical trial or healthcare-related activity was carried out."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.description.Reason.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.description.Start_date">
+         <path value="Informed_consent.description.Start_date"/>
+         <short value="Start date"/>
+         <definition value="Date, and optional time, when validity of the informed consent becomes active."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.description.Start_date"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Informed_consent.description.Start_date.value">
+         <path value="Informed_consent.description.Start_date.value"/>
+         <short value="Start date"/>
+         <definition value="Date, and optional time, when validity of the informed consent becomes active."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.description.Start_date.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.description.End_date">
+         <path value="Informed_consent.description.End_date"/>
+         <short value="End date"/>
+         <definition value="Date, and optional time, when validity of the informed consent ceased."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.description.End_date"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Informed_consent.description.End_date.value">
+         <path value="Informed_consent.description.End_date.value"/>
+         <short value="End date"/>
+         <definition value="Date, and optional time, when validity of the informed consent ceased."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.description.End_date.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.description.Caveat">
+         <path value="Informed_consent.description.Caveat"/>
+         <short value="Caveat"/>
+         <definition value="Details of any qualifications or exemptions to the informed consent."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Informed_consent.description.Caveat"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Informed_consent.description.Caveat.value">
+         <path value="Informed_consent.description.Caveat.value"/>
+         <short value="Caveat"/>
+         <definition value="Details of any qualifications or exemptions to the informed consent."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.description.Caveat.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.description.Evidence_link">
+         <path value="Informed_consent.description.Evidence_link"/>
+         <short value="Evidence link"/>
+         <definition value="Link to evidence of consent."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.description.Evidence_link"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Informed_consent.description.Evidence_link.value">
+         <path value="Informed_consent.description.Evidence_link.value"/>
+         <short value="Evidence link"/>
+         <definition value="Link to evidence of consent."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.description.Evidence_link.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="string"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.description.Comment">
+         <path value="Informed_consent.description.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the informed consent activity, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.description.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Informed_consent.description.Comment.value">
+         <path value="Informed_consent.description.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the informed consent activity, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.description.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.description.Evidence_details">
+         <path value="Informed_consent.description.Evidence_details"/>
+         <short value="Evidence details"/>
+         <definition value="Digital representation of the evidence of consent."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Informed_consent.description.Evidence_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.Planned">
+         <path value="Informed_consent.Planned"/>
+         <short value="Planned"/>
+         <definition value="Need for informed consent is identified."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.Planned"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.ism_transition_Planned.current_state">
+         <path value="Informed_consent.ism_transition_Planned.current_state"/>
+         <short value="Planned"/>
+         <definition value="Need for informed consent is identified."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.ism_transition_Planned.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.ism_transition_Planned.careflow_step">
+         <path value="Informed_consent.ism_transition_Planned.careflow_step"/>
+         <short value="Planned"/>
+         <definition value="Need for informed consent is identified."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.ism_transition_Planned.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.Postponed">
+         <path value="Informed_consent.Postponed"/>
+         <short value="Postponed"/>
+         <definition value="Intent to request informed consent has been postponed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.Postponed"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.ism_transition_Postponed.current_state">
+         <path value="Informed_consent.ism_transition_Postponed.current_state"/>
+         <short value="Postponed"/>
+         <definition value="Intent to request informed consent has been postponed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.ism_transition_Postponed.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.ism_transition_Postponed.careflow_step">
+         <path value="Informed_consent.ism_transition_Postponed.careflow_step"/>
+         <short value="Postponed"/>
+         <definition value="Intent to request informed consent has been postponed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.ism_transition_Postponed.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.Cancelled">
+         <path value="Informed_consent.Cancelled"/>
+         <short value="Cancelled"/>
+         <definition value="Intent to request informed consent has been cancelled, prior to requesting consent from patient or patient's agent.."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.Cancelled"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.ism_transition_Cancelled.current_state">
+         <path value="Informed_consent.ism_transition_Cancelled.current_state"/>
+         <short value="Cancelled"/>
+         <definition value="Intent to request informed consent has been cancelled, prior to requesting consent from patient or patient's agent.."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.ism_transition_Cancelled.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.ism_transition_Cancelled.careflow_step">
+         <path value="Informed_consent.ism_transition_Cancelled.careflow_step"/>
+         <short value="Cancelled"/>
+         <definition value="Intent to request informed consent has been cancelled, prior to requesting consent from patient or patient's agent.."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.ism_transition_Cancelled.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.Appointment_scheduled">
+         <path value="Informed_consent.Appointment_scheduled"/>
+         <short value="Appointment scheduled"/>
+         <definition value="An appointment has been scheduled to request consent."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.Appointment_scheduled"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.ism_transition_Appointment_scheduled.current_state">
+         <path value="Informed_consent.ism_transition_Appointment_scheduled.current_state"/>
+         <short value="Appointment scheduled"/>
+         <definition value="An appointment has been scheduled to request consent."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.ism_transition_Appointment_scheduled.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.ism_transition_Appointment_scheduled.careflow_step">
+         <path value="Informed_consent.ism_transition_Appointment_scheduled.careflow_step"/>
+         <short value="Appointment scheduled"/>
+         <definition value="An appointment has been scheduled to request consent."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.ism_transition_Appointment_scheduled.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.Informed_consent_requested">
+         <path value="Informed_consent.Informed_consent_requested"/>
+         <short value="Informed consent requested"/>
+         <definition value="Informed consent has been requested from the patient or patient's agent, but no response has been received."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.Informed_consent_requested"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.ism_transition_Informed_consent_requested.current_state">
+         <path value="Informed_consent.ism_transition_Informed_consent_requested.current_state"/>
+         <short value="Informed consent requested"/>
+         <definition value="Informed consent has been requested from the patient or patient's agent, but no response has been received."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.ism_transition_Informed_consent_requested.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.ism_transition_Informed_consent_requested.careflow_step">
+         <path value="Informed_consent.ism_transition_Informed_consent_requested.careflow_step"/>
+         <short value="Informed consent requested"/>
+         <definition value="Informed consent has been requested from the patient or patient's agent, but no response has been received."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.ism_transition_Informed_consent_requested.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.Informed_consent_provided">
+         <path value="Informed_consent.Informed_consent_provided"/>
+         <short value="Informed consent provided"/>
+         <definition value="Informed consent has been provided by the patient or patient's agent."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.Informed_consent_provided"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.ism_transition_Informed_consent_provided.current_state">
+         <path value="Informed_consent.ism_transition_Informed_consent_provided.current_state"/>
+         <short value="Informed consent provided"/>
+         <definition value="Informed consent has been provided by the patient or patient's agent."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.ism_transition_Informed_consent_provided.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.ism_transition_Informed_consent_provided.careflow_step">
+         <path value="Informed_consent.ism_transition_Informed_consent_provided.careflow_step"/>
+         <short value="Informed consent provided"/>
+         <definition value="Informed consent has been provided by the patient or patient's agent."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.ism_transition_Informed_consent_provided.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.Informed_consent_not_obtained">
+         <path value="Informed_consent.Informed_consent_not_obtained"/>
+         <short value="Informed consent not obtained"/>
+         <definition value="Informed consent was not obtainable from either the patient or patient's advocate."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.Informed_consent_not_obtained"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.ism_transition_Informed_consent_not_obtained.current_state">
+         <path value="Informed_consent.ism_transition_Informed_consent_not_obtained.current_state"/>
+         <short value="Informed consent not obtained"/>
+         <definition value="Informed consent was not obtainable from either the patient or patient's advocate."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.ism_transition_Informed_consent_not_obtained.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.ism_transition_Informed_consent_not_obtained.careflow_step">
+         <path value="Informed_consent.ism_transition_Informed_consent_not_obtained.careflow_step"/>
+         <short value="Informed consent not obtained"/>
+         <definition value="Informed consent was not obtainable from either the patient or patient's advocate."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.ism_transition_Informed_consent_not_obtained.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.Informed_consent_refused">
+         <path value="Informed_consent.Informed_consent_refused"/>
+         <short value="Informed consent refused"/>
+         <definition value="In response to a request for informed consent, it has been refused by patient or patient's agent."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.Informed_consent_refused"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.ism_transition_Informed_consent_refused.current_state">
+         <path value="Informed_consent.ism_transition_Informed_consent_refused.current_state"/>
+         <short value="Informed consent refused"/>
+         <definition value="In response to a request for informed consent, it has been refused by patient or patient's agent."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.ism_transition_Informed_consent_refused.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.ism_transition_Informed_consent_refused.careflow_step">
+         <path value="Informed_consent.ism_transition_Informed_consent_refused.careflow_step"/>
+         <short value="Informed consent refused"/>
+         <definition value="In response to a request for informed consent, it has been refused by patient or patient's agent."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.ism_transition_Informed_consent_refused.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.Informed_consent_withdrawn">
+         <path value="Informed_consent.Informed_consent_withdrawn"/>
+         <short value="Informed consent withdrawn"/>
+         <definition value="Following initial provision of informed consent, it has been withrawn by the patient or patient's agent."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.Informed_consent_withdrawn"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.ism_transition_Informed_consent_withdrawn.current_state">
+         <path value="Informed_consent.ism_transition_Informed_consent_withdrawn.current_state"/>
+         <short value="Informed consent withdrawn"/>
+         <definition value="Following initial provision of informed consent, it has been withrawn by the patient or patient's agent."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.ism_transition_Informed_consent_withdrawn.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.ism_transition_Informed_consent_withdrawn.careflow_step">
+         <path value="Informed_consent.ism_transition_Informed_consent_withdrawn.careflow_step"/>
+         <short value="Informed consent withdrawn"/>
+         <definition value="Following initial provision of informed consent, it has been withrawn by the patient or patient's agent."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.ism_transition_Informed_consent_withdrawn.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.Completed">
+         <path value="Informed_consent.Completed"/>
+         <short value="Completed"/>
+         <definition value="Informed consent has been provided by the patient or patient's agent and the activity is now complete."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.Completed"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.ism_transition_Completed.current_state">
+         <path value="Informed_consent.ism_transition_Completed.current_state"/>
+         <short value="Completed"/>
+         <definition value="Informed consent has been provided by the patient or patient's agent and the activity is now complete."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.ism_transition_Completed.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Informed_consent.ism_transition_Completed.careflow_step">
+         <path value="Informed_consent.ism_transition_Completed.careflow_step"/>
+         <short value="Completed"/>
+         <definition value="Informed consent has been provided by the patient or patient's agent and the activity is now complete."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Informed_consent.ism_transition_Completed.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Respiration-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-respiration-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.respiration.v2"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Respiration"/>
+   <title value="Respiration"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="The characteristics of spontaneous breathing by an individual."/>
+   <purpose value="To record the characteristics of spontaneous breathing by an individual."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Respiration">
+         <path value="Respiration"/>
+         <short value="Respiration"/>
+         <definition value="The characteristics of spontaneous breathing by an individual."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Respiration"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Respiration.protocol">
+         <path value="Respiration.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Respiration.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Respiration.protocol.Extension">
+         <path value="Respiration.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local context or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Respiration.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Respiration.history">
+         <path value="Respiration.history"/>
+         <short value="history"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Respiration.history"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Respiration.history.Any_event">
+         <path value="Respiration.history.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Respiration.history.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Respiration.history.Any_event.List">
+         <path value="Respiration.history.Any_event.List"/>
+         <short value="List"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Respiration.history.Any_event.List"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Respiration.history.Any_event.List.Presence">
+         <path value="Respiration.history.Any_event.List.Presence"/>
+         <short value="Presence"/>
+         <definition value="Observation of spontaneous respiration."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Respiration.history.Any_event.List.Presence"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Respiration.history.Any_event.List.Presence.value">
+         <path value="Respiration.history.Any_event.List.Presence.value"/>
+         <short value="Presence"/>
+         <definition value="Observation of spontaneous respiration."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Respiration.history.Any_event.List.Presence.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Respiration.history.Any_event.List.Rate">
+         <path value="Respiration.history.Any_event.List.Rate"/>
+         <short value="Rate"/>
+         <definition value="The frequency of spontaneous breathing."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Respiration.history.Any_event.List.Rate"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Respiration.history.Any_event.List.Rate.value">
+         <path value="Respiration.history.Any_event.List.Rate.value"/>
+         <short value="Rate"/>
+         <definition value="The frequency of spontaneous breathing."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Respiration.history.Any_event.List.Rate.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Respiration.history.Any_event.List.Regularity">
+         <path value="Respiration.history.Any_event.List.Regularity"/>
+         <short value="Regularity"/>
+         <definition value="The regularity of spontaneous breathing."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Respiration.history.Any_event.List.Regularity"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Respiration.history.Any_event.List.Regularity.value">
+         <path value="Respiration.history.Any_event.List.Regularity.value"/>
+         <short value="Regularity"/>
+         <definition value="The regularity of spontaneous breathing."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Respiration.history.Any_event.List.Regularity.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Respiration.history.Any_event.List.Depth">
+         <path value="Respiration.history.Any_event.List.Depth"/>
+         <short value="Depth"/>
+         <definition value="The depth of spontaneous breathing."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Respiration.history.Any_event.List.Depth"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Respiration.history.Any_event.List.Depth.value">
+         <path value="Respiration.history.Any_event.List.Depth.value"/>
+         <short value="Depth"/>
+         <definition value="The depth of spontaneous breathing."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Respiration.history.Any_event.List.Depth.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Respiration.history.Any_event.List.Clinical_description">
+         <path value="Respiration.history.Any_event.List.Clinical_description"/>
+         <short value="Clinical description"/>
+         <definition value="A narrative description about the spontaneous breathing of the individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Respiration.history.Any_event.List.Clinical_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Respiration.history.Any_event.List.Clinical_description.value">
+         <path value="Respiration.history.Any_event.List.Clinical_description.value"/>
+         <short value="Clinical description"/>
+         <definition value="A narrative description about the spontaneous breathing of the individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Respiration.history.Any_event.List.Clinical_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Respiration.history.Any_event.List.Clinical_interpretation">
+         <path value="Respiration.history.Any_event.List.Clinical_interpretation"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Single word, phrase or brief description which represents the clinical meaning and significance of the respiration findings."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Respiration.history.Any_event.List.Clinical_interpretation"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Respiration.history.Any_event.List.Clinical_interpretation.value">
+         <path value="Respiration.history.Any_event.List.Clinical_interpretation.value"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Single word, phrase or brief description which represents the clinical meaning and significance of the respiration findings."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Respiration.history.Any_event.List.Clinical_interpretation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Respiration.history.Any_event.List.Comment">
+         <path value="Respiration.history.Any_event.List.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the respirations, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Respiration.history.Any_event.List.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Respiration.history.Any_event.List.Comment.value">
+         <path value="Respiration.history.Any_event.List.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the respirations, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Respiration.history.Any_event.List.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Respiration.history.Any_event.state_List">
+         <path value="Respiration.history.Any_event.state_List"/>
+         <short value="List"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Respiration.history.Any_event.state_List"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Respiration.history.Any_event.state_List.Body_position">
+         <path value="Respiration.history.Any_event.state_List.Body_position"/>
+         <short value="Body position"/>
+         <definition value="The body position of the individual during the observation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Respiration.history.Any_event.state_List.Body_position"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Respiration.history.Any_event.state_List.Body_position.value">
+         <path value="Respiration.history.Any_event.state_List.Body_position.value"/>
+         <short value="Body position"/>
+         <definition value="The body position of the individual during the observation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Respiration.history.Any_event.state_List.Body_position.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Respiration.history.Any_event.state_List.Confounding_factors">
+         <path value="Respiration.history.Any_event.state_List.Confounding_factors"/>
+         <short value="Confounding factors"/>
+         <definition value="Identification of any issues or incidental factors that may impact on interpretation of the observation."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Respiration.history.Any_event.state_List.Confounding_factors"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Respiration.history.Any_event.state_List.Confounding_factors.value">
+         <path value="Respiration.history.Any_event.state_List.Confounding_factors.value"/>
+         <short value="Confounding factors"/>
+         <definition value="Identification of any issues or incidental factors that may impact on interpretation of the observation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Respiration.history.Any_event.state_List.Confounding_factors.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Respiration.history.Any_event.state_List.Inspired_oxygen">
+         <path value="Respiration.history.Any_event.state_List.Inspired_oxygen"/>
+         <short value="Inspired oxygen"/>
+         <definition value="Details of the amount of oxygen being delivered to the individual at the time of observation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Respiration.history.Any_event.state_List.Inspired_oxygen"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Respiration.history.Any_event.state_List.Exertion">
+         <path value="Respiration.history.Any_event.state_List.Exertion"/>
+         <short value="Exertion"/>
+         <definition value="Details about physical exertion being undertaken during the examination."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Respiration.history.Any_event.state_List.Exertion"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

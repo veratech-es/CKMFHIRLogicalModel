@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Transfusionorder-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-transfusionorder-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-INSTRUCTION.transfusion_order.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Transfusionorder"/>
+   <title value="Transfusion order"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="The instructions for giving a transfusion."/>
+   <purpose value="For recording the instructions relating to transfusion."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Transfusion_order">
+         <path value="Transfusion_order"/>
+         <short value="Transfusion order"/>
+         <definition value="The instructions for giving a transfusion."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion_order"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion_order.protocol">
+         <path value="Transfusion_order.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion_order.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion_order.protocol.Extension">
+         <path value="Transfusion_order.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Transfusion_order.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion_order.new_activity">
+         <path value="Transfusion_order.new_activity"/>
+         <short value="new activity"/>
+         <definition value="*"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion_order.new_activity"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion_order.new_activity.description">
+         <path value="Transfusion_order.new_activity.description"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion_order.new_activity.description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion_order.new_activity.description.Type_of_blood_product">
+         <path value="Transfusion_order.new_activity.description.Type_of_blood_product"/>
+         <short value="Type of blood product"/>
+         <definition value="The blood product to be administered."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion_order.new_activity.description.Type_of_blood_product"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Transfusion_order.new_activity.description.Type_of_blood_product.value">
+         <path value="Transfusion_order.new_activity.description.Type_of_blood_product.value"/>
+         <short value="Type of blood product"/>
+         <definition value="The blood product to be administered."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion_order.new_activity.description.Type_of_blood_product.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion_order.new_activity.description.Amount">
+         <path value="Transfusion_order.new_activity.description.Amount"/>
+         <short value="Amount"/>
+         <definition value="The amount of blood product to be transfused."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion_order.new_activity.description.Amount"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion_order.new_activity.description.Amount.Number_of_units">
+         <path value="Transfusion_order.new_activity.description.Amount.Number_of_units"/>
+         <short value="Number of units"/>
+         <definition value="The number of units to be transfused."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion_order.new_activity.description.Amount.Number_of_units"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Transfusion_order.new_activity.description.Amount.Number_of_units.value">
+         <path value="Transfusion_order.new_activity.description.Amount.Number_of_units.value"/>
+         <short value="Number of units"/>
+         <definition value="The number of units to be transfused."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion_order.new_activity.description.Amount.Number_of_units.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion_order.new_activity.description.Amount.Volume">
+         <path value="Transfusion_order.new_activity.description.Amount.Volume"/>
+         <short value="Volume"/>
+         <definition value="The volume of the product to be transfused for paediatric and some specific purposes."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion_order.new_activity.description.Amount.Volume"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Transfusion_order.new_activity.description.Amount.Volume.value">
+         <path value="Transfusion_order.new_activity.description.Amount.Volume.value"/>
+         <short value="Volume"/>
+         <definition value="The volume of the product to be transfused for paediatric and some specific purposes."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion_order.new_activity.description.Amount.Volume.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion_order.new_activity.description.Clinical_indication">
+         <path value="Transfusion_order.new_activity.description.Clinical_indication"/>
+         <short value="Clinical indication"/>
+         <definition value="The clinical reason for ordering the tranfusion."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion_order.new_activity.description.Clinical_indication"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Transfusion_order.new_activity.description.Clinical_indication.value">
+         <path value="Transfusion_order.new_activity.description.Clinical_indication.value"/>
+         <short value="Clinical indication"/>
+         <definition value="The clinical reason for ordering the tranfusion."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion_order.new_activity.description.Clinical_indication.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion_order.new_activity.description.Urgency">
+         <path value="Transfusion_order.new_activity.description.Urgency"/>
+         <short value="Urgency"/>
+         <definition value="The urgency of the transfusion."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion_order.new_activity.description.Urgency"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Transfusion_order.new_activity.description.Urgency.value">
+         <path value="Transfusion_order.new_activity.description.Urgency.value"/>
+         <short value="Urgency"/>
+         <definition value="The urgency of the transfusion."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion_order.new_activity.description.Urgency.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion_order.new_activity.description.Administration_pattern">
+         <path value="Transfusion_order.new_activity.description.Administration_pattern"/>
+         <short value="Administration pattern"/>
+         <definition value="*"/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Transfusion_order.new_activity.description.Administration_pattern"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion_order.new_activity.description.Special_requirement">
+         <path value="Transfusion_order.new_activity.description.Special_requirement"/>
+         <short value="Special requirement"/>
+         <definition value="Special requirements for blood products."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Transfusion_order.new_activity.description.Special_requirement"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Transfusion_order.new_activity.description.Special_requirement.value">
+         <path value="Transfusion_order.new_activity.description.Special_requirement.value"/>
+         <short value="Special requirement"/>
+         <definition value="Special requirements for blood products."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion_order.new_activity.description.Special_requirement.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

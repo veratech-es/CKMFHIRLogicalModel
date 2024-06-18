@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Ethnicidentity-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-ethnicidentity-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-EVALUATION.ethnicity.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Ethnicidentity"/>
+   <title value="Ethnic identity"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Affiliation, kinship or connection with one or more groupings of people, according to common origins or background."/>
+   <purpose value="To record the affiliation, kinship or connection of an individual with one or more groupings of people, usually self-identified."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Ethnic_identity">
+         <path value="Ethnic_identity"/>
+         <short value="Ethnic identity"/>
+         <definition value="Affiliation, kinship or connection with one or more groupings of people, according to common origins or background."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Ethnic_identity"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Ethnic_identity.protocol">
+         <path value="Ethnic_identity.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Ethnic_identity.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Ethnic_identity.protocol.Extension">
+         <path value="Ethnic_identity.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models or formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Ethnic_identity.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Ethnic_identity.protocol.Last_updated">
+         <path value="Ethnic_identity.protocol.Last_updated"/>
+         <short value="Last updated"/>
+         <definition value="The date the cultural and ethnic identity details were last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Ethnic_identity.protocol.Last_updated"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Ethnic_identity.protocol.Last_updated.value">
+         <path value="Ethnic_identity.protocol.Last_updated.value"/>
+         <short value="Last updated"/>
+         <definition value="The date the cultural and ethnic identity details were last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Ethnic_identity.protocol.Last_updated.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Ethnic_identity.data">
+         <path value="Ethnic_identity.data"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Ethnic_identity.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Ethnic_identity.data.Description">
+         <path value="Ethnic_identity.data.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the self-identified affiliations, kinship or connections with one or more groupings of people, by an individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Ethnic_identity.data.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Ethnic_identity.data.Description.value">
+         <path value="Ethnic_identity.data.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the self-identified affiliations, kinship or connections with one or more groupings of people, by an individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Ethnic_identity.data.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Ethnic_identity.data.Ethnicity">
+         <path value="Ethnic_identity.data.Ethnicity"/>
+         <short value="Ethnicity"/>
+         <definition value="Name of the ethnic or cultural grouping with whom the individual identifies an affiliation, kinship or connection."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Ethnic_identity.data.Ethnicity"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Ethnic_identity.data.Ethnicity.value">
+         <path value="Ethnic_identity.data.Ethnicity.value"/>
+         <short value="Ethnicity"/>
+         <definition value="Name of the ethnic or cultural grouping with whom the individual identifies an affiliation, kinship or connection."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Ethnic_identity.data.Ethnicity.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Ethnic_identity.data.Ancestry">
+         <path value="Ethnic_identity.data.Ancestry"/>
+         <short value="Ancestry"/>
+         <definition value="The hereditary or genetic line origins of the individual."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Ethnic_identity.data.Ancestry"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Ethnic_identity.data.Ancestry.value">
+         <path value="Ethnic_identity.data.Ancestry.value"/>
+         <short value="Ancestry"/>
+         <definition value="The hereditary or genetic line origins of the individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Ethnic_identity.data.Ancestry.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Ethnic_identity.data.National_identity">
+         <path value="Ethnic_identity.data.National_identity"/>
+         <short value="National identity"/>
+         <definition value="Self identification with an ethno-national group."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Ethnic_identity.data.National_identity"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Ethnic_identity.data.National_identity.value">
+         <path value="Ethnic_identity.data.National_identity.value"/>
+         <short value="National identity"/>
+         <definition value="Self identification with an ethno-national group."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Ethnic_identity.data.National_identity.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Ethnic_identity.data.Additional_details">
+         <path value="Ethnic_identity.data.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="Additional details about the cultural and ethnic identity."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Ethnic_identity.data.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Ethnic_identity.data.Comment">
+         <path value="Ethnic_identity.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the identified cultural and ethnic identity, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Ethnic_identity.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Ethnic_identity.data.Comment.value">
+         <path value="Ethnic_identity.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the identified cultural and ethnic identity, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Ethnic_identity.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

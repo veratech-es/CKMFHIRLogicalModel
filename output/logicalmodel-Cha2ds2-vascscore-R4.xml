@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Cha2ds2-vascscore-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-cha2ds2-vascscore-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.chadsvas_score.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Cha2ds2-vascscore"/>
+   <title value="CHA₂DS₂-VASc score"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Risk stratification for stroke based on the CHA₂DS₂-VASc score defined by the European Society of Cardiology (ESC) guidelines for management of atrial fibrillation."/>
+   <purpose value="To record individual CHA₂DS₂-VASc score parameters and total score."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="CHA₂DS₂_VASc_score">
+         <path value="CHA₂DS₂_VASc_score"/>
+         <short value="CHA₂DS₂-VASc score"/>
+         <definition value="Risk stratification for stroke based on the CHA₂DS₂-VASc score defined by the European Society of Cardiology (ESC) guidelines for management of atrial fibrillation."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="CHA₂DS₂_VASc_score"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="CHA₂DS₂_VASc_score.protocol">
+         <path value="CHA₂DS₂_VASc_score.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="CHA₂DS₂_VASc_score.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="CHA₂DS₂_VASc_score.protocol.Extension">
+         <path value="CHA₂DS₂_VASc_score.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models or formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="CHA₂DS₂_VASc_score.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="CHA₂DS₂_VASc_score.history">
+         <path value="CHA₂DS₂_VASc_score.history"/>
+         <short value="history"/>
+         <definition value="HISTORY"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="CHA₂DS₂_VASc_score.history"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="CHA₂DS₂_VASc_score.history.Any_event">
+         <path value="CHA₂DS₂_VASc_score.history.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="CHA₂DS₂_VASc_score.history.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="CHA₂DS₂_VASc_score.history.Any_event.data">
+         <path value="CHA₂DS₂_VASc_score.history.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="ITEM_TREE"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="CHA₂DS₂_VASc_score.history.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="CHA₂DS₂_VASc_score.history.Any_event.data.Congestive_Heart_Failure">
+         <path value="CHA₂DS₂_VASc_score.history.Any_event.data.Congestive_Heart_Failure"/>
+         <short value="Congestive Heart Failure"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="CHA₂DS₂_VASc_score.history.Any_event.data.Congestive_Heart_Failure"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="CHA₂DS₂_VASc_score.history.Any_event.data.Congestive_Heart_Failure.value">
+         <path value="CHA₂DS₂_VASc_score.history.Any_event.data.Congestive_Heart_Failure.value"/>
+         <short value="Congestive Heart Failure"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="CHA₂DS₂_VASc_score.history.Any_event.data.Congestive_Heart_Failure.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="CHA₂DS₂_VASc_score.history.Any_event.data.Hypertension">
+         <path value="CHA₂DS₂_VASc_score.history.Any_event.data.Hypertension"/>
+         <short value="Hypertension"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="CHA₂DS₂_VASc_score.history.Any_event.data.Hypertension"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="CHA₂DS₂_VASc_score.history.Any_event.data.Hypertension.value">
+         <path value="CHA₂DS₂_VASc_score.history.Any_event.data.Hypertension.value"/>
+         <short value="Hypertension"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="CHA₂DS₂_VASc_score.history.Any_event.data.Hypertension.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="CHA₂DS₂_VASc_score.history.Any_event.data.Diabetes">
+         <path value="CHA₂DS₂_VASc_score.history.Any_event.data.Diabetes"/>
+         <short value="Diabetes"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="CHA₂DS₂_VASc_score.history.Any_event.data.Diabetes"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="CHA₂DS₂_VASc_score.history.Any_event.data.Diabetes.value">
+         <path value="CHA₂DS₂_VASc_score.history.Any_event.data.Diabetes.value"/>
+         <short value="Diabetes"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="CHA₂DS₂_VASc_score.history.Any_event.data.Diabetes.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="CHA₂DS₂_VASc_score.history.Any_event.data.Age">
+         <path value="CHA₂DS₂_VASc_score.history.Any_event.data.Age"/>
+         <short value="Age"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="CHA₂DS₂_VASc_score.history.Any_event.data.Age"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="CHA₂DS₂_VASc_score.history.Any_event.data.Age.value">
+         <path value="CHA₂DS₂_VASc_score.history.Any_event.data.Age.value"/>
+         <short value="Age"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="CHA₂DS₂_VASc_score.history.Any_event.data.Age.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="CHA₂DS₂_VASc_score.history.Any_event.data.Previous_stroke">
+         <path value="CHA₂DS₂_VASc_score.history.Any_event.data.Previous_stroke"/>
+         <short value="Previous stroke"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="CHA₂DS₂_VASc_score.history.Any_event.data.Previous_stroke"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="CHA₂DS₂_VASc_score.history.Any_event.data.Previous_stroke.value">
+         <path value="CHA₂DS₂_VASc_score.history.Any_event.data.Previous_stroke.value"/>
+         <short value="Previous stroke"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="CHA₂DS₂_VASc_score.history.Any_event.data.Previous_stroke.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="CHA₂DS₂_VASc_score.history.Any_event.data.Vascular_disease">
+         <path value="CHA₂DS₂_VASc_score.history.Any_event.data.Vascular_disease"/>
+         <short value="Vascular disease"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="CHA₂DS₂_VASc_score.history.Any_event.data.Vascular_disease"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="CHA₂DS₂_VASc_score.history.Any_event.data.Vascular_disease.value">
+         <path value="CHA₂DS₂_VASc_score.history.Any_event.data.Vascular_disease.value"/>
+         <short value="Vascular disease"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="CHA₂DS₂_VASc_score.history.Any_event.data.Vascular_disease.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="CHA₂DS₂_VASc_score.history.Any_event.data.Gender">
+         <path value="CHA₂DS₂_VASc_score.history.Any_event.data.Gender"/>
+         <short value="Gender"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="CHA₂DS₂_VASc_score.history.Any_event.data.Gender"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="CHA₂DS₂_VASc_score.history.Any_event.data.Gender.value">
+         <path value="CHA₂DS₂_VASc_score.history.Any_event.data.Gender.value"/>
+         <short value="Gender"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="CHA₂DS₂_VASc_score.history.Any_event.data.Gender.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="CHA₂DS₂_VASc_score.history.Any_event.data.Total_score">
+         <path value="CHA₂DS₂_VASc_score.history.Any_event.data.Total_score"/>
+         <short value="Total score"/>
+         <definition value="The total sum of each component parameter for the CHA₂DS₂-VASc score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="CHA₂DS₂_VASc_score.history.Any_event.data.Total_score"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="CHA₂DS₂_VASc_score.history.Any_event.data.Total_score.value">
+         <path value="CHA₂DS₂_VASc_score.history.Any_event.data.Total_score.value"/>
+         <short value="Total score"/>
+         <definition value="The total sum of each component parameter for the CHA₂DS₂-VASc score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="CHA₂DS₂_VASc_score.history.Any_event.data.Total_score.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

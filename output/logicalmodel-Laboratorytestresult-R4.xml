@@ -1,0 +1,850 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Laboratorytestresult-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-laboratorytestresult-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.laboratory_test_result.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Laboratorytestresult"/>
+   <title value="Laboratory test result"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="The result, including findings and the laboratory's interpretation, of an investigation performed on specimens collected from an individual or related to that individual."/>
+   <purpose value="To record the result, including findings and the laboratory's interpretation, of an investigation performed on specimens collected from an individual or related to that individual."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Laboratory_test_result">
+         <path value="Laboratory_test_result"/>
+         <short value="Laboratory test result"/>
+         <definition value="The result, including findings and the laboratory's interpretation, of an investigation performed on specimens collected from an individual or related to that individual."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_test_result"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Laboratory_test_result.protocol">
+         <path value="Laboratory_test_result.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_test_result.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Laboratory_test_result.protocol.Receiving_laboratory">
+         <path value="Laboratory_test_result.protocol.Receiving_laboratory"/>
+         <short value="Receiving laboratory"/>
+         <definition value="Details of the laboratory which received the request and has overall responsibility to manage reporting of the test, even if other labs perform specific aspects."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Laboratory_test_result.protocol.Receiving_laboratory"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Laboratory_test_result.protocol.Laboratory_internal_identifier">
+         <path value="Laboratory_test_result.protocol.Laboratory_internal_identifier"/>
+         <short value="Laboratory internal identifier"/>
+         <definition value="A local identifier assigned by the receiving Laboratory Information System (LIS) to track the test process."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_test_result.protocol.Laboratory_internal_identifier"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Laboratory_test_result.protocol.Laboratory_internal_identifier.value_DV_IDENTIFIER">
+         <path value="Laboratory_test_result.protocol.Laboratory_internal_identifier.value_DV_IDENTIFIER"/>
+         <short value="Laboratory internal identifier"/>
+         <definition value="A local identifier assigned by the receiving Laboratory Information System (LIS) to track the test process."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_test_result.protocol.Laboratory_internal_identifier.value_DV_IDENTIFIER"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Laboratory_test_result.protocol.Laboratory_internal_identifier.value_DV_TEXT">
+         <path value="Laboratory_test_result.protocol.Laboratory_internal_identifier.value_DV_TEXT"/>
+         <short value="Laboratory internal identifier"/>
+         <definition value="A local identifier assigned by the receiving Laboratory Information System (LIS) to track the test process."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_test_result.protocol.Laboratory_internal_identifier.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Laboratory_test_result.protocol.Test_request_details">
+         <path value="Laboratory_test_result.protocol.Test_request_details"/>
+         <short value="Test request details"/>
+         <definition value="Details about the test request."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Laboratory_test_result.protocol.Test_request_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Laboratory_test_result.protocol.Test_request_details.Original_test_requested_name">
+         <path value="Laboratory_test_result.protocol.Test_request_details.Original_test_requested_name"/>
+         <short value="Original test requested name"/>
+         <definition value="Name of the original laboratory test requested."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Laboratory_test_result.protocol.Test_request_details.Original_test_requested_name"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Laboratory_test_result.protocol.Test_request_details.Original_test_requested_name.value">
+         <path value="Laboratory_test_result.protocol.Test_request_details.Original_test_requested_name.value"/>
+         <short value="Original test requested name"/>
+         <definition value="Name of the original laboratory test requested."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_test_result.protocol.Test_request_details.Original_test_requested_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Laboratory_test_result.protocol.Test_request_details.Requester_order_identifier">
+         <path value="Laboratory_test_result.protocol.Test_request_details.Requester_order_identifier"/>
+         <short value="Requester order identifier"/>
+         <definition value="The local identifier assigned by the requesting clinical system."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_test_result.protocol.Test_request_details.Requester_order_identifier"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Laboratory_test_result.protocol.Test_request_details.Requester_order_identifier.value_DV_IDENTIFIER">
+         <path value="Laboratory_test_result.protocol.Test_request_details.Requester_order_identifier.value_DV_IDENTIFIER"/>
+         <short value="Requester order identifier"/>
+         <definition value="The local identifier assigned by the requesting clinical system."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_test_result.protocol.Test_request_details.Requester_order_identifier.value_DV_IDENTIFIER"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Laboratory_test_result.protocol.Test_request_details.Requester_order_identifier.value_DV_TEXT">
+         <path value="Laboratory_test_result.protocol.Test_request_details.Requester_order_identifier.value_DV_TEXT"/>
+         <short value="Requester order identifier"/>
+         <definition value="The local identifier assigned by the requesting clinical system."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_test_result.protocol.Test_request_details.Requester_order_identifier.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Laboratory_test_result.protocol.Test_request_details.Receiver_order_identifier">
+         <path value="Laboratory_test_result.protocol.Test_request_details.Receiver_order_identifier"/>
+         <short value="Receiver order identifier"/>
+         <definition value="The local identifier assigned to the test order by the order filler, usually by the Laboratory Information System (LIS)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_test_result.protocol.Test_request_details.Receiver_order_identifier"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Laboratory_test_result.protocol.Test_request_details.Receiver_order_identifier.value_DV_IDENTIFIER">
+         <path value="Laboratory_test_result.protocol.Test_request_details.Receiver_order_identifier.value_DV_IDENTIFIER"/>
+         <short value="Receiver order identifier"/>
+         <definition value="The local identifier assigned to the test order by the order filler, usually by the Laboratory Information System (LIS)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_test_result.protocol.Test_request_details.Receiver_order_identifier.value_DV_IDENTIFIER"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Laboratory_test_result.protocol.Test_request_details.Receiver_order_identifier.value_DV_TEXT">
+         <path value="Laboratory_test_result.protocol.Test_request_details.Receiver_order_identifier.value_DV_TEXT"/>
+         <short value="Receiver order identifier"/>
+         <definition value="The local identifier assigned to the test order by the order filler, usually by the Laboratory Information System (LIS)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_test_result.protocol.Test_request_details.Receiver_order_identifier.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Laboratory_test_result.protocol.Test_request_details.Requester">
+         <path value="Laboratory_test_result.protocol.Test_request_details.Requester"/>
+         <short value="Requester"/>
+         <definition value="Details of the clinician or organisation requesting the laboratory test result."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_test_result.protocol.Test_request_details.Requester"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Laboratory_test_result.protocol.Test_request_details.Distribution_list">
+         <path value="Laboratory_test_result.protocol.Test_request_details.Distribution_list"/>
+         <short value="Distribution list"/>
+         <definition value="Details of additional clinicians or organisations who require a copy of the test result."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Laboratory_test_result.protocol.Test_request_details.Distribution_list"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Laboratory_test_result.protocol.Point_of_care_test">
+         <path value="Laboratory_test_result.protocol.Point_of_care_test"/>
+         <short value="Point-of-care test"/>
+         <definition value="This indicates whether the test was performed directly at Point-of-Care (POCT) as opposed to a formal result from a laboratory or other service delivery organisation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_test_result.protocol.Point_of_care_test"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Laboratory_test_result.protocol.Point_of_care_test.value">
+         <path value="Laboratory_test_result.protocol.Point_of_care_test.value"/>
+         <short value="Point-of-care test"/>
+         <definition value="This indicates whether the test was performed directly at Point-of-Care (POCT) as opposed to a formal result from a laboratory or other service delivery organisation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_test_result.protocol.Point_of_care_test.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Laboratory_test_result.protocol.Test_method">
+         <path value="Laboratory_test_result.protocol.Test_method"/>
+         <short value="Test method"/>
+         <definition value="Description about the method used to perform the test."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_test_result.protocol.Test_method"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Laboratory_test_result.protocol.Testing_details">
+         <path value="Laboratory_test_result.protocol.Testing_details"/>
+         <short value="Testing details"/>
+         <definition value="Structured details about the method of analysis, device or interpretation used."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Laboratory_test_result.protocol.Testing_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Laboratory_test_result.protocol.Extension">
+         <path value="Laboratory_test_result.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Laboratory_test_result.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Laboratory_test_result.Event_Series">
+         <path value="Laboratory_test_result.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_test_result.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Laboratory_test_result.Event_Series.Any_event">
+         <path value="Laboratory_test_result.Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Laboratory_test_result.Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Laboratory_test_result.Event_Series.Any_event.data">
+         <path value="Laboratory_test_result.Event_Series.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_test_result.Event_Series.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Laboratory_test_result.Event_Series.Any_event.data.Test_name">
+         <path value="Laboratory_test_result.Event_Series.Any_event.data.Test_name"/>
+         <short value="Test name"/>
+         <definition value="Name of the laboratory investigation performed on the specimen(s)."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_test_result.Event_Series.Any_event.data.Test_name"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Laboratory_test_result.Event_Series.Any_event.data.Test_name.value">
+         <path value="Laboratory_test_result.Event_Series.Any_event.data.Test_name.value"/>
+         <short value="Test name"/>
+         <definition value="Name of the laboratory investigation performed on the specimen(s)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_test_result.Event_Series.Any_event.data.Test_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Laboratory_test_result.Event_Series.Any_event.data.Specimen_detail">
+         <path value="Laboratory_test_result.Event_Series.Any_event.data.Specimen_detail"/>
+         <short value="Specimen detail"/>
+         <definition value="Details about the physical substance that has been analysed."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Laboratory_test_result.Event_Series.Any_event.data.Specimen_detail"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Laboratory_test_result.Event_Series.Any_event.data.Overall_test_status">
+         <path value="Laboratory_test_result.Event_Series.Any_event.data.Overall_test_status"/>
+         <short value="Overall test status"/>
+         <definition value="The status of the laboratory test result as a whole."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Laboratory_test_result.Event_Series.Any_event.data.Overall_test_status"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Laboratory_test_result.Event_Series.Any_event.data.Overall_test_status.value_DV_CODED_TEXT">
+         <path value="Laboratory_test_result.Event_Series.Any_event.data.Overall_test_status.value_DV_CODED_TEXT"/>
+         <short value="Overall test status"/>
+         <definition value="The status of the laboratory test result as a whole."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_test_result.Event_Series.Any_event.data.Overall_test_status.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Laboratory_test_result.Event_Series.Any_event.data.Overall_test_status.value_DV_TEXT">
+         <path value="Laboratory_test_result.Event_Series.Any_event.data.Overall_test_status.value_DV_TEXT"/>
+         <short value="Overall test status"/>
+         <definition value="The status of the laboratory test result as a whole."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_test_result.Event_Series.Any_event.data.Overall_test_status.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Laboratory_test_result.Event_Series.Any_event.data.Overall_test_status_timestamp">
+         <path value="Laboratory_test_result.Event_Series.Any_event.data.Overall_test_status_timestamp"/>
+         <short value="Overall test status timestamp"/>
+         <definition value="The date and/or time that ‘Overall test status’ was issued."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_test_result.Event_Series.Any_event.data.Overall_test_status_timestamp"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Laboratory_test_result.Event_Series.Any_event.data.Overall_test_status_timestamp.value">
+         <path value="Laboratory_test_result.Event_Series.Any_event.data.Overall_test_status_timestamp.value"/>
+         <short value="Overall test status timestamp"/>
+         <definition value="The date and/or time that ‘Overall test status’ was issued."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_test_result.Event_Series.Any_event.data.Overall_test_status_timestamp.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Laboratory_test_result.Event_Series.Any_event.data.Diagnostic_service_category">
+         <path value="Laboratory_test_result.Event_Series.Any_event.data.Diagnostic_service_category"/>
+         <short value="Diagnostic service category"/>
+         <definition value="The diagnostic service or discipline that is responsible for the laboratory test result."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_test_result.Event_Series.Any_event.data.Diagnostic_service_category"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Laboratory_test_result.Event_Series.Any_event.data.Diagnostic_service_category.value">
+         <path value="Laboratory_test_result.Event_Series.Any_event.data.Diagnostic_service_category.value"/>
+         <short value="Diagnostic service category"/>
+         <definition value="The diagnostic service or discipline that is responsible for the laboratory test result."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_test_result.Event_Series.Any_event.data.Diagnostic_service_category.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Laboratory_test_result.Event_Series.Any_event.data.Clinical_information_provided">
+         <path value="Laboratory_test_result.Event_Series.Any_event.data.Clinical_information_provided"/>
+         <short value="Clinical information provided"/>
+         <definition value="Description of clinical information available at the time of interpretation of results."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_test_result.Event_Series.Any_event.data.Clinical_information_provided"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Laboratory_test_result.Event_Series.Any_event.data.Clinical_information_provided.value">
+         <path value="Laboratory_test_result.Event_Series.Any_event.data.Clinical_information_provided.value"/>
+         <short value="Clinical information provided"/>
+         <definition value="Description of clinical information available at the time of interpretation of results."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_test_result.Event_Series.Any_event.data.Clinical_information_provided.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Laboratory_test_result.Event_Series.Any_event.data.Test_result">
+         <path value="Laboratory_test_result.Event_Series.Any_event.data.Test_result"/>
+         <short value="Test result"/>
+         <definition value="Results of the test performed on the specimen(s)."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Laboratory_test_result.Event_Series.Any_event.data.Test_result"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Laboratory_test_result.Event_Series.Any_event.data.Conclusion">
+         <path value="Laboratory_test_result.Event_Series.Any_event.data.Conclusion"/>
+         <short value="Conclusion"/>
+         <definition value="Narrative description of the key findings."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_test_result.Event_Series.Any_event.data.Conclusion"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Laboratory_test_result.Event_Series.Any_event.data.Conclusion.value">
+         <path value="Laboratory_test_result.Event_Series.Any_event.data.Conclusion.value"/>
+         <short value="Conclusion"/>
+         <definition value="Narrative description of the key findings."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_test_result.Event_Series.Any_event.data.Conclusion.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Laboratory_test_result.Event_Series.Any_event.data.Test_diagnosis">
+         <path value="Laboratory_test_result.Event_Series.Any_event.data.Test_diagnosis"/>
+         <short value="Test diagnosis"/>
+         <definition value="Single word, phrase or brief description that represents the clinical meaning and significance of the laboratory test result."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Laboratory_test_result.Event_Series.Any_event.data.Test_diagnosis"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Laboratory_test_result.Event_Series.Any_event.data.Test_diagnosis.value">
+         <path value="Laboratory_test_result.Event_Series.Any_event.data.Test_diagnosis.value"/>
+         <short value="Test diagnosis"/>
+         <definition value="Single word, phrase or brief description that represents the clinical meaning and significance of the laboratory test result."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_test_result.Event_Series.Any_event.data.Test_diagnosis.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Laboratory_test_result.Event_Series.Any_event.data.Structured_test_diagnosis">
+         <path value="Laboratory_test_result.Event_Series.Any_event.data.Structured_test_diagnosis"/>
+         <short value="Structured test diagnosis"/>
+         <definition value="A structured or complex diagnosis for the laboratory test."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Laboratory_test_result.Event_Series.Any_event.data.Structured_test_diagnosis"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Laboratory_test_result.Event_Series.Any_event.data.Multimedia_representation">
+         <path value="Laboratory_test_result.Event_Series.Any_event.data.Multimedia_representation"/>
+         <short value="Multimedia representation"/>
+         <definition value="Digital image, video or diagram representing the test result."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Laboratory_test_result.Event_Series.Any_event.data.Multimedia_representation"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Laboratory_test_result.Event_Series.Any_event.data.Comment">
+         <path value="Laboratory_test_result.Event_Series.Any_event.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the test result not captured in other fields."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Laboratory_test_result.Event_Series.Any_event.data.Comment"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Laboratory_test_result.Event_Series.Any_event.data.Comment.value">
+         <path value="Laboratory_test_result.Event_Series.Any_event.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the test result not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_test_result.Event_Series.Any_event.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Laboratory_test_result.Event_Series.Any_event.state">
+         <path value="Laboratory_test_result.Event_Series.Any_event.state"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_test_result.Event_Series.Any_event.state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Laboratory_test_result.Event_Series.Any_event.state.Confounding_factors">
+         <path value="Laboratory_test_result.Event_Series.Any_event.state.Confounding_factors"/>
+         <short value="Confounding factors"/>
+         <definition value="Issues or circumstances that impact on the accurate interpretation of the measurement or test result."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Laboratory_test_result.Event_Series.Any_event.state.Confounding_factors"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Laboratory_test_result.Event_Series.Any_event.state.Confounding_factors.value">
+         <path value="Laboratory_test_result.Event_Series.Any_event.state.Confounding_factors.value"/>
+         <short value="Confounding factors"/>
+         <definition value="Issues or circumstances that impact on the accurate interpretation of the measurement or test result."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_test_result.Event_Series.Any_event.state.Confounding_factors.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Laboratory_test_result.Event_Series.Any_event.state.Structured_confounding_factors">
+         <path value="Laboratory_test_result.Event_Series.Any_event.state.Structured_confounding_factors"/>
+         <short value="Structured confounding factors"/>
+         <definition value="Details of issues or circumstances that impact on the accurate interpretation of the measurement or test result."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Laboratory_test_result.Event_Series.Any_event.state.Structured_confounding_factors"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

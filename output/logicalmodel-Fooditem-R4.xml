@@ -1,0 +1,1040 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Fooditem-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-fooditem-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.food_item.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Fooditem"/>
+   <title value="Food item"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Information about a single food item consumed by an individual."/>
+   <purpose value="To record information about a single food item consumed by an individual."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Food_item">
+         <path value="Food_item"/>
+         <short value="Food item"/>
+         <definition value="Information about a single food item consumed by an individual."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_item.protocol">
+         <path value="Food_item.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_item.protocol.Extension">
+         <path value="Food_item.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Food_item.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_item.protocol.Serving_size_(mass)">
+         <path value="Food_item.protocol.Serving_size_(mass)"/>
+         <short value="Serving size (mass)"/>
+         <definition value="Definition of the size of a single serving of the food item, by mass."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.protocol.Serving_size_(mass)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Food_item.protocol.Serving_size_(mass).value">
+         <path value="Food_item.protocol.Serving_size_(mass).value"/>
+         <short value="Serving size (mass)"/>
+         <definition value="Definition of the size of a single serving of the food item, by mass."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.protocol.Serving_size_(mass).value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_item.protocol.Serving_size_(volume)">
+         <path value="Food_item.protocol.Serving_size_(volume)"/>
+         <short value="Serving size (volume)"/>
+         <definition value="Definition of the size of a single serving of the food item, by volume."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.protocol.Serving_size_(volume)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Food_item.protocol.Serving_size_(volume).value">
+         <path value="Food_item.protocol.Serving_size_(volume).value"/>
+         <short value="Serving size (volume)"/>
+         <definition value="Definition of the size of a single serving of the food item, by volume."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.protocol.Serving_size_(volume).value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_item.protocol.Method">
+         <path value="Food_item.protocol.Method"/>
+         <short value="Method"/>
+         <definition value="The method used to measure the amount of food."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.protocol.Method"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Food_item.protocol.Method.value">
+         <path value="Food_item.protocol.Method.value"/>
+         <short value="Method"/>
+         <definition value="The method used to measure the amount of food."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.protocol.Method.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_item.protocol.Accuracy">
+         <path value="Food_item.protocol.Accuracy"/>
+         <short value="Accuracy"/>
+         <definition value="The qualitative precision of the amount of the food item."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.protocol.Accuracy"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Food_item.protocol.Accuracy.value">
+         <path value="Food_item.protocol.Accuracy.value"/>
+         <short value="Accuracy"/>
+         <definition value="The qualitative precision of the amount of the food item."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.protocol.Accuracy.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_item.protocol.Device">
+         <path value="Food_item.protocol.Device"/>
+         <short value="Device"/>
+         <definition value="Details about the device used to measure or record the amount of the food item."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Food_item.protocol.Device"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_item.Event_Series">
+         <path value="Food_item.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_item.Event_Series.Any_event">
+         <path value="Food_item.Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Food_item.Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_item.Event_Series.Any_event.data">
+         <path value="Food_item.Event_Series.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.Event_Series.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_item.Event_Series.Any_event.data.Food_item_name">
+         <path value="Food_item.Event_Series.Any_event.data.Food_item_name"/>
+         <short value="Food item name"/>
+         <definition value="The name of the item of food being recorded."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.Event_Series.Any_event.data.Food_item_name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Food_item.Event_Series.Any_event.data.Food_item_name.value">
+         <path value="Food_item.Event_Series.Any_event.data.Food_item_name.value"/>
+         <short value="Food item name"/>
+         <definition value="The name of the item of food being recorded."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.Event_Series.Any_event.data.Food_item_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_item.Event_Series.Any_event.data.Amount">
+         <path value="Food_item.Event_Series.Any_event.data.Amount"/>
+         <short value="Amount"/>
+         <definition value="The amount of food consumed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.Event_Series.Any_event.data.Amount"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_item.Event_Series.Any_event.data.Amount.Mass">
+         <path value="Food_item.Event_Series.Any_event.data.Amount.Mass"/>
+         <short value="Mass"/>
+         <definition value="The mass of food consumed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.Event_Series.Any_event.data.Amount.Mass"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Food_item.Event_Series.Any_event.data.Amount.Mass.value">
+         <path value="Food_item.Event_Series.Any_event.data.Amount.Mass.value"/>
+         <short value="Mass"/>
+         <definition value="The mass of food consumed."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.Event_Series.Any_event.data.Amount.Mass.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_item.Event_Series.Any_event.data.Amount.Volume">
+         <path value="Food_item.Event_Series.Any_event.data.Amount.Volume"/>
+         <short value="Volume"/>
+         <definition value="The volume of food consumed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.Event_Series.Any_event.data.Amount.Volume"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Food_item.Event_Series.Any_event.data.Amount.Volume.value">
+         <path value="Food_item.Event_Series.Any_event.data.Amount.Volume.value"/>
+         <short value="Volume"/>
+         <definition value="The volume of food consumed."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.Event_Series.Any_event.data.Amount.Volume.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_item.Event_Series.Any_event.data.Amount.Serving">
+         <path value="Food_item.Event_Series.Any_event.data.Amount.Serving"/>
+         <short value="Serving"/>
+         <definition value="The number of servings of food consumed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.Event_Series.Any_event.data.Amount.Serving"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Food_item.Event_Series.Any_event.data.Amount.Serving.value">
+         <path value="Food_item.Event_Series.Any_event.data.Amount.Serving.value"/>
+         <short value="Serving"/>
+         <definition value="The number of servings of food consumed."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.Event_Series.Any_event.data.Amount.Serving.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_item.Event_Series.Any_event.data.Glycaemic_load">
+         <path value="Food_item.Event_Series.Any_event.data.Glycaemic_load"/>
+         <short value="Glycaemic load"/>
+         <definition value="A number that estimates how much the food will raise an individual's blood glucose level after eating it."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.Event_Series.Any_event.data.Glycaemic_load"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Food_item.Event_Series.Any_event.data.Glycaemic_load.value">
+         <path value="Food_item.Event_Series.Any_event.data.Glycaemic_load.value"/>
+         <short value="Glycaemic load"/>
+         <definition value="A number that estimates how much the food will raise an individual's blood glucose level after eating it."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.Event_Series.Any_event.data.Glycaemic_load.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_item.Event_Series.Any_event.data.Nutrients">
+         <path value="Food_item.Event_Series.Any_event.data.Nutrients"/>
+         <short value="Nutrients"/>
+         <definition value="Details about the component nutrients for this food."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Food_item.Event_Series.Any_event.data.Nutrients"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_item.Event_Series.Any_event.data.Comment">
+         <path value="Food_item.Event_Series.Any_event.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the food item not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.Event_Series.Any_event.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Food_item.Event_Series.Any_event.data.Comment.value">
+         <path value="Food_item.Event_Series.Any_event.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the food item not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.Event_Series.Any_event.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_item.Event_Series.One_day">
+         <path value="Food_item.Event_Series.One_day"/>
+         <short value="One day"/>
+         <definition value="One day interval event, which may be further defined in a template or at run-time, for example: specifically named as 'Friday' or 'Saturday'."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Food_item.Event_Series.One_day"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_item.Event_Series.One_day.data">
+         <path value="Food_item.Event_Series.One_day.data"/>
+         <definition value="ITEM_TREE"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.Event_Series.One_day.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_item.Event_Series.One_day.data.Food_item_name">
+         <path value="Food_item.Event_Series.One_day.data.Food_item_name"/>
+         <short value="Food item name"/>
+         <definition value="The name of the item of food being recorded."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.Event_Series.One_day.data.Food_item_name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Food_item.Event_Series.One_day.data.Food_item_name.value">
+         <path value="Food_item.Event_Series.One_day.data.Food_item_name.value"/>
+         <short value="Food item name"/>
+         <definition value="The name of the item of food being recorded."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.Event_Series.One_day.data.Food_item_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_item.Event_Series.One_day.data.Amount">
+         <path value="Food_item.Event_Series.One_day.data.Amount"/>
+         <short value="Amount"/>
+         <definition value="The amount of food consumed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.Event_Series.One_day.data.Amount"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_item.Event_Series.One_day.data.Amount.Mass">
+         <path value="Food_item.Event_Series.One_day.data.Amount.Mass"/>
+         <short value="Mass"/>
+         <definition value="The mass of food consumed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.Event_Series.One_day.data.Amount.Mass"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Food_item.Event_Series.One_day.data.Amount.Mass.value">
+         <path value="Food_item.Event_Series.One_day.data.Amount.Mass.value"/>
+         <short value="Mass"/>
+         <definition value="The mass of food consumed."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.Event_Series.One_day.data.Amount.Mass.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_item.Event_Series.One_day.data.Amount.Volume">
+         <path value="Food_item.Event_Series.One_day.data.Amount.Volume"/>
+         <short value="Volume"/>
+         <definition value="The volume of food consumed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.Event_Series.One_day.data.Amount.Volume"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Food_item.Event_Series.One_day.data.Amount.Volume.value">
+         <path value="Food_item.Event_Series.One_day.data.Amount.Volume.value"/>
+         <short value="Volume"/>
+         <definition value="The volume of food consumed."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.Event_Series.One_day.data.Amount.Volume.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_item.Event_Series.One_day.data.Amount.Serving">
+         <path value="Food_item.Event_Series.One_day.data.Amount.Serving"/>
+         <short value="Serving"/>
+         <definition value="The number of servings of food consumed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.Event_Series.One_day.data.Amount.Serving"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Food_item.Event_Series.One_day.data.Amount.Serving.value">
+         <path value="Food_item.Event_Series.One_day.data.Amount.Serving.value"/>
+         <short value="Serving"/>
+         <definition value="The number of servings of food consumed."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.Event_Series.One_day.data.Amount.Serving.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_item.Event_Series.One_day.data.Glycaemic_load">
+         <path value="Food_item.Event_Series.One_day.data.Glycaemic_load"/>
+         <short value="Glycaemic load"/>
+         <definition value="A number that estimates how much the food will raise an individual's blood glucose level after eating it."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.Event_Series.One_day.data.Glycaemic_load"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Food_item.Event_Series.One_day.data.Glycaemic_load.value">
+         <path value="Food_item.Event_Series.One_day.data.Glycaemic_load.value"/>
+         <short value="Glycaemic load"/>
+         <definition value="A number that estimates how much the food will raise an individual's blood glucose level after eating it."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.Event_Series.One_day.data.Glycaemic_load.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_item.Event_Series.One_day.data.Nutrients">
+         <path value="Food_item.Event_Series.One_day.data.Nutrients"/>
+         <short value="Nutrients"/>
+         <definition value="Details about the component nutrients for this food."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Food_item.Event_Series.One_day.data.Nutrients"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_item.Event_Series.One_day.data.Comment">
+         <path value="Food_item.Event_Series.One_day.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the food item not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.Event_Series.One_day.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Food_item.Event_Series.One_day.data.Comment.value">
+         <path value="Food_item.Event_Series.One_day.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the food item not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.Event_Series.One_day.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_item.Event_Series.events_One_day.width">
+         <path value="Food_item.Event_Series.events_One_day.width"/>
+         <short value="One day"/>
+         <definition value="One day interval event, which may be further defined in a template or at run-time, for example: specifically named as 'Friday' or 'Saturday'."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.Event_Series.events_One_day.width"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_item.Event_Series.One_week">
+         <path value="Food_item.Event_Series.One_week"/>
+         <short value="One week"/>
+         <definition value="One week interval event, which may be further defined in a template or at run-time, for example: specifically named as 'Last week'."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Food_item.Event_Series.One_week"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_item.Event_Series.One_week.data">
+         <path value="Food_item.Event_Series.One_week.data"/>
+         <definition value="ITEM_TREE"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.Event_Series.One_week.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_item.Event_Series.One_week.data.Food_item_name">
+         <path value="Food_item.Event_Series.One_week.data.Food_item_name"/>
+         <short value="Food item name"/>
+         <definition value="The name of the item of food being recorded."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.Event_Series.One_week.data.Food_item_name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Food_item.Event_Series.One_week.data.Food_item_name.value">
+         <path value="Food_item.Event_Series.One_week.data.Food_item_name.value"/>
+         <short value="Food item name"/>
+         <definition value="The name of the item of food being recorded."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.Event_Series.One_week.data.Food_item_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_item.Event_Series.One_week.data.Amount">
+         <path value="Food_item.Event_Series.One_week.data.Amount"/>
+         <short value="Amount"/>
+         <definition value="The amount of food consumed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.Event_Series.One_week.data.Amount"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_item.Event_Series.One_week.data.Amount.Mass">
+         <path value="Food_item.Event_Series.One_week.data.Amount.Mass"/>
+         <short value="Mass"/>
+         <definition value="The mass of food consumed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.Event_Series.One_week.data.Amount.Mass"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Food_item.Event_Series.One_week.data.Amount.Mass.value">
+         <path value="Food_item.Event_Series.One_week.data.Amount.Mass.value"/>
+         <short value="Mass"/>
+         <definition value="The mass of food consumed."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.Event_Series.One_week.data.Amount.Mass.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_item.Event_Series.One_week.data.Amount.Volume">
+         <path value="Food_item.Event_Series.One_week.data.Amount.Volume"/>
+         <short value="Volume"/>
+         <definition value="The volume of food consumed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.Event_Series.One_week.data.Amount.Volume"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Food_item.Event_Series.One_week.data.Amount.Volume.value">
+         <path value="Food_item.Event_Series.One_week.data.Amount.Volume.value"/>
+         <short value="Volume"/>
+         <definition value="The volume of food consumed."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.Event_Series.One_week.data.Amount.Volume.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_item.Event_Series.One_week.data.Amount.Serving">
+         <path value="Food_item.Event_Series.One_week.data.Amount.Serving"/>
+         <short value="Serving"/>
+         <definition value="The number of servings of food consumed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.Event_Series.One_week.data.Amount.Serving"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Food_item.Event_Series.One_week.data.Amount.Serving.value">
+         <path value="Food_item.Event_Series.One_week.data.Amount.Serving.value"/>
+         <short value="Serving"/>
+         <definition value="The number of servings of food consumed."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.Event_Series.One_week.data.Amount.Serving.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_item.Event_Series.One_week.data.Glycaemic_load">
+         <path value="Food_item.Event_Series.One_week.data.Glycaemic_load"/>
+         <short value="Glycaemic load"/>
+         <definition value="A number that estimates how much the food will raise an individual's blood glucose level after eating it."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.Event_Series.One_week.data.Glycaemic_load"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Food_item.Event_Series.One_week.data.Glycaemic_load.value">
+         <path value="Food_item.Event_Series.One_week.data.Glycaemic_load.value"/>
+         <short value="Glycaemic load"/>
+         <definition value="A number that estimates how much the food will raise an individual's blood glucose level after eating it."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.Event_Series.One_week.data.Glycaemic_load.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_item.Event_Series.One_week.data.Nutrients">
+         <path value="Food_item.Event_Series.One_week.data.Nutrients"/>
+         <short value="Nutrients"/>
+         <definition value="Details about the component nutrients for this food."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Food_item.Event_Series.One_week.data.Nutrients"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_item.Event_Series.One_week.data.Comment">
+         <path value="Food_item.Event_Series.One_week.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the food item not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.Event_Series.One_week.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Food_item.Event_Series.One_week.data.Comment.value">
+         <path value="Food_item.Event_Series.One_week.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the food item not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.Event_Series.One_week.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Food_item.Event_Series.events_One_week.width">
+         <path value="Food_item.Event_Series.events_One_week.width"/>
+         <short value="One week"/>
+         <definition value="One week interval event, which may be further defined in a template or at run-time, for example: specifically named as 'Last week'."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Food_item.Event_Series.events_One_week.width"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

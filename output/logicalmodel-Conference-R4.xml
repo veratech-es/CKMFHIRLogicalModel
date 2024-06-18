@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Conference-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-conference-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.conference.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Conference"/>
+   <title value="Conference"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Text conversation, or video- or audio-conference recording, between two or more clinicians, captured as part of the record of health care."/>
+   <purpose value="To record the text conversation, or video- or audio-conference recording, between two or more clinicians, captured as part of the record of health care."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Conference">
+         <path value="Conference"/>
+         <short value="Conference"/>
+         <definition value="Text conversation, or video- or audio-conference recording, between two or more clinicians, captured as part of the record of health care."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Conference"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Conference.protocol">
+         <path value="Conference.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Conference.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Conference.protocol.Extension">
+         <path value="Conference.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local context or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Conference.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Conference.Event_Series">
+         <path value="Conference.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Conference.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Conference.Event_Series.Time">
+         <path value="Conference.Event_Series.Time"/>
+         <short value="Time"/>
+         <definition value="Default, unspecified point in time recording which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Conference.Event_Series.Time"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Conference.Event_Series.Time.data">
+         <path value="Conference.Event_Series.Time.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Conference.Event_Series.Time.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Conference.Event_Series.Time.data.Text_record">
+         <path value="Conference.Event_Series.Time.data.Text_record"/>
+         <short value="Text record"/>
+         <definition value="The text conversation between two or more healthcare providers."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Conference.Event_Series.Time.data.Text_record"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Conference.Event_Series.Time.data.Text_record.value">
+         <path value="Conference.Event_Series.Time.data.Text_record.value"/>
+         <short value="Text record"/>
+         <definition value="The text conversation between two or more healthcare providers."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Conference.Event_Series.Time.data.Text_record.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Conference.Event_Series.Time.data.Audio_or_video_record">
+         <path value="Conference.Event_Series.Time.data.Audio_or_video_record"/>
+         <short value="Audio or video record"/>
+         <definition value="The audio or video conversation between two or more healthcare providers."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Conference.Event_Series.Time.data.Audio_or_video_record"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Conference.Event_Series.Time.data.Audio_or_video_record.value">
+         <path value="Conference.Event_Series.Time.data.Audio_or_video_record.value"/>
+         <short value="Audio or video record"/>
+         <definition value="The audio or video conversation between two or more healthcare providers."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Conference.Event_Series.Time.data.Audio_or_video_record.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Attachment"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Conference.Event_Series.Time.data.Author">
+         <path value="Conference.Event_Series.Time.data.Author"/>
+         <short value="Author"/>
+         <definition value="The author of the chat or instigator of the recording."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Conference.Event_Series.Time.data.Author"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Conference.Event_Series.Time.data.Author.value">
+         <path value="Conference.Event_Series.Time.data.Author.value"/>
+         <short value="Author"/>
+         <definition value="The author of the chat or instigator of the recording."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Conference.Event_Series.Time.data.Author.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Conference.Event_Series.Recording_interval">
+         <path value="Conference.Event_Series.Recording_interval"/>
+         <short value="Recording interval"/>
+         <definition value="Default, unspecified interval recording event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Conference.Event_Series.Recording_interval"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Conference.Event_Series.Recording_interval.data">
+         <path value="Conference.Event_Series.Recording_interval.data"/>
+         <definition value="ITEM_TREE"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Conference.Event_Series.Recording_interval.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Conference.Event_Series.Recording_interval.data.Text_record">
+         <path value="Conference.Event_Series.Recording_interval.data.Text_record"/>
+         <short value="Text record"/>
+         <definition value="The text conversation between two or more healthcare providers."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Conference.Event_Series.Recording_interval.data.Text_record"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Conference.Event_Series.Recording_interval.data.Text_record.value">
+         <path value="Conference.Event_Series.Recording_interval.data.Text_record.value"/>
+         <short value="Text record"/>
+         <definition value="The text conversation between two or more healthcare providers."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Conference.Event_Series.Recording_interval.data.Text_record.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Conference.Event_Series.Recording_interval.data.Audio_or_video_record">
+         <path value="Conference.Event_Series.Recording_interval.data.Audio_or_video_record"/>
+         <short value="Audio or video record"/>
+         <definition value="The audio or video conversation between two or more healthcare providers."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Conference.Event_Series.Recording_interval.data.Audio_or_video_record"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Conference.Event_Series.Recording_interval.data.Audio_or_video_record.value">
+         <path value="Conference.Event_Series.Recording_interval.data.Audio_or_video_record.value"/>
+         <short value="Audio or video record"/>
+         <definition value="The audio or video conversation between two or more healthcare providers."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Conference.Event_Series.Recording_interval.data.Audio_or_video_record.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Attachment"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Conference.Event_Series.Recording_interval.data.Author">
+         <path value="Conference.Event_Series.Recording_interval.data.Author"/>
+         <short value="Author"/>
+         <definition value="The author of the chat or instigator of the recording."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Conference.Event_Series.Recording_interval.data.Author"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Conference.Event_Series.Recording_interval.data.Author.value">
+         <path value="Conference.Event_Series.Recording_interval.data.Author.value"/>
+         <short value="Author"/>
+         <definition value="The author of the chat or instigator of the recording."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Conference.Event_Series.Recording_interval.data.Author.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Conference.Event_Series.events_Recording_interval.math_function">
+         <path value="Conference.Event_Series.events_Recording_interval.math_function"/>
+         <short value="Recording interval"/>
+         <definition value="Default, unspecified interval recording event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Conference.Event_Series.events_Recording_interval.math_function"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

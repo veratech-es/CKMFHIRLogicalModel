@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Bodysegmentarea-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-bodysegmentarea-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.body_segment_area.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Bodysegmentarea"/>
+   <title value="Body segment area"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Calculation of the cross-sectional area of an identified part of the body, usually identified in relation to points of surface anatomy."/>
+   <purpose value="To record the calculation of the cross-sectional area of an identified part of the body, usually identified in relation to points of surface anatomy."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Body_segment_area">
+         <path value="Body_segment_area"/>
+         <short value="Body segment area"/>
+         <definition value="Calculation of the cross-sectional area of an identified part of the body, usually identified in relation to points of surface anatomy."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_segment_area"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_segment_area.ItemTree">
+         <path value="Body_segment_area.ItemTree"/>
+         <short value="ItemTree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_segment_area.ItemTree"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_segment_area.ItemTree.Measuring_device">
+         <path value="Body_segment_area.ItemTree.Measuring_device"/>
+         <short value="Measuring device"/>
+         <definition value="Details of the device used for measuring the body part."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Body_segment_area.ItemTree.Measuring_device"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_segment_area.ItemTree.Measurement_method">
+         <path value="Body_segment_area.ItemTree.Measurement_method"/>
+         <short value="Measurement method"/>
+         <definition value="Narrative description of the method used for measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_segment_area.ItemTree.Measurement_method"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_segment_area.ItemTree.Measurement_method.value">
+         <path value="Body_segment_area.ItemTree.Measurement_method.value"/>
+         <short value="Measurement method"/>
+         <definition value="Narrative description of the method used for measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_segment_area.ItemTree.Measurement_method.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_segment_area.ItemTree.Measurement_origin_endpoint">
+         <path value="Body_segment_area.ItemTree.Measurement_origin_endpoint"/>
+         <short value="Measurement origin/endpoint"/>
+         <definition value="Identification of a simple body site for the location of the origin/end point of the circumference measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_segment_area.ItemTree.Measurement_origin_endpoint"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_segment_area.ItemTree.Measurement_origin_endpoint.value">
+         <path value="Body_segment_area.ItemTree.Measurement_origin_endpoint.value"/>
+         <short value="Measurement origin/endpoint"/>
+         <definition value="Identification of a simple body site for the location of the origin/end point of the circumference measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_segment_area.ItemTree.Measurement_origin_endpoint.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_segment_area.ItemTree.Structured_origin_endpoint">
+         <path value="Body_segment_area.ItemTree.Structured_origin_endpoint"/>
+         <short value="Structured origin/endpoint"/>
+         <definition value="A structured anatomical location for the start/end point of the circumference measurement including relative location, if required."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Body_segment_area.ItemTree.Structured_origin_endpoint"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_segment_area.ItemTree.Extension">
+         <path value="Body_segment_area.ItemTree.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models or formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Body_segment_area.ItemTree.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_segment_area.Event_Series">
+         <path value="Body_segment_area.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_segment_area.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_segment_area.Event_Series.Any_event">
+         <path value="Body_segment_area.Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Body_segment_area.Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_segment_area.Event_Series.Any_event.ItemTree">
+         <path value="Body_segment_area.Event_Series.Any_event.ItemTree"/>
+         <short value="ItemTree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_segment_area.Event_Series.Any_event.ItemTree"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_segment_area.Event_Series.Any_event.ItemTree.Body_segment_name">
+         <path value="Body_segment_area.Event_Series.Any_event.ItemTree.Body_segment_name"/>
+         <short value="Body segment name"/>
+         <definition value="Name of the measured body segment."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_segment_area.Event_Series.Any_event.ItemTree.Body_segment_name"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_segment_area.Event_Series.Any_event.ItemTree.Body_segment_name.value_DV_TEXT">
+         <path value="Body_segment_area.Event_Series.Any_event.ItemTree.Body_segment_name.value_DV_TEXT"/>
+         <short value="Body segment name"/>
+         <definition value="Name of the measured body segment."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_segment_area.Event_Series.Any_event.ItemTree.Body_segment_name.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_segment_area.Event_Series.Any_event.ItemTree.Body_segment_name.value_DV_CODED_TEXT">
+         <path value="Body_segment_area.Event_Series.Any_event.ItemTree.Body_segment_name.value_DV_CODED_TEXT"/>
+         <short value="Body segment name"/>
+         <definition value="Name of the measured body segment."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_segment_area.Event_Series.Any_event.ItemTree.Body_segment_name.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_segment_area.Event_Series.Any_event.ItemTree.Laterality">
+         <path value="Body_segment_area.Event_Series.Any_event.ItemTree.Laterality"/>
+         <short value="Laterality"/>
+         <definition value="Side of the segment measured."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_segment_area.Event_Series.Any_event.ItemTree.Laterality"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_segment_area.Event_Series.Any_event.ItemTree.Laterality.value">
+         <path value="Body_segment_area.Event_Series.Any_event.ItemTree.Laterality.value"/>
+         <short value="Laterality"/>
+         <definition value="Side of the segment measured."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_segment_area.Event_Series.Any_event.ItemTree.Laterality.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_segment_area.Event_Series.Any_event.ItemTree.Area">
+         <path value="Body_segment_area.Event_Series.Any_event.ItemTree.Area"/>
+         <short value="Area"/>
+         <definition value="Calculated area of the identified body segment."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_segment_area.Event_Series.Any_event.ItemTree.Area"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_segment_area.Event_Series.Any_event.ItemTree.Area.value">
+         <path value="Body_segment_area.Event_Series.Any_event.ItemTree.Area.value"/>
+         <short value="Area"/>
+         <definition value="Calculated area of the identified body segment."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_segment_area.Event_Series.Any_event.ItemTree.Area.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_segment_area.Event_Series.Any_event.ItemTree.Comment">
+         <path value="Body_segment_area.Event_Series.Any_event.ItemTree.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the calculation of the area of the body segment, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_segment_area.Event_Series.Any_event.ItemTree.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_segment_area.Event_Series.Any_event.ItemTree.Comment.value">
+         <path value="Body_segment_area.Event_Series.Any_event.ItemTree.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the calculation of the area of the body segment, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_segment_area.Event_Series.Any_event.ItemTree.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_segment_area.Event_Series.Any_event.state_ItemTree">
+         <path value="Body_segment_area.Event_Series.Any_event.state_ItemTree"/>
+         <short value="ItemTree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_segment_area.Event_Series.Any_event.state_ItemTree"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_segment_area.Event_Series.Any_event.state_ItemTree.Confounding_factors">
+         <path value="Body_segment_area.Event_Series.Any_event.state_ItemTree.Confounding_factors"/>
+         <short value="Confounding factors"/>
+         <definition value="Record any issues or factors that may impact on the measurement of the body segment."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_segment_area.Event_Series.Any_event.state_ItemTree.Confounding_factors"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_segment_area.Event_Series.Any_event.state_ItemTree.Confounding_factors.value">
+         <path value="Body_segment_area.Event_Series.Any_event.state_ItemTree.Confounding_factors.value"/>
+         <short value="Confounding factors"/>
+         <definition value="Record any issues or factors that may impact on the measurement of the body segment."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_segment_area.Event_Series.Any_event.state_ItemTree.Confounding_factors.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_segment_area.Event_Series.Any_event.state_ItemTree.Body_position">
+         <path value="Body_segment_area.Event_Series.Any_event.state_ItemTree.Body_position"/>
+         <short value="Body position"/>
+         <definition value="The position of the individual at the time of measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_segment_area.Event_Series.Any_event.state_ItemTree.Body_position"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_segment_area.Event_Series.Any_event.state_ItemTree.Body_position.value_DV_CODED_TEXT">
+         <path value="Body_segment_area.Event_Series.Any_event.state_ItemTree.Body_position.value_DV_CODED_TEXT"/>
+         <short value="Body position"/>
+         <definition value="The position of the individual at the time of measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_segment_area.Event_Series.Any_event.state_ItemTree.Body_position.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_segment_area.Event_Series.Any_event.state_ItemTree.Body_position.value_DV_TEXT">
+         <path value="Body_segment_area.Event_Series.Any_event.state_ItemTree.Body_position.value_DV_TEXT"/>
+         <short value="Body position"/>
+         <definition value="The position of the individual at the time of measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_segment_area.Event_Series.Any_event.state_ItemTree.Body_position.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Nutritionintake-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-nutritionintake-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.nutrition_intake.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Nutritionintake"/>
+   <title value="Nutrition intake"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="The total intake of nutrients at a point in time or interval of time, such as a meal or a day."/>
+   <purpose value="For recording the total intake of nutrients at a point in time or interval of time, such as a meal or a day."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Nutrition_intake">
+         <path value="Nutrition_intake"/>
+         <short value="Nutrition intake"/>
+         <definition value="The total intake of nutrients at a point in time or interval of time, such as a meal or a day."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Nutrition_intake"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Nutrition_intake.ItemTree">
+         <path value="Nutrition_intake.ItemTree"/>
+         <short value="ItemTree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Nutrition_intake.ItemTree"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Nutrition_intake.ItemTree.Nutritional_day_definition">
+         <path value="Nutrition_intake.ItemTree.Nutritional_day_definition"/>
+         <short value="Nutritional day definition"/>
+         <definition value="The applied definition for the starting time of the 'Cumulative total' event used in this archetype."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Nutrition_intake.ItemTree.Nutritional_day_definition"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Nutrition_intake.ItemTree.Nutritional_day_definition.value">
+         <path value="Nutrition_intake.ItemTree.Nutritional_day_definition.value"/>
+         <short value="Nutritional day definition"/>
+         <definition value="The applied definition for the starting time of the 'Cumulative total' event used in this archetype."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Nutrition_intake.ItemTree.Nutritional_day_definition.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="time"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Nutrition_intake.ItemTree.Extension">
+         <path value="Nutrition_intake.ItemTree.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Nutrition_intake.ItemTree.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Nutrition_intake.History">
+         <path value="Nutrition_intake.History"/>
+         <short value="History"/>
+         <definition value="*"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Nutrition_intake.History"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Nutrition_intake.History.Any_Event">
+         <path value="Nutrition_intake.History.Any_Event"/>
+         <short value="Any Event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Nutrition_intake.History.Any_Event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Nutrition_intake.History.Any_Event.ItemTree">
+         <path value="Nutrition_intake.History.Any_Event.ItemTree"/>
+         <short value="ItemTree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Nutrition_intake.History.Any_Event.ItemTree"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Nutrition_intake.History.Any_Event.ItemTree.Nutrients">
+         <path value="Nutrition_intake.History.Any_Event.ItemTree.Nutrients"/>
+         <short value="Nutrients"/>
+         <definition value="Details about the component nutrients for the event."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Nutrition_intake.History.Any_Event.ItemTree.Nutrients"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Nutrition_intake.History.Any_Event.ItemTree.Comment">
+         <path value="Nutrition_intake.History.Any_Event.ItemTree.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the nutrition intake not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Nutrition_intake.History.Any_Event.ItemTree.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Nutrition_intake.History.Any_Event.ItemTree.Comment.value">
+         <path value="Nutrition_intake.History.Any_Event.ItemTree.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the nutrition intake not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Nutrition_intake.History.Any_Event.ItemTree.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Nutrition_intake.History.Meal">
+         <path value="Nutrition_intake.History.Meal"/>
+         <short value="Meal"/>
+         <definition value="A unspecified meal, either as a point in time or interval event, which should be explicitly defined and renamed in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Nutrition_intake.History.Meal"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Nutrition_intake.History.Meal.data">
+         <path value="Nutrition_intake.History.Meal.data"/>
+         <definition value="ITEM_TREE"/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Nutrition_intake.History.Meal.data"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <contentReference value="#Nutritionintake.History.Any_Event"/>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Nutrition_intake.History.Cumulative_total">
+         <path value="Nutrition_intake.History.Cumulative_total"/>
+         <short value="Cumulative total"/>
+         <definition value="Cumulative nutritional intake within a specified interval of time, which should be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Nutrition_intake.History.Cumulative_total"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Nutrition_intake.History.Cumulative_total.data">
+         <path value="Nutrition_intake.History.Cumulative_total.data"/>
+         <definition value="ITEM_TREE"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Nutrition_intake.History.Cumulative_total.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Nutrition_intake.History.Cumulative_total.data.Nutrients">
+         <path value="Nutrition_intake.History.Cumulative_total.data.Nutrients"/>
+         <short value="Nutrients"/>
+         <definition value="Details about the component nutrients for the event."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Nutrition_intake.History.Cumulative_total.data.Nutrients"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Nutrition_intake.History.Cumulative_total.data.Comment">
+         <path value="Nutrition_intake.History.Cumulative_total.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the nutrition intake not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Nutrition_intake.History.Cumulative_total.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Nutrition_intake.History.Cumulative_total.data.Comment.value">
+         <path value="Nutrition_intake.History.Cumulative_total.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the nutrition intake not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Nutrition_intake.History.Cumulative_total.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Nutrition_intake.History.events_Cumulative_total.math_function">
+         <path value="Nutrition_intake.History.events_Cumulative_total.math_function"/>
+         <short value="Cumulative total"/>
+         <definition value="Cumulative nutritional intake within a specified interval of time, which should be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Nutrition_intake.History.events_Cumulative_total.math_function"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

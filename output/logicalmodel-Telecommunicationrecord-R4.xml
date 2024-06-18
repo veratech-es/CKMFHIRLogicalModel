@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Telecommunicationrecord-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-telecommunicationrecord-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.telecommunication.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Telecommunicationrecord"/>
+   <title value="Telecommunication Record"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Record of a telecommunication, usually a text conversation, or video- or teleconference recording between two or more parties, captured as part of the record of health care."/>
+   <purpose value="To record evidence of interactions between healthcare providers that support the record of health care."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Telecommunication_Record">
+         <path value="Telecommunication_Record"/>
+         <short value="Telecommunication Record"/>
+         <definition value="Record of a telecommunication, usually a text conversation, or video- or teleconference recording between two or more parties, captured as part of the record of health care."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Telecommunication_Record"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Telecommunication_Record.protocol">
+         <path value="Telecommunication_Record.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Telecommunication_Record.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Telecommunication_Record.protocol.Device">
+         <path value="Telecommunication_Record.protocol.Device"/>
+         <short value="Device"/>
+         <definition value="Details of device used to capture the telecommunication."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Telecommunication_Record.protocol.Device"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Telecommunication_Record.protocol.Extension">
+         <path value="Telecommunication_Record.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Telecommunication_Record.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Telecommunication_Record.Event_Series">
+         <path value="Telecommunication_Record.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Telecommunication_Record.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Telecommunication_Record.Event_Series.Start_Time">
+         <path value="Telecommunication_Record.Event_Series.Start_Time"/>
+         <short value="Start Time"/>
+         <definition value="The time that represents the start of the telecommunication."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Telecommunication_Record.Event_Series.Start_Time"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Telecommunication_Record.Event_Series.Start_Time.data">
+         <path value="Telecommunication_Record.Event_Series.Start_Time.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Telecommunication_Record.Event_Series.Start_Time.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Telecommunication_Record.Event_Series.Start_Time.data.Record">
+         <path value="Telecommunication_Record.Event_Series.Start_Time.data.Record"/>
+         <short value="Record"/>
+         <definition value="The actual record of any telecommunication between two or more healthcare providers."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Telecommunication_Record.Event_Series.Start_Time.data.Record"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Telecommunication_Record.Event_Series.Start_Time.data.Record.value">
+         <path value="Telecommunication_Record.Event_Series.Start_Time.data.Record.value"/>
+         <short value="Record"/>
+         <definition value="The actual record of any telecommunication between two or more healthcare providers."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Telecommunication_Record.Event_Series.Start_Time.data.Record.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Attachment"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Telecommunication_Record.Event_Series.Start_Time.data.Comment">
+         <path value="Telecommunication_Record.Event_Series.Start_Time.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the telecommunication."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Telecommunication_Record.Event_Series.Start_Time.data.Comment"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Telecommunication_Record.Event_Series.Start_Time.data.Comment.value">
+         <path value="Telecommunication_Record.Event_Series.Start_Time.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the telecommunication."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Telecommunication_Record.Event_Series.Start_Time.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Telecommunication_Record.Event_Series.Recording_Interval">
+         <path value="Telecommunication_Record.Event_Series.Recording_Interval"/>
+         <short value="Recording Interval"/>
+         <definition value="The period of time over which the telecommunication was recorded."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Telecommunication_Record.Event_Series.Recording_Interval"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Telecommunication_Record.Event_Series.Recording_Interval.data">
+         <path value="Telecommunication_Record.Event_Series.Recording_Interval.data"/>
+         <definition value="ITEM_TREE"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Telecommunication_Record.Event_Series.Recording_Interval.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Telecommunication_Record.Event_Series.Recording_Interval.data.Record">
+         <path value="Telecommunication_Record.Event_Series.Recording_Interval.data.Record"/>
+         <short value="Record"/>
+         <definition value="The actual record of any telecommunication between two or more healthcare providers."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Telecommunication_Record.Event_Series.Recording_Interval.data.Record"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Telecommunication_Record.Event_Series.Recording_Interval.data.Record.value">
+         <path value="Telecommunication_Record.Event_Series.Recording_Interval.data.Record.value"/>
+         <short value="Record"/>
+         <definition value="The actual record of any telecommunication between two or more healthcare providers."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Telecommunication_Record.Event_Series.Recording_Interval.data.Record.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Attachment"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Telecommunication_Record.Event_Series.Recording_Interval.data.Comment">
+         <path value="Telecommunication_Record.Event_Series.Recording_Interval.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the telecommunication."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Telecommunication_Record.Event_Series.Recording_Interval.data.Comment"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Telecommunication_Record.Event_Series.Recording_Interval.data.Comment.value">
+         <path value="Telecommunication_Record.Event_Series.Recording_Interval.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the telecommunication."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Telecommunication_Record.Event_Series.Recording_Interval.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Telecommunication_Record.Event_Series.events_Recording_Interval.math_function">
+         <path value="Telecommunication_Record.Event_Series.events_Recording_Interval.math_function"/>
+         <short value="Recording Interval"/>
+         <definition value="The period of time over which the telecommunication was recorded."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Telecommunication_Record.Event_Series.events_Recording_Interval.math_function"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

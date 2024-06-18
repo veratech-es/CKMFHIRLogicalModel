@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Problem_diagnosisscreeningquestionnaire-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-problem_diagnosisscreeningquestionnaire-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.problem_screening.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Problem_diagnosisscreeningquestionnaire"/>
+   <title value="Problem/Diagnosis screening questionnaire"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Series of questions and associated answers used to screen for issues, problems or diagnoses."/>
+   <purpose value="To create a framework for recording answers to pre-defined screening questions about issues, problems or diagnoses."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Problem_Diagnosis_screening_questionnaire">
+         <path value="Problem_Diagnosis_screening_questionnaire"/>
+         <short value="Problem/Diagnosis screening questionnaire"/>
+         <definition value="Series of questions and associated answers used to screen for issues, problems or diagnoses."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_screening_questionnaire"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis_screening_questionnaire.protocol">
+         <path value="Problem_Diagnosis_screening_questionnaire.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_screening_questionnaire.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis_screening_questionnaire.protocol.Extension">
+         <path value="Problem_Diagnosis_screening_questionnaire.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models or formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Problem_Diagnosis_screening_questionnaire.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis_screening_questionnaire.History">
+         <path value="Problem_Diagnosis_screening_questionnaire.History"/>
+         <short value="History"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_screening_questionnaire.History"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis_screening_questionnaire.History.Any_event">
+         <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis_screening_questionnaire.History.Any_event.data">
+         <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Screening_purpose">
+         <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Screening_purpose"/>
+         <short value="Screening purpose"/>
+         <definition value="The context or reason for screening."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Screening_purpose"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Screening_purpose.value">
+         <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Screening_purpose.value"/>
+         <short value="Screening purpose"/>
+         <definition value="The context or reason for screening."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Screening_purpose.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Any_problems_or_diagnoses_">
+         <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Any_problems_or_diagnoses_"/>
+         <short value="Any problems or diagnoses?"/>
+         <definition value="Is there a history of any issues, problems or diagnoses relevant for the screening purpose?"/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Any_problems_or_diagnoses_"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Any_problems_or_diagnoses_.value_DV_CODED_TEXT">
+         <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Any_problems_or_diagnoses_.value_DV_CODED_TEXT"/>
+         <short value="Any problems or diagnoses?"/>
+         <definition value="Is there a history of any issues, problems or diagnoses relevant for the screening purpose?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Any_problems_or_diagnoses_.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Any_problems_or_diagnoses_.value_DV_TEXT">
+         <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Any_problems_or_diagnoses_.value_DV_TEXT"/>
+         <short value="Any problems or diagnoses?"/>
+         <definition value="Is there a history of any issues, problems or diagnoses relevant for the screening purpose?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Any_problems_or_diagnoses_.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Any_problems_or_diagnoses_.value_DV_BOOLEAN">
+         <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Any_problems_or_diagnoses_.value_DV_BOOLEAN"/>
+         <short value="Any problems or diagnoses?"/>
+         <definition value="Is there a history of any issues, problems or diagnoses relevant for the screening purpose?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Any_problems_or_diagnoses_.value_DV_BOOLEAN"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Description">
+         <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the history of any issues, problems or diagnoses relevant for the screening purpose."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Description.value">
+         <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the history of any issues, problems or diagnoses relevant for the screening purpose."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Specific_problem_or_diagnosis">
+         <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Specific_problem_or_diagnosis"/>
+         <short value="Specific problem or diagnosis"/>
+         <definition value="Details about a specific issue, problem or diagnosis or grouping of problems or diagnoses relevant for the screening purpose."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Specific_problem_or_diagnosis"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Specific_problem_or_diagnosis.Problem_diagnosis_name">
+         <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Specific_problem_or_diagnosis.Problem_diagnosis_name"/>
+         <short value="Problem/diagnosis name"/>
+         <definition value="Identification of an issue, problem or diagnosis, or grouping of issues, problems or diagnoses, by name."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Specific_problem_or_diagnosis.Problem_diagnosis_name"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Specific_problem_or_diagnosis.Problem_diagnosis_name.value">
+         <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Specific_problem_or_diagnosis.Problem_diagnosis_name.value"/>
+         <short value="Problem/diagnosis name"/>
+         <definition value="Identification of an issue, problem or diagnosis, or grouping of issues, problems or diagnoses, by name."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Specific_problem_or_diagnosis.Problem_diagnosis_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Specific_problem_or_diagnosis.Presence_">
+         <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Specific_problem_or_diagnosis.Presence_"/>
+         <short value="Presence?"/>
+         <definition value="Is there a history of the specific issue, problem or diagnosis?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Specific_problem_or_diagnosis.Presence_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Specific_problem_or_diagnosis.Presence_.value_DV_CODED_TEXT">
+         <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Specific_problem_or_diagnosis.Presence_.value_DV_CODED_TEXT"/>
+         <short value="Presence?"/>
+         <definition value="Is there a history of the specific issue, problem or diagnosis?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Specific_problem_or_diagnosis.Presence_.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Specific_problem_or_diagnosis.Presence_.value_DV_TEXT">
+         <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Specific_problem_or_diagnosis.Presence_.value_DV_TEXT"/>
+         <short value="Presence?"/>
+         <definition value="Is there a history of the specific issue, problem or diagnosis?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Specific_problem_or_diagnosis.Presence_.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Specific_problem_or_diagnosis.Presence_.value_DV_BOOLEAN">
+         <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Specific_problem_or_diagnosis.Presence_.value_DV_BOOLEAN"/>
+         <short value="Presence?"/>
+         <definition value="Is there a history of the specific issue, problem or diagnosis?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Specific_problem_or_diagnosis.Presence_.value_DV_BOOLEAN"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Specific_problem_or_diagnosis.Timing">
+         <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Specific_problem_or_diagnosis.Timing"/>
+         <short value="Timing"/>
+         <definition value="Indication of timing related to the issue, problem or diagnosis."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Specific_problem_or_diagnosis.Timing"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Specific_problem_or_diagnosis.Timing.value_DV_TEXT">
+         <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Specific_problem_or_diagnosis.Timing.value_DV_TEXT"/>
+         <short value="Timing"/>
+         <definition value="Indication of timing related to the issue, problem or diagnosis."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Specific_problem_or_diagnosis.Timing.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Specific_problem_or_diagnosis.Timing.value_DV_INTERVAL_DV_DURATION_">
+         <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Specific_problem_or_diagnosis.Timing.value_DV_INTERVAL_DV_DURATION_"/>
+         <short value="Timing"/>
+         <definition value="Indication of timing related to the issue, problem or diagnosis."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Specific_problem_or_diagnosis.Timing.value_DV_INTERVAL_DV_DURATION_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Specific_problem_or_diagnosis.Timing.value_DV_DURATION">
+         <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Specific_problem_or_diagnosis.Timing.value_DV_DURATION"/>
+         <short value="Timing"/>
+         <definition value="Indication of timing related to the issue, problem or diagnosis."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Specific_problem_or_diagnosis.Timing.value_DV_DURATION"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Specific_problem_or_diagnosis.Timing.value_DV_DATE_TIME">
+         <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Specific_problem_or_diagnosis.Timing.value_DV_DATE_TIME"/>
+         <short value="Timing"/>
+         <definition value="Indication of timing related to the issue, problem or diagnosis."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Specific_problem_or_diagnosis.Timing.value_DV_DATE_TIME"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Specific_problem_or_diagnosis.Timing.value_DV_INTERVAL_DV_DATE_TIME_">
+         <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Specific_problem_or_diagnosis.Timing.value_DV_INTERVAL_DV_DATE_TIME_"/>
+         <short value="Timing"/>
+         <definition value="Indication of timing related to the issue, problem or diagnosis."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Specific_problem_or_diagnosis.Timing.value_DV_INTERVAL_DV_DATE_TIME_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Specific_problem_or_diagnosis.Additional_details">
+         <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Specific_problem_or_diagnosis.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="Structured details or questions about the specific issue, problem or diagnosis."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Specific_problem_or_diagnosis.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Specific_problem_or_diagnosis.Comment">
+         <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Specific_problem_or_diagnosis.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the specific issue, problem or diagnosis question, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Specific_problem_or_diagnosis.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Specific_problem_or_diagnosis.Comment.value">
+         <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Specific_problem_or_diagnosis.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the specific issue, problem or diagnosis question, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Specific_problem_or_diagnosis.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Additional_details">
+         <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="Structured details or questions about screening for issues, problems or diagnoses."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Problem_Diagnosis_screening_questionnaire.History.Any_event.data.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

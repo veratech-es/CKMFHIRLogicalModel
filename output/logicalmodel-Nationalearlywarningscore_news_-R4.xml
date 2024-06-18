@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Nationalearlywarningscore_news_-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-nationalearlywarningscore_news_-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.news_uk_rcp.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Nationalearlywarningscore_news_"/>
+   <title value="National Early Warning Score (NEWS)"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="NEWS (National Early Warning Score) is a simple score used to provide an objective indication of a patient's degree of clinical deterioration. This version follows guidance issued by the UK Royal College of Physicians."/>
+   <purpose value="To record a composite score based on categorising physiological readings and observations, as a simple method to support objective assessment of the degree of clinical deterioration in an unwell patient over the age of 16 years."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="National_Early_Warning_Score_(NEWS)">
+         <path value="National_Early_Warning_Score_(NEWS)"/>
+         <short value="National Early Warning Score (NEWS)"/>
+         <definition value="NEWS (National Early Warning Score) is a simple score used to provide an objective indication of a patient's degree of clinical deterioration. This version follows guidance issued by the UK Royal College of Physicians."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="National_Early_Warning_Score_(NEWS)"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="National_Early_Warning_Score_(NEWS).protocol">
+         <path value="National_Early_Warning_Score_(NEWS).protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="National_Early_Warning_Score_(NEWS).protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="National_Early_Warning_Score_(NEWS).protocol.Extension">
+         <path value="National_Early_Warning_Score_(NEWS).protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="National_Early_Warning_Score_(NEWS).protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="National_Early_Warning_Score_(NEWS).Event_Series">
+         <path value="National_Early_Warning_Score_(NEWS).Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="National_Early_Warning_Score_(NEWS).Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time">
+         <path value="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time"/>
+         <short value="Point in time"/>
+         <definition value="A specific date and/or time which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data">
+         <path value="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Respiration_rate">
+         <path value="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Respiration_rate"/>
+         <short value="Respiration rate"/>
+         <definition value="Range category for the respiratory rate (RR) measurement of a patient."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Respiration_rate"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Respiration_rate.value">
+         <path value="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Respiration_rate.value"/>
+         <short value="Respiration rate"/>
+         <definition value="Range category for the respiratory rate (RR) measurement of a patient."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Respiration_rate.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Oxygen_saturation">
+         <path value="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Oxygen_saturation"/>
+         <short value="Oxygen saturation"/>
+         <definition value="Range category for the oxygen saturation measurement of a patient."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Oxygen_saturation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Oxygen_saturation.value">
+         <path value="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Oxygen_saturation.value"/>
+         <short value="Oxygen saturation"/>
+         <definition value="Range category for the oxygen saturation measurement of a patient."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Oxygen_saturation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Supplemental_oxygen">
+         <path value="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Supplemental_oxygen"/>
+         <short value="Supplemental oxygen"/>
+         <definition value="Range category depending on whether the patient is receiving supplemental oxygen."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Supplemental_oxygen"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Supplemental_oxygen.value">
+         <path value="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Supplemental_oxygen.value"/>
+         <short value="Supplemental oxygen"/>
+         <definition value="Range category depending on whether the patient is receiving supplemental oxygen."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Supplemental_oxygen.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Body_temperature">
+         <path value="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Body_temperature"/>
+         <short value="Body temperature"/>
+         <definition value="Range category for the body temperature (Temp) measurement of a patient."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Body_temperature"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Body_temperature.value">
+         <path value="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Body_temperature.value"/>
+         <short value="Body temperature"/>
+         <definition value="Range category for the body temperature (Temp) measurement of a patient."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Body_temperature.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Systolic_blood_pressure">
+         <path value="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Systolic_blood_pressure"/>
+         <short value="Systolic blood pressure"/>
+         <definition value="Range category for the systolic blood pressure (SBP) measurement of a patient."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Systolic_blood_pressure"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Systolic_blood_pressure.value">
+         <path value="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Systolic_blood_pressure.value"/>
+         <short value="Systolic blood pressure"/>
+         <definition value="Range category for the systolic blood pressure (SBP) measurement of a patient."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Systolic_blood_pressure.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Heart_rate">
+         <path value="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Heart_rate"/>
+         <short value="Heart rate"/>
+         <definition value="Range category for the heart rate (HR) measurement of a patient."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Heart_rate"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Heart_rate.value">
+         <path value="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Heart_rate.value"/>
+         <short value="Heart rate"/>
+         <definition value="Range category for the heart rate (HR) measurement of a patient."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Heart_rate.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Level_of_consciousness">
+         <path value="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Level_of_consciousness"/>
+         <short value="Level of consciousness"/>
+         <definition value="Observed category for the AVPU scale rating of a patient's conscious state."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Level_of_consciousness"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Level_of_consciousness.value">
+         <path value="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Level_of_consciousness.value"/>
+         <short value="Level of consciousness"/>
+         <definition value="Observed category for the AVPU scale rating of a patient's conscious state."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Level_of_consciousness.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Total_score">
+         <path value="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Total_score"/>
+         <short value="Total score"/>
+         <definition value="The total sum of all the NEWS parameter ordinals."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Total_score"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Total_score.value">
+         <path value="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Total_score.value"/>
+         <short value="Total score"/>
+         <definition value="The total sum of all the NEWS parameter ordinals."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Total_score.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Clinical_risk_category">
+         <path value="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Clinical_risk_category"/>
+         <short value="Clinical risk category"/>
+         <definition value="Overall category representing the urgency and scale of the clinical response required in response to the physiological parameters."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Clinical_risk_category"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Clinical_risk_category.value">
+         <path value="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Clinical_risk_category.value"/>
+         <short value="Clinical risk category"/>
+         <definition value="Overall category representing the urgency and scale of the clinical response required in response to the physiological parameters."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Clinical_risk_category.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Comment">
+         <path value="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the overall NEWS score not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Comment.value">
+         <path value="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the overall NEWS score not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.state">
+         <path value="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.state"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.state.Confounding_factors">
+         <path value="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.state.Confounding_factors"/>
+         <short value="Confounding factors"/>
+         <definition value="Description of any incidental factors that may have contributed to the score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.state.Confounding_factors"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.state.Confounding_factors.value">
+         <path value="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.state.Confounding_factors.value"/>
+         <short value="Confounding factors"/>
+         <definition value="Description of any incidental factors that may have contributed to the score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="National_Early_Warning_Score_(NEWS).Event_Series.Point_in_time.state.Confounding_factors.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Deathdata-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-deathdata-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-DEMOGRAPHIC-CLUSTER.person_death_data_iso.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Deathdata"/>
+   <title value="Death data"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Death demographic data"/>
+   <purpose value="Representation of a person's demographic death data"/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Death_data">
+         <path value="Death_data"/>
+         <short value="Death data"/>
+         <definition value="Death demographic data"/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Death_data"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Death_data.Death_date">
+         <path value="Death_data.Death_date"/>
+         <short value="Death date"/>
+         <definition value="The date of death of a person"/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Death_data.Death_date"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Death_data.Death_date.value">
+         <path value="Death_data.Death_date.value"/>
+         <short value="Death date"/>
+         <definition value="The date of death of a person"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Death_data.Death_date.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="date"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Death_data.Source_of_notification">
+         <path value="Death_data.Source_of_notification"/>
+         <short value="Source of notification"/>
+         <definition value="Indicates the source of information about a subject of care’s death. This field provides an indication of the certainty of the information"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Death_data.Source_of_notification"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Death_data.Source_of_notification.value">
+         <path value="Death_data.Source_of_notification.value"/>
+         <short value="Source of notification"/>
+         <definition value="Indicates the source of information about a subject of care’s death. This field provides an indication of the certainty of the information"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Death_data.Source_of_notification.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Death_data.Additional_death_data_that_are_country_specific">
+         <path value="Death_data.Additional_death_data_that_are_country_specific"/>
+         <short value="Additional death data that are country specific"/>
+         <definition value="Country specific data"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Death_data.Additional_death_data_that_are_country_specific"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

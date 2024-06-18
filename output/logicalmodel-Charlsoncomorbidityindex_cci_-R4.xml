@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Charlsoncomorbidityindex_cci_-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-charlsoncomorbidityindex_cci_-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.charlson_comorbidity_index.v2"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Charlsoncomorbidityindex_cci_"/>
+   <title value="Charlson Comorbidity Index (CCI)"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="An assessment tool used to predict the risk of death from comorbid disease."/>
+   <purpose value="To record the result for each component parameter of the Charlson Comorbidity Index (CCI) and its total sum, and to calculate the 10 year estimated survival."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Charlson_Comorbidity_Index_(CCI)">
+         <path value="Charlson_Comorbidity_Index_(CCI)"/>
+         <short value="Charlson Comorbidity Index (CCI)"/>
+         <definition value="An assessment tool used to predict the risk of death from comorbid disease."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Charlson_Comorbidity_Index_(CCI)"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Charlson_Comorbidity_Index_(CCI).protocol">
+         <path value="Charlson_Comorbidity_Index_(CCI).protocol"/>
+         <short value="ITEM_TREE"/>
+         <definition value="ITEM_TREE"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Charlson_Comorbidity_Index_(CCI).protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Charlson_Comorbidity_Index_(CCI).protocol.Extension">
+         <path value="Charlson_Comorbidity_Index_(CCI).protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models or formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Charlson_Comorbidity_Index_(CCI).protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Charlson_Comorbidity_Index_(CCI).Event_Series">
+         <path value="Charlson_Comorbidity_Index_(CCI).Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Charlson_Comorbidity_Index_(CCI).Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event">
+         <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data">
+         <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Age_group">
+         <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Age_group"/>
+         <short value="Age group"/>
+         <definition value="The age category of the patient."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Age_group"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Age_group.value">
+         <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Age_group.value"/>
+         <short value="Age group"/>
+         <definition value="The age category of the patient."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Age_group.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Myocardial_infarction">
+         <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Myocardial_infarction"/>
+         <short value="Myocardial infarction"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Myocardial_infarction"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Myocardial_infarction.value">
+         <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Myocardial_infarction.value"/>
+         <short value="Myocardial infarction"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Myocardial_infarction.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Congestive_heart_failure">
+         <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Congestive_heart_failure"/>
+         <short value="Congestive heart failure"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Congestive_heart_failure"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Congestive_heart_failure.value">
+         <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Congestive_heart_failure.value"/>
+         <short value="Congestive heart failure"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Congestive_heart_failure.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Peripheral_vascular_disease">
+         <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Peripheral_vascular_disease"/>
+         <short value="Peripheral vascular disease"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Peripheral_vascular_disease"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Peripheral_vascular_disease.value">
+         <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Peripheral_vascular_disease.value"/>
+         <short value="Peripheral vascular disease"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Peripheral_vascular_disease.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Cerebrovascular_disease">
+         <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Cerebrovascular_disease"/>
+         <short value="Cerebrovascular disease"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Cerebrovascular_disease"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Cerebrovascular_disease.value">
+         <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Cerebrovascular_disease.value"/>
+         <short value="Cerebrovascular disease"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Cerebrovascular_disease.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Dementia">
+         <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Dementia"/>
+         <short value="Dementia"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Dementia"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Dementia.value">
+         <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Dementia.value"/>
+         <short value="Dementia"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Dementia.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Chronic_pulmonary_disease">
+         <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Chronic_pulmonary_disease"/>
+         <short value="Chronic pulmonary disease"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Chronic_pulmonary_disease"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Chronic_pulmonary_disease.value">
+         <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Chronic_pulmonary_disease.value"/>
+         <short value="Chronic pulmonary disease"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Chronic_pulmonary_disease.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Ulcer_disease">
+         <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Ulcer_disease"/>
+         <short value="Ulcer disease"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Ulcer_disease"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Ulcer_disease.value">
+         <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Ulcer_disease.value"/>
+         <short value="Ulcer disease"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Ulcer_disease.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Liver_disease">
+         <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Liver_disease"/>
+         <short value="Liver disease"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Liver_disease"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Liver_disease.value">
+         <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Liver_disease.value"/>
+         <short value="Liver disease"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Liver_disease.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Connective_tissue_disease">
+         <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Connective_tissue_disease"/>
+         <short value="Connective tissue disease"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Connective_tissue_disease"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Connective_tissue_disease.value">
+         <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Connective_tissue_disease.value"/>
+         <short value="Connective tissue disease"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Connective_tissue_disease.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Diabetes_mellitus">
+         <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Diabetes_mellitus"/>
+         <short value="Diabetes mellitus"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Diabetes_mellitus"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Diabetes_mellitus.value">
+         <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Diabetes_mellitus.value"/>
+         <short value="Diabetes mellitus"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Diabetes_mellitus.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Hemiplegia">
+         <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Hemiplegia"/>
+         <short value="Hemiplegia"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Hemiplegia"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Hemiplegia.value">
+         <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Hemiplegia.value"/>
+         <short value="Hemiplegia"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Hemiplegia.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Moderate_or_severe_renal_disease">
+         <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Moderate_or_severe_renal_disease"/>
+         <short value="Moderate or severe renal disease"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Moderate_or_severe_renal_disease"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Moderate_or_severe_renal_disease.value">
+         <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Moderate_or_severe_renal_disease.value"/>
+         <short value="Moderate or severe renal disease"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Moderate_or_severe_renal_disease.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Solid_tumor">
+         <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Solid_tumor"/>
+         <short value="Solid tumor"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Solid_tumor"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Solid_tumor.value">
+         <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Solid_tumor.value"/>
+         <short value="Solid tumor"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Solid_tumor.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Leukemia">
+         <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Leukemia"/>
+         <short value="Leukemia"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Leukemia"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Leukemia.value">
+         <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Leukemia.value"/>
+         <short value="Leukemia"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Leukemia.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Lymphoma">
+         <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Lymphoma"/>
+         <short value="Lymphoma"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Lymphoma"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Lymphoma.value">
+         <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Lymphoma.value"/>
+         <short value="Lymphoma"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Lymphoma.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.AIDS">
+         <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.AIDS"/>
+         <short value="AIDS"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.AIDS"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.AIDS.value">
+         <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.AIDS.value"/>
+         <short value="AIDS"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.AIDS.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.CCI_total_score">
+         <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.CCI_total_score"/>
+         <short value="CCI total score"/>
+         <definition value="The total sum of each component variable for the Charlson Comorbidity Index."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.CCI_total_score"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.CCI_total_score.value">
+         <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.CCI_total_score.value"/>
+         <short value="CCI total score"/>
+         <definition value="The total sum of each component variable for the Charlson Comorbidity Index."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.CCI_total_score.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Estimated_10_year_survival">
+         <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Estimated_10_year_survival"/>
+         <short value="Estimated 10-year survival"/>
+         <definition value="The predicted 10-year survival rate."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Estimated_10_year_survival"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Estimated_10_year_survival.value">
+         <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Estimated_10_year_survival.value"/>
+         <short value="Estimated 10-year survival"/>
+         <definition value="The predicted 10-year survival rate."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Charlson_Comorbidity_Index_(CCI).Event_Series.Any_event.data.Estimated_10_year_survival.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

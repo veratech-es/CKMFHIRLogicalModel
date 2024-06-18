@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Urinalysis-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-urinalysis-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.urinalysis.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Urinalysis"/>
+   <title value="Urinalysis"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Qualitative and semi-quantitative test array using reagent test strips to indicate possible abnormalities in a sample of urine, often performed as part of Point of Care Testing (POCT)."/>
+   <purpose value="To record the results of a qualitative and semi-quantitative test array using reagent test strips to indicate possible abnormalities in a sample of urine. This test may be performed by clinicians at the point of care, technicians in a laboratory setting or individuals at home."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Urinalysis">
+         <path value="Urinalysis"/>
+         <short value="Urinalysis"/>
+         <definition value="Qualitative and semi-quantitative test array using reagent test strips to indicate possible abnormalities in a sample of urine, often performed as part of Point of Care Testing (POCT)."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Urinalysis"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Urinalysis.protocol">
+         <path value="Urinalysis.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Urinalysis.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Urinalysis.protocol.Reagent_Strips">
+         <path value="Urinalysis.protocol.Reagent_Strips"/>
+         <short value="Reagent Strips"/>
+         <definition value="Details about the reagent strips used."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Urinalysis.protocol.Reagent_Strips"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Urinalysis.protocol.Method">
+         <path value="Urinalysis.protocol.Method"/>
+         <short value="Method"/>
+         <definition value="Method by which the reagent strips were read."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Urinalysis.protocol.Method"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Urinalysis.protocol.Method.value">
+         <path value="Urinalysis.protocol.Method.value"/>
+         <short value="Method"/>
+         <definition value="Method by which the reagent strips were read."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Urinalysis.protocol.Method.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Urinalysis.protocol.Device">
+         <path value="Urinalysis.protocol.Device"/>
+         <short value="Device"/>
+         <definition value="Details about the device used to automatically read the reagent strips."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Urinalysis.protocol.Device"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Urinalysis.protocol.Extension">
+         <path value="Urinalysis.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Urinalysis.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Urinalysis.Event_Series">
+         <path value="Urinalysis.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Urinalysis.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Urinalysis.Event_Series.Point_in_Time">
+         <path value="Urinalysis.Event_Series.Point_in_Time"/>
+         <short value="Point in Time"/>
+         <definition value="A specific date and/or time which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Urinalysis.Event_Series.Point_in_Time"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Urinalysis.Event_Series.Point_in_Time.data">
+         <path value="Urinalysis.Event_Series.Point_in_Time.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Urinalysis.Event_Series.Point_in_Time.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Urinalysis.Event_Series.Point_in_Time.data.Glucose">
+         <path value="Urinalysis.Event_Series.Point_in_Time.data.Glucose"/>
+         <short value="Glucose"/>
+         <definition value="Detection of glucose in urine sample."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Urinalysis.Event_Series.Point_in_Time.data.Glucose"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Urinalysis.Event_Series.Point_in_Time.data.Glucose.value">
+         <path value="Urinalysis.Event_Series.Point_in_Time.data.Glucose.value"/>
+         <short value="Glucose"/>
+         <definition value="Detection of glucose in urine sample."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Urinalysis.Event_Series.Point_in_Time.data.Glucose.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Urinalysis.Event_Series.Point_in_Time.data.Bilirubin">
+         <path value="Urinalysis.Event_Series.Point_in_Time.data.Bilirubin"/>
+         <short value="Bilirubin"/>
+         <definition value="Detection of bilirubin in urine sample."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Urinalysis.Event_Series.Point_in_Time.data.Bilirubin"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Urinalysis.Event_Series.Point_in_Time.data.Bilirubin.value">
+         <path value="Urinalysis.Event_Series.Point_in_Time.data.Bilirubin.value"/>
+         <short value="Bilirubin"/>
+         <definition value="Detection of bilirubin in urine sample."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Urinalysis.Event_Series.Point_in_Time.data.Bilirubin.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Urinalysis.Event_Series.Point_in_Time.data.Ketones">
+         <path value="Urinalysis.Event_Series.Point_in_Time.data.Ketones"/>
+         <short value="Ketones"/>
+         <definition value="Detection of ketones in urine sample."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Urinalysis.Event_Series.Point_in_Time.data.Ketones"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Urinalysis.Event_Series.Point_in_Time.data.Ketones.value">
+         <path value="Urinalysis.Event_Series.Point_in_Time.data.Ketones.value"/>
+         <short value="Ketones"/>
+         <definition value="Detection of ketones in urine sample."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Urinalysis.Event_Series.Point_in_Time.data.Ketones.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Urinalysis.Event_Series.Point_in_Time.data.Specific_gravity">
+         <path value="Urinalysis.Event_Series.Point_in_Time.data.Specific_gravity"/>
+         <short value="Specific gravity"/>
+         <definition value="Measurement of the concentration of substances dissolved (solutes) in the urine sample relative to distilled water."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Urinalysis.Event_Series.Point_in_Time.data.Specific_gravity"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Urinalysis.Event_Series.Point_in_Time.data.Specific_gravity.value">
+         <path value="Urinalysis.Event_Series.Point_in_Time.data.Specific_gravity.value"/>
+         <short value="Specific gravity"/>
+         <definition value="Measurement of the concentration of substances dissolved (solutes) in the urine sample relative to distilled water."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Urinalysis.Event_Series.Point_in_Time.data.Specific_gravity.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Urinalysis.Event_Series.Point_in_Time.data.Blood">
+         <path value="Urinalysis.Event_Series.Point_in_Time.data.Blood"/>
+         <short value="Blood"/>
+         <definition value="Detection of blood in urine sample."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Urinalysis.Event_Series.Point_in_Time.data.Blood"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Urinalysis.Event_Series.Point_in_Time.data.Blood.value">
+         <path value="Urinalysis.Event_Series.Point_in_Time.data.Blood.value"/>
+         <short value="Blood"/>
+         <definition value="Detection of blood in urine sample."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Urinalysis.Event_Series.Point_in_Time.data.Blood.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Urinalysis.Event_Series.Point_in_Time.data.pH">
+         <path value="Urinalysis.Event_Series.Point_in_Time.data.pH"/>
+         <short value="pH"/>
+         <definition value="Measurement of pH in urine sample."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Urinalysis.Event_Series.Point_in_Time.data.pH"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Urinalysis.Event_Series.Point_in_Time.data.pH.value">
+         <path value="Urinalysis.Event_Series.Point_in_Time.data.pH.value"/>
+         <short value="pH"/>
+         <definition value="Measurement of pH in urine sample."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Urinalysis.Event_Series.Point_in_Time.data.pH.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Urinalysis.Event_Series.Point_in_Time.data.Protein">
+         <path value="Urinalysis.Event_Series.Point_in_Time.data.Protein"/>
+         <short value="Protein"/>
+         <definition value="Detection of protein in urine sample."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Urinalysis.Event_Series.Point_in_Time.data.Protein"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Urinalysis.Event_Series.Point_in_Time.data.Protein.value">
+         <path value="Urinalysis.Event_Series.Point_in_Time.data.Protein.value"/>
+         <short value="Protein"/>
+         <definition value="Detection of protein in urine sample."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Urinalysis.Event_Series.Point_in_Time.data.Protein.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Urinalysis.Event_Series.Point_in_Time.data.Urobilinogen">
+         <path value="Urinalysis.Event_Series.Point_in_Time.data.Urobilinogen"/>
+         <short value="Urobilinogen"/>
+         <definition value="Detection of urobilinogen in urine sample."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Urinalysis.Event_Series.Point_in_Time.data.Urobilinogen"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Urinalysis.Event_Series.Point_in_Time.data.Urobilinogen.value">
+         <path value="Urinalysis.Event_Series.Point_in_Time.data.Urobilinogen.value"/>
+         <short value="Urobilinogen"/>
+         <definition value="Detection of urobilinogen in urine sample."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Urinalysis.Event_Series.Point_in_Time.data.Urobilinogen.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Urinalysis.Event_Series.Point_in_Time.data.Nitrite">
+         <path value="Urinalysis.Event_Series.Point_in_Time.data.Nitrite"/>
+         <short value="Nitrite"/>
+         <definition value="Detection of nitrites in urine sample."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Urinalysis.Event_Series.Point_in_Time.data.Nitrite"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Urinalysis.Event_Series.Point_in_Time.data.Nitrite.value">
+         <path value="Urinalysis.Event_Series.Point_in_Time.data.Nitrite.value"/>
+         <short value="Nitrite"/>
+         <definition value="Detection of nitrites in urine sample."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Urinalysis.Event_Series.Point_in_Time.data.Nitrite.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Urinalysis.Event_Series.Point_in_Time.data.Leukocytes">
+         <path value="Urinalysis.Event_Series.Point_in_Time.data.Leukocytes"/>
+         <short value="Leukocytes"/>
+         <definition value="Detection of white blood cells in urine sample."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Urinalysis.Event_Series.Point_in_Time.data.Leukocytes"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Urinalysis.Event_Series.Point_in_Time.data.Leukocytes.value">
+         <path value="Urinalysis.Event_Series.Point_in_Time.data.Leukocytes.value"/>
+         <short value="Leukocytes"/>
+         <definition value="Detection of white blood cells in urine sample."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Urinalysis.Event_Series.Point_in_Time.data.Leukocytes.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Urinalysis.Event_Series.Point_in_Time.data.Additional_details">
+         <path value="Urinalysis.Event_Series.Point_in_Time.data.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="Additional details about the point of care urinalysis, including macroscopic appearance or other tests not currently captured in the structured data."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Urinalysis.Event_Series.Point_in_Time.data.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Urinalysis.Event_Series.Point_in_Time.data.Clinical_interpretation">
+         <path value="Urinalysis.Event_Series.Point_in_Time.data.Clinical_interpretation"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Single word, phrase or brief description represents the clinical meaning and significance of the urinalysis findings."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Urinalysis.Event_Series.Point_in_Time.data.Clinical_interpretation"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Urinalysis.Event_Series.Point_in_Time.data.Clinical_interpretation.value">
+         <path value="Urinalysis.Event_Series.Point_in_Time.data.Clinical_interpretation.value"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Single word, phrase or brief description represents the clinical meaning and significance of the urinalysis findings."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Urinalysis.Event_Series.Point_in_Time.data.Clinical_interpretation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Urinalysis.Event_Series.Point_in_Time.data.Comment">
+         <path value="Urinalysis.Event_Series.Point_in_Time.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Narrative about the urinalysis not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Urinalysis.Event_Series.Point_in_Time.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Urinalysis.Event_Series.Point_in_Time.data.Comment.value">
+         <path value="Urinalysis.Event_Series.Point_in_Time.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Narrative about the urinalysis not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Urinalysis.Event_Series.Point_in_Time.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Urinalysis.Event_Series.Point_in_Time.data.Exam_not_done">
+         <path value="Urinalysis.Event_Series.Point_in_Time.data.Exam_not_done"/>
+         <short value="Exam not done"/>
+         <definition value="Details to explicitly record that urinalysis was not performed."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Urinalysis.Event_Series.Point_in_Time.data.Exam_not_done"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

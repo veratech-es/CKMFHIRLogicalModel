@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Harrishipscore-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-harrishipscore-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.harris_hip_score.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Harrishipscore"/>
+   <title value="Harris hip score"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="The Harris hip score."/>
+   <purpose value="To record the result of a Harris hip score assessment."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Harris_hip_score">
+         <path value="Harris_hip_score"/>
+         <short value="Harris hip score"/>
+         <definition value="The Harris hip score."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Harris_hip_score"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Harris_hip_score.protocol">
+         <path value="Harris_hip_score.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Harris_hip_score.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Harris_hip_score.protocol.Extension">
+         <path value="Harris_hip_score.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Harris_hip_score.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Harris_hip_score.Event_Series">
+         <path value="Harris_hip_score.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Harris_hip_score.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Harris_hip_score.Event_Series.Any_event">
+         <path value="Harris_hip_score.Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Harris_hip_score.Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Harris_hip_score.Event_Series.Any_event.data">
+         <path value="Harris_hip_score.Event_Series.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Harris_hip_score.Event_Series.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Harris_hip_score.Event_Series.Any_event.data.Harris_hip_score_result">
+         <path value="Harris_hip_score.Event_Series.Any_event.data.Harris_hip_score_result"/>
+         <short value="Harris hip score result"/>
+         <definition value="The result of the Harris hip score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Harris_hip_score.Event_Series.Any_event.data.Harris_hip_score_result"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Harris_hip_score.Event_Series.Any_event.data.Harris_hip_score_result.value">
+         <path value="Harris_hip_score.Event_Series.Any_event.data.Harris_hip_score_result.value"/>
+         <short value="Harris hip score result"/>
+         <definition value="The result of the Harris hip score."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Harris_hip_score.Event_Series.Any_event.data.Harris_hip_score_result.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Harris_hip_score.Event_Series.Any_event.data.Grading">
+         <path value="Harris_hip_score.Event_Series.Any_event.data.Grading"/>
+         <short value="Grading"/>
+         <definition value="Grading derived from Harris hip score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Harris_hip_score.Event_Series.Any_event.data.Grading"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Harris_hip_score.Event_Series.Any_event.data.Grading.value">
+         <path value="Harris_hip_score.Event_Series.Any_event.data.Grading.value"/>
+         <short value="Grading"/>
+         <definition value="Grading derived from Harris hip score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Harris_hip_score.Event_Series.Any_event.data.Grading.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Individualhealthcareprovidername-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-individualhealthcareprovidername-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-DEMOGRAPHIC-PARTY_IDENTITY.person_name-individual_provider.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Individualhealthcareprovidername"/>
+   <title value="Individual healthcare provider name"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Person name when performing the role of a healthcare provider"/>
+   <purpose value="Representation of a individual healthcare provider name"/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Individual_healthcare_provider_name">
+         <path value="Individual_healthcare_provider_name"/>
+         <short value="Individual healthcare provider name"/>
+         <definition value="Person name when performing the role of a healthcare provider"/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Individual_healthcare_provider_name"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Individual_healthcare_provider_name.Name">
+         <path value="Individual_healthcare_provider_name.Name"/>
+         <short value="Name"/>
+         <definition value="Components of a person name."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Individual_healthcare_provider_name.Name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Individual_healthcare_provider_name.Name.Given_names">
+         <path value="Individual_healthcare_provider_name.Name.Given_names"/>
+         <short value="Given names"/>
+         <definition value="Details of given names."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Individual_healthcare_provider_name.Name.Given_names"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Individual_healthcare_provider_name.Name.Given_names.Given_name">
+         <path value="Individual_healthcare_provider_name.Name.Given_names.Given_name"/>
+         <short value="Given name"/>
+         <definition value="The person's identifying name(s) within the family group or by which he/she is uniquely socially identified."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Individual_healthcare_provider_name.Name.Given_names.Given_name"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Individual_healthcare_provider_name.Name.Given_names.Given_name.value">
+         <path value="Individual_healthcare_provider_name.Name.Given_names.Given_name.value"/>
+         <short value="Given name"/>
+         <definition value="The person's identifying name(s) within the family group or by which he/she is uniquely socially identified."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Individual_healthcare_provider_name.Name.Given_names.Given_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Individual_healthcare_provider_name.Name.Given_names.Given_name_sequence_number">
+         <path value="Individual_healthcare_provider_name.Name.Given_names.Given_name_sequence_number"/>
+         <short value="Given name sequence number"/>
+         <definition value="The order of use for a Given name"/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Individual_healthcare_provider_name.Name.Given_names.Given_name_sequence_number"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Individual_healthcare_provider_name.Name.Given_names.Given_name_sequence_number.value">
+         <path value="Individual_healthcare_provider_name.Name.Given_names.Given_name_sequence_number.value"/>
+         <short value="Given name sequence number"/>
+         <definition value="The order of use for a Given name"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Individual_healthcare_provider_name.Name.Given_names.Given_name_sequence_number.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Individual_healthcare_provider_name.Name.Family_names">
+         <path value="Individual_healthcare_provider_name.Name.Family_names"/>
+         <short value="Family names"/>
+         <definition value="Details of family names."/>
+         <min value="1"/>
+         <max value="*"/>
+         <base>
+            <path value="Individual_healthcare_provider_name.Name.Family_names"/>
+            <min value="1"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Individual_healthcare_provider_name.Name.Family_names.Family_name">
+         <path value="Individual_healthcare_provider_name.Name.Family_names.Family_name"/>
+         <short value="Family name"/>
+         <definition value="The part of a name a person usually has in common with some other members of his/her family, as distinguished from his/her given names."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Individual_healthcare_provider_name.Name.Family_names.Family_name"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Individual_healthcare_provider_name.Name.Family_names.Family_name.value">
+         <path value="Individual_healthcare_provider_name.Name.Family_names.Family_name.value"/>
+         <short value="Family name"/>
+         <definition value="The part of a name a person usually has in common with some other members of his/her family, as distinguished from his/her given names."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Individual_healthcare_provider_name.Name.Family_names.Family_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Individual_healthcare_provider_name.Name.Family_names.Family_name_sequence_number">
+         <path value="Individual_healthcare_provider_name.Name.Family_names.Family_name_sequence_number"/>
+         <short value="Family name sequence number"/>
+         <definition value="An indicator of the order of use for a Family name."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Individual_healthcare_provider_name.Name.Family_names.Family_name_sequence_number"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Individual_healthcare_provider_name.Name.Family_names.Family_name_sequence_number.value">
+         <path value="Individual_healthcare_provider_name.Name.Family_names.Family_name_sequence_number.value"/>
+         <short value="Family name sequence number"/>
+         <definition value="An indicator of the order of use for a Family name."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Individual_healthcare_provider_name.Name.Family_names.Family_name_sequence_number.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Individual_healthcare_provider_name.Name.Titles">
+         <path value="Individual_healthcare_provider_name.Name.Titles"/>
+         <short value="Titles"/>
+         <definition value="Details of person titles."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Individual_healthcare_provider_name.Name.Titles"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Individual_healthcare_provider_name.Name.Titles.Title">
+         <path value="Individual_healthcare_provider_name.Name.Titles.Title"/>
+         <short value="Title"/>
+         <definition value="An honorific form of address commencing a name, used when addressing a person by name, whether by mail, by phone, or depending upon cultural situation in person."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Individual_healthcare_provider_name.Name.Titles.Title"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Individual_healthcare_provider_name.Name.Titles.Title.value">
+         <path value="Individual_healthcare_provider_name.Name.Titles.Title.value"/>
+         <short value="Title"/>
+         <definition value="An honorific form of address commencing a name, used when addressing a person by name, whether by mail, by phone, or depending upon cultural situation in person."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Individual_healthcare_provider_name.Name.Titles.Title.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Individual_healthcare_provider_name.Name.Titles.Title_sequence_number">
+         <path value="Individual_healthcare_provider_name.Name.Titles.Title_sequence_number"/>
+         <short value="Title sequence number"/>
+         <definition value="An indicator of the order of use for the name Title."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Individual_healthcare_provider_name.Name.Titles.Title_sequence_number"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Individual_healthcare_provider_name.Name.Titles.Title_sequence_number.value">
+         <path value="Individual_healthcare_provider_name.Name.Titles.Title_sequence_number.value"/>
+         <short value="Title sequence number"/>
+         <definition value="An indicator of the order of use for the name Title."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Individual_healthcare_provider_name.Name.Titles.Title_sequence_number.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Individual_healthcare_provider_name.Name.Suffixes">
+         <path value="Individual_healthcare_provider_name.Name.Suffixes"/>
+         <short value="Suffixes"/>
+         <definition value="Details of person suffixes."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Individual_healthcare_provider_name.Name.Suffixes"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Individual_healthcare_provider_name.Name.Suffixes.Suffix">
+         <path value="Individual_healthcare_provider_name.Name.Suffixes.Suffix"/>
+         <short value="Suffix"/>
+         <definition value="Additional term used following a person name."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Individual_healthcare_provider_name.Name.Suffixes.Suffix"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Individual_healthcare_provider_name.Name.Suffixes.Suffix.value">
+         <path value="Individual_healthcare_provider_name.Name.Suffixes.Suffix.value"/>
+         <short value="Suffix"/>
+         <definition value="Additional term used following a person name."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Individual_healthcare_provider_name.Name.Suffixes.Suffix.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Individual_healthcare_provider_name.Name.Suffixes.Suffix_sequence_number">
+         <path value="Individual_healthcare_provider_name.Name.Suffixes.Suffix_sequence_number"/>
+         <short value="Suffix sequence number"/>
+         <definition value="An indicator of the order of use for the name Suffix"/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Individual_healthcare_provider_name.Name.Suffixes.Suffix_sequence_number"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Individual_healthcare_provider_name.Name.Suffixes.Suffix_sequence_number.value">
+         <path value="Individual_healthcare_provider_name.Name.Suffixes.Suffix_sequence_number.value"/>
+         <short value="Suffix sequence number"/>
+         <definition value="An indicator of the order of use for the name Suffix"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Individual_healthcare_provider_name.Name.Suffixes.Suffix_sequence_number.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Individual_healthcare_provider_name.Name.Name_usages">
+         <path value="Individual_healthcare_provider_name.Name.Name_usages"/>
+         <short value="Name usages"/>
+         <definition value="Details of person name usages."/>
+         <min value="1"/>
+         <max value="*"/>
+         <base>
+            <path value="Individual_healthcare_provider_name.Name.Name_usages"/>
+            <min value="1"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Individual_healthcare_provider_name.Name.Name_usages.Name_usage">
+         <path value="Individual_healthcare_provider_name.Name.Name_usages.Name_usage"/>
+         <short value="Name usage"/>
+         <definition value="A classification that enables differentiation between the usage of names for a person. An individual name may have many name uses"/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Individual_healthcare_provider_name.Name.Name_usages.Name_usage"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Individual_healthcare_provider_name.Name.Name_usages.Name_usage.value">
+         <path value="Individual_healthcare_provider_name.Name.Name_usages.Name_usage.value"/>
+         <short value="Name usage"/>
+         <definition value="A classification that enables differentiation between the usage of names for a person. An individual name may have many name uses"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Individual_healthcare_provider_name.Name.Name_usages.Name_usage.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Individual_healthcare_provider_name.Name.Name_usages.Usage_interval">
+         <path value="Individual_healthcare_provider_name.Name.Name_usages.Usage_interval"/>
+         <short value="Usage interval"/>
+         <definition value="The period of time for which this name usage applies."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Individual_healthcare_provider_name.Name.Name_usages.Usage_interval"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Individual_healthcare_provider_name.Name.Name_usages.Usage_interval.value">
+         <path value="Individual_healthcare_provider_name.Name.Name_usages.Usage_interval.value"/>
+         <short value="Usage interval"/>
+         <definition value="The period of time for which this name usage applies."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Individual_healthcare_provider_name.Name.Name_usages.Usage_interval.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Individual_healthcare_provider_name.Name.Name_usages.Usage_identifier">
+         <path value="Individual_healthcare_provider_name.Name.Name_usages.Usage_identifier"/>
+         <short value="Usage identifier"/>
+         <definition value="The combination of identifier type, identifier issuer and identifier name that specify the link between this name and reporting or other unique identifier usage."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Individual_healthcare_provider_name.Name.Name_usages.Usage_identifier"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Individual_healthcare_provider_name.Name.Name_usages.Usage_identifier.value">
+         <path value="Individual_healthcare_provider_name.Name.Name_usages.Usage_identifier.value"/>
+         <short value="Usage identifier"/>
+         <definition value="The combination of identifier type, identifier issuer and identifier name that specify the link between this name and reporting or other unique identifier usage."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Individual_healthcare_provider_name.Name.Name_usages.Usage_identifier.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Individual_healthcare_provider_name.Name.Alternative_name_repesentations">
+         <path value="Individual_healthcare_provider_name.Name.Alternative_name_repesentations"/>
+         <short value="Alternative name repesentations"/>
+         <definition value="Details of alternative representations such as local codesets or language variations."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Individual_healthcare_provider_name.Name.Alternative_name_repesentations"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Individual_healthcare_provider_name.Name.Alternative_name_repesentations.Representation_usage">
+         <path value="Individual_healthcare_provider_name.Name.Alternative_name_repesentations.Representation_usage"/>
+         <short value="Representation usage"/>
+         <definition value="Name of the representational form used."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Individual_healthcare_provider_name.Name.Alternative_name_repesentations.Representation_usage"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Individual_healthcare_provider_name.Name.Alternative_name_repesentations.Representation_usage.value">
+         <path value="Individual_healthcare_provider_name.Name.Alternative_name_repesentations.Representation_usage.value"/>
+         <short value="Representation usage"/>
+         <definition value="Name of the representational form used."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Individual_healthcare_provider_name.Name.Alternative_name_repesentations.Representation_usage.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Individual_healthcare_provider_name.Name.Alternative_name_repesentations.Alternative_representation">
+         <path value="Individual_healthcare_provider_name.Name.Alternative_name_repesentations.Alternative_representation"/>
+         <short value="Alternative representation"/>
+         <definition value="Alternative Representation of this subject of care name using alternative styles of representation such as characters or language character set variations for local display."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Individual_healthcare_provider_name.Name.Alternative_name_repesentations.Alternative_representation"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Individual_healthcare_provider_name.Name.Alternative_name_repesentations.Alternative_representation.value">
+         <path value="Individual_healthcare_provider_name.Name.Alternative_name_repesentations.Alternative_representation.value"/>
+         <short value="Alternative representation"/>
+         <definition value="Alternative Representation of this subject of care name using alternative styles of representation such as characters or language character set variations for local display."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Individual_healthcare_provider_name.Name.Alternative_name_repesentations.Alternative_representation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Individual_healthcare_provider_name.Name.Preferred_name">
+         <path value="Individual_healthcare_provider_name.Name.Preferred_name"/>
+         <short value="Preferred name"/>
+         <definition value="Indicates that this is the name by which a person chooses to be identified."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Individual_healthcare_provider_name.Name.Preferred_name"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Individual_healthcare_provider_name.Name.Preferred_name.value">
+         <path value="Individual_healthcare_provider_name.Name.Preferred_name.value"/>
+         <short value="Preferred name"/>
+         <definition value="Indicates that this is the name by which a person chooses to be identified."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Individual_healthcare_provider_name.Name.Preferred_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Individual_healthcare_provider_name.Name.Conditional_Use">
+         <path value="Individual_healthcare_provider_name.Name.Conditional_Use"/>
+         <short value="Conditional Use"/>
+         <definition value="An indicator of specific conditions or rules that should be applied to a person's name"/>
+         <min value="0"/>
+         <max value="0"/>
+         <base>
+            <path value="Individual_healthcare_provider_name.Name.Conditional_Use"/>
+            <min value="0"/>
+            <max value="0"/>
+         </base>
+      </element>
+      <element id="Individual_healthcare_provider_name.Name.Conditional_Use.value">
+         <path value="Individual_healthcare_provider_name.Name.Conditional_Use.value"/>
+         <short value="Conditional Use"/>
+         <definition value="An indicator of specific conditions or rules that should be applied to a person's name"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Individual_healthcare_provider_name.Name.Conditional_Use.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Individual_healthcare_provider_name.Name.Restricted_name_usage">
+         <path value="Individual_healthcare_provider_name.Name.Restricted_name_usage"/>
+         <short value="Restricted name usage"/>
+         <definition value="This set of data elements apply to a specific name set and are used within computer systems to restrict the way a name is used or displayed in that system"/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Individual_healthcare_provider_name.Name.Restricted_name_usage"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Individual_healthcare_provider_name.Name.Restricted_name_usage.Type_of_restriction">
+         <path value="Individual_healthcare_provider_name.Name.Restricted_name_usage.Type_of_restriction"/>
+         <short value="Type of restriction"/>
+         <definition value="An indicator of special conditions or rules that shall be applied to an individual provider name"/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Individual_healthcare_provider_name.Name.Restricted_name_usage.Type_of_restriction"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Individual_healthcare_provider_name.Name.Restricted_name_usage.Restriction_interval">
+         <path value="Individual_healthcare_provider_name.Name.Restricted_name_usage.Restriction_interval"/>
+         <short value="Restriction interval"/>
+         <definition value="Indicates the period of time where this restriction applies"/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Individual_healthcare_provider_name.Name.Restricted_name_usage.Restriction_interval"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Individual_healthcare_provider_name.Name.Restricted_name_usage.Restriction_interval.value">
+         <path value="Individual_healthcare_provider_name.Name.Restricted_name_usage.Restriction_interval.value"/>
+         <short value="Restriction interval"/>
+         <definition value="Indicates the period of time where this restriction applies"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Individual_healthcare_provider_name.Name.Restricted_name_usage.Restriction_interval.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Individual_healthcare_provider_name.Name.Restricted_name_usage.Available_provider">
+         <path value="Individual_healthcare_provider_name.Name.Restricted_name_usage.Available_provider"/>
+         <short value="Available provider"/>
+         <definition value="This field indicates those providers who should be able to see this name and the details assoociated with it"/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Individual_healthcare_provider_name.Name.Restricted_name_usage.Available_provider"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Individual_healthcare_provider_name.Name.Restricted_name_usage.Available_provider.value">
+         <path value="Individual_healthcare_provider_name.Name.Restricted_name_usage.Available_provider.value"/>
+         <short value="Available provider"/>
+         <definition value="This field indicates those providers who should be able to see this name and the details assoociated with it"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Individual_healthcare_provider_name.Name.Restricted_name_usage.Available_provider.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

@@ -1,0 +1,1516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Pregnancysummary_EVALUATION-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-pregnancysummary_EVALUATION-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-EVALUATION.pregnancy_summary.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Pregnancysummary_EVALUATION"/>
+   <title value="Pregnancy summary"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Overview or summary record of a pregnancy and outcome, including the antenatal period, labour, birth and the immediate postnatal period."/>
+   <purpose value="To support the recording of an overview or summary record of an identified pregnancy and outcome, including the antenatal period, labor, birth and the immediate postnatal period."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Pregnancy_summary">
+         <path value="Pregnancy_summary"/>
+         <short value="Pregnancy summary"/>
+         <definition value="Overview or summary record of a pregnancy and outcome, including the antenatal period, labour, birth and the immediate postnatal period."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.protocol">
+         <path value="Pregnancy_summary.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.protocol.Last_updated">
+         <path value="Pregnancy_summary.protocol.Last_updated"/>
+         <short value="Last updated"/>
+         <definition value="The date/time the pregnancy summary was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.protocol.Last_updated"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_summary.protocol.Last_updated.value">
+         <path value="Pregnancy_summary.protocol.Last_updated.value"/>
+         <short value="Last updated"/>
+         <definition value="The date/time the pregnancy summary was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.protocol.Last_updated.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.protocol.Extension">
+         <path value="Pregnancy_summary.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pregnancy_summary.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data">
+         <path value="Pregnancy_summary.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Pregnancy_label">
+         <path value="Pregnancy_summary.data.Pregnancy_label"/>
+         <short value="Pregnancy label"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Pregnancy_label"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_summary.data.Pregnancy_label.value">
+         <path value="Pregnancy_summary.data.Pregnancy_label.value"/>
+         <short value="Pregnancy label"/>
+         <definition value="DV_TEXT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Pregnancy_label.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Pregnancy_confirmed">
+         <path value="Pregnancy_summary.data.Pregnancy_confirmed"/>
+         <short value="Pregnancy confirmed"/>
+         <definition value="Confirmation of the pregnancy."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Pregnancy_confirmed"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_summary.data.Pregnancy_confirmed.value_DV_DATE_TIME">
+         <path value="Pregnancy_summary.data.Pregnancy_confirmed.value_DV_DATE_TIME"/>
+         <short value="Pregnancy confirmed"/>
+         <definition value="Confirmation of the pregnancy."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Pregnancy_confirmed.value_DV_DATE_TIME"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Pregnancy_confirmed.value_DV_URI">
+         <path value="Pregnancy_summary.data.Pregnancy_confirmed.value_DV_URI"/>
+         <short value="Pregnancy confirmed"/>
+         <definition value="Confirmation of the pregnancy."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Pregnancy_confirmed.value_DV_URI"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="string"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Pregnancy_confirmed.value_DV_BOOLEAN">
+         <path value="Pregnancy_summary.data.Pregnancy_confirmed.value_DV_BOOLEAN"/>
+         <short value="Pregnancy confirmed"/>
+         <definition value="Confirmation of the pregnancy."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Pregnancy_confirmed.value_DV_BOOLEAN"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Pregnancy_synopsis">
+         <path value="Pregnancy_summary.data.Pregnancy_synopsis"/>
+         <short value="Pregnancy synopsis"/>
+         <definition value="Narrative description about the entire pregnancy, labour and delivery, including complications."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Pregnancy_synopsis"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_summary.data.Pregnancy_synopsis.value">
+         <path value="Pregnancy_summary.data.Pregnancy_synopsis.value"/>
+         <short value="Pregnancy synopsis"/>
+         <definition value="Narrative description about the entire pregnancy, labour and delivery, including complications."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Pregnancy_synopsis.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Assisted_reproduction_">
+         <path value="Pregnancy_summary.data.Assisted_reproduction_"/>
+         <short value="Assisted reproduction?"/>
+         <definition value="Was the pregnancy a result of assisted reproductive technology?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Assisted_reproduction_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_summary.data.Assisted_reproduction_.value">
+         <path value="Pregnancy_summary.data.Assisted_reproduction_.value"/>
+         <short value="Assisted reproduction?"/>
+         <definition value="Was the pregnancy a result of assisted reproductive technology?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Assisted_reproduction_.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Assisted_reproduction_type">
+         <path value="Pregnancy_summary.data.Assisted_reproduction_type"/>
+         <short value="Assisted reproduction type"/>
+         <definition value="Type of assisted reproductive technology used to achieve pregnancy."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Assisted_reproduction_type"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_summary.data.Assisted_reproduction_type.value">
+         <path value="Pregnancy_summary.data.Assisted_reproduction_type.value"/>
+         <short value="Assisted reproduction type"/>
+         <definition value="Type of assisted reproductive technology used to achieve pregnancy."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Assisted_reproduction_type.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Early_pregnancy_outcome">
+         <path value="Pregnancy_summary.data.Early_pregnancy_outcome"/>
+         <short value="Early pregnancy outcome"/>
+         <definition value="Outcome of the pregnancy as a whole."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Early_pregnancy_outcome"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_summary.data.Early_pregnancy_outcome.value">
+         <path value="Pregnancy_summary.data.Early_pregnancy_outcome.value"/>
+         <short value="Early pregnancy outcome"/>
+         <definition value="Outcome of the pregnancy as a whole."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Early_pregnancy_outcome.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Pregnancy_duration">
+         <path value="Pregnancy_summary.data.Pregnancy_duration"/>
+         <short value="Pregnancy duration"/>
+         <definition value="The gestation when the pregnancy has ended."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Pregnancy_duration"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_summary.data.Pregnancy_duration.value">
+         <path value="Pregnancy_summary.data.Pregnancy_duration.value"/>
+         <short value="Pregnancy duration"/>
+         <definition value="The gestation when the pregnancy has ended."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Pregnancy_duration.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Pregnancy_end_date">
+         <path value="Pregnancy_summary.data.Pregnancy_end_date"/>
+         <short value="Pregnancy end date"/>
+         <definition value="The date and/or time marking the end of the pregnancy."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Pregnancy_end_date"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_summary.data.Pregnancy_end_date.value">
+         <path value="Pregnancy_summary.data.Pregnancy_end_date.value"/>
+         <short value="Pregnancy end date"/>
+         <definition value="The date and/or time marking the end of the pregnancy."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Pregnancy_end_date.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Multiple_pregnancy_">
+         <path value="Pregnancy_summary.data.Multiple_pregnancy_"/>
+         <short value="Multiple pregnancy?"/>
+         <definition value="Assertion about whether the pregnancy is cateogrised as 'multiple pregnancy'."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Multiple_pregnancy_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_summary.data.Multiple_pregnancy_.value_DV_CODED_TEXT">
+         <path value="Pregnancy_summary.data.Multiple_pregnancy_.value_DV_CODED_TEXT"/>
+         <short value="Multiple pregnancy?"/>
+         <definition value="Assertion about whether the pregnancy is cateogrised as 'multiple pregnancy'."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Multiple_pregnancy_.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Multiple_pregnancy_.value_DV_TEXT">
+         <path value="Pregnancy_summary.data.Multiple_pregnancy_.value_DV_TEXT"/>
+         <short value="Multiple pregnancy?"/>
+         <definition value="Assertion about whether the pregnancy is cateogrised as 'multiple pregnancy'."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Multiple_pregnancy_.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Multiple_pregnancy_.value_DV_BOOLEAN">
+         <path value="Pregnancy_summary.data.Multiple_pregnancy_.value_DV_BOOLEAN"/>
+         <short value="Multiple pregnancy?"/>
+         <definition value="Assertion about whether the pregnancy is cateogrised as 'multiple pregnancy'."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Multiple_pregnancy_.value_DV_BOOLEAN"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Number_of_foetuses">
+         <path value="Pregnancy_summary.data.Number_of_foetuses"/>
+         <short value="Number of foetuses"/>
+         <definition value="Number of foetuses identified in utero."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Number_of_foetuses"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_summary.data.Number_of_foetuses.value">
+         <path value="Pregnancy_summary.data.Number_of_foetuses.value"/>
+         <short value="Number of foetuses"/>
+         <definition value="Number of foetuses identified in utero."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Number_of_foetuses.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Onset_of_labour">
+         <path value="Pregnancy_summary.data.Onset_of_labour"/>
+         <short value="Onset of labour"/>
+         <definition value="Manner in which labour started."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Onset_of_labour"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_summary.data.Onset_of_labour.value">
+         <path value="Pregnancy_summary.data.Onset_of_labour.value"/>
+         <short value="Onset of labour"/>
+         <definition value="Manner in which labour started."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Onset_of_labour.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Induction_method">
+         <path value="Pregnancy_summary.data.Induction_method"/>
+         <short value="Induction method"/>
+         <definition value="Method of labour induction."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pregnancy_summary.data.Induction_method"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Pregnancy_summary.data.Induction_method.value">
+         <path value="Pregnancy_summary.data.Induction_method.value"/>
+         <short value="Induction method"/>
+         <definition value="Method of labour induction."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Induction_method.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Reason_for_induction">
+         <path value="Pregnancy_summary.data.Reason_for_induction"/>
+         <short value="Reason for induction"/>
+         <definition value="Reason for induction of labour."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pregnancy_summary.data.Reason_for_induction"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Pregnancy_summary.data.Reason_for_induction.value">
+         <path value="Pregnancy_summary.data.Reason_for_induction.value"/>
+         <short value="Reason for induction"/>
+         <definition value="Reason for induction of labour."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Reason_for_induction.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Augmentation_method">
+         <path value="Pregnancy_summary.data.Augmentation_method"/>
+         <short value="Augmentation method"/>
+         <definition value="Method of labour augmentation."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pregnancy_summary.data.Augmentation_method"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Pregnancy_summary.data.Augmentation_method.value">
+         <path value="Pregnancy_summary.data.Augmentation_method.value"/>
+         <short value="Augmentation method"/>
+         <definition value="Method of labour augmentation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Augmentation_method.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Total_duration_of_labor">
+         <path value="Pregnancy_summary.data.Total_duration_of_labor"/>
+         <short value="Total duration of labor"/>
+         <definition value="Total duration of all three stages of labour."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Total_duration_of_labor"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_summary.data.Total_duration_of_labor.value">
+         <path value="Pregnancy_summary.data.Total_duration_of_labor.value"/>
+         <short value="Total duration of labor"/>
+         <definition value="Total duration of all three stages of labour."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Total_duration_of_labor.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Perineum">
+         <path value="Pregnancy_summary.data.Perineum"/>
+         <short value="Perineum"/>
+         <definition value="Coded or narrative description about the condition of the perineum after birth, including injuries and repairs."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Perineum"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_summary.data.Perineum.value_DV_TEXT">
+         <path value="Pregnancy_summary.data.Perineum.value_DV_TEXT"/>
+         <short value="Perineum"/>
+         <definition value="Coded or narrative description about the condition of the perineum after birth, including injuries and repairs."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Perineum.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Perineum.value_DV_CODED_TEXT">
+         <path value="Pregnancy_summary.data.Perineum.value_DV_CODED_TEXT"/>
+         <short value="Perineum"/>
+         <definition value="Coded or narrative description about the condition of the perineum after birth, including injuries and repairs."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Perineum.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Episiotomy">
+         <path value="Pregnancy_summary.data.Episiotomy"/>
+         <short value="Episiotomy"/>
+         <definition value="Was an episiotomy performed?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Episiotomy"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_summary.data.Episiotomy.value">
+         <path value="Pregnancy_summary.data.Episiotomy.value"/>
+         <short value="Episiotomy"/>
+         <definition value="Was an episiotomy performed?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Episiotomy.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Estimated_blood_loss">
+         <path value="Pregnancy_summary.data.Estimated_blood_loss"/>
+         <short value="Estimated blood loss"/>
+         <definition value="Estimation of total maternal blood loss during birth and immediately postpartum."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Estimated_blood_loss"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_summary.data.Estimated_blood_loss.value">
+         <path value="Pregnancy_summary.data.Estimated_blood_loss.value"/>
+         <short value="Estimated blood loss"/>
+         <definition value="Estimation of total maternal blood loss during birth and immediately postpartum."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Estimated_blood_loss.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Place_category">
+         <path value="Pregnancy_summary.data.Place_category"/>
+         <short value="Place category"/>
+         <definition value="Category of the place where the individual died."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Place_category"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_summary.data.Place_category.value">
+         <path value="Pregnancy_summary.data.Place_category.value"/>
+         <short value="Place category"/>
+         <definition value="Category of the place where the individual died."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Place_category.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Place_of_outcome">
+         <path value="Pregnancy_summary.data.Place_of_outcome"/>
+         <short value="Place of outcome"/>
+         <definition value="Simple details about the  location where the pregnancy was delivered or an alternative outcome of the pregnancy was treated or managed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Place_of_outcome"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_summary.data.Place_of_outcome.value">
+         <path value="Pregnancy_summary.data.Place_of_outcome.value"/>
+         <short value="Place of outcome"/>
+         <definition value="Simple details about the  location where the pregnancy was delivered or an alternative outcome of the pregnancy was treated or managed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Place_of_outcome.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Structured_place_of_outcome">
+         <path value="Pregnancy_summary.data.Structured_place_of_outcome"/>
+         <short value="Structured place of outcome"/>
+         <definition value="Structured details about the  location where the pregnancy was delivered or an alternative outcome of the pregnancy was treated or managed."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pregnancy_summary.data.Structured_place_of_outcome"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Additional_details">
+         <path value="Pregnancy_summary.data.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="Structured details about additional information related to the pregnancy summary."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pregnancy_summary.data.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Maternal_complication">
+         <path value="Pregnancy_summary.data.Maternal_complication"/>
+         <short value="Maternal complication"/>
+         <definition value="Details about pregnancy complications or birth complications affecting the mother."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pregnancy_summary.data.Maternal_complication"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Maternal_complication.Complication">
+         <path value="Pregnancy_summary.data.Maternal_complication.Complication"/>
+         <short value="Complication"/>
+         <definition value="Identification of the complication."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Maternal_complication.Complication"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_summary.data.Maternal_complication.Complication.value">
+         <path value="Pregnancy_summary.data.Maternal_complication.Complication.value"/>
+         <short value="Complication"/>
+         <definition value="Identification of the complication."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Maternal_complication.Complication.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Maternal_complication.Description">
+         <path value="Pregnancy_summary.data.Maternal_complication.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description of the maternal complication."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Maternal_complication.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_summary.data.Maternal_complication.Description.value">
+         <path value="Pregnancy_summary.data.Maternal_complication.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description of the maternal complication."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Maternal_complication.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Maternal_complication.Date_Time_of_onset">
+         <path value="Pregnancy_summary.data.Maternal_complication.Date_Time_of_onset"/>
+         <short value="Date/Time of onset"/>
+         <definition value="Date of onset of complication, as assessed by a clinician."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Maternal_complication.Date_Time_of_onset"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_summary.data.Maternal_complication.Date_Time_of_onset.value">
+         <path value="Pregnancy_summary.data.Maternal_complication.Date_Time_of_onset.value"/>
+         <short value="Date/Time of onset"/>
+         <definition value="Date of onset of complication, as assessed by a clinician."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Maternal_complication.Date_Time_of_onset.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Per_infant">
+         <path value="Pregnancy_summary.data.Per_infant"/>
+         <short value="Per infant"/>
+         <definition value="Information about a single foetus or newborn infant."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pregnancy_summary.data.Per_infant"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Per_infant.Label_name">
+         <path value="Pregnancy_summary.data.Per_infant.Label_name"/>
+         <short value="Label/name"/>
+         <definition value="Identification of the infant."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Per_infant.Label_name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_summary.data.Per_infant.Label_name.value">
+         <path value="Pregnancy_summary.data.Per_infant.Label_name.value"/>
+         <short value="Label/name"/>
+         <definition value="Identification of the infant."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Per_infant.Label_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Per_infant.Infant_outcome">
+         <path value="Pregnancy_summary.data.Per_infant.Infant_outcome"/>
+         <short value="Infant outcome"/>
+         <definition value="Outcome of the pregnancy for the identified infant or foetus."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Per_infant.Infant_outcome"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_summary.data.Per_infant.Infant_outcome.value">
+         <path value="Pregnancy_summary.data.Per_infant.Infant_outcome.value"/>
+         <short value="Infant outcome"/>
+         <definition value="Outcome of the pregnancy for the identified infant or foetus."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Per_infant.Infant_outcome.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Per_infant.Date_time_of_delivery">
+         <path value="Pregnancy_summary.data.Per_infant.Date_time_of_delivery"/>
+         <short value="Date/time of delivery"/>
+         <definition value="Date and time of delivery for the infant."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Per_infant.Date_time_of_delivery"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_summary.data.Per_infant.Date_time_of_delivery.value">
+         <path value="Pregnancy_summary.data.Per_infant.Date_time_of_delivery.value"/>
+         <short value="Date/time of delivery"/>
+         <definition value="Date and time of delivery for the infant."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Per_infant.Date_time_of_delivery.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Per_infant.Assigned_sex">
+         <path value="Pregnancy_summary.data.Per_infant.Assigned_sex"/>
+         <short value="Assigned sex"/>
+         <definition value="Sex of the infant  by direct observation of external genitalia."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Per_infant.Assigned_sex"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_summary.data.Per_infant.Assigned_sex.value">
+         <path value="Pregnancy_summary.data.Per_infant.Assigned_sex.value"/>
+         <short value="Assigned sex"/>
+         <definition value="Sex of the infant  by direct observation of external genitalia."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Per_infant.Assigned_sex.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Per_infant.Birth_detail">
+         <path value="Pregnancy_summary.data.Per_infant.Birth_detail"/>
+         <short value="Birth detail"/>
+         <definition value="A subset of persistent or summary information about the pregnancy and birth of an infant, selected for utility of use within both the maternal and infant health records."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pregnancy_summary.data.Per_infant.Birth_detail"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Per_infant.Presenting_part">
+         <path value="Pregnancy_summary.data.Per_infant.Presenting_part"/>
+         <short value="Presenting part"/>
+         <definition value="Presenting part of the infant at delivery."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Per_infant.Presenting_part"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_summary.data.Per_infant.Presenting_part.value_DV_CODED_TEXT">
+         <path value="Pregnancy_summary.data.Per_infant.Presenting_part.value_DV_CODED_TEXT"/>
+         <short value="Presenting part"/>
+         <definition value="Presenting part of the infant at delivery."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Per_infant.Presenting_part.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Per_infant.Presenting_part.value_DV_TEXT">
+         <path value="Pregnancy_summary.data.Per_infant.Presenting_part.value_DV_TEXT"/>
+         <short value="Presenting part"/>
+         <definition value="Presenting part of the infant at delivery."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Per_infant.Presenting_part.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Per_infant.Position">
+         <path value="Pregnancy_summary.data.Per_infant.Position"/>
+         <short value="Position"/>
+         <definition value="Position of the infant at delivery."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Per_infant.Position"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_summary.data.Per_infant.Position.value">
+         <path value="Pregnancy_summary.data.Per_infant.Position.value"/>
+         <short value="Position"/>
+         <definition value="Position of the infant at delivery."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Per_infant.Position.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Per_infant.Birthweight">
+         <path value="Pregnancy_summary.data.Per_infant.Birthweight"/>
+         <short value="Birthweight"/>
+         <definition value="Weight of the infant at delivery."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Per_infant.Birthweight"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_summary.data.Per_infant.Birthweight.value">
+         <path value="Pregnancy_summary.data.Per_infant.Birthweight.value"/>
+         <short value="Birthweight"/>
+         <definition value="Weight of the infant at delivery."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Per_infant.Birthweight.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Per_infant.Feeding">
+         <path value="Pregnancy_summary.data.Per_infant.Feeding"/>
+         <short value="Feeding"/>
+         <definition value="Narrative description about feeding of the infant."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Per_infant.Feeding"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_summary.data.Per_infant.Feeding.value">
+         <path value="Pregnancy_summary.data.Per_infant.Feeding.value"/>
+         <short value="Feeding"/>
+         <definition value="Narrative description about feeding of the infant."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Per_infant.Feeding.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Per_infant.Neonatal_outcome">
+         <path value="Pregnancy_summary.data.Per_infant.Neonatal_outcome"/>
+         <short value="Neonatal outcome"/>
+         <definition value="Description of the outcome at the end of the neonatal period per newborn infant."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Per_infant.Neonatal_outcome"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_summary.data.Per_infant.Neonatal_outcome.value_DV_TEXT">
+         <path value="Pregnancy_summary.data.Per_infant.Neonatal_outcome.value_DV_TEXT"/>
+         <short value="Neonatal outcome"/>
+         <definition value="Description of the outcome at the end of the neonatal period per newborn infant."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Per_infant.Neonatal_outcome.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Per_infant.Neonatal_outcome.value_DV_CODED_TEXT">
+         <path value="Pregnancy_summary.data.Per_infant.Neonatal_outcome.value_DV_CODED_TEXT"/>
+         <short value="Neonatal outcome"/>
+         <definition value="Description of the outcome at the end of the neonatal period per newborn infant."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Per_infant.Neonatal_outcome.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Per_infant.Neonatal_summary">
+         <path value="Pregnancy_summary.data.Per_infant.Neonatal_summary"/>
+         <short value="Neonatal summary"/>
+         <definition value="Narrative description about issues, concerns about the infant or events occurring during the neonatal period."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Per_infant.Neonatal_summary"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_summary.data.Per_infant.Neonatal_summary.value">
+         <path value="Pregnancy_summary.data.Per_infant.Neonatal_summary.value"/>
+         <short value="Neonatal summary"/>
+         <definition value="Narrative description about issues, concerns about the infant or events occurring during the neonatal period."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Per_infant.Neonatal_summary.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Per_infant.Date_time_of_neonatal_death">
+         <path value="Pregnancy_summary.data.Per_infant.Date_time_of_neonatal_death"/>
+         <short value="Date/time of neonatal death"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Per_infant.Date_time_of_neonatal_death"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_summary.data.Per_infant.Date_time_of_neonatal_death.value">
+         <path value="Pregnancy_summary.data.Per_infant.Date_time_of_neonatal_death.value"/>
+         <short value="Date/time of neonatal death"/>
+         <definition value="DV_DATE_TIME"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Per_infant.Date_time_of_neonatal_death.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Per_infant.Age_at_neonatal_death">
+         <path value="Pregnancy_summary.data.Per_infant.Age_at_neonatal_death"/>
+         <short value="Age at neonatal death"/>
+         <definition value="The age of the infant if they died during the neonatal  period."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Per_infant.Age_at_neonatal_death"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_summary.data.Per_infant.Age_at_neonatal_death.value">
+         <path value="Pregnancy_summary.data.Per_infant.Age_at_neonatal_death.value"/>
+         <short value="Age at neonatal death"/>
+         <definition value="The age of the infant if they died during the neonatal  period."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Per_infant.Age_at_neonatal_death.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Per_infant.Newborn_complication">
+         <path value="Pregnancy_summary.data.Per_infant.Newborn_complication"/>
+         <short value="Newborn complication"/>
+         <definition value="Details about any complications affecting the newborn."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pregnancy_summary.data.Per_infant.Newborn_complication"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Per_infant.Newborn_complication.Complication">
+         <path value="Pregnancy_summary.data.Per_infant.Newborn_complication.Complication"/>
+         <short value="Complication"/>
+         <definition value="Identification of the complication after birth."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Per_infant.Newborn_complication.Complication"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_summary.data.Per_infant.Newborn_complication.Complication.value">
+         <path value="Pregnancy_summary.data.Per_infant.Newborn_complication.Complication.value"/>
+         <short value="Complication"/>
+         <definition value="Identification of the complication after birth."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Per_infant.Newborn_complication.Complication.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Per_infant.Newborn_complication.Description">
+         <path value="Pregnancy_summary.data.Per_infant.Newborn_complication.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description of complication."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Per_infant.Newborn_complication.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_summary.data.Per_infant.Newborn_complication.Description.value">
+         <path value="Pregnancy_summary.data.Per_infant.Newborn_complication.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description of complication."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Per_infant.Newborn_complication.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_summary.data.Per_infant.Newborn_complication.Date_time_of_onset">
+         <path value="Pregnancy_summary.data.Per_infant.Newborn_complication.Date_time_of_onset"/>
+         <short value="Date/time of onset"/>
+         <definition value="Date and/or time of onset of the complication."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Per_infant.Newborn_complication.Date_time_of_onset"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_summary.data.Per_infant.Newborn_complication.Date_time_of_onset.value">
+         <path value="Pregnancy_summary.data.Per_infant.Newborn_complication.Date_time_of_onset.value"/>
+         <short value="Date/time of onset"/>
+         <definition value="Date and/or time of onset of the complication."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_summary.data.Per_infant.Newborn_complication.Date_time_of_onset.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

@@ -1,0 +1,2962 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Demonstration-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-demonstration-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.demo.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Demonstration"/>
+   <title value="Demonstration"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Demonstration archetype with descriptions and explanations."/>
+   <purpose value="To provide an overview of the display of each of the datatypes available in an openEHR archetype, and of the Data, State, Event and Protocol models within the context of a HTML display and associated ADL."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Demonstration">
+         <path value="Demonstration"/>
+         <short value="Demonstration"/>
+         <definition value="Demonstration archetype with descriptions and explanations."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.protocol">
+         <path value="Demonstration.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.protocol.Protocol___Definition">
+         <path value="Demonstration.protocol.Protocol___Definition"/>
+         <short value="Protocol - Definition"/>
+         <definition value="All archetypes of the OBSERVATION class can contain a PROTOCOL model which records information on how the information was gathered or measured, and any other information that is not required for safe clinical interpretation of the core Data. Datatypes are identical to those explained in the Data model, above."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.protocol.Protocol___Definition"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.protocol.Extension">
+         <path value="Demonstration.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local context or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Demonstration.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series">
+         <path value="Demonstration.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Any_Event">
+         <path value="Demonstration.Event_Series.Any_Event"/>
+         <short value="Any Event"/>
+         <definition value="All archetypes of the OBSERVATION class contain a HISTORY or EVENT model which contains information about the timing of the observation and the 'width' of the information - either a point in time or an interval.  The default is 'Any event' and it is not specified if this is a Point in time or an Interval."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Any_Event"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Any_Event.data">
+         <path value="Demonstration.Event_Series.Any_Event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Any_Event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Any_Event.data.Data___Definition">
+         <path value="Demonstration.Event_Series.Any_Event.data.Data___Definition"/>
+         <short value="Data - Definition"/>
+         <definition value="All archetypes of the OBSERVATION class contain a DATA model  which contains the core information e.g. the systolic and diastolic pressures when measuring a blood pressure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Any_Event.data.Data___Definition"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Any_Event.data.Heading1">
+         <path value="Demonstration.Event_Series.Any_Event.data.Heading1"/>
+         <short value="Heading1"/>
+         <definition value="This is a symbol for a cluster which can have other elements 'nested' within it."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Demonstration.Event_Series.Any_Event.data.Heading1"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Any_Event.data.Heading1.Free_Text_or_Coded">
+         <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Free_Text_or_Coded"/>
+         <short value="Free Text or Coded"/>
+         <definition value="Text data type in which free text can be entered or coding can be incorporated either in the template or at run time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Free_Text_or_Coded"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Any_Event.data.Heading1.Free_Text_or_Coded.value">
+         <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Free_Text_or_Coded.value"/>
+         <short value="Free Text or Coded"/>
+         <definition value="Text data type in which free text can be entered or coding can be incorporated either in the template or at run time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Free_Text_or_Coded.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Any_Event.data.Heading1.Text_That_Uses_Internal_Codes">
+         <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Text_That_Uses_Internal_Codes"/>
+         <short value="Text That Uses Internal Codes"/>
+         <definition value="Text data type which can use an internal vocabulary.  Each of these 'internal codes' can be bound to a terminology code."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Text_That_Uses_Internal_Codes"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Any_Event.data.Heading1.Text_That_Uses_Internal_Codes.value">
+         <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Text_That_Uses_Internal_Codes.value"/>
+         <short value="Text That Uses Internal Codes"/>
+         <definition value="Text data type which can use an internal vocabulary.  Each of these 'internal codes' can be bound to a terminology code."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Text_That_Uses_Internal_Codes.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Any_Event.data.Heading1.Text_That_is_Sourced_From_an_External_Terminology">
+         <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Text_That_is_Sourced_From_an_External_Terminology"/>
+         <short value="Text That is Sourced From an External Terminology"/>
+         <definition value="Text data type utilising codes derived from an external terminology source eg a SNOMED-CT, LOINC or ICD subset."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Text_That_is_Sourced_From_an_External_Terminology"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Any_Event.data.Heading1.Text_That_is_Sourced_From_an_External_Terminology.value">
+         <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Text_That_is_Sourced_From_an_External_Terminology.value"/>
+         <short value="Text That is Sourced From an External Terminology"/>
+         <definition value="Text data type utilising codes derived from an external terminology source eg a SNOMED-CT, LOINC or ICD subset."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Text_That_is_Sourced_From_an_External_Terminology.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Any_Event.data.Heading1.Quantity">
+         <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Quantity"/>
+         <short value="Quantity"/>
+         <definition value="A quantity data type used to record a measurement associated with its' appropriate units.  These are derived from ISO standards and the Reference model enables conversion between these units. The example shown here is length."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Quantity"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Any_Event.data.Heading1.Quantity.value">
+         <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Quantity.value"/>
+         <short value="Quantity"/>
+         <definition value="A quantity data type used to record a measurement associated with its' appropriate units.  These are derived from ISO standards and the Reference model enables conversion between these units. The example shown here is length."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Quantity.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Any_Event.data.Heading1.Interval_of_Quantity">
+         <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Interval_of_Quantity"/>
+         <short value="Interval of Quantity"/>
+         <definition value="Interval of quantity datatypes allow for the recording of a range of measurements in association with appropriate units eg 1-2cm (prescribed amount of cream for a rash)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Interval_of_Quantity"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Any_Event.data.Heading1.Interval_of_Quantity.value">
+         <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Interval_of_Quantity.value"/>
+         <short value="Interval of Quantity"/>
+         <definition value="Interval of quantity datatypes allow for the recording of a range of measurements in association with appropriate units eg 1-2cm (prescribed amount of cream for a rash)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Interval_of_Quantity.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Any_Event.data.Heading1.Count">
+         <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Count"/>
+         <short value="Count"/>
+         <definition value="Count data types are composed of an integer with no units eg for recording the number of children - in this example the minimum is set at 0 and the maximum not specified."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Count"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Any_Event.data.Heading1.Count.value">
+         <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Count.value"/>
+         <short value="Count"/>
+         <definition value="Count data types are composed of an integer with no units eg for recording the number of children - in this example the minimum is set at 0 and the maximum not specified."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Count.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Any_Event.data.Heading1.Interval_of_Integer">
+         <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Interval_of_Integer"/>
+         <short value="Interval of Integer"/>
+         <definition value="Interval of integer datatype allows for recording of a range of counts eg 1-2 tablets prescribed.  Maximum and minimum values can be set for the lower count and the upper count."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Interval_of_Integer"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Any_Event.data.Heading1.Interval_of_Integer.value">
+         <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Interval_of_Integer.value"/>
+         <short value="Interval of Integer"/>
+         <definition value="Interval of integer datatype allows for recording of a range of counts eg 1-2 tablets prescribed.  Maximum and minimum values can be set for the lower count and the upper count."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Interval_of_Integer.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Any_Event.data.Heading1.Proportion">
+         <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Proportion"/>
+         <short value="Proportion"/>
+         <definition value="Proportion datatypes allow for ratios, percent, fractions and proportions to be modelled."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Proportion"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Any_Event.data.Heading1.Proportion.value">
+         <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Proportion.value"/>
+         <short value="Proportion"/>
+         <definition value="Proportion datatypes allow for ratios, percent, fractions and proportions to be modelled."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Proportion.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Ratio"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Any_Event.data.Heading1.Date_Time">
+         <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Date_Time"/>
+         <short value="Date/Time"/>
+         <definition value="Date/Time datatype allows recording of a date and/or time, including partial dates such as year only or month and year only.  Allow all is the default - so all forms of date/time are permitted."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Date_Time"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Any_Event.data.Heading1.Date_Time.value">
+         <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Date_Time.value"/>
+         <short value="Date/Time"/>
+         <definition value="Date/Time datatype allows recording of a date and/or time, including partial dates such as year only or month and year only.  Allow all is the default - so all forms of date/time are permitted."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Date_Time.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Any_Event.data.Heading1.Interval_of_Date">
+         <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Interval_of_Date"/>
+         <short value="Interval of Date"/>
+         <definition value="Interval of integer datatype allows for recording of a range of dates eg between September 1, 2008 and September 8, 2008."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Interval_of_Date"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Any_Event.data.Heading1.Interval_of_Date.value">
+         <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Interval_of_Date.value"/>
+         <short value="Interval of Date"/>
+         <definition value="Interval of integer datatype allows for recording of a range of dates eg between September 1, 2008 and September 8, 2008."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Interval_of_Date.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Any_Event.data.Heading1.Duration">
+         <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Duration"/>
+         <short value="Duration"/>
+         <definition value="Duration datatype allows recording of the duration of clinical concepts.  'Allow all time units' is the default, although specific time units can be explicitly modelled.  Maximum and minum values can be set for each time unit."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Duration"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Any_Event.data.Heading1.Duration.value">
+         <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Duration.value"/>
+         <short value="Duration"/>
+         <definition value="Duration datatype allows recording of the duration of clinical concepts.  'Allow all time units' is the default, although specific time units can be explicitly modelled.  Maximum and minum values can be set for each time unit."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Duration.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Any_Event.data.Heading1.Ordinal">
+         <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Ordinal"/>
+         <short value="Ordinal"/>
+         <definition value="Ordinal datatypes pair a number and text - in this way scores can be calculated in software, or progression can be assessed eg if used in a pain score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Ordinal"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Any_Event.data.Heading1.Ordinal.value">
+         <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Ordinal.value"/>
+         <short value="Ordinal"/>
+         <definition value="Ordinal datatypes pair a number and text - in this way scores can be calculated in software, or progression can be assessed eg if used in a pain score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Ordinal.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Any_Event.data.Heading1.Boolean">
+         <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Boolean"/>
+         <short value="Boolean"/>
+         <definition value="Boolean datatype that allows for true or false answers."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Boolean"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Any_Event.data.Heading1.Boolean.value">
+         <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Boolean.value"/>
+         <short value="Boolean"/>
+         <definition value="Boolean datatype that allows for true or false answers."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Boolean.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Any_Event.data.Heading1.Boolean.null_flavour">
+         <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Boolean.null_flavour"/>
+         <short value="Boolean"/>
+         <definition value="Boolean datatype that allows for true or false answers."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Boolean.null_flavour"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Any_Event.data.Heading1.Any">
+         <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Any"/>
+         <short value="Any"/>
+         <definition value="The datatype for this 'any' element can be specified or constrained in a template or at run-time, but is not explicitly modelled in the archetype."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Any"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Any_Event.data.Heading1.Choice">
+         <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Choice"/>
+         <short value="Choice"/>
+         <definition value="Choice datatype allows for a number of types of element to be specified simultaneously and which can constrained or selected within a template or at run-time.  In this example, a text datatype set to Free text or Coded and another that is constrained to Terminology record data about the same data element."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Choice"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Any_Event.data.Heading1.Choice.value_DvQuantity">
+         <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Choice.value_DvQuantity"/>
+         <short value="Choice"/>
+         <definition value="Choice datatype allows for a number of types of element to be specified simultaneously and which can constrained or selected within a template or at run-time.  In this example, a text datatype set to Free text or Coded and another that is constrained to Terminology record data about the same data element."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Choice.value_DvQuantity"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Any_Event.data.Heading1.Choice.value_DV_CODED_TEXT">
+         <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Choice.value_DV_CODED_TEXT"/>
+         <short value="Choice"/>
+         <definition value="Choice datatype allows for a number of types of element to be specified simultaneously and which can constrained or selected within a template or at run-time.  In this example, a text datatype set to Free text or Coded and another that is constrained to Terminology record data about the same data element."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Choice.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Any_Event.data.Heading1.Multimedia">
+         <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Multimedia"/>
+         <short value="Multimedia"/>
+         <definition value="Multimedia datatypes allow for the recording of many types of multimedia files to be captured.  All available types have been explicitly selected in this example."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Multimedia"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Any_Event.data.Heading1.Multimedia.value">
+         <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Multimedia.value"/>
+         <short value="Multimedia"/>
+         <definition value="Multimedia datatypes allow for the recording of many types of multimedia files to be captured.  All available types have been explicitly selected in this example."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Multimedia.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Attachment"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Any_Event.data.Heading1.URI___resource_identifier">
+         <path value="Demonstration.Event_Series.Any_Event.data.Heading1.URI___resource_identifier"/>
+         <short value="URI - resource identifier"/>
+         <definition value="URI datatypes allow for recording of relationships from this data to data recorded elsewhere.  These links can be within the same EHR, or external eg to a  URL."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Any_Event.data.Heading1.URI___resource_identifier"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Any_Event.data.Heading1.URI___resource_identifier.value">
+         <path value="Demonstration.Event_Series.Any_Event.data.Heading1.URI___resource_identifier.value"/>
+         <short value="URI - resource identifier"/>
+         <definition value="URI datatypes allow for recording of relationships from this data to data recorded elsewhere.  These links can be within the same EHR, or external eg to a  URL."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Any_Event.data.Heading1.URI___resource_identifier.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="string"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Any_Event.data.Heading1.Identifier">
+         <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Identifier"/>
+         <short value="Identifier"/>
+         <definition value="Identifier datatypes enable recording of formal data identifiers."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Identifier"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Any_Event.data.Heading1.Identifier.value">
+         <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Identifier.value"/>
+         <short value="Identifier"/>
+         <definition value="Identifier datatypes enable recording of formal data identifiers."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Any_Event.data.Heading1.Identifier.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Any_Event.data.Heading_2">
+         <path value="Demonstration.Event_Series.Any_Event.data.Heading_2"/>
+         <short value="Heading 2"/>
+         <definition value="This is a symbol for a cluster which can have other elements 'nested' within it."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Any_Event.data.Heading_2"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Any_Event.data.Heading_2.Slot_To_Contain_Other_Cluster_Archetypes">
+         <path value="Demonstration.Event_Series.Any_Event.data.Heading_2.Slot_To_Contain_Other_Cluster_Archetypes"/>
+         <short value="Slot To Contain Other Cluster Archetypes"/>
+         <definition value="List of CLUSTER archetypes allowed to be included or excluded within this OBSERVATION archetype."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Demonstration.Event_Series.Any_Event.data.Heading_2.Slot_To_Contain_Other_Cluster_Archetypes"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Any_Event.data.Heading_2.Slot_To_Contain_Other_Element_Archetypes">
+         <path value="Demonstration.Event_Series.Any_Event.data.Heading_2.Slot_To_Contain_Other_Element_Archetypes"/>
+         <short value="Slot To Contain Other Element Archetypes"/>
+         <definition value="List of ELEMENT archetypes allowed to be included or excluded within this OBSERVATION archetype."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Demonstration.Event_Series.Any_Event.data.Heading_2.Slot_To_Contain_Other_Element_Archetypes"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Any_Event.state">
+         <path value="Demonstration.Event_Series.Any_Event.state"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Any_Event.state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Any_Event.state.State___Definition">
+         <path value="Demonstration.Event_Series.Any_Event.state.State___Definition"/>
+         <short value="State - Definition"/>
+         <definition value="All archetypes of the OBSERVATION class can  contain a STATE model which contains information about the subject of data at the time the information was collected, and this information is required for safe clinical interpretation of the core information. An example is the position of the patient at the time of measuring a blood pressure.  Datatypes are identical to those explained in the Data model, above."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Any_Event.state.State___Definition"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Point_In_Time">
+         <path value="Demonstration.Event_Series.Named_Point_In_Time"/>
+         <short value="Named Point In Time"/>
+         <definition value="An event that is both named (eg Birth) and constrained as a Point in time event records the data elements in relation to a specified point in time eg Weight at Birth."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Point_In_Time"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Point_In_Time.data">
+         <path value="Demonstration.Event_Series.Named_Point_In_Time.data"/>
+         <definition value="ITEM_TREE"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Point_In_Time.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Point_In_Time.data.Data___Definition">
+         <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Data___Definition"/>
+         <short value="Data - Definition"/>
+         <definition value="All archetypes of the OBSERVATION class contain a DATA model  which contains the core information e.g. the systolic and diastolic pressures when measuring a blood pressure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Data___Definition"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1">
+         <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1"/>
+         <short value="Heading1"/>
+         <definition value="This is a symbol for a cluster which can have other elements 'nested' within it."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Free_Text_or_Coded">
+         <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Free_Text_or_Coded"/>
+         <short value="Free Text or Coded"/>
+         <definition value="Text data type in which free text can be entered or coding can be incorporated either in the template or at run time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Free_Text_or_Coded"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Free_Text_or_Coded.value">
+         <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Free_Text_or_Coded.value"/>
+         <short value="Free Text or Coded"/>
+         <definition value="Text data type in which free text can be entered or coding can be incorporated either in the template or at run time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Free_Text_or_Coded.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Text_That_Uses_Internal_Codes">
+         <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Text_That_Uses_Internal_Codes"/>
+         <short value="Text That Uses Internal Codes"/>
+         <definition value="Text data type which can use an internal vocabulary.  Each of these 'internal codes' can be bound to a terminology code."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Text_That_Uses_Internal_Codes"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Text_That_Uses_Internal_Codes.value">
+         <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Text_That_Uses_Internal_Codes.value"/>
+         <short value="Text That Uses Internal Codes"/>
+         <definition value="Text data type which can use an internal vocabulary.  Each of these 'internal codes' can be bound to a terminology code."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Text_That_Uses_Internal_Codes.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Text_That_is_Sourced_From_an_External_Terminology">
+         <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Text_That_is_Sourced_From_an_External_Terminology"/>
+         <short value="Text That is Sourced From an External Terminology"/>
+         <definition value="Text data type utilising codes derived from an external terminology source eg a SNOMED-CT, LOINC or ICD subset."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Text_That_is_Sourced_From_an_External_Terminology"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Text_That_is_Sourced_From_an_External_Terminology.value">
+         <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Text_That_is_Sourced_From_an_External_Terminology.value"/>
+         <short value="Text That is Sourced From an External Terminology"/>
+         <definition value="Text data type utilising codes derived from an external terminology source eg a SNOMED-CT, LOINC or ICD subset."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Text_That_is_Sourced_From_an_External_Terminology.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Quantity">
+         <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Quantity"/>
+         <short value="Quantity"/>
+         <definition value="A quantity data type used to record a measurement associated with its' appropriate units.  These are derived from ISO standards and the Reference model enables conversion between these units. The example shown here is length."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Quantity"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Quantity.value">
+         <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Quantity.value"/>
+         <short value="Quantity"/>
+         <definition value="A quantity data type used to record a measurement associated with its' appropriate units.  These are derived from ISO standards and the Reference model enables conversion between these units. The example shown here is length."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Quantity.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Interval_of_Quantity">
+         <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Interval_of_Quantity"/>
+         <short value="Interval of Quantity"/>
+         <definition value="Interval of quantity datatypes allow for the recording of a range of measurements in association with appropriate units eg 1-2cm (prescribed amount of cream for a rash)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Interval_of_Quantity"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Interval_of_Quantity.value">
+         <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Interval_of_Quantity.value"/>
+         <short value="Interval of Quantity"/>
+         <definition value="Interval of quantity datatypes allow for the recording of a range of measurements in association with appropriate units eg 1-2cm (prescribed amount of cream for a rash)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Interval_of_Quantity.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Count">
+         <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Count"/>
+         <short value="Count"/>
+         <definition value="Count data types are composed of an integer with no units eg for recording the number of children - in this example the minimum is set at 0 and the maximum not specified."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Count"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Count.value">
+         <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Count.value"/>
+         <short value="Count"/>
+         <definition value="Count data types are composed of an integer with no units eg for recording the number of children - in this example the minimum is set at 0 and the maximum not specified."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Count.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Interval_of_Integer">
+         <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Interval_of_Integer"/>
+         <short value="Interval of Integer"/>
+         <definition value="Interval of integer datatype allows for recording of a range of counts eg 1-2 tablets prescribed.  Maximum and minimum values can be set for the lower count and the upper count."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Interval_of_Integer"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Interval_of_Integer.value">
+         <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Interval_of_Integer.value"/>
+         <short value="Interval of Integer"/>
+         <definition value="Interval of integer datatype allows for recording of a range of counts eg 1-2 tablets prescribed.  Maximum and minimum values can be set for the lower count and the upper count."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Interval_of_Integer.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Proportion">
+         <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Proportion"/>
+         <short value="Proportion"/>
+         <definition value="Proportion datatypes allow for ratios, percent, fractions and proportions to be modelled."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Proportion"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Proportion.value">
+         <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Proportion.value"/>
+         <short value="Proportion"/>
+         <definition value="Proportion datatypes allow for ratios, percent, fractions and proportions to be modelled."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Proportion.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Ratio"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Date_Time">
+         <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Date_Time"/>
+         <short value="Date/Time"/>
+         <definition value="Date/Time datatype allows recording of a date and/or time, including partial dates such as year only or month and year only.  Allow all is the default - so all forms of date/time are permitted."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Date_Time"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Date_Time.value">
+         <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Date_Time.value"/>
+         <short value="Date/Time"/>
+         <definition value="Date/Time datatype allows recording of a date and/or time, including partial dates such as year only or month and year only.  Allow all is the default - so all forms of date/time are permitted."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Date_Time.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Interval_of_Date">
+         <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Interval_of_Date"/>
+         <short value="Interval of Date"/>
+         <definition value="Interval of integer datatype allows for recording of a range of dates eg between September 1, 2008 and September 8, 2008."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Interval_of_Date"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Interval_of_Date.value">
+         <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Interval_of_Date.value"/>
+         <short value="Interval of Date"/>
+         <definition value="Interval of integer datatype allows for recording of a range of dates eg between September 1, 2008 and September 8, 2008."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Interval_of_Date.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Duration">
+         <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Duration"/>
+         <short value="Duration"/>
+         <definition value="Duration datatype allows recording of the duration of clinical concepts.  'Allow all time units' is the default, although specific time units can be explicitly modelled.  Maximum and minum values can be set for each time unit."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Duration"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Duration.value">
+         <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Duration.value"/>
+         <short value="Duration"/>
+         <definition value="Duration datatype allows recording of the duration of clinical concepts.  'Allow all time units' is the default, although specific time units can be explicitly modelled.  Maximum and minum values can be set for each time unit."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Duration.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Ordinal">
+         <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Ordinal"/>
+         <short value="Ordinal"/>
+         <definition value="Ordinal datatypes pair a number and text - in this way scores can be calculated in software, or progression can be assessed eg if used in a pain score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Ordinal"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Ordinal.value">
+         <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Ordinal.value"/>
+         <short value="Ordinal"/>
+         <definition value="Ordinal datatypes pair a number and text - in this way scores can be calculated in software, or progression can be assessed eg if used in a pain score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Ordinal.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Boolean">
+         <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Boolean"/>
+         <short value="Boolean"/>
+         <definition value="Boolean datatype that allows for true or false answers."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Boolean"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Boolean.value">
+         <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Boolean.value"/>
+         <short value="Boolean"/>
+         <definition value="Boolean datatype that allows for true or false answers."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Boolean.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Boolean.null_flavour">
+         <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Boolean.null_flavour"/>
+         <short value="Boolean"/>
+         <definition value="Boolean datatype that allows for true or false answers."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Boolean.null_flavour"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Any">
+         <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Any"/>
+         <short value="Any"/>
+         <definition value="The datatype for this 'any' element can be specified or constrained in a template or at run-time, but is not explicitly modelled in the archetype."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Any"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Choice">
+         <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Choice"/>
+         <short value="Choice"/>
+         <definition value="Choice datatype allows for a number of types of element to be specified simultaneously and which can constrained or selected within a template or at run-time.  In this example, a text datatype set to Free text or Coded and another that is constrained to Terminology record data about the same data element."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Choice"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Choice.value_DvQuantity">
+         <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Choice.value_DvQuantity"/>
+         <short value="Choice"/>
+         <definition value="Choice datatype allows for a number of types of element to be specified simultaneously and which can constrained or selected within a template or at run-time.  In this example, a text datatype set to Free text or Coded and another that is constrained to Terminology record data about the same data element."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Choice.value_DvQuantity"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Choice.value_DV_CODED_TEXT">
+         <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Choice.value_DV_CODED_TEXT"/>
+         <short value="Choice"/>
+         <definition value="Choice datatype allows for a number of types of element to be specified simultaneously and which can constrained or selected within a template or at run-time.  In this example, a text datatype set to Free text or Coded and another that is constrained to Terminology record data about the same data element."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Choice.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Multimedia">
+         <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Multimedia"/>
+         <short value="Multimedia"/>
+         <definition value="Multimedia datatypes allow for the recording of many types of multimedia files to be captured.  All available types have been explicitly selected in this example."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Multimedia"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Multimedia.value">
+         <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Multimedia.value"/>
+         <short value="Multimedia"/>
+         <definition value="Multimedia datatypes allow for the recording of many types of multimedia files to be captured.  All available types have been explicitly selected in this example."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Multimedia.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Attachment"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.URI___resource_identifier">
+         <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.URI___resource_identifier"/>
+         <short value="URI - resource identifier"/>
+         <definition value="URI datatypes allow for recording of relationships from this data to data recorded elsewhere.  These links can be within the same EHR, or external eg to a  URL."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.URI___resource_identifier"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.URI___resource_identifier.value">
+         <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.URI___resource_identifier.value"/>
+         <short value="URI - resource identifier"/>
+         <definition value="URI datatypes allow for recording of relationships from this data to data recorded elsewhere.  These links can be within the same EHR, or external eg to a  URL."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.URI___resource_identifier.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="string"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Identifier">
+         <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Identifier"/>
+         <short value="Identifier"/>
+         <definition value="Identifier datatypes enable recording of formal data identifiers."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Identifier"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Identifier.value">
+         <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Identifier.value"/>
+         <short value="Identifier"/>
+         <definition value="Identifier datatypes enable recording of formal data identifiers."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading1.Identifier.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Point_In_Time.data.Heading_2">
+         <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading_2"/>
+         <short value="Heading 2"/>
+         <definition value="This is a symbol for a cluster which can have other elements 'nested' within it."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading_2"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Point_In_Time.data.Heading_2.Slot_To_Contain_Other_Cluster_Archetypes">
+         <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading_2.Slot_To_Contain_Other_Cluster_Archetypes"/>
+         <short value="Slot To Contain Other Cluster Archetypes"/>
+         <definition value="List of CLUSTER archetypes allowed to be included or excluded within this OBSERVATION archetype."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading_2.Slot_To_Contain_Other_Cluster_Archetypes"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Point_In_Time.data.Heading_2.Slot_To_Contain_Other_Element_Archetypes">
+         <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading_2.Slot_To_Contain_Other_Element_Archetypes"/>
+         <short value="Slot To Contain Other Element Archetypes"/>
+         <definition value="List of ELEMENT archetypes allowed to be included or excluded within this OBSERVATION archetype."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Point_In_Time.data.Heading_2.Slot_To_Contain_Other_Element_Archetypes"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Point_In_Time.state">
+         <path value="Demonstration.Event_Series.Named_Point_In_Time.state"/>
+         <definition value="ITEM_TREE"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Point_In_Time.state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Point_In_Time.state.State___Definition">
+         <path value="Demonstration.Event_Series.Named_Point_In_Time.state.State___Definition"/>
+         <short value="State - Definition"/>
+         <definition value="All archetypes of the OBSERVATION class can  contain a STATE model which contains information about the subject of data at the time the information was collected, and this information is required for safe clinical interpretation of the core information. An example is the position of the patient at the time of measuring a blood pressure.  Datatypes are identical to those explained in the Data model, above."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Point_In_Time.state.State___Definition"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Interval">
+         <path value="Demonstration.Event_Series.Named_Interval"/>
+         <short value="Named Interval"/>
+         <definition value="An event that is both named and constrained as an Interval event records the data elements in relation to a period of time eg Weight Loss over time.  The interval can be fixed or left unspecified.  In addition there are mathematical functions that can be specified to capture concepts such as change, decrease, increase, maximum, minimum, mean etc."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Interval"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Interval.data">
+         <path value="Demonstration.Event_Series.Named_Interval.data"/>
+         <definition value="ITEM_TREE"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Interval.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Interval.data.Data___Definition">
+         <path value="Demonstration.Event_Series.Named_Interval.data.Data___Definition"/>
+         <short value="Data - Definition"/>
+         <definition value="All archetypes of the OBSERVATION class contain a DATA model  which contains the core information e.g. the systolic and diastolic pressures when measuring a blood pressure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Interval.data.Data___Definition"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Interval.data.Heading1">
+         <path value="Demonstration.Event_Series.Named_Interval.data.Heading1"/>
+         <short value="Heading1"/>
+         <definition value="This is a symbol for a cluster which can have other elements 'nested' within it."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Interval.data.Heading1"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Interval.data.Heading1.Free_Text_or_Coded">
+         <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Free_Text_or_Coded"/>
+         <short value="Free Text or Coded"/>
+         <definition value="Text data type in which free text can be entered or coding can be incorporated either in the template or at run time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Free_Text_or_Coded"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Interval.data.Heading1.Free_Text_or_Coded.value">
+         <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Free_Text_or_Coded.value"/>
+         <short value="Free Text or Coded"/>
+         <definition value="Text data type in which free text can be entered or coding can be incorporated either in the template or at run time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Free_Text_or_Coded.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Interval.data.Heading1.Text_That_Uses_Internal_Codes">
+         <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Text_That_Uses_Internal_Codes"/>
+         <short value="Text That Uses Internal Codes"/>
+         <definition value="Text data type which can use an internal vocabulary.  Each of these 'internal codes' can be bound to a terminology code."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Text_That_Uses_Internal_Codes"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Interval.data.Heading1.Text_That_Uses_Internal_Codes.value">
+         <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Text_That_Uses_Internal_Codes.value"/>
+         <short value="Text That Uses Internal Codes"/>
+         <definition value="Text data type which can use an internal vocabulary.  Each of these 'internal codes' can be bound to a terminology code."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Text_That_Uses_Internal_Codes.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Interval.data.Heading1.Text_That_is_Sourced_From_an_External_Terminology">
+         <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Text_That_is_Sourced_From_an_External_Terminology"/>
+         <short value="Text That is Sourced From an External Terminology"/>
+         <definition value="Text data type utilising codes derived from an external terminology source eg a SNOMED-CT, LOINC or ICD subset."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Text_That_is_Sourced_From_an_External_Terminology"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Interval.data.Heading1.Text_That_is_Sourced_From_an_External_Terminology.value">
+         <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Text_That_is_Sourced_From_an_External_Terminology.value"/>
+         <short value="Text That is Sourced From an External Terminology"/>
+         <definition value="Text data type utilising codes derived from an external terminology source eg a SNOMED-CT, LOINC or ICD subset."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Text_That_is_Sourced_From_an_External_Terminology.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Interval.data.Heading1.Quantity">
+         <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Quantity"/>
+         <short value="Quantity"/>
+         <definition value="A quantity data type used to record a measurement associated with its' appropriate units.  These are derived from ISO standards and the Reference model enables conversion between these units. The example shown here is length."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Quantity"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Interval.data.Heading1.Quantity.value">
+         <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Quantity.value"/>
+         <short value="Quantity"/>
+         <definition value="A quantity data type used to record a measurement associated with its' appropriate units.  These are derived from ISO standards and the Reference model enables conversion between these units. The example shown here is length."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Quantity.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Interval.data.Heading1.Interval_of_Quantity">
+         <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Interval_of_Quantity"/>
+         <short value="Interval of Quantity"/>
+         <definition value="Interval of quantity datatypes allow for the recording of a range of measurements in association with appropriate units eg 1-2cm (prescribed amount of cream for a rash)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Interval_of_Quantity"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Interval.data.Heading1.Interval_of_Quantity.value">
+         <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Interval_of_Quantity.value"/>
+         <short value="Interval of Quantity"/>
+         <definition value="Interval of quantity datatypes allow for the recording of a range of measurements in association with appropriate units eg 1-2cm (prescribed amount of cream for a rash)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Interval_of_Quantity.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Interval.data.Heading1.Count">
+         <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Count"/>
+         <short value="Count"/>
+         <definition value="Count data types are composed of an integer with no units eg for recording the number of children - in this example the minimum is set at 0 and the maximum not specified."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Count"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Interval.data.Heading1.Count.value">
+         <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Count.value"/>
+         <short value="Count"/>
+         <definition value="Count data types are composed of an integer with no units eg for recording the number of children - in this example the minimum is set at 0 and the maximum not specified."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Count.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Interval.data.Heading1.Interval_of_Integer">
+         <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Interval_of_Integer"/>
+         <short value="Interval of Integer"/>
+         <definition value="Interval of integer datatype allows for recording of a range of counts eg 1-2 tablets prescribed.  Maximum and minimum values can be set for the lower count and the upper count."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Interval_of_Integer"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Interval.data.Heading1.Interval_of_Integer.value">
+         <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Interval_of_Integer.value"/>
+         <short value="Interval of Integer"/>
+         <definition value="Interval of integer datatype allows for recording of a range of counts eg 1-2 tablets prescribed.  Maximum and minimum values can be set for the lower count and the upper count."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Interval_of_Integer.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Interval.data.Heading1.Proportion">
+         <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Proportion"/>
+         <short value="Proportion"/>
+         <definition value="Proportion datatypes allow for ratios, percent, fractions and proportions to be modelled."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Proportion"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Interval.data.Heading1.Proportion.value">
+         <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Proportion.value"/>
+         <short value="Proportion"/>
+         <definition value="Proportion datatypes allow for ratios, percent, fractions and proportions to be modelled."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Proportion.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Ratio"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Interval.data.Heading1.Date_Time">
+         <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Date_Time"/>
+         <short value="Date/Time"/>
+         <definition value="Date/Time datatype allows recording of a date and/or time, including partial dates such as year only or month and year only.  Allow all is the default - so all forms of date/time are permitted."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Date_Time"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Interval.data.Heading1.Date_Time.value">
+         <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Date_Time.value"/>
+         <short value="Date/Time"/>
+         <definition value="Date/Time datatype allows recording of a date and/or time, including partial dates such as year only or month and year only.  Allow all is the default - so all forms of date/time are permitted."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Date_Time.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Interval.data.Heading1.Interval_of_Date">
+         <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Interval_of_Date"/>
+         <short value="Interval of Date"/>
+         <definition value="Interval of integer datatype allows for recording of a range of dates eg between September 1, 2008 and September 8, 2008."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Interval_of_Date"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Interval.data.Heading1.Interval_of_Date.value">
+         <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Interval_of_Date.value"/>
+         <short value="Interval of Date"/>
+         <definition value="Interval of integer datatype allows for recording of a range of dates eg between September 1, 2008 and September 8, 2008."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Interval_of_Date.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Interval.data.Heading1.Duration">
+         <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Duration"/>
+         <short value="Duration"/>
+         <definition value="Duration datatype allows recording of the duration of clinical concepts.  'Allow all time units' is the default, although specific time units can be explicitly modelled.  Maximum and minum values can be set for each time unit."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Duration"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Interval.data.Heading1.Duration.value">
+         <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Duration.value"/>
+         <short value="Duration"/>
+         <definition value="Duration datatype allows recording of the duration of clinical concepts.  'Allow all time units' is the default, although specific time units can be explicitly modelled.  Maximum and minum values can be set for each time unit."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Duration.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Interval.data.Heading1.Ordinal">
+         <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Ordinal"/>
+         <short value="Ordinal"/>
+         <definition value="Ordinal datatypes pair a number and text - in this way scores can be calculated in software, or progression can be assessed eg if used in a pain score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Ordinal"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Interval.data.Heading1.Ordinal.value">
+         <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Ordinal.value"/>
+         <short value="Ordinal"/>
+         <definition value="Ordinal datatypes pair a number and text - in this way scores can be calculated in software, or progression can be assessed eg if used in a pain score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Ordinal.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Interval.data.Heading1.Boolean">
+         <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Boolean"/>
+         <short value="Boolean"/>
+         <definition value="Boolean datatype that allows for true or false answers."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Boolean"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Interval.data.Heading1.Boolean.value">
+         <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Boolean.value"/>
+         <short value="Boolean"/>
+         <definition value="Boolean datatype that allows for true or false answers."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Boolean.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Interval.data.Heading1.Boolean.null_flavour">
+         <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Boolean.null_flavour"/>
+         <short value="Boolean"/>
+         <definition value="Boolean datatype that allows for true or false answers."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Boolean.null_flavour"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Interval.data.Heading1.Any">
+         <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Any"/>
+         <short value="Any"/>
+         <definition value="The datatype for this 'any' element can be specified or constrained in a template or at run-time, but is not explicitly modelled in the archetype."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Any"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Interval.data.Heading1.Choice">
+         <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Choice"/>
+         <short value="Choice"/>
+         <definition value="Choice datatype allows for a number of types of element to be specified simultaneously and which can constrained or selected within a template or at run-time.  In this example, a text datatype set to Free text or Coded and another that is constrained to Terminology record data about the same data element."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Choice"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Interval.data.Heading1.Choice.value_DvQuantity">
+         <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Choice.value_DvQuantity"/>
+         <short value="Choice"/>
+         <definition value="Choice datatype allows for a number of types of element to be specified simultaneously and which can constrained or selected within a template or at run-time.  In this example, a text datatype set to Free text or Coded and another that is constrained to Terminology record data about the same data element."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Choice.value_DvQuantity"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Interval.data.Heading1.Choice.value_DV_CODED_TEXT">
+         <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Choice.value_DV_CODED_TEXT"/>
+         <short value="Choice"/>
+         <definition value="Choice datatype allows for a number of types of element to be specified simultaneously and which can constrained or selected within a template or at run-time.  In this example, a text datatype set to Free text or Coded and another that is constrained to Terminology record data about the same data element."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Choice.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Interval.data.Heading1.Multimedia">
+         <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Multimedia"/>
+         <short value="Multimedia"/>
+         <definition value="Multimedia datatypes allow for the recording of many types of multimedia files to be captured.  All available types have been explicitly selected in this example."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Multimedia"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Interval.data.Heading1.Multimedia.value">
+         <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Multimedia.value"/>
+         <short value="Multimedia"/>
+         <definition value="Multimedia datatypes allow for the recording of many types of multimedia files to be captured.  All available types have been explicitly selected in this example."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Multimedia.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Attachment"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Interval.data.Heading1.URI___resource_identifier">
+         <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.URI___resource_identifier"/>
+         <short value="URI - resource identifier"/>
+         <definition value="URI datatypes allow for recording of relationships from this data to data recorded elsewhere.  These links can be within the same EHR, or external eg to a  URL."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.URI___resource_identifier"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Interval.data.Heading1.URI___resource_identifier.value">
+         <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.URI___resource_identifier.value"/>
+         <short value="URI - resource identifier"/>
+         <definition value="URI datatypes allow for recording of relationships from this data to data recorded elsewhere.  These links can be within the same EHR, or external eg to a  URL."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.URI___resource_identifier.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="string"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Interval.data.Heading1.Identifier">
+         <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Identifier"/>
+         <short value="Identifier"/>
+         <definition value="Identifier datatypes enable recording of formal data identifiers."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Identifier"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Interval.data.Heading1.Identifier.value">
+         <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Identifier.value"/>
+         <short value="Identifier"/>
+         <definition value="Identifier datatypes enable recording of formal data identifiers."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Interval.data.Heading1.Identifier.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Interval.data.Heading_2">
+         <path value="Demonstration.Event_Series.Named_Interval.data.Heading_2"/>
+         <short value="Heading 2"/>
+         <definition value="This is a symbol for a cluster which can have other elements 'nested' within it."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Interval.data.Heading_2"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Interval.data.Heading_2.Slot_To_Contain_Other_Cluster_Archetypes">
+         <path value="Demonstration.Event_Series.Named_Interval.data.Heading_2.Slot_To_Contain_Other_Cluster_Archetypes"/>
+         <short value="Slot To Contain Other Cluster Archetypes"/>
+         <definition value="List of CLUSTER archetypes allowed to be included or excluded within this OBSERVATION archetype."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Interval.data.Heading_2.Slot_To_Contain_Other_Cluster_Archetypes"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Interval.data.Heading_2.Slot_To_Contain_Other_Element_Archetypes">
+         <path value="Demonstration.Event_Series.Named_Interval.data.Heading_2.Slot_To_Contain_Other_Element_Archetypes"/>
+         <short value="Slot To Contain Other Element Archetypes"/>
+         <definition value="List of ELEMENT archetypes allowed to be included or excluded within this OBSERVATION archetype."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Interval.data.Heading_2.Slot_To_Contain_Other_Element_Archetypes"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Interval.state">
+         <path value="Demonstration.Event_Series.Named_Interval.state"/>
+         <definition value="ITEM_TREE"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Interval.state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Named_Interval.state.State___Definition">
+         <path value="Demonstration.Event_Series.Named_Interval.state.State___Definition"/>
+         <short value="State - Definition"/>
+         <definition value="All archetypes of the OBSERVATION class can  contain a STATE model which contains information about the subject of data at the time the information was collected, and this information is required for safe clinical interpretation of the core information. An example is the position of the patient at the time of measuring a blood pressure.  Datatypes are identical to those explained in the Data model, above."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Named_Interval.state.State___Definition"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.events_Named_Interval.math_function">
+         <path value="Demonstration.Event_Series.events_Named_Interval.math_function"/>
+         <short value="Named Interval"/>
+         <definition value="An event that is both named and constrained as an Interval event records the data elements in relation to a period of time eg Weight Loss over time.  The interval can be fixed or left unspecified.  In addition there are mathematical functions that can be specified to capture concepts such as change, decrease, increase, maximum, minimum, mean etc."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.events_Named_Interval.math_function"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Offset_Point_In_Time">
+         <path value="Demonstration.Event_Series.Offset_Point_In_Time"/>
+         <short value="Offset Point In Time"/>
+         <definition value="Offset Point in time records data at a point in time with a fixed offset of 5 minutes from another specified event eg recording a 2 minute Apgar reading at 2 minutes offset from Birth."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Offset_Point_In_Time"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Offset_Point_In_Time.data">
+         <path value="Demonstration.Event_Series.Offset_Point_In_Time.data"/>
+         <definition value="ITEM_TREE"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Offset_Point_In_Time.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Offset_Point_In_Time.data.Data___Definition">
+         <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Data___Definition"/>
+         <short value="Data - Definition"/>
+         <definition value="All archetypes of the OBSERVATION class contain a DATA model  which contains the core information e.g. the systolic and diastolic pressures when measuring a blood pressure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Data___Definition"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1">
+         <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1"/>
+         <short value="Heading1"/>
+         <definition value="This is a symbol for a cluster which can have other elements 'nested' within it."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Free_Text_or_Coded">
+         <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Free_Text_or_Coded"/>
+         <short value="Free Text or Coded"/>
+         <definition value="Text data type in which free text can be entered or coding can be incorporated either in the template or at run time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Free_Text_or_Coded"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Free_Text_or_Coded.value">
+         <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Free_Text_or_Coded.value"/>
+         <short value="Free Text or Coded"/>
+         <definition value="Text data type in which free text can be entered or coding can be incorporated either in the template or at run time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Free_Text_or_Coded.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Text_That_Uses_Internal_Codes">
+         <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Text_That_Uses_Internal_Codes"/>
+         <short value="Text That Uses Internal Codes"/>
+         <definition value="Text data type which can use an internal vocabulary.  Each of these 'internal codes' can be bound to a terminology code."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Text_That_Uses_Internal_Codes"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Text_That_Uses_Internal_Codes.value">
+         <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Text_That_Uses_Internal_Codes.value"/>
+         <short value="Text That Uses Internal Codes"/>
+         <definition value="Text data type which can use an internal vocabulary.  Each of these 'internal codes' can be bound to a terminology code."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Text_That_Uses_Internal_Codes.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Text_That_is_Sourced_From_an_External_Terminology">
+         <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Text_That_is_Sourced_From_an_External_Terminology"/>
+         <short value="Text That is Sourced From an External Terminology"/>
+         <definition value="Text data type utilising codes derived from an external terminology source eg a SNOMED-CT, LOINC or ICD subset."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Text_That_is_Sourced_From_an_External_Terminology"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Text_That_is_Sourced_From_an_External_Terminology.value">
+         <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Text_That_is_Sourced_From_an_External_Terminology.value"/>
+         <short value="Text That is Sourced From an External Terminology"/>
+         <definition value="Text data type utilising codes derived from an external terminology source eg a SNOMED-CT, LOINC or ICD subset."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Text_That_is_Sourced_From_an_External_Terminology.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Quantity">
+         <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Quantity"/>
+         <short value="Quantity"/>
+         <definition value="A quantity data type used to record a measurement associated with its' appropriate units.  These are derived from ISO standards and the Reference model enables conversion between these units. The example shown here is length."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Quantity"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Quantity.value">
+         <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Quantity.value"/>
+         <short value="Quantity"/>
+         <definition value="A quantity data type used to record a measurement associated with its' appropriate units.  These are derived from ISO standards and the Reference model enables conversion between these units. The example shown here is length."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Quantity.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Interval_of_Quantity">
+         <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Interval_of_Quantity"/>
+         <short value="Interval of Quantity"/>
+         <definition value="Interval of quantity datatypes allow for the recording of a range of measurements in association with appropriate units eg 1-2cm (prescribed amount of cream for a rash)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Interval_of_Quantity"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Interval_of_Quantity.value">
+         <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Interval_of_Quantity.value"/>
+         <short value="Interval of Quantity"/>
+         <definition value="Interval of quantity datatypes allow for the recording of a range of measurements in association with appropriate units eg 1-2cm (prescribed amount of cream for a rash)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Interval_of_Quantity.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Count">
+         <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Count"/>
+         <short value="Count"/>
+         <definition value="Count data types are composed of an integer with no units eg for recording the number of children - in this example the minimum is set at 0 and the maximum not specified."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Count"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Count.value">
+         <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Count.value"/>
+         <short value="Count"/>
+         <definition value="Count data types are composed of an integer with no units eg for recording the number of children - in this example the minimum is set at 0 and the maximum not specified."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Count.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Interval_of_Integer">
+         <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Interval_of_Integer"/>
+         <short value="Interval of Integer"/>
+         <definition value="Interval of integer datatype allows for recording of a range of counts eg 1-2 tablets prescribed.  Maximum and minimum values can be set for the lower count and the upper count."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Interval_of_Integer"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Interval_of_Integer.value">
+         <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Interval_of_Integer.value"/>
+         <short value="Interval of Integer"/>
+         <definition value="Interval of integer datatype allows for recording of a range of counts eg 1-2 tablets prescribed.  Maximum and minimum values can be set for the lower count and the upper count."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Interval_of_Integer.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Proportion">
+         <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Proportion"/>
+         <short value="Proportion"/>
+         <definition value="Proportion datatypes allow for ratios, percent, fractions and proportions to be modelled."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Proportion"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Proportion.value">
+         <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Proportion.value"/>
+         <short value="Proportion"/>
+         <definition value="Proportion datatypes allow for ratios, percent, fractions and proportions to be modelled."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Proportion.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Ratio"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Date_Time">
+         <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Date_Time"/>
+         <short value="Date/Time"/>
+         <definition value="Date/Time datatype allows recording of a date and/or time, including partial dates such as year only or month and year only.  Allow all is the default - so all forms of date/time are permitted."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Date_Time"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Date_Time.value">
+         <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Date_Time.value"/>
+         <short value="Date/Time"/>
+         <definition value="Date/Time datatype allows recording of a date and/or time, including partial dates such as year only or month and year only.  Allow all is the default - so all forms of date/time are permitted."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Date_Time.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Interval_of_Date">
+         <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Interval_of_Date"/>
+         <short value="Interval of Date"/>
+         <definition value="Interval of integer datatype allows for recording of a range of dates eg between September 1, 2008 and September 8, 2008."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Interval_of_Date"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Interval_of_Date.value">
+         <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Interval_of_Date.value"/>
+         <short value="Interval of Date"/>
+         <definition value="Interval of integer datatype allows for recording of a range of dates eg between September 1, 2008 and September 8, 2008."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Interval_of_Date.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Duration">
+         <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Duration"/>
+         <short value="Duration"/>
+         <definition value="Duration datatype allows recording of the duration of clinical concepts.  'Allow all time units' is the default, although specific time units can be explicitly modelled.  Maximum and minum values can be set for each time unit."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Duration"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Duration.value">
+         <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Duration.value"/>
+         <short value="Duration"/>
+         <definition value="Duration datatype allows recording of the duration of clinical concepts.  'Allow all time units' is the default, although specific time units can be explicitly modelled.  Maximum and minum values can be set for each time unit."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Duration.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Ordinal">
+         <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Ordinal"/>
+         <short value="Ordinal"/>
+         <definition value="Ordinal datatypes pair a number and text - in this way scores can be calculated in software, or progression can be assessed eg if used in a pain score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Ordinal"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Ordinal.value">
+         <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Ordinal.value"/>
+         <short value="Ordinal"/>
+         <definition value="Ordinal datatypes pair a number and text - in this way scores can be calculated in software, or progression can be assessed eg if used in a pain score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Ordinal.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Boolean">
+         <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Boolean"/>
+         <short value="Boolean"/>
+         <definition value="Boolean datatype that allows for true or false answers."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Boolean"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Boolean.value">
+         <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Boolean.value"/>
+         <short value="Boolean"/>
+         <definition value="Boolean datatype that allows for true or false answers."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Boolean.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Boolean.null_flavour">
+         <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Boolean.null_flavour"/>
+         <short value="Boolean"/>
+         <definition value="Boolean datatype that allows for true or false answers."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Boolean.null_flavour"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Any">
+         <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Any"/>
+         <short value="Any"/>
+         <definition value="The datatype for this 'any' element can be specified or constrained in a template or at run-time, but is not explicitly modelled in the archetype."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Any"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Choice">
+         <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Choice"/>
+         <short value="Choice"/>
+         <definition value="Choice datatype allows for a number of types of element to be specified simultaneously and which can constrained or selected within a template or at run-time.  In this example, a text datatype set to Free text or Coded and another that is constrained to Terminology record data about the same data element."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Choice"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Choice.value_DvQuantity">
+         <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Choice.value_DvQuantity"/>
+         <short value="Choice"/>
+         <definition value="Choice datatype allows for a number of types of element to be specified simultaneously and which can constrained or selected within a template or at run-time.  In this example, a text datatype set to Free text or Coded and another that is constrained to Terminology record data about the same data element."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Choice.value_DvQuantity"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Choice.value_DV_CODED_TEXT">
+         <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Choice.value_DV_CODED_TEXT"/>
+         <short value="Choice"/>
+         <definition value="Choice datatype allows for a number of types of element to be specified simultaneously and which can constrained or selected within a template or at run-time.  In this example, a text datatype set to Free text or Coded and another that is constrained to Terminology record data about the same data element."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Choice.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Multimedia">
+         <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Multimedia"/>
+         <short value="Multimedia"/>
+         <definition value="Multimedia datatypes allow for the recording of many types of multimedia files to be captured.  All available types have been explicitly selected in this example."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Multimedia"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Multimedia.value">
+         <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Multimedia.value"/>
+         <short value="Multimedia"/>
+         <definition value="Multimedia datatypes allow for the recording of many types of multimedia files to be captured.  All available types have been explicitly selected in this example."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Multimedia.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Attachment"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.URI___resource_identifier">
+         <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.URI___resource_identifier"/>
+         <short value="URI - resource identifier"/>
+         <definition value="URI datatypes allow for recording of relationships from this data to data recorded elsewhere.  These links can be within the same EHR, or external eg to a  URL."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.URI___resource_identifier"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.URI___resource_identifier.value">
+         <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.URI___resource_identifier.value"/>
+         <short value="URI - resource identifier"/>
+         <definition value="URI datatypes allow for recording of relationships from this data to data recorded elsewhere.  These links can be within the same EHR, or external eg to a  URL."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.URI___resource_identifier.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="string"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Identifier">
+         <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Identifier"/>
+         <short value="Identifier"/>
+         <definition value="Identifier datatypes enable recording of formal data identifiers."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Identifier"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Identifier.value">
+         <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Identifier.value"/>
+         <short value="Identifier"/>
+         <definition value="Identifier datatypes enable recording of formal data identifiers."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading1.Identifier.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading_2">
+         <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading_2"/>
+         <short value="Heading 2"/>
+         <definition value="This is a symbol for a cluster which can have other elements 'nested' within it."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading_2"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading_2.Slot_To_Contain_Other_Cluster_Archetypes">
+         <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading_2.Slot_To_Contain_Other_Cluster_Archetypes"/>
+         <short value="Slot To Contain Other Cluster Archetypes"/>
+         <definition value="List of CLUSTER archetypes allowed to be included or excluded within this OBSERVATION archetype."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading_2.Slot_To_Contain_Other_Cluster_Archetypes"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading_2.Slot_To_Contain_Other_Element_Archetypes">
+         <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading_2.Slot_To_Contain_Other_Element_Archetypes"/>
+         <short value="Slot To Contain Other Element Archetypes"/>
+         <definition value="List of ELEMENT archetypes allowed to be included or excluded within this OBSERVATION archetype."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Demonstration.Event_Series.Offset_Point_In_Time.data.Heading_2.Slot_To_Contain_Other_Element_Archetypes"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.Offset_Point_In_Time.state">
+         <path value="Demonstration.Event_Series.Offset_Point_In_Time.state"/>
+         <definition value="ITEM_TREE"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Offset_Point_In_Time.state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Demonstration.Event_Series.Offset_Point_In_Time.state.State___Definition">
+         <path value="Demonstration.Event_Series.Offset_Point_In_Time.state.State___Definition"/>
+         <short value="State - Definition"/>
+         <definition value="All archetypes of the OBSERVATION class can  contain a STATE model which contains information about the subject of data at the time the information was collected, and this information is required for safe clinical interpretation of the core information. An example is the position of the patient at the time of measuring a blood pressure.  Datatypes are identical to those explained in the Data model, above."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.Offset_Point_In_Time.state.State___Definition"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Demonstration.Event_Series.events_Offset_Point_In_Time.offset">
+         <path value="Demonstration.Event_Series.events_Offset_Point_In_Time.offset"/>
+         <short value="Offset Point In Time"/>
+         <definition value="Offset Point in time records data at a point in time with a fixed offset of 5 minutes from another specified event eg recording a 2 minute Apgar reading at 2 minutes offset from Birth."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Demonstration.Event_Series.events_Offset_Point_In_Time.offset"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

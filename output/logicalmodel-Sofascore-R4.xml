@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Sofascore-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-sofascore-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.sofa_score.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Sofascore"/>
+   <title value="SOFA score"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="A scoring system to grade and follow the development of organ dysfunction in six vital organ systems. Previously known as \&#34;Sepsis related Organ Failure Assessment\&#34;."/>
+   <purpose value="To record the results for each component parameter and their total sum for the SOFA score."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="SOFA_score">
+         <path value="SOFA_score"/>
+         <short value="SOFA score"/>
+         <definition value="A scoring system to grade and follow the development of organ dysfunction in six vital organ systems. Previously known as \&#34;Sepsis related Organ Failure Assessment\&#34;."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="SOFA_score"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="SOFA_score.protocol">
+         <path value="SOFA_score.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SOFA_score.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="SOFA_score.protocol.Extension">
+         <path value="SOFA_score.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models or formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="SOFA_score.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="SOFA_score.Event_Series">
+         <path value="SOFA_score.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SOFA_score.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="SOFA_score.Event_Series.Any_event">
+         <path value="SOFA_score.Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="SOFA_score.Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="SOFA_score.Event_Series.Any_event.data">
+         <path value="SOFA_score.Event_Series.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SOFA_score.Event_Series.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="SOFA_score.Event_Series.Any_event.data.Respiration">
+         <path value="SOFA_score.Event_Series.Any_event.data.Respiration"/>
+         <short value="Respiration"/>
+         <definition value="The ratio between the partial pressure of oxygen (PaO₂) and the fraction of inspired oxygen (FiO₂) is an indicator for a possible dysfunction of the respiratory system."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SOFA_score.Event_Series.Any_event.data.Respiration"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="SOFA_score.Event_Series.Any_event.data.Respiration.value">
+         <path value="SOFA_score.Event_Series.Any_event.data.Respiration.value"/>
+         <short value="Respiration"/>
+         <definition value="The ratio between the partial pressure of oxygen (PaO₂) and the fraction of inspired oxygen (FiO₂) is an indicator for a possible dysfunction of the respiratory system."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SOFA_score.Event_Series.Any_event.data.Respiration.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="SOFA_score.Event_Series.Any_event.data.Cardiovascular_system">
+         <path value="SOFA_score.Event_Series.Any_event.data.Cardiovascular_system"/>
+         <short value="Cardiovascular system"/>
+         <definition value="The mean arterial pressure (MAP), or the need for vasopressors (VP), (dopamine (DA), adrenaline (A), noradrenaline (NA) or dobutamine) are indicators for a possible dysfunction of the cardiovascular system."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SOFA_score.Event_Series.Any_event.data.Cardiovascular_system"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="SOFA_score.Event_Series.Any_event.data.Cardiovascular_system.value">
+         <path value="SOFA_score.Event_Series.Any_event.data.Cardiovascular_system.value"/>
+         <short value="Cardiovascular system"/>
+         <definition value="The mean arterial pressure (MAP), or the need for vasopressors (VP), (dopamine (DA), adrenaline (A), noradrenaline (NA) or dobutamine) are indicators for a possible dysfunction of the cardiovascular system."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SOFA_score.Event_Series.Any_event.data.Cardiovascular_system.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="SOFA_score.Event_Series.Any_event.data.Central_nervous_system">
+         <path value="SOFA_score.Event_Series.Any_event.data.Central_nervous_system"/>
+         <short value="Central nervous system"/>
+         <definition value="The Glasgow Coma Scale (GCS) is an indicator for a possible dysfunction of the central nervous system."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SOFA_score.Event_Series.Any_event.data.Central_nervous_system"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="SOFA_score.Event_Series.Any_event.data.Central_nervous_system.value">
+         <path value="SOFA_score.Event_Series.Any_event.data.Central_nervous_system.value"/>
+         <short value="Central nervous system"/>
+         <definition value="The Glasgow Coma Scale (GCS) is an indicator for a possible dysfunction of the central nervous system."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SOFA_score.Event_Series.Any_event.data.Central_nervous_system.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="SOFA_score.Event_Series.Any_event.data.Renal_function">
+         <path value="SOFA_score.Event_Series.Any_event.data.Renal_function"/>
+         <short value="Renal function"/>
+         <definition value="Creatinine concentration and 24 h urine output (UOP) are indicators for a possible dysfunction of the central nervous system."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SOFA_score.Event_Series.Any_event.data.Renal_function"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="SOFA_score.Event_Series.Any_event.data.Renal_function.value">
+         <path value="SOFA_score.Event_Series.Any_event.data.Renal_function.value"/>
+         <short value="Renal function"/>
+         <definition value="Creatinine concentration and 24 h urine output (UOP) are indicators for a possible dysfunction of the central nervous system."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SOFA_score.Event_Series.Any_event.data.Renal_function.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="SOFA_score.Event_Series.Any_event.data.Liver_function">
+         <path value="SOFA_score.Event_Series.Any_event.data.Liver_function"/>
+         <short value="Liver function"/>
+         <definition value="Bilirubin concentration is an indicator for a possible dysfunction of the central nervous system."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SOFA_score.Event_Series.Any_event.data.Liver_function"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="SOFA_score.Event_Series.Any_event.data.Liver_function.value">
+         <path value="SOFA_score.Event_Series.Any_event.data.Liver_function.value"/>
+         <short value="Liver function"/>
+         <definition value="Bilirubin concentration is an indicator for a possible dysfunction of the central nervous system."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SOFA_score.Event_Series.Any_event.data.Liver_function.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="SOFA_score.Event_Series.Any_event.data.Blood_clotting">
+         <path value="SOFA_score.Event_Series.Any_event.data.Blood_clotting"/>
+         <short value="Blood clotting"/>
+         <definition value="Platelets concentration is an indicator for a possible dysfunction of the blood clotting system."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SOFA_score.Event_Series.Any_event.data.Blood_clotting"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="SOFA_score.Event_Series.Any_event.data.Blood_clotting.value">
+         <path value="SOFA_score.Event_Series.Any_event.data.Blood_clotting.value"/>
+         <short value="Blood clotting"/>
+         <definition value="Platelets concentration is an indicator for a possible dysfunction of the blood clotting system."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SOFA_score.Event_Series.Any_event.data.Blood_clotting.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="SOFA_score.Event_Series.Any_event.data.Total_score">
+         <path value="SOFA_score.Event_Series.Any_event.data.Total_score"/>
+         <short value="Total score"/>
+         <definition value="The total sum of each component parameter for the SOFA score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SOFA_score.Event_Series.Any_event.data.Total_score"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="SOFA_score.Event_Series.Any_event.data.Total_score.value">
+         <path value="SOFA_score.Event_Series.Any_event.data.Total_score.value"/>
+         <short value="Total score"/>
+         <definition value="The total sum of each component parameter for the SOFA score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="SOFA_score.Event_Series.Any_event.data.Total_score.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

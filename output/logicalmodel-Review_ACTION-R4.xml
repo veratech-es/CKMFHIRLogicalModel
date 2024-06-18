@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Review_ACTION-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-review_ACTION-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-ACTION.review.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Review_ACTION"/>
+   <title value="Review"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Clinical activity regarding the performance of a formal clinical review of a subject's clinical situation, a specific aspect of their clinical care or a specified part of the health record."/>
+   <purpose value="To record details of clinical activity regarding the performance of a formal clinical review of a subject's clinical situation, a specific aspect of their clinical care or a specified part of the health record."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Review">
+         <path value="Review"/>
+         <short value="Review"/>
+         <definition value="Clinical activity regarding the performance of a formal clinical review of a subject's clinical situation, a specific aspect of their clinical care or a specified part of the health record."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Review"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Review.protocol">
+         <path value="Review.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Review.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Review.protocol.Start_date_time">
+         <path value="Review.protocol.Start_date_time"/>
+         <short value="Start date/time"/>
+         <definition value="The start date and/or time for the Review activity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Review.protocol.Start_date_time"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Review.protocol.Start_date_time.value">
+         <path value="Review.protocol.Start_date_time.value"/>
+         <short value="Start date/time"/>
+         <definition value="The start date and/or time for the Review activity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Review.protocol.Start_date_time.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Review.protocol.Extension">
+         <path value="Review.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Review.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Review.description">
+         <path value="Review.description"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Review.description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Review.description.Review_activity">
+         <path value="Review.description.Review_activity"/>
+         <short value="Review activity"/>
+         <definition value="Identification of the item or activity that is being reviewed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Review.description.Review_activity"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Review.description.Review_activity.value">
+         <path value="Review.description.Review_activity.value"/>
+         <short value="Review activity"/>
+         <definition value="Identification of the item or activity that is being reviewed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Review.description.Review_activity.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Review.description.Description">
+         <path value="Review.description.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description of the Review Activity relevant for the care pathway step."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Review.description.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Review.description.Description.value">
+         <path value="Review.description.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description of the Review Activity relevant for the care pathway step."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Review.description.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Review.description.Reason">
+         <path value="Review.description.Reason"/>
+         <short value="Reason"/>
+         <definition value="Reason that the care pathway step for the identified Review Activity was carried out."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Review.description.Reason"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Review.description.Reason.value">
+         <path value="Review.description.Reason.value"/>
+         <short value="Reason"/>
+         <definition value="Reason that the care pathway step for the identified Review Activity was carried out."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Review.description.Reason.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Review.Review_planned">
+         <path value="Review.Review_planned"/>
+         <short value="Review planned"/>
+         <definition value="The review activity is planned."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Review.Review_planned"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Review.ism_transition_Review_planned.current_state">
+         <path value="Review.ism_transition_Review_planned.current_state"/>
+         <short value="Review planned"/>
+         <definition value="The review activity is planned."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Review.ism_transition_Review_planned.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Review.ism_transition_Review_planned.careflow_step">
+         <path value="Review.ism_transition_Review_planned.careflow_step"/>
+         <short value="Review planned"/>
+         <definition value="The review activity is planned."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Review.ism_transition_Review_planned.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Review.Review_postponed">
+         <path value="Review.Review_postponed"/>
+         <short value="Review postponed"/>
+         <definition value="The review has been postponed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Review.Review_postponed"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Review.ism_transition_Review_postponed.current_state">
+         <path value="Review.ism_transition_Review_postponed.current_state"/>
+         <short value="Review postponed"/>
+         <definition value="The review has been postponed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Review.ism_transition_Review_postponed.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Review.ism_transition_Review_postponed.careflow_step">
+         <path value="Review.ism_transition_Review_postponed.careflow_step"/>
+         <short value="Review postponed"/>
+         <definition value="The review has been postponed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Review.ism_transition_Review_postponed.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Review.Review_cancelled">
+         <path value="Review.Review_cancelled"/>
+         <short value="Review cancelled"/>
+         <definition value="The review activity has been cancelled."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Review.Review_cancelled"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Review.ism_transition_Review_cancelled.current_state">
+         <path value="Review.ism_transition_Review_cancelled.current_state"/>
+         <short value="Review cancelled"/>
+         <definition value="The review activity has been cancelled."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Review.ism_transition_Review_cancelled.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Review.ism_transition_Review_cancelled.careflow_step">
+         <path value="Review.ism_transition_Review_cancelled.careflow_step"/>
+         <short value="Review cancelled"/>
+         <definition value="The review activity has been cancelled."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Review.ism_transition_Review_cancelled.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Review.Review_scheduled">
+         <path value="Review.Review_scheduled"/>
+         <short value="Review scheduled"/>
+         <definition value="The review activity has been scheduled."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Review.Review_scheduled"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Review.ism_transition_Review_scheduled.current_state">
+         <path value="Review.ism_transition_Review_scheduled.current_state"/>
+         <short value="Review scheduled"/>
+         <definition value="The review activity has been scheduled."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Review.ism_transition_Review_scheduled.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Review.ism_transition_Review_scheduled.careflow_step">
+         <path value="Review.ism_transition_Review_scheduled.careflow_step"/>
+         <short value="Review scheduled"/>
+         <definition value="The review activity has been scheduled."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Review.ism_transition_Review_scheduled.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Review.Review_rescheduled">
+         <path value="Review.Review_rescheduled"/>
+         <short value="Review rescheduled"/>
+         <definition value="The review activity has been rescheduled."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Review.Review_rescheduled"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Review.ism_transition_Review_rescheduled.current_state">
+         <path value="Review.ism_transition_Review_rescheduled.current_state"/>
+         <short value="Review rescheduled"/>
+         <definition value="The review activity has been rescheduled."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Review.ism_transition_Review_rescheduled.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Review.ism_transition_Review_rescheduled.careflow_step">
+         <path value="Review.ism_transition_Review_rescheduled.careflow_step"/>
+         <short value="Review rescheduled"/>
+         <definition value="The review activity has been rescheduled."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Review.ism_transition_Review_rescheduled.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Review.Review_performed">
+         <path value="Review.Review_performed"/>
+         <short value="Review performed"/>
+         <definition value="The review activity has been performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Review.Review_performed"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Review.ism_transition_Review_performed.current_state">
+         <path value="Review.ism_transition_Review_performed.current_state"/>
+         <short value="Review performed"/>
+         <definition value="The review activity has been performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Review.ism_transition_Review_performed.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Review.ism_transition_Review_performed.careflow_step">
+         <path value="Review.ism_transition_Review_performed.careflow_step"/>
+         <short value="Review performed"/>
+         <definition value="The review activity has been performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Review.ism_transition_Review_performed.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Review.Review_suspended">
+         <path value="Review.Review_suspended"/>
+         <short value="Review suspended"/>
+         <definition value="The review activity has been suspended."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Review.Review_suspended"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Review.ism_transition_Review_suspended.current_state">
+         <path value="Review.ism_transition_Review_suspended.current_state"/>
+         <short value="Review suspended"/>
+         <definition value="The review activity has been suspended."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Review.ism_transition_Review_suspended.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Review.ism_transition_Review_suspended.careflow_step">
+         <path value="Review.ism_transition_Review_suspended.careflow_step"/>
+         <short value="Review suspended"/>
+         <definition value="The review activity has been suspended."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Review.ism_transition_Review_suspended.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Review.Review_aborted">
+         <path value="Review.Review_aborted"/>
+         <short value="Review aborted"/>
+         <definition value="The review activity has been aborted."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Review.Review_aborted"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Review.ism_transition_Review_aborted.current_state">
+         <path value="Review.ism_transition_Review_aborted.current_state"/>
+         <short value="Review aborted"/>
+         <definition value="The review activity has been aborted."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Review.ism_transition_Review_aborted.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Review.ism_transition_Review_aborted.careflow_step">
+         <path value="Review.ism_transition_Review_aborted.careflow_step"/>
+         <short value="Review aborted"/>
+         <definition value="The review activity has been aborted."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Review.ism_transition_Review_aborted.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Review.Review_completed">
+         <path value="Review.Review_completed"/>
+         <short value="Review completed"/>
+         <definition value="The review activity has been completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Review.Review_completed"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Review.ism_transition_Review_completed.current_state">
+         <path value="Review.ism_transition_Review_completed.current_state"/>
+         <short value="Review completed"/>
+         <definition value="The review activity has been completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Review.ism_transition_Review_completed.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Review.ism_transition_Review_completed.careflow_step">
+         <path value="Review.ism_transition_Review_completed.careflow_step"/>
+         <short value="Review completed"/>
+         <definition value="The review activity has been completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Review.ism_transition_Review_completed.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

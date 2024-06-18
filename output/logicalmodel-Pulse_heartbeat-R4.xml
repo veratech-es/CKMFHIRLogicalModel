@@ -1,0 +1,1004 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Pulse_heartbeat-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-pulse_heartbeat-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.pulse.v2"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Pulse_heartbeat"/>
+   <title value="Pulse/Heart beat"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="The rate and associated attributes for a pulse or heart beat."/>
+   <purpose value="To record details about the rate and associated attributes for a pulse or heart beat."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Pulse_Heart_beat">
+         <path value="Pulse_Heart_beat"/>
+         <short value="Pulse/Heart beat"/>
+         <definition value="The rate and associated attributes for a pulse or heart beat."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_Heart_beat.List">
+         <path value="Pulse_Heart_beat.List"/>
+         <short value="List"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat.List"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_Heart_beat.List.Method">
+         <path value="Pulse_Heart_beat.List.Method"/>
+         <short value="Method"/>
+         <definition value="Method used to observe the pulse or heart beat."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat.List.Method"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pulse_Heart_beat.List.Method.value">
+         <path value="Pulse_Heart_beat.List.Method.value"/>
+         <short value="Method"/>
+         <definition value="Method used to observe the pulse or heart beat."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat.List.Method.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_Heart_beat.List.Body_site">
+         <path value="Pulse_Heart_beat.List.Body_site"/>
+         <short value="Body site"/>
+         <definition value="Body site where the pulse or heart beat were observed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat.List.Body_site"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pulse_Heart_beat.List.Body_site.value_DV_CODED_TEXT">
+         <path value="Pulse_Heart_beat.List.Body_site.value_DV_CODED_TEXT"/>
+         <short value="Body site"/>
+         <definition value="Body site where the pulse or heart beat were observed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat.List.Body_site.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_Heart_beat.List.Body_site.value_DV_TEXT">
+         <path value="Pulse_Heart_beat.List.Body_site.value_DV_TEXT"/>
+         <short value="Body site"/>
+         <definition value="Body site where the pulse or heart beat were observed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat.List.Body_site.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_Heart_beat.List.Device">
+         <path value="Pulse_Heart_beat.List.Device"/>
+         <short value="Device"/>
+         <definition value="Details about the device used to measure the pulse rate or heart rate."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat.List.Device"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_Heart_beat.List.Extension">
+         <path value="Pulse_Heart_beat.List.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pulse_Heart_beat.List.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_Heart_beat.history">
+         <path value="Pulse_Heart_beat.history"/>
+         <short value="history"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat.history"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_Heart_beat.history.Any_event">
+         <path value="Pulse_Heart_beat.history.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_Heart_beat.history.Any_event.structure">
+         <path value="Pulse_Heart_beat.history.Any_event.structure"/>
+         <short value="structure"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.Any_event.structure"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_Heart_beat.history.Any_event.structure.Presence">
+         <path value="Pulse_Heart_beat.history.Any_event.structure.Presence"/>
+         <short value="Presence"/>
+         <definition value="Presence of a pulse or heart beat."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.Any_event.structure.Presence"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pulse_Heart_beat.history.Any_event.structure.Presence.value">
+         <path value="Pulse_Heart_beat.history.Any_event.structure.Presence.value"/>
+         <short value="Presence"/>
+         <definition value="Presence of a pulse or heart beat."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.Any_event.structure.Presence.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_Heart_beat.history.Any_event.structure.Rate">
+         <path value="Pulse_Heart_beat.history.Any_event.structure.Rate"/>
+         <short value="Rate"/>
+         <definition value="The rate of the pulse or heart beat, measured in beats per minute."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.Any_event.structure.Rate"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pulse_Heart_beat.history.Any_event.structure.Rate.value">
+         <path value="Pulse_Heart_beat.history.Any_event.structure.Rate.value"/>
+         <short value="Rate"/>
+         <definition value="The rate of the pulse or heart beat, measured in beats per minute."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.Any_event.structure.Rate.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_Heart_beat.history.Any_event.structure.Regularity">
+         <path value="Pulse_Heart_beat.history.Any_event.structure.Regularity"/>
+         <short value="Regularity"/>
+         <definition value="Regularity of the pulse or heart beat."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.Any_event.structure.Regularity"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pulse_Heart_beat.history.Any_event.structure.Regularity.value">
+         <path value="Pulse_Heart_beat.history.Any_event.structure.Regularity.value"/>
+         <short value="Regularity"/>
+         <definition value="Regularity of the pulse or heart beat."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.Any_event.structure.Regularity.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_Heart_beat.history.Any_event.structure.Irregular_type">
+         <path value="Pulse_Heart_beat.history.Any_event.structure.Irregular_type"/>
+         <short value="Irregular type"/>
+         <definition value="More specific pattern of an irregular pulse or heart beat."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.Any_event.structure.Irregular_type"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pulse_Heart_beat.history.Any_event.structure.Irregular_type.value">
+         <path value="Pulse_Heart_beat.history.Any_event.structure.Irregular_type.value"/>
+         <short value="Irregular type"/>
+         <definition value="More specific pattern of an irregular pulse or heart beat."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.Any_event.structure.Irregular_type.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_Heart_beat.history.Any_event.structure.Character">
+         <path value="Pulse_Heart_beat.history.Any_event.structure.Character"/>
+         <short value="Character"/>
+         <definition value="Description of the character of the pulse or heart beat."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.Any_event.structure.Character"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Pulse_Heart_beat.history.Any_event.structure.Character.value">
+         <path value="Pulse_Heart_beat.history.Any_event.structure.Character.value"/>
+         <short value="Character"/>
+         <definition value="Description of the character of the pulse or heart beat."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.Any_event.structure.Character.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_Heart_beat.history.Any_event.structure.Clinical_description">
+         <path value="Pulse_Heart_beat.history.Any_event.structure.Clinical_description"/>
+         <short value="Clinical description"/>
+         <definition value="Narrative description about the pulse or heart beat."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.Any_event.structure.Clinical_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pulse_Heart_beat.history.Any_event.structure.Clinical_description.value">
+         <path value="Pulse_Heart_beat.history.Any_event.structure.Clinical_description.value"/>
+         <short value="Clinical description"/>
+         <definition value="Narrative description about the pulse or heart beat."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.Any_event.structure.Clinical_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_Heart_beat.history.Any_event.structure.Clinical_interpretation">
+         <path value="Pulse_Heart_beat.history.Any_event.structure.Clinical_interpretation"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Single word, phrase or brief description that represents the clinical meaning and significance of the pulse or heart beat findings, including the rhythm."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.Any_event.structure.Clinical_interpretation"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Pulse_Heart_beat.history.Any_event.structure.Clinical_interpretation.name">
+         <path value="Pulse_Heart_beat.history.Any_event.structure.Clinical_interpretation.name"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Single word, phrase or brief description that represents the clinical meaning and significance of the pulse or heart beat findings, including the rhythm."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.Any_event.structure.Clinical_interpretation.name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_Heart_beat.history.Any_event.structure.Clinical_interpretation.value">
+         <path value="Pulse_Heart_beat.history.Any_event.structure.Clinical_interpretation.value"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Single word, phrase or brief description that represents the clinical meaning and significance of the pulse or heart beat findings, including the rhythm."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.Any_event.structure.Clinical_interpretation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_Heart_beat.history.Any_event.structure.Comment">
+         <path value="Pulse_Heart_beat.history.Any_event.structure.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the pulse or heart beat findings not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.Any_event.structure.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pulse_Heart_beat.history.Any_event.structure.Comment.value">
+         <path value="Pulse_Heart_beat.history.Any_event.structure.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the pulse or heart beat findings not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.Any_event.structure.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_Heart_beat.history.Any_event.List">
+         <path value="Pulse_Heart_beat.history.Any_event.List"/>
+         <short value="List"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.Any_event.List"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_Heart_beat.history.Any_event.List.Position">
+         <path value="Pulse_Heart_beat.history.Any_event.List.Position"/>
+         <short value="Position"/>
+         <definition value="The body position of the subject during the observation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.Any_event.List.Position"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pulse_Heart_beat.history.Any_event.List.Position.value">
+         <path value="Pulse_Heart_beat.history.Any_event.List.Position.value"/>
+         <short value="Position"/>
+         <definition value="The body position of the subject during the observation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.Any_event.List.Position.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_Heart_beat.history.Any_event.List.Confounding_factors">
+         <path value="Pulse_Heart_beat.history.Any_event.List.Confounding_factors"/>
+         <short value="Confounding factors"/>
+         <definition value="Narrative description about any incidental factors that may affect interpretation of the physical findings."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.Any_event.List.Confounding_factors"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Pulse_Heart_beat.history.Any_event.List.Confounding_factors.value">
+         <path value="Pulse_Heart_beat.history.Any_event.List.Confounding_factors.value"/>
+         <short value="Confounding factors"/>
+         <definition value="Narrative description about any incidental factors that may affect interpretation of the physical findings."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.Any_event.List.Confounding_factors.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_Heart_beat.history.Any_event.List.Exertion">
+         <path value="Pulse_Heart_beat.history.Any_event.List.Exertion"/>
+         <short value="Exertion"/>
+         <definition value="Details about physical exertion being undertaken during the examination."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.Any_event.List.Exertion"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_Heart_beat.history.Maximum">
+         <path value="Pulse_Heart_beat.history.Maximum"/>
+         <short value="Maximum"/>
+         <definition value="Maximum pulse rate or heart rate observed during a period of exertion."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.Maximum"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_Heart_beat.history.Maximum.data">
+         <path value="Pulse_Heart_beat.history.Maximum.data"/>
+         <definition value="ITEM_TREE"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.Maximum.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_Heart_beat.history.Maximum.data.Presence">
+         <path value="Pulse_Heart_beat.history.Maximum.data.Presence"/>
+         <short value="Presence"/>
+         <definition value="Presence of a pulse or heart beat."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.Maximum.data.Presence"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pulse_Heart_beat.history.Maximum.data.Presence.value">
+         <path value="Pulse_Heart_beat.history.Maximum.data.Presence.value"/>
+         <short value="Presence"/>
+         <definition value="Presence of a pulse or heart beat."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.Maximum.data.Presence.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_Heart_beat.history.Maximum.data.Rate">
+         <path value="Pulse_Heart_beat.history.Maximum.data.Rate"/>
+         <short value="Rate"/>
+         <definition value="The rate of the pulse or heart beat, measured in beats per minute."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.Maximum.data.Rate"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pulse_Heart_beat.history.Maximum.data.Rate.value">
+         <path value="Pulse_Heart_beat.history.Maximum.data.Rate.value"/>
+         <short value="Rate"/>
+         <definition value="The rate of the pulse or heart beat, measured in beats per minute."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.Maximum.data.Rate.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_Heart_beat.history.Maximum.data.Regularity">
+         <path value="Pulse_Heart_beat.history.Maximum.data.Regularity"/>
+         <short value="Regularity"/>
+         <definition value="Regularity of the pulse or heart beat."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.Maximum.data.Regularity"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pulse_Heart_beat.history.Maximum.data.Regularity.value">
+         <path value="Pulse_Heart_beat.history.Maximum.data.Regularity.value"/>
+         <short value="Regularity"/>
+         <definition value="Regularity of the pulse or heart beat."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.Maximum.data.Regularity.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_Heart_beat.history.Maximum.data.Irregular_type">
+         <path value="Pulse_Heart_beat.history.Maximum.data.Irregular_type"/>
+         <short value="Irregular type"/>
+         <definition value="More specific pattern of an irregular pulse or heart beat."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.Maximum.data.Irregular_type"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pulse_Heart_beat.history.Maximum.data.Irregular_type.value">
+         <path value="Pulse_Heart_beat.history.Maximum.data.Irregular_type.value"/>
+         <short value="Irregular type"/>
+         <definition value="More specific pattern of an irregular pulse or heart beat."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.Maximum.data.Irregular_type.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_Heart_beat.history.Maximum.data.Character">
+         <path value="Pulse_Heart_beat.history.Maximum.data.Character"/>
+         <short value="Character"/>
+         <definition value="Description of the character of the pulse or heart beat."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.Maximum.data.Character"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Pulse_Heart_beat.history.Maximum.data.Character.value">
+         <path value="Pulse_Heart_beat.history.Maximum.data.Character.value"/>
+         <short value="Character"/>
+         <definition value="Description of the character of the pulse or heart beat."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.Maximum.data.Character.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_Heart_beat.history.Maximum.data.Clinical_description">
+         <path value="Pulse_Heart_beat.history.Maximum.data.Clinical_description"/>
+         <short value="Clinical description"/>
+         <definition value="Narrative description about the pulse or heart beat."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.Maximum.data.Clinical_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pulse_Heart_beat.history.Maximum.data.Clinical_description.value">
+         <path value="Pulse_Heart_beat.history.Maximum.data.Clinical_description.value"/>
+         <short value="Clinical description"/>
+         <definition value="Narrative description about the pulse or heart beat."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.Maximum.data.Clinical_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_Heart_beat.history.Maximum.data.Clinical_interpretation">
+         <path value="Pulse_Heart_beat.history.Maximum.data.Clinical_interpretation"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Single word, phrase or brief description that represents the clinical meaning and significance of the pulse or heart beat findings, including the rhythm."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.Maximum.data.Clinical_interpretation"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Pulse_Heart_beat.history.Maximum.data.Clinical_interpretation.name">
+         <path value="Pulse_Heart_beat.history.Maximum.data.Clinical_interpretation.name"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Single word, phrase or brief description that represents the clinical meaning and significance of the pulse or heart beat findings, including the rhythm."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.Maximum.data.Clinical_interpretation.name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_Heart_beat.history.Maximum.data.Clinical_interpretation.value">
+         <path value="Pulse_Heart_beat.history.Maximum.data.Clinical_interpretation.value"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Single word, phrase or brief description that represents the clinical meaning and significance of the pulse or heart beat findings, including the rhythm."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.Maximum.data.Clinical_interpretation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_Heart_beat.history.Maximum.data.Comment">
+         <path value="Pulse_Heart_beat.history.Maximum.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the pulse or heart beat findings not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.Maximum.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pulse_Heart_beat.history.Maximum.data.Comment.value">
+         <path value="Pulse_Heart_beat.history.Maximum.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the pulse or heart beat findings not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.Maximum.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_Heart_beat.history.Maximum.state">
+         <path value="Pulse_Heart_beat.history.Maximum.state"/>
+         <definition value="ITEM_TREE"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.Maximum.state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_Heart_beat.history.Maximum.state.Position">
+         <path value="Pulse_Heart_beat.history.Maximum.state.Position"/>
+         <short value="Position"/>
+         <definition value="The body position of the subject during the observation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.Maximum.state.Position"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pulse_Heart_beat.history.Maximum.state.Position.value">
+         <path value="Pulse_Heart_beat.history.Maximum.state.Position.value"/>
+         <short value="Position"/>
+         <definition value="The body position of the subject during the observation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.Maximum.state.Position.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_Heart_beat.history.Maximum.state.Confounding_factors">
+         <path value="Pulse_Heart_beat.history.Maximum.state.Confounding_factors"/>
+         <short value="Confounding factors"/>
+         <definition value="Narrative description about any incidental factors that may affect interpretation of the physical findings."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.Maximum.state.Confounding_factors"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Pulse_Heart_beat.history.Maximum.state.Confounding_factors.value">
+         <path value="Pulse_Heart_beat.history.Maximum.state.Confounding_factors.value"/>
+         <short value="Confounding factors"/>
+         <definition value="Narrative description about any incidental factors that may affect interpretation of the physical findings."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.Maximum.state.Confounding_factors.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_Heart_beat.history.Maximum.state.Exertion">
+         <path value="Pulse_Heart_beat.history.Maximum.state.Exertion"/>
+         <short value="Exertion"/>
+         <definition value="Details about physical exertion being undertaken during the examination."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.Maximum.state.Exertion"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pulse_Heart_beat.history.events_Maximum.math_function">
+         <path value="Pulse_Heart_beat.history.events_Maximum.math_function"/>
+         <short value="Maximum"/>
+         <definition value="Maximum pulse rate or heart rate observed during a period of exertion."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pulse_Heart_beat.history.events_Maximum.math_function"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

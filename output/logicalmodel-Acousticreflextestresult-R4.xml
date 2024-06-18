@@ -1,0 +1,1042 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Acousticreflextestresult-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-acousticreflextestresult-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.acoustic_reflex_result.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Acousticreflextestresult"/>
+   <title value="Acoustic reflex test result"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Record of measurements from an acoustic reflex test, and their clinical interpretation."/>
+   <purpose value="To record measurements from an acoustic reflex test, and their interpretation by a clnician."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Acoustic_reflex_test_result">
+         <path value="Acoustic_reflex_test_result"/>
+         <short value="Acoustic reflex test result"/>
+         <definition value="Record of measurements from an acoustic reflex test, and their clinical interpretation."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Acoustic_reflex_test_result.protocol">
+         <path value="Acoustic_reflex_test_result.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Acoustic_reflex_test_result.protocol.Calibration_Reference_dB">
+         <path value="Acoustic_reflex_test_result.protocol.Calibration_Reference_dB"/>
+         <short value="Calibration Reference dB"/>
+         <definition value="Scale used for acoustic calibration of the test signal."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.protocol.Calibration_Reference_dB"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Acoustic_reflex_test_result.protocol.Calibration_Reference_dB.value">
+         <path value="Acoustic_reflex_test_result.protocol.Calibration_Reference_dB.value"/>
+         <short value="Calibration Reference dB"/>
+         <definition value="Scale used for acoustic calibration of the test signal."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.protocol.Calibration_Reference_dB.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Acoustic_reflex_test_result.protocol.Probe_Tone_Frequency">
+         <path value="Acoustic_reflex_test_result.protocol.Probe_Tone_Frequency"/>
+         <short value="Probe Tone Frequency"/>
+         <definition value="The frequency of the probe tone."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.protocol.Probe_Tone_Frequency"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Acoustic_reflex_test_result.protocol.Probe_Tone_Frequency.value">
+         <path value="Acoustic_reflex_test_result.protocol.Probe_Tone_Frequency.value"/>
+         <short value="Probe Tone Frequency"/>
+         <definition value="The frequency of the probe tone."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.protocol.Probe_Tone_Frequency.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Acoustic_reflex_test_result.protocol.Criteria_for_Screening_Assessment_Pass">
+         <path value="Acoustic_reflex_test_result.protocol.Criteria_for_Screening_Assessment_Pass"/>
+         <short value="Criteria for Screening Assessment Pass"/>
+         <definition value="The criteria by which the Screening Assessment is passed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.protocol.Criteria_for_Screening_Assessment_Pass"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Acoustic_reflex_test_result.protocol.Criteria_for_Screening_Assessment_Pass.Intensity">
+         <path value="Acoustic_reflex_test_result.protocol.Criteria_for_Screening_Assessment_Pass.Intensity"/>
+         <short value="Intensity"/>
+         <definition value="The loudness of the screening stimulus."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.protocol.Criteria_for_Screening_Assessment_Pass.Intensity"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Acoustic_reflex_test_result.protocol.Criteria_for_Screening_Assessment_Pass.Intensity.value">
+         <path value="Acoustic_reflex_test_result.protocol.Criteria_for_Screening_Assessment_Pass.Intensity.value"/>
+         <short value="Intensity"/>
+         <definition value="The loudness of the screening stimulus."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.protocol.Criteria_for_Screening_Assessment_Pass.Intensity.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Acoustic_reflex_test_result.protocol.Criteria_for_Screening_Assessment_Pass.Frequency">
+         <path value="Acoustic_reflex_test_result.protocol.Criteria_for_Screening_Assessment_Pass.Frequency"/>
+         <short value="Frequency"/>
+         <definition value="The frequency of the test signal."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.protocol.Criteria_for_Screening_Assessment_Pass.Frequency"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Acoustic_reflex_test_result.protocol.Criteria_for_Screening_Assessment_Pass.Frequency.value">
+         <path value="Acoustic_reflex_test_result.protocol.Criteria_for_Screening_Assessment_Pass.Frequency.value"/>
+         <short value="Frequency"/>
+         <definition value="The frequency of the test signal."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.protocol.Criteria_for_Screening_Assessment_Pass.Frequency.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Acoustic_reflex_test_result.protocol.Criteria_for_Screening_Assessment_Pass.Test_Signal_Type">
+         <path value="Acoustic_reflex_test_result.protocol.Criteria_for_Screening_Assessment_Pass.Test_Signal_Type"/>
+         <short value="Test Signal Type"/>
+         <definition value="The type of stimulation used to elicit a reflex."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.protocol.Criteria_for_Screening_Assessment_Pass.Test_Signal_Type"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Acoustic_reflex_test_result.protocol.Criteria_for_Screening_Assessment_Pass.Test_Signal_Type.value">
+         <path value="Acoustic_reflex_test_result.protocol.Criteria_for_Screening_Assessment_Pass.Test_Signal_Type.value"/>
+         <short value="Test Signal Type"/>
+         <definition value="The type of stimulation used to elicit a reflex."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.protocol.Criteria_for_Screening_Assessment_Pass.Test_Signal_Type.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Acoustic_reflex_test_result.protocol.Immittance_Machine">
+         <path value="Acoustic_reflex_test_result.protocol.Immittance_Machine"/>
+         <short value="Immittance Machine"/>
+         <definition value="Details of immittance machine used to conduct the test."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.protocol.Immittance_Machine"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Acoustic_reflex_test_result.protocol.Normal_Range_Definition">
+         <path value="Acoustic_reflex_test_result.protocol.Normal_Range_Definition"/>
+         <short value="Normal Range Definition"/>
+         <definition value="Definition of the 'Normal Range' value specified within the Intensity data element used for Clinical Interpretation of the Diagnostic Test."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.protocol.Normal_Range_Definition"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Acoustic_reflex_test_result.protocol.Normal_Range_Definition.value">
+         <path value="Acoustic_reflex_test_result.protocol.Normal_Range_Definition.value"/>
+         <short value="Normal Range Definition"/>
+         <definition value="Definition of the 'Normal Range' value specified within the Intensity data element used for Clinical Interpretation of the Diagnostic Test."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.protocol.Normal_Range_Definition.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Acoustic_reflex_test_result.protocol.Comment">
+         <path value="Acoustic_reflex_test_result.protocol.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the method of testing not captured in other fields."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.protocol.Comment"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Acoustic_reflex_test_result.protocol.Comment.value">
+         <path value="Acoustic_reflex_test_result.protocol.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the method of testing not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.protocol.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Acoustic_reflex_test_result.protocol.Extension">
+         <path value="Acoustic_reflex_test_result.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Acoustic_reflex_test_result.Event_Series">
+         <path value="Acoustic_reflex_test_result.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event">
+         <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event"/>
+         <short value="Any Point-in-time Event"/>
+         <definition value="Default, unspecified point in time event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data">
+         <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Test_Result_Name">
+         <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Test_Result_Name"/>
+         <short value="Test Result Name"/>
+         <definition value="Identification of the acoustic reflex test performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Test_Result_Name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Test_Result_Name.value">
+         <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Test_Result_Name.value"/>
+         <short value="Test Result Name"/>
+         <definition value="Identification of the acoustic reflex test performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Test_Result_Name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details">
+         <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details"/>
+         <short value="Result Details"/>
+         <definition value="The test measurements and interpretations which can be recorded per ear, and includes ipsilateral and contralateral testing."/>
+         <min value="0"/>
+         <max value="4"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details"/>
+            <min value="0"/>
+            <max value="4"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Test_Ear_Configuration">
+         <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Test_Ear_Configuration"/>
+         <short value="Test Ear Configuration"/>
+         <definition value="Identification of the ear to which the stimulus is presented and the ear where the probe is situated."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Test_Ear_Configuration"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Test_Ear_Configuration.value">
+         <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Test_Ear_Configuration.value"/>
+         <short value="Test Ear Configuration"/>
+         <definition value="Identification of the ear to which the stimulus is presented and the ear where the probe is situated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Test_Ear_Configuration.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test">
+         <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test"/>
+         <short value="Diagnostic Test"/>
+         <definition value="Reflex test that measures threshold levelss, reflex latency, reflex amplitude and reflex decay."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.Result">
+         <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.Result"/>
+         <short value="Result"/>
+         <definition value="The result of the test."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.Result"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.Result.Test_Signal">
+         <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.Result.Test_Signal"/>
+         <short value="Test Signal"/>
+         <definition value="Identification of the stimulation signal used for the test."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.Result.Test_Signal"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.Result.Test_Signal.value">
+         <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.Result.Test_Signal.value"/>
+         <short value="Test Signal"/>
+         <definition value="Identification of the stimulation signal used for the test."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.Result.Test_Signal.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.Result.Threshold_Level">
+         <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.Result.Threshold_Level"/>
+         <short value="Threshold Level"/>
+         <definition value="The lowest stimulation level at which a reflex could be measured by the probe."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.Result.Threshold_Level"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.Result.Threshold_Level.value">
+         <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.Result.Threshold_Level.value"/>
+         <short value="Threshold Level"/>
+         <definition value="The lowest stimulation level at which a reflex could be measured by the probe."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.Result.Threshold_Level.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.Result.Reflex_Latency">
+         <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.Result.Reflex_Latency"/>
+         <short value="Reflex Latency"/>
+         <definition value="Length of time from onset of the stimulation tone to the onset of the middle ear muscle reflex."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.Result.Reflex_Latency"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.Result.Reflex_Latency.value">
+         <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.Result.Reflex_Latency.value"/>
+         <short value="Reflex Latency"/>
+         <definition value="Length of time from onset of the stimulation tone to the onset of the middle ear muscle reflex."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.Result.Reflex_Latency.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.Result.Reflex_Decay">
+         <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.Result.Reflex_Decay"/>
+         <short value="Reflex Decay"/>
+         <definition value="Length of time that the reflex amplitude can be sustained."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.Result.Reflex_Decay"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.Result.Reflex_Decay.value">
+         <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.Result.Reflex_Decay.value"/>
+         <short value="Reflex Decay"/>
+         <definition value="Length of time that the reflex amplitude can be sustained."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.Result.Reflex_Decay.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.No_Diagnostic_Result">
+         <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.No_Diagnostic_Result"/>
+         <short value="No Diagnostic Result"/>
+         <definition value="No diagnostic test result is available for the test ear configuration."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.No_Diagnostic_Result"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.No_Diagnostic_Result.value">
+         <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.No_Diagnostic_Result.value"/>
+         <short value="No Diagnostic Result"/>
+         <definition value="No diagnostic test result is available for the test ear configuration."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.No_Diagnostic_Result.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.Reason_For_No_Test_Result">
+         <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.Reason_For_No_Test_Result"/>
+         <short value="Reason For No Test Result"/>
+         <definition value="Reason why no diagnostic test result is available for the test ear configuration."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.Reason_For_No_Test_Result"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.Reason_For_No_Test_Result.value">
+         <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.Reason_For_No_Test_Result.value"/>
+         <short value="Reason For No Test Result"/>
+         <definition value="Reason why no diagnostic test result is available for the test ear configuration."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.Reason_For_No_Test_Result.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.Clinical_Interpretation">
+         <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.Clinical_Interpretation"/>
+         <short value="Clinical Interpretation"/>
+         <definition value="Clinical interpretation of all diagnostic results for the specified test ear configuration."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.Clinical_Interpretation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.Clinical_Interpretation.Intensity">
+         <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.Clinical_Interpretation.Intensity"/>
+         <short value="Intensity"/>
+         <definition value="Clinical interpretation of reflex threshold during diagnostic testing, based on intensity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.Clinical_Interpretation.Intensity"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.Clinical_Interpretation.Intensity.value">
+         <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.Clinical_Interpretation.Intensity.value"/>
+         <short value="Intensity"/>
+         <definition value="Clinical interpretation of reflex threshold during diagnostic testing, based on intensity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.Clinical_Interpretation.Intensity.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.Clinical_Interpretation.Sensation_Level">
+         <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.Clinical_Interpretation.Sensation_Level"/>
+         <short value="Sensation Level"/>
+         <definition value="Clinical interpretation of reflex Threshold Level result based on sensation level."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.Clinical_Interpretation.Sensation_Level"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.Clinical_Interpretation.Sensation_Level.value">
+         <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.Clinical_Interpretation.Sensation_Level.value"/>
+         <short value="Sensation Level"/>
+         <definition value="Clinical interpretation of reflex Threshold Level result based on sensation level."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Diagnostic_Test.Clinical_Interpretation.Sensation_Level.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Screening_Result">
+         <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Screening_Result"/>
+         <short value="Screening Result"/>
+         <definition value="Reflex test that identifies the presence or absence of a reflex at a predetermined stimulation level."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Screening_Result"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Screening_Result.Result">
+         <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Screening_Result.Result"/>
+         <short value="Result"/>
+         <definition value="Result of the test."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Screening_Result.Result"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Screening_Result.Result.value">
+         <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Screening_Result.Result.value"/>
+         <short value="Result"/>
+         <definition value="Result of the test."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Screening_Result.Result.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Screening_Result.No_Screening_Result">
+         <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Screening_Result.No_Screening_Result"/>
+         <short value="No Screening Result"/>
+         <definition value="No screening test result is available for the test ear configuration."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Screening_Result.No_Screening_Result"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Screening_Result.No_Screening_Result.value">
+         <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Screening_Result.No_Screening_Result.value"/>
+         <short value="No Screening Result"/>
+         <definition value="No screening test result is available for the test ear configuration."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Screening_Result.No_Screening_Result.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Screening_Result.Reason_For_No_Test_Result">
+         <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Screening_Result.Reason_For_No_Test_Result"/>
+         <short value="Reason For No Test Result"/>
+         <definition value="Reason why no screening test result is available for the test ear configuration."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Screening_Result.Reason_For_No_Test_Result"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Screening_Result.Reason_For_No_Test_Result.value">
+         <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Screening_Result.Reason_For_No_Test_Result.value"/>
+         <short value="Reason For No Test Result"/>
+         <definition value="Reason why no screening test result is available for the test ear configuration."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Screening_Result.Reason_For_No_Test_Result.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Screening_Result.Clinical_Interpretation">
+         <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Screening_Result.Clinical_Interpretation"/>
+         <short value="Clinical Interpretation"/>
+         <definition value="Clinical interpretation of the screening test result."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Screening_Result.Clinical_Interpretation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Screening_Result.Clinical_Interpretation.value">
+         <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Screening_Result.Clinical_Interpretation.value"/>
+         <short value="Clinical Interpretation"/>
+         <definition value="Clinical interpretation of the screening test result."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Result_Details.Screening_Result.Clinical_Interpretation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Overall_Interpretation">
+         <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Overall_Interpretation"/>
+         <short value="Overall Interpretation"/>
+         <definition value="Overall clinical interpretation of all of the results."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Overall_Interpretation"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Overall_Interpretation.value">
+         <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Overall_Interpretation.value"/>
+         <short value="Overall Interpretation"/>
+         <definition value="Overall clinical interpretation of all of the results."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Overall_Interpretation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Test_Result_Image">
+         <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Test_Result_Image"/>
+         <short value="Test Result Image"/>
+         <definition value="Digital representation of the entire result."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Test_Result_Image"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Test_Result_Image.value">
+         <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Test_Result_Image.value"/>
+         <short value="Test Result Image"/>
+         <definition value="Digital representation of the entire result."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Test_Result_Image.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Attachment"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Comment">
+         <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the test results and intepretation not captured in other fields."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Comment"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Comment.value">
+         <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the test results and intepretation not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.state">
+         <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.state"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.state.Confounding_Factors">
+         <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.state.Confounding_Factors"/>
+         <short value="Confounding Factors"/>
+         <definition value="Description of incidental factors that may be contributing to the test result."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.state.Confounding_Factors"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.state.Confounding_Factors.value">
+         <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.state.Confounding_Factors.value"/>
+         <short value="Confounding Factors"/>
+         <definition value="Description of incidental factors that may be contributing to the test result."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Acoustic_reflex_test_result.Event_Series.Any_Point_in_time_Event.state.Confounding_Factors.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

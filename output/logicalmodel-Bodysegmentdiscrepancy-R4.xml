@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Bodysegmentdiscrepancy-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-bodysegmentdiscrepancy-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.body_segment_discrepancy.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Bodysegmentdiscrepancy"/>
+   <title value="Body segment discrepancy"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="The difference in length or circumference between paired body segments."/>
+   <purpose value="To record the difference in length or circumference between paired body segments."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Body_segment_discrepancy">
+         <path value="Body_segment_discrepancy"/>
+         <short value="Body segment discrepancy"/>
+         <definition value="The difference in length or circumference between paired body segments."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_segment_discrepancy"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_segment_discrepancy.ItemTree">
+         <path value="Body_segment_discrepancy.ItemTree"/>
+         <short value="ItemTree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_segment_discrepancy.ItemTree"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_segment_discrepancy.ItemTree.Measuring_device">
+         <path value="Body_segment_discrepancy.ItemTree.Measuring_device"/>
+         <short value="Measuring device"/>
+         <definition value="Details of the device used for measuring the body segment."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Body_segment_discrepancy.ItemTree.Measuring_device"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_segment_discrepancy.ItemTree.Measurement_method">
+         <path value="Body_segment_discrepancy.ItemTree.Measurement_method"/>
+         <short value="Measurement method"/>
+         <definition value="Narrative description of the method used for measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_segment_discrepancy.ItemTree.Measurement_method"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_segment_discrepancy.ItemTree.Measurement_method.value">
+         <path value="Body_segment_discrepancy.ItemTree.Measurement_method.value"/>
+         <short value="Measurement method"/>
+         <definition value="Narrative description of the method used for measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_segment_discrepancy.ItemTree.Measurement_method.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_segment_discrepancy.ItemTree.Measurement_origin">
+         <path value="Body_segment_discrepancy.ItemTree.Measurement_origin"/>
+         <short value="Measurement origin"/>
+         <definition value="Identification of a simple body site for the location of the starting point of the measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_segment_discrepancy.ItemTree.Measurement_origin"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_segment_discrepancy.ItemTree.Measurement_origin.value">
+         <path value="Body_segment_discrepancy.ItemTree.Measurement_origin.value"/>
+         <short value="Measurement origin"/>
+         <definition value="Identification of a simple body site for the location of the starting point of the measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_segment_discrepancy.ItemTree.Measurement_origin.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_segment_discrepancy.ItemTree.Structured_origin">
+         <path value="Body_segment_discrepancy.ItemTree.Structured_origin"/>
+         <short value="Structured origin"/>
+         <definition value="A structured anatomical location for the starting point of the measurement."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Body_segment_discrepancy.ItemTree.Structured_origin"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_segment_discrepancy.ItemTree.Measurement_endpoint">
+         <path value="Body_segment_discrepancy.ItemTree.Measurement_endpoint"/>
+         <short value="Measurement endpoint"/>
+         <definition value="Identification of a simple body site for the location of the ending point of the measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_segment_discrepancy.ItemTree.Measurement_endpoint"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_segment_discrepancy.ItemTree.Measurement_endpoint.value">
+         <path value="Body_segment_discrepancy.ItemTree.Measurement_endpoint.value"/>
+         <short value="Measurement endpoint"/>
+         <definition value="Identification of a simple body site for the location of the ending point of the measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_segment_discrepancy.ItemTree.Measurement_endpoint.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_segment_discrepancy.ItemTree.Structured_endpoint">
+         <path value="Body_segment_discrepancy.ItemTree.Structured_endpoint"/>
+         <short value="Structured endpoint"/>
+         <definition value="A structured anatomical location for the endpoint of the measurement."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Body_segment_discrepancy.ItemTree.Structured_endpoint"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_segment_discrepancy.ItemTree.Extension">
+         <path value="Body_segment_discrepancy.ItemTree.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models or formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Body_segment_discrepancy.ItemTree.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_segment_discrepancy.Event_Series">
+         <path value="Body_segment_discrepancy.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_segment_discrepancy.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_segment_discrepancy.Event_Series.Any_event">
+         <path value="Body_segment_discrepancy.Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Body_segment_discrepancy.Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_segment_discrepancy.Event_Series.Any_event.ItemTree">
+         <path value="Body_segment_discrepancy.Event_Series.Any_event.ItemTree"/>
+         <short value="ItemTree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_segment_discrepancy.Event_Series.Any_event.ItemTree"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_segment_discrepancy.Event_Series.Any_event.ItemTree.Body_segment_measurement">
+         <path value="Body_segment_discrepancy.Event_Series.Any_event.ItemTree.Body_segment_measurement"/>
+         <short value="Body segment measurement"/>
+         <definition value="Name of the body segment measurement, which is used to calculate the discrepancy."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_segment_discrepancy.Event_Series.Any_event.ItemTree.Body_segment_measurement"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_segment_discrepancy.Event_Series.Any_event.ItemTree.Body_segment_measurement.value_DV_TEXT">
+         <path value="Body_segment_discrepancy.Event_Series.Any_event.ItemTree.Body_segment_measurement.value_DV_TEXT"/>
+         <short value="Body segment measurement"/>
+         <definition value="Name of the body segment measurement, which is used to calculate the discrepancy."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_segment_discrepancy.Event_Series.Any_event.ItemTree.Body_segment_measurement.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_segment_discrepancy.Event_Series.Any_event.ItemTree.Body_segment_measurement.value_DV_CODED_TEXT">
+         <path value="Body_segment_discrepancy.Event_Series.Any_event.ItemTree.Body_segment_measurement.value_DV_CODED_TEXT"/>
+         <short value="Body segment measurement"/>
+         <definition value="Name of the body segment measurement, which is used to calculate the discrepancy."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_segment_discrepancy.Event_Series.Any_event.ItemTree.Body_segment_measurement.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_segment_discrepancy.Event_Series.Any_event.ItemTree.Discrepancy">
+         <path value="Body_segment_discrepancy.Event_Series.Any_event.ItemTree.Discrepancy"/>
+         <short value="Discrepancy"/>
+         <definition value="Measured or calculated discrepancy between paired body segments."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_segment_discrepancy.Event_Series.Any_event.ItemTree.Discrepancy"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_segment_discrepancy.Event_Series.Any_event.ItemTree.Discrepancy.value">
+         <path value="Body_segment_discrepancy.Event_Series.Any_event.ItemTree.Discrepancy.value"/>
+         <short value="Discrepancy"/>
+         <definition value="Measured or calculated discrepancy between paired body segments."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_segment_discrepancy.Event_Series.Any_event.ItemTree.Discrepancy.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_segment_discrepancy.Event_Series.Any_event.ItemTree.Longest_side">
+         <path value="Body_segment_discrepancy.Event_Series.Any_event.ItemTree.Longest_side"/>
+         <short value="Longest side"/>
+         <definition value="The laterality of the longest paired segment."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_segment_discrepancy.Event_Series.Any_event.ItemTree.Longest_side"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_segment_discrepancy.Event_Series.Any_event.ItemTree.Longest_side.value_DV_CODED_TEXT">
+         <path value="Body_segment_discrepancy.Event_Series.Any_event.ItemTree.Longest_side.value_DV_CODED_TEXT"/>
+         <short value="Longest side"/>
+         <definition value="The laterality of the longest paired segment."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_segment_discrepancy.Event_Series.Any_event.ItemTree.Longest_side.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_segment_discrepancy.Event_Series.Any_event.ItemTree.Longest_side.value_DV_TEXT">
+         <path value="Body_segment_discrepancy.Event_Series.Any_event.ItemTree.Longest_side.value_DV_TEXT"/>
+         <short value="Longest side"/>
+         <definition value="The laterality of the longest paired segment."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_segment_discrepancy.Event_Series.Any_event.ItemTree.Longest_side.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_segment_discrepancy.Event_Series.Any_event.ItemTree.Comment">
+         <path value="Body_segment_discrepancy.Event_Series.Any_event.ItemTree.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the discrepancy, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_segment_discrepancy.Event_Series.Any_event.ItemTree.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_segment_discrepancy.Event_Series.Any_event.ItemTree.Comment.value">
+         <path value="Body_segment_discrepancy.Event_Series.Any_event.ItemTree.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the discrepancy, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_segment_discrepancy.Event_Series.Any_event.ItemTree.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

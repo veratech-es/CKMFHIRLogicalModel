@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Reach-bscore-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-reach-bscore-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.reach_b.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Reach-bscore"/>
+   <title value="REACH-B score"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="An assessment score used to estimate risk of hepatocellular carcinoma (HCC) in patients with chronic hepatitis B."/>
+   <purpose value="To record the results for each component parameter and their total sum for the REACH-B score."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="REACH_B_score">
+         <path value="REACH_B_score"/>
+         <short value="REACH-B score"/>
+         <definition value="An assessment score used to estimate risk of hepatocellular carcinoma (HCC) in patients with chronic hepatitis B."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="REACH_B_score"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="REACH_B_score.Event_Series">
+         <path value="REACH_B_score.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="REACH_B_score.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="REACH_B_score.Event_Series.Any_event">
+         <path value="REACH_B_score.Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="*"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="REACH_B_score.Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="REACH_B_score.Event_Series.Any_event.data">
+         <path value="REACH_B_score.Event_Series.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="REACH_B_score.Event_Series.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="REACH_B_score.Event_Series.Any_event.data.Sex">
+         <path value="REACH_B_score.Event_Series.Any_event.data.Sex"/>
+         <short value="Sex"/>
+         <definition value="*"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="REACH_B_score.Event_Series.Any_event.data.Sex"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="REACH_B_score.Event_Series.Any_event.data.Sex.value">
+         <path value="REACH_B_score.Event_Series.Any_event.data.Sex.value"/>
+         <short value="Sex"/>
+         <definition value="*"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="REACH_B_score.Event_Series.Any_event.data.Sex.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="REACH_B_score.Event_Series.Any_event.data.Age_(years)">
+         <path value="REACH_B_score.Event_Series.Any_event.data.Age_(years)"/>
+         <short value="Age (years)"/>
+         <definition value="*"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="REACH_B_score.Event_Series.Any_event.data.Age_(years)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="REACH_B_score.Event_Series.Any_event.data.Age_(years).value">
+         <path value="REACH_B_score.Event_Series.Any_event.data.Age_(years).value"/>
+         <short value="Age (years)"/>
+         <definition value="*"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="REACH_B_score.Event_Series.Any_event.data.Age_(years).value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="REACH_B_score.Event_Series.Any_event.data.ALT_(U_L)">
+         <path value="REACH_B_score.Event_Series.Any_event.data.ALT_(U_L)"/>
+         <short value="ALT (U/L)"/>
+         <definition value="Alanine aminotransferase (ALT) "/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="REACH_B_score.Event_Series.Any_event.data.ALT_(U_L)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="REACH_B_score.Event_Series.Any_event.data.ALT_(U_L).value">
+         <path value="REACH_B_score.Event_Series.Any_event.data.ALT_(U_L).value"/>
+         <short value="ALT (U/L)"/>
+         <definition value="Alanine aminotransferase (ALT) "/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="REACH_B_score.Event_Series.Any_event.data.ALT_(U_L).value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="REACH_B_score.Event_Series.Any_event.data.HBeAg">
+         <path value="REACH_B_score.Event_Series.Any_event.data.HBeAg"/>
+         <short value="HBeAg"/>
+         <definition value="hepatitis B e-antigen"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="REACH_B_score.Event_Series.Any_event.data.HBeAg"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="REACH_B_score.Event_Series.Any_event.data.HBeAg.value">
+         <path value="REACH_B_score.Event_Series.Any_event.data.HBeAg.value"/>
+         <short value="HBeAg"/>
+         <definition value="hepatitis B e-antigen"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="REACH_B_score.Event_Series.Any_event.data.HBeAg.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="REACH_B_score.Event_Series.Any_event.data.Hepatitis_B_virus_DNA_level_(copies_mL)">
+         <path value="REACH_B_score.Event_Series.Any_event.data.Hepatitis_B_virus_DNA_level_(copies_mL)"/>
+         <short value="Hepatitis B virus DNA level (copies/mL)"/>
+         <definition value="*"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="REACH_B_score.Event_Series.Any_event.data.Hepatitis_B_virus_DNA_level_(copies_mL)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="REACH_B_score.Event_Series.Any_event.data.Hepatitis_B_virus_DNA_level_(copies_mL).value">
+         <path value="REACH_B_score.Event_Series.Any_event.data.Hepatitis_B_virus_DNA_level_(copies_mL).value"/>
+         <short value="Hepatitis B virus DNA level (copies/mL)"/>
+         <definition value="*"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="REACH_B_score.Event_Series.Any_event.data.Hepatitis_B_virus_DNA_level_(copies_mL).value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="REACH_B_score.Event_Series.Any_event.data.Total_score">
+         <path value="REACH_B_score.Event_Series.Any_event.data.Total_score"/>
+         <short value="Total score"/>
+         <definition value="*"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="REACH_B_score.Event_Series.Any_event.data.Total_score"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="REACH_B_score.Event_Series.Any_event.data.Total_score.value">
+         <path value="REACH_B_score.Event_Series.Any_event.data.Total_score.value"/>
+         <short value="Total score"/>
+         <definition value="*"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="REACH_B_score.Event_Series.Any_event.data.Total_score.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

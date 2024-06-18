@@ -1,0 +1,1336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Waterlowscore-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-waterlowscore-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.waterlow_score.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Waterlowscore"/>
+   <title value="Waterlow score"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="The Waterlow Score, Pressure Ulcer Risk Assessment Tool."/>
+   <purpose value="To record the individual elements and overall score of the Waterlow Score (or Scale), for the purpose of estimating the risk of a patient developing a pressure sore or ulcer."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Waterlow_score">
+         <path value="Waterlow_score"/>
+         <short value="Waterlow score"/>
+         <definition value="The Waterlow Score, Pressure Ulcer Risk Assessment Tool."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waterlow_score.protocol">
+         <path value="Waterlow_score.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waterlow_score.protocol.Score_version">
+         <path value="Waterlow_score.protocol.Score_version"/>
+         <short value="Score version"/>
+         <definition value="The version of the score used, normally recorded as the year."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.protocol.Score_version"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Waterlow_score.protocol.Score_version.value">
+         <path value="Waterlow_score.protocol.Score_version.value"/>
+         <short value="Score version"/>
+         <definition value="The version of the score used, normally recorded as the year."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.protocol.Score_version.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waterlow_score.Event_Series">
+         <path value="Waterlow_score.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event"/>
+         <short value="Any point in time event"/>
+         <definition value="Unspecified point in time event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="8"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event"/>
+            <min value="0"/>
+            <max value="8"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Sex">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Sex"/>
+         <short value="Sex"/>
+         <definition value="Risk conferred by the sex of the subject."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Sex"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Sex.value">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Sex.value"/>
+         <short value="Sex"/>
+         <definition value="Risk conferred by the sex of the subject."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Sex.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Age_group">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Age_group"/>
+         <short value="Age group"/>
+         <definition value="Risk conferred by the age range of the subject."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Age_group"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Age_group.value">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Age_group.value"/>
+         <short value="Age group"/>
+         <definition value="Risk conferred by the age range of the subject."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Age_group.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Build_weight_for_height">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Build_weight_for_height"/>
+         <short value="Build/weight for height"/>
+         <definition value="Risk conferred by the subject's build, based on a BMI calculation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Build_weight_for_height"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Build_weight_for_height.value">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Build_weight_for_height.value"/>
+         <short value="Build/weight for height"/>
+         <definition value="Risk conferred by the subject's build, based on a BMI calculation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Build_weight_for_height.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Continence">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Continence"/>
+         <short value="Continence"/>
+         <definition value="Risk conferred by the subject's degree of continence."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Continence"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Continence.value">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Continence.value"/>
+         <short value="Continence"/>
+         <definition value="Risk conferred by the subject's degree of continence."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Continence.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Mobility">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Mobility"/>
+         <short value="Mobility"/>
+         <definition value="Risk conferred by the mobility level of the subject."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Mobility"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Mobility.value">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Mobility.value"/>
+         <short value="Mobility"/>
+         <definition value="Risk conferred by the mobility level of the subject."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Mobility.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Nutritional_risk">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Nutritional_risk"/>
+         <short value="Nutritional risk"/>
+         <definition value="An estimate of nutritional risk based on the MST nutritional score but can make use of another compatible nutritional score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Nutritional_risk"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Nutritional_risk.Weight_loss">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Nutritional_risk.Weight_loss"/>
+         <short value="Weight loss"/>
+         <definition value="Risk conferred by recent weight loss."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Nutritional_risk.Weight_loss"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Nutritional_risk.Weight_loss.value">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Nutritional_risk.Weight_loss.value"/>
+         <short value="Weight loss"/>
+         <definition value="Risk conferred by recent weight loss."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Nutritional_risk.Weight_loss.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Nutritional_risk.Appetite">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Nutritional_risk.Appetite"/>
+         <short value="Appetite"/>
+         <definition value="Risk conferred by the subject's appetite and eating habit."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Nutritional_risk.Appetite"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Nutritional_risk.Appetite.value">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Nutritional_risk.Appetite.value"/>
+         <short value="Appetite"/>
+         <definition value="Risk conferred by the subject's appetite and eating habit."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Nutritional_risk.Appetite.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Nutritional_risk.Nutritional_score">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Nutritional_risk.Nutritional_score"/>
+         <short value="Nutritional score"/>
+         <definition value="The nutritional score total, derived from Appetite and Weight loss scores or recorded directly from another compatible nutritional scoring system."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Nutritional_risk.Nutritional_score"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Nutritional_risk.Nutritional_score.value">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Nutritional_risk.Nutritional_score.value"/>
+         <short value="Nutritional score"/>
+         <definition value="The nutritional score total, derived from Appetite and Weight loss scores or recorded directly from another compatible nutritional scoring system."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Nutritional_risk.Nutritional_score.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Skin_type_visual_risk_areas">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Skin_type_visual_risk_areas"/>
+         <short value="Skin type visual risk areas"/>
+         <definition value="Category of risks assessed by skin inspection."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Skin_type_visual_risk_areas"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Skin_type_visual_risk_areas.Healthy">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Skin_type_visual_risk_areas.Healthy"/>
+         <short value="Healthy"/>
+         <definition value="The skin appears healthy."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Skin_type_visual_risk_areas.Healthy"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Skin_type_visual_risk_areas.Healthy.value">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Skin_type_visual_risk_areas.Healthy.value"/>
+         <short value="Healthy"/>
+         <definition value="The skin appears healthy."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Skin_type_visual_risk_areas.Healthy.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Skin_type_visual_risk_areas.Tissue_paper">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Skin_type_visual_risk_areas.Tissue_paper"/>
+         <short value="Tissue-paper"/>
+         <definition value="The skin has a tissue-paper quality."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Skin_type_visual_risk_areas.Tissue_paper"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Skin_type_visual_risk_areas.Tissue_paper.value">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Skin_type_visual_risk_areas.Tissue_paper.value"/>
+         <short value="Tissue-paper"/>
+         <definition value="The skin has a tissue-paper quality."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Skin_type_visual_risk_areas.Tissue_paper.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Skin_type_visual_risk_areas.Dry">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Skin_type_visual_risk_areas.Dry"/>
+         <short value="Dry"/>
+         <definition value="The skin is dry."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Skin_type_visual_risk_areas.Dry"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Skin_type_visual_risk_areas.Dry.value">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Skin_type_visual_risk_areas.Dry.value"/>
+         <short value="Dry"/>
+         <definition value="The skin is dry."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Skin_type_visual_risk_areas.Dry.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Skin_type_visual_risk_areas.Oedematous">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Skin_type_visual_risk_areas.Oedematous"/>
+         <short value="Oedematous"/>
+         <definition value="The skin is oedematous."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Skin_type_visual_risk_areas.Oedematous"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Skin_type_visual_risk_areas.Oedematous.value">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Skin_type_visual_risk_areas.Oedematous.value"/>
+         <short value="Oedematous"/>
+         <definition value="The skin is oedematous."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Skin_type_visual_risk_areas.Oedematous.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Skin_type_visual_risk_areas.Clammy,_pyrexia">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Skin_type_visual_risk_areas.Clammy,_pyrexia"/>
+         <short value="Clammy, pyrexia"/>
+         <definition value="The aptient appears clammy or pyrexic."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Skin_type_visual_risk_areas.Clammy,_pyrexia"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Skin_type_visual_risk_areas.Clammy,_pyrexia.value">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Skin_type_visual_risk_areas.Clammy,_pyrexia.value"/>
+         <short value="Clammy, pyrexia"/>
+         <definition value="The aptient appears clammy or pyrexic."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Skin_type_visual_risk_areas.Clammy,_pyrexia.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Skin_type_visual_risk_areas.Discoloured___Stage_1">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Skin_type_visual_risk_areas.Discoloured___Stage_1"/>
+         <short value="Discoloured - Stage 1"/>
+         <definition value="The skin is dicoloured - Pressure sore - Grade 1."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Skin_type_visual_risk_areas.Discoloured___Stage_1"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Skin_type_visual_risk_areas.Discoloured___Stage_1.value">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Skin_type_visual_risk_areas.Discoloured___Stage_1.value"/>
+         <short value="Discoloured - Stage 1"/>
+         <definition value="The skin is dicoloured - Pressure sore - Grade 1."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Skin_type_visual_risk_areas.Discoloured___Stage_1.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Skin_type_visual_risk_areas.Pressure_ulcer___Stage_2_4">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Skin_type_visual_risk_areas.Pressure_ulcer___Stage_2_4"/>
+         <short value="Pressure ulcer - Stage 2-4"/>
+         <definition value="The skin has a frank pressure sore - Stage 2-4."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Skin_type_visual_risk_areas.Pressure_ulcer___Stage_2_4"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Skin_type_visual_risk_areas.Pressure_ulcer___Stage_2_4.value">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Skin_type_visual_risk_areas.Pressure_ulcer___Stage_2_4.value"/>
+         <short value="Pressure ulcer - Stage 2-4"/>
+         <definition value="The skin has a frank pressure sore - Stage 2-4."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Skin_type_visual_risk_areas.Pressure_ulcer___Stage_2_4.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Tissue_malnutrition">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Tissue_malnutrition"/>
+         <short value="Tissue malnutrition"/>
+         <definition value="Category of risks conferred by tissue malnutrition."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Tissue_malnutrition"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Tissue_malnutrition.Terminal_cachexia">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Tissue_malnutrition.Terminal_cachexia"/>
+         <short value="Terminal cachexia"/>
+         <definition value="The subject is terminally-ill and shows significant weight-loss."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Tissue_malnutrition.Terminal_cachexia"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Tissue_malnutrition.Terminal_cachexia.value">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Tissue_malnutrition.Terminal_cachexia.value"/>
+         <short value="Terminal cachexia"/>
+         <definition value="The subject is terminally-ill and shows significant weight-loss."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Tissue_malnutrition.Terminal_cachexia.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Tissue_malnutrition.Single_organ_failure">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Tissue_malnutrition.Single_organ_failure"/>
+         <short value="Single organ failure"/>
+         <definition value="The patent has single organ/system failure e.g. respiratory, cardiac, liver, renal."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Tissue_malnutrition.Single_organ_failure"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Tissue_malnutrition.Single_organ_failure.value">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Tissue_malnutrition.Single_organ_failure.value"/>
+         <short value="Single organ failure"/>
+         <definition value="The patent has single organ/system failure e.g. respiratory, cardiac, liver, renal."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Tissue_malnutrition.Single_organ_failure.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Tissue_malnutrition.Multiple_organ_failure">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Tissue_malnutrition.Multiple_organ_failure"/>
+         <short value="Multiple organ failure"/>
+         <definition value="The subject has multiple organ/system failure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Tissue_malnutrition.Multiple_organ_failure"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Tissue_malnutrition.Multiple_organ_failure.value">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Tissue_malnutrition.Multiple_organ_failure.value"/>
+         <short value="Multiple organ failure"/>
+         <definition value="The subject has multiple organ/system failure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Tissue_malnutrition.Multiple_organ_failure.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Tissue_malnutrition.Peripheral_vascular_disease">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Tissue_malnutrition.Peripheral_vascular_disease"/>
+         <short value="Peripheral vascular disease"/>
+         <definition value="The subject has peripheral vascular disease."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Tissue_malnutrition.Peripheral_vascular_disease"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Tissue_malnutrition.Peripheral_vascular_disease.value">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Tissue_malnutrition.Peripheral_vascular_disease.value"/>
+         <short value="Peripheral vascular disease"/>
+         <definition value="The subject has peripheral vascular disease."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Tissue_malnutrition.Peripheral_vascular_disease.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Tissue_malnutrition.Anaemia_(Hb_&lt;_8_g_dl)">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Tissue_malnutrition.Anaemia_(Hb_&lt;_8_g_dl)"/>
+         <short value="Anaemia (Hb &lt; 8 g/dl)"/>
+         <definition value="The subject is significantly anaemic. Hb less than 8 mg/dl."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Tissue_malnutrition.Anaemia_(Hb_&lt;_8_g_dl)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Tissue_malnutrition.Anaemia_(Hb_&lt;_8_g_dl).value">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Tissue_malnutrition.Anaemia_(Hb_&lt;_8_g_dl).value"/>
+         <short value="Anaemia (Hb &lt; 8 g/dl)"/>
+         <definition value="The subject is significantly anaemic. Hb less than 8 mg/dl."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Tissue_malnutrition.Anaemia_(Hb_&lt;_8_g_dl).value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Tissue_malnutrition.Smoking">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Tissue_malnutrition.Smoking"/>
+         <short value="Smoking"/>
+         <definition value="The subject is a smoker."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Tissue_malnutrition.Smoking"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Tissue_malnutrition.Smoking.value">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Tissue_malnutrition.Smoking.value"/>
+         <short value="Smoking"/>
+         <definition value="The subject is a smoker."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Tissue_malnutrition.Smoking.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Neurological_deficit">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Neurological_deficit"/>
+         <short value="Neurological deficit"/>
+         <definition value="Risk conferred by neurological deficit. Each identified risk can be scored between 4-6 but a maximum of 6 only can be given for the whole neurological deficit category."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Neurological_deficit"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Neurological_deficit.Diabetes,_MS,_CVA">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Neurological_deficit.Diabetes,_MS,_CVA"/>
+         <short value="Diabetes, MS, CVA"/>
+         <definition value="The subject has diabetes, multiple sclerosis or has had a stroke."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Neurological_deficit.Diabetes,_MS,_CVA"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Neurological_deficit.Diabetes,_MS,_CVA.value">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Neurological_deficit.Diabetes,_MS,_CVA.value"/>
+         <short value="Diabetes, MS, CVA"/>
+         <definition value="The subject has diabetes, multiple sclerosis or has had a stroke."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Neurological_deficit.Diabetes,_MS,_CVA.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Neurological_deficit.Motor___sensory_deficit">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Neurological_deficit.Motor___sensory_deficit"/>
+         <short value="Motor / sensory deficit"/>
+         <definition value="The subject has a motor or sensory deficit."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Neurological_deficit.Motor___sensory_deficit"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Neurological_deficit.Motor___sensory_deficit.value">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Neurological_deficit.Motor___sensory_deficit.value"/>
+         <short value="Motor / sensory deficit"/>
+         <definition value="The subject has a motor or sensory deficit."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Neurological_deficit.Motor___sensory_deficit.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Neurological_deficit.Paraplegia">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Neurological_deficit.Paraplegia"/>
+         <short value="Paraplegia"/>
+         <definition value="The subject has a paraplegia."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Neurological_deficit.Paraplegia"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Neurological_deficit.Paraplegia.value">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Neurological_deficit.Paraplegia.value"/>
+         <short value="Paraplegia"/>
+         <definition value="The subject has a paraplegia."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Neurological_deficit.Paraplegia.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Neurological_deficit.Combined_neurological_deficit">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Neurological_deficit.Combined_neurological_deficit"/>
+         <short value="Combined neurological deficit"/>
+         <definition value="An overall estimate of neurological deficit. Should not be used if individual neurological deficit risks are recorded."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Neurological_deficit.Combined_neurological_deficit"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Neurological_deficit.Combined_neurological_deficit.value">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Neurological_deficit.Combined_neurological_deficit.value"/>
+         <short value="Combined neurological deficit"/>
+         <definition value="An overall estimate of neurological deficit. Should not be used if individual neurological deficit risks are recorded."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Neurological_deficit.Combined_neurological_deficit.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Major_surgery_or_trauma">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Major_surgery_or_trauma"/>
+         <short value="Major surgery or trauma"/>
+         <definition value="Risk associated with major surgery or trauma."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Major_surgery_or_trauma"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Major_surgery_or_trauma.Orthopaedic__spinal">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Major_surgery_or_trauma.Orthopaedic__spinal"/>
+         <short value="Orthopaedic /spinal"/>
+         <definition value="Risks related to orthopaedic or spinal surgery."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Major_surgery_or_trauma.Orthopaedic__spinal"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Major_surgery_or_trauma.Orthopaedic__spinal.value">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Major_surgery_or_trauma.Orthopaedic__spinal.value"/>
+         <short value="Orthopaedic /spinal"/>
+         <definition value="Risks related to orthopaedic or spinal surgery."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Major_surgery_or_trauma.Orthopaedic__spinal.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Major_surgery_or_trauma.Duration_of_surgery">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Major_surgery_or_trauma.Duration_of_surgery"/>
+         <short value="Duration of surgery"/>
+         <definition value="Risks imparted by length of surgery."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Major_surgery_or_trauma.Duration_of_surgery"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Major_surgery_or_trauma.Duration_of_surgery.value">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Major_surgery_or_trauma.Duration_of_surgery.value"/>
+         <short value="Duration of surgery"/>
+         <definition value="Risks imparted by length of surgery."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Major_surgery_or_trauma.Duration_of_surgery.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Medication">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Medication"/>
+         <short value="Medication"/>
+         <definition value="Risk associated with medication.  Each medication can be scored between 0-4 but a total of 4 only can be given by all risks in the Medication category."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Medication"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Medication.Cytotoxics">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Medication.Cytotoxics"/>
+         <short value="Cytotoxics"/>
+         <definition value="The subject is receiving cytotoxic medication."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Medication.Cytotoxics"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Medication.Cytotoxics.value">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Medication.Cytotoxics.value"/>
+         <short value="Cytotoxics"/>
+         <definition value="The subject is receiving cytotoxic medication."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Medication.Cytotoxics.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Medication.Steroids">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Medication.Steroids"/>
+         <short value="Steroids"/>
+         <definition value="The subject is receiving high-dose or long-term steroid medication."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Medication.Steroids"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Medication.Steroids.value">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Medication.Steroids.value"/>
+         <short value="Steroids"/>
+         <definition value="The subject is receiving high-dose or long-term steroid medication."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Medication.Steroids.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Medication.Anti_inflammatories">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Medication.Anti_inflammatories"/>
+         <short value="Anti-inflammatories"/>
+         <definition value="The subject is receiving anti-inflammatory medication."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Medication.Anti_inflammatories"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Medication.Anti_inflammatories.value">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Medication.Anti_inflammatories.value"/>
+         <short value="Anti-inflammatories"/>
+         <definition value="The subject is receiving anti-inflammatory medication."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Medication.Anti_inflammatories.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Medication.Combined_medication_risk">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Medication.Combined_medication_risk"/>
+         <short value="Combined medication risk"/>
+         <definition value="Overall pressure ulcer risk related to medication. Should not be recorded if individual medication risks are used."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Medication.Combined_medication_risk"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Medication.Combined_medication_risk.value">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Medication.Combined_medication_risk.value"/>
+         <short value="Combined medication risk"/>
+         <definition value="Overall pressure ulcer risk related to medication. Should not be recorded if individual medication risks are used."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Medication.Combined_medication_risk.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Waterlow_score">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Waterlow_score"/>
+         <short value="Waterlow score"/>
+         <definition value="The total summed score of all recorded individual risks."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Waterlow_score"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Waterlow_score.value">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Waterlow_score.value"/>
+         <short value="Waterlow score"/>
+         <definition value="The total summed score of all recorded individual risks."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Waterlow_score.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Overall_risk_grade">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Overall_risk_grade"/>
+         <short value="Overall risk grade"/>
+         <definition value="Overall Waterlow Score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Overall_risk_grade"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Overall_risk_grade.value">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Overall_risk_grade.value"/>
+         <short value="Overall risk grade"/>
+         <definition value="Overall Waterlow Score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Overall_risk_grade.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Comment">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative comment about the Score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.data.Comment.value">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative comment about the Score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.state">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.state"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.state.Confounding_factors">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.state.Confounding_factors"/>
+         <short value="Confounding factors"/>
+         <definition value="Issues that may affect interpretation of the score."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.state.Confounding_factors"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Waterlow_score.Event_Series.Any_point_in_time_event.state.Confounding_factors.value">
+         <path value="Waterlow_score.Event_Series.Any_point_in_time_event.state.Confounding_factors.value"/>
+         <short value="Confounding factors"/>
+         <definition value="Issues that may affect interpretation of the score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waterlow_score.Event_Series.Any_point_in_time_event.state.Confounding_factors.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

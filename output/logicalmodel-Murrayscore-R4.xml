@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Murrayscore-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-murrayscore-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.murray_score.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Murrayscore"/>
+   <title value="Murray score"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Clinical tool used to estimate the severity of acute lung injury."/>
+   <purpose value="To record the score for each component parameter and the calculated final score for the Murray score."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Murray_score">
+         <path value="Murray_score"/>
+         <short value="Murray score"/>
+         <definition value="Clinical tool used to estimate the severity of acute lung injury."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Murray_score"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Murray_score.protocol">
+         <path value="Murray_score.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Murray_score.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Murray_score.protocol.Extension">
+         <path value="Murray_score.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models or formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Murray_score.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Murray_score.Event_Series">
+         <path value="Murray_score.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Murray_score.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Murray_score.Event_Series.Any_event">
+         <path value="Murray_score.Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Murray_score.Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Murray_score.Event_Series.Any_event.data">
+         <path value="Murray_score.Event_Series.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Murray_score.Event_Series.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Murray_score.Event_Series.Any_event.data.Consolidation_on_CXR">
+         <path value="Murray_score.Event_Series.Any_event.data.Consolidation_on_CXR"/>
+         <short value="Consolidation on CXR"/>
+         <definition value="Radiographic findings on Xray of the lung."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Murray_score.Event_Series.Any_event.data.Consolidation_on_CXR"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Murray_score.Event_Series.Any_event.data.Consolidation_on_CXR.value">
+         <path value="Murray_score.Event_Series.Any_event.data.Consolidation_on_CXR.value"/>
+         <short value="Consolidation on CXR"/>
+         <definition value="Radiographic findings on Xray of the lung."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Murray_score.Event_Series.Any_event.data.Consolidation_on_CXR.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Murray_score.Event_Series.Any_event.data.PaO₂_FiO₂_ratio">
+         <path value="Murray_score.Event_Series.Any_event.data.PaO₂_FiO₂_ratio"/>
+         <short value="PaO₂/FiO₂ ratio"/>
+         <definition value="Index of oxygenation (PaO2/FIO2)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Murray_score.Event_Series.Any_event.data.PaO₂_FiO₂_ratio"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Murray_score.Event_Series.Any_event.data.PaO₂_FiO₂_ratio.value">
+         <path value="Murray_score.Event_Series.Any_event.data.PaO₂_FiO₂_ratio.value"/>
+         <short value="PaO₂/FiO₂ ratio"/>
+         <definition value="Index of oxygenation (PaO2/FIO2)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Murray_score.Event_Series.Any_event.data.PaO₂_FiO₂_ratio.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Murray_score.Event_Series.Any_event.data.PEEP">
+         <path value="Murray_score.Event_Series.Any_event.data.PEEP"/>
+         <short value="PEEP"/>
+         <definition value="The Positive End Expiratory Pressure (PEEP), measured in cm H₂O."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Murray_score.Event_Series.Any_event.data.PEEP"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Murray_score.Event_Series.Any_event.data.PEEP.value">
+         <path value="Murray_score.Event_Series.Any_event.data.PEEP.value"/>
+         <short value="PEEP"/>
+         <definition value="The Positive End Expiratory Pressure (PEEP), measured in cm H₂O."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Murray_score.Event_Series.Any_event.data.PEEP.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Murray_score.Event_Series.Any_event.data.Compliance">
+         <path value="Murray_score.Event_Series.Any_event.data.Compliance"/>
+         <short value="Compliance"/>
+         <definition value="Lung compliance, calculated in ml/cm H₂O."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Murray_score.Event_Series.Any_event.data.Compliance"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Murray_score.Event_Series.Any_event.data.Compliance.value">
+         <path value="Murray_score.Event_Series.Any_event.data.Compliance.value"/>
+         <short value="Compliance"/>
+         <definition value="Lung compliance, calculated in ml/cm H₂O."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Murray_score.Event_Series.Any_event.data.Compliance.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Murray_score.Event_Series.Any_event.data.Score">
+         <path value="Murray_score.Event_Series.Any_event.data.Score"/>
+         <short value="Score"/>
+         <definition value="Sum of points assigned for each of the component parameters divided by the number of parameters."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Murray_score.Event_Series.Any_event.data.Score"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Murray_score.Event_Series.Any_event.data.Score.value">
+         <path value="Murray_score.Event_Series.Any_event.data.Score.value"/>
+         <short value="Score"/>
+         <definition value="Sum of points assigned for each of the component parameters divided by the number of parameters."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Murray_score.Event_Series.Any_event.data.Score.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Murray_score.Event_Series.Any_event.data.Severity_assessment">
+         <path value="Murray_score.Event_Series.Any_event.data.Severity_assessment"/>
+         <short value="Severity assessment"/>
+         <definition value="The assessment about severity of the lung injury, based on the Murray score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Murray_score.Event_Series.Any_event.data.Severity_assessment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Murray_score.Event_Series.Any_event.data.Severity_assessment.value">
+         <path value="Murray_score.Event_Series.Any_event.data.Severity_assessment.value"/>
+         <short value="Severity assessment"/>
+         <definition value="The assessment about severity of the lung injury, based on the Murray score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Murray_score.Event_Series.Any_event.data.Severity_assessment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

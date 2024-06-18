@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Menstruationsummary-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-menstruationsummary-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-EVALUATION.menstruation_summary.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Menstruationsummary"/>
+   <title value="Menstruation summary"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Summary or persistent information about an individual's menstruation history."/>
+   <purpose value="To record summary or persistent information about an individual's menstruation history events or patterns of menstruation over time."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Menstruation_summary">
+         <path value="Menstruation_summary"/>
+         <short value="Menstruation summary"/>
+         <definition value="Summary or persistent information about an individual's menstruation history."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstruation_summary"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstruation_summary.protocol">
+         <path value="Menstruation_summary.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstruation_summary.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstruation_summary.protocol.Extension">
+         <path value="Menstruation_summary.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Menstruation_summary.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstruation_summary.protocol.Date_last_updated">
+         <path value="Menstruation_summary.protocol.Date_last_updated"/>
+         <short value="Date last updated"/>
+         <definition value="Date when the Menstruation summary, including episodes, was updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstruation_summary.protocol.Date_last_updated"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Menstruation_summary.protocol.Date_last_updated.value">
+         <path value="Menstruation_summary.protocol.Date_last_updated.value"/>
+         <short value="Date last updated"/>
+         <definition value="Date when the Menstruation summary, including episodes, was updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstruation_summary.protocol.Date_last_updated.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstruation_summary.data">
+         <path value="Menstruation_summary.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstruation_summary.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstruation_summary.data.Overall_description">
+         <path value="Menstruation_summary.data.Overall_description"/>
+         <short value="Overall description"/>
+         <definition value="Narrative description about the overall pattern of menstruation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstruation_summary.data.Overall_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Menstruation_summary.data.Overall_description.value">
+         <path value="Menstruation_summary.data.Overall_description.value"/>
+         <short value="Overall description"/>
+         <definition value="Narrative description about the overall pattern of menstruation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstruation_summary.data.Overall_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstruation_summary.data.Menstrual_status">
+         <path value="Menstruation_summary.data.Menstrual_status"/>
+         <short value="Menstrual status"/>
+         <definition value="Statement about the current menstrual activity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstruation_summary.data.Menstrual_status"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Menstruation_summary.data.Menstrual_status.value">
+         <path value="Menstruation_summary.data.Menstrual_status.value"/>
+         <short value="Menstrual status"/>
+         <definition value="Statement about the current menstrual activity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstruation_summary.data.Menstrual_status.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstruation_summary.data.Menarche">
+         <path value="Menstruation_summary.data.Menarche"/>
+         <short value="Menarche"/>
+         <definition value="Onset of first menstrual cycle."/>
+         <min value="0"/>
+         <max value="2"/>
+         <base>
+            <path value="Menstruation_summary.data.Menarche"/>
+            <min value="0"/>
+            <max value="2"/>
+         </base>
+      </element>
+      <element id="Menstruation_summary.data.Menarche.value_DV_DURATION">
+         <path value="Menstruation_summary.data.Menarche.value_DV_DURATION"/>
+         <short value="Menarche"/>
+         <definition value="Onset of first menstrual cycle."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstruation_summary.data.Menarche.value_DV_DURATION"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstruation_summary.data.Menarche.value_DV_DATE">
+         <path value="Menstruation_summary.data.Menarche.value_DV_DATE"/>
+         <short value="Menarche"/>
+         <definition value="Onset of first menstrual cycle."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstruation_summary.data.Menarche.value_DV_DATE"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="date"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstruation_summary.data.Per_episode">
+         <path value="Menstruation_summary.data.Per_episode"/>
+         <short value="Per episode"/>
+         <definition value="Details about a typical pattern of menstruation during a specified interval of time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Menstruation_summary.data.Per_episode"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstruation_summary.data.Per_episode.Episode_label">
+         <path value="Menstruation_summary.data.Per_episode.Episode_label"/>
+         <short value="Episode label"/>
+         <definition value="A name or label associated with this episode of menstruation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstruation_summary.data.Per_episode.Episode_label"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Menstruation_summary.data.Per_episode.Episode_label.value">
+         <path value="Menstruation_summary.data.Per_episode.Episode_label.value"/>
+         <short value="Episode label"/>
+         <definition value="A name or label associated with this episode of menstruation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstruation_summary.data.Per_episode.Episode_label.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstruation_summary.data.Per_episode.Episode_start_date">
+         <path value="Menstruation_summary.data.Per_episode.Episode_start_date"/>
+         <short value="Episode start date"/>
+         <definition value="Date when this episode commenced."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstruation_summary.data.Per_episode.Episode_start_date"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Menstruation_summary.data.Per_episode.Episode_start_date.value">
+         <path value="Menstruation_summary.data.Per_episode.Episode_start_date.value"/>
+         <short value="Episode start date"/>
+         <definition value="Date when this episode commenced."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstruation_summary.data.Per_episode.Episode_start_date.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstruation_summary.data.Per_episode.Description">
+         <path value="Menstruation_summary.data.Per_episode.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description about this episode."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstruation_summary.data.Per_episode.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Menstruation_summary.data.Per_episode.Description.value">
+         <path value="Menstruation_summary.data.Per_episode.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description about this episode."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstruation_summary.data.Per_episode.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstruation_summary.data.Per_episode.Typical_pattern">
+         <path value="Menstruation_summary.data.Per_episode.Typical_pattern"/>
+         <short value="Typical pattern"/>
+         <definition value="The usual predictability of menstruation during this episode."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstruation_summary.data.Per_episode.Typical_pattern"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Menstruation_summary.data.Per_episode.Typical_pattern.value">
+         <path value="Menstruation_summary.data.Per_episode.Typical_pattern.value"/>
+         <short value="Typical pattern"/>
+         <definition value="The usual predictability of menstruation during this episode."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstruation_summary.data.Per_episode.Typical_pattern.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstruation_summary.data.Per_episode.Typical_cycle_length">
+         <path value="Menstruation_summary.data.Per_episode.Typical_cycle_length"/>
+         <short value="Typical cycle length"/>
+         <definition value="The usual length of cycle during this episode."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstruation_summary.data.Per_episode.Typical_cycle_length"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Menstruation_summary.data.Per_episode.Typical_cycle_length.value_DV_DURATION">
+         <path value="Menstruation_summary.data.Per_episode.Typical_cycle_length.value_DV_DURATION"/>
+         <short value="Typical cycle length"/>
+         <definition value="The usual length of cycle during this episode."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstruation_summary.data.Per_episode.Typical_cycle_length.value_DV_DURATION"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstruation_summary.data.Per_episode.Typical_cycle_length.value_DV_INTERVAL_DV_DURATION_">
+         <path value="Menstruation_summary.data.Per_episode.Typical_cycle_length.value_DV_INTERVAL_DV_DURATION_"/>
+         <short value="Typical cycle length"/>
+         <definition value="The usual length of cycle during this episode."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstruation_summary.data.Per_episode.Typical_cycle_length.value_DV_INTERVAL_DV_DURATION_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstruation_summary.data.Per_episode.Typical_menses_duration">
+         <path value="Menstruation_summary.data.Per_episode.Typical_menses_duration"/>
+         <short value="Typical menses duration"/>
+         <definition value="The usual duration of menses during this episode."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstruation_summary.data.Per_episode.Typical_menses_duration"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Menstruation_summary.data.Per_episode.Typical_menses_duration.value_DV_DURATION">
+         <path value="Menstruation_summary.data.Per_episode.Typical_menses_duration.value_DV_DURATION"/>
+         <short value="Typical menses duration"/>
+         <definition value="The usual duration of menses during this episode."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstruation_summary.data.Per_episode.Typical_menses_duration.value_DV_DURATION"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstruation_summary.data.Per_episode.Typical_menses_duration.value_DV_INTERVAL_DV_DURATION_">
+         <path value="Menstruation_summary.data.Per_episode.Typical_menses_duration.value_DV_INTERVAL_DV_DURATION_"/>
+         <short value="Typical menses duration"/>
+         <definition value="The usual duration of menses during this episode."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstruation_summary.data.Per_episode.Typical_menses_duration.value_DV_INTERVAL_DV_DURATION_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstruation_summary.data.Per_episode.Additional_details">
+         <path value="Menstruation_summary.data.Per_episode.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="Additional structured details about this episode of menstruation."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Menstruation_summary.data.Per_episode.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstruation_summary.data.Per_episode.Episode_end_date">
+         <path value="Menstruation_summary.data.Per_episode.Episode_end_date"/>
+         <short value="Episode end date"/>
+         <definition value="Date when this episode ceased."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstruation_summary.data.Per_episode.Episode_end_date"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Menstruation_summary.data.Per_episode.Episode_end_date.value">
+         <path value="Menstruation_summary.data.Per_episode.Episode_end_date.value"/>
+         <short value="Episode end date"/>
+         <definition value="Date when this episode ceased."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstruation_summary.data.Per_episode.Episode_end_date.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstruation_summary.data.Per_episode.Episode_comment">
+         <path value="Menstruation_summary.data.Per_episode.Episode_comment"/>
+         <short value="Episode comment"/>
+         <definition value="Additional narrative about this episode of menstruation not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstruation_summary.data.Per_episode.Episode_comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Menstruation_summary.data.Per_episode.Episode_comment.value">
+         <path value="Menstruation_summary.data.Per_episode.Episode_comment.value"/>
+         <short value="Episode comment"/>
+         <definition value="Additional narrative about this episode of menstruation not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstruation_summary.data.Per_episode.Episode_comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstruation_summary.data.Menopause">
+         <path value="Menstruation_summary.data.Menopause"/>
+         <short value="Menopause"/>
+         <definition value="Cessation of all menstrual cycles."/>
+         <min value="0"/>
+         <max value="2"/>
+         <base>
+            <path value="Menstruation_summary.data.Menopause"/>
+            <min value="0"/>
+            <max value="2"/>
+         </base>
+      </element>
+      <element id="Menstruation_summary.data.Menopause.value_DV_DURATION">
+         <path value="Menstruation_summary.data.Menopause.value_DV_DURATION"/>
+         <short value="Menopause"/>
+         <definition value="Cessation of all menstrual cycles."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstruation_summary.data.Menopause.value_DV_DURATION"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstruation_summary.data.Menopause.value_DV_DATE">
+         <path value="Menstruation_summary.data.Menopause.value_DV_DATE"/>
+         <short value="Menopause"/>
+         <definition value="Cessation of all menstrual cycles."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstruation_summary.data.Menopause.value_DV_DATE"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="date"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstruation_summary.data.Comment">
+         <path value="Menstruation_summary.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the overall patterns and episodes of menstruation not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstruation_summary.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Menstruation_summary.data.Comment.value">
+         <path value="Menstruation_summary.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the overall patterns and episodes of menstruation not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstruation_summary.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

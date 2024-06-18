@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Contraceptiveusesummary-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-contraceptiveusesummary-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-EVALUATION.contraceptive_summary.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Contraceptiveusesummary"/>
+   <title value="Contraceptive use summary"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Summary and persistent information about the use of methods to prevent pregnancy."/>
+   <purpose value="To record the current status and episodic details about specific types of contraception used by an individual."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Contraceptive_use_summary">
+         <path value="Contraceptive_use_summary"/>
+         <short value="Contraceptive use summary"/>
+         <definition value="Summary and persistent information about the use of methods to prevent pregnancy."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraceptive_use_summary"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Contraceptive_use_summary.protocol">
+         <path value="Contraceptive_use_summary.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraceptive_use_summary.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Contraceptive_use_summary.protocol.Extension">
+         <path value="Contraceptive_use_summary.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Contraceptive_use_summary.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Contraceptive_use_summary.protocol.Last_updated">
+         <path value="Contraceptive_use_summary.protocol.Last_updated"/>
+         <short value="Last updated"/>
+         <definition value="The date this contraceptive use summary was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraceptive_use_summary.protocol.Last_updated"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Contraceptive_use_summary.protocol.Last_updated.value">
+         <path value="Contraceptive_use_summary.protocol.Last_updated.value"/>
+         <short value="Last updated"/>
+         <definition value="The date this contraceptive use summary was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraceptive_use_summary.protocol.Last_updated.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Contraceptive_use_summary.data">
+         <path value="Contraceptive_use_summary.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraceptive_use_summary.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Contraceptive_use_summary.data.Overall_status">
+         <path value="Contraceptive_use_summary.data.Overall_status"/>
+         <short value="Overall status"/>
+         <definition value="Statement about regular use of any type of contraception."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraceptive_use_summary.data.Overall_status"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Contraceptive_use_summary.data.Overall_status.value">
+         <path value="Contraceptive_use_summary.data.Overall_status.value"/>
+         <short value="Overall status"/>
+         <definition value="Statement about regular use of any type of contraception."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraceptive_use_summary.data.Overall_status.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Contraceptive_use_summary.data.Overall_description">
+         <path value="Contraceptive_use_summary.data.Overall_description"/>
+         <short value="Overall description"/>
+         <definition value="Narrative summary about the individual's overall use of contraception."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraceptive_use_summary.data.Overall_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Contraceptive_use_summary.data.Overall_description.value">
+         <path value="Contraceptive_use_summary.data.Overall_description.value"/>
+         <short value="Overall description"/>
+         <definition value="Narrative summary about the individual's overall use of contraception."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraceptive_use_summary.data.Overall_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Contraceptive_use_summary.data.Per_type">
+         <path value="Contraceptive_use_summary.data.Per_type"/>
+         <short value="Per type"/>
+         <definition value="Details about use of a specified type of contraception."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Contraceptive_use_summary.data.Per_type"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Contraceptive_use_summary.data.Per_type.Type">
+         <path value="Contraceptive_use_summary.data.Per_type.Type"/>
+         <short value="Type"/>
+         <definition value="The type of contraception used by the individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraceptive_use_summary.data.Per_type.Type"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Contraceptive_use_summary.data.Per_type.Type.value_DV_TEXT">
+         <path value="Contraceptive_use_summary.data.Per_type.Type.value_DV_TEXT"/>
+         <short value="Type"/>
+         <definition value="The type of contraception used by the individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraceptive_use_summary.data.Per_type.Type.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Contraceptive_use_summary.data.Per_type.Type.value_DV_CODED_TEXT">
+         <path value="Contraceptive_use_summary.data.Per_type.Type.value_DV_CODED_TEXT"/>
+         <short value="Type"/>
+         <definition value="The type of contraception used by the individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraceptive_use_summary.data.Per_type.Type.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Contraceptive_use_summary.data.Per_type.Status">
+         <path value="Contraceptive_use_summary.data.Per_type.Status"/>
+         <short value="Status"/>
+         <definition value="Statement about current use of the specified type of contraception."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraceptive_use_summary.data.Per_type.Status"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Contraceptive_use_summary.data.Per_type.Status.value">
+         <path value="Contraceptive_use_summary.data.Per_type.Status.value"/>
+         <short value="Status"/>
+         <definition value="Statement about current use of the specified type of contraception."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraceptive_use_summary.data.Per_type.Status.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Contraceptive_use_summary.data.Per_type.Description">
+         <path value="Contraceptive_use_summary.data.Per_type.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative summary about the use of the specified type of contraception."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraceptive_use_summary.data.Per_type.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Contraceptive_use_summary.data.Per_type.Description.value">
+         <path value="Contraceptive_use_summary.data.Per_type.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative summary about the use of the specified type of contraception."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraceptive_use_summary.data.Per_type.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Contraceptive_use_summary.data.Per_type.Start_date">
+         <path value="Contraceptive_use_summary.data.Per_type.Start_date"/>
+         <short value="Start date"/>
+         <definition value="Date when the individual first used the specified type of contraception."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraceptive_use_summary.data.Per_type.Start_date"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Contraceptive_use_summary.data.Per_type.Start_date.value">
+         <path value="Contraceptive_use_summary.data.Per_type.Start_date.value"/>
+         <short value="Start date"/>
+         <definition value="Date when the individual first used the specified type of contraception."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraceptive_use_summary.data.Per_type.Start_date.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Contraceptive_use_summary.data.Per_type.Per_episode">
+         <path value="Contraceptive_use_summary.data.Per_type.Per_episode"/>
+         <short value="Per episode"/>
+         <definition value="Details about contraceptive use during an identified period of time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Contraceptive_use_summary.data.Per_type.Per_episode"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Contraceptive_use_summary.data.Per_type.Per_episode.Episode_label">
+         <path value="Contraceptive_use_summary.data.Per_type.Per_episode.Episode_label"/>
+         <short value="Episode label"/>
+         <definition value="Identification of an episode of contraception use - either as a number in a sequence and/or a named event."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraceptive_use_summary.data.Per_type.Per_episode.Episode_label"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Contraceptive_use_summary.data.Per_type.Per_episode.Episode_label.value_DV_COUNT">
+         <path value="Contraceptive_use_summary.data.Per_type.Per_episode.Episode_label.value_DV_COUNT"/>
+         <short value="Episode label"/>
+         <definition value="Identification of an episode of contraception use - either as a number in a sequence and/or a named event."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraceptive_use_summary.data.Per_type.Per_episode.Episode_label.value_DV_COUNT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Contraceptive_use_summary.data.Per_type.Per_episode.Episode_label.value_DV_TEXT">
+         <path value="Contraceptive_use_summary.data.Per_type.Per_episode.Episode_label.value_DV_TEXT"/>
+         <short value="Episode label"/>
+         <definition value="Identification of an episode of contraception use - either as a number in a sequence and/or a named event."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraceptive_use_summary.data.Per_type.Per_episode.Episode_label.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Contraceptive_use_summary.data.Per_type.Per_episode.Specific_name">
+         <path value="Contraceptive_use_summary.data.Per_type.Per_episode.Specific_name"/>
+         <short value="Specific name"/>
+         <definition value="Identification of the specific contraception used in this episode, by name."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraceptive_use_summary.data.Per_type.Per_episode.Specific_name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Contraceptive_use_summary.data.Per_type.Per_episode.Specific_name.value">
+         <path value="Contraceptive_use_summary.data.Per_type.Per_episode.Specific_name.value"/>
+         <short value="Specific name"/>
+         <definition value="Identification of the specific contraception used in this episode, by name."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraceptive_use_summary.data.Per_type.Per_episode.Specific_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Contraceptive_use_summary.data.Per_type.Per_episode.Description">
+         <path value="Contraceptive_use_summary.data.Per_type.Per_episode.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the overall use of contraception during this episode."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraceptive_use_summary.data.Per_type.Per_episode.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Contraceptive_use_summary.data.Per_type.Per_episode.Description.value">
+         <path value="Contraceptive_use_summary.data.Per_type.Per_episode.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the overall use of contraception during this episode."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraceptive_use_summary.data.Per_type.Per_episode.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Contraceptive_use_summary.data.Per_type.Per_episode.Clinical_indication">
+         <path value="Contraceptive_use_summary.data.Per_type.Per_episode.Clinical_indication"/>
+         <short value="Clinical indication"/>
+         <definition value="Clinical reason for using the specified type of contraception during this episode."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraceptive_use_summary.data.Per_type.Per_episode.Clinical_indication"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Contraceptive_use_summary.data.Per_type.Per_episode.Clinical_indication.value">
+         <path value="Contraceptive_use_summary.data.Per_type.Per_episode.Clinical_indication.value"/>
+         <short value="Clinical indication"/>
+         <definition value="Clinical reason for using the specified type of contraception during this episode."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraceptive_use_summary.data.Per_type.Per_episode.Clinical_indication.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Contraceptive_use_summary.data.Per_type.Per_episode.Goal">
+         <path value="Contraceptive_use_summary.data.Per_type.Per_episode.Goal"/>
+         <short value="Goal"/>
+         <definition value="Intended outcome as a result of use of the specified contraception."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraceptive_use_summary.data.Per_type.Per_episode.Goal"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Contraceptive_use_summary.data.Per_type.Per_episode.Goal.value">
+         <path value="Contraceptive_use_summary.data.Per_type.Per_episode.Goal.value"/>
+         <short value="Goal"/>
+         <definition value="Intended outcome as a result of use of the specified contraception."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraceptive_use_summary.data.Per_type.Per_episode.Goal.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Contraceptive_use_summary.data.Per_type.Per_episode.Episode_start_date">
+         <path value="Contraceptive_use_summary.data.Per_type.Per_episode.Episode_start_date"/>
+         <short value="Episode start date"/>
+         <definition value="Date when this episode commenced."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraceptive_use_summary.data.Per_type.Per_episode.Episode_start_date"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Contraceptive_use_summary.data.Per_type.Per_episode.Episode_start_date.value">
+         <path value="Contraceptive_use_summary.data.Per_type.Per_episode.Episode_start_date.value"/>
+         <short value="Episode start date"/>
+         <definition value="Date when this episode commenced."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraceptive_use_summary.data.Per_type.Per_episode.Episode_start_date.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="date"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Contraceptive_use_summary.data.Per_type.Per_episode.Episode_end_date">
+         <path value="Contraceptive_use_summary.data.Per_type.Per_episode.Episode_end_date"/>
+         <short value="Episode end date"/>
+         <definition value="Date when this episode ceased."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraceptive_use_summary.data.Per_type.Per_episode.Episode_end_date"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Contraceptive_use_summary.data.Per_type.Per_episode.Episode_end_date.value">
+         <path value="Contraceptive_use_summary.data.Per_type.Per_episode.Episode_end_date.value"/>
+         <short value="Episode end date"/>
+         <definition value="Date when this episode ceased."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraceptive_use_summary.data.Per_type.Per_episode.Episode_end_date.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="date"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Contraceptive_use_summary.data.Per_type.Per_episode.Reason_for_cessation">
+         <path value="Contraceptive_use_summary.data.Per_type.Per_episode.Reason_for_cessation"/>
+         <short value="Reason for cessation"/>
+         <definition value="Narrative description for the reason for stopping use of the specified type of contraception during this episode."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraceptive_use_summary.data.Per_type.Per_episode.Reason_for_cessation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Contraceptive_use_summary.data.Per_type.Per_episode.Reason_for_cessation.value">
+         <path value="Contraceptive_use_summary.data.Per_type.Per_episode.Reason_for_cessation.value"/>
+         <short value="Reason for cessation"/>
+         <definition value="Narrative description for the reason for stopping use of the specified type of contraception during this episode."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraceptive_use_summary.data.Per_type.Per_episode.Reason_for_cessation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Contraceptive_use_summary.data.Per_type.Per_episode.Episode_details">
+         <path value="Contraceptive_use_summary.data.Per_type.Per_episode.Episode_details"/>
+         <short value="Episode details"/>
+         <definition value="Additional structured details about the specified episode of contraception use."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Contraceptive_use_summary.data.Per_type.Per_episode.Episode_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Contraceptive_use_summary.data.Per_type.Per_episode.Episode_comment">
+         <path value="Contraceptive_use_summary.data.Per_type.Per_episode.Episode_comment"/>
+         <short value="Episode comment"/>
+         <definition value="Additional narrative about the use of the specified contraception during the specified episode, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraceptive_use_summary.data.Per_type.Per_episode.Episode_comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Contraceptive_use_summary.data.Per_type.Per_episode.Episode_comment.value">
+         <path value="Contraceptive_use_summary.data.Per_type.Per_episode.Episode_comment.value"/>
+         <short value="Episode comment"/>
+         <definition value="Additional narrative about the use of the specified contraception during the specified episode, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraceptive_use_summary.data.Per_type.Per_episode.Episode_comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Contraceptive_use_summary.data.Per_type.End_date">
+         <path value="Contraceptive_use_summary.data.Per_type.End_date"/>
+         <short value="End date"/>
+         <definition value="Date when the individual last used the specified type of contraception."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraceptive_use_summary.data.Per_type.End_date"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Contraceptive_use_summary.data.Per_type.End_date.value">
+         <path value="Contraceptive_use_summary.data.Per_type.End_date.value"/>
+         <short value="End date"/>
+         <definition value="Date when the individual last used the specified type of contraception."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraceptive_use_summary.data.Per_type.End_date.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Contraceptive_use_summary.data.Per_type.Type_details">
+         <path value="Contraceptive_use_summary.data.Per_type.Type_details"/>
+         <short value="Type details"/>
+         <definition value="Additional structured details about the specified type of contraception used."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Contraceptive_use_summary.data.Per_type.Type_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Contraceptive_use_summary.data.Per_type.Comment">
+         <path value="Contraceptive_use_summary.data.Per_type.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about use of the specified type of contraception, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraceptive_use_summary.data.Per_type.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Contraceptive_use_summary.data.Per_type.Comment.value">
+         <path value="Contraceptive_use_summary.data.Per_type.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about use of the specified type of contraception, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraceptive_use_summary.data.Per_type.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Contraceptive_use_summary.data.Overall_details">
+         <path value="Contraceptive_use_summary.data.Overall_details"/>
+         <short value="Overall details"/>
+         <definition value="Additional structured details about the overall use of contraception."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Contraceptive_use_summary.data.Overall_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Contraceptive_use_summary.data.Overall_comment">
+         <path value="Contraceptive_use_summary.data.Overall_comment"/>
+         <short value="Overall comment"/>
+         <definition value="Additional narrative about the use of contraception that has not been captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraceptive_use_summary.data.Overall_comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Contraceptive_use_summary.data.Overall_comment.value">
+         <path value="Contraceptive_use_summary.data.Overall_comment.value"/>
+         <short value="Overall comment"/>
+         <definition value="Additional narrative about the use of contraception that has not been captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraceptive_use_summary.data.Overall_comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

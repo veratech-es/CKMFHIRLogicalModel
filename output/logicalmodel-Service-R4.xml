@@ -1,0 +1,1204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Service-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-service-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-ACTION.service.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Service"/>
+   <title value="Service"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="A simple health-related service or activity delivered by a clinician, organisation or agency."/>
+   <purpose value="To record details about a simple health-related service or activity delivered by a clinician, organisation or agency."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Service">
+         <path value="Service"/>
+         <short value="Service"/>
+         <definition value="A simple health-related service or activity delivered by a clinician, organisation or agency."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Service"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.protocol">
+         <path value="Service.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.protocol.Requestor_identifier">
+         <path value="Service.protocol.Requestor_identifier"/>
+         <short value="Requestor identifier"/>
+         <definition value="The local ID assigned to the order by the healthcare provider or organisation requesting the service."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.protocol.Requestor_identifier"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Service.protocol.Requestor_identifier.value_DV_IDENTIFIER">
+         <path value="Service.protocol.Requestor_identifier.value_DV_IDENTIFIER"/>
+         <short value="Requestor identifier"/>
+         <definition value="The local ID assigned to the order by the healthcare provider or organisation requesting the service."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.protocol.Requestor_identifier.value_DV_IDENTIFIER"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.protocol.Requestor_identifier.value_DV_TEXT">
+         <path value="Service.protocol.Requestor_identifier.value_DV_TEXT"/>
+         <short value="Requestor identifier"/>
+         <definition value="The local ID assigned to the order by the healthcare provider or organisation requesting the service."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.protocol.Requestor_identifier.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.protocol.Requestor">
+         <path value="Service.protocol.Requestor"/>
+         <short value="Requestor"/>
+         <definition value="Details about the healthcare provider or organisation requesting the service."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Service.protocol.Requestor"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.protocol.Service_provider_identifier">
+         <path value="Service.protocol.Service_provider_identifier"/>
+         <short value="Service provider identifier"/>
+         <definition value="The ID assigned to the order by the provider fulfilling the service."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.protocol.Service_provider_identifier"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Service.protocol.Service_provider_identifier.value_DV_IDENTIFIER">
+         <path value="Service.protocol.Service_provider_identifier.value_DV_IDENTIFIER"/>
+         <short value="Service provider identifier"/>
+         <definition value="The ID assigned to the order by the provider fulfilling the service."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.protocol.Service_provider_identifier.value_DV_IDENTIFIER"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.protocol.Service_provider_identifier.value_DV_TEXT">
+         <path value="Service.protocol.Service_provider_identifier.value_DV_TEXT"/>
+         <short value="Service provider identifier"/>
+         <definition value="The ID assigned to the order by the provider fulfilling the service."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.protocol.Service_provider_identifier.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.protocol.Receiver">
+         <path value="Service.protocol.Receiver"/>
+         <short value="Receiver"/>
+         <definition value="Details about the healthcare provider or organisation receiving the service request."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Service.protocol.Receiver"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.protocol.Extension">
+         <path value="Service.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Service.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.description">
+         <path value="Service.description"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.description.Service_name">
+         <path value="Service.description.Service_name"/>
+         <short value="Service name"/>
+         <definition value="Identification of the clinical service carried out."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.description.Service_name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Service.description.Service_name.value">
+         <path value="Service.description.Service_name.value"/>
+         <short value="Service name"/>
+         <definition value="Identification of the clinical service carried out."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.description.Service_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.description.Service_type">
+         <path value="Service.description.Service_type"/>
+         <short value="Service type"/>
+         <definition value="Type of service carried out."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.description.Service_type"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Service.description.Service_type.value">
+         <path value="Service.description.Service_type.value"/>
+         <short value="Service type"/>
+         <definition value="Type of service carried out."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.description.Service_type.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.description.Description">
+         <path value="Service.description.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the service, as appropriate for the pathway step."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.description.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Service.description.Description.value">
+         <path value="Service.description.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the service, as appropriate for the pathway step."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.description.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.description.Service_detail">
+         <path value="Service.description.Service_detail"/>
+         <short value="Service detail"/>
+         <definition value="Structured information about the service."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Service.description.Service_detail"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.description.Planned_date_time">
+         <path value="Service.description.Planned_date_time"/>
+         <short value="Planned date/time"/>
+         <definition value="The estimated date and/or time on which the service is intended to be performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.description.Planned_date_time"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Service.description.Planned_date_time.value_DV_DATE_TIME">
+         <path value="Service.description.Planned_date_time.value_DV_DATE_TIME"/>
+         <short value="Planned date/time"/>
+         <definition value="The estimated date and/or time on which the service is intended to be performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.description.Planned_date_time.value_DV_DATE_TIME"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.description.Planned_date_time.value_DV_INTERVAL_DV_DATE_TIME_">
+         <path value="Service.description.Planned_date_time.value_DV_INTERVAL_DV_DATE_TIME_"/>
+         <short value="Planned date/time"/>
+         <definition value="The estimated date and/or time on which the service is intended to be performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.description.Planned_date_time.value_DV_INTERVAL_DV_DATE_TIME_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.description.Planned_date_time.value_DV_DURATION">
+         <path value="Service.description.Planned_date_time.value_DV_DURATION"/>
+         <short value="Planned date/time"/>
+         <definition value="The estimated date and/or time on which the service is intended to be performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.description.Planned_date_time.value_DV_DURATION"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.description.Planned_date_time.value_DV_INTERVAL_DV_DURATION_">
+         <path value="Service.description.Planned_date_time.value_DV_INTERVAL_DV_DURATION_"/>
+         <short value="Planned date/time"/>
+         <definition value="The estimated date and/or time on which the service is intended to be performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.description.Planned_date_time.value_DV_INTERVAL_DV_DURATION_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.description.Planned_date_time.value_DV_TEXT">
+         <path value="Service.description.Planned_date_time.value_DV_TEXT"/>
+         <short value="Planned date/time"/>
+         <definition value="The estimated date and/or time on which the service is intended to be performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.description.Planned_date_time.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.description.Scheduled_date_time">
+         <path value="Service.description.Scheduled_date_time"/>
+         <short value="Scheduled date/time"/>
+         <definition value="The date and/or time on which the service is intended to be performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.description.Scheduled_date_time"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Service.description.Scheduled_date_time.value">
+         <path value="Service.description.Scheduled_date_time.value"/>
+         <short value="Scheduled date/time"/>
+         <definition value="The date and/or time on which the service is intended to be performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.description.Scheduled_date_time.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.description.Sequence">
+         <path value="Service.description.Sequence"/>
+         <short value="Sequence"/>
+         <definition value="The sequence of the specified clinical service."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.description.Sequence"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Service.description.Sequence.value">
+         <path value="Service.description.Sequence.value"/>
+         <short value="Sequence"/>
+         <definition value="The sequence of the specified clinical service."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.description.Sequence.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.description.Multimedia_representation">
+         <path value="Service.description.Multimedia_representation"/>
+         <short value="Multimedia representation"/>
+         <definition value="Digital image, video, diagram or other media representing the service."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Service.description.Multimedia_representation"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.description.Reason">
+         <path value="Service.description.Reason"/>
+         <short value="Reason"/>
+         <definition value="Reason that the activity or care pathway step for the identified service was carried out."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.description.Reason"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Service.description.Reason.value">
+         <path value="Service.description.Reason.value"/>
+         <short value="Reason"/>
+         <definition value="Reason that the activity or care pathway step for the identified service was carried out."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.description.Reason.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.description.Additional_details">
+         <path value="Service.description.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="Additional structured details about the service."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Service.description.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.description.Comment">
+         <path value="Service.description.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the activity or care pathway step not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.description.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Service.description.Comment.value">
+         <path value="Service.description.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the activity or care pathway step not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.description.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.Service_planned">
+         <path value="Service.Service_planned"/>
+         <short value="Service planned"/>
+         <definition value="Service request to healthcare provider is planned."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.Service_planned"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.ism_transition_Service_planned.current_state">
+         <path value="Service.ism_transition_Service_planned.current_state"/>
+         <short value="Service planned"/>
+         <definition value="Service request to healthcare provider is planned."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.ism_transition_Service_planned.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.ism_transition_Service_planned.careflow_step">
+         <path value="Service.ism_transition_Service_planned.careflow_step"/>
+         <short value="Service planned"/>
+         <definition value="Service request to healthcare provider is planned."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.ism_transition_Service_planned.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.Service_request_sent">
+         <path value="Service.Service_request_sent"/>
+         <short value="Service request sent"/>
+         <definition value="Request for service sent."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.Service_request_sent"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.ism_transition_Service_request_sent.current_state">
+         <path value="Service.ism_transition_Service_request_sent.current_state"/>
+         <short value="Service request sent"/>
+         <definition value="Request for service sent."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.ism_transition_Service_request_sent.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.ism_transition_Service_request_sent.careflow_step">
+         <path value="Service.ism_transition_Service_request_sent.careflow_step"/>
+         <short value="Service request sent"/>
+         <definition value="Request for service sent."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.ism_transition_Service_request_sent.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.Service_request_received">
+         <path value="Service.Service_request_received"/>
+         <short value="Service request received"/>
+         <definition value="Request for service received by the service provider."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.Service_request_received"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.ism_transition_Service_request_received.current_state">
+         <path value="Service.ism_transition_Service_request_received.current_state"/>
+         <short value="Service request received"/>
+         <definition value="Request for service received by the service provider."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.ism_transition_Service_request_received.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.ism_transition_Service_request_received.careflow_step">
+         <path value="Service.ism_transition_Service_request_received.careflow_step"/>
+         <short value="Service request received"/>
+         <definition value="Request for service received by the service provider."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.ism_transition_Service_request_received.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.Service_postponed">
+         <path value="Service.Service_postponed"/>
+         <short value="Service postponed"/>
+         <definition value="The planned service has been postponed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.Service_postponed"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.ism_transition_Service_postponed.current_state">
+         <path value="Service.ism_transition_Service_postponed.current_state"/>
+         <short value="Service postponed"/>
+         <definition value="The planned service has been postponed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.ism_transition_Service_postponed.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.ism_transition_Service_postponed.careflow_step">
+         <path value="Service.ism_transition_Service_postponed.careflow_step"/>
+         <short value="Service postponed"/>
+         <definition value="The planned service has been postponed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.ism_transition_Service_postponed.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.Service_cancelled">
+         <path value="Service.Service_cancelled"/>
+         <short value="Service cancelled"/>
+         <definition value="The planned service has been cancelled prior to commencement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.Service_cancelled"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.ism_transition_Service_cancelled.current_state">
+         <path value="Service.ism_transition_Service_cancelled.current_state"/>
+         <short value="Service cancelled"/>
+         <definition value="The planned service has been cancelled prior to commencement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.ism_transition_Service_cancelled.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.ism_transition_Service_cancelled.careflow_step">
+         <path value="Service.ism_transition_Service_cancelled.careflow_step"/>
+         <short value="Service cancelled"/>
+         <definition value="The planned service has been cancelled prior to commencement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.ism_transition_Service_cancelled.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.Service_scheduled">
+         <path value="Service.Service_scheduled"/>
+         <short value="Service scheduled"/>
+         <definition value="An appointment for the service has been made."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.Service_scheduled"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.ism_transition_Service_scheduled.current_state">
+         <path value="Service.ism_transition_Service_scheduled.current_state"/>
+         <short value="Service scheduled"/>
+         <definition value="An appointment for the service has been made."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.ism_transition_Service_scheduled.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.ism_transition_Service_scheduled.careflow_step">
+         <path value="Service.ism_transition_Service_scheduled.careflow_step"/>
+         <short value="Service scheduled"/>
+         <definition value="An appointment for the service has been made."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.ism_transition_Service_scheduled.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.Service_carried_out">
+         <path value="Service.Service_carried_out"/>
+         <short value="Service carried out"/>
+         <definition value="The service, or a single activity in a sequence of recurring service activities, has been carried out."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.Service_carried_out"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.ism_transition_Service_carried_out.current_state">
+         <path value="Service.ism_transition_Service_carried_out.current_state"/>
+         <short value="Service carried out"/>
+         <definition value="The service, or a single activity in a sequence of recurring service activities, has been carried out."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.ism_transition_Service_carried_out.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.ism_transition_Service_carried_out.careflow_step">
+         <path value="Service.ism_transition_Service_carried_out.careflow_step"/>
+         <short value="Service carried out"/>
+         <definition value="The service, or a single activity in a sequence of recurring service activities, has been carried out."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.ism_transition_Service_carried_out.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.Service_suspended">
+         <path value="Service.Service_suspended"/>
+         <short value="Service suspended"/>
+         <definition value="The service has been suspended without completion."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.Service_suspended"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.ism_transition_Service_suspended.current_state">
+         <path value="Service.ism_transition_Service_suspended.current_state"/>
+         <short value="Service suspended"/>
+         <definition value="The service has been suspended without completion."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.ism_transition_Service_suspended.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.ism_transition_Service_suspended.careflow_step">
+         <path value="Service.ism_transition_Service_suspended.careflow_step"/>
+         <short value="Service suspended"/>
+         <definition value="The service has been suspended without completion."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.ism_transition_Service_suspended.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.Service_abandoned">
+         <path value="Service.Service_abandoned"/>
+         <short value="Service abandoned"/>
+         <definition value="The referral has been ceased before the service has been completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.Service_abandoned"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.ism_transition_Service_abandoned.current_state">
+         <path value="Service.ism_transition_Service_abandoned.current_state"/>
+         <short value="Service abandoned"/>
+         <definition value="The referral has been ceased before the service has been completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.ism_transition_Service_abandoned.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.ism_transition_Service_abandoned.careflow_step">
+         <path value="Service.ism_transition_Service_abandoned.careflow_step"/>
+         <short value="Service abandoned"/>
+         <definition value="The referral has been ceased before the service has been completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.ism_transition_Service_abandoned.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.Service_expired">
+         <path value="Service.Service_expired"/>
+         <short value="Service expired"/>
+         <definition value="The referral has expired before the referral episode has been completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.Service_expired"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.ism_transition_Service_expired.current_state">
+         <path value="Service.ism_transition_Service_expired.current_state"/>
+         <short value="Service expired"/>
+         <definition value="The referral has expired before the referral episode has been completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.ism_transition_Service_expired.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.ism_transition_Service_expired.careflow_step">
+         <path value="Service.ism_transition_Service_expired.careflow_step"/>
+         <short value="Service expired"/>
+         <definition value="The referral has expired before the referral episode has been completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.ism_transition_Service_expired.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.Service_activity_complete">
+         <path value="Service.Service_activity_complete"/>
+         <short value="Service activity complete"/>
+         <definition value="All service activities have been completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.Service_activity_complete"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.ism_transition_Service_activity_complete.current_state">
+         <path value="Service.ism_transition_Service_activity_complete.current_state"/>
+         <short value="Service activity complete"/>
+         <definition value="All service activities have been completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.ism_transition_Service_activity_complete.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service.ism_transition_Service_activity_complete.careflow_step">
+         <path value="Service.ism_transition_Service_activity_complete.careflow_step"/>
+         <short value="Service activity complete"/>
+         <definition value="All service activities have been completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service.ism_transition_Service_activity_complete.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

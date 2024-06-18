@@ -1,0 +1,1378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Audiologyspeechtestresult-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-audiologyspeechtestresult-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.audiology_speech_test_result.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Audiologyspeechtestresult"/>
+   <title value="Audiology speech test result"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Record of results from an audiology speech test conducted for the purpose of assessing speech discrimination and speech recognition, and their clinical interpretation."/>
+   <purpose value="To record results from an audiology speech test conducted for the purpose of assessing speech discrimination and speech recognition, and their clinical interpretation."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Audiology_speech_test_result">
+         <path value="Audiology_speech_test_result"/>
+         <short value="Audiology speech test result"/>
+         <definition value="Record of results from an audiology speech test conducted for the purpose of assessing speech discrimination and speech recognition, and their clinical interpretation."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiology_speech_test_result.protocol">
+         <path value="Audiology_speech_test_result.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiology_speech_test_result.protocol.Type_of_adaptive_test">
+         <path value="Audiology_speech_test_result.protocol.Type_of_adaptive_test"/>
+         <short value="Type of adaptive test"/>
+         <definition value="The type of adaptive test used. Typically either in quiet or in noise."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.protocol.Type_of_adaptive_test"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiology_speech_test_result.protocol.Type_of_adaptive_test.value">
+         <path value="Audiology_speech_test_result.protocol.Type_of_adaptive_test.value"/>
+         <short value="Type of adaptive test"/>
+         <definition value="The type of adaptive test used. Typically either in quiet or in noise."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.protocol.Type_of_adaptive_test.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiology_speech_test_result.protocol.Target_performance_level">
+         <path value="Audiology_speech_test_result.protocol.Target_performance_level"/>
+         <short value="Target performance level"/>
+         <definition value="The specified percentage correct used to setup the adaptive test protocol."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.protocol.Target_performance_level"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiology_speech_test_result.protocol.Target_performance_level.value">
+         <path value="Audiology_speech_test_result.protocol.Target_performance_level.value"/>
+         <short value="Target performance level"/>
+         <definition value="The specified percentage correct used to setup the adaptive test protocol."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.protocol.Target_performance_level.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Ratio"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiology_speech_test_result.protocol.Start_level">
+         <path value="Audiology_speech_test_result.protocol.Start_level"/>
+         <short value="Start level"/>
+         <definition value="The initial presentation level in dB."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.protocol.Start_level"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiology_speech_test_result.protocol.Start_level.value">
+         <path value="Audiology_speech_test_result.protocol.Start_level.value"/>
+         <short value="Start level"/>
+         <definition value="The initial presentation level in dB."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.protocol.Start_level.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiology_speech_test_result.protocol.Step_size">
+         <path value="Audiology_speech_test_result.protocol.Step_size"/>
+         <short value="Step size"/>
+         <definition value="The number of dB by which the stimullus intensity is changed after each response."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.protocol.Step_size"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiology_speech_test_result.protocol.Step_size.value">
+         <path value="Audiology_speech_test_result.protocol.Step_size.value"/>
+         <short value="Step size"/>
+         <definition value="The number of dB by which the stimullus intensity is changed after each response."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.protocol.Step_size.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiology_speech_test_result.protocol.Presentation_voice">
+         <path value="Audiology_speech_test_result.protocol.Presentation_voice"/>
+         <short value="Presentation voice"/>
+         <definition value="The mode by which the speech test stimuli are presented."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.protocol.Presentation_voice"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiology_speech_test_result.protocol.Presentation_voice.value">
+         <path value="Audiology_speech_test_result.protocol.Presentation_voice.value"/>
+         <short value="Presentation voice"/>
+         <definition value="The mode by which the speech test stimuli are presented."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.protocol.Presentation_voice.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiology_speech_test_result.protocol.Presentation_method">
+         <path value="Audiology_speech_test_result.protocol.Presentation_method"/>
+         <short value="Presentation method"/>
+         <definition value="The method used to present the speech test stimulus."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.protocol.Presentation_method"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiology_speech_test_result.protocol.Presentation_method.value">
+         <path value="Audiology_speech_test_result.protocol.Presentation_method.value"/>
+         <short value="Presentation method"/>
+         <definition value="The method used to present the speech test stimulus."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.protocol.Presentation_method.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiology_speech_test_result.protocol.Response_type">
+         <path value="Audiology_speech_test_result.protocol.Response_type"/>
+         <short value="Response type"/>
+         <definition value="The type of response the patient is asked to give after hearing each stimulus."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.protocol.Response_type"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiology_speech_test_result.protocol.Response_type.value">
+         <path value="Audiology_speech_test_result.protocol.Response_type.value"/>
+         <short value="Response type"/>
+         <definition value="The type of response the patient is asked to give after hearing each stimulus."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.protocol.Response_type.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiology_speech_test_result.protocol.Response_set">
+         <path value="Audiology_speech_test_result.protocol.Response_set"/>
+         <short value="Response set"/>
+         <definition value="The size of the response set."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.protocol.Response_set"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiology_speech_test_result.protocol.Response_set.value">
+         <path value="Audiology_speech_test_result.protocol.Response_set.value"/>
+         <short value="Response set"/>
+         <definition value="The size of the response set."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.protocol.Response_set.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiology_speech_test_result.protocol.Closed_set_alternatives">
+         <path value="Audiology_speech_test_result.protocol.Closed_set_alternatives"/>
+         <short value="Closed set alternatives"/>
+         <definition value="The number of response alternatives offered in the Closed Set."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.protocol.Closed_set_alternatives"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiology_speech_test_result.protocol.Closed_set_alternatives.value">
+         <path value="Audiology_speech_test_result.protocol.Closed_set_alternatives.value"/>
+         <short value="Closed set alternatives"/>
+         <definition value="The number of response alternatives offered in the Closed Set."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.protocol.Closed_set_alternatives.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiology_speech_test_result.protocol.Closed_domain_items">
+         <path value="Audiology_speech_test_result.protocol.Closed_domain_items"/>
+         <short value="Closed domain items"/>
+         <definition value="The number of response items offered in the Closed Task Domain."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.protocol.Closed_domain_items"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiology_speech_test_result.protocol.Closed_domain_items.value">
+         <path value="Audiology_speech_test_result.protocol.Closed_domain_items.value"/>
+         <short value="Closed domain items"/>
+         <definition value="The number of response items offered in the Closed Task Domain."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.protocol.Closed_domain_items.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiology_speech_test_result.protocol.Stimulus_type">
+         <path value="Audiology_speech_test_result.protocol.Stimulus_type"/>
+         <short value="Stimulus type"/>
+         <definition value="The type of speech stimulus used for the speech test."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.protocol.Stimulus_type"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiology_speech_test_result.protocol.Stimulus_type.value">
+         <path value="Audiology_speech_test_result.protocol.Stimulus_type.value"/>
+         <short value="Stimulus type"/>
+         <definition value="The type of speech stimulus used for the speech test."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.protocol.Stimulus_type.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiology_speech_test_result.protocol.SNR_speech_presentation_level">
+         <path value="Audiology_speech_test_result.protocol.SNR_speech_presentation_level"/>
+         <short value="SNR speech presentation level"/>
+         <definition value="The initial signal to noise ratio level in dB. For example, +20 dB."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.protocol.SNR_speech_presentation_level"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiology_speech_test_result.protocol.SNR_speech_presentation_level.value">
+         <path value="Audiology_speech_test_result.protocol.SNR_speech_presentation_level.value"/>
+         <short value="SNR speech presentation level"/>
+         <definition value="The initial signal to noise ratio level in dB. For example, +20 dB."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.protocol.SNR_speech_presentation_level.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiology_speech_test_result.protocol.SNR_competing_noise">
+         <path value="Audiology_speech_test_result.protocol.SNR_competing_noise"/>
+         <short value="SNR competing noise"/>
+         <definition value="Type of signal used as a competing signal during Signal to Noise Ratio testing."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.protocol.SNR_competing_noise"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiology_speech_test_result.protocol.SNR_competing_noise.value">
+         <path value="Audiology_speech_test_result.protocol.SNR_competing_noise.value"/>
+         <short value="SNR competing noise"/>
+         <definition value="Type of signal used as a competing signal during Signal to Noise Ratio testing."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.protocol.SNR_competing_noise.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiology_speech_test_result.protocol.SNR_competing_noise_presentation">
+         <path value="Audiology_speech_test_result.protocol.SNR_competing_noise_presentation"/>
+         <short value="SNR competing noise presentation"/>
+         <definition value="The type of noise used in a speech test measuring speech perception in noise."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.protocol.SNR_competing_noise_presentation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiology_speech_test_result.protocol.SNR_competing_noise_presentation.value">
+         <path value="Audiology_speech_test_result.protocol.SNR_competing_noise_presentation.value"/>
+         <short value="SNR competing noise presentation"/>
+         <definition value="The type of noise used in a speech test measuring speech perception in noise."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.protocol.SNR_competing_noise_presentation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiology_speech_test_result.protocol.Number_of_voices">
+         <path value="Audiology_speech_test_result.protocol.Number_of_voices"/>
+         <short value="Number of voices"/>
+         <definition value="Number of voices used to generate multispeaker babble."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.protocol.Number_of_voices"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiology_speech_test_result.protocol.Number_of_voices.value">
+         <path value="Audiology_speech_test_result.protocol.Number_of_voices.value"/>
+         <short value="Number of voices"/>
+         <definition value="Number of voices used to generate multispeaker babble."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.protocol.Number_of_voices.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiology_speech_test_result.protocol.Masking_presentation_method">
+         <path value="Audiology_speech_test_result.protocol.Masking_presentation_method"/>
+         <short value="Masking presentation method"/>
+         <definition value="The method used to present the constralateral masking test signal."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.protocol.Masking_presentation_method"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiology_speech_test_result.protocol.Masking_presentation_method.value">
+         <path value="Audiology_speech_test_result.protocol.Masking_presentation_method.value"/>
+         <short value="Masking presentation method"/>
+         <definition value="The method used to present the constralateral masking test signal."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.protocol.Masking_presentation_method.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiology_speech_test_result.protocol.Masking_stimulus_level">
+         <path value="Audiology_speech_test_result.protocol.Masking_stimulus_level"/>
+         <short value="Masking stimulus level"/>
+         <definition value="The level of the contralateral masking speech spectrum noise in dB."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.protocol.Masking_stimulus_level"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiology_speech_test_result.protocol.Masking_stimulus_level.value">
+         <path value="Audiology_speech_test_result.protocol.Masking_stimulus_level.value"/>
+         <short value="Masking stimulus level"/>
+         <definition value="The level of the contralateral masking speech spectrum noise in dB."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.protocol.Masking_stimulus_level.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiology_speech_test_result.protocol.Calibration_reference_dB">
+         <path value="Audiology_speech_test_result.protocol.Calibration_reference_dB"/>
+         <short value="Calibration reference dB"/>
+         <definition value="Scale used for acoustic calibration check."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.protocol.Calibration_reference_dB"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiology_speech_test_result.protocol.Calibration_reference_dB.value">
+         <path value="Audiology_speech_test_result.protocol.Calibration_reference_dB.value"/>
+         <short value="Calibration reference dB"/>
+         <definition value="Scale used for acoustic calibration check."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.protocol.Calibration_reference_dB.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiology_speech_test_result.Event_Series">
+         <path value="Audiology_speech_test_result.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiology_speech_test_result.Event_Series.Any_event">
+         <path value="Audiology_speech_test_result.Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Audiology_speech_test_result.Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiology_speech_test_result.Event_Series.Any_event.data">
+         <path value="Audiology_speech_test_result.Event_Series.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.Event_Series.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiology_speech_test_result.Event_Series.Any_event.data.Test_result_name">
+         <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Test_result_name"/>
+         <short value="Test result name"/>
+         <definition value="Identification of the audiology speech test performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Test_result_name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiology_speech_test_result.Event_Series.Any_event.data.Test_result_name.value">
+         <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Test_result_name.value"/>
+         <short value="Test result name"/>
+         <definition value="Identification of the audiology speech test performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Test_result_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details">
+         <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details"/>
+         <short value="Result details"/>
+         <definition value="The test measurements and interpretations which can be recorded per ear, or for both ears simultaneously."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Test_ear">
+         <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Test_ear"/>
+         <short value="Test ear"/>
+         <definition value="The ear to which to the speech signal is presented."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Test_ear"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Test_ear.value">
+         <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Test_ear.value"/>
+         <short value="Test ear"/>
+         <definition value="The ear to which to the speech signal is presented."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Test_ear.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Presentation_method">
+         <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Presentation_method"/>
+         <short value="Presentation method"/>
+         <definition value="The method used to present the speech test stimulus."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Presentation_method"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Presentation_method.value">
+         <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Presentation_method.value"/>
+         <short value="Presentation method"/>
+         <definition value="The method used to present the speech test stimulus."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Presentation_method.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Performance_intensity_function">
+         <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Performance_intensity_function"/>
+         <short value="Performance intensity function"/>
+         <definition value="Results obtained for performance intensity function at each test level."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Performance_intensity_function"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Performance_intensity_function.Loudness">
+         <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Performance_intensity_function.Loudness"/>
+         <short value="Loudness"/>
+         <definition value="The stimulus intensity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Performance_intensity_function.Loudness"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Performance_intensity_function.Loudness.value">
+         <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Performance_intensity_function.Loudness.value"/>
+         <short value="Loudness"/>
+         <definition value="The stimulus intensity."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Performance_intensity_function.Loudness.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Performance_intensity_function.Words_correct">
+         <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Performance_intensity_function.Words_correct"/>
+         <short value="Words correct"/>
+         <definition value="Percentage of words to which the test subject responds correctly."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Performance_intensity_function.Words_correct"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Performance_intensity_function.Words_correct.value">
+         <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Performance_intensity_function.Words_correct.value"/>
+         <short value="Words correct"/>
+         <definition value="Percentage of words to which the test subject responds correctly."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Performance_intensity_function.Words_correct.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Ratio"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Performance_intensity_function.Elements_correct">
+         <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Performance_intensity_function.Elements_correct"/>
+         <short value="Elements correct"/>
+         <definition value="Percentage of elements to which the test subject responds correctly."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Performance_intensity_function.Elements_correct"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Performance_intensity_function.Elements_correct.value">
+         <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Performance_intensity_function.Elements_correct.value"/>
+         <short value="Elements correct"/>
+         <definition value="Percentage of elements to which the test subject responds correctly."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Performance_intensity_function.Elements_correct.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Ratio"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Adaptive_speech_test">
+         <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Adaptive_speech_test"/>
+         <short value="Adaptive speech test"/>
+         <definition value="Details of the adaptive test protocol."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Adaptive_speech_test"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Adaptive_speech_test.Loudness_to_achieve_target">
+         <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Adaptive_speech_test.Loudness_to_achieve_target"/>
+         <short value="Loudness to achieve target"/>
+         <definition value="The mean dB loudness level of the speech stimuli required to achieve the target correct performance."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Adaptive_speech_test.Loudness_to_achieve_target"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Adaptive_speech_test.Loudness_to_achieve_target.value">
+         <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Adaptive_speech_test.Loudness_to_achieve_target.value"/>
+         <short value="Loudness to achieve target"/>
+         <definition value="The mean dB loudness level of the speech stimuli required to achieve the target correct performance."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Adaptive_speech_test.Loudness_to_achieve_target.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Adaptive_speech_test.Signal_to_noise_ratio">
+         <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Adaptive_speech_test.Signal_to_noise_ratio"/>
+         <short value="Signal to noise ratio"/>
+         <definition value="The relationship of the loudness of the speech signal in dB to the loudness level of the noise stimulus."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Adaptive_speech_test.Signal_to_noise_ratio"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Adaptive_speech_test.Signal_to_noise_ratio.value">
+         <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Adaptive_speech_test.Signal_to_noise_ratio.value"/>
+         <short value="Signal to noise ratio"/>
+         <definition value="The relationship of the loudness of the speech signal in dB to the loudness level of the noise stimulus."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Adaptive_speech_test.Signal_to_noise_ratio.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Adaptive_speech_test.Reliability">
+         <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Adaptive_speech_test.Reliability"/>
+         <short value="Reliability"/>
+         <definition value="Details about the responses correct of the subject being tested."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Adaptive_speech_test.Reliability"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Adaptive_speech_test.Reliability.Standard_error">
+         <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Adaptive_speech_test.Reliability.Standard_error"/>
+         <short value="Standard error"/>
+         <definition value="A measure to compare a sample mean and a population mean."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Adaptive_speech_test.Reliability.Standard_error"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Adaptive_speech_test.Reliability.Standard_error.value">
+         <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Adaptive_speech_test.Reliability.Standard_error.value"/>
+         <short value="Standard error"/>
+         <definition value="A measure to compare a sample mean and a population mean."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Adaptive_speech_test.Reliability.Standard_error.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Adaptive_speech_test.Reliability.Confidence_interval">
+         <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Adaptive_speech_test.Reliability.Confidence_interval"/>
+         <short value="Confidence interval"/>
+         <definition value="A term used in inferential statistics that measures the probability that a population parameter will fall between two set values."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Adaptive_speech_test.Reliability.Confidence_interval"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Adaptive_speech_test.Reliability.Confidence_interval.value">
+         <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Adaptive_speech_test.Reliability.Confidence_interval.value"/>
+         <short value="Confidence interval"/>
+         <definition value="A term used in inferential statistics that measures the probability that a population parameter will fall between two set values."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Adaptive_speech_test.Reliability.Confidence_interval.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Adaptive_speech_test.Reliability.Sample_size">
+         <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Adaptive_speech_test.Reliability.Sample_size"/>
+         <short value="Sample size"/>
+         <definition value="The number of reverals in an adaptive threshold test used for calculating estimates of a given test result."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Adaptive_speech_test.Reliability.Sample_size"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Adaptive_speech_test.Reliability.Sample_size.value">
+         <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Adaptive_speech_test.Reliability.Sample_size.value"/>
+         <short value="Sample size"/>
+         <definition value="The number of reverals in an adaptive threshold test used for calculating estimates of a given test result."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Adaptive_speech_test.Reliability.Sample_size.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.No_test_result">
+         <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.No_test_result"/>
+         <short value="No test result"/>
+         <definition value="No test result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.No_test_result"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.No_test_result.value">
+         <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.No_test_result.value"/>
+         <short value="No test result"/>
+         <definition value="No test result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.No_test_result.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Reason_for_no_test_result">
+         <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Reason_for_no_test_result"/>
+         <short value="Reason for no test result"/>
+         <definition value="Reason why no result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Reason_for_no_test_result"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Reason_for_no_test_result.value">
+         <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Reason_for_no_test_result.value"/>
+         <short value="Reason for no test result"/>
+         <definition value="Reason why no result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Reason_for_no_test_result.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Clinical_interpretation">
+         <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Clinical_interpretation"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Clinical interpretation of all responses for the identified test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Clinical_interpretation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Clinical_interpretation.value">
+         <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Clinical_interpretation.value"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Clinical interpretation of all responses for the identified test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Result_details.Clinical_interpretation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiology_speech_test_result.Event_Series.Any_event.data.Overall_interpretation">
+         <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Overall_interpretation"/>
+         <short value="Overall interpretation"/>
+         <definition value="Overall clinical interpretation of the responses for both ears."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Overall_interpretation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiology_speech_test_result.Event_Series.Any_event.data.Overall_interpretation.value">
+         <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Overall_interpretation.value"/>
+         <short value="Overall interpretation"/>
+         <definition value="Overall clinical interpretation of the responses for both ears."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Overall_interpretation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiology_speech_test_result.Event_Series.Any_event.data.Comment">
+         <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the test results and intepretation not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiology_speech_test_result.Event_Series.Any_event.data.Comment.value">
+         <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the test results and intepretation not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.Event_Series.Any_event.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiology_speech_test_result.Event_Series.Any_event.state">
+         <path value="Audiology_speech_test_result.Event_Series.Any_event.state"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.Event_Series.Any_event.state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiology_speech_test_result.Event_Series.Any_event.state.Aided_status">
+         <path value="Audiology_speech_test_result.Event_Series.Any_event.state.Aided_status"/>
+         <short value="Aided status"/>
+         <definition value="Indication regarding use of an assistive listening device by the test subject during the test."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.Event_Series.Any_event.state.Aided_status"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiology_speech_test_result.Event_Series.Any_event.state.Aided_status.value">
+         <path value="Audiology_speech_test_result.Event_Series.Any_event.state.Aided_status.value"/>
+         <short value="Aided status"/>
+         <definition value="Indication regarding use of an assistive listening device by the test subject during the test."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.Event_Series.Any_event.state.Aided_status.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiology_speech_test_result.Event_Series.Any_event.state.Type_of_listening_device">
+         <path value="Audiology_speech_test_result.Event_Series.Any_event.state.Type_of_listening_device"/>
+         <short value="Type of listening device"/>
+         <definition value="Identification of type of assistive listening device used."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.Event_Series.Any_event.state.Type_of_listening_device"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiology_speech_test_result.Event_Series.Any_event.state.Type_of_listening_device.value">
+         <path value="Audiology_speech_test_result.Event_Series.Any_event.state.Type_of_listening_device.value"/>
+         <short value="Type of listening device"/>
+         <definition value="Identification of type of assistive listening device used."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.Event_Series.Any_event.state.Type_of_listening_device.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiology_speech_test_result.Event_Series.Any_event.state.Listening_device_settings">
+         <path value="Audiology_speech_test_result.Event_Series.Any_event.state.Listening_device_settings"/>
+         <short value="Listening device settings"/>
+         <definition value="Narrative description of the details of the assistive listening device settings."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.Event_Series.Any_event.state.Listening_device_settings"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiology_speech_test_result.Event_Series.Any_event.state.Listening_device_settings.value">
+         <path value="Audiology_speech_test_result.Event_Series.Any_event.state.Listening_device_settings.value"/>
+         <short value="Listening device settings"/>
+         <definition value="Narrative description of the details of the assistive listening device settings."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.Event_Series.Any_event.state.Listening_device_settings.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiology_speech_test_result.Event_Series.Any_event.state.Listening_device">
+         <path value="Audiology_speech_test_result.Event_Series.Any_event.state.Listening_device"/>
+         <short value="Listening device"/>
+         <definition value="Details about the specific assistive listening device used during the test."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Audiology_speech_test_result.Event_Series.Any_event.state.Listening_device"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Audiology_speech_test_result.Event_Series.Any_event.state.Contralateral_masking">
+         <path value="Audiology_speech_test_result.Event_Series.Any_event.state.Contralateral_masking"/>
+         <short value="Contralateral masking"/>
+         <definition value="Contralateral masking signal was presented to the non test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.Event_Series.Any_event.state.Contralateral_masking"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Audiology_speech_test_result.Event_Series.Any_event.state.Contralateral_masking.value">
+         <path value="Audiology_speech_test_result.Event_Series.Any_event.state.Contralateral_masking.value"/>
+         <short value="Contralateral masking"/>
+         <definition value="Contralateral masking signal was presented to the non test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Audiology_speech_test_result.Event_Series.Any_event.state.Contralateral_masking.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

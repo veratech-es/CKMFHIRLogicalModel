@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Avpu-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-avpu-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.avpu.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Avpu"/>
+   <title value="AVPU"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Simple scale used as part of an assessment to measure and record an individual's level of consciousness. AVPU is an acronym for 'Alert', 'Voice', 'Pain', 'Unresponsive'."/>
+   <purpose value="To record an individual's level of consciousness."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="AVPU">
+         <path value="AVPU"/>
+         <short value="AVPU"/>
+         <definition value="Simple scale used as part of an assessment to measure and record an individual's level of consciousness. AVPU is an acronym for 'Alert', 'Voice', 'Pain', 'Unresponsive'."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="AVPU"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="AVPU.protocol">
+         <path value="AVPU.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="AVPU.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="AVPU.protocol.Pain_stimulus">
+         <path value="AVPU.protocol.Pain_stimulus"/>
+         <short value="Pain stimulus"/>
+         <definition value="Description of the type of pain stimulus used to elicit the observation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="AVPU.protocol.Pain_stimulus"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="AVPU.protocol.Pain_stimulus.value">
+         <path value="AVPU.protocol.Pain_stimulus.value"/>
+         <short value="Pain stimulus"/>
+         <definition value="Description of the type of pain stimulus used to elicit the observation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="AVPU.protocol.Pain_stimulus.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="AVPU.protocol.Extension">
+         <path value="AVPU.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="AVPU.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="AVPU.Event_Series">
+         <path value="AVPU.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="AVPU.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="AVPU.Event_Series.Any_event">
+         <path value="AVPU.Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="AVPU.Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="AVPU.Event_Series.Any_event.data">
+         <path value="AVPU.Event_Series.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="AVPU.Event_Series.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="AVPU.Event_Series.Any_event.data.Observation">
+         <path value="AVPU.Event_Series.Any_event.data.Observation"/>
+         <short value="Observation"/>
+         <definition value="The observation of the patient's level of consciousness."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="AVPU.Event_Series.Any_event.data.Observation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="AVPU.Event_Series.Any_event.data.Observation.value">
+         <path value="AVPU.Event_Series.Any_event.data.Observation.value"/>
+         <short value="Observation"/>
+         <definition value="The observation of the patient's level of consciousness."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="AVPU.Event_Series.Any_event.data.Observation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="AVPU.Event_Series.Any_event.data.Comment">
+         <path value="AVPU.Event_Series.Any_event.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the observation, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="AVPU.Event_Series.Any_event.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="AVPU.Event_Series.Any_event.data.Comment.value">
+         <path value="AVPU.Event_Series.Any_event.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the observation, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="AVPU.Event_Series.Any_event.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="AVPU.Event_Series.Any_event.state">
+         <path value="AVPU.Event_Series.Any_event.state"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="AVPU.Event_Series.Any_event.state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="AVPU.Event_Series.Any_event.state.Confounding_factors">
+         <path value="AVPU.Event_Series.Any_event.state.Confounding_factors"/>
+         <short value="Confounding factors"/>
+         <definition value="Narrative description of any issues or factors that may impact on the observation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="AVPU.Event_Series.Any_event.state.Confounding_factors"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="AVPU.Event_Series.Any_event.state.Confounding_factors.value">
+         <path value="AVPU.Event_Series.Any_event.state.Confounding_factors.value"/>
+         <short value="Confounding factors"/>
+         <definition value="Narrative description of any issues or factors that may impact on the observation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="AVPU.Event_Series.Any_event.state.Confounding_factors.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

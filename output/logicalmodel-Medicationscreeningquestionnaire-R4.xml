@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Medicationscreeningquestionnaire-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-medicationscreeningquestionnaire-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.medication_screening.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Medicationscreeningquestionnaire"/>
+   <title value="Medication screening questionnaire"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Series of questions and associated answers used to screen for the use of medications."/>
+   <purpose value="To create a framework for recording answers to pre-defined screening questions about the use of any specified medication or grouping of medications."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Medication_screening_questionnaire">
+         <path value="Medication_screening_questionnaire"/>
+         <short value="Medication screening questionnaire"/>
+         <definition value="Series of questions and associated answers used to screen for the use of medications."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_screening_questionnaire"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_screening_questionnaire.protocol">
+         <path value="Medication_screening_questionnaire.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_screening_questionnaire.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_screening_questionnaire.protocol.Extension">
+         <path value="Medication_screening_questionnaire.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models or formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Medication_screening_questionnaire.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_screening_questionnaire.Event_Series">
+         <path value="Medication_screening_questionnaire.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_screening_questionnaire.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_screening_questionnaire.Event_Series.Any_event">
+         <path value="Medication_screening_questionnaire.Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Medication_screening_questionnaire.Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_screening_questionnaire.Event_Series.Any_event.data">
+         <path value="Medication_screening_questionnaire.Event_Series.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_screening_questionnaire.Event_Series.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_screening_questionnaire.Event_Series.Any_event.data.Screening_purpose">
+         <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Screening_purpose"/>
+         <short value="Screening purpose"/>
+         <definition value="The context or reason for screening."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Screening_purpose"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medication_screening_questionnaire.Event_Series.Any_event.data.Screening_purpose.value">
+         <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Screening_purpose.value"/>
+         <short value="Screening purpose"/>
+         <definition value="The context or reason for screening."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Screening_purpose.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_screening_questionnaire.Event_Series.Any_event.data.Any_medications_used_">
+         <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Any_medications_used_"/>
+         <short value="Any medications used?"/>
+         <definition value="Is there a history of use of any medication related to the screening purpose?"/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Any_medications_used_"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Medication_screening_questionnaire.Event_Series.Any_event.data.Any_medications_used_.value_DV_CODED_TEXT">
+         <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Any_medications_used_.value_DV_CODED_TEXT"/>
+         <short value="Any medications used?"/>
+         <definition value="Is there a history of use of any medication related to the screening purpose?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Any_medications_used_.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_screening_questionnaire.Event_Series.Any_event.data.Any_medications_used_.value_DV_TEXT">
+         <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Any_medications_used_.value_DV_TEXT"/>
+         <short value="Any medications used?"/>
+         <definition value="Is there a history of use of any medication related to the screening purpose?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Any_medications_used_.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_screening_questionnaire.Event_Series.Any_event.data.Any_medications_used_.value_DV_BOOLEAN">
+         <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Any_medications_used_.value_DV_BOOLEAN"/>
+         <short value="Any medications used?"/>
+         <definition value="Is there a history of use of any medication related to the screening purpose?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Any_medications_used_.value_DV_BOOLEAN"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_screening_questionnaire.Event_Series.Any_event.data.Description">
+         <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the history of use of any medication relevant for the screening purpose."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medication_screening_questionnaire.Event_Series.Any_event.data.Description.value">
+         <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the history of use of any medication relevant for the screening purpose."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication">
+         <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication"/>
+         <short value="Specific medication"/>
+         <definition value="Details about a specified medication or grouping of medications relevant for the screening purpose."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Medication_name">
+         <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Medication_name"/>
+         <short value="Medication name"/>
+         <definition value="Name of medication or grouping of medication."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Medication_name"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Medication_name.value">
+         <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Medication_name.value"/>
+         <short value="Medication name"/>
+         <definition value="Name of medication or grouping of medication."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Medication_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Used">
+         <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Used"/>
+         <short value="Used"/>
+         <definition value="Is there a history of use of a specific medication or group of medications?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Used"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Used.value_DV_CODED_TEXT">
+         <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Used.value_DV_CODED_TEXT"/>
+         <short value="Used"/>
+         <definition value="Is there a history of use of a specific medication or group of medications?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Used.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Used.value_DV_TEXT">
+         <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Used.value_DV_TEXT"/>
+         <short value="Used"/>
+         <definition value="Is there a history of use of a specific medication or group of medications?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Used.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Used.value_DV_BOOLEAN">
+         <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Used.value_DV_BOOLEAN"/>
+         <short value="Used"/>
+         <definition value="Is there a history of use of a specific medication or group of medications?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Used.value_DV_BOOLEAN"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Latest_dose">
+         <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Latest_dose"/>
+         <short value="Latest dose"/>
+         <definition value="The date and/or time of administation of the most recent dose of the medication or group of medications."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Latest_dose"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Latest_dose.value_DV_DATE_TIME">
+         <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Latest_dose.value_DV_DATE_TIME"/>
+         <short value="Latest dose"/>
+         <definition value="The date and/or time of administation of the most recent dose of the medication or group of medications."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Latest_dose.value_DV_DATE_TIME"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Latest_dose.value_DV_TEXT">
+         <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Latest_dose.value_DV_TEXT"/>
+         <short value="Latest dose"/>
+         <definition value="The date and/or time of administation of the most recent dose of the medication or group of medications."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Latest_dose.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Timing">
+         <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Timing"/>
+         <short value="Timing"/>
+         <definition value="Indication of timing related to the use of the medication or grouping of medications."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Timing"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Timing.value_DV_DURATION">
+         <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Timing.value_DV_DURATION"/>
+         <short value="Timing"/>
+         <definition value="Indication of timing related to the use of the medication or grouping of medications."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Timing.value_DV_DURATION"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Timing.value_DV_INTERVAL_DV_DURATION_">
+         <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Timing.value_DV_INTERVAL_DV_DURATION_"/>
+         <short value="Timing"/>
+         <definition value="Indication of timing related to the use of the medication or grouping of medications."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Timing.value_DV_INTERVAL_DV_DURATION_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Timing.value_DV_TEXT">
+         <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Timing.value_DV_TEXT"/>
+         <short value="Timing"/>
+         <definition value="Indication of timing related to the use of the medication or grouping of medications."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Timing.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Timing.value_DV_DATE_TIME">
+         <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Timing.value_DV_DATE_TIME"/>
+         <short value="Timing"/>
+         <definition value="Indication of timing related to the use of the medication or grouping of medications."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Timing.value_DV_DATE_TIME"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Timing.value_DV_INTERVAL_DV_DATE_TIME_">
+         <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Timing.value_DV_INTERVAL_DV_DATE_TIME_"/>
+         <short value="Timing"/>
+         <definition value="Indication of timing related to the use of the medication or grouping of medications."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Timing.value_DV_INTERVAL_DV_DATE_TIME_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Additional_details">
+         <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="Structured details or questions about the specific medication or grouping of medications."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Comment">
+         <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the specific medication question, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Comment.value">
+         <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the specific medication question, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Specific_medication.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_screening_questionnaire.Event_Series.Any_event.data.Additional_details">
+         <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="Structured details or questions about the screening for medications."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Medication_screening_questionnaire.Event_Series.Any_event.data.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

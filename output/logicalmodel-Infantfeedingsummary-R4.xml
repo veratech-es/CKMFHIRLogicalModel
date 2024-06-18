@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Infantfeedingsummary-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-infantfeedingsummary-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-EVALUATION.infant_feeding.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Infantfeedingsummary"/>
+   <title value="Infant feeding summary"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Summary of early infant feeding activity, particularly focused on breast and formula feeding."/>
+   <purpose value="To record a summary of early infant feeding activity, particularly focused on breast and formula feeding."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Infant_feeding_summary">
+         <path value="Infant_feeding_summary"/>
+         <short value="Infant feeding summary"/>
+         <definition value="Summary of early infant feeding activity, particularly focused on breast and formula feeding."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Infant_feeding_summary"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Infant_feeding_summary.protocol">
+         <path value="Infant_feeding_summary.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infant_feeding_summary.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Infant_feeding_summary.protocol.Extension">
+         <path value="Infant_feeding_summary.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="CLUSTER"/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Infant_feeding_summary.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Infant_feeding_summary.data">
+         <path value="Infant_feeding_summary.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infant_feeding_summary.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Infant_feeding_summary.data.Description">
+         <path value="Infant_feeding_summary.data.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the overall feeding history for the infant."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infant_feeding_summary.data.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Infant_feeding_summary.data.Description.value">
+         <path value="Infant_feeding_summary.data.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the overall feeding history for the infant."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infant_feeding_summary.data.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Infant_feeding_summary.data.Overall_feeding_type">
+         <path value="Infant_feeding_summary.data.Overall_feeding_type"/>
+         <short value="Overall feeding type"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infant_feeding_summary.data.Overall_feeding_type"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Infant_feeding_summary.data.Overall_feeding_type.value_DV_CODED_TEXT">
+         <path value="Infant_feeding_summary.data.Overall_feeding_type.value_DV_CODED_TEXT"/>
+         <short value="Overall feeding type"/>
+         <definition value="DV_CODED_TEXT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infant_feeding_summary.data.Overall_feeding_type.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Infant_feeding_summary.data.Overall_feeding_type.value_DV_TEXT">
+         <path value="Infant_feeding_summary.data.Overall_feeding_type.value_DV_TEXT"/>
+         <short value="Overall feeding type"/>
+         <definition value="DV_TEXT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infant_feeding_summary.data.Overall_feeding_type.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Infant_feeding_summary.data.Feeding_episode">
+         <path value="Infant_feeding_summary.data.Feeding_episode"/>
+         <short value="Feeding episode"/>
+         <definition value="Details about a pattern of feeding."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Infant_feeding_summary.data.Feeding_episode"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Infant_feeding_summary.data.Feeding_episode.Type">
+         <path value="Infant_feeding_summary.data.Feeding_episode.Type"/>
+         <short value="Type"/>
+         <definition value="The predominant type of feeding for a period of time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infant_feeding_summary.data.Feeding_episode.Type"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Infant_feeding_summary.data.Feeding_episode.Type.value_DV_CODED_TEXT">
+         <path value="Infant_feeding_summary.data.Feeding_episode.Type.value_DV_CODED_TEXT"/>
+         <short value="Type"/>
+         <definition value="The predominant type of feeding for a period of time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infant_feeding_summary.data.Feeding_episode.Type.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Infant_feeding_summary.data.Feeding_episode.Type.value_DV_TEXT">
+         <path value="Infant_feeding_summary.data.Feeding_episode.Type.value_DV_TEXT"/>
+         <short value="Type"/>
+         <definition value="The predominant type of feeding for a period of time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infant_feeding_summary.data.Feeding_episode.Type.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Infant_feeding_summary.data.Feeding_episode.Age_Commenced">
+         <path value="Infant_feeding_summary.data.Feeding_episode.Age_Commenced"/>
+         <short value="Age Commenced"/>
+         <definition value="The age of the infant when the selected type of feeding was commenced."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infant_feeding_summary.data.Feeding_episode.Age_Commenced"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Infant_feeding_summary.data.Feeding_episode.Age_Commenced.value">
+         <path value="Infant_feeding_summary.data.Feeding_episode.Age_Commenced.value"/>
+         <short value="Age Commenced"/>
+         <definition value="The age of the infant when the selected type of feeding was commenced."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infant_feeding_summary.data.Feeding_episode.Age_Commenced.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Infant_feeding_summary.data.Feeding_episode.Age_Ceased">
+         <path value="Infant_feeding_summary.data.Feeding_episode.Age_Ceased"/>
+         <short value="Age Ceased"/>
+         <definition value="The age of the infant when the selected type of feeding was ceased."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infant_feeding_summary.data.Feeding_episode.Age_Ceased"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Infant_feeding_summary.data.Feeding_episode.Age_Ceased.value">
+         <path value="Infant_feeding_summary.data.Feeding_episode.Age_Ceased.value"/>
+         <short value="Age Ceased"/>
+         <definition value="The age of the infant when the selected type of feeding was ceased."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infant_feeding_summary.data.Feeding_episode.Age_Ceased.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Infant_feeding_summary.data.Feeding_episode.Comment">
+         <path value="Infant_feeding_summary.data.Feeding_episode.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the feeding activity not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infant_feeding_summary.data.Feeding_episode.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Infant_feeding_summary.data.Feeding_episode.Comment.value">
+         <path value="Infant_feeding_summary.data.Feeding_episode.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the feeding activity not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infant_feeding_summary.data.Feeding_episode.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Infant_feeding_summary.data.Total_Duration_of_Breast_Feeding">
+         <path value="Infant_feeding_summary.data.Total_Duration_of_Breast_Feeding"/>
+         <short value="Total Duration of Breast Feeding"/>
+         <definition value="The total amount of time that the infant was predominantly breastfed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infant_feeding_summary.data.Total_Duration_of_Breast_Feeding"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Infant_feeding_summary.data.Total_Duration_of_Breast_Feeding.value">
+         <path value="Infant_feeding_summary.data.Total_Duration_of_Breast_Feeding.value"/>
+         <short value="Total Duration of Breast Feeding"/>
+         <definition value="The total amount of time that the infant was predominantly breastfed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infant_feeding_summary.data.Total_Duration_of_Breast_Feeding.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Infant_feeding_summary.data.Age_Commenced_Solid_Foods">
+         <path value="Infant_feeding_summary.data.Age_Commenced_Solid_Foods"/>
+         <short value="Age Commenced Solid Foods"/>
+         <definition value="The age of the infant when commenced on solid foods."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infant_feeding_summary.data.Age_Commenced_Solid_Foods"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Infant_feeding_summary.data.Age_Commenced_Solid_Foods.value">
+         <path value="Infant_feeding_summary.data.Age_Commenced_Solid_Foods.value"/>
+         <short value="Age Commenced Solid Foods"/>
+         <definition value="The age of the infant when commenced on solid foods."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infant_feeding_summary.data.Age_Commenced_Solid_Foods.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Infant_feeding_summary.data.Age_Weaned">
+         <path value="Infant_feeding_summary.data.Age_Weaned"/>
+         <short value="Age Weaned"/>
+         <definition value="The age of the infant when weaned."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infant_feeding_summary.data.Age_Weaned"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Infant_feeding_summary.data.Age_Weaned.value">
+         <path value="Infant_feeding_summary.data.Age_Weaned.value"/>
+         <short value="Age Weaned"/>
+         <definition value="The age of the infant when weaned."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infant_feeding_summary.data.Age_Weaned.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Infant_feeding_summary.data.Comment">
+         <path value="Infant_feeding_summary.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infant_feeding_summary.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Infant_feeding_summary.data.Comment.value">
+         <path value="Infant_feeding_summary.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="DV_TEXT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infant_feeding_summary.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

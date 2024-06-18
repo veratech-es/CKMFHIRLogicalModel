@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Conclusion-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-conclusion-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-SECTION.conclusion.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Conclusion"/>
+   <title value="Conclusion"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Example framework for modelling opinions, conclusions or diagnoses drawn at the end of an investigative clinical process."/>
+   <purpose value="To provide an example framework for modelling conclusions as a component of a complex clinical template."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Conclusion">
+         <path value="Conclusion"/>
+         <short value="Conclusion"/>
+         <definition value="Example framework for modelling opinions, conclusions or diagnoses drawn at the end of an investigative clinical process."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Conclusion"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Conclusion.Opinion">
+         <path value="Conclusion.Opinion"/>
+         <short value="Opinion"/>
+         <definition value="Opinions, conclusions or diagnoses drawn at the end of an investigative clinical process."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Conclusion.Opinion"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

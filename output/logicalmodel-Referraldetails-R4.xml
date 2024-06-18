@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Referraldetails-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-referraldetails-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-SECTION.referral_details.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Referraldetails"/>
+   <title value="Referral details"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Example framework for modelling a template for a referral."/>
+   <purpose value="To provide an example framework for modelling a referral within a template."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Referral_details">
+         <path value="Referral_details"/>
+         <short value="Referral details"/>
+         <definition value="Example framework for modelling a template for a referral."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Referral_details"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Referral_details.Referral_request">
+         <path value="Referral_details.Referral_request"/>
+         <short value="Referral request"/>
+         <definition value="Details about the referral request."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Referral_details.Referral_request"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Referral_details.Details">
+         <path value="Referral_details.Details"/>
+         <short value="Details"/>
+         <definition value="Additional clinical details supporting the referral."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Referral_details.Details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

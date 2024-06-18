@@ -1,0 +1,802 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Goal-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-goal-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-EVALUATION.goal.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Goal"/>
+   <title value="Goal"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="A desired health, or well-being, outcome for the subject of care."/>
+   <purpose value="To record details about a health-related goal and any associated targets and deadlines."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Goal">
+         <path value="Goal"/>
+         <short value="Goal"/>
+         <definition value="A desired health, or well-being, outcome for the subject of care."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Goal"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Goal.protocol">
+         <path value="Goal.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Goal.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Goal.protocol.Last_updated">
+         <path value="Goal.protocol.Last_updated"/>
+         <short value="Last updated"/>
+         <definition value="The date on which the goal was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Goal.protocol.Last_updated"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Goal.protocol.Last_updated.value">
+         <path value="Goal.protocol.Last_updated.value"/>
+         <short value="Last updated"/>
+         <definition value="The date on which the goal was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Goal.protocol.Last_updated.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Goal.protocol.Extension">
+         <path value="Goal.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Goal.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Goal.data">
+         <path value="Goal.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Goal.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Goal.data.Goal_name">
+         <path value="Goal.data.Goal_name"/>
+         <short value="Goal name"/>
+         <definition value="The name of the desired health outcome."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Goal.data.Goal_name"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Goal.data.Goal_name.value">
+         <path value="Goal.data.Goal_name.value"/>
+         <short value="Goal name"/>
+         <definition value="The name of the desired health outcome."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Goal.data.Goal_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Goal.data.Goal_description">
+         <path value="Goal.data.Goal_description"/>
+         <short value="Goal description"/>
+         <definition value="A narrative description of the goal, including target/s to be achieved if relevant."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Goal.data.Goal_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Goal.data.Goal_description.value">
+         <path value="Goal.data.Goal_description.value"/>
+         <short value="Goal description"/>
+         <definition value="A narrative description of the goal, including target/s to be achieved if relevant."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Goal.data.Goal_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Goal.data.Clinical_indication">
+         <path value="Goal.data.Clinical_indication"/>
+         <short value="Clinical indication"/>
+         <definition value="Name of the problem or diagnosis which is intended to be impacted by achievement of this goal."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Goal.data.Clinical_indication"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Goal.data.Clinical_indication.value">
+         <path value="Goal.data.Clinical_indication.value"/>
+         <short value="Clinical indication"/>
+         <definition value="Name of the problem or diagnosis which is intended to be impacted by achievement of this goal."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Goal.data.Clinical_indication.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Goal.data.Goal_start_date">
+         <path value="Goal.data.Goal_start_date"/>
+         <short value="Goal start date"/>
+         <definition value="The anticipated or proposed date for commencing work towards the goal."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Goal.data.Goal_start_date"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Goal.data.Goal_start_date.value">
+         <path value="Goal.data.Goal_start_date.value"/>
+         <short value="Goal start date"/>
+         <definition value="The anticipated or proposed date for commencing work towards the goal."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Goal.data.Goal_start_date.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Goal.data.Goal_proposed_date">
+         <path value="Goal.data.Goal_proposed_date"/>
+         <short value="Goal proposed date"/>
+         <definition value="The desired or proposed date for achieving the goal."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Goal.data.Goal_proposed_date"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Goal.data.Goal_proposed_date.value">
+         <path value="Goal.data.Goal_proposed_date.value"/>
+         <short value="Goal proposed date"/>
+         <definition value="The desired or proposed date for achieving the goal."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Goal.data.Goal_proposed_date.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="date"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Goal.data.Goal_end_date">
+         <path value="Goal.data.Goal_end_date"/>
+         <short value="Goal end date"/>
+         <definition value="The actual date that the goal was achieved or abandoned."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Goal.data.Goal_end_date"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Goal.data.Goal_end_date.value">
+         <path value="Goal.data.Goal_end_date.value"/>
+         <short value="Goal end date"/>
+         <definition value="The actual date that the goal was achieved or abandoned."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Goal.data.Goal_end_date.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="date"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Goal.data.Goal_outcome">
+         <path value="Goal.data.Goal_outcome"/>
+         <short value="Goal outcome"/>
+         <definition value="Single word, phrase or brief description which represents the outcome actually achieved for the goal."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Goal.data.Goal_outcome"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Goal.data.Goal_outcome.value_DV_TEXT">
+         <path value="Goal.data.Goal_outcome.value_DV_TEXT"/>
+         <short value="Goal outcome"/>
+         <definition value="Single word, phrase or brief description which represents the outcome actually achieved for the goal."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Goal.data.Goal_outcome.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Goal.data.Goal_outcome.value_DV_CODED_TEXT">
+         <path value="Goal.data.Goal_outcome.value_DV_CODED_TEXT"/>
+         <short value="Goal outcome"/>
+         <definition value="Single word, phrase or brief description which represents the outcome actually achieved for the goal."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Goal.data.Goal_outcome.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Goal.data.Goal_comment">
+         <path value="Goal.data.Goal_comment"/>
+         <short value="Goal comment"/>
+         <definition value="Additional narrative about the goal not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Goal.data.Goal_comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Goal.data.Goal_comment.value">
+         <path value="Goal.data.Goal_comment.value"/>
+         <short value="Goal comment"/>
+         <definition value="Additional narrative about the goal not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Goal.data.Goal_comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Goal.data.Readiness_for_change">
+         <path value="Goal.data.Readiness_for_change"/>
+         <short value="Readiness for change"/>
+         <definition value="Details about the readiness to change behaviour to achieve the desired goal."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Goal.data.Readiness_for_change"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Goal.data.Target">
+         <path value="Goal.data.Target"/>
+         <short value="Target"/>
+         <definition value="Detail about the intended target."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Goal.data.Target"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Goal.data.Target.Target_name">
+         <path value="Goal.data.Target.Target_name"/>
+         <short value="Target name"/>
+         <definition value="Identification of the intended target, by name."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Goal.data.Target.Target_name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Goal.data.Target.Target_name.value">
+         <path value="Goal.data.Target.Target_name.value"/>
+         <short value="Target name"/>
+         <definition value="Identification of the intended target, by name."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Goal.data.Target.Target_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Goal.data.Target.Target">
+         <path value="Goal.data.Target.Target"/>
+         <short value="Target"/>
+         <definition value="The intended target."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Goal.data.Target.Target"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Goal.data.Target.Target.value_DV_INTERVAL_DV_COUNT_">
+         <path value="Goal.data.Target.Target.value_DV_INTERVAL_DV_COUNT_"/>
+         <short value="Target"/>
+         <definition value="The intended target."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Goal.data.Target.Target.value_DV_INTERVAL_DV_COUNT_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Goal.data.Target.Target.value_DV_INTERVAL_DV_QUANTITY_">
+         <path value="Goal.data.Target.Target.value_DV_INTERVAL_DV_QUANTITY_"/>
+         <short value="Target"/>
+         <definition value="The intended target."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Goal.data.Target.Target.value_DV_INTERVAL_DV_QUANTITY_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Goal.data.Target.Target.value_DV_DURATION">
+         <path value="Goal.data.Target.Target.value_DV_DURATION"/>
+         <short value="Target"/>
+         <definition value="The intended target."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Goal.data.Target.Target.value_DV_DURATION"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Goal.data.Target.Target.value_DV_QUANTITY">
+         <path value="Goal.data.Target.Target.value_DV_QUANTITY"/>
+         <short value="Target"/>
+         <definition value="The intended target."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Goal.data.Target.Target.value_DV_QUANTITY"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Goal.data.Target.Target.value_DV_COUNT">
+         <path value="Goal.data.Target.Target.value_DV_COUNT"/>
+         <short value="Target"/>
+         <definition value="The intended target."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Goal.data.Target.Target.value_DV_COUNT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Goal.data.Target.Target.value_DV_PROPORTION">
+         <path value="Goal.data.Target.Target.value_DV_PROPORTION"/>
+         <short value="Target"/>
+         <definition value="The intended target."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Goal.data.Target.Target.value_DV_PROPORTION"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Ratio"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Goal.data.Target.Target.value_DV_TEXT">
+         <path value="Goal.data.Target.Target.value_DV_TEXT"/>
+         <short value="Target"/>
+         <definition value="The intended target."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Goal.data.Target.Target.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Goal.data.Target.Target_description">
+         <path value="Goal.data.Target.Target_description"/>
+         <short value="Target description"/>
+         <definition value="Narrative description about the intended target."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Goal.data.Target.Target_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Goal.data.Target.Target_description.value">
+         <path value="Goal.data.Target.Target_description.value"/>
+         <short value="Target description"/>
+         <definition value="Narrative description about the intended target."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Goal.data.Target.Target_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Goal.data.Target.Target_path">
+         <path value="Goal.data.Target.Target_path"/>
+         <short value="Target path"/>
+         <definition value="The archetype and path to the node for target data."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Goal.data.Target.Target_path"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Goal.data.Target.Target_path.value">
+         <path value="Goal.data.Target.Target_path.value"/>
+         <short value="Target path"/>
+         <definition value="The archetype and path to the node for target data."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Goal.data.Target.Target_path.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="string"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Goal.data.Target.Target_proposed_date">
+         <path value="Goal.data.Target.Target_proposed_date"/>
+         <short value="Target proposed date"/>
+         <definition value="The desired or proposed date for achieving the target."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Goal.data.Target.Target_proposed_date"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Goal.data.Target.Target_proposed_date.value">
+         <path value="Goal.data.Target.Target_proposed_date.value"/>
+         <short value="Target proposed date"/>
+         <definition value="The desired or proposed date for achieving the target."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Goal.data.Target.Target_proposed_date.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="date"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Goal.data.Target.Target_end_date">
+         <path value="Goal.data.Target.Target_end_date"/>
+         <short value="Target end date"/>
+         <definition value="The actual date that the target was achieved or abandoned."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Goal.data.Target.Target_end_date"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Goal.data.Target.Target_end_date.value">
+         <path value="Goal.data.Target.Target_end_date.value"/>
+         <short value="Target end date"/>
+         <definition value="The actual date that the target was achieved or abandoned."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Goal.data.Target.Target_end_date.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="date"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Goal.data.Target.Target_outcome">
+         <path value="Goal.data.Target.Target_outcome"/>
+         <short value="Target outcome"/>
+         <definition value="Single word, phrase or brief description which represents the outcome actually achieved for the target."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Goal.data.Target.Target_outcome"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Goal.data.Target.Target_outcome.value_DV_TEXT">
+         <path value="Goal.data.Target.Target_outcome.value_DV_TEXT"/>
+         <short value="Target outcome"/>
+         <definition value="Single word, phrase or brief description which represents the outcome actually achieved for the target."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Goal.data.Target.Target_outcome.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Goal.data.Target.Target_outcome.value_DV_CODED_TEXT">
+         <path value="Goal.data.Target.Target_outcome.value_DV_CODED_TEXT"/>
+         <short value="Target outcome"/>
+         <definition value="Single word, phrase or brief description which represents the outcome actually achieved for the target."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Goal.data.Target.Target_outcome.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Goal.data.Target.Target_comment">
+         <path value="Goal.data.Target.Target_comment"/>
+         <short value="Target comment"/>
+         <definition value="Additional narrative about the target not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Goal.data.Target.Target_comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Goal.data.Target.Target_comment.value">
+         <path value="Goal.data.Target.Target_comment.value"/>
+         <short value="Target comment"/>
+         <definition value="Additional narrative about the target not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Goal.data.Target.Target_comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Pregnancyfinding-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-pregnancyfinding-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.pregnancy_finding.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Pregnancyfinding"/>
+   <title value="Pregnancy finding"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="An assertion about the current pregnant condition of an individual."/>
+   <purpose value="To record an assertion about the pregnant condition of an individual, usually a point-in-time determination at the time of recording in the health record."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Pregnancy_finding">
+         <path value="Pregnancy_finding"/>
+         <short value="Pregnancy finding"/>
+         <definition value="An assertion about the current pregnant condition of an individual."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_finding"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_finding.protocol">
+         <path value="Pregnancy_finding.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_finding.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_finding.protocol.Extension">
+         <path value="Pregnancy_finding.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models or formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pregnancy_finding.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_finding.History">
+         <path value="Pregnancy_finding.History"/>
+         <short value="History"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_finding.History"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_finding.History.Current_status">
+         <path value="Pregnancy_finding.History.Current_status"/>
+         <short value="Current status"/>
+         <definition value="The current state of pregnancy for the individual."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pregnancy_finding.History.Current_status"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_finding.History.Current_status.data">
+         <path value="Pregnancy_finding.History.Current_status.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_finding.History.Current_status.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_finding.History.Current_status.data.Finding">
+         <path value="Pregnancy_finding.History.Current_status.data.Finding"/>
+         <short value="Finding"/>
+         <definition value="Is there a pregnancy present?"/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_finding.History.Current_status.data.Finding"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_finding.History.Current_status.data.Finding.value">
+         <path value="Pregnancy_finding.History.Current_status.data.Finding.value"/>
+         <short value="Finding"/>
+         <definition value="Is there a pregnancy present?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_finding.History.Current_status.data.Finding.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_finding.History.Current_status.data.Evidence">
+         <path value="Pregnancy_finding.History.Current_status.data.Evidence"/>
+         <short value="Evidence"/>
+         <definition value="Description of the evidence identified."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pregnancy_finding.History.Current_status.data.Evidence"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Pregnancy_finding.History.Current_status.data.Evidence.value_DV_CODED_TEXT">
+         <path value="Pregnancy_finding.History.Current_status.data.Evidence.value_DV_CODED_TEXT"/>
+         <short value="Evidence"/>
+         <definition value="Description of the evidence identified."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_finding.History.Current_status.data.Evidence.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_finding.History.Current_status.data.Evidence.value_DV_TEXT">
+         <path value="Pregnancy_finding.History.Current_status.data.Evidence.value_DV_TEXT"/>
+         <short value="Evidence"/>
+         <definition value="Description of the evidence identified."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_finding.History.Current_status.data.Evidence.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_finding.History.Current_status.data.Comment">
+         <path value="Pregnancy_finding.History.Current_status.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the pregnancy, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_finding.History.Current_status.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_finding.History.Current_status.data.Comment.value">
+         <path value="Pregnancy_finding.History.Current_status.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the pregnancy, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_finding.History.Current_status.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_finding.History.Any_event">
+         <path value="Pregnancy_finding.History.Any_event"/>
+         <short value="Any event"/>
+         <definition value="EVENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_finding.History.Any_event"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_finding.History.Any_event.data">
+         <path value="Pregnancy_finding.History.Any_event.data"/>
+         <definition value="ITEM_TREE"/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_finding.History.Any_event.data"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <contentReference value="#Pregnancyfinding.History.Current_status"/>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

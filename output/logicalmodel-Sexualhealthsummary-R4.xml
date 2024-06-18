@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Sexualhealthsummary-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-sexualhealthsummary-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-EVALUATION.sexual_health_summary.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Sexualhealthsummary"/>
+   <title value="Sexual health summary"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Summary or persistent information about an individual's sexual health and history."/>
+   <purpose value="To record summary or persistent information about an individual's sexual health and history."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Sexual_health_summary">
+         <path value="Sexual_health_summary"/>
+         <short value="Sexual health summary"/>
+         <definition value="Summary or persistent information about an individual's sexual health and history."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Sexual_health_summary"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Sexual_health_summary.protocol">
+         <path value="Sexual_health_summary.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Sexual_health_summary.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Sexual_health_summary.protocol.Last_updated">
+         <path value="Sexual_health_summary.protocol.Last_updated"/>
+         <short value="Last updated"/>
+         <definition value="The date this summary was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Sexual_health_summary.protocol.Last_updated"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Sexual_health_summary.protocol.Last_updated.value">
+         <path value="Sexual_health_summary.protocol.Last_updated.value"/>
+         <short value="Last updated"/>
+         <definition value="The date this summary was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Sexual_health_summary.protocol.Last_updated.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Sexual_health_summary.protocol.Extension">
+         <path value="Sexual_health_summary.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Sexual_health_summary.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Sexual_health_summary.data">
+         <path value="Sexual_health_summary.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Sexual_health_summary.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Sexual_health_summary.data.Description">
+         <path value="Sexual_health_summary.data.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the sexual health history of an individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Sexual_health_summary.data.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Sexual_health_summary.data.Description.value">
+         <path value="Sexual_health_summary.data.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the sexual health history of an individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Sexual_health_summary.data.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Sexual_health_summary.data.Status">
+         <path value="Sexual_health_summary.data.Status"/>
+         <short value="Status"/>
+         <definition value="Is the individual sexually active?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Sexual_health_summary.data.Status"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Sexual_health_summary.data.Status.value">
+         <path value="Sexual_health_summary.data.Status.value"/>
+         <short value="Status"/>
+         <definition value="Is the individual sexually active?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Sexual_health_summary.data.Status.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Sexual_health_summary.data.First_ever_sex">
+         <path value="Sexual_health_summary.data.First_ever_sex"/>
+         <short value="First ever sex"/>
+         <definition value="The age when the individual first had sex."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Sexual_health_summary.data.First_ever_sex"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Sexual_health_summary.data.First_ever_sex.value">
+         <path value="Sexual_health_summary.data.First_ever_sex.value"/>
+         <short value="First ever sex"/>
+         <definition value="The age when the individual first had sex."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Sexual_health_summary.data.First_ever_sex.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Sexual_health_summary.data.Comment">
+         <path value="Sexual_health_summary.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the sexual health history not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Sexual_health_summary.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Sexual_health_summary.data.Comment.value">
+         <path value="Sexual_health_summary.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the sexual health history not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Sexual_health_summary.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

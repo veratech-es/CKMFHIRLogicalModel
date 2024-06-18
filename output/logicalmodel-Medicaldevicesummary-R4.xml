@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Medicaldevicesummary-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-medicaldevicesummary-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-EVALUATION.device_summary.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Medicaldevicesummary"/>
+   <title value="Medical device summary"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="An ongoing and persistent overview about medical devices that have been fitted or implanted."/>
+   <purpose value="To record an ongoing and persistent overview about medical devices that have been fitted or implanted."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Medical_device_summary">
+         <path value="Medical_device_summary"/>
+         <short value="Medical device summary"/>
+         <definition value="An ongoing and persistent overview about medical devices that have been fitted or implanted."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device_summary"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medical_device_summary.protocol">
+         <path value="Medical_device_summary.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device_summary.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medical_device_summary.protocol.Extension">
+         <path value="Medical_device_summary.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Medical_device_summary.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medical_device_summary.protocol.Last_updated">
+         <path value="Medical_device_summary.protocol.Last_updated"/>
+         <short value="Last updated"/>
+         <definition value="The date this summary was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device_summary.protocol.Last_updated"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medical_device_summary.protocol.Last_updated.value">
+         <path value="Medical_device_summary.protocol.Last_updated.value"/>
+         <short value="Last updated"/>
+         <definition value="The date this summary was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device_summary.protocol.Last_updated.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medical_device_summary.data">
+         <path value="Medical_device_summary.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device_summary.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medical_device_summary.data.Device_type">
+         <path value="Medical_device_summary.data.Device_type"/>
+         <short value="Device type"/>
+         <definition value="Name of the type of medical device."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device_summary.data.Device_type"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medical_device_summary.data.Device_type.value">
+         <path value="Medical_device_summary.data.Device_type.value"/>
+         <short value="Device type"/>
+         <definition value="Name of the type of medical device."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device_summary.data.Device_type.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medical_device_summary.data.Status">
+         <path value="Medical_device_summary.data.Status"/>
+         <short value="Status"/>
+         <definition value="Assertion about the fitting or implanting of devices, as at the date 'Last updated'."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device_summary.data.Status"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medical_device_summary.data.Status.value">
+         <path value="Medical_device_summary.data.Status.value"/>
+         <short value="Status"/>
+         <definition value="Assertion about the fitting or implanting of devices, as at the date 'Last updated'."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device_summary.data.Status.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medical_device_summary.data.Description">
+         <path value="Medical_device_summary.data.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the use of the fitted device type."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device_summary.data.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medical_device_summary.data.Description.value">
+         <path value="Medical_device_summary.data.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the use of the fitted device type."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device_summary.data.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medical_device_summary.data.Device_details">
+         <path value="Medical_device_summary.data.Device_details"/>
+         <short value="Device details"/>
+         <definition value="Details about each device."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Medical_device_summary.data.Device_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medical_device_summary.data.Device_details.Device_name">
+         <path value="Medical_device_summary.data.Device_details.Device_name"/>
+         <short value="Device name"/>
+         <definition value="Identification of the specific device, by name."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device_summary.data.Device_details.Device_name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medical_device_summary.data.Device_details.Device_name.value">
+         <path value="Medical_device_summary.data.Device_details.Device_name.value"/>
+         <short value="Device name"/>
+         <definition value="Identification of the specific device, by name."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device_summary.data.Device_details.Device_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medical_device_summary.data.Device_details.Start_date">
+         <path value="Medical_device_summary.data.Device_details.Start_date"/>
+         <short value="Start date"/>
+         <definition value="Date of fitting or implant of the device."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device_summary.data.Device_details.Start_date"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medical_device_summary.data.Device_details.Start_date.value">
+         <path value="Medical_device_summary.data.Device_details.Start_date.value"/>
+         <short value="Start date"/>
+         <definition value="Date of fitting or implant of the device."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device_summary.data.Device_details.Start_date.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medical_device_summary.data.Device_details.Body_site">
+         <path value="Medical_device_summary.data.Device_details.Body_site"/>
+         <short value="Body site"/>
+         <definition value="Identification of the body site where the device is fitted/implanted."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device_summary.data.Device_details.Body_site"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medical_device_summary.data.Device_details.Body_site.value">
+         <path value="Medical_device_summary.data.Device_details.Body_site.value"/>
+         <short value="Body site"/>
+         <definition value="Identification of the body site where the device is fitted/implanted."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device_summary.data.Device_details.Body_site.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medical_device_summary.data.Device_details.Structured_body_site">
+         <path value="Medical_device_summary.data.Device_details.Structured_body_site"/>
+         <short value="Structured body site"/>
+         <definition value="A structured anatomical location of the body site where the device is fitted/implanted."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Medical_device_summary.data.Device_details.Structured_body_site"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medical_device_summary.data.Device_details.Description">
+         <path value="Medical_device_summary.data.Device_details.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the device."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device_summary.data.Device_details.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medical_device_summary.data.Device_details.Description.value">
+         <path value="Medical_device_summary.data.Device_details.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the device."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device_summary.data.Device_details.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medical_device_summary.data.Device_details.Structured_detail">
+         <path value="Medical_device_summary.data.Device_details.Structured_detail"/>
+         <short value="Structured detail"/>
+         <definition value="Additional structured detail about the device."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Medical_device_summary.data.Device_details.Structured_detail"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medical_device_summary.data.Device_details.Multimedia">
+         <path value="Medical_device_summary.data.Device_details.Multimedia"/>
+         <short value="Multimedia"/>
+         <definition value="Digital image, video or diagram about the device."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Medical_device_summary.data.Device_details.Multimedia"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medical_device_summary.data.Device_details.End_date">
+         <path value="Medical_device_summary.data.Device_details.End_date"/>
+         <short value="End date"/>
+         <definition value="Date when the device stopped being used or was removed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device_summary.data.Device_details.End_date"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medical_device_summary.data.Device_details.End_date.value">
+         <path value="Medical_device_summary.data.Device_details.End_date.value"/>
+         <short value="End date"/>
+         <definition value="Date when the device stopped being used or was removed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device_summary.data.Device_details.End_date.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medical_device_summary.data.Device_details.URI_to_original_data">
+         <path value="Medical_device_summary.data.Device_details.URI_to_original_data"/>
+         <short value="URI to original data"/>
+         <definition value="Link to the original data about the fitting or insertion."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device_summary.data.Device_details.URI_to_original_data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medical_device_summary.data.Device_details.URI_to_original_data.value">
+         <path value="Medical_device_summary.data.Device_details.URI_to_original_data.value"/>
+         <short value="URI to original data"/>
+         <definition value="Link to the original data about the fitting or insertion."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device_summary.data.Device_details.URI_to_original_data.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="string"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medical_device_summary.data.Device_details.Next_review_due">
+         <path value="Medical_device_summary.data.Device_details.Next_review_due"/>
+         <short value="Next review due"/>
+         <definition value="Date on which this device should be reviewed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device_summary.data.Device_details.Next_review_due"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medical_device_summary.data.Device_details.Next_review_due.value">
+         <path value="Medical_device_summary.data.Device_details.Next_review_due.value"/>
+         <short value="Next review due"/>
+         <definition value="Date on which this device should be reviewed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device_summary.data.Device_details.Next_review_due.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

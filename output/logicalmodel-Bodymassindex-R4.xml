@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Bodymassindex-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-bodymassindex-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.body_mass_index.v2"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Bodymassindex"/>
+   <title value="Body mass index"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Calculated measurement which compares a person's weight and height."/>
+   <purpose value="To record the Body Mass Index (BMI) of an individual."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Body_mass_index">
+         <path value="Body_mass_index"/>
+         <short value="Body mass index"/>
+         <definition value="Calculated measurement which compares a person's weight and height."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_mass_index"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_mass_index.protocol">
+         <path value="Body_mass_index.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_mass_index.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_mass_index.protocol.Method">
+         <path value="Body_mass_index.protocol.Method"/>
+         <short value="Method"/>
+         <definition value="The method of entering the body mass index."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_mass_index.protocol.Method"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_mass_index.protocol.Method.value">
+         <path value="Body_mass_index.protocol.Method.value"/>
+         <short value="Method"/>
+         <definition value="The method of entering the body mass index."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_mass_index.protocol.Method.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_mass_index.protocol.Formula">
+         <path value="Body_mass_index.protocol.Formula"/>
+         <short value="Formula"/>
+         <definition value="Formula used to derive the body mass index."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_mass_index.protocol.Formula"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_mass_index.protocol.Formula.value">
+         <path value="Body_mass_index.protocol.Formula.value"/>
+         <short value="Formula"/>
+         <definition value="Formula used to derive the body mass index."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_mass_index.protocol.Formula.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_mass_index.protocol.Extension">
+         <path value="Body_mass_index.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local context or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Body_mass_index.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_mass_index.history">
+         <path value="Body_mass_index.history"/>
+         <short value="history"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_mass_index.history"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_mass_index.history.Any_event">
+         <path value="Body_mass_index.history.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Body_mass_index.history.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_mass_index.history.Any_event.Single">
+         <path value="Body_mass_index.history.Any_event.Single"/>
+         <short value="Single"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_mass_index.history.Any_event.Single"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_mass_index.history.Any_event.Single.Body_mass_index">
+         <path value="Body_mass_index.history.Any_event.Single.Body_mass_index"/>
+         <short value="Body mass index"/>
+         <definition value="Index describing ratio of weight to height."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_mass_index.history.Any_event.Single.Body_mass_index"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_mass_index.history.Any_event.Single.Body_mass_index.value">
+         <path value="Body_mass_index.history.Any_event.Single.Body_mass_index.value"/>
+         <short value="Body mass index"/>
+         <definition value="Index describing ratio of weight to height."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_mass_index.history.Any_event.Single.Body_mass_index.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_mass_index.history.Any_event.Single.Clinical_interpretation">
+         <path value="Body_mass_index.history.Any_event.Single.Clinical_interpretation"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Single word, phrase or brief description that represents the clinical meaning and significance of the body mass index."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_mass_index.history.Any_event.Single.Clinical_interpretation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_mass_index.history.Any_event.Single.Clinical_interpretation.value">
+         <path value="Body_mass_index.history.Any_event.Single.Clinical_interpretation.value"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Single word, phrase or brief description that represents the clinical meaning and significance of the body mass index."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_mass_index.history.Any_event.Single.Clinical_interpretation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_mass_index.history.Any_event.Single.Comment">
+         <path value="Body_mass_index.history.Any_event.Single.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the calculation, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_mass_index.history.Any_event.Single.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_mass_index.history.Any_event.Single.Comment.value">
+         <path value="Body_mass_index.history.Any_event.Single.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the calculation, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_mass_index.history.Any_event.Single.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_mass_index.history.Any_event.state">
+         <path value="Body_mass_index.history.Any_event.state"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_mass_index.history.Any_event.state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_mass_index.history.Any_event.state.Confounding_factors">
+         <path value="Body_mass_index.history.Any_event.state.Confounding_factors"/>
+         <short value="Confounding factors"/>
+         <definition value="Narrative description of any issues or factors that may impact on the calculation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_mass_index.history.Any_event.state.Confounding_factors"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_mass_index.history.Any_event.state.Confounding_factors.value">
+         <path value="Body_mass_index.history.Any_event.state.Confounding_factors.value"/>
+         <short value="Confounding factors"/>
+         <definition value="Narrative description of any issues or factors that may impact on the calculation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_mass_index.history.Any_event.state.Confounding_factors.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

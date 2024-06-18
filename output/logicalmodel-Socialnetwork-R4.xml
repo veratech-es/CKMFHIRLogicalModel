@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Socialnetwork-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-socialnetwork-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-EVALUATION.social_network.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Socialnetwork"/>
+   <title value="Social network"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Group of individuals connected by social interactions and personal relationships."/>
+   <purpose value="To record information about the key people who are connected to the individual through social interactions and personal relationships."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Social_network">
+         <path value="Social_network"/>
+         <short value="Social network"/>
+         <definition value="Group of individuals connected by social interactions and personal relationships."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Social_network"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Social_network.protocol">
+         <path value="Social_network.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Social_network.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Social_network.protocol.Last_updated">
+         <path value="Social_network.protocol.Last_updated"/>
+         <short value="Last updated"/>
+         <definition value="Date when the social network was updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Social_network.protocol.Last_updated"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Social_network.protocol.Last_updated.value">
+         <path value="Social_network.protocol.Last_updated.value"/>
+         <short value="Last updated"/>
+         <definition value="Date when the social network was updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Social_network.protocol.Last_updated.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Social_network.protocol.Extension">
+         <path value="Social_network.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models or formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Social_network.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Social_network.data">
+         <path value="Social_network.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Social_network.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Social_network.data.Description">
+         <path value="Social_network.data.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the social network and connections for the individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Social_network.data.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Social_network.data.Description.value">
+         <path value="Social_network.data.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the social network and connections for the individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Social_network.data.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Social_network.data.Partnership_status">
+         <path value="Social_network.data.Partnership_status"/>
+         <short value="Partnership status"/>
+         <definition value="Single word or phrase that describes an individual's current relationship with a life partner."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Social_network.data.Partnership_status"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Social_network.data.Partnership_status.value">
+         <path value="Social_network.data.Partnership_status.value"/>
+         <short value="Partnership status"/>
+         <definition value="Single word or phrase that describes an individual's current relationship with a life partner."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Social_network.data.Partnership_status.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Social_network.data.Network">
+         <path value="Social_network.data.Network"/>
+         <short value="Network"/>
+         <definition value="Structured details about people or community organisations who are connected to the individual."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Social_network.data.Network"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Social_network.data.Additional_details">
+         <path value="Social_network.data.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="Additional structured details about the social network."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Social_network.data.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Social_network.data.Comment">
+         <path value="Social_network.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the social network, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Social_network.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Social_network.data.Comment.value">
+         <path value="Social_network.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the social network, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Social_network.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

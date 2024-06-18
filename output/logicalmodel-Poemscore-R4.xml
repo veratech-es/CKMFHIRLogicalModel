@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Poemscore-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-poemscore-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.poem_score.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Poemscore"/>
+   <title value="POEM score"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="POEM (Patient-Oriented Eczema Measure)."/>
+   <purpose value="The Patient-Oriented Eczema Measure (POEM), is a simple measure, developed \&#34;for research purposes, and to assist health care professionals such as general practitioners, dermatologists, pediatricians, and specialist nurses caring for patients in routine clinical practice\&#34;(1). It is a tool that enables measurement of \&#34;atopic eczema severity from the patients’ perspective\&#34;(1,2)."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="POEM_score">
+         <path value="POEM_score"/>
+         <short value="POEM score"/>
+         <definition value="POEM (Patient-Oriented Eczema Measure)."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="POEM_score"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="POEM_score.Event_Series">
+         <path value="POEM_score.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="POEM_score.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="POEM_score.Event_Series.Any_event">
+         <path value="POEM_score.Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Any event."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="POEM_score.Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="POEM_score.Event_Series.Any_event.data">
+         <path value="POEM_score.Event_Series.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="POEM_score.Event_Series.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="POEM_score.Event_Series.Any_event.data.Symptom_score">
+         <path value="POEM_score.Event_Series.Any_event.data.Symptom_score"/>
+         <short value="Symptom score"/>
+         <definition value="The symptom score."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="POEM_score.Event_Series.Any_event.data.Symptom_score"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="POEM_score.Event_Series.Any_event.data.Symptom_score.Symptom_name">
+         <path value="POEM_score.Event_Series.Any_event.data.Symptom_score.Symptom_name"/>
+         <short value="Symptom name"/>
+         <definition value="Symptom experienced by the patient in the past week."/>
+         <min value="0"/>
+         <max value="6"/>
+         <base>
+            <path value="POEM_score.Event_Series.Any_event.data.Symptom_score.Symptom_name"/>
+            <min value="0"/>
+            <max value="6"/>
+         </base>
+      </element>
+      <element id="POEM_score.Event_Series.Any_event.data.Symptom_score.Symptom_name.value">
+         <path value="POEM_score.Event_Series.Any_event.data.Symptom_score.Symptom_name.value"/>
+         <short value="Symptom name"/>
+         <definition value="Symptom experienced by the patient in the past week."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="POEM_score.Event_Series.Any_event.data.Symptom_score.Symptom_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="POEM_score.Event_Series.Any_event.data.Symptom_score.Frequency">
+         <path value="POEM_score.Event_Series.Any_event.data.Symptom_score.Frequency"/>
+         <short value="Frequency"/>
+         <definition value="Frequency of the symptom."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="POEM_score.Event_Series.Any_event.data.Symptom_score.Frequency"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="POEM_score.Event_Series.Any_event.data.Symptom_score.Frequency.value">
+         <path value="POEM_score.Event_Series.Any_event.data.Symptom_score.Frequency.value"/>
+         <short value="Frequency"/>
+         <definition value="Frequency of the symptom."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="POEM_score.Event_Series.Any_event.data.Symptom_score.Frequency.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="POEM_score.Event_Series.Any_event.data.Total_Poem_score">
+         <path value="POEM_score.Event_Series.Any_event.data.Total_Poem_score"/>
+         <short value="Total Poem score"/>
+         <definition value="The total Poem score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="POEM_score.Event_Series.Any_event.data.Total_Poem_score"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="POEM_score.Event_Series.Any_event.data.Total_Poem_score.value">
+         <path value="POEM_score.Event_Series.Any_event.data.Total_Poem_score.value"/>
+         <short value="Total Poem score"/>
+         <definition value="The total Poem score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="POEM_score.Event_Series.Any_event.data.Total_Poem_score.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Rinneandwebertestresults-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-rinneandwebertestresults-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.rinne_weber_result.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Rinneandwebertestresults"/>
+   <title value="Rinne and Weber test results"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Two hearing screening tests, commonly recorded together to determine the presence and character of any detected hearing loss."/>
+   <purpose value="To record the results of the Rinne and Weber tests as part of screening for hearing loss."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Rinne_and_Weber_test_results">
+         <path value="Rinne_and_Weber_test_results"/>
+         <short value="Rinne and Weber test results"/>
+         <definition value="Two hearing screening tests, commonly recorded together to determine the presence and character of any detected hearing loss."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Rinne_and_Weber_test_results"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Rinne_and_Weber_test_results.Event_Series">
+         <path value="Rinne_and_Weber_test_results.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Rinne_and_Weber_test_results.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Rinne_and_Weber_test_results.Event_Series.Any_event">
+         <path value="Rinne_and_Weber_test_results.Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Rinne_and_Weber_test_results.Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Rinne_and_Weber_test_results.Event_Series.Any_event.data">
+         <path value="Rinne_and_Weber_test_results.Event_Series.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Rinne_and_Weber_test_results.Event_Series.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Rinne_and_Weber_test_results.Event_Series.Any_event.data.Weber_Test_Result">
+         <path value="Rinne_and_Weber_test_results.Event_Series.Any_event.data.Weber_Test_Result"/>
+         <short value="Weber Test Result"/>
+         <definition value="A test to compare bone conduction in both ears."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Rinne_and_Weber_test_results.Event_Series.Any_event.data.Weber_Test_Result"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Rinne_and_Weber_test_results.Event_Series.Any_event.data.Weber_Test_Result.value">
+         <path value="Rinne_and_Weber_test_results.Event_Series.Any_event.data.Weber_Test_Result.value"/>
+         <short value="Weber Test Result"/>
+         <definition value="A test to compare bone conduction in both ears."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Rinne_and_Weber_test_results.Event_Series.Any_event.data.Weber_Test_Result.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Rinne_and_Weber_test_results.Event_Series.Any_event.data.Rinne_Test">
+         <path value="Rinne_and_Weber_test_results.Event_Series.Any_event.data.Rinne_Test"/>
+         <short value="Rinne Test"/>
+         <definition value="A test to compare the subject's perception of sounds transmitted by air conduction to those transmitted by bone conduction through the mastoid."/>
+         <min value="0"/>
+         <max value="2"/>
+         <base>
+            <path value="Rinne_and_Weber_test_results.Event_Series.Any_event.data.Rinne_Test"/>
+            <min value="0"/>
+            <max value="2"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Rinne_and_Weber_test_results.Event_Series.Any_event.data.Rinne_Test.Ear_Tested">
+         <path value="Rinne_and_Weber_test_results.Event_Series.Any_event.data.Rinne_Test.Ear_Tested"/>
+         <short value="Ear Tested"/>
+         <definition value="Identification of the ear being tested."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Rinne_and_Weber_test_results.Event_Series.Any_event.data.Rinne_Test.Ear_Tested"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Rinne_and_Weber_test_results.Event_Series.Any_event.data.Rinne_Test.Ear_Tested.value">
+         <path value="Rinne_and_Weber_test_results.Event_Series.Any_event.data.Rinne_Test.Ear_Tested.value"/>
+         <short value="Ear Tested"/>
+         <definition value="Identification of the ear being tested."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Rinne_and_Weber_test_results.Event_Series.Any_event.data.Rinne_Test.Ear_Tested.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Rinne_and_Weber_test_results.Event_Series.Any_event.data.Rinne_Test.Rinne_Test_Result">
+         <path value="Rinne_and_Weber_test_results.Event_Series.Any_event.data.Rinne_Test.Rinne_Test_Result"/>
+         <short value="Rinne Test Result"/>
+         <definition value="The result of the Rinne Test."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Rinne_and_Weber_test_results.Event_Series.Any_event.data.Rinne_Test.Rinne_Test_Result"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Rinne_and_Weber_test_results.Event_Series.Any_event.data.Rinne_Test.Rinne_Test_Result.value">
+         <path value="Rinne_and_Weber_test_results.Event_Series.Any_event.data.Rinne_Test.Rinne_Test_Result.value"/>
+         <short value="Rinne Test Result"/>
+         <definition value="The result of the Rinne Test."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Rinne_and_Weber_test_results.Event_Series.Any_event.data.Rinne_Test.Rinne_Test_Result.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Rinne_and_Weber_test_results.Event_Series.Any_event.data.Clinical_Interpretation">
+         <path value="Rinne_and_Weber_test_results.Event_Series.Any_event.data.Clinical_Interpretation"/>
+         <short value="Clinical Interpretation"/>
+         <definition value="Single word, phrase or brief description represents the clinical meaning and significance of the physical examination findings."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Rinne_and_Weber_test_results.Event_Series.Any_event.data.Clinical_Interpretation"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Rinne_and_Weber_test_results.Event_Series.Any_event.data.Clinical_Interpretation.value">
+         <path value="Rinne_and_Weber_test_results.Event_Series.Any_event.data.Clinical_Interpretation.value"/>
+         <short value="Clinical Interpretation"/>
+         <definition value="Single word, phrase or brief description represents the clinical meaning and significance of the physical examination findings."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Rinne_and_Weber_test_results.Event_Series.Any_event.data.Clinical_Interpretation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Rinne_and_Weber_test_results.Event_Series.Any_event.data.Comment">
+         <path value="Rinne_and_Weber_test_results.Event_Series.Any_event.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the Rinne and Weber tests not captured in other fields."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Rinne_and_Weber_test_results.Event_Series.Any_event.data.Comment"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Rinne_and_Weber_test_results.Event_Series.Any_event.data.Comment.value">
+         <path value="Rinne_and_Weber_test_results.Event_Series.Any_event.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the Rinne and Weber tests not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Rinne_and_Weber_test_results.Event_Series.Any_event.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

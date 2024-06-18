@@ -1,0 +1,1316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Hearingscreeningtestresult-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-hearingscreeningtestresult-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.hearing_screening_result.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Hearingscreeningtestresult"/>
+   <title value="Hearing screening test result"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Record of results of a hearing screening assessment and the screening outcome."/>
+   <purpose value="To record of results of a hearing screening assessment and the screening outcome."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Hearing_screening_test_result">
+         <path value="Hearing_screening_test_result"/>
+         <short value="Hearing screening test result"/>
+         <definition value="Record of results of a hearing screening assessment and the screening outcome."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Hearing_screening_test_result.protocol">
+         <path value="Hearing_screening_test_result.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Hearing_screening_test_result.protocol.Extension">
+         <path value="Hearing_screening_test_result.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Hearing_screening_test_result.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Hearing_screening_test_result.protocol.Test_environment">
+         <path value="Hearing_screening_test_result.protocol.Test_environment"/>
+         <short value="Test environment"/>
+         <definition value="The physical environment in which the audiometric test is administered."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.protocol.Test_environment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Hearing_screening_test_result.protocol.Test_environment.value">
+         <path value="Hearing_screening_test_result.protocol.Test_environment.value"/>
+         <short value="Test environment"/>
+         <definition value="The physical environment in which the audiometric test is administered."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.protocol.Test_environment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Hearing_screening_test_result.protocol.Background_noise">
+         <path value="Hearing_screening_test_result.protocol.Background_noise"/>
+         <short value="Background noise"/>
+         <definition value="The amount of noise present in the test environment."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.protocol.Background_noise"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Hearing_screening_test_result.protocol.Background_noise.value">
+         <path value="Hearing_screening_test_result.protocol.Background_noise.value"/>
+         <short value="Background noise"/>
+         <definition value="The amount of noise present in the test environment."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.protocol.Background_noise.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Hearing_screening_test_result.protocol.Test_stimulus">
+         <path value="Hearing_screening_test_result.protocol.Test_stimulus"/>
+         <short value="Test stimulus"/>
+         <definition value="Identification of the frequency-specific stimulus used in screening."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.protocol.Test_stimulus"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Hearing_screening_test_result.protocol.Test_stimulus.value">
+         <path value="Hearing_screening_test_result.protocol.Test_stimulus.value"/>
+         <short value="Test stimulus"/>
+         <definition value="Identification of the frequency-specific stimulus used in screening."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.protocol.Test_stimulus.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Hearing_screening_test_result.protocol.Test_device">
+         <path value="Hearing_screening_test_result.protocol.Test_device"/>
+         <short value="Test device"/>
+         <definition value="Details of device used to conduct the test."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Hearing_screening_test_result.protocol.Test_device"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Hearing_screening_test_result.protocol.Earphones">
+         <path value="Hearing_screening_test_result.protocol.Earphones"/>
+         <short value="Earphones"/>
+         <definition value="Details of earphones, either insert or external, used to conduct the test."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Hearing_screening_test_result.protocol.Earphones"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Hearing_screening_test_result.protocol.Reliability">
+         <path value="Hearing_screening_test_result.protocol.Reliability"/>
+         <short value="Reliability"/>
+         <definition value="Narrative description of the reliability of the test results, as determined by the tester."/>
+         <min value="0"/>
+         <max value="2"/>
+         <base>
+            <path value="Hearing_screening_test_result.protocol.Reliability"/>
+            <min value="0"/>
+            <max value="2"/>
+         </base>
+      </element>
+      <element id="Hearing_screening_test_result.protocol.Reliability.value">
+         <path value="Hearing_screening_test_result.protocol.Reliability.value"/>
+         <short value="Reliability"/>
+         <definition value="Narrative description of the reliability of the test results, as determined by the tester."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.protocol.Reliability.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Hearing_screening_test_result.protocol.Calibration_reference_dB">
+         <path value="Hearing_screening_test_result.protocol.Calibration_reference_dB"/>
+         <short value="Calibration reference dB"/>
+         <definition value="Scale used for acoustic calibration check."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.protocol.Calibration_reference_dB"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Hearing_screening_test_result.protocol.Calibration_reference_dB.value">
+         <path value="Hearing_screening_test_result.protocol.Calibration_reference_dB.value"/>
+         <short value="Calibration reference dB"/>
+         <definition value="Scale used for acoustic calibration check."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.protocol.Calibration_reference_dB.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Hearing_screening_test_result.protocol.Screening_assessment_pass_criteria">
+         <path value="Hearing_screening_test_result.protocol.Screening_assessment_pass_criteria"/>
+         <short value="Screening assessment pass criteria"/>
+         <definition value="Criteria used to determine a screening assessement pass."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Hearing_screening_test_result.protocol.Screening_assessment_pass_criteria"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Hearing_screening_test_result.protocol.Screening_assessment_pass_criteria.Screening_frequency">
+         <path value="Hearing_screening_test_result.protocol.Screening_assessment_pass_criteria.Screening_frequency"/>
+         <short value="Screening frequency"/>
+         <definition value="Identification of the stimulus frequency used to determine a screening assessment pass."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.protocol.Screening_assessment_pass_criteria.Screening_frequency"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Hearing_screening_test_result.protocol.Screening_assessment_pass_criteria.Screening_frequency.value">
+         <path value="Hearing_screening_test_result.protocol.Screening_assessment_pass_criteria.Screening_frequency.value"/>
+         <short value="Screening frequency"/>
+         <definition value="Identification of the stimulus frequency used to determine a screening assessment pass."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.protocol.Screening_assessment_pass_criteria.Screening_frequency.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Hearing_screening_test_result.protocol.Screening_assessment_pass_criteria.Screening_level">
+         <path value="Hearing_screening_test_result.protocol.Screening_assessment_pass_criteria.Screening_level"/>
+         <short value="Screening level"/>
+         <definition value="Identification of the level of stimulus used to determine a screening assessment pass."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.protocol.Screening_assessment_pass_criteria.Screening_level"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Hearing_screening_test_result.protocol.Screening_assessment_pass_criteria.Screening_level.value">
+         <path value="Hearing_screening_test_result.protocol.Screening_assessment_pass_criteria.Screening_level.value"/>
+         <short value="Screening level"/>
+         <definition value="Identification of the level of stimulus used to determine a screening assessment pass."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.protocol.Screening_assessment_pass_criteria.Screening_level.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Hearing_screening_test_result.protocol.Comment">
+         <path value="Hearing_screening_test_result.protocol.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the protocol for the screening test not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.protocol.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Hearing_screening_test_result.protocol.Comment.value">
+         <path value="Hearing_screening_test_result.protocol.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the protocol for the screening test not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.protocol.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series">
+         <path value="Hearing_screening_test_result.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Any_point_in_time">
+         <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time"/>
+         <short value="Any point in time"/>
+         <definition value="Default, unspecified point in time which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Any_point_in_time.data">
+         <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test_result_name">
+         <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test_result_name"/>
+         <short value="Test result name"/>
+         <definition value="Identification of the type of screening test performed."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test_result_name"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test_result_name.value">
+         <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test_result_name.value"/>
+         <short value="Test result name"/>
+         <definition value="Identification of the type of screening test performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test_result_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test">
+         <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test"/>
+         <short value="Test"/>
+         <definition value="The screening test result which can be recorded per ear or for both ears simultaneously."/>
+         <min value="0"/>
+         <max value="3"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test"/>
+            <min value="0"/>
+            <max value="3"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test.Test_ear">
+         <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test.Test_ear"/>
+         <short value="Test ear"/>
+         <definition value="Identification of the ear to which the test stimulus is being presented."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test.Test_ear"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test.Test_ear.value">
+         <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test.Test_ear.value"/>
+         <short value="Test ear"/>
+         <definition value="Identification of the ear to which the test stimulus is being presented."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test.Test_ear.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test.Stimulus_response">
+         <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test.Stimulus_response"/>
+         <short value="Stimulus response"/>
+         <definition value="The grouping of the subject's response to each stimulus presented."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test.Stimulus_response"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test.Stimulus_response.Frequency">
+         <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test.Stimulus_response.Frequency"/>
+         <short value="Frequency"/>
+         <definition value="The stimulus frequency tested."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test.Stimulus_response.Frequency"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test.Stimulus_response.Frequency.value">
+         <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test.Stimulus_response.Frequency.value"/>
+         <short value="Frequency"/>
+         <definition value="The stimulus frequency tested."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test.Stimulus_response.Frequency.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test.Stimulus_response.Intensity">
+         <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test.Stimulus_response.Intensity"/>
+         <short value="Intensity"/>
+         <definition value="The stimulus intensity tested."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test.Stimulus_response.Intensity"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test.Stimulus_response.Intensity.value">
+         <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test.Stimulus_response.Intensity.value"/>
+         <short value="Intensity"/>
+         <definition value="The stimulus intensity tested."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test.Stimulus_response.Intensity.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test.Stimulus_response.Response">
+         <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test.Stimulus_response.Response"/>
+         <short value="Response"/>
+         <definition value="The response of the test subject as a consequence of presentation of the frequency/intensity pair."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test.Stimulus_response.Response"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test.Stimulus_response.Response.value">
+         <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test.Stimulus_response.Response.value"/>
+         <short value="Response"/>
+         <definition value="The response of the test subject as a consequence of presentation of the frequency/intensity pair."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test.Stimulus_response.Response.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test.No_test_result">
+         <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test.No_test_result"/>
+         <short value="No test result"/>
+         <definition value="No test result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test.No_test_result"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test.No_test_result.value">
+         <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test.No_test_result.value"/>
+         <short value="No test result"/>
+         <definition value="No test result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test.No_test_result.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test.Reason_for_no_test_result">
+         <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test.Reason_for_no_test_result"/>
+         <short value="Reason for no test result"/>
+         <definition value="Reason why no result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test.Reason_for_no_test_result"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test.Reason_for_no_test_result.value">
+         <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test.Reason_for_no_test_result.value"/>
+         <short value="Reason for no test result"/>
+         <definition value="Reason why no result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test.Reason_for_no_test_result.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Screening_outcome">
+         <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Screening_outcome"/>
+         <short value="Screening outcome"/>
+         <definition value="Overall result of screening."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Screening_outcome"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Screening_outcome.value">
+         <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Screening_outcome.value"/>
+         <short value="Screening outcome"/>
+         <definition value="Overall result of screening."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Screening_outcome.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Multimedia">
+         <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Multimedia"/>
+         <short value="Multimedia"/>
+         <definition value="Digital representation of the test results."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Multimedia"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test_not_done">
+         <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test_not_done"/>
+         <short value="Test not done"/>
+         <definition value="Details to explicitly record that this test was not performed."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Test_not_done"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Comment">
+         <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the test results and intepretation not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Comment.value">
+         <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the test results and intepretation not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Any_point_in_time.state">
+         <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.state"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Any_point_in_time.state.Sleep_status">
+         <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.state.Sleep_status"/>
+         <short value="Sleep status"/>
+         <definition value="The status of the subject during testing."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.state.Sleep_status"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Any_point_in_time.state.Sleep_status.value">
+         <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.state.Sleep_status.value"/>
+         <short value="Sleep status"/>
+         <definition value="The status of the subject during testing."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.state.Sleep_status.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Any_point_in_time.state.Confounding_factors">
+         <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.state.Confounding_factors"/>
+         <short value="Confounding factors"/>
+         <definition value="Narrative description of factors, not recorded elsewhere, that may contribute to the screening result."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.state.Confounding_factors"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Any_point_in_time.state.Confounding_factors.value">
+         <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.state.Confounding_factors.value"/>
+         <short value="Confounding factors"/>
+         <definition value="Narrative description of factors, not recorded elsewhere, that may contribute to the screening result."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Any_point_in_time.state.Confounding_factors.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Neonatal_screening">
+         <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening"/>
+         <short value="Neonatal screening"/>
+         <definition value="Test performed soon after birth to screen for hearing defects that warrant urgent investigation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Neonatal_screening.data">
+         <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.data"/>
+         <definition value="ITEM_TREE"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test_result_name">
+         <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test_result_name"/>
+         <short value="Test result name"/>
+         <definition value="Identification of the type of screening test performed."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test_result_name"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test_result_name.value">
+         <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test_result_name.value"/>
+         <short value="Test result name"/>
+         <definition value="Identification of the type of screening test performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test_result_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test">
+         <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test"/>
+         <short value="Test"/>
+         <definition value="The screening test result which can be recorded per ear or for both ears simultaneously."/>
+         <min value="0"/>
+         <max value="3"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test"/>
+            <min value="0"/>
+            <max value="3"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test.Test_ear">
+         <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test.Test_ear"/>
+         <short value="Test ear"/>
+         <definition value="Identification of the ear to which the test stimulus is being presented."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test.Test_ear"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test.Test_ear.value">
+         <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test.Test_ear.value"/>
+         <short value="Test ear"/>
+         <definition value="Identification of the ear to which the test stimulus is being presented."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test.Test_ear.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test.Stimulus_response">
+         <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test.Stimulus_response"/>
+         <short value="Stimulus response"/>
+         <definition value="The grouping of the subject's response to each stimulus presented."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test.Stimulus_response"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test.Stimulus_response.Frequency">
+         <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test.Stimulus_response.Frequency"/>
+         <short value="Frequency"/>
+         <definition value="The stimulus frequency tested."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test.Stimulus_response.Frequency"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test.Stimulus_response.Frequency.value">
+         <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test.Stimulus_response.Frequency.value"/>
+         <short value="Frequency"/>
+         <definition value="The stimulus frequency tested."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test.Stimulus_response.Frequency.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test.Stimulus_response.Intensity">
+         <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test.Stimulus_response.Intensity"/>
+         <short value="Intensity"/>
+         <definition value="The stimulus intensity tested."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test.Stimulus_response.Intensity"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test.Stimulus_response.Intensity.value">
+         <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test.Stimulus_response.Intensity.value"/>
+         <short value="Intensity"/>
+         <definition value="The stimulus intensity tested."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test.Stimulus_response.Intensity.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test.Stimulus_response.Response">
+         <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test.Stimulus_response.Response"/>
+         <short value="Response"/>
+         <definition value="The response of the test subject as a consequence of presentation of the frequency/intensity pair."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test.Stimulus_response.Response"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test.Stimulus_response.Response.value">
+         <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test.Stimulus_response.Response.value"/>
+         <short value="Response"/>
+         <definition value="The response of the test subject as a consequence of presentation of the frequency/intensity pair."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test.Stimulus_response.Response.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test.No_test_result">
+         <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test.No_test_result"/>
+         <short value="No test result"/>
+         <definition value="No test result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test.No_test_result"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test.No_test_result.value">
+         <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test.No_test_result.value"/>
+         <short value="No test result"/>
+         <definition value="No test result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test.No_test_result.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test.Reason_for_no_test_result">
+         <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test.Reason_for_no_test_result"/>
+         <short value="Reason for no test result"/>
+         <definition value="Reason why no result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test.Reason_for_no_test_result"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test.Reason_for_no_test_result.value">
+         <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test.Reason_for_no_test_result.value"/>
+         <short value="Reason for no test result"/>
+         <definition value="Reason why no result is available for the test ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test.Reason_for_no_test_result.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Screening_outcome">
+         <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Screening_outcome"/>
+         <short value="Screening outcome"/>
+         <definition value="Overall result of screening."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Screening_outcome"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Screening_outcome.value">
+         <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Screening_outcome.value"/>
+         <short value="Screening outcome"/>
+         <definition value="Overall result of screening."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Screening_outcome.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Multimedia">
+         <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Multimedia"/>
+         <short value="Multimedia"/>
+         <definition value="Digital representation of the test results."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Multimedia"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test_not_done">
+         <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test_not_done"/>
+         <short value="Test not done"/>
+         <definition value="Details to explicitly record that this test was not performed."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Test_not_done"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Comment">
+         <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the test results and intepretation not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Comment.value">
+         <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the test results and intepretation not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Neonatal_screening.state">
+         <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.state"/>
+         <definition value="ITEM_TREE"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Neonatal_screening.state.Sleep_status">
+         <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.state.Sleep_status"/>
+         <short value="Sleep status"/>
+         <definition value="The status of the subject during testing."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.state.Sleep_status"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Neonatal_screening.state.Sleep_status.value">
+         <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.state.Sleep_status.value"/>
+         <short value="Sleep status"/>
+         <definition value="The status of the subject during testing."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.state.Sleep_status.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Neonatal_screening.state.Confounding_factors">
+         <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.state.Confounding_factors"/>
+         <short value="Confounding factors"/>
+         <definition value="Narrative description of factors, not recorded elsewhere, that may contribute to the screening result."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.state.Confounding_factors"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Hearing_screening_test_result.Event_Series.Neonatal_screening.state.Confounding_factors.value">
+         <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.state.Confounding_factors.value"/>
+         <short value="Confounding factors"/>
+         <definition value="Narrative description of factors, not recorded elsewhere, that may contribute to the screening result."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Hearing_screening_test_result.Event_Series.Neonatal_screening.state.Confounding_factors.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

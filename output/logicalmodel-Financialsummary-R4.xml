@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Financialsummary-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-financialsummary-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-EVALUATION.financial_summary.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Financialsummary"/>
+   <title value="Financial summary"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Summary information about the financial situation of an individual."/>
+   <purpose value="To record summary information about the financial situation of an individual, particularly the impact on social determinants of health."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Financial_summary">
+         <path value="Financial_summary"/>
+         <short value="Financial summary"/>
+         <definition value="Summary information about the financial situation of an individual."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Financial_summary"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Financial_summary.protocol">
+         <path value="Financial_summary.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Financial_summary.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Financial_summary.protocol.Last_updated">
+         <path value="Financial_summary.protocol.Last_updated"/>
+         <short value="Last updated"/>
+         <definition value="The date this Financial summary was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Financial_summary.protocol.Last_updated"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Financial_summary.protocol.Last_updated.value">
+         <path value="Financial_summary.protocol.Last_updated.value"/>
+         <short value="Last updated"/>
+         <definition value="The date this Financial summary was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Financial_summary.protocol.Last_updated.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Financial_summary.protocol.Extension">
+         <path value="Financial_summary.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models or formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Financial_summary.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Financial_summary.data">
+         <path value="Financial_summary.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Financial_summary.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Financial_summary.data.Description">
+         <path value="Financial_summary.data.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the financial situation of the individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Financial_summary.data.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Financial_summary.data.Description.value">
+         <path value="Financial_summary.data.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the financial situation of the individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Financial_summary.data.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Financial_summary.data.Financial_security_status">
+         <path value="Financial_summary.data.Financial_security_status"/>
+         <short value="Financial security status"/>
+         <definition value="Category describing the individual's perception about their income being adequate to cover their expenses."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Financial_summary.data.Financial_security_status"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Financial_summary.data.Financial_security_status.value">
+         <path value="Financial_summary.data.Financial_security_status.value"/>
+         <short value="Financial security status"/>
+         <definition value="Category describing the individual's perception about their income being adequate to cover their expenses."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Financial_summary.data.Financial_security_status.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Financial_summary.data.Financial_security_description">
+         <path value="Financial_summary.data.Financial_security_description"/>
+         <short value="Financial security description"/>
+         <definition value="Narrative description about the financial security status of the individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Financial_summary.data.Financial_security_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Financial_summary.data.Financial_security_description.value">
+         <path value="Financial_summary.data.Financial_security_description.value"/>
+         <short value="Financial security description"/>
+         <definition value="Narrative description about the financial security status of the individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Financial_summary.data.Financial_security_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Financial_summary.data.Main_source_of_income">
+         <path value="Financial_summary.data.Main_source_of_income"/>
+         <short value="Main source of income"/>
+         <definition value="The main source of income for the individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Financial_summary.data.Main_source_of_income"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Financial_summary.data.Main_source_of_income.value">
+         <path value="Financial_summary.data.Main_source_of_income.value"/>
+         <short value="Main source of income"/>
+         <definition value="The main source of income for the individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Financial_summary.data.Main_source_of_income.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Financial_summary.data.Financial_record">
+         <path value="Financial_summary.data.Financial_record"/>
+         <short value="Financial record"/>
+         <definition value="CLUSTER"/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Financial_summary.data.Financial_record"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Financial_summary.data.Comment">
+         <path value="Financial_summary.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the Financial summary not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Financial_summary.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Financial_summary.data.Comment.value">
+         <path value="Financial_summary.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the Financial summary not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Financial_summary.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

@@ -1,0 +1,1346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Alcoholintake-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-alcoholintake-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.alcohol_intake.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Alcoholintake"/>
+   <title value="Alcohol intake"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Actual intake or consumption of alcohol."/>
+   <purpose value="To record details about actual consumption of alcohol at a specified point in time or over an identified period of time."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Alcohol_intake">
+         <path value="Alcohol_intake"/>
+         <short value="Alcohol intake"/>
+         <definition value="Actual intake or consumption of alcohol."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.protocol">
+         <path value="Alcohol_intake.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.protocol.Standard_drink_definition">
+         <path value="Alcohol_intake.protocol.Standard_drink_definition"/>
+         <short value="Standard drink definition"/>
+         <definition value="Amount of alcohol defining a standard drink."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.protocol.Standard_drink_definition"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Alcohol_intake.protocol.Standard_drink_definition.value">
+         <path value="Alcohol_intake.protocol.Standard_drink_definition.value"/>
+         <short value="Standard drink definition"/>
+         <definition value="Amount of alcohol defining a standard drink."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.protocol.Standard_drink_definition.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.protocol.Extension">
+         <path value="Alcohol_intake.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Alcohol_intake.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.Event_Series">
+         <path value="Alcohol_intake.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Any_event">
+         <path value="Alcohol_intake.Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Any_event.data">
+         <path value="Alcohol_intake.Event_Series.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Any_event.data.Standard_drinks_consumed">
+         <path value="Alcohol_intake.Event_Series.Any_event.data.Standard_drinks_consumed"/>
+         <short value="Standard drinks consumed"/>
+         <definition value="Number of standard drinks of all alcohol consumed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Any_event.data.Standard_drinks_consumed"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Any_event.data.Standard_drinks_consumed.value">
+         <path value="Alcohol_intake.Event_Series.Any_event.data.Standard_drinks_consumed.value"/>
+         <short value="Standard drinks consumed"/>
+         <definition value="Number of standard drinks of all alcohol consumed."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Any_event.data.Standard_drinks_consumed.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Any_event.data.Overall_description">
+         <path value="Alcohol_intake.Event_Series.Any_event.data.Overall_description"/>
+         <short value="Overall description"/>
+         <definition value="Narrative description about the consumption of the all types of alcohol."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Any_event.data.Overall_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Any_event.data.Overall_description.value">
+         <path value="Alcohol_intake.Event_Series.Any_event.data.Overall_description.value"/>
+         <short value="Overall description"/>
+         <definition value="Narrative description about the consumption of the all types of alcohol."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Any_event.data.Overall_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Any_event.data.Per_type">
+         <path value="Alcohol_intake.Event_Series.Any_event.data.Per_type"/>
+         <short value="Per type"/>
+         <definition value="Details about consumption of a specified type of alcoholic beverage."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Any_event.data.Per_type"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Any_event.data.items_Per_type.name">
+         <path value="Alcohol_intake.Event_Series.Any_event.data.items_Per_type.name"/>
+         <short value="Per type"/>
+         <definition value="Details about consumption of a specified type of alcoholic beverage."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Any_event.data.items_Per_type.name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Any_event.data.items_Per_type.Specific_type">
+         <path value="Alcohol_intake.Event_Series.Any_event.data.items_Per_type.Specific_type"/>
+         <short value="Specific type"/>
+         <definition value="Specific type of alcohol consumed, if required."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Any_event.data.items_Per_type.Specific_type"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Any_event.data.items_Per_type.Specific_type.value">
+         <path value="Alcohol_intake.Event_Series.Any_event.data.items_Per_type.Specific_type.value"/>
+         <short value="Specific type"/>
+         <definition value="Specific type of alcohol consumed, if required."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Any_event.data.items_Per_type.Specific_type.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Any_event.data.items_Per_type.Description">
+         <path value="Alcohol_intake.Event_Series.Any_event.data.items_Per_type.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the consumption of the type of alcohol."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Any_event.data.items_Per_type.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Any_event.data.items_Per_type.Description.value">
+         <path value="Alcohol_intake.Event_Series.Any_event.data.items_Per_type.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the consumption of the type of alcohol."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Any_event.data.items_Per_type.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Any_event.data.items_Per_type.Standard_drinks_consumed">
+         <path value="Alcohol_intake.Event_Series.Any_event.data.items_Per_type.Standard_drinks_consumed"/>
+         <short value="Standard drinks consumed"/>
+         <definition value="Number of standard drinks of this type of alcohol consumed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Any_event.data.items_Per_type.Standard_drinks_consumed"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Any_event.data.items_Per_type.Standard_drinks_consumed.value">
+         <path value="Alcohol_intake.Event_Series.Any_event.data.items_Per_type.Standard_drinks_consumed.value"/>
+         <short value="Standard drinks consumed"/>
+         <definition value="Number of standard drinks of this type of alcohol consumed."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Any_event.data.items_Per_type.Standard_drinks_consumed.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Any_event.data.items_Per_type.Grams_consumed">
+         <path value="Alcohol_intake.Event_Series.Any_event.data.items_Per_type.Grams_consumed"/>
+         <short value="Grams consumed"/>
+         <definition value="Grams of alcohol consumed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Any_event.data.items_Per_type.Grams_consumed"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Any_event.data.items_Per_type.Grams_consumed.value">
+         <path value="Alcohol_intake.Event_Series.Any_event.data.items_Per_type.Grams_consumed.value"/>
+         <short value="Grams consumed"/>
+         <definition value="Grams of alcohol consumed."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Any_event.data.items_Per_type.Grams_consumed.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Any_event.data.items_Per_type.Triggers">
+         <path value="Alcohol_intake.Event_Series.Any_event.data.items_Per_type.Triggers"/>
+         <short value="Triggers"/>
+         <definition value="Narrative description about triggers which may increase consumption of this form of alcohol."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Any_event.data.items_Per_type.Triggers"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Any_event.data.items_Per_type.Triggers.value">
+         <path value="Alcohol_intake.Event_Series.Any_event.data.items_Per_type.Triggers.value"/>
+         <short value="Triggers"/>
+         <definition value="Narrative description about triggers which may increase consumption of this form of alcohol."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Any_event.data.items_Per_type.Triggers.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Any_event.data.items_Per_type.Context">
+         <path value="Alcohol_intake.Event_Series.Any_event.data.items_Per_type.Context"/>
+         <short value="Context"/>
+         <definition value="Narrative description about the social or cultural context in which this form of alcohol is consumed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Any_event.data.items_Per_type.Context"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Any_event.data.items_Per_type.Context.value">
+         <path value="Alcohol_intake.Event_Series.Any_event.data.items_Per_type.Context.value"/>
+         <short value="Context"/>
+         <definition value="Narrative description about the social or cultural context in which this form of alcohol is consumed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Any_event.data.items_Per_type.Context.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Any_event.data.Evidence_of_dependence">
+         <path value="Alcohol_intake.Event_Series.Any_event.data.Evidence_of_dependence"/>
+         <short value="Evidence of dependence"/>
+         <definition value="Narrative description about any  behavioural issues that may indicate  alcohol abuse or dependence."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Any_event.data.Evidence_of_dependence"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Any_event.data.Evidence_of_dependence.value">
+         <path value="Alcohol_intake.Event_Series.Any_event.data.Evidence_of_dependence.value"/>
+         <short value="Evidence of dependence"/>
+         <definition value="Narrative description about any  behavioural issues that may indicate  alcohol abuse or dependence."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Any_event.data.Evidence_of_dependence.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Any_event.data.Readiness_for_change">
+         <path value="Alcohol_intake.Event_Series.Any_event.data.Readiness_for_change"/>
+         <short value="Readiness for change"/>
+         <definition value="Details about readiness to change consumption of alcohol."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Any_event.data.Readiness_for_change"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Any_event.data.Comment">
+         <path value="Alcohol_intake.Event_Series.Any_event.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the individual's consumption of alcohol, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Any_event.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Any_event.data.Comment.value">
+         <path value="Alcohol_intake.Event_Series.Any_event.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the individual's consumption of alcohol, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Any_event.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Specified_day">
+         <path value="Alcohol_intake.Event_Series.Specified_day"/>
+         <short value="Specified day"/>
+         <definition value="Actual alcohol consumption on a specified day. Supports recording consumption in a Alcohol Diary."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Specified_day"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Specified_day.data">
+         <path value="Alcohol_intake.Event_Series.Specified_day.data"/>
+         <definition value="ITEM_TREE"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Specified_day.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Specified_day.data.Standard_drinks_consumed">
+         <path value="Alcohol_intake.Event_Series.Specified_day.data.Standard_drinks_consumed"/>
+         <short value="Standard drinks consumed"/>
+         <definition value="Number of standard drinks of all alcohol consumed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Specified_day.data.Standard_drinks_consumed"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Specified_day.data.Standard_drinks_consumed.value">
+         <path value="Alcohol_intake.Event_Series.Specified_day.data.Standard_drinks_consumed.value"/>
+         <short value="Standard drinks consumed"/>
+         <definition value="Number of standard drinks of all alcohol consumed."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Specified_day.data.Standard_drinks_consumed.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Specified_day.data.Overall_description">
+         <path value="Alcohol_intake.Event_Series.Specified_day.data.Overall_description"/>
+         <short value="Overall description"/>
+         <definition value="Narrative description about the consumption of the all types of alcohol."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Specified_day.data.Overall_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Specified_day.data.Overall_description.value">
+         <path value="Alcohol_intake.Event_Series.Specified_day.data.Overall_description.value"/>
+         <short value="Overall description"/>
+         <definition value="Narrative description about the consumption of the all types of alcohol."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Specified_day.data.Overall_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Specified_day.data.Per_type">
+         <path value="Alcohol_intake.Event_Series.Specified_day.data.Per_type"/>
+         <short value="Per type"/>
+         <definition value="Details about consumption of a specified type of alcoholic beverage."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Specified_day.data.Per_type"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Specified_day.data.items_Per_type.name">
+         <path value="Alcohol_intake.Event_Series.Specified_day.data.items_Per_type.name"/>
+         <short value="Per type"/>
+         <definition value="Details about consumption of a specified type of alcoholic beverage."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Specified_day.data.items_Per_type.name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Specified_day.data.items_Per_type.Specific_type">
+         <path value="Alcohol_intake.Event_Series.Specified_day.data.items_Per_type.Specific_type"/>
+         <short value="Specific type"/>
+         <definition value="Specific type of alcohol consumed, if required."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Specified_day.data.items_Per_type.Specific_type"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Specified_day.data.items_Per_type.Specific_type.value">
+         <path value="Alcohol_intake.Event_Series.Specified_day.data.items_Per_type.Specific_type.value"/>
+         <short value="Specific type"/>
+         <definition value="Specific type of alcohol consumed, if required."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Specified_day.data.items_Per_type.Specific_type.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Specified_day.data.items_Per_type.Description">
+         <path value="Alcohol_intake.Event_Series.Specified_day.data.items_Per_type.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the consumption of the type of alcohol."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Specified_day.data.items_Per_type.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Specified_day.data.items_Per_type.Description.value">
+         <path value="Alcohol_intake.Event_Series.Specified_day.data.items_Per_type.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the consumption of the type of alcohol."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Specified_day.data.items_Per_type.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Specified_day.data.items_Per_type.Standard_drinks_consumed">
+         <path value="Alcohol_intake.Event_Series.Specified_day.data.items_Per_type.Standard_drinks_consumed"/>
+         <short value="Standard drinks consumed"/>
+         <definition value="Number of standard drinks of this type of alcohol consumed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Specified_day.data.items_Per_type.Standard_drinks_consumed"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Specified_day.data.items_Per_type.Standard_drinks_consumed.value">
+         <path value="Alcohol_intake.Event_Series.Specified_day.data.items_Per_type.Standard_drinks_consumed.value"/>
+         <short value="Standard drinks consumed"/>
+         <definition value="Number of standard drinks of this type of alcohol consumed."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Specified_day.data.items_Per_type.Standard_drinks_consumed.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Specified_day.data.items_Per_type.Grams_consumed">
+         <path value="Alcohol_intake.Event_Series.Specified_day.data.items_Per_type.Grams_consumed"/>
+         <short value="Grams consumed"/>
+         <definition value="Grams of alcohol consumed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Specified_day.data.items_Per_type.Grams_consumed"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Specified_day.data.items_Per_type.Grams_consumed.value">
+         <path value="Alcohol_intake.Event_Series.Specified_day.data.items_Per_type.Grams_consumed.value"/>
+         <short value="Grams consumed"/>
+         <definition value="Grams of alcohol consumed."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Specified_day.data.items_Per_type.Grams_consumed.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Specified_day.data.items_Per_type.Triggers">
+         <path value="Alcohol_intake.Event_Series.Specified_day.data.items_Per_type.Triggers"/>
+         <short value="Triggers"/>
+         <definition value="Narrative description about triggers which may increase consumption of this form of alcohol."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Specified_day.data.items_Per_type.Triggers"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Specified_day.data.items_Per_type.Triggers.value">
+         <path value="Alcohol_intake.Event_Series.Specified_day.data.items_Per_type.Triggers.value"/>
+         <short value="Triggers"/>
+         <definition value="Narrative description about triggers which may increase consumption of this form of alcohol."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Specified_day.data.items_Per_type.Triggers.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Specified_day.data.items_Per_type.Context">
+         <path value="Alcohol_intake.Event_Series.Specified_day.data.items_Per_type.Context"/>
+         <short value="Context"/>
+         <definition value="Narrative description about the social or cultural context in which this form of alcohol is consumed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Specified_day.data.items_Per_type.Context"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Specified_day.data.items_Per_type.Context.value">
+         <path value="Alcohol_intake.Event_Series.Specified_day.data.items_Per_type.Context.value"/>
+         <short value="Context"/>
+         <definition value="Narrative description about the social or cultural context in which this form of alcohol is consumed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Specified_day.data.items_Per_type.Context.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Specified_day.data.Evidence_of_dependence">
+         <path value="Alcohol_intake.Event_Series.Specified_day.data.Evidence_of_dependence"/>
+         <short value="Evidence of dependence"/>
+         <definition value="Narrative description about any  behavioural issues that may indicate  alcohol abuse or dependence."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Specified_day.data.Evidence_of_dependence"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Specified_day.data.Evidence_of_dependence.value">
+         <path value="Alcohol_intake.Event_Series.Specified_day.data.Evidence_of_dependence.value"/>
+         <short value="Evidence of dependence"/>
+         <definition value="Narrative description about any  behavioural issues that may indicate  alcohol abuse or dependence."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Specified_day.data.Evidence_of_dependence.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Specified_day.data.Readiness_for_change">
+         <path value="Alcohol_intake.Event_Series.Specified_day.data.Readiness_for_change"/>
+         <short value="Readiness for change"/>
+         <definition value="Details about readiness to change consumption of alcohol."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Specified_day.data.Readiness_for_change"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Specified_day.data.Comment">
+         <path value="Alcohol_intake.Event_Series.Specified_day.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the individual's consumption of alcohol, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Specified_day.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Specified_day.data.Comment.value">
+         <path value="Alcohol_intake.Event_Series.Specified_day.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the individual's consumption of alcohol, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Specified_day.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.Event_Series.events_Specified_day.width">
+         <path value="Alcohol_intake.Event_Series.events_Specified_day.width"/>
+         <short value="Specified day"/>
+         <definition value="Actual alcohol consumption on a specified day. Supports recording consumption in a Alcohol Diary."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.events_Specified_day.width"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Average_intake">
+         <path value="Alcohol_intake.Event_Series.Average_intake"/>
+         <short value="Average intake"/>
+         <definition value="Average, or typical, consumption over a specified time interval. For example, allows recording of average number of standard drinks consumed per week for the previous 10 years."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Average_intake"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Average_intake.data">
+         <path value="Alcohol_intake.Event_Series.Average_intake.data"/>
+         <definition value="ITEM_TREE"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Average_intake.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Average_intake.data.Standard_drinks_consumed">
+         <path value="Alcohol_intake.Event_Series.Average_intake.data.Standard_drinks_consumed"/>
+         <short value="Standard drinks consumed"/>
+         <definition value="Number of standard drinks of all alcohol consumed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Average_intake.data.Standard_drinks_consumed"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Average_intake.data.Standard_drinks_consumed.value">
+         <path value="Alcohol_intake.Event_Series.Average_intake.data.Standard_drinks_consumed.value"/>
+         <short value="Standard drinks consumed"/>
+         <definition value="Number of standard drinks of all alcohol consumed."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Average_intake.data.Standard_drinks_consumed.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Average_intake.data.Overall_description">
+         <path value="Alcohol_intake.Event_Series.Average_intake.data.Overall_description"/>
+         <short value="Overall description"/>
+         <definition value="Narrative description about the consumption of the all types of alcohol."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Average_intake.data.Overall_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Average_intake.data.Overall_description.value">
+         <path value="Alcohol_intake.Event_Series.Average_intake.data.Overall_description.value"/>
+         <short value="Overall description"/>
+         <definition value="Narrative description about the consumption of the all types of alcohol."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Average_intake.data.Overall_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Average_intake.data.Per_type">
+         <path value="Alcohol_intake.Event_Series.Average_intake.data.Per_type"/>
+         <short value="Per type"/>
+         <definition value="Details about consumption of a specified type of alcoholic beverage."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Average_intake.data.Per_type"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Average_intake.data.items_Per_type.name">
+         <path value="Alcohol_intake.Event_Series.Average_intake.data.items_Per_type.name"/>
+         <short value="Per type"/>
+         <definition value="Details about consumption of a specified type of alcoholic beverage."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Average_intake.data.items_Per_type.name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Average_intake.data.items_Per_type.Specific_type">
+         <path value="Alcohol_intake.Event_Series.Average_intake.data.items_Per_type.Specific_type"/>
+         <short value="Specific type"/>
+         <definition value="Specific type of alcohol consumed, if required."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Average_intake.data.items_Per_type.Specific_type"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Average_intake.data.items_Per_type.Specific_type.value">
+         <path value="Alcohol_intake.Event_Series.Average_intake.data.items_Per_type.Specific_type.value"/>
+         <short value="Specific type"/>
+         <definition value="Specific type of alcohol consumed, if required."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Average_intake.data.items_Per_type.Specific_type.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Average_intake.data.items_Per_type.Description">
+         <path value="Alcohol_intake.Event_Series.Average_intake.data.items_Per_type.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the consumption of the type of alcohol."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Average_intake.data.items_Per_type.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Average_intake.data.items_Per_type.Description.value">
+         <path value="Alcohol_intake.Event_Series.Average_intake.data.items_Per_type.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the consumption of the type of alcohol."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Average_intake.data.items_Per_type.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Average_intake.data.items_Per_type.Standard_drinks_consumed">
+         <path value="Alcohol_intake.Event_Series.Average_intake.data.items_Per_type.Standard_drinks_consumed"/>
+         <short value="Standard drinks consumed"/>
+         <definition value="Number of standard drinks of this type of alcohol consumed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Average_intake.data.items_Per_type.Standard_drinks_consumed"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Average_intake.data.items_Per_type.Standard_drinks_consumed.value">
+         <path value="Alcohol_intake.Event_Series.Average_intake.data.items_Per_type.Standard_drinks_consumed.value"/>
+         <short value="Standard drinks consumed"/>
+         <definition value="Number of standard drinks of this type of alcohol consumed."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Average_intake.data.items_Per_type.Standard_drinks_consumed.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Average_intake.data.items_Per_type.Grams_consumed">
+         <path value="Alcohol_intake.Event_Series.Average_intake.data.items_Per_type.Grams_consumed"/>
+         <short value="Grams consumed"/>
+         <definition value="Grams of alcohol consumed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Average_intake.data.items_Per_type.Grams_consumed"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Average_intake.data.items_Per_type.Grams_consumed.value">
+         <path value="Alcohol_intake.Event_Series.Average_intake.data.items_Per_type.Grams_consumed.value"/>
+         <short value="Grams consumed"/>
+         <definition value="Grams of alcohol consumed."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Average_intake.data.items_Per_type.Grams_consumed.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Average_intake.data.items_Per_type.Triggers">
+         <path value="Alcohol_intake.Event_Series.Average_intake.data.items_Per_type.Triggers"/>
+         <short value="Triggers"/>
+         <definition value="Narrative description about triggers which may increase consumption of this form of alcohol."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Average_intake.data.items_Per_type.Triggers"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Average_intake.data.items_Per_type.Triggers.value">
+         <path value="Alcohol_intake.Event_Series.Average_intake.data.items_Per_type.Triggers.value"/>
+         <short value="Triggers"/>
+         <definition value="Narrative description about triggers which may increase consumption of this form of alcohol."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Average_intake.data.items_Per_type.Triggers.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Average_intake.data.items_Per_type.Context">
+         <path value="Alcohol_intake.Event_Series.Average_intake.data.items_Per_type.Context"/>
+         <short value="Context"/>
+         <definition value="Narrative description about the social or cultural context in which this form of alcohol is consumed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Average_intake.data.items_Per_type.Context"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Average_intake.data.items_Per_type.Context.value">
+         <path value="Alcohol_intake.Event_Series.Average_intake.data.items_Per_type.Context.value"/>
+         <short value="Context"/>
+         <definition value="Narrative description about the social or cultural context in which this form of alcohol is consumed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Average_intake.data.items_Per_type.Context.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Average_intake.data.Evidence_of_dependence">
+         <path value="Alcohol_intake.Event_Series.Average_intake.data.Evidence_of_dependence"/>
+         <short value="Evidence of dependence"/>
+         <definition value="Narrative description about any  behavioural issues that may indicate  alcohol abuse or dependence."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Average_intake.data.Evidence_of_dependence"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Average_intake.data.Evidence_of_dependence.value">
+         <path value="Alcohol_intake.Event_Series.Average_intake.data.Evidence_of_dependence.value"/>
+         <short value="Evidence of dependence"/>
+         <definition value="Narrative description about any  behavioural issues that may indicate  alcohol abuse or dependence."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Average_intake.data.Evidence_of_dependence.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Average_intake.data.Readiness_for_change">
+         <path value="Alcohol_intake.Event_Series.Average_intake.data.Readiness_for_change"/>
+         <short value="Readiness for change"/>
+         <definition value="Details about readiness to change consumption of alcohol."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Average_intake.data.Readiness_for_change"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Average_intake.data.Comment">
+         <path value="Alcohol_intake.Event_Series.Average_intake.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the individual's consumption of alcohol, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Average_intake.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Alcohol_intake.Event_Series.Average_intake.data.Comment.value">
+         <path value="Alcohol_intake.Event_Series.Average_intake.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the individual's consumption of alcohol, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.Average_intake.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Alcohol_intake.Event_Series.events_Average_intake.math_function">
+         <path value="Alcohol_intake.Event_Series.events_Average_intake.math_function"/>
+         <short value="Average intake"/>
+         <definition value="Average, or typical, consumption over a specified time interval. For example, allows recording of average number of standard drinks consumed per week for the previous 10 years."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Alcohol_intake.Event_Series.events_Average_intake.math_function"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

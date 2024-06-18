@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Revisedcardiacriskindex-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-revisedcardiacriskindex-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.revised_cardiac_risk_index.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Revisedcardiacriskindex"/>
+   <title value="Revised cardiac risk index"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="The Revised Cardiac Risk Index (RCRI) is a preoperative prediction tool to estimate the perioperative risk of major cardiac complications during non-cardiac surgery."/>
+   <purpose value="To record the result for each component parameter, and their total sum and estimated risk for the Revised Cardiac Risk Index (RCRI)."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Revised_cardiac_risk_index">
+         <path value="Revised_cardiac_risk_index"/>
+         <short value="Revised cardiac risk index"/>
+         <definition value="The Revised Cardiac Risk Index (RCRI) is a preoperative prediction tool to estimate the perioperative risk of major cardiac complications during non-cardiac surgery."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Revised_cardiac_risk_index"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Revised_cardiac_risk_index.protocol">
+         <path value="Revised_cardiac_risk_index.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Revised_cardiac_risk_index.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Revised_cardiac_risk_index.protocol.Extension">
+         <path value="Revised_cardiac_risk_index.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models or formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Revised_cardiac_risk_index.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Revised_cardiac_risk_index.History">
+         <path value="Revised_cardiac_risk_index.History"/>
+         <short value="History"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Revised_cardiac_risk_index.History"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Revised_cardiac_risk_index.History.Any_event">
+         <path value="Revised_cardiac_risk_index.History.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Revised_cardiac_risk_index.History.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Revised_cardiac_risk_index.History.Any_event.data">
+         <path value="Revised_cardiac_risk_index.History.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Revised_cardiac_risk_index.History.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Revised_cardiac_risk_index.History.Any_event.data.Ischemic_heart_disease">
+         <path value="Revised_cardiac_risk_index.History.Any_event.data.Ischemic_heart_disease"/>
+         <short value="Ischemic heart disease"/>
+         <definition value="History of probable or definite myocardial infarction (MI; ECG changes and/or enzyme changes); history of positive exercise test; current chest pain considered due to myocardial ischemia; use of nitrate therapy; ECG with pathological Q waves."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Revised_cardiac_risk_index.History.Any_event.data.Ischemic_heart_disease"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Revised_cardiac_risk_index.History.Any_event.data.Ischemic_heart_disease.value">
+         <path value="Revised_cardiac_risk_index.History.Any_event.data.Ischemic_heart_disease.value"/>
+         <short value="Ischemic heart disease"/>
+         <definition value="History of probable or definite myocardial infarction (MI; ECG changes and/or enzyme changes); history of positive exercise test; current chest pain considered due to myocardial ischemia; use of nitrate therapy; ECG with pathological Q waves."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Revised_cardiac_risk_index.History.Any_event.data.Ischemic_heart_disease.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Revised_cardiac_risk_index.History.Any_event.data.Congestive_heart_failure">
+         <path value="Revised_cardiac_risk_index.History.Any_event.data.Congestive_heart_failure"/>
+         <short value="Congestive heart failure"/>
+         <definition value="History of congestive heart failure; pulmonary edema; paroxysmal nocturnal dyspnea; physical examination showing bilateral rales or S3 gallop; chest radiograph showing pulmonary vascular redistribution; has responded symptomatically (or on physical examination) to digitalis, diuretics, or afterload reducing agents."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Revised_cardiac_risk_index.History.Any_event.data.Congestive_heart_failure"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Revised_cardiac_risk_index.History.Any_event.data.Congestive_heart_failure.value">
+         <path value="Revised_cardiac_risk_index.History.Any_event.data.Congestive_heart_failure.value"/>
+         <short value="Congestive heart failure"/>
+         <definition value="History of congestive heart failure; pulmonary edema; paroxysmal nocturnal dyspnea; physical examination showing bilateral rales or S3 gallop; chest radiograph showing pulmonary vascular redistribution; has responded symptomatically (or on physical examination) to digitalis, diuretics, or afterload reducing agents."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Revised_cardiac_risk_index.History.Any_event.data.Congestive_heart_failure.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Revised_cardiac_risk_index.History.Any_event.data.Cerebrovascular_disease">
+         <path value="Revised_cardiac_risk_index.History.Any_event.data.Cerebrovascular_disease"/>
+         <short value="Cerebrovascular disease"/>
+         <definition value="History of stroke, cerebrovascular accident (CVA) with minor or no residual or transient ischemic attacks (TIA)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Revised_cardiac_risk_index.History.Any_event.data.Cerebrovascular_disease"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Revised_cardiac_risk_index.History.Any_event.data.Cerebrovascular_disease.value">
+         <path value="Revised_cardiac_risk_index.History.Any_event.data.Cerebrovascular_disease.value"/>
+         <short value="Cerebrovascular disease"/>
+         <definition value="History of stroke, cerebrovascular accident (CVA) with minor or no residual or transient ischemic attacks (TIA)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Revised_cardiac_risk_index.History.Any_event.data.Cerebrovascular_disease.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Revised_cardiac_risk_index.History.Any_event.data.Diabetes_mellitus_on_insulin">
+         <path value="Revised_cardiac_risk_index.History.Any_event.data.Diabetes_mellitus_on_insulin"/>
+         <short value="Diabetes mellitus on insulin"/>
+         <definition value="Diabetes mellitus treated with insulin."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Revised_cardiac_risk_index.History.Any_event.data.Diabetes_mellitus_on_insulin"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Revised_cardiac_risk_index.History.Any_event.data.Diabetes_mellitus_on_insulin.value">
+         <path value="Revised_cardiac_risk_index.History.Any_event.data.Diabetes_mellitus_on_insulin.value"/>
+         <short value="Diabetes mellitus on insulin"/>
+         <definition value="Diabetes mellitus treated with insulin."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Revised_cardiac_risk_index.History.Any_event.data.Diabetes_mellitus_on_insulin.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Revised_cardiac_risk_index.History.Any_event.data.Elevated_serum_creatinine">
+         <path value="Revised_cardiac_risk_index.History.Any_event.data.Elevated_serum_creatinine"/>
+         <short value="Elevated serum creatinine"/>
+         <definition value="Preoperative serum Creatinine ≥2 mg/dl or ≥177 μmol/L."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Revised_cardiac_risk_index.History.Any_event.data.Elevated_serum_creatinine"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Revised_cardiac_risk_index.History.Any_event.data.Elevated_serum_creatinine.value">
+         <path value="Revised_cardiac_risk_index.History.Any_event.data.Elevated_serum_creatinine.value"/>
+         <short value="Elevated serum creatinine"/>
+         <definition value="Preoperative serum Creatinine ≥2 mg/dl or ≥177 μmol/L."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Revised_cardiac_risk_index.History.Any_event.data.Elevated_serum_creatinine.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Revised_cardiac_risk_index.History.Any_event.data.High_risk_surgery">
+         <path value="Revised_cardiac_risk_index.History.Any_event.data.High_risk_surgery"/>
+         <short value="High risk surgery"/>
+         <definition value="Surgical procedures that carry a significant risk of complications or adverse events e.g. intraperitoneal, intrathoracic, or suprainguinal vascular procedures."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Revised_cardiac_risk_index.History.Any_event.data.High_risk_surgery"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Revised_cardiac_risk_index.History.Any_event.data.High_risk_surgery.value">
+         <path value="Revised_cardiac_risk_index.History.Any_event.data.High_risk_surgery.value"/>
+         <short value="High risk surgery"/>
+         <definition value="Surgical procedures that carry a significant risk of complications or adverse events e.g. intraperitoneal, intrathoracic, or suprainguinal vascular procedures."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Revised_cardiac_risk_index.History.Any_event.data.High_risk_surgery.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Revised_cardiac_risk_index.History.Any_event.data.Total_score">
+         <path value="Revised_cardiac_risk_index.History.Any_event.data.Total_score"/>
+         <short value="Total score"/>
+         <definition value="The total sum of each component variable for the Revised cardiac risk index."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Revised_cardiac_risk_index.History.Any_event.data.Total_score"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Revised_cardiac_risk_index.History.Any_event.data.Total_score.value">
+         <path value="Revised_cardiac_risk_index.History.Any_event.data.Total_score.value"/>
+         <short value="Total score"/>
+         <definition value="The total sum of each component variable for the Revised cardiac risk index."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Revised_cardiac_risk_index.History.Any_event.data.Total_score.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Revised_cardiac_risk_index.History.Any_event.data.Estimated_risk">
+         <path value="Revised_cardiac_risk_index.History.Any_event.data.Estimated_risk"/>
+         <short value="Estimated risk"/>
+         <definition value="Estimated risk of major cardiac complications (myocardial infarction, pulmonary edema, ventricular fibrillation or primary cardiac arrest, and complete heart block) after non-cardiac surgery: &#xD;&#xA;0 points = Very low risk; &#xD;&#xA;1 point = Low risk; &#xD;&#xA;2 points = Moderate risk; &#xD;&#xA;≥3 points = High risk."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Revised_cardiac_risk_index.History.Any_event.data.Estimated_risk"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Revised_cardiac_risk_index.History.Any_event.data.Estimated_risk.value">
+         <path value="Revised_cardiac_risk_index.History.Any_event.data.Estimated_risk.value"/>
+         <short value="Estimated risk"/>
+         <definition value="Estimated risk of major cardiac complications (myocardial infarction, pulmonary edema, ventricular fibrillation or primary cardiac arrest, and complete heart block) after non-cardiac surgery: &#xD;&#xA;0 points = Very low risk; &#xD;&#xA;1 point = Low risk; &#xD;&#xA;2 points = Moderate risk; &#xD;&#xA;≥3 points = High risk."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Revised_cardiac_risk_index.History.Any_event.data.Estimated_risk.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

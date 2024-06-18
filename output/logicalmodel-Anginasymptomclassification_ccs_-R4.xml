@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Anginasymptomclassification_ccs_-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-anginasymptomclassification_ccs_-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.ccs_angina_status.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Anginasymptomclassification_ccs_"/>
+   <title value="Angina symptom classification (CCS)"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Angina symptom score based on Canadian Cardiovascular Society (CCS) Angina Status score."/>
+   <purpose value="To record a classification of patient angina on the basis of reported chest pain.  Based on Canadian Cardiovascular Society (CCS) Angina Status score, adjusted to add Class 0, to record situations where patients have no symptoms."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Angina_symptom_classification_(CCS)">
+         <path value="Angina_symptom_classification_(CCS)"/>
+         <short value="Angina symptom classification (CCS)"/>
+         <definition value="Angina symptom score based on Canadian Cardiovascular Society (CCS) Angina Status score."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Angina_symptom_classification_(CCS)"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Angina_symptom_classification_(CCS).protocol">
+         <path value="Angina_symptom_classification_(CCS).protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Angina_symptom_classification_(CCS).protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Angina_symptom_classification_(CCS).protocol.Extension">
+         <path value="Angina_symptom_classification_(CCS).protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local context or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Angina_symptom_classification_(CCS).protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Angina_symptom_classification_(CCS).Event_Series">
+         <path value="Angina_symptom_classification_(CCS).Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Angina_symptom_classification_(CCS).Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Angina_symptom_classification_(CCS).Event_Series.Any_event">
+         <path value="Angina_symptom_classification_(CCS).Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Angina_symptom_classification_(CCS).Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Angina_symptom_classification_(CCS).Event_Series.Any_event.data">
+         <path value="Angina_symptom_classification_(CCS).Event_Series.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Angina_symptom_classification_(CCS).Event_Series.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Angina_symptom_classification_(CCS).Event_Series.Any_event.data.Angina_classification">
+         <path value="Angina_symptom_classification_(CCS).Event_Series.Any_event.data.Angina_classification"/>
+         <short value="Angina classification"/>
+         <definition value="Angina symptom score based on Canadian Cardiovascular Society (CCS) Angina Status classification."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Angina_symptom_classification_(CCS).Event_Series.Any_event.data.Angina_classification"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Angina_symptom_classification_(CCS).Event_Series.Any_event.data.Angina_classification.value">
+         <path value="Angina_symptom_classification_(CCS).Event_Series.Any_event.data.Angina_classification.value"/>
+         <short value="Angina classification"/>
+         <definition value="Angina symptom score based on Canadian Cardiovascular Society (CCS) Angina Status classification."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Angina_symptom_classification_(CCS).Event_Series.Any_event.data.Angina_classification.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

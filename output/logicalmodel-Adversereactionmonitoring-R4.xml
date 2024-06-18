@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Adversereactionmonitoring-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-adversereactionmonitoring-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.adverse_reaction_monitoring.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Adversereactionmonitoring"/>
+   <title value="Adverse reaction monitoring"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Information about the outcome of monitoring for adverse reactions, during or after the administration of a substance."/>
+   <purpose value="To record information about the outcome of monitoring for adverse reactions, during or after the administration of a substance."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Adverse_reaction_monitoring">
+         <path value="Adverse_reaction_monitoring"/>
+         <short value="Adverse reaction monitoring"/>
+         <definition value="Information about the outcome of monitoring for adverse reactions, during or after the administration of a substance."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Adverse_reaction_monitoring"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Adverse_reaction_monitoring.protocol">
+         <path value="Adverse_reaction_monitoring.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Adverse_reaction_monitoring.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Adverse_reaction_monitoring.protocol.Method">
+         <path value="Adverse_reaction_monitoring.protocol.Method"/>
+         <short value="Method"/>
+         <definition value="The method of how the presence or absence of an adverse reaction was assessed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Adverse_reaction_monitoring.protocol.Method"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Adverse_reaction_monitoring.protocol.Method.value">
+         <path value="Adverse_reaction_monitoring.protocol.Method.value"/>
+         <short value="Method"/>
+         <definition value="The method of how the presence or absence of an adverse reaction was assessed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Adverse_reaction_monitoring.protocol.Method.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Adverse_reaction_monitoring.protocol.Extension">
+         <path value="Adverse_reaction_monitoring.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models or formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Adverse_reaction_monitoring.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Adverse_reaction_monitoring.History">
+         <path value="Adverse_reaction_monitoring.History"/>
+         <short value="History"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Adverse_reaction_monitoring.History"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Adverse_reaction_monitoring.History.Monitoring_interval">
+         <path value="Adverse_reaction_monitoring.History.Monitoring_interval"/>
+         <short value="Monitoring interval"/>
+         <definition value="The interval of time from onset of monitoring to end of monitoring."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Adverse_reaction_monitoring.History.Monitoring_interval"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Adverse_reaction_monitoring.History.Monitoring_interval.data">
+         <path value="Adverse_reaction_monitoring.History.Monitoring_interval.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Adverse_reaction_monitoring.History.Monitoring_interval.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Adverse_reaction_monitoring.History.Monitoring_interval.data.Purpose">
+         <path value="Adverse_reaction_monitoring.History.Monitoring_interval.data.Purpose"/>
+         <short value="Purpose"/>
+         <definition value="The reason why the reaction monitoring was carried out."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Adverse_reaction_monitoring.History.Monitoring_interval.data.Purpose"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Adverse_reaction_monitoring.History.Monitoring_interval.data.Purpose.value">
+         <path value="Adverse_reaction_monitoring.History.Monitoring_interval.data.Purpose.value"/>
+         <short value="Purpose"/>
+         <definition value="The reason why the reaction monitoring was carried out."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Adverse_reaction_monitoring.History.Monitoring_interval.data.Purpose.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Adverse_reaction_monitoring.History.Monitoring_interval.data.Substance">
+         <path value="Adverse_reaction_monitoring.History.Monitoring_interval.data.Substance"/>
+         <short value="Substance"/>
+         <definition value="Identification of a substance administered to the individual."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Adverse_reaction_monitoring.History.Monitoring_interval.data.Substance"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Adverse_reaction_monitoring.History.Monitoring_interval.data.Substance.value">
+         <path value="Adverse_reaction_monitoring.History.Monitoring_interval.data.Substance.value"/>
+         <short value="Substance"/>
+         <definition value="Identification of a substance administered to the individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Adverse_reaction_monitoring.History.Monitoring_interval.data.Substance.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Adverse_reaction_monitoring.History.Monitoring_interval.data.Reaction_">
+         <path value="Adverse_reaction_monitoring.History.Monitoring_interval.data.Reaction_"/>
+         <short value="Reaction?"/>
+         <definition value="Was there a reaction to the agent administered?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Adverse_reaction_monitoring.History.Monitoring_interval.data.Reaction_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Adverse_reaction_monitoring.History.Monitoring_interval.data.Reaction_.value_DV_CODED_TEXT">
+         <path value="Adverse_reaction_monitoring.History.Monitoring_interval.data.Reaction_.value_DV_CODED_TEXT"/>
+         <short value="Reaction?"/>
+         <definition value="Was there a reaction to the agent administered?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Adverse_reaction_monitoring.History.Monitoring_interval.data.Reaction_.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Adverse_reaction_monitoring.History.Monitoring_interval.data.Reaction_.value_DV_TEXT">
+         <path value="Adverse_reaction_monitoring.History.Monitoring_interval.data.Reaction_.value_DV_TEXT"/>
+         <short value="Reaction?"/>
+         <definition value="Was there a reaction to the agent administered?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Adverse_reaction_monitoring.History.Monitoring_interval.data.Reaction_.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Adverse_reaction_monitoring.History.Monitoring_interval.data.Substance_details">
+         <path value="Adverse_reaction_monitoring.History.Monitoring_interval.data.Substance_details"/>
+         <short value="Substance details"/>
+         <definition value="Structured details about the substance administered to the individual."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Adverse_reaction_monitoring.History.Monitoring_interval.data.Substance_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Adverse_reaction_monitoring.History.Monitoring_interval.data.Reaction_event">
+         <path value="Adverse_reaction_monitoring.History.Monitoring_interval.data.Reaction_event"/>
+         <short value="Reaction event"/>
+         <definition value="Details about the adverse reaction event."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Adverse_reaction_monitoring.History.Monitoring_interval.data.Reaction_event"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Adverse_reaction_monitoring.History.Monitoring_interval.data.Comment">
+         <path value="Adverse_reaction_monitoring.History.Monitoring_interval.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the monitoring, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Adverse_reaction_monitoring.History.Monitoring_interval.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Adverse_reaction_monitoring.History.Monitoring_interval.data.Comment.value">
+         <path value="Adverse_reaction_monitoring.History.Monitoring_interval.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the monitoring, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Adverse_reaction_monitoring.History.Monitoring_interval.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Adverse_reaction_monitoring.History.Monitoring_interval.state">
+         <path value="Adverse_reaction_monitoring.History.Monitoring_interval.state"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Adverse_reaction_monitoring.History.Monitoring_interval.state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Adverse_reaction_monitoring.History.Monitoring_interval.state.Mitigation_factor">
+         <path value="Adverse_reaction_monitoring.History.Monitoring_interval.state.Mitigation_factor"/>
+         <short value="Mitigation factor"/>
+         <definition value="Description of actions undertaken prior to or during substance administration to prevent an anticipated reaction or reduce an actual reaction."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Adverse_reaction_monitoring.History.Monitoring_interval.state.Mitigation_factor"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Adverse_reaction_monitoring.History.Monitoring_interval.state.Mitigation_factor.value">
+         <path value="Adverse_reaction_monitoring.History.Monitoring_interval.state.Mitigation_factor.value"/>
+         <short value="Mitigation factor"/>
+         <definition value="Description of actions undertaken prior to or during substance administration to prevent an anticipated reaction or reduce an actual reaction."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Adverse_reaction_monitoring.History.Monitoring_interval.state.Mitigation_factor.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

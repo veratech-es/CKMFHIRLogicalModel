@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Gad-7score-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-gad-7score-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.gad_7_score.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Gad-7score"/>
+   <title value="GAD-7 score"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Generalized Anxiety Disorder 7-item (GAD-7) scale recording the experience of anxiety related symptoms in the previous two weeks."/>
+   <purpose value="To record the results and total score of the GAD-7 scale."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="GAD_7_score">
+         <path value="GAD_7_score"/>
+         <short value="GAD-7 score"/>
+         <definition value="Generalized Anxiety Disorder 7-item (GAD-7) scale recording the experience of anxiety related symptoms in the previous two weeks."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="GAD_7_score"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="GAD_7_score.protocol">
+         <path value="GAD_7_score.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="GAD_7_score.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="GAD_7_score.protocol.Extension">
+         <path value="GAD_7_score.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local context or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="GAD_7_score.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="GAD_7_score.Event_Series">
+         <path value="GAD_7_score.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="GAD_7_score.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="GAD_7_score.Event_Series.Any_event">
+         <path value="GAD_7_score.Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="GAD_7_score.Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="GAD_7_score.Event_Series.Any_event.data">
+         <path value="GAD_7_score.Event_Series.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="GAD_7_score.Event_Series.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="GAD_7_score.Event_Series.Any_event.data.Feeling_nervous,_anxious_or_on_edge">
+         <path value="GAD_7_score.Event_Series.Any_event.data.Feeling_nervous,_anxious_or_on_edge"/>
+         <short value="Feeling nervous, anxious or on edge"/>
+         <definition value="Over the last 2 weeks, on how many days have you felt nervous, anxious or on edge?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="GAD_7_score.Event_Series.Any_event.data.Feeling_nervous,_anxious_or_on_edge"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="GAD_7_score.Event_Series.Any_event.data.Feeling_nervous,_anxious_or_on_edge.value">
+         <path value="GAD_7_score.Event_Series.Any_event.data.Feeling_nervous,_anxious_or_on_edge.value"/>
+         <short value="Feeling nervous, anxious or on edge"/>
+         <definition value="Over the last 2 weeks, on how many days have you felt nervous, anxious or on edge?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="GAD_7_score.Event_Series.Any_event.data.Feeling_nervous,_anxious_or_on_edge.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="GAD_7_score.Event_Series.Any_event.data.Not_being_able_to_stop_or_control_worrying">
+         <path value="GAD_7_score.Event_Series.Any_event.data.Not_being_able_to_stop_or_control_worrying"/>
+         <short value="Not being able to stop or control worrying"/>
+         <definition value="Over the last 2 weeks, on how many days have you not been able to stop or control worrying?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="GAD_7_score.Event_Series.Any_event.data.Not_being_able_to_stop_or_control_worrying"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="GAD_7_score.Event_Series.Any_event.data.Not_being_able_to_stop_or_control_worrying.value">
+         <path value="GAD_7_score.Event_Series.Any_event.data.Not_being_able_to_stop_or_control_worrying.value"/>
+         <short value="Not being able to stop or control worrying"/>
+         <definition value="Over the last 2 weeks, on how many days have you not been able to stop or control worrying?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="GAD_7_score.Event_Series.Any_event.data.Not_being_able_to_stop_or_control_worrying.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="GAD_7_score.Event_Series.Any_event.data.Worrying_too_much_about_different_things">
+         <path value="GAD_7_score.Event_Series.Any_event.data.Worrying_too_much_about_different_things"/>
+         <short value="Worrying too much about different things"/>
+         <definition value="Over the last 2 weeks, on how many days have you been worrying too much about different things?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="GAD_7_score.Event_Series.Any_event.data.Worrying_too_much_about_different_things"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="GAD_7_score.Event_Series.Any_event.data.Worrying_too_much_about_different_things.value">
+         <path value="GAD_7_score.Event_Series.Any_event.data.Worrying_too_much_about_different_things.value"/>
+         <short value="Worrying too much about different things"/>
+         <definition value="Over the last 2 weeks, on how many days have you been worrying too much about different things?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="GAD_7_score.Event_Series.Any_event.data.Worrying_too_much_about_different_things.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="GAD_7_score.Event_Series.Any_event.data.Trouble_relaxing">
+         <path value="GAD_7_score.Event_Series.Any_event.data.Trouble_relaxing"/>
+         <short value="Trouble relaxing"/>
+         <definition value="Over the last 2 weeks, on how many days have you had trouble relaxing?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="GAD_7_score.Event_Series.Any_event.data.Trouble_relaxing"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="GAD_7_score.Event_Series.Any_event.data.Trouble_relaxing.value">
+         <path value="GAD_7_score.Event_Series.Any_event.data.Trouble_relaxing.value"/>
+         <short value="Trouble relaxing"/>
+         <definition value="Over the last 2 weeks, on how many days have you had trouble relaxing?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="GAD_7_score.Event_Series.Any_event.data.Trouble_relaxing.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="GAD_7_score.Event_Series.Any_event.data.Being_so_restless_it_is_hard_to_sit_still">
+         <path value="GAD_7_score.Event_Series.Any_event.data.Being_so_restless_it_is_hard_to_sit_still"/>
+         <short value="Being so restless it is hard to sit still"/>
+         <definition value="Over the last 2 weeks, on how many days have you been so restless it is hard to sit still?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="GAD_7_score.Event_Series.Any_event.data.Being_so_restless_it_is_hard_to_sit_still"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="GAD_7_score.Event_Series.Any_event.data.Being_so_restless_it_is_hard_to_sit_still.value">
+         <path value="GAD_7_score.Event_Series.Any_event.data.Being_so_restless_it_is_hard_to_sit_still.value"/>
+         <short value="Being so restless it is hard to sit still"/>
+         <definition value="Over the last 2 weeks, on how many days have you been so restless it is hard to sit still?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="GAD_7_score.Event_Series.Any_event.data.Being_so_restless_it_is_hard_to_sit_still.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="GAD_7_score.Event_Series.Any_event.data.Becoming_easily_annoyed_or_irritable">
+         <path value="GAD_7_score.Event_Series.Any_event.data.Becoming_easily_annoyed_or_irritable"/>
+         <short value="Becoming easily annoyed or irritable"/>
+         <definition value="Over the last 2 weeks, on how many days have you become easily annoyed or irritable?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="GAD_7_score.Event_Series.Any_event.data.Becoming_easily_annoyed_or_irritable"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="GAD_7_score.Event_Series.Any_event.data.Becoming_easily_annoyed_or_irritable.value">
+         <path value="GAD_7_score.Event_Series.Any_event.data.Becoming_easily_annoyed_or_irritable.value"/>
+         <short value="Becoming easily annoyed or irritable"/>
+         <definition value="Over the last 2 weeks, on how many days have you become easily annoyed or irritable?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="GAD_7_score.Event_Series.Any_event.data.Becoming_easily_annoyed_or_irritable.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="GAD_7_score.Event_Series.Any_event.data.Feeling_afraid_as_it_something_awful_might_happen">
+         <path value="GAD_7_score.Event_Series.Any_event.data.Feeling_afraid_as_it_something_awful_might_happen"/>
+         <short value="Feeling afraid as it something awful might happen"/>
+         <definition value="Over the last 2 weeks, on how many days have you felt afraid as if something awful might happen?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="GAD_7_score.Event_Series.Any_event.data.Feeling_afraid_as_it_something_awful_might_happen"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="GAD_7_score.Event_Series.Any_event.data.Feeling_afraid_as_it_something_awful_might_happen.value">
+         <path value="GAD_7_score.Event_Series.Any_event.data.Feeling_afraid_as_it_something_awful_might_happen.value"/>
+         <short value="Feeling afraid as it something awful might happen"/>
+         <definition value="Over the last 2 weeks, on how many days have you felt afraid as if something awful might happen?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="GAD_7_score.Event_Series.Any_event.data.Feeling_afraid_as_it_something_awful_might_happen.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="GAD_7_score.Event_Series.Any_event.data.Total_score">
+         <path value="GAD_7_score.Event_Series.Any_event.data.Total_score"/>
+         <short value="Total score"/>
+         <definition value="Total GAD-7 score calculated from sum of all seven individual responses."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="GAD_7_score.Event_Series.Any_event.data.Total_score"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="GAD_7_score.Event_Series.Any_event.data.Total_score.value">
+         <path value="GAD_7_score.Event_Series.Any_event.data.Total_score.value"/>
+         <short value="Total score"/>
+         <definition value="Total GAD-7 score calculated from sum of all seven individual responses."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="GAD_7_score.Event_Series.Any_event.data.Total_score.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="GAD_7_score.Event_Series.Any_event.state">
+         <path value="GAD_7_score.Event_Series.Any_event.state"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="GAD_7_score.Event_Series.Any_event.state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="GAD_7_score.Event_Series.Any_event.state.Confounding_factors">
+         <path value="GAD_7_score.Event_Series.Any_event.state.Confounding_factors"/>
+         <short value="Confounding factors"/>
+         <definition value="Record any issues or factors that may impact on the score or it's interpretation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="GAD_7_score.Event_Series.Any_event.state.Confounding_factors"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="GAD_7_score.Event_Series.Any_event.state.Confounding_factors.value">
+         <path value="GAD_7_score.Event_Series.Any_event.state.Confounding_factors.value"/>
+         <short value="Confounding factors"/>
+         <definition value="Record any issues or factors that may impact on the score or it's interpretation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="GAD_7_score.Event_Series.Any_event.state.Confounding_factors.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

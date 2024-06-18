@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Transferofcare-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-transferofcare-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-ADMIN_ENTRY.transfer_of_care.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Transferofcare"/>
+   <title value="Transfer of care"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Administrative details about transfer of care from a healthcare institution to home or another institution at the end of an episode of care."/>
+   <purpose value="To record administrative details about transfer of care from a healthcare institution to home or another institution at the end of an episode of care."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Transfer_of_care">
+         <path value="Transfer_of_care"/>
+         <short value="Transfer of care"/>
+         <definition value="Administrative details about transfer of care from a healthcare institution to home or another institution at the end of an episode of care."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfer_of_care"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfer_of_care.data">
+         <path value="Transfer_of_care.data"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfer_of_care.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfer_of_care.data.Discharge_date">
+         <path value="Transfer_of_care.data.Discharge_date"/>
+         <short value="Discharge date"/>
+         <definition value="The date of transfer of care to home or another instituion."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfer_of_care.data.Discharge_date"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Transfer_of_care.data.Discharge_date.value">
+         <path value="Transfer_of_care.data.Discharge_date.value"/>
+         <short value="Discharge date"/>
+         <definition value="The date of transfer of care to home or another instituion."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfer_of_care.data.Discharge_date.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfer_of_care.data.Destination_category">
+         <path value="Transfer_of_care.data.Destination_category"/>
+         <short value="Destination category"/>
+         <definition value="The category of destination after discharge."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfer_of_care.data.Destination_category"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Transfer_of_care.data.Destination_category.value">
+         <path value="Transfer_of_care.data.Destination_category.value"/>
+         <short value="Destination category"/>
+         <definition value="The category of destination after discharge."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfer_of_care.data.Destination_category.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

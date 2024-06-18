@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Atriableedingriskscore-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-atriableedingriskscore-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.atria_bleeding_risk.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Atriableedingriskscore"/>
+   <title value="ATRIA bleeding risk score"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="An assessment score used to predict the risk of warfarin-associated haemorrhage and guide physician decision-making regarding warfarin use in atrial fibrillation."/>
+   <purpose value="To record the results for each component parameter and their total sum for the ATRIA bleeding risk score.&#xD;&#xA;"/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="ATRIA_bleeding_risk_score">
+         <path value="ATRIA_bleeding_risk_score"/>
+         <short value="ATRIA bleeding risk score"/>
+         <definition value="An assessment score used to predict the risk of warfarin-associated haemorrhage and guide physician decision-making regarding warfarin use in atrial fibrillation."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="ATRIA_bleeding_risk_score"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ATRIA_bleeding_risk_score.protocol">
+         <path value="ATRIA_bleeding_risk_score.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ATRIA_bleeding_risk_score.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ATRIA_bleeding_risk_score.protocol.Extension">
+         <path value="ATRIA_bleeding_risk_score.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="ATRIA_bleeding_risk_score.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ATRIA_bleeding_risk_score.Event_Series">
+         <path value="ATRIA_bleeding_risk_score.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ATRIA_bleeding_risk_score.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ATRIA_bleeding_risk_score.Event_Series.Any_point_in_time_event">
+         <path value="ATRIA_bleeding_risk_score.Event_Series.Any_point_in_time_event"/>
+         <short value="Any point in time event"/>
+         <definition value="Default, unspecified point in time event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ATRIA_bleeding_risk_score.Event_Series.Any_point_in_time_event"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ATRIA_bleeding_risk_score.Event_Series.Any_point_in_time_event.data">
+         <path value="ATRIA_bleeding_risk_score.Event_Series.Any_point_in_time_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ATRIA_bleeding_risk_score.Event_Series.Any_point_in_time_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ATRIA_bleeding_risk_score.Event_Series.Any_point_in_time_event.data.Anemia">
+         <path value="ATRIA_bleeding_risk_score.Event_Series.Any_point_in_time_event.data.Anemia"/>
+         <short value="Anemia"/>
+         <definition value="Presence of hemoglobin concentration &lt;13 g/dl (male) or &lt;12 g/dl (female)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ATRIA_bleeding_risk_score.Event_Series.Any_point_in_time_event.data.Anemia"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="ATRIA_bleeding_risk_score.Event_Series.Any_point_in_time_event.data.Anemia.value">
+         <path value="ATRIA_bleeding_risk_score.Event_Series.Any_point_in_time_event.data.Anemia.value"/>
+         <short value="Anemia"/>
+         <definition value="Presence of hemoglobin concentration &lt;13 g/dl (male) or &lt;12 g/dl (female)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ATRIA_bleeding_risk_score.Event_Series.Any_point_in_time_event.data.Anemia.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ATRIA_bleeding_risk_score.Event_Series.Any_point_in_time_event.data.Severe_renal_disease">
+         <path value="ATRIA_bleeding_risk_score.Event_Series.Any_point_in_time_event.data.Severe_renal_disease"/>
+         <short value="Severe renal disease"/>
+         <definition value="Presence of estimated glomerular filtration rate (eGFR) &lt;30 ml/min or dialysis-dependent."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ATRIA_bleeding_risk_score.Event_Series.Any_point_in_time_event.data.Severe_renal_disease"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="ATRIA_bleeding_risk_score.Event_Series.Any_point_in_time_event.data.Severe_renal_disease.value">
+         <path value="ATRIA_bleeding_risk_score.Event_Series.Any_point_in_time_event.data.Severe_renal_disease.value"/>
+         <short value="Severe renal disease"/>
+         <definition value="Presence of estimated glomerular filtration rate (eGFR) &lt;30 ml/min or dialysis-dependent."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ATRIA_bleeding_risk_score.Event_Series.Any_point_in_time_event.data.Severe_renal_disease.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ATRIA_bleeding_risk_score.Event_Series.Any_point_in_time_event.data.Age_≥75_years">
+         <path value="ATRIA_bleeding_risk_score.Event_Series.Any_point_in_time_event.data.Age_≥75_years"/>
+         <short value="Age ≥75 years"/>
+         <definition value="Individual is 75 years or older."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ATRIA_bleeding_risk_score.Event_Series.Any_point_in_time_event.data.Age_≥75_years"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="ATRIA_bleeding_risk_score.Event_Series.Any_point_in_time_event.data.Age_≥75_years.value">
+         <path value="ATRIA_bleeding_risk_score.Event_Series.Any_point_in_time_event.data.Age_≥75_years.value"/>
+         <short value="Age ≥75 years"/>
+         <definition value="Individual is 75 years or older."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ATRIA_bleeding_risk_score.Event_Series.Any_point_in_time_event.data.Age_≥75_years.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ATRIA_bleeding_risk_score.Event_Series.Any_point_in_time_event.data.Prior_hemorrhage_diagnosis">
+         <path value="ATRIA_bleeding_risk_score.Event_Series.Any_point_in_time_event.data.Prior_hemorrhage_diagnosis"/>
+         <short value="Prior hemorrhage diagnosis"/>
+         <definition value="Any prior hemorrhage diagnosis (internal or external hemorrhage)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ATRIA_bleeding_risk_score.Event_Series.Any_point_in_time_event.data.Prior_hemorrhage_diagnosis"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="ATRIA_bleeding_risk_score.Event_Series.Any_point_in_time_event.data.Prior_hemorrhage_diagnosis.value">
+         <path value="ATRIA_bleeding_risk_score.Event_Series.Any_point_in_time_event.data.Prior_hemorrhage_diagnosis.value"/>
+         <short value="Prior hemorrhage diagnosis"/>
+         <definition value="Any prior hemorrhage diagnosis (internal or external hemorrhage)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ATRIA_bleeding_risk_score.Event_Series.Any_point_in_time_event.data.Prior_hemorrhage_diagnosis.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ATRIA_bleeding_risk_score.Event_Series.Any_point_in_time_event.data.History_of_hypertension">
+         <path value="ATRIA_bleeding_risk_score.Event_Series.Any_point_in_time_event.data.History_of_hypertension"/>
+         <short value="History of hypertension"/>
+         <definition value="History of diagnosed hypertension."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ATRIA_bleeding_risk_score.Event_Series.Any_point_in_time_event.data.History_of_hypertension"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="ATRIA_bleeding_risk_score.Event_Series.Any_point_in_time_event.data.History_of_hypertension.value">
+         <path value="ATRIA_bleeding_risk_score.Event_Series.Any_point_in_time_event.data.History_of_hypertension.value"/>
+         <short value="History of hypertension"/>
+         <definition value="History of diagnosed hypertension."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ATRIA_bleeding_risk_score.Event_Series.Any_point_in_time_event.data.History_of_hypertension.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ATRIA_bleeding_risk_score.Event_Series.Any_point_in_time_event.data.Total_score">
+         <path value="ATRIA_bleeding_risk_score.Event_Series.Any_point_in_time_event.data.Total_score"/>
+         <short value="Total score"/>
+         <definition value="Sum of points assigned for each of the component parameters."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ATRIA_bleeding_risk_score.Event_Series.Any_point_in_time_event.data.Total_score"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="ATRIA_bleeding_risk_score.Event_Series.Any_point_in_time_event.data.Total_score.value">
+         <path value="ATRIA_bleeding_risk_score.Event_Series.Any_point_in_time_event.data.Total_score.value"/>
+         <short value="Total score"/>
+         <definition value="Sum of points assigned for each of the component parameters."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ATRIA_bleeding_risk_score.Event_Series.Any_point_in_time_event.data.Total_score.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

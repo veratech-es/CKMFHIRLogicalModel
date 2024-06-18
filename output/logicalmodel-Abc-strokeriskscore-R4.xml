@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Abc-strokeriskscore-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-abc-strokeriskscore-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.abc_stroke_risk_score.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Abc-strokeriskscore"/>
+   <title value="ABC-stroke risk score"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Biomarker-based risk assessment tool for predicting stroke in individuals with atrial fibrillation."/>
+   <purpose value="To record the component values and the total of the ABC-stroke risk score, plus the predicted risk values based on the total score."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="ABC_stroke_risk_score">
+         <path value="ABC_stroke_risk_score"/>
+         <short value="ABC-stroke risk score"/>
+         <definition value="Biomarker-based risk assessment tool for predicting stroke in individuals with atrial fibrillation."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="ABC_stroke_risk_score"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ABC_stroke_risk_score.protocol">
+         <path value="ABC_stroke_risk_score.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ABC_stroke_risk_score.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ABC_stroke_risk_score.protocol.Extension">
+         <path value="ABC_stroke_risk_score.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="ABC_stroke_risk_score.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ABC_stroke_risk_score.Event_Series">
+         <path value="ABC_stroke_risk_score.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ABC_stroke_risk_score.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ABC_stroke_risk_score.Event_Series.Any_event">
+         <path value="ABC_stroke_risk_score.Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="ABC_stroke_risk_score.Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ABC_stroke_risk_score.Event_Series.Any_event.data">
+         <path value="ABC_stroke_risk_score.Event_Series.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ABC_stroke_risk_score.Event_Series.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ABC_stroke_risk_score.Event_Series.Any_event.data.Prior_stroke_or_transient_ischaemic_attack">
+         <path value="ABC_stroke_risk_score.Event_Series.Any_event.data.Prior_stroke_or_transient_ischaemic_attack"/>
+         <short value="Prior stroke or transient ischaemic attack"/>
+         <definition value="Points assigned based on the presence or absence of a prior history of stroke or TIA in an individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ABC_stroke_risk_score.Event_Series.Any_event.data.Prior_stroke_or_transient_ischaemic_attack"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="ABC_stroke_risk_score.Event_Series.Any_event.data.Prior_stroke_or_transient_ischaemic_attack.value">
+         <path value="ABC_stroke_risk_score.Event_Series.Any_event.data.Prior_stroke_or_transient_ischaemic_attack.value"/>
+         <short value="Prior stroke or transient ischaemic attack"/>
+         <definition value="Points assigned based on the presence or absence of a prior history of stroke or TIA in an individual."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="ABC_stroke_risk_score.Event_Series.Any_event.data.Prior_stroke_or_transient_ischaemic_attack.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ABC_stroke_risk_score.Event_Series.Any_event.data.Age">
+         <path value="ABC_stroke_risk_score.Event_Series.Any_event.data.Age"/>
+         <short value="Age"/>
+         <definition value="Points assigned based on an individual's age."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ABC_stroke_risk_score.Event_Series.Any_event.data.Age"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="ABC_stroke_risk_score.Event_Series.Any_event.data.Age.value">
+         <path value="ABC_stroke_risk_score.Event_Series.Any_event.data.Age.value"/>
+         <short value="Age"/>
+         <definition value="Points assigned based on an individual's age."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="ABC_stroke_risk_score.Event_Series.Any_event.data.Age.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ABC_stroke_risk_score.Event_Series.Any_event.data.cTnT_hs">
+         <path value="ABC_stroke_risk_score.Event_Series.Any_event.data.cTnT_hs"/>
+         <short value="cTnT-hs"/>
+         <definition value="Points assigned based on an individual's plasma concentration of cardiac troponin-T high-sensitivity (or cardiac troponin-I high sensitivity)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ABC_stroke_risk_score.Event_Series.Any_event.data.cTnT_hs"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="ABC_stroke_risk_score.Event_Series.Any_event.data.cTnT_hs.value">
+         <path value="ABC_stroke_risk_score.Event_Series.Any_event.data.cTnT_hs.value"/>
+         <short value="cTnT-hs"/>
+         <definition value="Points assigned based on an individual's plasma concentration of cardiac troponin-T high-sensitivity (or cardiac troponin-I high sensitivity)."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="ABC_stroke_risk_score.Event_Series.Any_event.data.cTnT_hs.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ABC_stroke_risk_score.Event_Series.Any_event.data.NT_proBNP">
+         <path value="ABC_stroke_risk_score.Event_Series.Any_event.data.NT_proBNP"/>
+         <short value="NT-proBNP"/>
+         <definition value="Points assigned based on an individual's plasma concentration of N-terminal fragment B-type natriuretic peptide."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ABC_stroke_risk_score.Event_Series.Any_event.data.NT_proBNP"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="ABC_stroke_risk_score.Event_Series.Any_event.data.NT_proBNP.value">
+         <path value="ABC_stroke_risk_score.Event_Series.Any_event.data.NT_proBNP.value"/>
+         <short value="NT-proBNP"/>
+         <definition value="Points assigned based on an individual's plasma concentration of N-terminal fragment B-type natriuretic peptide."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="ABC_stroke_risk_score.Event_Series.Any_event.data.NT_proBNP.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ABC_stroke_risk_score.Event_Series.Any_event.data.Total_score">
+         <path value="ABC_stroke_risk_score.Event_Series.Any_event.data.Total_score"/>
+         <short value="Total score"/>
+         <definition value="Sum of the points assigned for each of the contributing variables."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ABC_stroke_risk_score.Event_Series.Any_event.data.Total_score"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="ABC_stroke_risk_score.Event_Series.Any_event.data.Total_score.value">
+         <path value="ABC_stroke_risk_score.Event_Series.Any_event.data.Total_score.value"/>
+         <short value="Total score"/>
+         <definition value="Sum of the points assigned for each of the contributing variables."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="ABC_stroke_risk_score.Event_Series.Any_event.data.Total_score.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ABC_stroke_risk_score.Event_Series.Any_event.data.1_year_risk">
+         <path value="ABC_stroke_risk_score.Event_Series.Any_event.data.1_year_risk"/>
+         <short value="1-year risk"/>
+         <definition value="Predicted risk of developing a stroke or systemic embolism within 1 year based on ABC-stroke score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ABC_stroke_risk_score.Event_Series.Any_event.data.1_year_risk"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="ABC_stroke_risk_score.Event_Series.Any_event.data.1_year_risk.value">
+         <path value="ABC_stroke_risk_score.Event_Series.Any_event.data.1_year_risk.value"/>
+         <short value="1-year risk"/>
+         <definition value="Predicted risk of developing a stroke or systemic embolism within 1 year based on ABC-stroke score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ABC_stroke_risk_score.Event_Series.Any_event.data.1_year_risk.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Ratio"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ABC_stroke_risk_score.Event_Series.Any_event.data.3_year_risk">
+         <path value="ABC_stroke_risk_score.Event_Series.Any_event.data.3_year_risk"/>
+         <short value="3-year risk"/>
+         <definition value="Predicted risk of developing a stroke or systemic embolism within 3 years based on ABC-stroke score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ABC_stroke_risk_score.Event_Series.Any_event.data.3_year_risk"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="ABC_stroke_risk_score.Event_Series.Any_event.data.3_year_risk.value">
+         <path value="ABC_stroke_risk_score.Event_Series.Any_event.data.3_year_risk.value"/>
+         <short value="3-year risk"/>
+         <definition value="Predicted risk of developing a stroke or systemic embolism within 3 years based on ABC-stroke score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ABC_stroke_risk_score.Event_Series.Any_event.data.3_year_risk.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Ratio"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ABC_stroke_risk_score.Event_Series.Any_event.data.Comment">
+         <path value="ABC_stroke_risk_score.Event_Series.Any_event.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the score, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ABC_stroke_risk_score.Event_Series.Any_event.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="ABC_stroke_risk_score.Event_Series.Any_event.data.Comment.value">
+         <path value="ABC_stroke_risk_score.Event_Series.Any_event.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the score, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ABC_stroke_risk_score.Event_Series.Any_event.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Livingarrangement-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-livingarrangement-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-EVALUATION.living_arrangement.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Livingarrangement"/>
+   <title value="Living arrangement"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="The circumstances about an individual living alone or with others."/>
+   <purpose value="To record the circumstances about how an individual lives alone or with others."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Living_arrangement">
+         <path value="Living_arrangement"/>
+         <short value="Living arrangement"/>
+         <definition value="The circumstances about an individual living alone or with others."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Living_arrangement"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Living_arrangement.protocol">
+         <path value="Living_arrangement.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Living_arrangement.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Living_arrangement.protocol.Last_updated">
+         <path value="Living_arrangement.protocol.Last_updated"/>
+         <short value="Last updated"/>
+         <definition value="The date this summary was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Living_arrangement.protocol.Last_updated"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Living_arrangement.protocol.Last_updated.value">
+         <path value="Living_arrangement.protocol.Last_updated.value"/>
+         <short value="Last updated"/>
+         <definition value="The date this summary was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Living_arrangement.protocol.Last_updated.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Living_arrangement.protocol.Extension">
+         <path value="Living_arrangement.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Living_arrangement.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Living_arrangement.data">
+         <path value="Living_arrangement.data"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Living_arrangement.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Living_arrangement.data.Description">
+         <path value="Living_arrangement.data.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the living arrangements."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Living_arrangement.data.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Living_arrangement.data.Description.value">
+         <path value="Living_arrangement.data.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the living arrangements."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Living_arrangement.data.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Living_arrangement.data.Living_arrangement">
+         <path value="Living_arrangement.data.Living_arrangement"/>
+         <short value="Living arrangement"/>
+         <definition value="Single word or phrase that describes if an individual usually resides alone or with others."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Living_arrangement.data.Living_arrangement"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Living_arrangement.data.Living_arrangement.value">
+         <path value="Living_arrangement.data.Living_arrangement.value"/>
+         <short value="Living arrangement"/>
+         <definition value="Single word or phrase that describes if an individual usually resides alone or with others."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Living_arrangement.data.Living_arrangement.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Living_arrangement.data.Household_description">
+         <path value="Living_arrangement.data.Household_description"/>
+         <short value="Household description"/>
+         <definition value="Narrative description about the individuals who reside together, including sharing meals, economic resources and/or living space."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Living_arrangement.data.Household_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Living_arrangement.data.Household_description.value">
+         <path value="Living_arrangement.data.Household_description.value"/>
+         <short value="Household description"/>
+         <definition value="Narrative description about the individuals who reside together, including sharing meals, economic resources and/or living space."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Living_arrangement.data.Household_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Living_arrangement.data.Household_type">
+         <path value="Living_arrangement.data.Household_type"/>
+         <short value="Household type"/>
+         <definition value="Single word or phrase that describes the composition or structure of the household."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Living_arrangement.data.Household_type"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Living_arrangement.data.Household_type.value">
+         <path value="Living_arrangement.data.Household_type.value"/>
+         <short value="Household type"/>
+         <definition value="Single word or phrase that describes the composition or structure of the household."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Living_arrangement.data.Household_type.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Living_arrangement.data.Number_of_household_members">
+         <path value="Living_arrangement.data.Number_of_household_members"/>
+         <short value="Number of household members"/>
+         <definition value="The number of individuals who belong to the household."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Living_arrangement.data.Number_of_household_members"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Living_arrangement.data.Number_of_household_members.value">
+         <path value="Living_arrangement.data.Number_of_household_members.value"/>
+         <short value="Number of household members"/>
+         <definition value="The number of individuals who belong to the household."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Living_arrangement.data.Number_of_household_members.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Living_arrangement.data.Houshold_members">
+         <path value="Living_arrangement.data.Houshold_members"/>
+         <short value="Houshold members"/>
+         <definition value="Name of the members of the houshold."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Living_arrangement.data.Houshold_members"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Living_arrangement.data.Additional_details">
+         <path value="Living_arrangement.data.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="Further details about the living arrangement."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Living_arrangement.data.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Living_arrangement.data.Comment">
+         <path value="Living_arrangement.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the living arrangement not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Living_arrangement.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Living_arrangement.data.Comment.value">
+         <path value="Living_arrangement.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the living arrangement not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Living_arrangement.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

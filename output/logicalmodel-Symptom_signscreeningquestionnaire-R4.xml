@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Symptom_signscreeningquestionnaire-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-symptom_signscreeningquestionnaire-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.symptom_sign_screening.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Symptom_signscreeningquestionnaire"/>
+   <title value="Symptom/sign screening questionnaire"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Series of questions and associated answers used to screen for symptoms or signs."/>
+   <purpose value="To create a framework for recording answers to pre-defined screening questions about symptoms or signs."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Symptom_sign_screening_questionnaire">
+         <path value="Symptom_sign_screening_questionnaire"/>
+         <short value="Symptom/sign screening questionnaire"/>
+         <definition value="Series of questions and associated answers used to screen for symptoms or signs."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_sign_screening_questionnaire"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_sign_screening_questionnaire.protocol">
+         <path value="Symptom_sign_screening_questionnaire.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_sign_screening_questionnaire.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_sign_screening_questionnaire.protocol.Extension">
+         <path value="Symptom_sign_screening_questionnaire.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models or formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Symptom_sign_screening_questionnaire.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_sign_screening_questionnaire.History">
+         <path value="Symptom_sign_screening_questionnaire.History"/>
+         <short value="History"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_sign_screening_questionnaire.History"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_sign_screening_questionnaire.History.Any_event">
+         <path value="Symptom_sign_screening_questionnaire.History.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Symptom_sign_screening_questionnaire.History.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_sign_screening_questionnaire.History.Any_event.data">
+         <path value="Symptom_sign_screening_questionnaire.History.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_sign_screening_questionnaire.History.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_sign_screening_questionnaire.History.Any_event.data.Screening_purpose">
+         <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Screening_purpose"/>
+         <short value="Screening purpose"/>
+         <definition value="The context or reason for screening."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Screening_purpose"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Symptom_sign_screening_questionnaire.History.Any_event.data.Screening_purpose.value">
+         <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Screening_purpose.value"/>
+         <short value="Screening purpose"/>
+         <definition value="The context or reason for screening."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Screening_purpose.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_sign_screening_questionnaire.History.Any_event.data.Any_symptoms_or_signs_">
+         <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Any_symptoms_or_signs_"/>
+         <short value="Any symptoms or signs?"/>
+         <definition value="Is there a history of any symptoms or signs relevant for the screening purpose?"/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Any_symptoms_or_signs_"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Symptom_sign_screening_questionnaire.History.Any_event.data.Any_symptoms_or_signs_.value_DV_CODED_TEXT">
+         <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Any_symptoms_or_signs_.value_DV_CODED_TEXT"/>
+         <short value="Any symptoms or signs?"/>
+         <definition value="Is there a history of any symptoms or signs relevant for the screening purpose?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Any_symptoms_or_signs_.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_sign_screening_questionnaire.History.Any_event.data.Any_symptoms_or_signs_.value_DV_TEXT">
+         <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Any_symptoms_or_signs_.value_DV_TEXT"/>
+         <short value="Any symptoms or signs?"/>
+         <definition value="Is there a history of any symptoms or signs relevant for the screening purpose?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Any_symptoms_or_signs_.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_sign_screening_questionnaire.History.Any_event.data.Any_symptoms_or_signs_.value_DV_BOOLEAN">
+         <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Any_symptoms_or_signs_.value_DV_BOOLEAN"/>
+         <short value="Any symptoms or signs?"/>
+         <definition value="Is there a history of any symptoms or signs relevant for the screening purpose?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Any_symptoms_or_signs_.value_DV_BOOLEAN"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_sign_screening_questionnaire.History.Any_event.data.Onset">
+         <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Onset"/>
+         <short value="Onset"/>
+         <definition value="Timing of the inital recognition of any symptom or sign relevant for the screening purpose."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Onset"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Symptom_sign_screening_questionnaire.History.Any_event.data.Onset.value_DV_DATE_TIME">
+         <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Onset.value_DV_DATE_TIME"/>
+         <short value="Onset"/>
+         <definition value="Timing of the inital recognition of any symptom or sign relevant for the screening purpose."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Onset.value_DV_DATE_TIME"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_sign_screening_questionnaire.History.Any_event.data.Onset.value_DV_INTERVAL_DV_DATE_TIME_">
+         <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Onset.value_DV_INTERVAL_DV_DATE_TIME_"/>
+         <short value="Onset"/>
+         <definition value="Timing of the inital recognition of any symptom or sign relevant for the screening purpose."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Onset.value_DV_INTERVAL_DV_DATE_TIME_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_sign_screening_questionnaire.History.Any_event.data.Onset.value_DV_TEXT">
+         <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Onset.value_DV_TEXT"/>
+         <short value="Onset"/>
+         <definition value="Timing of the inital recognition of any symptom or sign relevant for the screening purpose."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Onset.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_sign_screening_questionnaire.History.Any_event.data.Onset.value_DV_DURATION">
+         <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Onset.value_DV_DURATION"/>
+         <short value="Onset"/>
+         <definition value="Timing of the inital recognition of any symptom or sign relevant for the screening purpose."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Onset.value_DV_DURATION"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_sign_screening_questionnaire.History.Any_event.data.Onset.value_DV_INTERVAL_DV_DURATION_">
+         <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Onset.value_DV_INTERVAL_DV_DURATION_"/>
+         <short value="Onset"/>
+         <definition value="Timing of the inital recognition of any symptom or sign relevant for the screening purpose."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Onset.value_DV_INTERVAL_DV_DURATION_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_sign_screening_questionnaire.History.Any_event.data.Description">
+         <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the history of any symptoms or signs relevant for the screening purpose."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Symptom_sign_screening_questionnaire.History.Any_event.data.Description.value">
+         <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the history of any symptoms or signs relevant for the screening purpose."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_sign_screening_questionnaire.History.Any_event.data.Specific_symptom_sign">
+         <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Specific_symptom_sign"/>
+         <short value="Specific symptom/sign"/>
+         <definition value="Details about a specific symptom or sign or grouping of symptoms or signs relatevant for the screening purpose."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Specific_symptom_sign"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_sign_screening_questionnaire.History.Any_event.data.Specific_symptom_sign.Symptom_sign_name">
+         <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Specific_symptom_sign.Symptom_sign_name"/>
+         <short value="Symptom/sign name"/>
+         <definition value="Identification of a specific symptom or sign or grouping of symptoms or signs, by name."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Specific_symptom_sign.Symptom_sign_name"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Symptom_sign_screening_questionnaire.History.Any_event.data.Specific_symptom_sign.Symptom_sign_name.value">
+         <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Specific_symptom_sign.Symptom_sign_name.value"/>
+         <short value="Symptom/sign name"/>
+         <definition value="Identification of a specific symptom or sign or grouping of symptoms or signs, by name."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Specific_symptom_sign.Symptom_sign_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_sign_screening_questionnaire.History.Any_event.data.Specific_symptom_sign.Presence_">
+         <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Specific_symptom_sign.Presence_"/>
+         <short value="Presence?"/>
+         <definition value="Is there a history of the specific symptom or sign being present?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Specific_symptom_sign.Presence_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Symptom_sign_screening_questionnaire.History.Any_event.data.Specific_symptom_sign.Presence_.value_DV_CODED_TEXT">
+         <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Specific_symptom_sign.Presence_.value_DV_CODED_TEXT"/>
+         <short value="Presence?"/>
+         <definition value="Is there a history of the specific symptom or sign being present?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Specific_symptom_sign.Presence_.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_sign_screening_questionnaire.History.Any_event.data.Specific_symptom_sign.Presence_.value_DV_TEXT">
+         <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Specific_symptom_sign.Presence_.value_DV_TEXT"/>
+         <short value="Presence?"/>
+         <definition value="Is there a history of the specific symptom or sign being present?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Specific_symptom_sign.Presence_.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_sign_screening_questionnaire.History.Any_event.data.Specific_symptom_sign.Presence_.value_DV_BOOLEAN">
+         <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Specific_symptom_sign.Presence_.value_DV_BOOLEAN"/>
+         <short value="Presence?"/>
+         <definition value="Is there a history of the specific symptom or sign being present?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Specific_symptom_sign.Presence_.value_DV_BOOLEAN"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_sign_screening_questionnaire.History.Any_event.data.Specific_symptom_sign.Timing">
+         <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Specific_symptom_sign.Timing"/>
+         <short value="Timing"/>
+         <definition value="Indication of timing related to the specific symptom or sign."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Specific_symptom_sign.Timing"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Symptom_sign_screening_questionnaire.History.Any_event.data.Specific_symptom_sign.Timing.value_DV_DURATION">
+         <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Specific_symptom_sign.Timing.value_DV_DURATION"/>
+         <short value="Timing"/>
+         <definition value="Indication of timing related to the specific symptom or sign."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Specific_symptom_sign.Timing.value_DV_DURATION"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_sign_screening_questionnaire.History.Any_event.data.Specific_symptom_sign.Timing.value_DV_INTERVAL_DV_DURATION_">
+         <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Specific_symptom_sign.Timing.value_DV_INTERVAL_DV_DURATION_"/>
+         <short value="Timing"/>
+         <definition value="Indication of timing related to the specific symptom or sign."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Specific_symptom_sign.Timing.value_DV_INTERVAL_DV_DURATION_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_sign_screening_questionnaire.History.Any_event.data.Specific_symptom_sign.Timing.value_DV_DATE_TIME">
+         <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Specific_symptom_sign.Timing.value_DV_DATE_TIME"/>
+         <short value="Timing"/>
+         <definition value="Indication of timing related to the specific symptom or sign."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Specific_symptom_sign.Timing.value_DV_DATE_TIME"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_sign_screening_questionnaire.History.Any_event.data.Specific_symptom_sign.Timing.value_DV_INTERVAL_DV_DATE_TIME_">
+         <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Specific_symptom_sign.Timing.value_DV_INTERVAL_DV_DATE_TIME_"/>
+         <short value="Timing"/>
+         <definition value="Indication of timing related to the specific symptom or sign."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Specific_symptom_sign.Timing.value_DV_INTERVAL_DV_DATE_TIME_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_sign_screening_questionnaire.History.Any_event.data.Specific_symptom_sign.Timing.value_DV_TEXT">
+         <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Specific_symptom_sign.Timing.value_DV_TEXT"/>
+         <short value="Timing"/>
+         <definition value="Indication of timing related to the specific symptom or sign."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Specific_symptom_sign.Timing.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_sign_screening_questionnaire.History.Any_event.data.Specific_symptom_sign.Additional_details">
+         <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Specific_symptom_sign.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="Structured details or questions about the specific symptom or sign."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Specific_symptom_sign.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_sign_screening_questionnaire.History.Any_event.data.Specific_symptom_sign.Comment">
+         <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Specific_symptom_sign.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the specific symptom/sign question, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Specific_symptom_sign.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Symptom_sign_screening_questionnaire.History.Any_event.data.Specific_symptom_sign.Comment.value">
+         <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Specific_symptom_sign.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the specific symptom/sign question, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Specific_symptom_sign.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_sign_screening_questionnaire.History.Any_event.data.Additional_details">
+         <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="Structured details or questions about screening for symptoms or signs."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Symptom_sign_screening_questionnaire.History.Any_event.data.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

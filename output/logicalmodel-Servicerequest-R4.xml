@@ -1,0 +1,952 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Servicerequest-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-servicerequest-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-INSTRUCTION.service_request.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Servicerequest"/>
+   <title value="Service request"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Request for a health-related service or activity to be delivered by a clinician, organisation or agency."/>
+   <purpose value="A generic framework for a request for a health-related service or activity to be delivered by a clinician, organisation or agency."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Service_request">
+         <path value="Service_request"/>
+         <short value="Service request"/>
+         <definition value="Request for a health-related service or activity to be delivered by a clinician, organisation or agency."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_request"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_request.protocol">
+         <path value="Service_request.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_request.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_request.protocol.Requester_order_identifier">
+         <path value="Service_request.protocol.Requester_order_identifier"/>
+         <short value="Requester order identifier"/>
+         <definition value="The local identifier assigned by the requesting clinical system."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_request.protocol.Requester_order_identifier"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Service_request.protocol.Requester_order_identifier.value_DV_TEXT">
+         <path value="Service_request.protocol.Requester_order_identifier.value_DV_TEXT"/>
+         <short value="Requester order identifier"/>
+         <definition value="The local identifier assigned by the requesting clinical system."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_request.protocol.Requester_order_identifier.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_request.protocol.Requester_order_identifier.value_DV_IDENTIFIER">
+         <path value="Service_request.protocol.Requester_order_identifier.value_DV_IDENTIFIER"/>
+         <short value="Requester order identifier"/>
+         <definition value="The local identifier assigned by the requesting clinical system."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_request.protocol.Requester_order_identifier.value_DV_IDENTIFIER"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_request.protocol.Requester">
+         <path value="Service_request.protocol.Requester"/>
+         <short value="Requester"/>
+         <definition value="Details about the clinician or organisation requesting the service."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_request.protocol.Requester"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_request.protocol.Receiver_order_identifier">
+         <path value="Service_request.protocol.Receiver_order_identifier"/>
+         <short value="Receiver order identifier"/>
+         <definition value="The local identifier assigned to the request by the clinician or organisation receiving the request for service."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_request.protocol.Receiver_order_identifier"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Service_request.protocol.Receiver_order_identifier.value_DV_TEXT">
+         <path value="Service_request.protocol.Receiver_order_identifier.value_DV_TEXT"/>
+         <short value="Receiver order identifier"/>
+         <definition value="The local identifier assigned to the request by the clinician or organisation receiving the request for service."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_request.protocol.Receiver_order_identifier.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_request.protocol.Receiver_order_identifier.value_DV_IDENTIFIER">
+         <path value="Service_request.protocol.Receiver_order_identifier.value_DV_IDENTIFIER"/>
+         <short value="Receiver order identifier"/>
+         <definition value="The local identifier assigned to the request by the clinician or organisation receiving the request for service."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_request.protocol.Receiver_order_identifier.value_DV_IDENTIFIER"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_request.protocol.Receiver">
+         <path value="Service_request.protocol.Receiver"/>
+         <short value="Receiver"/>
+         <definition value="Details about the clinician or organisation receiving the request for service."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_request.protocol.Receiver"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_request.protocol.Request_status">
+         <path value="Service_request.protocol.Request_status"/>
+         <short value="Request status"/>
+         <definition value="The status of the request for service as indicated by the requester."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_request.protocol.Request_status"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Service_request.protocol.Request_status.value">
+         <path value="Service_request.protocol.Request_status.value"/>
+         <short value="Request status"/>
+         <definition value="The status of the request for service as indicated by the requester."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_request.protocol.Request_status.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_request.protocol.Distribution_list">
+         <path value="Service_request.protocol.Distribution_list"/>
+         <short value="Distribution list"/>
+         <definition value="Details of additional clinicians, organisations or agencies who require copies of any communication."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Service_request.protocol.Distribution_list"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_request.protocol.Urgent_contact">
+         <path value="Service_request.protocol.Urgent_contact"/>
+         <short value="Urgent contact"/>
+         <definition value="Details about the designated contact person or organisation and preferred mode of contact for urgent or emergency notifications related to this request."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Service_request.protocol.Urgent_contact"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_request.protocol.Eligibility_guidance">
+         <path value="Service_request.protocol.Eligibility_guidance"/>
+         <short value="Eligibility guidance"/>
+         <definition value="Advice from the requester to the receiver about the individual's eligibility for the requested service."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_request.protocol.Eligibility_guidance"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Service_request.protocol.Eligibility_guidance.value">
+         <path value="Service_request.protocol.Eligibility_guidance.value"/>
+         <short value="Eligibility guidance"/>
+         <definition value="Advice from the requester to the receiver about the individual's eligibility for the requested service."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_request.protocol.Eligibility_guidance.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_request.protocol.Billing_guidance">
+         <path value="Service_request.protocol.Billing_guidance"/>
+         <short value="Billing guidance"/>
+         <definition value="A recommendation from the requester to the receiver about the method of payment for the service."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_request.protocol.Billing_guidance"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Service_request.protocol.Billing_guidance.value">
+         <path value="Service_request.protocol.Billing_guidance.value"/>
+         <short value="Billing guidance"/>
+         <definition value="A recommendation from the requester to the receiver about the method of payment for the service."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_request.protocol.Billing_guidance.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_request.protocol.Responsible_payer">
+         <path value="Service_request.protocol.Responsible_payer"/>
+         <short value="Responsible payer"/>
+         <definition value="Details about the individual or organisation who will assume responsibility for payment of the service."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Service_request.protocol.Responsible_payer"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_request.protocol.Extension">
+         <path value="Service_request.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models or formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Service_request.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_request.Current_Activity">
+         <path value="Service_request.Current_Activity"/>
+         <short value="Current Activity"/>
+         <definition value="Current Activity."/>
+         <min value="1"/>
+         <max value="*"/>
+         <base>
+            <path value="Service_request.Current_Activity"/>
+            <min value="1"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_request.Current_Activity.description">
+         <path value="Service_request.Current_Activity.description"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_request.Current_Activity.description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_request.Current_Activity.description.Service_name">
+         <path value="Service_request.Current_Activity.description.Service_name"/>
+         <short value="Service name"/>
+         <definition value="The name of the service/s requested."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_request.Current_Activity.description.Service_name"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Service_request.Current_Activity.description.Service_name.value">
+         <path value="Service_request.Current_Activity.description.Service_name.value"/>
+         <short value="Service name"/>
+         <definition value="The name of the service/s requested."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_request.Current_Activity.description.Service_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_request.Current_Activity.description.Service_type">
+         <path value="Service_request.Current_Activity.description.Service_type"/>
+         <short value="Service type"/>
+         <definition value="Category of service requested."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_request.Current_Activity.description.Service_type"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Service_request.Current_Activity.description.Service_type.value">
+         <path value="Service_request.Current_Activity.description.Service_type.value"/>
+         <short value="Service type"/>
+         <definition value="Category of service requested."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_request.Current_Activity.description.Service_type.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_request.Current_Activity.description.Description">
+         <path value="Service_request.Current_Activity.description.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the service requested."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_request.Current_Activity.description.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Service_request.Current_Activity.description.Description.value">
+         <path value="Service_request.Current_Activity.description.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the service requested."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_request.Current_Activity.description.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_request.Current_Activity.description.Clinical_indication">
+         <path value="Service_request.Current_Activity.description.Clinical_indication"/>
+         <short value="Clinical indication"/>
+         <definition value="The symptom, sign or diagnosis that necessitates the requested service."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Service_request.Current_Activity.description.Clinical_indication"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Service_request.Current_Activity.description.Clinical_indication.value">
+         <path value="Service_request.Current_Activity.description.Clinical_indication.value"/>
+         <short value="Clinical indication"/>
+         <definition value="The symptom, sign or diagnosis that necessitates the requested service."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_request.Current_Activity.description.Clinical_indication.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_request.Current_Activity.description.Clinical_context">
+         <path value="Service_request.Current_Activity.description.Clinical_context"/>
+         <short value="Clinical context"/>
+         <definition value="Narrative information about the individual and their situation, providing relevant context for the request."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_request.Current_Activity.description.Clinical_context"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Service_request.Current_Activity.description.Clinical_context.value">
+         <path value="Service_request.Current_Activity.description.Clinical_context.value"/>
+         <short value="Clinical context"/>
+         <definition value="Narrative information about the individual and their situation, providing relevant context for the request."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_request.Current_Activity.description.Clinical_context.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_request.Current_Activity.description.Reason_for_request">
+         <path value="Service_request.Current_Activity.description.Reason_for_request"/>
+         <short value="Reason for request"/>
+         <definition value="The specific problem needing attention or the clinical question that requires investigation."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Service_request.Current_Activity.description.Reason_for_request"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Service_request.Current_Activity.description.Reason_for_request.value">
+         <path value="Service_request.Current_Activity.description.Reason_for_request.value"/>
+         <short value="Reason for request"/>
+         <definition value="The specific problem needing attention or the clinical question that requires investigation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_request.Current_Activity.description.Reason_for_request.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_request.Current_Activity.description.Reason_description">
+         <path value="Service_request.Current_Activity.description.Reason_description"/>
+         <short value="Reason description"/>
+         <definition value="Narrative description about the issue or clinical query that needs resolution."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_request.Current_Activity.description.Reason_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Service_request.Current_Activity.description.Reason_description.value">
+         <path value="Service_request.Current_Activity.description.Reason_description.value"/>
+         <short value="Reason description"/>
+         <definition value="Narrative description about the issue or clinical query that needs resolution."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_request.Current_Activity.description.Reason_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_request.Current_Activity.description.Intent">
+         <path value="Service_request.Current_Activity.description.Intent"/>
+         <short value="Intent"/>
+         <definition value="Description of the intended outcome of the request."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Service_request.Current_Activity.description.Intent"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Service_request.Current_Activity.description.Intent.value">
+         <path value="Service_request.Current_Activity.description.Intent.value"/>
+         <short value="Intent"/>
+         <definition value="Description of the intended outcome of the request."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_request.Current_Activity.description.Intent.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_request.Current_Activity.description.Order_detail">
+         <path value="Service_request.Current_Activity.description.Order_detail"/>
+         <short value="Order detail"/>
+         <definition value="Additional details and instructions about how the services are to be delivered."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Service_request.Current_Activity.description.Order_detail"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Service_request.Current_Activity.description.Order_detail.value">
+         <path value="Service_request.Current_Activity.description.Order_detail.value"/>
+         <short value="Order detail"/>
+         <definition value="Additional details and instructions about how the services are to be delivered."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_request.Current_Activity.description.Order_detail.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_request.Current_Activity.description.Urgency">
+         <path value="Service_request.Current_Activity.description.Urgency"/>
+         <short value="Urgency"/>
+         <definition value="Urgency of the request for service."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_request.Current_Activity.description.Urgency"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Service_request.Current_Activity.description.Urgency.value_DV_CODED_TEXT">
+         <path value="Service_request.Current_Activity.description.Urgency.value_DV_CODED_TEXT"/>
+         <short value="Urgency"/>
+         <definition value="Urgency of the request for service."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_request.Current_Activity.description.Urgency.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_request.Current_Activity.description.Urgency.value_DV_TEXT">
+         <path value="Service_request.Current_Activity.description.Urgency.value_DV_TEXT"/>
+         <short value="Urgency"/>
+         <definition value="Urgency of the request for service."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_request.Current_Activity.description.Urgency.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_request.Current_Activity.description.Service_due">
+         <path value="Service_request.Current_Activity.description.Service_due"/>
+         <short value="Service due"/>
+         <definition value="The date/time or description about timing for provision of the requested service/s."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_request.Current_Activity.description.Service_due"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Service_request.Current_Activity.description.Service_due.value_DV_DATE_TIME">
+         <path value="Service_request.Current_Activity.description.Service_due.value_DV_DATE_TIME"/>
+         <short value="Service due"/>
+         <definition value="The date/time or description about timing for provision of the requested service/s."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_request.Current_Activity.description.Service_due.value_DV_DATE_TIME"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_request.Current_Activity.description.Service_due.value_DV_TEXT">
+         <path value="Service_request.Current_Activity.description.Service_due.value_DV_TEXT"/>
+         <short value="Service due"/>
+         <definition value="The date/time or description about timing for provision of the requested service/s."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_request.Current_Activity.description.Service_due.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_request.Current_Activity.description.Service_due.value_DV_INTERVAL_DV_DATE_TIME_">
+         <path value="Service_request.Current_Activity.description.Service_due.value_DV_INTERVAL_DV_DATE_TIME_"/>
+         <short value="Service due"/>
+         <definition value="The date/time or description about timing for provision of the requested service/s."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_request.Current_Activity.description.Service_due.value_DV_INTERVAL_DV_DATE_TIME_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_request.Current_Activity.description.Complex_timing">
+         <path value="Service_request.Current_Activity.description.Complex_timing"/>
+         <short value="Complex timing"/>
+         <definition value="Details about a complex service request requiring a sequence of timings."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Service_request.Current_Activity.description.Complex_timing"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_request.Current_Activity.description.Specific_details">
+         <path value="Service_request.Current_Activity.description.Specific_details"/>
+         <short value="Specific details"/>
+         <definition value="Additional detail about the service requested."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Service_request.Current_Activity.description.Specific_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_request.Current_Activity.description.Supporting_information">
+         <path value="Service_request.Current_Activity.description.Supporting_information"/>
+         <short value="Supporting information"/>
+         <definition value="Digital document, image, video or diagram supplied as additional information to support or inform the request."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Service_request.Current_Activity.description.Supporting_information"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_request.Current_Activity.description.Supplementary_information">
+         <path value="Service_request.Current_Activity.description.Supplementary_information"/>
+         <short value="Supplementary information"/>
+         <definition value="Supplementary information will be following request."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_request.Current_Activity.description.Supplementary_information"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Service_request.Current_Activity.description.Supplementary_information.value">
+         <path value="Service_request.Current_Activity.description.Supplementary_information.value"/>
+         <short value="Supplementary information"/>
+         <definition value="Supplementary information will be following request."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_request.Current_Activity.description.Supplementary_information.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_request.Current_Activity.description.Information_description">
+         <path value="Service_request.Current_Activity.description.Information_description"/>
+         <short value="Information description"/>
+         <definition value="Description of the supplementary information."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_request.Current_Activity.description.Information_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Service_request.Current_Activity.description.Information_description.value">
+         <path value="Service_request.Current_Activity.description.Information_description.value"/>
+         <short value="Information description"/>
+         <definition value="Description of the supplementary information."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_request.Current_Activity.description.Information_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_request.Current_Activity.description.Patient_requirements">
+         <path value="Service_request.Current_Activity.description.Patient_requirements"/>
+         <short value="Patient requirements"/>
+         <definition value="Language, transport or other personal requirements to support the patient's attendance or participation in provision of the service."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Service_request.Current_Activity.description.Patient_requirements"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_request.Current_Activity.description.Comment">
+         <path value="Service_request.Current_Activity.description.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the service request not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_request.Current_Activity.description.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Service_request.Current_Activity.description.Comment.value">
+         <path value="Service_request.Current_Activity.description.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the service request not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_request.Current_Activity.description.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

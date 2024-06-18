@@ -1,0 +1,1642 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Imagingexaminationresult-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-imagingexaminationresult-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.imaging_exam_result.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Imagingexaminationresult"/>
+   <title value="Imaging examination result"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="The result of an imaging examination performed on an individual, using radiological techniques."/>
+   <purpose value="To record the findings on imaging examination of a specified body structure or region and their interpretation, using radiological techniques."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Imaging_examination_result">
+         <path value="Imaging_examination_result"/>
+         <short value="Imaging examination result"/>
+         <definition value="The result of an imaging examination performed on an individual, using radiological techniques."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.protocol">
+         <path value="Imaging_examination_result.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.protocol.Study_instance_identifier">
+         <path value="Imaging_examination_result.protocol.Study_instance_identifier"/>
+         <short value="Study instance identifier"/>
+         <definition value="Unique identifier for the imaging study assigned by the imaging device."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Study_instance_identifier"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_result.protocol.Study_instance_identifier.value_DV_IDENTIFIER">
+         <path value="Imaging_examination_result.protocol.Study_instance_identifier.value_DV_IDENTIFIER"/>
+         <short value="Study instance identifier"/>
+         <definition value="Unique identifier for the imaging study assigned by the imaging device."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Study_instance_identifier.value_DV_IDENTIFIER"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.protocol.Study_instance_identifier.value_DV_TEXT">
+         <path value="Imaging_examination_result.protocol.Study_instance_identifier.value_DV_TEXT"/>
+         <short value="Study instance identifier"/>
+         <definition value="Unique identifier for the imaging study assigned by the imaging device."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Study_instance_identifier.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.protocol.Study_description">
+         <path value="Imaging_examination_result.protocol.Study_description"/>
+         <short value="Study description"/>
+         <definition value="Radiology service-generated description or classification of the study."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Study_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_result.protocol.Study_description.value">
+         <path value="Imaging_examination_result.protocol.Study_description.value"/>
+         <short value="Study description"/>
+         <definition value="Radiology service-generated description or classification of the study."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Study_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.protocol.Report_identifier">
+         <path value="Imaging_examination_result.protocol.Report_identifier"/>
+         <short value="Report identifier"/>
+         <definition value="Unique identifier for the imaging report assigned by the radiology service."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Report_identifier"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_result.protocol.Report_identifier.value_DV_IDENTIFIER">
+         <path value="Imaging_examination_result.protocol.Report_identifier.value_DV_IDENTIFIER"/>
+         <short value="Report identifier"/>
+         <definition value="Unique identifier for the imaging report assigned by the radiology service."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Report_identifier.value_DV_IDENTIFIER"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.protocol.Report_identifier.value_DV_TEXT">
+         <path value="Imaging_examination_result.protocol.Report_identifier.value_DV_TEXT"/>
+         <short value="Report identifier"/>
+         <definition value="Unique identifier for the imaging report assigned by the radiology service."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Report_identifier.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.protocol.Study_status">
+         <path value="Imaging_examination_result.protocol.Study_status"/>
+         <short value="Study status"/>
+         <definition value="The current state of the imaging study."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Study_status"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_result.protocol.Study_status.value_DV_CODED_TEXT">
+         <path value="Imaging_examination_result.protocol.Study_status.value_DV_CODED_TEXT"/>
+         <short value="Study status"/>
+         <definition value="The current state of the imaging study."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Study_status.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.protocol.Study_status.value_DV_TEXT">
+         <path value="Imaging_examination_result.protocol.Study_status.value_DV_TEXT"/>
+         <short value="Study status"/>
+         <definition value="The current state of the imaging study."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Study_status.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.protocol.Study_end_point">
+         <path value="Imaging_examination_result.protocol.Study_end_point"/>
+         <short value="Study end point"/>
+         <definition value="Digital location of the imaging content and metadata."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Study_end_point"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_result.protocol.Study_end_point.value_DV_TEXT">
+         <path value="Imaging_examination_result.protocol.Study_end_point.value_DV_TEXT"/>
+         <short value="Study end point"/>
+         <definition value="Digital location of the imaging content and metadata."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Study_end_point.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.protocol.Study_end_point.value_DV_URI">
+         <path value="Imaging_examination_result.protocol.Study_end_point.value_DV_URI"/>
+         <short value="Study end point"/>
+         <definition value="Digital location of the imaging content and metadata."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Study_end_point.value_DV_URI"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="string"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.protocol.Image_details">
+         <path value="Imaging_examination_result.protocol.Image_details"/>
+         <short value="Image details"/>
+         <definition value="Link to full details of any imaging carried out during the study."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Image_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_result.protocol.Image_details.value">
+         <path value="Imaging_examination_result.protocol.Image_details.value"/>
+         <short value="Image details"/>
+         <definition value="Link to full details of any imaging carried out during the study."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Image_details.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="string"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.protocol.Imaging_service">
+         <path value="Imaging_examination_result.protocol.Imaging_service"/>
+         <short value="Imaging service"/>
+         <definition value="Details about the service, organisation or individual carrying out the imaging examination."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Imaging_service"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.protocol.Technique">
+         <path value="Imaging_examination_result.protocol.Technique"/>
+         <short value="Technique"/>
+         <definition value="Name of the radiological procedure used to capture the study."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Technique"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_result.protocol.Technique.value">
+         <path value="Imaging_examination_result.protocol.Technique.value"/>
+         <short value="Technique"/>
+         <definition value="Name of the radiological procedure used to capture the study."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Technique.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.protocol.Technique_summary">
+         <path value="Imaging_examination_result.protocol.Technique_summary"/>
+         <short value="Technique summary"/>
+         <definition value="Narrative description about the radiological procedure used to capture the study."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Technique_summary"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_result.protocol.Technique_summary.value">
+         <path value="Imaging_examination_result.protocol.Technique_summary.value"/>
+         <short value="Technique summary"/>
+         <definition value="Narrative description about the radiological procedure used to capture the study."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Technique_summary.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.protocol.Procedure">
+         <path value="Imaging_examination_result.protocol.Procedure"/>
+         <short value="Procedure"/>
+         <definition value="Identification of the clinical procedure or management used to capture the study."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Procedure"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_result.protocol.Procedure.value">
+         <path value="Imaging_examination_result.protocol.Procedure.value"/>
+         <short value="Procedure"/>
+         <definition value="Identification of the clinical procedure or management used to capture the study."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Procedure.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.protocol.Procedure_summary">
+         <path value="Imaging_examination_result.protocol.Procedure_summary"/>
+         <short value="Procedure summary"/>
+         <definition value="Narrative description about the clinical procedure or other clinical considerations used to capture the study."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Procedure_summary"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_result.protocol.Procedure_summary.value">
+         <path value="Imaging_examination_result.protocol.Procedure_summary.value"/>
+         <short value="Procedure summary"/>
+         <definition value="Narrative description about the clinical procedure or other clinical considerations used to capture the study."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Procedure_summary.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.protocol.Structured_technique_procedure">
+         <path value="Imaging_examination_result.protocol.Structured_technique_procedure"/>
+         <short value="Structured technique/procedure"/>
+         <definition value="Additional structured details of technical and clinical aspects of capturing the image/s."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Structured_technique_procedure"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.protocol.Series_details">
+         <path value="Imaging_examination_result.protocol.Series_details"/>
+         <short value="Series details"/>
+         <definition value="Details about a series included in this report."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Series_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.protocol.Device">
+         <path value="Imaging_examination_result.protocol.Device"/>
+         <short value="Device"/>
+         <definition value="Details about imaging device/s used to capture the study."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Device"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.protocol.Comparison_study_details">
+         <path value="Imaging_examination_result.protocol.Comparison_study_details"/>
+         <short value="Comparison study details"/>
+         <definition value="Details about images from a prior study used for comparison to the reported study."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Comparison_study_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.protocol.Comparison_study_details.Study_name">
+         <path value="Imaging_examination_result.protocol.Comparison_study_details.Study_name"/>
+         <short value="Study name"/>
+         <definition value="The name of the comparison imaging examination performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Comparison_study_details.Study_name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_result.protocol.Comparison_study_details.Study_name.value">
+         <path value="Imaging_examination_result.protocol.Comparison_study_details.Study_name.value"/>
+         <short value="Study name"/>
+         <definition value="The name of the comparison imaging examination performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Comparison_study_details.Study_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.protocol.Comparison_study_details.Study_identifier">
+         <path value="Imaging_examination_result.protocol.Comparison_study_details.Study_identifier"/>
+         <short value="Study identifier"/>
+         <definition value="Unique identifier for the comparison imaging study."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Comparison_study_details.Study_identifier"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_result.protocol.Comparison_study_details.Study_identifier.value_DV_IDENTIFIER">
+         <path value="Imaging_examination_result.protocol.Comparison_study_details.Study_identifier.value_DV_IDENTIFIER"/>
+         <short value="Study identifier"/>
+         <definition value="Unique identifier for the comparison imaging study."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Comparison_study_details.Study_identifier.value_DV_IDENTIFIER"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.protocol.Comparison_study_details.Study_identifier.value_DV_TEXT">
+         <path value="Imaging_examination_result.protocol.Comparison_study_details.Study_identifier.value_DV_TEXT"/>
+         <short value="Study identifier"/>
+         <definition value="Unique identifier for the comparison imaging study."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Comparison_study_details.Study_identifier.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.protocol.Comparison_study_details.Study_date">
+         <path value="Imaging_examination_result.protocol.Comparison_study_details.Study_date"/>
+         <short value="Study date"/>
+         <definition value="Date and time the comparison examination started."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Comparison_study_details.Study_date"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_result.protocol.Comparison_study_details.Study_date.value">
+         <path value="Imaging_examination_result.protocol.Comparison_study_details.Study_date.value"/>
+         <short value="Study date"/>
+         <definition value="Date and time the comparison examination started."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Comparison_study_details.Study_date.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.protocol.Comparison_study_details.Study_end_point">
+         <path value="Imaging_examination_result.protocol.Comparison_study_details.Study_end_point"/>
+         <short value="Study end point"/>
+         <definition value="Digital location of the comparison imaging content and metadata."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Comparison_study_details.Study_end_point"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_result.protocol.Comparison_study_details.Study_end_point.value_DV_TEXT">
+         <path value="Imaging_examination_result.protocol.Comparison_study_details.Study_end_point.value_DV_TEXT"/>
+         <short value="Study end point"/>
+         <definition value="Digital location of the comparison imaging content and metadata."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Comparison_study_details.Study_end_point.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.protocol.Comparison_study_details.Study_end_point.value_DV_URI">
+         <path value="Imaging_examination_result.protocol.Comparison_study_details.Study_end_point.value_DV_URI"/>
+         <short value="Study end point"/>
+         <definition value="Digital location of the comparison imaging content and metadata."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Comparison_study_details.Study_end_point.value_DV_URI"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="string"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.protocol.Comparison_study_details.Comparison_series_details">
+         <path value="Imaging_examination_result.protocol.Comparison_study_details.Comparison_series_details"/>
+         <short value="Comparison series details"/>
+         <definition value="Details about an imaging series being compared to the reported study."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Comparison_study_details.Comparison_series_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.protocol.Examination_request_details">
+         <path value="Imaging_examination_result.protocol.Examination_request_details"/>
+         <short value="Examination request details"/>
+         <definition value="Details about a single imaging examination requested."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Examination_request_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.protocol.Examination_request_details.Receiver_order_identifier">
+         <path value="Imaging_examination_result.protocol.Examination_request_details.Receiver_order_identifier"/>
+         <short value="Receiver order identifier"/>
+         <definition value="Unique identifier for the imaging examination order assigned by the radiology service."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Examination_request_details.Receiver_order_identifier"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_result.protocol.Examination_request_details.Receiver_order_identifier.value_DV_IDENTIFIER">
+         <path value="Imaging_examination_result.protocol.Examination_request_details.Receiver_order_identifier.value_DV_IDENTIFIER"/>
+         <short value="Receiver order identifier"/>
+         <definition value="Unique identifier for the imaging examination order assigned by the radiology service."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Examination_request_details.Receiver_order_identifier.value_DV_IDENTIFIER"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.protocol.Examination_request_details.Receiver_order_identifier.value_DV_CODED_TEXT">
+         <path value="Imaging_examination_result.protocol.Examination_request_details.Receiver_order_identifier.value_DV_CODED_TEXT"/>
+         <short value="Receiver order identifier"/>
+         <definition value="Unique identifier for the imaging examination order assigned by the radiology service."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Examination_request_details.Receiver_order_identifier.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.protocol.Examination_request_details.Requester_order_identifier">
+         <path value="Imaging_examination_result.protocol.Examination_request_details.Requester_order_identifier"/>
+         <short value="Requester order identifier"/>
+         <definition value="Unique identifier for the imaging examination order assigned by the requester."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Examination_request_details.Requester_order_identifier"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_result.protocol.Examination_request_details.Requester_order_identifier.value_DV_IDENTIFIER">
+         <path value="Imaging_examination_result.protocol.Examination_request_details.Requester_order_identifier.value_DV_IDENTIFIER"/>
+         <short value="Requester order identifier"/>
+         <definition value="Unique identifier for the imaging examination order assigned by the requester."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Examination_request_details.Requester_order_identifier.value_DV_IDENTIFIER"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.protocol.Examination_request_details.Requester_order_identifier.value_DV_TEXT">
+         <path value="Imaging_examination_result.protocol.Examination_request_details.Requester_order_identifier.value_DV_TEXT"/>
+         <short value="Requester order identifier"/>
+         <definition value="Unique identifier for the imaging examination order assigned by the requester."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Examination_request_details.Requester_order_identifier.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.protocol.Examination_request_details.Examination_requested_name">
+         <path value="Imaging_examination_result.protocol.Examination_request_details.Examination_requested_name"/>
+         <short value="Examination requested name"/>
+         <definition value="Identification of imaging examination requested."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Examination_request_details.Examination_requested_name"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_result.protocol.Examination_request_details.Examination_requested_name.value">
+         <path value="Imaging_examination_result.protocol.Examination_request_details.Examination_requested_name.value"/>
+         <short value="Examination requested name"/>
+         <definition value="Identification of imaging examination requested."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Examination_request_details.Examination_requested_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.protocol.Examination_request_details.Requester">
+         <path value="Imaging_examination_result.protocol.Examination_request_details.Requester"/>
+         <short value="Requester"/>
+         <definition value="Details about the clinician and/or organisation requesting the imaging examination."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Examination_request_details.Requester"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.protocol.Distribution_list">
+         <path value="Imaging_examination_result.protocol.Distribution_list"/>
+         <short value="Distribution list"/>
+         <definition value="Details of additional clinicians or organisations who require a copy of the examination result."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Distribution_list"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.protocol.Extension">
+         <path value="Imaging_examination_result.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models or formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Imaging_examination_result.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.Event_Series">
+         <path value="Imaging_examination_result.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.Event_Series.Any_event">
+         <path value="Imaging_examination_result.Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Imaging_examination_result.Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.Event_Series.Any_event.data">
+         <path value="Imaging_examination_result.Event_Series.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.Event_Series.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.Event_Series.Any_event.data.Study_name">
+         <path value="Imaging_examination_result.Event_Series.Any_event.data.Study_name"/>
+         <short value="Study name"/>
+         <definition value="The name of the imaging examination performed."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.Event_Series.Any_event.data.Study_name"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_result.Event_Series.Any_event.data.Study_name.value">
+         <path value="Imaging_examination_result.Event_Series.Any_event.data.Study_name.value"/>
+         <short value="Study name"/>
+         <definition value="The name of the imaging examination performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.Event_Series.Any_event.data.Study_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.Event_Series.Any_event.data.Modality">
+         <path value="Imaging_examination_result.Event_Series.Any_event.data.Modality"/>
+         <short value="Modality"/>
+         <definition value="The type of imaging device, process or method that originally acquired or produced the data used to create the images in the study."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Imaging_examination_result.Event_Series.Any_event.data.Modality"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_result.Event_Series.Any_event.data.Modality.value">
+         <path value="Imaging_examination_result.Event_Series.Any_event.data.Modality.value"/>
+         <short value="Modality"/>
+         <definition value="The type of imaging device, process or method that originally acquired or produced the data used to create the images in the study."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.Event_Series.Any_event.data.Modality.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.Event_Series.Any_event.data.Target_body_site">
+         <path value="Imaging_examination_result.Event_Series.Any_event.data.Target_body_site"/>
+         <short value="Target body site"/>
+         <definition value="Description of the simple body site or region targetted for imaging."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.Event_Series.Any_event.data.Target_body_site"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_result.Event_Series.Any_event.data.Target_body_site.value">
+         <path value="Imaging_examination_result.Event_Series.Any_event.data.Target_body_site.value"/>
+         <short value="Target body site"/>
+         <definition value="Description of the simple body site or region targetted for imaging."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.Event_Series.Any_event.data.Target_body_site.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.Event_Series.Any_event.data.Structured_target_body_site">
+         <path value="Imaging_examination_result.Event_Series.Any_event.data.Structured_target_body_site"/>
+         <short value="Structured target body site"/>
+         <definition value="Structured detail about the body site or region targetted for imaging."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Imaging_examination_result.Event_Series.Any_event.data.Structured_target_body_site"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.Event_Series.Any_event.data.Study_date">
+         <path value="Imaging_examination_result.Event_Series.Any_event.data.Study_date"/>
+         <short value="Study date"/>
+         <definition value="Date/time when the imaging started."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.Event_Series.Any_event.data.Study_date"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_result.Event_Series.Any_event.data.Study_date.value">
+         <path value="Imaging_examination_result.Event_Series.Any_event.data.Study_date.value"/>
+         <short value="Study date"/>
+         <definition value="Date/time when the imaging started."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.Event_Series.Any_event.data.Study_date.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.Event_Series.Any_event.data.Overall_result_status">
+         <path value="Imaging_examination_result.Event_Series.Any_event.data.Overall_result_status"/>
+         <short value="Overall result status"/>
+         <definition value="The status of the imaging examination result as a whole."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Imaging_examination_result.Event_Series.Any_event.data.Overall_result_status"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_result.Event_Series.Any_event.data.Overall_result_status.value_DV_CODED_TEXT">
+         <path value="Imaging_examination_result.Event_Series.Any_event.data.Overall_result_status.value_DV_CODED_TEXT"/>
+         <short value="Overall result status"/>
+         <definition value="The status of the imaging examination result as a whole."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.Event_Series.Any_event.data.Overall_result_status.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.Event_Series.Any_event.data.Overall_result_status.value_DV_TEXT">
+         <path value="Imaging_examination_result.Event_Series.Any_event.data.Overall_result_status.value_DV_TEXT"/>
+         <short value="Overall result status"/>
+         <definition value="The status of the imaging examination result as a whole."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.Event_Series.Any_event.data.Overall_result_status.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.Event_Series.Any_event.data.Status_timestamp">
+         <path value="Imaging_examination_result.Event_Series.Any_event.data.Status_timestamp"/>
+         <short value="Status timestamp"/>
+         <definition value="The date and/or time that ‘Overall result status’ was assigned."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.Event_Series.Any_event.data.Status_timestamp"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_result.Event_Series.Any_event.data.Status_timestamp.value">
+         <path value="Imaging_examination_result.Event_Series.Any_event.data.Status_timestamp.value"/>
+         <short value="Status timestamp"/>
+         <definition value="The date and/or time that ‘Overall result status’ was assigned."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.Event_Series.Any_event.data.Status_timestamp.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.Event_Series.Any_event.data.Clinical_indication">
+         <path value="Imaging_examination_result.Event_Series.Any_event.data.Clinical_indication"/>
+         <short value="Clinical indication"/>
+         <definition value="Narrative description about the reason the examination was originally requested."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.Event_Series.Any_event.data.Clinical_indication"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_result.Event_Series.Any_event.data.Clinical_indication.value">
+         <path value="Imaging_examination_result.Event_Series.Any_event.data.Clinical_indication.value"/>
+         <short value="Clinical indication"/>
+         <definition value="Narrative description about the reason the examination was originally requested."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.Event_Series.Any_event.data.Clinical_indication.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.Event_Series.Any_event.data.Clinical_summary">
+         <path value="Imaging_examination_result.Event_Series.Any_event.data.Clinical_summary"/>
+         <short value="Clinical summary"/>
+         <definition value="Narrative description of relevant clinical history that provides context for the examination and interpretation of results."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.Event_Series.Any_event.data.Clinical_summary"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_result.Event_Series.Any_event.data.Clinical_summary.value">
+         <path value="Imaging_examination_result.Event_Series.Any_event.data.Clinical_summary.value"/>
+         <short value="Clinical summary"/>
+         <definition value="Narrative description of relevant clinical history that provides context for the examination and interpretation of results."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.Event_Series.Any_event.data.Clinical_summary.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.Event_Series.Any_event.data.Imaging_findings">
+         <path value="Imaging_examination_result.Event_Series.Any_event.data.Imaging_findings"/>
+         <short value="Imaging findings"/>
+         <definition value="Narrative description or overview of all clinical findings."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.Event_Series.Any_event.data.Imaging_findings"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_result.Event_Series.Any_event.data.Imaging_findings.value">
+         <path value="Imaging_examination_result.Event_Series.Any_event.data.Imaging_findings.value"/>
+         <short value="Imaging findings"/>
+         <definition value="Narrative description or overview of all clinical findings."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.Event_Series.Any_event.data.Imaging_findings.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.Event_Series.Any_event.data.Structured_imaging_findings">
+         <path value="Imaging_examination_result.Event_Series.Any_event.data.Structured_imaging_findings"/>
+         <short value="Structured imaging findings"/>
+         <definition value="Structured details about the imaging examination findings targeting a specific structure or region."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Imaging_examination_result.Event_Series.Any_event.data.Structured_imaging_findings"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.Event_Series.Any_event.data.Comparison_findings">
+         <path value="Imaging_examination_result.Event_Series.Any_event.data.Comparison_findings"/>
+         <short value="Comparison findings"/>
+         <definition value="Narrative description about the comparison of this examination with previous similar studies."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.Event_Series.Any_event.data.Comparison_findings"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_result.Event_Series.Any_event.data.Comparison_findings.value">
+         <path value="Imaging_examination_result.Event_Series.Any_event.data.Comparison_findings.value"/>
+         <short value="Comparison findings"/>
+         <definition value="Narrative description about the comparison of this examination with previous similar studies."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.Event_Series.Any_event.data.Comparison_findings.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.Event_Series.Any_event.data.Imaging_quality">
+         <path value="Imaging_examination_result.Event_Series.Any_event.data.Imaging_quality"/>
+         <short value="Imaging quality"/>
+         <definition value="Assessment about the quality of the examination."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.Event_Series.Any_event.data.Imaging_quality"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_result.Event_Series.Any_event.data.Imaging_quality.value">
+         <path value="Imaging_examination_result.Event_Series.Any_event.data.Imaging_quality.value"/>
+         <short value="Imaging quality"/>
+         <definition value="Assessment about the quality of the examination."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.Event_Series.Any_event.data.Imaging_quality.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.Event_Series.Any_event.data.Imaging_quality_description">
+         <path value="Imaging_examination_result.Event_Series.Any_event.data.Imaging_quality_description"/>
+         <short value="Imaging quality description"/>
+         <definition value="Narrative description about the quality of the examination."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.Event_Series.Any_event.data.Imaging_quality_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_result.Event_Series.Any_event.data.Imaging_quality_description.value">
+         <path value="Imaging_examination_result.Event_Series.Any_event.data.Imaging_quality_description.value"/>
+         <short value="Imaging quality description"/>
+         <definition value="Narrative description about the quality of the examination."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.Event_Series.Any_event.data.Imaging_quality_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.Event_Series.Any_event.data.Overall_impression">
+         <path value="Imaging_examination_result.Event_Series.Any_event.data.Overall_impression"/>
+         <short value="Overall impression"/>
+         <definition value="Narrative concise, clinically relevant interpretation of all imaging findings, and include a comparison with previous studies where appropriate."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.Event_Series.Any_event.data.Overall_impression"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_result.Event_Series.Any_event.data.Overall_impression.value">
+         <path value="Imaging_examination_result.Event_Series.Any_event.data.Overall_impression.value"/>
+         <short value="Overall impression"/>
+         <definition value="Narrative concise, clinically relevant interpretation of all imaging findings, and include a comparison with previous studies where appropriate."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.Event_Series.Any_event.data.Overall_impression.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.Event_Series.Any_event.data.Imaging_differential_diagnosis">
+         <path value="Imaging_examination_result.Event_Series.Any_event.data.Imaging_differential_diagnosis"/>
+         <short value="Imaging differential diagnosis"/>
+         <definition value="Single word, phrase or brief description representing a possible condition or diagnosis."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Imaging_examination_result.Event_Series.Any_event.data.Imaging_differential_diagnosis"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_result.Event_Series.Any_event.data.Imaging_differential_diagnosis.value">
+         <path value="Imaging_examination_result.Event_Series.Any_event.data.Imaging_differential_diagnosis.value"/>
+         <short value="Imaging differential diagnosis"/>
+         <definition value="Single word, phrase or brief description representing a possible condition or diagnosis."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.Event_Series.Any_event.data.Imaging_differential_diagnosis.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.Event_Series.Any_event.data.Imaging_diagnosis">
+         <path value="Imaging_examination_result.Event_Series.Any_event.data.Imaging_diagnosis"/>
+         <short value="Imaging diagnosis"/>
+         <definition value="Single word, phrase or brief description representing the likely condition or diagnosis."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Imaging_examination_result.Event_Series.Any_event.data.Imaging_diagnosis"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_result.Event_Series.Any_event.data.Imaging_diagnosis.value">
+         <path value="Imaging_examination_result.Event_Series.Any_event.data.Imaging_diagnosis.value"/>
+         <short value="Imaging diagnosis"/>
+         <definition value="Single word, phrase or brief description representing the likely condition or diagnosis."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.Event_Series.Any_event.data.Imaging_diagnosis.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.Event_Series.Any_event.data.Recommendation">
+         <path value="Imaging_examination_result.Event_Series.Any_event.data.Recommendation"/>
+         <short value="Recommendation"/>
+         <definition value="Suggestion for further imaging, investigations and/or referral, and associated rationale."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Imaging_examination_result.Event_Series.Any_event.data.Recommendation"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_result.Event_Series.Any_event.data.Recommendation.value">
+         <path value="Imaging_examination_result.Event_Series.Any_event.data.Recommendation.value"/>
+         <short value="Recommendation"/>
+         <definition value="Suggestion for further imaging, investigations and/or referral, and associated rationale."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.Event_Series.Any_event.data.Recommendation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.Event_Series.Any_event.data.Report_representation">
+         <path value="Imaging_examination_result.Event_Series.Any_event.data.Report_representation"/>
+         <short value="Report representation"/>
+         <definition value="Digital representation of the examination result."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Imaging_examination_result.Event_Series.Any_event.data.Report_representation"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.Event_Series.Any_event.data.Comment">
+         <path value="Imaging_examination_result.Event_Series.Any_event.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the examination not captured in other fields."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Imaging_examination_result.Event_Series.Any_event.data.Comment"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_result.Event_Series.Any_event.data.Comment.value">
+         <path value="Imaging_examination_result.Event_Series.Any_event.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the examination not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.Event_Series.Any_event.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.Event_Series.Any_event.state">
+         <path value="Imaging_examination_result.Event_Series.Any_event.state"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.Event_Series.Any_event.state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.Event_Series.Any_event.state.Confounding_factors">
+         <path value="Imaging_examination_result.Event_Series.Any_event.state.Confounding_factors"/>
+         <short value="Confounding factors"/>
+         <definition value="Narrative description of factors, not recorded elsewhere, that may influence the examination findings and/or result."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.Event_Series.Any_event.state.Confounding_factors"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_result.Event_Series.Any_event.state.Confounding_factors.value">
+         <path value="Imaging_examination_result.Event_Series.Any_event.state.Confounding_factors.value"/>
+         <short value="Confounding factors"/>
+         <definition value="Narrative description of factors, not recorded elsewhere, that may influence the examination findings and/or result."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.Event_Series.Any_event.state.Confounding_factors.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.Event_Series.Any_event.state.Position">
+         <path value="Imaging_examination_result.Event_Series.Any_event.state.Position"/>
+         <short value="Position"/>
+         <definition value="Position of the individual during the imaging examination."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.Event_Series.Any_event.state.Position"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_result.Event_Series.Any_event.state.Position.value">
+         <path value="Imaging_examination_result.Event_Series.Any_event.state.Position.value"/>
+         <short value="Position"/>
+         <definition value="Position of the individual during the imaging examination."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_result.Event_Series.Any_event.state.Position.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_result.Event_Series.Any_event.state.Stabilising_appliance">
+         <path value="Imaging_examination_result.Event_Series.Any_event.state.Stabilising_appliance"/>
+         <short value="Stabilising appliance"/>
+         <definition value="Identification of a stabilising appliance in use."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Imaging_examination_result.Event_Series.Any_event.state.Stabilising_appliance"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

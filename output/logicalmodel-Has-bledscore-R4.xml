@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Has-bledscore-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-has-bledscore-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.has_bled.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Has-bledscore"/>
+   <title value="HAS-BLED score"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="A risk assessment score to assess the bleeding risk in individuals with atrial fibrillation."/>
+   <purpose value="To record the results for each component parameter and their total sum for the HAS-BLED bleeding risk score."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="HAS_BLED_score">
+         <path value="HAS_BLED_score"/>
+         <short value="HAS-BLED score"/>
+         <definition value="A risk assessment score to assess the bleeding risk in individuals with atrial fibrillation."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="HAS_BLED_score"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="HAS_BLED_score.protocol">
+         <path value="HAS_BLED_score.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HAS_BLED_score.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="HAS_BLED_score.protocol.Extension">
+         <path value="HAS_BLED_score.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="HAS_BLED_score.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="HAS_BLED_score.Event_Series">
+         <path value="HAS_BLED_score.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HAS_BLED_score.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="HAS_BLED_score.Event_Series.Any_point_in_time_event">
+         <path value="HAS_BLED_score.Event_Series.Any_point_in_time_event"/>
+         <short value="Any point in time event"/>
+         <definition value="Default, unspecified point in time event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HAS_BLED_score.Event_Series.Any_point_in_time_event"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="HAS_BLED_score.Event_Series.Any_point_in_time_event.data">
+         <path value="HAS_BLED_score.Event_Series.Any_point_in_time_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HAS_BLED_score.Event_Series.Any_point_in_time_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Hypertension">
+         <path value="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Hypertension"/>
+         <short value="Hypertension"/>
+         <definition value="The systolic blood pressure is &gt;160 mmHg."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Hypertension"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Hypertension.value">
+         <path value="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Hypertension.value"/>
+         <short value="Hypertension"/>
+         <definition value="The systolic blood pressure is &gt;160 mmHg."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Hypertension.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Abnormal_renal_function">
+         <path value="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Abnormal_renal_function"/>
+         <short value="Abnormal renal function"/>
+         <definition value="The presence of chronic dialysis or renal transplantation or serum creatinine ≥200µmol/L."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Abnormal_renal_function"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Abnormal_renal_function.value">
+         <path value="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Abnormal_renal_function.value"/>
+         <short value="Abnormal renal function"/>
+         <definition value="The presence of chronic dialysis or renal transplantation or serum creatinine ≥200µmol/L."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Abnormal_renal_function.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Abnormal_liver_function">
+         <path value="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Abnormal_liver_function"/>
+         <short value="Abnormal liver function"/>
+         <definition value="Chronic hepatic disease (eg. cirrhosis) or biochemical evidence of significant hepatic derangement (eg. bilirubin &gt;2x upper limit of normal, in association with AST/ALT/ALP &gt;3x upper limit normal, etc)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Abnormal_liver_function"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Abnormal_liver_function.value">
+         <path value="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Abnormal_liver_function.value"/>
+         <short value="Abnormal liver function"/>
+         <definition value="Chronic hepatic disease (eg. cirrhosis) or biochemical evidence of significant hepatic derangement (eg. bilirubin &gt;2x upper limit of normal, in association with AST/ALT/ALP &gt;3x upper limit normal, etc)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Abnormal_liver_function.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Stroke">
+         <path value="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Stroke"/>
+         <short value="Stroke"/>
+         <definition value="A previous history of stroke, particularly lacunar."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Stroke"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Stroke.value">
+         <path value="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Stroke.value"/>
+         <short value="Stroke"/>
+         <definition value="A previous history of stroke, particularly lacunar."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Stroke.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Bleeding_history_or_predisposition">
+         <path value="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Bleeding_history_or_predisposition"/>
+         <short value="Bleeding history or predisposition"/>
+         <definition value="A previous bleeding history and/or predisposition to bleeding ."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Bleeding_history_or_predisposition"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Bleeding_history_or_predisposition.value">
+         <path value="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Bleeding_history_or_predisposition.value"/>
+         <short value="Bleeding history or predisposition"/>
+         <definition value="A previous bleeding history and/or predisposition to bleeding ."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Bleeding_history_or_predisposition.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Labile_INR">
+         <path value="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Labile_INR"/>
+         <short value="Labile INR"/>
+         <definition value="Unstable/high INRs or poor time in therapeutic range."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Labile_INR"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Labile_INR.value">
+         <path value="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Labile_INR.value"/>
+         <short value="Labile INR"/>
+         <definition value="Unstable/high INRs or poor time in therapeutic range."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Labile_INR.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Elderly">
+         <path value="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Elderly"/>
+         <short value="Elderly"/>
+         <definition value="Age &gt;65 yrs."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Elderly"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Elderly.value">
+         <path value="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Elderly.value"/>
+         <short value="Elderly"/>
+         <definition value="Age &gt;65 yrs."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Elderly.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Drugs_concomitantly">
+         <path value="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Drugs_concomitantly"/>
+         <short value="Drugs concomitantly"/>
+         <definition value="The concomitant use of drugs, such as antiplatelet agents, non-steroidal anti-inflammatory drugs, etc."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Drugs_concomitantly"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Drugs_concomitantly.value">
+         <path value="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Drugs_concomitantly.value"/>
+         <short value="Drugs concomitantly"/>
+         <definition value="The concomitant use of drugs, such as antiplatelet agents, non-steroidal anti-inflammatory drugs, etc."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Drugs_concomitantly.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Alcohol_concomitantly">
+         <path value="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Alcohol_concomitantly"/>
+         <short value="Alcohol concomitantly"/>
+         <definition value="Alcohol consumption ≥ 8 units per week."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Alcohol_concomitantly"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Alcohol_concomitantly.value">
+         <path value="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Alcohol_concomitantly.value"/>
+         <short value="Alcohol concomitantly"/>
+         <definition value="Alcohol consumption ≥ 8 units per week."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Alcohol_concomitantly.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Total_score">
+         <path value="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Total_score"/>
+         <short value="Total score"/>
+         <definition value="Sum of points assigned for each of the component parameters."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Total_score"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Total_score.value">
+         <path value="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Total_score.value"/>
+         <short value="Total score"/>
+         <definition value="Sum of points assigned for each of the component parameters."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HAS_BLED_score.Event_Series.Any_point_in_time_event.data.Total_score.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

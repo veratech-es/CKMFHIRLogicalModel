@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Malnutritionscreeningtool_mst_-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-malnutritionscreeningtool_mst_-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.malnutrition_screening_tool.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Malnutritionscreeningtool_mst_"/>
+   <title value="Malnutrition Screening Tool (MST)"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="An assessment tool used to identify if an individual is at risk of malnutrition."/>
+   <purpose value="To record the results for each component parameter and their total sum for the MST score."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Malnutrition_Screening_Tool_(MST)">
+         <path value="Malnutrition_Screening_Tool_(MST)"/>
+         <short value="Malnutrition Screening Tool (MST)"/>
+         <definition value="An assessment tool used to identify if an individual is at risk of malnutrition."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Malnutrition_Screening_Tool_(MST)"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Malnutrition_Screening_Tool_(MST).protocol">
+         <path value="Malnutrition_Screening_Tool_(MST).protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Malnutrition_Screening_Tool_(MST).protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Malnutrition_Screening_Tool_(MST).protocol.Extension">
+         <path value="Malnutrition_Screening_Tool_(MST).protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Malnutrition_Screening_Tool_(MST).protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Malnutrition_Screening_Tool_(MST).Event_Series">
+         <path value="Malnutrition_Screening_Tool_(MST).Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Malnutrition_Screening_Tool_(MST).Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Malnutrition_Screening_Tool_(MST).Event_Series.Any_point_in_time_event">
+         <path value="Malnutrition_Screening_Tool_(MST).Event_Series.Any_point_in_time_event"/>
+         <short value="Any point in time event"/>
+         <definition value="Default, unspecified point in time event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Malnutrition_Screening_Tool_(MST).Event_Series.Any_point_in_time_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Malnutrition_Screening_Tool_(MST).Event_Series.Any_point_in_time_event.data">
+         <path value="Malnutrition_Screening_Tool_(MST).Event_Series.Any_point_in_time_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Malnutrition_Screening_Tool_(MST).Event_Series.Any_point_in_time_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Malnutrition_Screening_Tool_(MST).Event_Series.Any_point_in_time_event.data.Have_you_lost_weight_recently_without_trying_">
+         <path value="Malnutrition_Screening_Tool_(MST).Event_Series.Any_point_in_time_event.data.Have_you_lost_weight_recently_without_trying_"/>
+         <short value="Have you lost weight recently without trying?"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Malnutrition_Screening_Tool_(MST).Event_Series.Any_point_in_time_event.data.Have_you_lost_weight_recently_without_trying_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Malnutrition_Screening_Tool_(MST).Event_Series.Any_point_in_time_event.data.Have_you_lost_weight_recently_without_trying_.value">
+         <path value="Malnutrition_Screening_Tool_(MST).Event_Series.Any_point_in_time_event.data.Have_you_lost_weight_recently_without_trying_.value"/>
+         <short value="Have you lost weight recently without trying?"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Malnutrition_Screening_Tool_(MST).Event_Series.Any_point_in_time_event.data.Have_you_lost_weight_recently_without_trying_.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Malnutrition_Screening_Tool_(MST).Event_Series.Any_point_in_time_event.data.Have_you_been_eating_poorly_because_of_a_decreased_appetite_">
+         <path value="Malnutrition_Screening_Tool_(MST).Event_Series.Any_point_in_time_event.data.Have_you_been_eating_poorly_because_of_a_decreased_appetite_"/>
+         <short value="Have you been eating poorly because of a decreased appetite?"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Malnutrition_Screening_Tool_(MST).Event_Series.Any_point_in_time_event.data.Have_you_been_eating_poorly_because_of_a_decreased_appetite_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Malnutrition_Screening_Tool_(MST).Event_Series.Any_point_in_time_event.data.Have_you_been_eating_poorly_because_of_a_decreased_appetite_.value">
+         <path value="Malnutrition_Screening_Tool_(MST).Event_Series.Any_point_in_time_event.data.Have_you_been_eating_poorly_because_of_a_decreased_appetite_.value"/>
+         <short value="Have you been eating poorly because of a decreased appetite?"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Malnutrition_Screening_Tool_(MST).Event_Series.Any_point_in_time_event.data.Have_you_been_eating_poorly_because_of_a_decreased_appetite_.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Malnutrition_Screening_Tool_(MST).Event_Series.Any_point_in_time_event.data.MST_score">
+         <path value="Malnutrition_Screening_Tool_(MST).Event_Series.Any_point_in_time_event.data.MST_score"/>
+         <short value="MST score"/>
+         <definition value="The sum of each component variable for the MST score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Malnutrition_Screening_Tool_(MST).Event_Series.Any_point_in_time_event.data.MST_score"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Malnutrition_Screening_Tool_(MST).Event_Series.Any_point_in_time_event.data.MST_score.value">
+         <path value="Malnutrition_Screening_Tool_(MST).Event_Series.Any_point_in_time_event.data.MST_score.value"/>
+         <short value="MST score"/>
+         <definition value="The sum of each component variable for the MST score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Malnutrition_Screening_Tool_(MST).Event_Series.Any_point_in_time_event.data.MST_score.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

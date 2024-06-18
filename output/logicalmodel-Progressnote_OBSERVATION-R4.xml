@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Progressnote_OBSERVATION-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-progressnote_OBSERVATION-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.progress_note.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Progressnote_OBSERVATION"/>
+   <title value="Progress note"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Narrative description of health-related events at a specific point-in-time about an individual, specifically from the perspective of a healthcare provider."/>
+   <purpose value="To manually synthesise and record a narrative description about health related events that are current at the time of recording, from the perspective of a healthcare provider."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Progress_note">
+         <path value="Progress_note"/>
+         <short value="Progress note"/>
+         <definition value="Narrative description of health-related events at a specific point-in-time about an individual, specifically from the perspective of a healthcare provider."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Progress_note"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Progress_note.protocol">
+         <path value="Progress_note.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Progress_note.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Progress_note.protocol.Extension">
+         <path value="Progress_note.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models or formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Progress_note.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Progress_note.Event_Series">
+         <path value="Progress_note.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Progress_note.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Progress_note.Event_Series.Any_event">
+         <path value="Progress_note.Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Progress_note.Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Progress_note.Event_Series.Any_event.data">
+         <path value="Progress_note.Event_Series.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Progress_note.Event_Series.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Progress_note.Event_Series.Any_event.data.Progress_Note">
+         <path value="Progress_note.Event_Series.Any_event.data.Progress_Note"/>
+         <short value="Progress Note"/>
+         <definition value="Narrative description of health-related events, health status, findings, opinions at a specific point-in-time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Progress_note.Event_Series.Any_event.data.Progress_Note"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Progress_note.Event_Series.Any_event.data.Progress_Note.value">
+         <path value="Progress_note.Event_Series.Any_event.data.Progress_Note.value"/>
+         <short value="Progress Note"/>
+         <definition value="Narrative description of health-related events, health status, findings, opinions at a specific point-in-time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Progress_note.Event_Series.Any_event.data.Progress_Note.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

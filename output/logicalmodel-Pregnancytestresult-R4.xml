@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Pregnancytestresult-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-pregnancytestresult-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.pregnancy_test.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Pregnancytestresult"/>
+   <title value="Pregnancy test result"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Result of a simple test to detect early pregnancy, usually a commercial product tested on urine."/>
+   <purpose value="To record the result of a simple test to detect early pregnancy, usually a commercial product tested on urine."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Pregnancy_test_result">
+         <path value="Pregnancy_test_result"/>
+         <short value="Pregnancy test result"/>
+         <definition value="Result of a simple test to detect early pregnancy, usually a commercial product tested on urine."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_test_result"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_test_result.List">
+         <path value="Pregnancy_test_result.List"/>
+         <short value="List"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_test_result.List"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_test_result.List.Device">
+         <path value="Pregnancy_test_result.List.Device"/>
+         <short value="Device"/>
+         <definition value="Identification of the product used for the test."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pregnancy_test_result.List.Device"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Pregnancy_test_result.List.Method">
+         <path value="Pregnancy_test_result.List.Method"/>
+         <short value="Method"/>
+         <definition value="Description of the method used to perform the test."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_test_result.List.Method"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_test_result.List.Method.value">
+         <path value="Pregnancy_test_result.List.Method.value"/>
+         <short value="Method"/>
+         <definition value="Description of the method used to perform the test."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_test_result.List.Method.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_test_result.Event_Series">
+         <path value="Pregnancy_test_result.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_test_result.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_test_result.Event_Series.Point_in_time">
+         <path value="Pregnancy_test_result.Event_Series.Point_in_time"/>
+         <short value="Point in time"/>
+         <definition value="Default, unspecified point in time event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pregnancy_test_result.Event_Series.Point_in_time"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_test_result.Event_Series.Point_in_time.List">
+         <path value="Pregnancy_test_result.Event_Series.Point_in_time.List"/>
+         <short value="List"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_test_result.Event_Series.Point_in_time.List"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_test_result.Event_Series.Point_in_time.List.Result">
+         <path value="Pregnancy_test_result.Event_Series.Point_in_time.List.Result"/>
+         <short value="Result"/>
+         <definition value="The result of the test."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_test_result.Event_Series.Point_in_time.List.Result"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_test_result.Event_Series.Point_in_time.List.Result.value">
+         <path value="Pregnancy_test_result.Event_Series.Point_in_time.List.Result.value"/>
+         <short value="Result"/>
+         <definition value="The result of the test."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_test_result.Event_Series.Point_in_time.List.Result.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_test_result.Event_Series.Point_in_time.List.Image_representation">
+         <path value="Pregnancy_test_result.Event_Series.Point_in_time.List.Image_representation"/>
+         <short value="Image representation"/>
+         <definition value="An image of the test result."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pregnancy_test_result.Event_Series.Point_in_time.List.Image_representation"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+   </snapshot>
+</StructureDefinition>

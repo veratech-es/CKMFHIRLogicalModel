@@ -1,0 +1,970 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Transfusion-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-transfusion-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-ACTION.transfusion.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Transfusion"/>
+   <title value="Transfusion"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Recording the actions taken during transfusion."/>
+   <purpose value="For recording the actions taken during transfusion."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Transfusion">
+         <path value="Transfusion"/>
+         <short value="Transfusion"/>
+         <definition value="Recording the actions taken during transfusion."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion.description">
+         <path value="Transfusion.description"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion.description.Type_of_blood_unit">
+         <path value="Transfusion.description.Type_of_blood_unit"/>
+         <short value="Type of blood unit"/>
+         <definition value="The blood product transfused."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.description.Type_of_blood_unit"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Transfusion.description.Type_of_blood_unit.value">
+         <path value="Transfusion.description.Type_of_blood_unit.value"/>
+         <short value="Type of blood unit"/>
+         <definition value="The blood product transfused."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.description.Type_of_blood_unit.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion.description.Administration_details">
+         <path value="Transfusion.description.Administration_details"/>
+         <short value="Administration details"/>
+         <definition value="Details about the administration."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.description.Administration_details"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion.description.Administration_details.Sequence_number">
+         <path value="Transfusion.description.Administration_details.Sequence_number"/>
+         <short value="Sequence number"/>
+         <definition value="The number of the unit completed or commenced."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.description.Administration_details.Sequence_number"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Transfusion.description.Administration_details.Sequence_number.value">
+         <path value="Transfusion.description.Administration_details.Sequence_number.value"/>
+         <short value="Sequence number"/>
+         <definition value="The number of the unit completed or commenced."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.description.Administration_details.Sequence_number.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion.description.Administration_details.Proportion_administered">
+         <path value="Transfusion.description.Administration_details.Proportion_administered"/>
+         <short value="Proportion administered"/>
+         <definition value="The proportion of the unit(s) administered."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.description.Administration_details.Proportion_administered"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Transfusion.description.Administration_details.Proportion_administered.value">
+         <path value="Transfusion.description.Administration_details.Proportion_administered.value"/>
+         <short value="Proportion administered"/>
+         <definition value="The proportion of the unit(s) administered."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.description.Administration_details.Proportion_administered.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Ratio"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion.description.Reason">
+         <path value="Transfusion.description.Reason"/>
+         <short value="Reason"/>
+         <definition value="Reason for action."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.description.Reason"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Transfusion.description.Reason.value">
+         <path value="Transfusion.description.Reason.value"/>
+         <short value="Reason"/>
+         <definition value="Reason for action."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.description.Reason.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion.description.Reaction_details">
+         <path value="Transfusion.description.Reaction_details"/>
+         <short value="Reaction details"/>
+         <definition value="Any details of a reaction."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.description.Reaction_details"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion.description.Reaction_details.Clinical_description">
+         <path value="Transfusion.description.Reaction_details.Clinical_description"/>
+         <short value="Clinical description"/>
+         <definition value="Any reaction to the transfusion."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.description.Reaction_details.Clinical_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Transfusion.description.Reaction_details.Clinical_description.value">
+         <path value="Transfusion.description.Reaction_details.Clinical_description.value"/>
+         <short value="Clinical description"/>
+         <definition value="Any reaction to the transfusion."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.description.Reaction_details.Clinical_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion.description.Related_records">
+         <path value="Transfusion.description.Related_records"/>
+         <short value="Related records"/>
+         <definition value="A pointer to any related observations or record entries."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.description.Related_records"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Transfusion.description.Related_records.value">
+         <path value="Transfusion.description.Related_records.value"/>
+         <short value="Related records"/>
+         <definition value="A pointer to any related observations or record entries."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.description.Related_records.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="string"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion.description.Country_of_origin_of_blood_product">
+         <path value="Transfusion.description.Country_of_origin_of_blood_product"/>
+         <short value="Country of origin of blood product"/>
+         <definition value="The country of origin of the blood product."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.description.Country_of_origin_of_blood_product"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Transfusion.description.Country_of_origin_of_blood_product.value">
+         <path value="Transfusion.description.Country_of_origin_of_blood_product.value"/>
+         <short value="Country of origin of blood product"/>
+         <definition value="The country of origin of the blood product."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.description.Country_of_origin_of_blood_product.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion.Planned">
+         <path value="Transfusion.Planned"/>
+         <short value="Planned"/>
+         <definition value="Transfusion has been planned."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.Planned"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion.ism_transition_Planned.current_state">
+         <path value="Transfusion.ism_transition_Planned.current_state"/>
+         <short value="Planned"/>
+         <definition value="Transfusion has been planned."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.ism_transition_Planned.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion.ism_transition_Planned.careflow_step">
+         <path value="Transfusion.ism_transition_Planned.careflow_step"/>
+         <short value="Planned"/>
+         <definition value="Transfusion has been planned."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.ism_transition_Planned.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion.Prepared_(Matching)">
+         <path value="Transfusion.Prepared_(Matching)"/>
+         <short value="Prepared (Matching)"/>
+         <definition value="Blood sent for testing appropriate blood products."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.Prepared_(Matching)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion.ism_transition_Prepared_(Matching).current_state">
+         <path value="Transfusion.ism_transition_Prepared_(Matching).current_state"/>
+         <short value="Prepared (Matching)"/>
+         <definition value="Blood sent for testing appropriate blood products."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.ism_transition_Prepared_(Matching).current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion.ism_transition_Prepared_(Matching).careflow_step">
+         <path value="Transfusion.ism_transition_Prepared_(Matching).careflow_step"/>
+         <short value="Prepared (Matching)"/>
+         <definition value="Blood sent for testing appropriate blood products."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.ism_transition_Prepared_(Matching).careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion.Consent_obtained">
+         <path value="Transfusion.Consent_obtained"/>
+         <short value="Consent obtained"/>
+         <definition value="Consent for the transfusion has been obtained."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.Consent_obtained"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion.ism_transition_Consent_obtained.current_state">
+         <path value="Transfusion.ism_transition_Consent_obtained.current_state"/>
+         <short value="Consent obtained"/>
+         <definition value="Consent for the transfusion has been obtained."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.ism_transition_Consent_obtained.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion.ism_transition_Consent_obtained.careflow_step">
+         <path value="Transfusion.ism_transition_Consent_obtained.careflow_step"/>
+         <short value="Consent obtained"/>
+         <definition value="Consent for the transfusion has been obtained."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.ism_transition_Consent_obtained.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion.Postponed">
+         <path value="Transfusion.Postponed"/>
+         <short value="Postponed"/>
+         <definition value="Transfusion has been postponed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.Postponed"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion.ism_transition_Postponed.current_state">
+         <path value="Transfusion.ism_transition_Postponed.current_state"/>
+         <short value="Postponed"/>
+         <definition value="Transfusion has been postponed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.ism_transition_Postponed.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion.ism_transition_Postponed.careflow_step">
+         <path value="Transfusion.ism_transition_Postponed.careflow_step"/>
+         <short value="Postponed"/>
+         <definition value="Transfusion has been postponed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.ism_transition_Postponed.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion.Cancelled">
+         <path value="Transfusion.Cancelled"/>
+         <short value="Cancelled"/>
+         <definition value="The transfusion has been cancelled as no longer appropriate or required."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.Cancelled"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion.ism_transition_Cancelled.current_state">
+         <path value="Transfusion.ism_transition_Cancelled.current_state"/>
+         <short value="Cancelled"/>
+         <definition value="The transfusion has been cancelled as no longer appropriate or required."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.ism_transition_Cancelled.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion.ism_transition_Cancelled.careflow_step">
+         <path value="Transfusion.ism_transition_Cancelled.careflow_step"/>
+         <short value="Cancelled"/>
+         <definition value="The transfusion has been cancelled as no longer appropriate or required."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.ism_transition_Cancelled.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion.Blood_products_ordered">
+         <path value="Transfusion.Blood_products_ordered"/>
+         <short value="Blood products ordered"/>
+         <definition value="The blood products have been ordered."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.Blood_products_ordered"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion.ism_transition_Blood_products_ordered.current_state">
+         <path value="Transfusion.ism_transition_Blood_products_ordered.current_state"/>
+         <short value="Blood products ordered"/>
+         <definition value="The blood products have been ordered."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.ism_transition_Blood_products_ordered.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion.ism_transition_Blood_products_ordered.careflow_step">
+         <path value="Transfusion.ism_transition_Blood_products_ordered.careflow_step"/>
+         <short value="Blood products ordered"/>
+         <definition value="The blood products have been ordered."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.ism_transition_Blood_products_ordered.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion.Blood_and_patient_identification_checked">
+         <path value="Transfusion.Blood_and_patient_identification_checked"/>
+         <short value="Blood and patient identification checked"/>
+         <definition value="The transfusion product identification and patient identification have been matched."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.Blood_and_patient_identification_checked"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion.ism_transition_Blood_and_patient_identification_checked.current_state">
+         <path value="Transfusion.ism_transition_Blood_and_patient_identification_checked.current_state"/>
+         <short value="Blood and patient identification checked"/>
+         <definition value="The transfusion product identification and patient identification have been matched."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.ism_transition_Blood_and_patient_identification_checked.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion.ism_transition_Blood_and_patient_identification_checked.careflow_step">
+         <path value="Transfusion.ism_transition_Blood_and_patient_identification_checked.careflow_step"/>
+         <short value="Blood and patient identification checked"/>
+         <definition value="The transfusion product identification and patient identification have been matched."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.ism_transition_Blood_and_patient_identification_checked.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion.Transfusion_unit_commenced">
+         <path value="Transfusion.Transfusion_unit_commenced"/>
+         <short value="Transfusion unit commenced"/>
+         <definition value="Transfusion has begun on a unit of blood product."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.Transfusion_unit_commenced"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion.ism_transition_Transfusion_unit_commenced.current_state">
+         <path value="Transfusion.ism_transition_Transfusion_unit_commenced.current_state"/>
+         <short value="Transfusion unit commenced"/>
+         <definition value="Transfusion has begun on a unit of blood product."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.ism_transition_Transfusion_unit_commenced.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion.ism_transition_Transfusion_unit_commenced.careflow_step">
+         <path value="Transfusion.ism_transition_Transfusion_unit_commenced.careflow_step"/>
+         <short value="Transfusion unit commenced"/>
+         <definition value="Transfusion has begun on a unit of blood product."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.ism_transition_Transfusion_unit_commenced.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion.Transfusion_unit_completed">
+         <path value="Transfusion.Transfusion_unit_completed"/>
+         <short value="Transfusion unit completed"/>
+         <definition value="A unit of blood product has been transfused."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.Transfusion_unit_completed"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion.ism_transition_Transfusion_unit_completed.current_state">
+         <path value="Transfusion.ism_transition_Transfusion_unit_completed.current_state"/>
+         <short value="Transfusion unit completed"/>
+         <definition value="A unit of blood product has been transfused."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.ism_transition_Transfusion_unit_completed.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion.ism_transition_Transfusion_unit_completed.careflow_step">
+         <path value="Transfusion.ism_transition_Transfusion_unit_completed.careflow_step"/>
+         <short value="Transfusion unit completed"/>
+         <definition value="A unit of blood product has been transfused."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.ism_transition_Transfusion_unit_completed.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion.Transfusion_suspended">
+         <path value="Transfusion.Transfusion_suspended"/>
+         <short value="Transfusion suspended"/>
+         <definition value="The transfusion has been suspended and may restart."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.Transfusion_suspended"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion.ism_transition_Transfusion_suspended.current_state">
+         <path value="Transfusion.ism_transition_Transfusion_suspended.current_state"/>
+         <short value="Transfusion suspended"/>
+         <definition value="The transfusion has been suspended and may restart."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.ism_transition_Transfusion_suspended.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion.ism_transition_Transfusion_suspended.careflow_step">
+         <path value="Transfusion.ism_transition_Transfusion_suspended.careflow_step"/>
+         <short value="Transfusion suspended"/>
+         <definition value="The transfusion has been suspended and may restart."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.ism_transition_Transfusion_suspended.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion.Transfusion_stopped">
+         <path value="Transfusion.Transfusion_stopped"/>
+         <short value="Transfusion stopped"/>
+         <definition value="Transfusion has been ceased and will not continue."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.Transfusion_stopped"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion.ism_transition_Transfusion_stopped.current_state">
+         <path value="Transfusion.ism_transition_Transfusion_stopped.current_state"/>
+         <short value="Transfusion stopped"/>
+         <definition value="Transfusion has been ceased and will not continue."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.ism_transition_Transfusion_stopped.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion.ism_transition_Transfusion_stopped.careflow_step">
+         <path value="Transfusion.ism_transition_Transfusion_stopped.careflow_step"/>
+         <short value="Transfusion stopped"/>
+         <definition value="Transfusion has been ceased and will not continue."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.ism_transition_Transfusion_stopped.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion.Transfusion_has_been_completed">
+         <path value="Transfusion.Transfusion_has_been_completed"/>
+         <short value="Transfusion has been completed"/>
+         <definition value="The transfusion has been completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.Transfusion_has_been_completed"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion.ism_transition_Transfusion_has_been_completed.current_state">
+         <path value="Transfusion.ism_transition_Transfusion_has_been_completed.current_state"/>
+         <short value="Transfusion has been completed"/>
+         <definition value="The transfusion has been completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.ism_transition_Transfusion_has_been_completed.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Transfusion.ism_transition_Transfusion_has_been_completed.careflow_step">
+         <path value="Transfusion.ism_transition_Transfusion_has_been_completed.careflow_step"/>
+         <short value="Transfusion has been completed"/>
+         <definition value="The transfusion has been completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Transfusion.ism_transition_Transfusion_has_been_completed.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

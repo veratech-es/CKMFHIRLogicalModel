@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Obstetricsummary-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-obstetricsummary-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-EVALUATION.obstetric_summary.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Obstetricsummary"/>
+   <title value="Obstetric summary"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Summary or persistent information about the numbers of key obstetric events."/>
+   <purpose value="To record summary or persistent information about the numbers of key obstetric events that may impact risk assessment or decision support."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Obstetric_summary">
+         <path value="Obstetric_summary"/>
+         <short value="Obstetric summary"/>
+         <definition value="Summary or persistent information about the numbers of key obstetric events."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Obstetric_summary"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Obstetric_summary.protocol">
+         <path value="Obstetric_summary.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Obstetric_summary.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Obstetric_summary.protocol.Last_updated">
+         <path value="Obstetric_summary.protocol.Last_updated"/>
+         <short value="Last updated"/>
+         <definition value="The date this summary was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Obstetric_summary.protocol.Last_updated"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Obstetric_summary.protocol.Last_updated.value">
+         <path value="Obstetric_summary.protocol.Last_updated.value"/>
+         <short value="Last updated"/>
+         <definition value="The date this summary was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Obstetric_summary.protocol.Last_updated.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Obstetric_summary.protocol.Definition_of_viability">
+         <path value="Obstetric_summary.protocol.Definition_of_viability"/>
+         <short value="Definition of viability"/>
+         <definition value="The number of weeks of gestation that differentiates between a miscarriage and a viable birth, that is used in the data collection."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Obstetric_summary.protocol.Definition_of_viability"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Obstetric_summary.protocol.Definition_of_viability.value_DV_DURATION">
+         <path value="Obstetric_summary.protocol.Definition_of_viability.value_DV_DURATION"/>
+         <short value="Definition of viability"/>
+         <definition value="The number of weeks of gestation that differentiates between a miscarriage and a viable birth, that is used in the data collection."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Obstetric_summary.protocol.Definition_of_viability.value_DV_DURATION"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Obstetric_summary.protocol.Definition_of_viability.value_DvQuantity">
+         <path value="Obstetric_summary.protocol.Definition_of_viability.value_DvQuantity"/>
+         <short value="Definition of viability"/>
+         <definition value="The number of weeks of gestation that differentiates between a miscarriage and a viable birth, that is used in the data collection."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Obstetric_summary.protocol.Definition_of_viability.value_DvQuantity"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Obstetric_summary.protocol.Extension">
+         <path value="Obstetric_summary.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Obstetric_summary.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Obstetric_summary.data">
+         <path value="Obstetric_summary.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Obstetric_summary.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Obstetric_summary.data.Description">
+         <path value="Obstetric_summary.data.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the overall obstetric history."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Obstetric_summary.data.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Obstetric_summary.data.Description.value">
+         <path value="Obstetric_summary.data.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the overall obstetric history."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Obstetric_summary.data.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Obstetric_summary.data.Gravidity">
+         <path value="Obstetric_summary.data.Gravidity"/>
+         <short value="Gravidity"/>
+         <definition value="Number of times a woman has been pregnant, current and past, regardless of the pregnancy outcome."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Obstetric_summary.data.Gravidity"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Obstetric_summary.data.Gravidity.value">
+         <path value="Obstetric_summary.data.Gravidity.value"/>
+         <short value="Gravidity"/>
+         <definition value="Number of times a woman has been pregnant, current and past, regardless of the pregnancy outcome."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Obstetric_summary.data.Gravidity.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Obstetric_summary.data.Parity">
+         <path value="Obstetric_summary.data.Parity"/>
+         <short value="Parity"/>
+         <definition value="Number of times a woman has given birth to a viable baby, regardless of the pregnancy outcome."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Obstetric_summary.data.Parity"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Obstetric_summary.data.Parity.value">
+         <path value="Obstetric_summary.data.Parity.value"/>
+         <short value="Parity"/>
+         <definition value="Number of times a woman has given birth to a viable baby, regardless of the pregnancy outcome."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Obstetric_summary.data.Parity.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Obstetric_summary.data.Term_births">
+         <path value="Obstetric_summary.data.Term_births"/>
+         <short value="Term births"/>
+         <definition value="Number of births at or after term."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Obstetric_summary.data.Term_births"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Obstetric_summary.data.Term_births.value">
+         <path value="Obstetric_summary.data.Term_births.value"/>
+         <short value="Term births"/>
+         <definition value="Number of births at or after term."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Obstetric_summary.data.Term_births.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Obstetric_summary.data.Preterm_births">
+         <path value="Obstetric_summary.data.Preterm_births"/>
+         <short value="Preterm births"/>
+         <definition value="Number of births before term."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Obstetric_summary.data.Preterm_births"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Obstetric_summary.data.Preterm_births.value">
+         <path value="Obstetric_summary.data.Preterm_births.value"/>
+         <short value="Preterm births"/>
+         <definition value="Number of births before term."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Obstetric_summary.data.Preterm_births.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Obstetric_summary.data.Abortions">
+         <path value="Obstetric_summary.data.Abortions"/>
+         <short value="Abortions"/>
+         <definition value="Number of pregnancies that do not reach viability from all causes, including spontaneous miscarriages, induced terminations and ectopic pregnancies."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Obstetric_summary.data.Abortions"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Obstetric_summary.data.Abortions.value">
+         <path value="Obstetric_summary.data.Abortions.value"/>
+         <short value="Abortions"/>
+         <definition value="Number of pregnancies that do not reach viability from all causes, including spontaneous miscarriages, induced terminations and ectopic pregnancies."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Obstetric_summary.data.Abortions.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Obstetric_summary.data.Miscarriages">
+         <path value="Obstetric_summary.data.Miscarriages"/>
+         <short value="Miscarriages"/>
+         <definition value="Number of times a woman has had a miscarriage."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Obstetric_summary.data.Miscarriages"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Obstetric_summary.data.Miscarriages.value">
+         <path value="Obstetric_summary.data.Miscarriages.value"/>
+         <short value="Miscarriages"/>
+         <definition value="Number of times a woman has had a miscarriage."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Obstetric_summary.data.Miscarriages.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Obstetric_summary.data.Terminations">
+         <path value="Obstetric_summary.data.Terminations"/>
+         <short value="Terminations"/>
+         <definition value="Number of times a woman has had an induced pregnancy termination, regardless of gestation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Obstetric_summary.data.Terminations"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Obstetric_summary.data.Terminations.value">
+         <path value="Obstetric_summary.data.Terminations.value"/>
+         <short value="Terminations"/>
+         <definition value="Number of times a woman has had an induced pregnancy termination, regardless of gestation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Obstetric_summary.data.Terminations.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Obstetric_summary.data.Ectopic_pregnancies">
+         <path value="Obstetric_summary.data.Ectopic_pregnancies"/>
+         <short value="Ectopic pregnancies"/>
+         <definition value="Number of ectopic pregnancies."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Obstetric_summary.data.Ectopic_pregnancies"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Obstetric_summary.data.Ectopic_pregnancies.value">
+         <path value="Obstetric_summary.data.Ectopic_pregnancies.value"/>
+         <short value="Ectopic pregnancies"/>
+         <definition value="Number of ectopic pregnancies."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Obstetric_summary.data.Ectopic_pregnancies.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Obstetric_summary.data.Live_births">
+         <path value="Obstetric_summary.data.Live_births"/>
+         <short value="Live births"/>
+         <definition value="Number of infants born alive."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Obstetric_summary.data.Live_births"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Obstetric_summary.data.Live_births.value">
+         <path value="Obstetric_summary.data.Live_births.value"/>
+         <short value="Live births"/>
+         <definition value="Number of infants born alive."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Obstetric_summary.data.Live_births.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Obstetric_summary.data.Multiple_births">
+         <path value="Obstetric_summary.data.Multiple_births"/>
+         <short value="Multiple births"/>
+         <definition value="Number of birth events in which more than one fetus has been born."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Obstetric_summary.data.Multiple_births"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Obstetric_summary.data.Multiple_births.value">
+         <path value="Obstetric_summary.data.Multiple_births.value"/>
+         <short value="Multiple births"/>
+         <definition value="Number of birth events in which more than one fetus has been born."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Obstetric_summary.data.Multiple_births.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Obstetric_summary.data.Stillbirths">
+         <path value="Obstetric_summary.data.Stillbirths"/>
+         <short value="Stillbirths"/>
+         <definition value="Number of stillbirths."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Obstetric_summary.data.Stillbirths"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Obstetric_summary.data.Stillbirths.value">
+         <path value="Obstetric_summary.data.Stillbirths.value"/>
+         <short value="Stillbirths"/>
+         <definition value="Number of stillbirths."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Obstetric_summary.data.Stillbirths.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Obstetric_summary.data.Neonatal_deaths">
+         <path value="Obstetric_summary.data.Neonatal_deaths"/>
+         <short value="Neonatal deaths"/>
+         <definition value="The number of neonatal deaths."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Obstetric_summary.data.Neonatal_deaths"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Obstetric_summary.data.Neonatal_deaths.value">
+         <path value="Obstetric_summary.data.Neonatal_deaths.value"/>
+         <short value="Neonatal deaths"/>
+         <definition value="The number of neonatal deaths."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Obstetric_summary.data.Neonatal_deaths.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Obstetric_summary.data.Caesarean_sections">
+         <path value="Obstetric_summary.data.Caesarean_sections"/>
+         <short value="Caesarean sections"/>
+         <definition value="Number of caesarean sections."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Obstetric_summary.data.Caesarean_sections"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Obstetric_summary.data.Caesarean_sections.value">
+         <path value="Obstetric_summary.data.Caesarean_sections.value"/>
+         <short value="Caesarean sections"/>
+         <definition value="Number of caesarean sections."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Obstetric_summary.data.Caesarean_sections.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Obstetric_summary.data.Comment">
+         <path value="Obstetric_summary.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the obstetric summary, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Obstetric_summary.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Obstetric_summary.data.Comment.value">
+         <path value="Obstetric_summary.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the obstetric summary, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Obstetric_summary.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

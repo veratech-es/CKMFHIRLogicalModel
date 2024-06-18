@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Hscore-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-hscore-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.hscore.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Hscore"/>
+   <title value="HScore"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Estimate an individual's risk of having reactive hemophagocytic syndrome.&#xD;&#xA;"/>
+   <purpose value="To record an estimation of an individual's risk of having reactive hemophagocytic syndrome."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="HScore">
+         <path value="HScore"/>
+         <short value="HScore"/>
+         <definition value="Estimate an individual's risk of having reactive hemophagocytic syndrome.&#xD;&#xA;"/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="HScore"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="HScore.protocol">
+         <path value="HScore.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HScore.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="HScore.protocol.Extension">
+         <path value="HScore.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models or formalisms.&#xD;&#xA;"/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="HScore.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="HScore.History">
+         <path value="HScore.History"/>
+         <short value="History"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HScore.History"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="HScore.History.Any_event">
+         <path value="HScore.History.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="HScore.History.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="HScore.History.Any_event.data">
+         <path value="HScore.History.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HScore.History.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="HScore.History.Any_event.data.Temperature">
+         <path value="HScore.History.Any_event.data.Temperature"/>
+         <short value="Temperature"/>
+         <definition value="Range category for the body temperature measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HScore.History.Any_event.data.Temperature"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="HScore.History.Any_event.data.Temperature.value">
+         <path value="HScore.History.Any_event.data.Temperature.value"/>
+         <short value="Temperature"/>
+         <definition value="Range category for the body temperature measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HScore.History.Any_event.data.Temperature.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="HScore.History.Any_event.data.Organomegaly">
+         <path value="HScore.History.Any_event.data.Organomegaly"/>
+         <short value="Organomegaly"/>
+         <definition value="Findings of any enlargement of the liver or/and spleen in the individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HScore.History.Any_event.data.Organomegaly"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="HScore.History.Any_event.data.Organomegaly.value">
+         <path value="HScore.History.Any_event.data.Organomegaly.value"/>
+         <short value="Organomegaly"/>
+         <definition value="Findings of any enlargement of the liver or/and spleen in the individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HScore.History.Any_event.data.Organomegaly.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="HScore.History.Any_event.data.Number_of_cytopenias">
+         <path value="HScore.History.Any_event.data.Number_of_cytopenias"/>
+         <short value="Number of cytopenias"/>
+         <definition value="Number of cytopenias present - in red cells, white cells and/or platelets."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HScore.History.Any_event.data.Number_of_cytopenias"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="HScore.History.Any_event.data.Number_of_cytopenias.value">
+         <path value="HScore.History.Any_event.data.Number_of_cytopenias.value"/>
+         <short value="Number of cytopenias"/>
+         <definition value="Number of cytopenias present - in red cells, white cells and/or platelets."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HScore.History.Any_event.data.Number_of_cytopenias.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="HScore.History.Any_event.data.Triglycerides">
+         <path value="HScore.History.Any_event.data.Triglycerides"/>
+         <short value="Triglycerides"/>
+         <definition value="The triglycerides category, measured in mmol/L or mg/dL."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HScore.History.Any_event.data.Triglycerides"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="HScore.History.Any_event.data.Triglycerides.value">
+         <path value="HScore.History.Any_event.data.Triglycerides.value"/>
+         <short value="Triglycerides"/>
+         <definition value="The triglycerides category, measured in mmol/L or mg/dL."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HScore.History.Any_event.data.Triglycerides.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="HScore.History.Any_event.data.Fibrinogen">
+         <path value="HScore.History.Any_event.data.Fibrinogen"/>
+         <short value="Fibrinogen"/>
+         <definition value="The fibrinogen category, measured in g/L or mg/dL."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HScore.History.Any_event.data.Fibrinogen"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="HScore.History.Any_event.data.Fibrinogen.value">
+         <path value="HScore.History.Any_event.data.Fibrinogen.value"/>
+         <short value="Fibrinogen"/>
+         <definition value="The fibrinogen category, measured in g/L or mg/dL."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HScore.History.Any_event.data.Fibrinogen.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="HScore.History.Any_event.data.Ferritin">
+         <path value="HScore.History.Any_event.data.Ferritin"/>
+         <short value="Ferritin"/>
+         <definition value="The ferritin category, measured in ng/mL or μg/L."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HScore.History.Any_event.data.Ferritin"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="HScore.History.Any_event.data.Ferritin.value">
+         <path value="HScore.History.Any_event.data.Ferritin.value"/>
+         <short value="Ferritin"/>
+         <definition value="The ferritin category, measured in ng/mL or μg/L."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HScore.History.Any_event.data.Ferritin.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="HScore.History.Any_event.data.Aspartate_aminotransferase">
+         <path value="HScore.History.Any_event.data.Aspartate_aminotransferase"/>
+         <short value="Aspartate aminotransferase"/>
+         <definition value="An individvals serum aspartate aminotransferase level measured in U/L."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HScore.History.Any_event.data.Aspartate_aminotransferase"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="HScore.History.Any_event.data.Aspartate_aminotransferase.value">
+         <path value="HScore.History.Any_event.data.Aspartate_aminotransferase.value"/>
+         <short value="Aspartate aminotransferase"/>
+         <definition value="An individvals serum aspartate aminotransferase level measured in U/L."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HScore.History.Any_event.data.Aspartate_aminotransferase.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="HScore.History.Any_event.data.Haemophagocytosis_on_bone_marrow_aspirate">
+         <path value="HScore.History.Any_event.data.Haemophagocytosis_on_bone_marrow_aspirate"/>
+         <short value="Haemophagocytosis on bone marrow aspirate"/>
+         <definition value="Presence of hemophagocytosis features in bone marrow aspirate."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HScore.History.Any_event.data.Haemophagocytosis_on_bone_marrow_aspirate"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="HScore.History.Any_event.data.Haemophagocytosis_on_bone_marrow_aspirate.value">
+         <path value="HScore.History.Any_event.data.Haemophagocytosis_on_bone_marrow_aspirate.value"/>
+         <short value="Haemophagocytosis on bone marrow aspirate"/>
+         <definition value="Presence of hemophagocytosis features in bone marrow aspirate."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HScore.History.Any_event.data.Haemophagocytosis_on_bone_marrow_aspirate.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="HScore.History.Any_event.data.Known_immunosuppression">
+         <path value="HScore.History.Any_event.data.Known_immunosuppression"/>
+         <short value="Known immunosuppression"/>
+         <definition value="Presence of known underlying immunosuppression."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HScore.History.Any_event.data.Known_immunosuppression"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="HScore.History.Any_event.data.Known_immunosuppression.value">
+         <path value="HScore.History.Any_event.data.Known_immunosuppression.value"/>
+         <short value="Known immunosuppression"/>
+         <definition value="Presence of known underlying immunosuppression."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HScore.History.Any_event.data.Known_immunosuppression.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="HScore.History.Any_event.data.Total_HScore">
+         <path value="HScore.History.Any_event.data.Total_HScore"/>
+         <short value="Total HScore"/>
+         <definition value="The total sum for each component variable for the HScore."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HScore.History.Any_event.data.Total_HScore"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="HScore.History.Any_event.data.Total_HScore.value">
+         <path value="HScore.History.Any_event.data.Total_HScore.value"/>
+         <short value="Total HScore"/>
+         <definition value="The total sum for each component variable for the HScore."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HScore.History.Any_event.data.Total_HScore.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="HScore.History.Any_event.data.Probability_of_HS">
+         <path value="HScore.History.Any_event.data.Probability_of_HS"/>
+         <short value="Probability of HS"/>
+         <definition value="Probability of an individual having reactive hemophagocytic syndrome."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HScore.History.Any_event.data.Probability_of_HS"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="HScore.History.Any_event.data.Probability_of_HS.value">
+         <path value="HScore.History.Any_event.data.Probability_of_HS.value"/>
+         <short value="Probability of HS"/>
+         <definition value="Probability of an individual having reactive hemophagocytic syndrome."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="HScore.History.Any_event.data.Probability_of_HS.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Ratio"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

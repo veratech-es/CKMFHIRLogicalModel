@@ -1,0 +1,874 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Imagingexamination-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-imagingexamination-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-ACTION.imaging_exam.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Imagingexamination"/>
+   <title value="Imaging examination"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Clinical activity about performing an imaging examination."/>
+   <purpose value="To record activity regarding the performance of imaging examinations."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Imaging_examination">
+         <path value="Imaging_examination"/>
+         <short value="Imaging examination"/>
+         <definition value="Clinical activity about performing an imaging examination."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination.protocol">
+         <path value="Imaging_examination.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination.protocol.Start_date_time">
+         <path value="Imaging_examination.protocol.Start_date_time"/>
+         <short value="Start date/time"/>
+         <definition value="The start date and/or time for the procedure. This will indicate the scheduled date/time when recorded against the 'Appointment scheduled' care pathway step or the actual Start date/time in the 'Examination performed' step."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination.protocol.Start_date_time"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_examination.protocol.Start_date_time.value">
+         <path value="Imaging_examination.protocol.Start_date_time.value"/>
+         <short value="Start date/time"/>
+         <definition value="The start date and/or time for the procedure. This will indicate the scheduled date/time when recorded against the 'Appointment scheduled' care pathway step or the actual Start date/time in the 'Examination performed' step."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination.protocol.Start_date_time.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination.description">
+         <path value="Imaging_examination.description"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination.description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination.description.Examination_name">
+         <path value="Imaging_examination.description.Examination_name"/>
+         <short value="Examination name"/>
+         <definition value="The name of the examination (to be) performed. Coding of the specific procedure with a terminology is preferred, where possible."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination.description.Examination_name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_examination.description.Examination_name.value">
+         <path value="Imaging_examination.description.Examination_name.value"/>
+         <short value="Examination name"/>
+         <definition value="The name of the examination (to be) performed. Coding of the specific procedure with a terminology is preferred, where possible."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination.description.Examination_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination.description.Description">
+         <path value="Imaging_examination.description.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the activity or care pathway step for the identified examination, for example description about the performance and findings from the the examination, the failed attempt or the cancellation of the examination."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination.description.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_examination.description.Description.value">
+         <path value="Imaging_examination.description.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the activity or care pathway step for the identified examination, for example description about the performance and findings from the the examination, the failed attempt or the cancellation of the examination."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination.description.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination.description.Reason">
+         <path value="Imaging_examination.description.Reason"/>
+         <short value="Reason"/>
+         <definition value="Reason that the activity or care pathway step for the identified examination was carried out, for example, the reason for the cancellation or suspension of the examination."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination.description.Reason"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_examination.description.Reason.value">
+         <path value="Imaging_examination.description.Reason.value"/>
+         <short value="Reason"/>
+         <definition value="Reason that the activity or care pathway step for the identified examination was carried out, for example, the reason for the cancellation or suspension of the examination."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination.description.Reason.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination.description.Anatomical_location">
+         <path value="Imaging_examination.description.Anatomical_location"/>
+         <short value="Anatomical location"/>
+         <definition value="Structured information about the specific anatomical location of the examination."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Imaging_examination.description.Anatomical_location"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination.description.Examination_detail">
+         <path value="Imaging_examination.description.Examination_detail"/>
+         <short value="Examination detail"/>
+         <definition value="Structured information about the examination. Use to capture detailed, structured information about method &amp; technique etc."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Imaging_examination.description.Examination_detail"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination.description.Comment">
+         <path value="Imaging_examination.description.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the activity or care pathway step not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination.description.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_examination.description.Comment.value">
+         <path value="Imaging_examination.description.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the activity or care pathway step not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination.description.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination.Examination_planned">
+         <path value="Imaging_examination.Examination_planned"/>
+         <short value="Examination planned"/>
+         <definition value="Imaging examination is planned."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination.Examination_planned"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination.ism_transition_Examination_planned.current_state">
+         <path value="Imaging_examination.ism_transition_Examination_planned.current_state"/>
+         <short value="Examination planned"/>
+         <definition value="Imaging examination is planned."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination.ism_transition_Examination_planned.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination.ism_transition_Examination_planned.careflow_step">
+         <path value="Imaging_examination.ism_transition_Examination_planned.careflow_step"/>
+         <short value="Examination planned"/>
+         <definition value="Imaging examination is planned."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination.ism_transition_Examination_planned.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination.Examination_requested">
+         <path value="Imaging_examination.Examination_requested"/>
+         <short value="Examination requested"/>
+         <definition value="Imaging examination has been requested."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination.Examination_requested"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination.ism_transition_Examination_requested.current_state">
+         <path value="Imaging_examination.ism_transition_Examination_requested.current_state"/>
+         <short value="Examination requested"/>
+         <definition value="Imaging examination has been requested."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination.ism_transition_Examination_requested.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination.ism_transition_Examination_requested.careflow_step">
+         <path value="Imaging_examination.ism_transition_Examination_requested.careflow_step"/>
+         <short value="Examination requested"/>
+         <definition value="Imaging examination has been requested."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination.ism_transition_Examination_requested.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination.Examination_postponed">
+         <path value="Imaging_examination.Examination_postponed"/>
+         <short value="Examination postponed"/>
+         <definition value="The examination has been postponed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination.Examination_postponed"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination.ism_transition_Examination_postponed.current_state">
+         <path value="Imaging_examination.ism_transition_Examination_postponed.current_state"/>
+         <short value="Examination postponed"/>
+         <definition value="The examination has been postponed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination.ism_transition_Examination_postponed.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination.ism_transition_Examination_postponed.careflow_step">
+         <path value="Imaging_examination.ism_transition_Examination_postponed.careflow_step"/>
+         <short value="Examination postponed"/>
+         <definition value="The examination has been postponed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination.ism_transition_Examination_postponed.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination.Examination_cancelled">
+         <path value="Imaging_examination.Examination_cancelled"/>
+         <short value="Examination cancelled"/>
+         <definition value="The planned examination has been cancelled prior to commencement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination.Examination_cancelled"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination.ism_transition_Examination_cancelled.current_state">
+         <path value="Imaging_examination.ism_transition_Examination_cancelled.current_state"/>
+         <short value="Examination cancelled"/>
+         <definition value="The planned examination has been cancelled prior to commencement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination.ism_transition_Examination_cancelled.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination.ism_transition_Examination_cancelled.careflow_step">
+         <path value="Imaging_examination.ism_transition_Examination_cancelled.careflow_step"/>
+         <short value="Examination cancelled"/>
+         <definition value="The planned examination has been cancelled prior to commencement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination.ism_transition_Examination_cancelled.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination.Appointment_scheduled">
+         <path value="Imaging_examination.Appointment_scheduled"/>
+         <short value="Appointment scheduled"/>
+         <definition value="Imaging examination appointment has been made."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination.Appointment_scheduled"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination.ism_transition_Appointment_scheduled.current_state">
+         <path value="Imaging_examination.ism_transition_Appointment_scheduled.current_state"/>
+         <short value="Appointment scheduled"/>
+         <definition value="Imaging examination appointment has been made."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination.ism_transition_Appointment_scheduled.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination.ism_transition_Appointment_scheduled.careflow_step">
+         <path value="Imaging_examination.ism_transition_Appointment_scheduled.careflow_step"/>
+         <short value="Appointment scheduled"/>
+         <definition value="Imaging examination appointment has been made."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination.ism_transition_Appointment_scheduled.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination.Appointment_rescheduled">
+         <path value="Imaging_examination.Appointment_rescheduled"/>
+         <short value="Appointment rescheduled"/>
+         <definition value="Appointment for imaging examination has been rescheduled."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination.Appointment_rescheduled"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination.ism_transition_Appointment_rescheduled.current_state">
+         <path value="Imaging_examination.ism_transition_Appointment_rescheduled.current_state"/>
+         <short value="Appointment rescheduled"/>
+         <definition value="Appointment for imaging examination has been rescheduled."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination.ism_transition_Appointment_rescheduled.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination.ism_transition_Appointment_rescheduled.careflow_step">
+         <path value="Imaging_examination.ism_transition_Appointment_rescheduled.careflow_step"/>
+         <short value="Appointment rescheduled"/>
+         <definition value="Appointment for imaging examination has been rescheduled."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination.ism_transition_Appointment_rescheduled.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination.Examination_performed">
+         <path value="Imaging_examination.Examination_performed"/>
+         <short value="Examination performed"/>
+         <definition value="The examation was performed but related activities not completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination.Examination_performed"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination.ism_transition_Examination_performed.current_state">
+         <path value="Imaging_examination.ism_transition_Examination_performed.current_state"/>
+         <short value="Examination performed"/>
+         <definition value="The examation was performed but related activities not completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination.ism_transition_Examination_performed.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination.ism_transition_Examination_performed.careflow_step">
+         <path value="Imaging_examination.ism_transition_Examination_performed.careflow_step"/>
+         <short value="Examination performed"/>
+         <definition value="The examation was performed but related activities not completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination.ism_transition_Examination_performed.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination.Failed_attempt">
+         <path value="Imaging_examination.Failed_attempt"/>
+         <short value="Failed attempt"/>
+         <definition value="The examation was commenced but not completed successfully."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination.Failed_attempt"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination.ism_transition_Failed_attempt.current_state">
+         <path value="Imaging_examination.ism_transition_Failed_attempt.current_state"/>
+         <short value="Failed attempt"/>
+         <definition value="The examation was commenced but not completed successfully."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination.ism_transition_Failed_attempt.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination.ism_transition_Failed_attempt.careflow_step">
+         <path value="Imaging_examination.ism_transition_Failed_attempt.careflow_step"/>
+         <short value="Failed attempt"/>
+         <definition value="The examation was commenced but not completed successfully."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination.ism_transition_Failed_attempt.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination.Examination_suspended">
+         <path value="Imaging_examination.Examination_suspended"/>
+         <short value="Examination suspended"/>
+         <definition value="The examination has been suspended."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination.Examination_suspended"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination.ism_transition_Examination_suspended.current_state">
+         <path value="Imaging_examination.ism_transition_Examination_suspended.current_state"/>
+         <short value="Examination suspended"/>
+         <definition value="The examination has been suspended."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination.ism_transition_Examination_suspended.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination.ism_transition_Examination_suspended.careflow_step">
+         <path value="Imaging_examination.ism_transition_Examination_suspended.careflow_step"/>
+         <short value="Examination suspended"/>
+         <definition value="The examination has been suspended."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination.ism_transition_Examination_suspended.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination.Examination_aborted">
+         <path value="Imaging_examination.Examination_aborted"/>
+         <short value="Examination aborted"/>
+         <definition value="The examination has been aborted."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination.Examination_aborted"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination.ism_transition_Examination_aborted.current_state">
+         <path value="Imaging_examination.ism_transition_Examination_aborted.current_state"/>
+         <short value="Examination aborted"/>
+         <definition value="The examination has been aborted."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination.ism_transition_Examination_aborted.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination.ism_transition_Examination_aborted.careflow_step">
+         <path value="Imaging_examination.ism_transition_Examination_aborted.careflow_step"/>
+         <short value="Examination aborted"/>
+         <definition value="The examination has been aborted."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination.ism_transition_Examination_aborted.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination.Examination_complete">
+         <path value="Imaging_examination.Examination_complete"/>
+         <short value="Examination complete"/>
+         <definition value="The imaging examination has been performed and all associated activities completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination.Examination_complete"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination.ism_transition_Examination_complete.current_state">
+         <path value="Imaging_examination.ism_transition_Examination_complete.current_state"/>
+         <short value="Examination complete"/>
+         <definition value="The imaging examination has been performed and all associated activities completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination.ism_transition_Examination_complete.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination.ism_transition_Examination_complete.careflow_step">
+         <path value="Imaging_examination.ism_transition_Examination_complete.careflow_step"/>
+         <short value="Examination complete"/>
+         <definition value="The imaging examination has been performed and all associated activities completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination.ism_transition_Examination_complete.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

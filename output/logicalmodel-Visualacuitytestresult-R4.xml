@@ -1,0 +1,1012 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Visualacuitytestresult-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-visualacuitytestresult-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.visual_acuity.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Visualacuitytestresult"/>
+   <title value="Visual acuity test result"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Visual acuity is a measure of the spatial resolution of the visual processing system."/>
+   <purpose value="For recording the results of both near and distance visual acuity testing, normally measured by testing the subject's ability to read a standard test pattern at a defined distance."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Visual_acuity_test_result">
+         <path value="Visual_acuity_test_result"/>
+         <short value="Visual acuity test result"/>
+         <definition value="Visual acuity is a measure of the spatial resolution of the visual processing system."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_acuity_test_result.protocol">
+         <path value="Visual_acuity_test_result.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_acuity_test_result.protocol.Testing_Distance">
+         <path value="Visual_acuity_test_result.protocol.Testing_Distance"/>
+         <short value="Testing Distance"/>
+         <definition value="The distance at which the subject's visual acuity was measured."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.protocol.Testing_Distance"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Visual_acuity_test_result.protocol.Testing_Distance.value">
+         <path value="Visual_acuity_test_result.protocol.Testing_Distance.value"/>
+         <short value="Testing Distance"/>
+         <definition value="The distance at which the subject's visual acuity was measured."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.protocol.Testing_Distance.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_acuity_test_result.protocol.Chart_Method">
+         <path value="Visual_acuity_test_result.protocol.Chart_Method"/>
+         <short value="Chart Method"/>
+         <definition value="The charting method used to measure visual acuity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.protocol.Chart_Method"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Visual_acuity_test_result.protocol.Chart_Method.value">
+         <path value="Visual_acuity_test_result.protocol.Chart_Method.value"/>
+         <short value="Chart Method"/>
+         <definition value="The charting method used to measure visual acuity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.protocol.Chart_Method.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_acuity_test_result.protocol.Chart_Optotype">
+         <path value="Visual_acuity_test_result.protocol.Chart_Optotype"/>
+         <short value="Chart Optotype"/>
+         <definition value="The style of chart optotype used to assess visual acuity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.protocol.Chart_Optotype"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Visual_acuity_test_result.protocol.Chart_Optotype.value">
+         <path value="Visual_acuity_test_result.protocol.Chart_Optotype.value"/>
+         <short value="Chart Optotype"/>
+         <definition value="The style of chart optotype used to assess visual acuity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.protocol.Chart_Optotype.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_acuity_test_result.protocol.Chart_Scoring_Algorithm">
+         <path value="Visual_acuity_test_result.protocol.Chart_Scoring_Algorithm"/>
+         <short value="Chart Scoring Algorithm"/>
+         <definition value="The alogrithm used to determine the score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.protocol.Chart_Scoring_Algorithm"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Visual_acuity_test_result.protocol.Chart_Scoring_Algorithm.value">
+         <path value="Visual_acuity_test_result.protocol.Chart_Scoring_Algorithm.value"/>
+         <short value="Chart Scoring Algorithm"/>
+         <definition value="The alogrithm used to determine the score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.protocol.Chart_Scoring_Algorithm.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_acuity_test_result.protocol.Measurement_Device_Details">
+         <path value="Visual_acuity_test_result.protocol.Measurement_Device_Details"/>
+         <short value="Measurement Device Details"/>
+         <definition value="Details of the device used to measure visual acuity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.protocol.Measurement_Device_Details"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_acuity_test_result.protocol.Derived_Score_Original_Notation">
+         <path value="Visual_acuity_test_result.protocol.Derived_Score_Original_Notation"/>
+         <short value="Derived Score Original Notation"/>
+         <definition value="The original visual acuity result notation from which the Derived Score was calculated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.protocol.Derived_Score_Original_Notation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Visual_acuity_test_result.protocol.Derived_Score_Original_Notation.value">
+         <path value="Visual_acuity_test_result.protocol.Derived_Score_Original_Notation.value"/>
+         <short value="Derived Score Original Notation"/>
+         <definition value="The original visual acuity result notation from which the Derived Score was calculated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.protocol.Derived_Score_Original_Notation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_acuity_test_result.protocol.Derived_Score_Algorithm">
+         <path value="Visual_acuity_test_result.protocol.Derived_Score_Algorithm"/>
+         <short value="Derived Score Algorithm"/>
+         <definition value="Details of the algorithm used to calculate a derived score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.protocol.Derived_Score_Algorithm"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Visual_acuity_test_result.protocol.Derived_Score_Algorithm.value">
+         <path value="Visual_acuity_test_result.protocol.Derived_Score_Algorithm.value"/>
+         <short value="Derived Score Algorithm"/>
+         <definition value="Details of the algorithm used to calculate a derived score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.protocol.Derived_Score_Algorithm.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_acuity_test_result.protocol.Extension">
+         <path value="Visual_acuity_test_result.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Visual_acuity_test_result.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_acuity_test_result.Event_Series">
+         <path value="Visual_acuity_test_result.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_acuity_test_result.Event_Series.Any_event">
+         <path value="Visual_acuity_test_result.Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Visual_acuity_test_result.Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_acuity_test_result.Event_Series.Any_event.data">
+         <path value="Visual_acuity_test_result.Event_Series.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.Event_Series.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_acuity_test_result.Event_Series.Any_event.data.Test_name">
+         <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Test_name"/>
+         <short value="Test name"/>
+         <definition value="The name of the exact visual acuity test performed. This generally represents a broad category of applied refraction. Specific refraction details can be described using 'Refractive Correction'."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Test_name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Visual_acuity_test_result.Event_Series.Any_event.data.Test_name.value_DV_CODED_TEXT">
+         <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Test_name.value_DV_CODED_TEXT"/>
+         <short value="Test name"/>
+         <definition value="The name of the exact visual acuity test performed. This generally represents a broad category of applied refraction. Specific refraction details can be described using 'Refractive Correction'."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Test_name.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_acuity_test_result.Event_Series.Any_event.data.Test_name.value_DV_TEXT">
+         <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Test_name.value_DV_TEXT"/>
+         <short value="Test name"/>
+         <definition value="The name of the exact visual acuity test performed. This generally represents a broad category of applied refraction. Specific refraction details can be described using 'Refractive Correction'."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Test_name.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_acuity_test_result.Event_Series.Any_event.data.Description">
+         <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Description"/>
+         <short value="Description"/>
+         <definition value="An overall narrative description of the visual acuity test result."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Visual_acuity_test_result.Event_Series.Any_event.data.Description.value">
+         <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Description.value"/>
+         <short value="Description"/>
+         <definition value="An overall narrative description of the visual acuity test result."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details">
+         <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details"/>
+         <short value="Result details"/>
+         <definition value="Details of the visual field test result for each eye."/>
+         <min value="0"/>
+         <max value="2"/>
+         <base>
+            <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details"/>
+            <min value="0"/>
+            <max value="2"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Eye_examined">
+         <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Eye_examined"/>
+         <short value="Eye examined"/>
+         <definition value="The eye which is being examined."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Eye_examined"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Eye_examined.value">
+         <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Eye_examined.value"/>
+         <short value="Eye examined"/>
+         <definition value="The eye which is being examined."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Eye_examined.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Notation">
+         <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Notation"/>
+         <short value="Notation"/>
+         <definition value="Details of a visual acuity result recorded using one of the result notation formats."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Notation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Notation.Metric_Snellen">
+         <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Notation.Metric_Snellen"/>
+         <short value="Metric Snellen"/>
+         <definition value="The distance test result, recorded in Snellen format expressed in metres, where 6/6 is regarded as normal."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Notation.Metric_Snellen"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Notation.Metric_Snellen.value">
+         <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Notation.Metric_Snellen.value"/>
+         <short value="Metric Snellen"/>
+         <definition value="The distance test result, recorded in Snellen format expressed in metres, where 6/6 is regarded as normal."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Notation.Metric_Snellen.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Ratio"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Notation.US_Snellen">
+         <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Notation.US_Snellen"/>
+         <short value="US Snellen"/>
+         <definition value="The distance test result, recorded as Snellen visual acuity expressed in feet, where 20/20 is regarded as normal."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Notation.US_Snellen"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Notation.US_Snellen.value">
+         <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Notation.US_Snellen.value"/>
+         <short value="US Snellen"/>
+         <definition value="The distance test result, recorded as Snellen visual acuity expressed in feet, where 20/20 is regarded as normal."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Notation.US_Snellen.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Ratio"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Notation.Decimal_Snellen">
+         <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Notation.Decimal_Snellen"/>
+         <short value="Decimal Snellen"/>
+         <definition value="The distance test result,recorded as Sn ellen visual acuity expressed as a decimal ratio, where 1.0 is regarded as normal."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Notation.Decimal_Snellen"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Notation.Decimal_Snellen.value">
+         <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Notation.Decimal_Snellen.value"/>
+         <short value="Decimal Snellen"/>
+         <definition value="The distance test result,recorded as Sn ellen visual acuity expressed as a decimal ratio, where 1.0 is regarded as normal."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Notation.Decimal_Snellen.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Ratio"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Notation.ETDRS_Letters">
+         <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Notation.ETDRS_Letters"/>
+         <short value="ETDRS Letters"/>
+         <definition value="Visual acuity expressed using ETDRS Letters format, with a value of 100 regarded as normal."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Notation.ETDRS_Letters"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Notation.ETDRS_Letters.value">
+         <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Notation.ETDRS_Letters.value"/>
+         <short value="ETDRS Letters"/>
+         <definition value="Visual acuity expressed using ETDRS Letters format, with a value of 100 regarded as normal."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Notation.ETDRS_Letters.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Notation.logMar">
+         <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Notation.logMar"/>
+         <short value="logMar"/>
+         <definition value="The test result, recorded as logMar visual acuity, where a value of 0 is regarded as normal."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Notation.logMar"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Notation.logMar.value">
+         <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Notation.logMar.value"/>
+         <short value="logMar"/>
+         <definition value="The test result, recorded as logMar visual acuity, where a value of 0 is regarded as normal."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Notation.logMar.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Notation.Low_Vision_Score">
+         <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Notation.Low_Vision_Score"/>
+         <short value="Low Vision Score"/>
+         <definition value="Graded scale used when patient has low levels of visual acuity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Notation.Low_Vision_Score"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Notation.Low_Vision_Score.value">
+         <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Notation.Low_Vision_Score.value"/>
+         <short value="Low Vision Score"/>
+         <definition value="Graded scale used when patient has low levels of visual acuity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Notation.Low_Vision_Score.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Letter_Termination_Adjustment">
+         <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Letter_Termination_Adjustment"/>
+         <short value="Letter Termination Adjustment"/>
+         <definition value="A line termination adjustment score applied to the visual acuity result."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Letter_Termination_Adjustment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Letter_Termination_Adjustment.value">
+         <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Letter_Termination_Adjustment.value"/>
+         <short value="Letter Termination Adjustment"/>
+         <definition value="A line termination adjustment score applied to the visual acuity result."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Letter_Termination_Adjustment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Derived_Score">
+         <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Derived_Score"/>
+         <short value="Derived Score"/>
+         <definition value="Visual acuity expressed as an integer score which is calculated from one or more of the other result notation formats. The original notation should be captured using 'Derived Score Original Notation' format'."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Derived_Score"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Derived_Score.value">
+         <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Derived_Score.value"/>
+         <short value="Derived Score"/>
+         <definition value="Visual acuity expressed as an integer score which is calculated from one or more of the other result notation formats. The original notation should be captured using 'Derived Score Original Notation' format'."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Derived_Score.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Interpretation">
+         <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Interpretation"/>
+         <short value="Interpretation"/>
+         <definition value="Clinical interpretation of all results for the test eye."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Interpretation"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Interpretation.value">
+         <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Interpretation.value"/>
+         <short value="Interpretation"/>
+         <definition value="Clinical interpretation of all results for the test eye."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Interpretation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.No_test_result">
+         <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.No_test_result"/>
+         <short value="No test result"/>
+         <definition value="No visual acuity test result is available for the test eye."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.No_test_result"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.No_test_result.value">
+         <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.No_test_result.value"/>
+         <short value="No test result"/>
+         <definition value="No visual acuity test result is available for the test eye."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.No_test_result.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Reason_for_no_test_result">
+         <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Reason_for_no_test_result"/>
+         <short value="Reason for no test result"/>
+         <definition value="Reason why no visual acuity test result is available for the test eye."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Reason_for_no_test_result"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Reason_for_no_test_result.value">
+         <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Reason_for_no_test_result.value"/>
+         <short value="Reason for no test result"/>
+         <definition value="Reason why no visual acuity test result is available for the test eye."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Result_details.Reason_for_no_test_result.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_acuity_test_result.Event_Series.Any_event.data.Overall_Interpretation">
+         <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Overall_Interpretation"/>
+         <short value="Overall Interpretation"/>
+         <definition value="A term, commonly coded, expressing an overall interpretation of the visual acuity test."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Overall_Interpretation"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Visual_acuity_test_result.Event_Series.Any_event.data.Overall_Interpretation.value">
+         <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Overall_Interpretation.value"/>
+         <short value="Overall Interpretation"/>
+         <definition value="A term, commonly coded, expressing an overall interpretation of the visual acuity test."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Overall_Interpretation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_acuity_test_result.Event_Series.Any_event.data.Comment">
+         <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Any additional narrative comment about the visual acuity test."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Visual_acuity_test_result.Event_Series.Any_event.data.Comment.value">
+         <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Any additional narrative comment about the visual acuity test."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_acuity_test_result.Event_Series.Any_event.data.Test_not_done">
+         <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Test_not_done"/>
+         <short value="Test not done"/>
+         <definition value="Details to explicitly record that this test was not performed."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Visual_acuity_test_result.Event_Series.Any_event.data.Test_not_done"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_acuity_test_result.Event_Series.Any_event.state">
+         <path value="Visual_acuity_test_result.Event_Series.Any_event.state"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.Event_Series.Any_event.state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_acuity_test_result.Event_Series.Any_event.state.Confounding_Factors">
+         <path value="Visual_acuity_test_result.Event_Series.Any_event.state.Confounding_Factors"/>
+         <short value="Confounding Factors"/>
+         <definition value="Patient circumstances which affect interpretation of the result. Often termed 'reliability' in opthalmological documentation."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Visual_acuity_test_result.Event_Series.Any_event.state.Confounding_Factors"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Visual_acuity_test_result.Event_Series.Any_event.state.Confounding_Factors.value">
+         <path value="Visual_acuity_test_result.Event_Series.Any_event.state.Confounding_Factors.value"/>
+         <short value="Confounding Factors"/>
+         <definition value="Patient circumstances which affect interpretation of the result. Often termed 'reliability' in opthalmological documentation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.Event_Series.Any_event.state.Confounding_Factors.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_acuity_test_result.Event_Series.Any_event.state.Refractive_Correction">
+         <path value="Visual_acuity_test_result.Event_Series.Any_event.state.Refractive_Correction"/>
+         <short value="Refractive Correction"/>
+         <definition value="The specific type(s) of refractive correction applied when measuring visual acuity."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Visual_acuity_test_result.Event_Series.Any_event.state.Refractive_Correction"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Visual_acuity_test_result.Event_Series.Any_event.state.Refractive_Correction.value">
+         <path value="Visual_acuity_test_result.Event_Series.Any_event.state.Refractive_Correction.value"/>
+         <short value="Refractive Correction"/>
+         <definition value="The specific type(s) of refractive correction applied when measuring visual acuity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.Event_Series.Any_event.state.Refractive_Correction.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_acuity_test_result.Event_Series.Any_event.state.Refraction_Details">
+         <path value="Visual_acuity_test_result.Event_Series.Any_event.state.Refraction_Details"/>
+         <short value="Refraction Details"/>
+         <definition value="Details of the refraction applied to each eye."/>
+         <min value="0"/>
+         <max value="2"/>
+         <base>
+            <path value="Visual_acuity_test_result.Event_Series.Any_event.state.Refraction_Details"/>
+            <min value="0"/>
+            <max value="2"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Visual_acuity_test_result.Event_Series.Any_event.state.Pupillary_State">
+         <path value="Visual_acuity_test_result.Event_Series.Any_event.state.Pupillary_State"/>
+         <short value="Pupillary State"/>
+         <definition value="Details of the state of the pupil on examination."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Visual_acuity_test_result.Event_Series.Any_event.state.Pupillary_State"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

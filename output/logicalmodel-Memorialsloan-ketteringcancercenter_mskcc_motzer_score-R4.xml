@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Memorialsloan-ketteringcancercenter_mskcc_motzer_score-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-memorialsloan-ketteringcancercenter_mskcc_motzer_score-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.mskcc_motzer.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Memorialsloan-ketteringcancercenter_mskcc_motzer_score"/>
+   <title value="Memorial Sloan-Kettering Cancer Center (MSKCC/Motzer) score"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="An assessment score used for metastatic renal cell carcinoma (RCC) to predict survival based on clinical and laboratory data in metastatic RCC patients."/>
+   <purpose value="To record the results for each component parameter and their total sum for the MSKCC/Motzer score."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Memorial_Sloan_Kettering_Cancer_Center_(MSKCC_Motzer)_score">
+         <path value="Memorial_Sloan_Kettering_Cancer_Center_(MSKCC_Motzer)_score"/>
+         <short value="Memorial Sloan-Kettering Cancer Center (MSKCC/Motzer) score"/>
+         <definition value="An assessment score used for metastatic renal cell carcinoma (RCC) to predict survival based on clinical and laboratory data in metastatic RCC patients."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Memorial_Sloan_Kettering_Cancer_Center_(MSKCC_Motzer)_score"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Memorial_Sloan_Kettering_Cancer_Center_(MSKCC_Motzer)_score.Event_Series">
+         <path value="Memorial_Sloan_Kettering_Cancer_Center_(MSKCC_Motzer)_score.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Memorial_Sloan_Kettering_Cancer_Center_(MSKCC_Motzer)_score.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Memorial_Sloan_Kettering_Cancer_Center_(MSKCC_Motzer)_score.Event_Series.Any_event">
+         <path value="Memorial_Sloan_Kettering_Cancer_Center_(MSKCC_Motzer)_score.Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="*"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Memorial_Sloan_Kettering_Cancer_Center_(MSKCC_Motzer)_score.Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Memorial_Sloan_Kettering_Cancer_Center_(MSKCC_Motzer)_score.Event_Series.Any_event.data">
+         <path value="Memorial_Sloan_Kettering_Cancer_Center_(MSKCC_Motzer)_score.Event_Series.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Memorial_Sloan_Kettering_Cancer_Center_(MSKCC_Motzer)_score.Event_Series.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Memorial_Sloan_Kettering_Cancer_Center_(MSKCC_Motzer)_score.Event_Series.Any_event.data.Time_from_diagnosis_to_systemic_treatment_&lt;1_year">
+         <path value="Memorial_Sloan_Kettering_Cancer_Center_(MSKCC_Motzer)_score.Event_Series.Any_event.data.Time_from_diagnosis_to_systemic_treatment_&lt;1_year"/>
+         <short value="Time from diagnosis to systemic treatment &lt;1 year"/>
+         <definition value="Measured ~1 month after stopping anticoagulation"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Memorial_Sloan_Kettering_Cancer_Center_(MSKCC_Motzer)_score.Event_Series.Any_event.data.Time_from_diagnosis_to_systemic_treatment_&lt;1_year"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Memorial_Sloan_Kettering_Cancer_Center_(MSKCC_Motzer)_score.Event_Series.Any_event.data.Time_from_diagnosis_to_systemic_treatment_&lt;1_year.value">
+         <path value="Memorial_Sloan_Kettering_Cancer_Center_(MSKCC_Motzer)_score.Event_Series.Any_event.data.Time_from_diagnosis_to_systemic_treatment_&lt;1_year.value"/>
+         <short value="Time from diagnosis to systemic treatment &lt;1 year"/>
+         <definition value="Measured ~1 month after stopping anticoagulation"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Memorial_Sloan_Kettering_Cancer_Center_(MSKCC_Motzer)_score.Event_Series.Any_event.data.Time_from_diagnosis_to_systemic_treatment_&lt;1_year.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Memorial_Sloan_Kettering_Cancer_Center_(MSKCC_Motzer)_score.Event_Series.Any_event.data.Hemoglobin_&lt;_Lower_Limit_of_Normal">
+         <path value="Memorial_Sloan_Kettering_Cancer_Center_(MSKCC_Motzer)_score.Event_Series.Any_event.data.Hemoglobin_&lt;_Lower_Limit_of_Normal"/>
+         <short value="Hemoglobin &lt; Lower Limit of Normal"/>
+         <definition value="Men (Normal): 13.5-17.5 g/dL- Women (Normal): 12.0-15.5 g/dL"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Memorial_Sloan_Kettering_Cancer_Center_(MSKCC_Motzer)_score.Event_Series.Any_event.data.Hemoglobin_&lt;_Lower_Limit_of_Normal"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Memorial_Sloan_Kettering_Cancer_Center_(MSKCC_Motzer)_score.Event_Series.Any_event.data.Hemoglobin_&lt;_Lower_Limit_of_Normal.value">
+         <path value="Memorial_Sloan_Kettering_Cancer_Center_(MSKCC_Motzer)_score.Event_Series.Any_event.data.Hemoglobin_&lt;_Lower_Limit_of_Normal.value"/>
+         <short value="Hemoglobin &lt; Lower Limit of Normal"/>
+         <definition value="Men (Normal): 13.5-17.5 g/dL- Women (Normal): 12.0-15.5 g/dL"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Memorial_Sloan_Kettering_Cancer_Center_(MSKCC_Motzer)_score.Event_Series.Any_event.data.Hemoglobin_&lt;_Lower_Limit_of_Normal.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Memorial_Sloan_Kettering_Cancer_Center_(MSKCC_Motzer)_score.Event_Series.Any_event.data.Calcium_&gt;10mg_dL_(&gt;2_5_mmol_L)">
+         <path value="Memorial_Sloan_Kettering_Cancer_Center_(MSKCC_Motzer)_score.Event_Series.Any_event.data.Calcium_&gt;10mg_dL_(&gt;2_5_mmol_L)"/>
+         <short value="Calcium &gt;10mg/dL (&gt;2.5 mmol/L)"/>
+         <definition value="*"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Memorial_Sloan_Kettering_Cancer_Center_(MSKCC_Motzer)_score.Event_Series.Any_event.data.Calcium_&gt;10mg_dL_(&gt;2_5_mmol_L)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Memorial_Sloan_Kettering_Cancer_Center_(MSKCC_Motzer)_score.Event_Series.Any_event.data.Calcium_&gt;10mg_dL_(&gt;2_5_mmol_L).value">
+         <path value="Memorial_Sloan_Kettering_Cancer_Center_(MSKCC_Motzer)_score.Event_Series.Any_event.data.Calcium_&gt;10mg_dL_(&gt;2_5_mmol_L).value"/>
+         <short value="Calcium &gt;10mg/dL (&gt;2.5 mmol/L)"/>
+         <definition value="*"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Memorial_Sloan_Kettering_Cancer_Center_(MSKCC_Motzer)_score.Event_Series.Any_event.data.Calcium_&gt;10mg_dL_(&gt;2_5_mmol_L).value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Memorial_Sloan_Kettering_Cancer_Center_(MSKCC_Motzer)_score.Event_Series.Any_event.data.LDH_&gt;_1_5x_Upper_Limit_of_Normal">
+         <path value="Memorial_Sloan_Kettering_Cancer_Center_(MSKCC_Motzer)_score.Event_Series.Any_event.data.LDH_&gt;_1_5x_Upper_Limit_of_Normal"/>
+         <short value="LDH &gt; 1.5x Upper Limit of Normal"/>
+         <definition value="Normal: 140 U/L"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Memorial_Sloan_Kettering_Cancer_Center_(MSKCC_Motzer)_score.Event_Series.Any_event.data.LDH_&gt;_1_5x_Upper_Limit_of_Normal"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Memorial_Sloan_Kettering_Cancer_Center_(MSKCC_Motzer)_score.Event_Series.Any_event.data.LDH_&gt;_1_5x_Upper_Limit_of_Normal.value">
+         <path value="Memorial_Sloan_Kettering_Cancer_Center_(MSKCC_Motzer)_score.Event_Series.Any_event.data.LDH_&gt;_1_5x_Upper_Limit_of_Normal.value"/>
+         <short value="LDH &gt; 1.5x Upper Limit of Normal"/>
+         <definition value="Normal: 140 U/L"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Memorial_Sloan_Kettering_Cancer_Center_(MSKCC_Motzer)_score.Event_Series.Any_event.data.LDH_&gt;_1_5x_Upper_Limit_of_Normal.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Memorial_Sloan_Kettering_Cancer_Center_(MSKCC_Motzer)_score.Event_Series.Any_event.data.Performance_status_&lt;80%_(Karnofsky)">
+         <path value="Memorial_Sloan_Kettering_Cancer_Center_(MSKCC_Motzer)_score.Event_Series.Any_event.data.Performance_status_&lt;80%_(Karnofsky)"/>
+         <short value="Performance status &lt;80% (Karnofsky)"/>
+         <definition value="*"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Memorial_Sloan_Kettering_Cancer_Center_(MSKCC_Motzer)_score.Event_Series.Any_event.data.Performance_status_&lt;80%_(Karnofsky)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Memorial_Sloan_Kettering_Cancer_Center_(MSKCC_Motzer)_score.Event_Series.Any_event.data.Performance_status_&lt;80%_(Karnofsky).value">
+         <path value="Memorial_Sloan_Kettering_Cancer_Center_(MSKCC_Motzer)_score.Event_Series.Any_event.data.Performance_status_&lt;80%_(Karnofsky).value"/>
+         <short value="Performance status &lt;80% (Karnofsky)"/>
+         <definition value="*"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Memorial_Sloan_Kettering_Cancer_Center_(MSKCC_Motzer)_score.Event_Series.Any_event.data.Performance_status_&lt;80%_(Karnofsky).value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Memorial_Sloan_Kettering_Cancer_Center_(MSKCC_Motzer)_score.Event_Series.Any_event.data.Total_score_">
+         <path value="Memorial_Sloan_Kettering_Cancer_Center_(MSKCC_Motzer)_score.Event_Series.Any_event.data.Total_score_"/>
+         <short value="Total score "/>
+         <definition value="*"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Memorial_Sloan_Kettering_Cancer_Center_(MSKCC_Motzer)_score.Event_Series.Any_event.data.Total_score_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Memorial_Sloan_Kettering_Cancer_Center_(MSKCC_Motzer)_score.Event_Series.Any_event.data.Total_score_.value">
+         <path value="Memorial_Sloan_Kettering_Cancer_Center_(MSKCC_Motzer)_score.Event_Series.Any_event.data.Total_score_.value"/>
+         <short value="Total score "/>
+         <definition value="*"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Memorial_Sloan_Kettering_Cancer_Center_(MSKCC_Motzer)_score.Event_Series.Any_event.data.Total_score_.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

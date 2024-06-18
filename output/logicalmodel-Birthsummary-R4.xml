@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Birthsummary-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-birthsummary-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-EVALUATION.birth_summary.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Birthsummary"/>
+   <title value="Birth summary"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Overview or summary record of the pregnancy and birth of an individual."/>
+   <purpose value="To record an overview or summary record of the pregnancy and birth of an individual."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Birth_summary">
+         <path value="Birth_summary"/>
+         <short value="Birth summary"/>
+         <definition value="Overview or summary record of the pregnancy and birth of an individual."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Birth_summary"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Birth_summary.protocol">
+         <path value="Birth_summary.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Birth_summary.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Birth_summary.protocol.Last_updated">
+         <path value="Birth_summary.protocol.Last_updated"/>
+         <short value="Last updated"/>
+         <definition value="The date when the birth summary was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Birth_summary.protocol.Last_updated"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Birth_summary.protocol.Last_updated.value">
+         <path value="Birth_summary.protocol.Last_updated.value"/>
+         <short value="Last updated"/>
+         <definition value="The date when the birth summary was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Birth_summary.protocol.Last_updated.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Birth_summary.protocol.Extension">
+         <path value="Birth_summary.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="CLUSTER"/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Birth_summary.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Birth_summary.data">
+         <path value="Birth_summary.data"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Birth_summary.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Birth_summary.data.Date_time_of_birth_(DOB)">
+         <path value="Birth_summary.data.Date_time_of_birth_(DOB)"/>
+         <short value="Date/time of birth (DOB)"/>
+         <definition value="The date/time of birth of the individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Birth_summary.data.Date_time_of_birth_(DOB)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Birth_summary.data.Date_time_of_birth_(DOB).value">
+         <path value="Birth_summary.data.Date_time_of_birth_(DOB).value"/>
+         <short value="Date/time of birth (DOB)"/>
+         <definition value="The date/time of birth of the individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Birth_summary.data.Date_time_of_birth_(DOB).value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Birth_summary.data.DOB_alternatives">
+         <path value="Birth_summary.data.DOB_alternatives"/>
+         <short value="DOB alternatives"/>
+         <definition value="Additional details about possible alternative dates of birth."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Birth_summary.data.DOB_alternatives"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Birth_summary.data.Country_of_birth">
+         <path value="Birth_summary.data.Country_of_birth"/>
+         <short value="Country of birth"/>
+         <definition value="The country of birth of the individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Birth_summary.data.Country_of_birth"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Birth_summary.data.Country_of_birth.value">
+         <path value="Birth_summary.data.Country_of_birth.value"/>
+         <short value="Country of birth"/>
+         <definition value="The country of birth of the individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Birth_summary.data.Country_of_birth.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Birth_summary.data.Place_of_birth">
+         <path value="Birth_summary.data.Place_of_birth"/>
+         <short value="Place of birth"/>
+         <definition value="Simple representation about the place of birth."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Birth_summary.data.Place_of_birth"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Birth_summary.data.Place_of_birth.value">
+         <path value="Birth_summary.data.Place_of_birth.value"/>
+         <short value="Place of birth"/>
+         <definition value="Simple representation about the place of birth."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Birth_summary.data.Place_of_birth.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Birth_summary.data.Structured_place_of_birth">
+         <path value="Birth_summary.data.Structured_place_of_birth"/>
+         <short value="Structured place of birth"/>
+         <definition value="Structured details about the place of birth."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Birth_summary.data.Structured_place_of_birth"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Birth_summary.data.Pregnancy_birth_summary">
+         <path value="Birth_summary.data.Pregnancy_birth_summary"/>
+         <short value="Pregnancy/birth summary"/>
+         <definition value="Narrative description about the entire pregnancy, labour and delivery of the individual, including both maternal and infant complications."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Birth_summary.data.Pregnancy_birth_summary"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Birth_summary.data.Pregnancy_birth_summary.value">
+         <path value="Birth_summary.data.Pregnancy_birth_summary.value"/>
+         <short value="Pregnancy/birth summary"/>
+         <definition value="Narrative description about the entire pregnancy, labour and delivery of the individual, including both maternal and infant complications."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Birth_summary.data.Pregnancy_birth_summary.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Birth_summary.data.Birth_plurality">
+         <path value="Birth_summary.data.Birth_plurality"/>
+         <short value="Birth plurality"/>
+         <definition value="Term representing the total number of live births and stillbirths resulting from the pregnancy."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Birth_summary.data.Birth_plurality"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Birth_summary.data.Birth_plurality.value">
+         <path value="Birth_summary.data.Birth_plurality.value"/>
+         <short value="Birth plurality"/>
+         <definition value="Term representing the total number of live births and stillbirths resulting from the pregnancy."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Birth_summary.data.Birth_plurality.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Birth_summary.data.Birth_details">
+         <path value="Birth_summary.data.Birth_details"/>
+         <short value="Birth details"/>
+         <definition value="A subset of persistent or summary information about the pregnancy and birth of an infant, selected for utility of use within both the maternal and infant health records."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Birth_summary.data.Birth_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Birth_summary.data.Additional_details">
+         <path value="Birth_summary.data.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="Additional structured details related to the birth."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Birth_summary.data.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Birth_summary.data.Comment">
+         <path value="Birth_summary.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the birth not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Birth_summary.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Birth_summary.data.Comment.value">
+         <path value="Birth_summary.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the birth not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Birth_summary.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Familyhistory_SECTION-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-familyhistory_SECTION-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-SECTION.family_history.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Familyhistory_SECTION"/>
+   <title value="Family history"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Framework for consistent modelling of content within a template for a persistent Family history record."/>
+   <purpose value="To provide a framework and design guidance for consistent modelling of content within a template for a persistent Family history record."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Family_history">
+         <path value="Family_history"/>
+         <short value="Family history"/>
+         <definition value="Framework for consistent modelling of content within a template for a persistent Family history record."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_history"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Family_history.Family_history">
+         <path value="Family_history.Family_history"/>
+         <short value="Family history"/>
+         <definition value="A positive statement about the presence of family health issues."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_history.Family_history"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Family_history.Exclusion_statement">
+         <path value="Family_history.Exclusion_statement"/>
+         <short value="Exclusion statement"/>
+         <definition value="A positive statement about the exclusion of known family history."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Family_history.Exclusion_statement"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Family_history.Absence_statement">
+         <path value="Family_history.Absence_statement"/>
+         <short value="Absence statement"/>
+         <definition value="A positive statement that no information is available about family history."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Family_history.Absence_statement"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

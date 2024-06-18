@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Menstrualcycle-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-menstrualcycle-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.menstruation.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Menstrualcycle"/>
+   <title value="Menstrual cycle"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Details about one single menstrual cycle."/>
+   <purpose value="To record details about one single menstrual cycle."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Menstrual_cycle">
+         <path value="Menstrual_cycle"/>
+         <short value="Menstrual cycle"/>
+         <definition value="Details about one single menstrual cycle."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstrual_cycle"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstrual_cycle.protocol">
+         <path value="Menstrual_cycle.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstrual_cycle.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstrual_cycle.protocol.Extension">
+         <path value="Menstrual_cycle.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Menstrual_cycle.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstrual_cycle.Event_Series">
+         <path value="Menstrual_cycle.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstrual_cycle.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstrual_cycle.Event_Series.Any_event">
+         <path value="Menstrual_cycle.Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Menstrual_cycle.Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstrual_cycle.Event_Series.Any_event.data">
+         <path value="Menstrual_cycle.Event_Series.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstrual_cycle.Event_Series.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstrual_cycle.Event_Series.Any_event.data.Start_of_menses">
+         <path value="Menstrual_cycle.Event_Series.Any_event.data.Start_of_menses"/>
+         <short value="Start of menses"/>
+         <definition value="Date of onset of menstrual bleeding in a single cycle."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstrual_cycle.Event_Series.Any_event.data.Start_of_menses"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Menstrual_cycle.Event_Series.Any_event.data.Start_of_menses.value">
+         <path value="Menstrual_cycle.Event_Series.Any_event.data.Start_of_menses.value"/>
+         <short value="Start of menses"/>
+         <definition value="Date of onset of menstrual bleeding in a single cycle."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstrual_cycle.Event_Series.Any_event.data.Start_of_menses.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstrual_cycle.Event_Series.Any_event.data.Duration_of_menses">
+         <path value="Menstrual_cycle.Event_Series.Any_event.data.Duration_of_menses"/>
+         <short value="Duration of menses"/>
+         <definition value="Duration of menstrual bleeding in this cycle."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstrual_cycle.Event_Series.Any_event.data.Duration_of_menses"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Menstrual_cycle.Event_Series.Any_event.data.Duration_of_menses.value">
+         <path value="Menstrual_cycle.Event_Series.Any_event.data.Duration_of_menses.value"/>
+         <short value="Duration of menses"/>
+         <definition value="Duration of menstrual bleeding in this cycle."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstrual_cycle.Event_Series.Any_event.data.Duration_of_menses.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstrual_cycle.Event_Series.Any_event.data.Description_of_the_cycle">
+         <path value="Menstrual_cycle.Event_Series.Any_event.data.Description_of_the_cycle"/>
+         <short value="Description of the cycle"/>
+         <definition value="Narrative description of the menstrual cycle."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstrual_cycle.Event_Series.Any_event.data.Description_of_the_cycle"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Menstrual_cycle.Event_Series.Any_event.data.Description_of_the_cycle.value">
+         <path value="Menstrual_cycle.Event_Series.Any_event.data.Description_of_the_cycle.value"/>
+         <short value="Description of the cycle"/>
+         <definition value="Narrative description of the menstrual cycle."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstrual_cycle.Event_Series.Any_event.data.Description_of_the_cycle.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstrual_cycle.Event_Series.Any_event.data.Relative_flow">
+         <path value="Menstrual_cycle.Event_Series.Any_event.data.Relative_flow"/>
+         <short value="Relative flow"/>
+         <definition value="Subjective assessment about the menstrual bleeding for the cycle, relative to typical cycles."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstrual_cycle.Event_Series.Any_event.data.Relative_flow"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Menstrual_cycle.Event_Series.Any_event.data.Relative_flow.value">
+         <path value="Menstrual_cycle.Event_Series.Any_event.data.Relative_flow.value"/>
+         <short value="Relative flow"/>
+         <definition value="Subjective assessment about the menstrual bleeding for the cycle, relative to typical cycles."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstrual_cycle.Event_Series.Any_event.data.Relative_flow.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstrual_cycle.Event_Series.Any_event.data.Blood_clots">
+         <path value="Menstrual_cycle.Event_Series.Any_event.data.Blood_clots"/>
+         <short value="Blood clots"/>
+         <definition value="Presence of blood clots."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstrual_cycle.Event_Series.Any_event.data.Blood_clots"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Menstrual_cycle.Event_Series.Any_event.data.Blood_clots.value">
+         <path value="Menstrual_cycle.Event_Series.Any_event.data.Blood_clots.value"/>
+         <short value="Blood clots"/>
+         <definition value="Presence of blood clots."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstrual_cycle.Event_Series.Any_event.data.Blood_clots.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstrual_cycle.Event_Series.Any_event.data.Additional_details">
+         <path value="Menstrual_cycle.Event_Series.Any_event.data.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="Additional details about the menstrual cycle."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Menstrual_cycle.Event_Series.Any_event.data.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstrual_cycle.Event_Series.Any_event.data.Comment">
+         <path value="Menstrual_cycle.Event_Series.Any_event.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the menstrual cycle, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstrual_cycle.Event_Series.Any_event.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Menstrual_cycle.Event_Series.Any_event.data.Comment.value">
+         <path value="Menstrual_cycle.Event_Series.Any_event.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the menstrual cycle, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstrual_cycle.Event_Series.Any_event.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstrual_cycle.Event_Series.Any_event.state">
+         <path value="Menstrual_cycle.Event_Series.Any_event.state"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstrual_cycle.Event_Series.Any_event.state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstrual_cycle.Event_Series.Any_event.state.Confounding_factors">
+         <path value="Menstrual_cycle.Event_Series.Any_event.state.Confounding_factors"/>
+         <short value="Confounding factors"/>
+         <definition value="Confounding factors that may affect the menstruation."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Menstrual_cycle.Event_Series.Any_event.state.Confounding_factors"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Menstrual_cycle.Event_Series.Any_event.state.Confounding_factors.value">
+         <path value="Menstrual_cycle.Event_Series.Any_event.state.Confounding_factors.value"/>
+         <short value="Confounding factors"/>
+         <definition value="Confounding factors that may affect the menstruation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstrual_cycle.Event_Series.Any_event.state.Confounding_factors.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

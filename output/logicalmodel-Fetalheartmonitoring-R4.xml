@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Fetalheartmonitoring-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-fetalheartmonitoring-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.fetal_heart-monitoring.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Fetalheartmonitoring"/>
+   <title value="Fetal heart monitoring"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Observations about the fetal heart rate, usually using a cardiotocograph or similar device over a period of time."/>
+   <purpose value="To record observations about the fetal heart rate, usually using a cardiotocograph or similar device over a time in late pregnancy or labour, as an assessment about fetal wellbeing in utero."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Fetal_heart_monitoring">
+         <path value="Fetal_heart_monitoring"/>
+         <short value="Fetal heart monitoring"/>
+         <definition value="Observations about the fetal heart rate, usually using a cardiotocograph or similar device over a period of time."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Fetal_heart_monitoring"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fetal_heart_monitoring.PARTY_RELATED">
+         <path value="Fetal_heart_monitoring.PARTY_RELATED"/>
+         <definition value="PARTY_RELATED"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fetal_heart_monitoring.PARTY_RELATED"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fetal_heart_monitoring.subject_PARTY_RELATED.relationship">
+         <path value="Fetal_heart_monitoring.subject_PARTY_RELATED.relationship"/>
+         <definition value="DV_CODED_TEXT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fetal_heart_monitoring.subject_PARTY_RELATED.relationship"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fetal_heart_monitoring.protocol">
+         <path value="Fetal_heart_monitoring.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fetal_heart_monitoring.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fetal_heart_monitoring.protocol.Device">
+         <path value="Fetal_heart_monitoring.protocol.Device"/>
+         <short value="Device"/>
+         <definition value="Details about the device used to detect the fetal heart rate."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Fetal_heart_monitoring.protocol.Device"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fetal_heart_monitoring.protocol.Extension">
+         <path value="Fetal_heart_monitoring.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Fetal_heart_monitoring.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fetal_heart_monitoring.Event_Series">
+         <path value="Fetal_heart_monitoring.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fetal_heart_monitoring.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fetal_heart_monitoring.Event_Series.Any_event">
+         <path value="Fetal_heart_monitoring.Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fetal_heart_monitoring.Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fetal_heart_monitoring.Event_Series.Any_event.data">
+         <path value="Fetal_heart_monitoring.Event_Series.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fetal_heart_monitoring.Event_Series.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fetal_heart_monitoring.Event_Series.Any_event.data.Presence">
+         <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Presence"/>
+         <short value="Presence"/>
+         <definition value="The fetal heart beat is detected."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Presence"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fetal_heart_monitoring.Event_Series.Any_event.data.Presence.value">
+         <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Presence.value"/>
+         <short value="Presence"/>
+         <definition value="The fetal heart beat is detected."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Presence.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fetal_heart_monitoring.Event_Series.Any_event.data.Rate">
+         <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Rate"/>
+         <short value="Rate"/>
+         <definition value="The observed fetal heart rate."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Rate"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fetal_heart_monitoring.Event_Series.Any_event.data.Rate.value">
+         <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Rate.value"/>
+         <short value="Rate"/>
+         <definition value="The observed fetal heart rate."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Rate.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fetal_heart_monitoring.Event_Series.Any_event.data.Variability">
+         <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Variability"/>
+         <short value="Variability"/>
+         <definition value="Variability in the fetal heart rate observed during the monitoring interval."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Variability"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fetal_heart_monitoring.Event_Series.Any_event.data.Variability.value">
+         <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Variability.value"/>
+         <short value="Variability"/>
+         <definition value="Variability in the fetal heart rate observed during the monitoring interval."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Variability.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fetal_heart_monitoring.Event_Series.Any_event.data.Variability_category">
+         <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Variability_category"/>
+         <short value="Variability category"/>
+         <definition value="Variability in the fetal heart rate observed during the monitoring interval."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Variability_category"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fetal_heart_monitoring.Event_Series.Any_event.data.Variability_category.value">
+         <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Variability_category.value"/>
+         <short value="Variability category"/>
+         <definition value="Variability in the fetal heart rate observed during the monitoring interval."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Variability_category.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fetal_heart_monitoring.Event_Series.Any_event.data.Variability_description">
+         <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Variability_description"/>
+         <short value="Variability description"/>
+         <definition value="Narrative description of the pattern of variability observed during the monitoring interval."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Variability_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fetal_heart_monitoring.Event_Series.Any_event.data.Variability_description.value">
+         <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Variability_description.value"/>
+         <short value="Variability description"/>
+         <definition value="Narrative description of the pattern of variability observed during the monitoring interval."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Variability_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fetal_heart_monitoring.Event_Series.Any_event.data.Accelerations">
+         <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Accelerations"/>
+         <short value="Accelerations"/>
+         <definition value="Presence of accelerations observed during the monitoring interval."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Accelerations"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fetal_heart_monitoring.Event_Series.Any_event.data.Accelerations.value">
+         <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Accelerations.value"/>
+         <short value="Accelerations"/>
+         <definition value="Presence of accelerations observed during the monitoring interval."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Accelerations.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fetal_heart_monitoring.Event_Series.Any_event.data.Early_decelerations">
+         <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Early_decelerations"/>
+         <short value="Early decelerations"/>
+         <definition value="Frequency of early accelerations observed during the monitoring interval."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Early_decelerations"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fetal_heart_monitoring.Event_Series.Any_event.data.Early_decelerations.value">
+         <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Early_decelerations.value"/>
+         <short value="Early decelerations"/>
+         <definition value="Frequency of early accelerations observed during the monitoring interval."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Early_decelerations.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fetal_heart_monitoring.Event_Series.Any_event.data.Uncomplicated_variable_decelerations">
+         <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Uncomplicated_variable_decelerations"/>
+         <short value="Uncomplicated variable decelerations"/>
+         <definition value="Frequency of uncomplicated variable decelerations observed during the monitoring interval."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Uncomplicated_variable_decelerations"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fetal_heart_monitoring.Event_Series.Any_event.data.Uncomplicated_variable_decelerations.value">
+         <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Uncomplicated_variable_decelerations.value"/>
+         <short value="Uncomplicated variable decelerations"/>
+         <definition value="Frequency of uncomplicated variable decelerations observed during the monitoring interval."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Uncomplicated_variable_decelerations.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fetal_heart_monitoring.Event_Series.Any_event.data.Complicated_variable_decelerations">
+         <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Complicated_variable_decelerations"/>
+         <short value="Complicated variable decelerations"/>
+         <definition value="Frequency of complicated variable decelerations observed during the monitoring interval."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Complicated_variable_decelerations"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fetal_heart_monitoring.Event_Series.Any_event.data.Complicated_variable_decelerations.value">
+         <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Complicated_variable_decelerations.value"/>
+         <short value="Complicated variable decelerations"/>
+         <definition value="Frequency of complicated variable decelerations observed during the monitoring interval."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Complicated_variable_decelerations.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fetal_heart_monitoring.Event_Series.Any_event.data.Late_decelerations">
+         <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Late_decelerations"/>
+         <short value="Late decelerations"/>
+         <definition value="Frequency of late decelerations observed during the monitoring interval."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Late_decelerations"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fetal_heart_monitoring.Event_Series.Any_event.data.Late_decelerations.value">
+         <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Late_decelerations.value"/>
+         <short value="Late decelerations"/>
+         <definition value="Frequency of late decelerations observed during the monitoring interval."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Late_decelerations.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fetal_heart_monitoring.Event_Series.Any_event.data.Prolonged_decelerations">
+         <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Prolonged_decelerations"/>
+         <short value="Prolonged decelerations"/>
+         <definition value="Duration of a single, prolonged deceleration observed during the monitoring interval."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Prolonged_decelerations"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fetal_heart_monitoring.Event_Series.Any_event.data.Prolonged_decelerations.value">
+         <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Prolonged_decelerations.value"/>
+         <short value="Prolonged decelerations"/>
+         <definition value="Duration of a single, prolonged deceleration observed during the monitoring interval."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Prolonged_decelerations.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fetal_heart_monitoring.Event_Series.Any_event.data.Clinical_interpretation">
+         <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Clinical_interpretation"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Single word, phrase or brief description that represents the clinical meaning and significance of the fetal heart rate."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Clinical_interpretation"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Fetal_heart_monitoring.Event_Series.Any_event.data.Clinical_interpretation.value">
+         <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Clinical_interpretation.value"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Single word, phrase or brief description that represents the clinical meaning and significance of the fetal heart rate."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Clinical_interpretation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fetal_heart_monitoring.Event_Series.Any_event.data.Multimedia_representation">
+         <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Multimedia_representation"/>
+         <short value="Multimedia representation"/>
+         <definition value="Digital representation of the monitoring findings."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Multimedia_representation"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fetal_heart_monitoring.Event_Series.Any_event.data.Comment">
+         <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the fetal heart rate, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fetal_heart_monitoring.Event_Series.Any_event.data.Comment.value">
+         <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the fetal heart rate, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fetal_heart_monitoring.Event_Series.Any_event.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fetal_heart_monitoring.Event_Series.Any_event.state">
+         <path value="Fetal_heart_monitoring.Event_Series.Any_event.state"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fetal_heart_monitoring.Event_Series.Any_event.state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fetal_heart_monitoring.Event_Series.Any_event.state.Position_of_mother">
+         <path value="Fetal_heart_monitoring.Event_Series.Any_event.state.Position_of_mother"/>
+         <short value="Position of mother"/>
+         <definition value="The position of the mother when the fetal heart rate was measured."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fetal_heart_monitoring.Event_Series.Any_event.state.Position_of_mother"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fetal_heart_monitoring.Event_Series.Any_event.state.Position_of_mother.value">
+         <path value="Fetal_heart_monitoring.Event_Series.Any_event.state.Position_of_mother.value"/>
+         <short value="Position of mother"/>
+         <definition value="The position of the mother when the fetal heart rate was measured."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fetal_heart_monitoring.Event_Series.Any_event.state.Position_of_mother.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fetal_heart_monitoring.Event_Series.Any_event.state.Confounding_factors">
+         <path value="Fetal_heart_monitoring.Event_Series.Any_event.state.Confounding_factors"/>
+         <short value="Confounding factors"/>
+         <definition value="Description of incidental factors, not recorded elsewhere, that may be influencing the fetal heart rate measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fetal_heart_monitoring.Event_Series.Any_event.state.Confounding_factors"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fetal_heart_monitoring.Event_Series.Any_event.state.Confounding_factors.value">
+         <path value="Fetal_heart_monitoring.Event_Series.Any_event.state.Confounding_factors.value"/>
+         <short value="Confounding factors"/>
+         <definition value="Description of incidental factors, not recorded elsewhere, that may be influencing the fetal heart rate measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fetal_heart_monitoring.Event_Series.Any_event.state.Confounding_factors.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Fetal_heart_monitoring.Event_Series.Any_event.state.In_labour">
+         <path value="Fetal_heart_monitoring.Event_Series.Any_event.state.In_labour"/>
+         <short value="In labour"/>
+         <definition value="Is the mother in active labor during the observation?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fetal_heart_monitoring.Event_Series.Any_event.state.In_labour"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Fetal_heart_monitoring.Event_Series.Any_event.state.In_labour.value">
+         <path value="Fetal_heart_monitoring.Event_Series.Any_event.state.In_labour.value"/>
+         <short value="In labour"/>
+         <definition value="Is the mother in active labor during the observation?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Fetal_heart_monitoring.Event_Series.Any_event.state.In_labour.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

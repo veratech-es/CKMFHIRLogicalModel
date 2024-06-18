@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Self-reporteddata-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-self-reporteddata-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-COMPOSITION.self_reported_data.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Self-reporteddata"/>
+   <title value="Self-reported data"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Generic container for information provided by an individual."/>
+   <purpose value="A container for information provided by an individual, to support clear separation of patient generated from clinician-generated health data."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Self_reported_data">
+         <path value="Self_reported_data"/>
+         <short value="Self-reported data"/>
+         <definition value="Generic container for information provided by an individual."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Self_reported_data"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Self_reported_data.category">
+         <path value="Self_reported_data.category"/>
+         <short value="Self-reported data"/>
+         <definition value="Generic container for information provided by an individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Self_reported_data.category"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Self_reported_data.EVENT_CONTEXT">
+         <path value="Self_reported_data.EVENT_CONTEXT"/>
+         <definition value="EVENT_CONTEXT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Self_reported_data.EVENT_CONTEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Self_reported_data.EVENT_CONTEXT.other_context">
+         <path value="Self_reported_data.EVENT_CONTEXT.other_context"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Self_reported_data.EVENT_CONTEXT.other_context"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Self_reported_data.EVENT_CONTEXT.other_context.Information_Source">
+         <path value="Self_reported_data.EVENT_CONTEXT.other_context.Information_Source"/>
+         <short value="Information Source"/>
+         <definition value="About one or more source types for the information contained in the report."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Self_reported_data.EVENT_CONTEXT.other_context.Information_Source"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Self_reported_data.EVENT_CONTEXT.other_context.Device">
+         <path value="Self_reported_data.EVENT_CONTEXT.other_context.Device"/>
+         <short value="Device"/>
+         <definition value="To capture the device used to report data."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Self_reported_data.EVENT_CONTEXT.other_context.Device"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Self_reported_data.EVENT_CONTEXT.other_context.Extension">
+         <path value="Self_reported_data.EVENT_CONTEXT.other_context.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Self_reported_data.EVENT_CONTEXT.other_context.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

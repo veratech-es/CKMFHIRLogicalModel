@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Crusadebleedingriskscore-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-crusadebleedingriskscore-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.crusade_bleeding_risk_score.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Crusadebleedingriskscore"/>
+   <title value="Crusade Bleeding Risk Score"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Crusade Bleeding Risk Score is used to stratify risk for major bleeding in patients presenting with NSTEMI or STEMI prior to initiation of treatment."/>
+   <purpose value="The CRUSADE bleeding score is used to quantify risk for in-hospital major bleeding across all postadmission treatments, which enhances baseline risk assessment for NSTEMI care."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Crusade_Bleeding_Risk_Score">
+         <path value="Crusade_Bleeding_Risk_Score"/>
+         <short value="Crusade Bleeding Risk Score"/>
+         <definition value="Crusade Bleeding Risk Score is used to stratify risk for major bleeding in patients presenting with NSTEMI or STEMI prior to initiation of treatment."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Crusade_Bleeding_Risk_Score"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Crusade_Bleeding_Risk_Score.ItemTree">
+         <path value="Crusade_Bleeding_Risk_Score.ItemTree"/>
+         <short value="ItemTree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Crusade_Bleeding_Risk_Score.ItemTree"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Crusade_Bleeding_Risk_Score.ItemTree.Score_version">
+         <path value="Crusade_Bleeding_Risk_Score.ItemTree.Score_version"/>
+         <short value="Score version"/>
+         <definition value="The version of the score used, normally recorded as the year."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Crusade_Bleeding_Risk_Score.ItemTree.Score_version"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Crusade_Bleeding_Risk_Score.ItemTree.Score_version.value">
+         <path value="Crusade_Bleeding_Risk_Score.ItemTree.Score_version.value"/>
+         <short value="Score version"/>
+         <definition value="The version of the score used, normally recorded as the year."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Crusade_Bleeding_Risk_Score.ItemTree.Score_version.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Crusade_Bleeding_Risk_Score.ItemTree.Extension">
+         <path value="Crusade_Bleeding_Risk_Score.ItemTree.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Crusade_Bleeding_Risk_Score.ItemTree.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Crusade_Bleeding_Risk_Score.History">
+         <path value="Crusade_Bleeding_Risk_Score.History"/>
+         <short value="History"/>
+         <definition value="*"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Crusade_Bleeding_Risk_Score.History"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Crusade_Bleeding_Risk_Score.History.Any_event">
+         <path value="Crusade_Bleeding_Risk_Score.History.Any_event"/>
+         <short value="Any event"/>
+         <definition value="A specific date and/or time which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Crusade_Bleeding_Risk_Score.History.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree">
+         <path value="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree"/>
+         <short value="ItemTree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.Baseline_HCT___Hematocrit">
+         <path value="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.Baseline_HCT___Hematocrit"/>
+         <short value="Baseline HCT / Hematocrit"/>
+         <definition value="Score based on hematocrit % measurements."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.Baseline_HCT___Hematocrit"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.Baseline_HCT___Hematocrit.value">
+         <path value="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.Baseline_HCT___Hematocrit.value"/>
+         <short value="Baseline HCT / Hematocrit"/>
+         <definition value="Score based on hematocrit % measurements."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.Baseline_HCT___Hematocrit.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.Creatinine_Clearance">
+         <path value="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.Creatinine_Clearance"/>
+         <short value="Creatinine Clearance"/>
+         <definition value="Score for Creatinine Clearance estimated using the Cockcroft-Gault equation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.Creatinine_Clearance"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.Creatinine_Clearance.value">
+         <path value="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.Creatinine_Clearance.value"/>
+         <short value="Creatinine Clearance"/>
+         <definition value="Score for Creatinine Clearance estimated using the Cockcroft-Gault equation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.Creatinine_Clearance.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.Heart_Rate">
+         <path value="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.Heart_Rate"/>
+         <short value="Heart Rate"/>
+         <definition value="Heart rate score based on measurements in beats/min."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.Heart_Rate"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.Heart_Rate.value">
+         <path value="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.Heart_Rate.value"/>
+         <short value="Heart Rate"/>
+         <definition value="Heart rate score based on measurements in beats/min."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.Heart_Rate.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.Sex">
+         <path value="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.Sex"/>
+         <short value="Sex"/>
+         <definition value="Patient sex."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.Sex"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.Sex.value">
+         <path value="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.Sex.value"/>
+         <short value="Sex"/>
+         <definition value="Patient sex."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.Sex.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.Signs_of_CHF_at_presentation">
+         <path value="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.Signs_of_CHF_at_presentation"/>
+         <short value="Signs of CHF at presentation"/>
+         <definition value="Did the patient show signs of Congestive Heart Failure at presentation?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.Signs_of_CHF_at_presentation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.Signs_of_CHF_at_presentation.value">
+         <path value="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.Signs_of_CHF_at_presentation.value"/>
+         <short value="Signs of CHF at presentation"/>
+         <definition value="Did the patient show signs of Congestive Heart Failure at presentation?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.Signs_of_CHF_at_presentation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.Prior_vascular_disease">
+         <path value="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.Prior_vascular_disease"/>
+         <short value="Prior vascular disease"/>
+         <definition value="Does the patient have history of vascular disease?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.Prior_vascular_disease"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.Prior_vascular_disease.value">
+         <path value="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.Prior_vascular_disease.value"/>
+         <short value="Prior vascular disease"/>
+         <definition value="Does the patient have history of vascular disease?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.Prior_vascular_disease.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.Diabetes_mellitus">
+         <path value="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.Diabetes_mellitus"/>
+         <short value="Diabetes mellitus"/>
+         <definition value="Does the patient have a history of diabetes mellitus?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.Diabetes_mellitus"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.Diabetes_mellitus.value">
+         <path value="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.Diabetes_mellitus.value"/>
+         <short value="Diabetes mellitus"/>
+         <definition value="Does the patient have a history of diabetes mellitus?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.Diabetes_mellitus.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.Systolic_blood_pressure">
+         <path value="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.Systolic_blood_pressure"/>
+         <short value="Systolic blood pressure"/>
+         <definition value="Score based on systolic blood pressure ranges measured in mm Hg."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.Systolic_blood_pressure"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.Systolic_blood_pressure.value">
+         <path value="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.Systolic_blood_pressure.value"/>
+         <short value="Systolic blood pressure"/>
+         <definition value="Score based on systolic blood pressure ranges measured in mm Hg."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.Systolic_blood_pressure.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.CRUSADE_Risk_Score">
+         <path value="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.CRUSADE_Risk_Score"/>
+         <short value="CRUSADE Risk Score"/>
+         <definition value="The total summed score of all recorded individual risks."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.CRUSADE_Risk_Score"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.CRUSADE_Risk_Score.value">
+         <path value="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.CRUSADE_Risk_Score.value"/>
+         <short value="CRUSADE Risk Score"/>
+         <definition value="The total summed score of all recorded individual risks."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.CRUSADE_Risk_Score.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.CRUSADE_Risk_Grade">
+         <path value="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.CRUSADE_Risk_Grade"/>
+         <short value="CRUSADE Risk Grade"/>
+         <definition value="Overall CRUSADE risk score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.CRUSADE_Risk_Grade"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.CRUSADE_Risk_Grade.value">
+         <path value="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.CRUSADE_Risk_Grade.value"/>
+         <short value="CRUSADE Risk Grade"/>
+         <definition value="Overall CRUSADE risk score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Crusade_Bleeding_Risk_Score.History.Any_event.ItemTree.CRUSADE_Risk_Grade.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Crusade_Bleeding_Risk_Score.History.Any_event.state_ItemTree">
+         <path value="Crusade_Bleeding_Risk_Score.History.Any_event.state_ItemTree"/>
+         <short value="ItemTree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Crusade_Bleeding_Risk_Score.History.Any_event.state_ItemTree"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Crusade_Bleeding_Risk_Score.History.Any_event.state_ItemTree.Confounding_factors">
+         <path value="Crusade_Bleeding_Risk_Score.History.Any_event.state_ItemTree.Confounding_factors"/>
+         <short value="Confounding factors"/>
+         <definition value="Issues that may affect interpretation of the score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Crusade_Bleeding_Risk_Score.History.Any_event.state_ItemTree.Confounding_factors"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Crusade_Bleeding_Risk_Score.History.Any_event.state_ItemTree.Confounding_factors.value">
+         <path value="Crusade_Bleeding_Risk_Score.History.Any_event.state_ItemTree.Confounding_factors.value"/>
+         <short value="Confounding factors"/>
+         <definition value="Issues that may affect interpretation of the score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Crusade_Bleeding_Risk_Score.History.Any_event.state_ItemTree.Confounding_factors.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

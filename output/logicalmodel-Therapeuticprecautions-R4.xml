@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Therapeuticprecautions-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-therapeuticprecautions-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-COMPOSITION.therapeutic_precautions.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Therapeuticprecautions"/>
+   <title value="Therapeutic precautions"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Persistent data relating to issues that may influence or preclude the administration of one or more therapies or interventions."/>
+   <purpose value="A persistent composition or managed list to record key information that will influence or preclude use of particular medications, therapies or interventions."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Therapeutic_precautions">
+         <path value="Therapeutic_precautions"/>
+         <short value="Therapeutic precautions"/>
+         <definition value="Persistent data relating to issues that may influence or preclude the administration of one or more therapies or interventions."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Therapeutic_precautions"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Therapeutic_precautions.category">
+         <path value="Therapeutic_precautions.category"/>
+         <short value="Therapeutic precautions"/>
+         <definition value="Persistent data relating to issues that may influence or preclude the administration of one or more therapies or interventions."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Therapeutic_precautions.category"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Therapeutic_precautions.Event_Context">
+         <path value="Therapeutic_precautions.Event_Context"/>
+         <short value="Event Context"/>
+         <definition value="EVENT_CONTEXT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Therapeutic_precautions.Event_Context"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Therapeutic_precautions.Event_Context.other_context">
+         <path value="Therapeutic_precautions.Event_Context.other_context"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Therapeutic_precautions.Event_Context.other_context"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Therapeutic_precautions.Event_Context.other_context.Extension">
+         <path value="Therapeutic_precautions.Event_Context.other_context.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models or formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Therapeutic_precautions.Event_Context.other_context.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Travelscreeningquestionnaire-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-travelscreeningquestionnaire-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.travel_screening.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Travelscreeningquestionnaire"/>
+   <title value="Travel screening questionnaire"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Series of questions and associated answers used to screen for travel activity."/>
+   <purpose value="To create a framework for recording answers to pre-defined screening questions about travel activity."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Travel_screening_questionnaire">
+         <path value="Travel_screening_questionnaire"/>
+         <short value="Travel screening questionnaire"/>
+         <definition value="Series of questions and associated answers used to screen for travel activity."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_screening_questionnaire"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Travel_screening_questionnaire.protocol">
+         <path value="Travel_screening_questionnaire.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_screening_questionnaire.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Travel_screening_questionnaire.protocol.Extension">
+         <path value="Travel_screening_questionnaire.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models or formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Travel_screening_questionnaire.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Travel_screening_questionnaire.Event_Series">
+         <path value="Travel_screening_questionnaire.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_screening_questionnaire.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Travel_screening_questionnaire.Event_Series.Any_event">
+         <path value="Travel_screening_questionnaire.Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Travel_screening_questionnaire.Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Travel_screening_questionnaire.Event_Series.Any_event.data">
+         <path value="Travel_screening_questionnaire.Event_Series.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_screening_questionnaire.Event_Series.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Travel_screening_questionnaire.Event_Series.Any_event.data.Screening_purpose">
+         <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Screening_purpose"/>
+         <short value="Screening purpose"/>
+         <definition value="The context or reason for screening."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Screening_purpose"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Travel_screening_questionnaire.Event_Series.Any_event.data.Screening_purpose.value">
+         <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Screening_purpose.value"/>
+         <short value="Screening purpose"/>
+         <definition value="The context or reason for screening."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Screening_purpose.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Travel_screening_questionnaire.Event_Series.Any_event.data.Any_travel_">
+         <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Any_travel_"/>
+         <short value="Any travel?"/>
+         <definition value="Is there a history of any travel activity related to the screening purpose?"/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Any_travel_"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Travel_screening_questionnaire.Event_Series.Any_event.data.Any_travel_.value_DV_CODED_TEXT">
+         <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Any_travel_.value_DV_CODED_TEXT"/>
+         <short value="Any travel?"/>
+         <definition value="Is there a history of any travel activity related to the screening purpose?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Any_travel_.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Travel_screening_questionnaire.Event_Series.Any_event.data.Any_travel_.value_DV_TEXT">
+         <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Any_travel_.value_DV_TEXT"/>
+         <short value="Any travel?"/>
+         <definition value="Is there a history of any travel activity related to the screening purpose?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Any_travel_.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Travel_screening_questionnaire.Event_Series.Any_event.data.Any_travel_.value_DV_BOOLEAN">
+         <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Any_travel_.value_DV_BOOLEAN"/>
+         <short value="Any travel?"/>
+         <definition value="Is there a history of any travel activity related to the screening purpose?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Any_travel_.value_DV_BOOLEAN"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Travel_screening_questionnaire.Event_Series.Any_event.data.Description">
+         <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the history of any travel activity relevant for the screening purpose."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Travel_screening_questionnaire.Event_Series.Any_event.data.Description.value">
+         <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the history of any travel activity relevant for the screening purpose."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel">
+         <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel"/>
+         <short value="Specific travel"/>
+         <definition value="Details about a specified travel activity relevant for the screening purpose."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel.Travel_activity_name">
+         <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel.Travel_activity_name"/>
+         <short value="Travel activity name"/>
+         <definition value="Name of the type of travel."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel.Travel_activity_name"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel.Travel_activity_name.value_DV_TEXT">
+         <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel.Travel_activity_name.value_DV_TEXT"/>
+         <short value="Travel activity name"/>
+         <definition value="Name of the type of travel."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel.Travel_activity_name.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel.Travel_activity_name.value_DV_CODED_TEXT">
+         <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel.Travel_activity_name.value_DV_CODED_TEXT"/>
+         <short value="Travel activity name"/>
+         <definition value="Name of the type of travel."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel.Travel_activity_name.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel.Occurred_">
+         <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel.Occurred_"/>
+         <short value="Occurred?"/>
+         <definition value="Is there a history of the the travel activity occurring?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel.Occurred_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel.Occurred_.value_DV_CODED_TEXT">
+         <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel.Occurred_.value_DV_CODED_TEXT"/>
+         <short value="Occurred?"/>
+         <definition value="Is there a history of the the travel activity occurring?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel.Occurred_.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel.Occurred_.value_DV_TEXT">
+         <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel.Occurred_.value_DV_TEXT"/>
+         <short value="Occurred?"/>
+         <definition value="Is there a history of the the travel activity occurring?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel.Occurred_.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel.Occurred_.value_DV_BOOLEAN">
+         <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel.Occurred_.value_DV_BOOLEAN"/>
+         <short value="Occurred?"/>
+         <definition value="Is there a history of the the travel activity occurring?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel.Occurred_.value_DV_BOOLEAN"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel.Timing">
+         <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel.Timing"/>
+         <short value="Timing"/>
+         <definition value="Indication of timing related to the travel."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel.Timing"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel.Timing.value_DV_DATE_TIME">
+         <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel.Timing.value_DV_DATE_TIME"/>
+         <short value="Timing"/>
+         <definition value="Indication of timing related to the travel."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel.Timing.value_DV_DATE_TIME"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel.Timing.value_DV_TEXT">
+         <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel.Timing.value_DV_TEXT"/>
+         <short value="Timing"/>
+         <definition value="Indication of timing related to the travel."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel.Timing.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel.Timing.value_DV_INTERVAL_DV_DATE_TIME_">
+         <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel.Timing.value_DV_INTERVAL_DV_DATE_TIME_"/>
+         <short value="Timing"/>
+         <definition value="Indication of timing related to the travel."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel.Timing.value_DV_INTERVAL_DV_DATE_TIME_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel.Timing.value_DV_INTERVAL_DV_DURATION_">
+         <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel.Timing.value_DV_INTERVAL_DV_DURATION_"/>
+         <short value="Timing"/>
+         <definition value="Indication of timing related to the travel."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel.Timing.value_DV_INTERVAL_DV_DURATION_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel.Timing.value_DV_DURATION">
+         <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel.Timing.value_DV_DURATION"/>
+         <short value="Timing"/>
+         <definition value="Indication of timing related to the travel."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel.Timing.value_DV_DURATION"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel.Additional_details">
+         <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="Structured details or questions about the specific travel activity."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel.Comment">
+         <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the travel activity not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel.Comment.value">
+         <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the travel activity not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Specific_travel.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Travel_screening_questionnaire.Event_Series.Any_event.data.Additional_details">
+         <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="Structured details or questions about screening for all travel activities."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Travel_screening_questionnaire.Event_Series.Any_event.data.Additional_details"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

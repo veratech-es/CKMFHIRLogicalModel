@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Abbeypainscale-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-abbeypainscale-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.abbey_pain_scale.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Abbeypainscale"/>
+   <title value="Abbey pain scale"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Rapid tool to assess the severity of pain in cognitively impaired and non-verbal individuals."/>
+   <purpose value="To assess and record the severity of pain in cognitively impaired and non-verbal individuals."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Abbey_pain_scale">
+         <path value="Abbey_pain_scale"/>
+         <short value="Abbey pain scale"/>
+         <definition value="Rapid tool to assess the severity of pain in cognitively impaired and non-verbal individuals."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Abbey_pain_scale"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Abbey_pain_scale.protocol">
+         <path value="Abbey_pain_scale.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Abbey_pain_scale.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Abbey_pain_scale.protocol.Extension">
+         <path value="Abbey_pain_scale.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Abbey_pain_scale.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Abbey_pain_scale.Event_Series">
+         <path value="Abbey_pain_scale.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Abbey_pain_scale.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Abbey_pain_scale.Event_Series.Any_event">
+         <path value="Abbey_pain_scale.Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Abbey_pain_scale.Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Abbey_pain_scale.Event_Series.Any_event.data">
+         <path value="Abbey_pain_scale.Event_Series.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Abbey_pain_scale.Event_Series.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Abbey_pain_scale.Event_Series.Any_event.data.Vocalization">
+         <path value="Abbey_pain_scale.Event_Series.Any_event.data.Vocalization"/>
+         <short value="Vocalization"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Abbey_pain_scale.Event_Series.Any_event.data.Vocalization"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Abbey_pain_scale.Event_Series.Any_event.data.Vocalization.value">
+         <path value="Abbey_pain_scale.Event_Series.Any_event.data.Vocalization.value"/>
+         <short value="Vocalization"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Abbey_pain_scale.Event_Series.Any_event.data.Vocalization.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Abbey_pain_scale.Event_Series.Any_event.data.Facial_expression">
+         <path value="Abbey_pain_scale.Event_Series.Any_event.data.Facial_expression"/>
+         <short value="Facial expression"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Abbey_pain_scale.Event_Series.Any_event.data.Facial_expression"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Abbey_pain_scale.Event_Series.Any_event.data.Facial_expression.value">
+         <path value="Abbey_pain_scale.Event_Series.Any_event.data.Facial_expression.value"/>
+         <short value="Facial expression"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Abbey_pain_scale.Event_Series.Any_event.data.Facial_expression.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Abbey_pain_scale.Event_Series.Any_event.data.Change_in_body_language">
+         <path value="Abbey_pain_scale.Event_Series.Any_event.data.Change_in_body_language"/>
+         <short value="Change in body language"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Abbey_pain_scale.Event_Series.Any_event.data.Change_in_body_language"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Abbey_pain_scale.Event_Series.Any_event.data.Change_in_body_language.value">
+         <path value="Abbey_pain_scale.Event_Series.Any_event.data.Change_in_body_language.value"/>
+         <short value="Change in body language"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Abbey_pain_scale.Event_Series.Any_event.data.Change_in_body_language.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Abbey_pain_scale.Event_Series.Any_event.data.Behavioural_change">
+         <path value="Abbey_pain_scale.Event_Series.Any_event.data.Behavioural_change"/>
+         <short value="Behavioural change"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Abbey_pain_scale.Event_Series.Any_event.data.Behavioural_change"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Abbey_pain_scale.Event_Series.Any_event.data.Behavioural_change.value">
+         <path value="Abbey_pain_scale.Event_Series.Any_event.data.Behavioural_change.value"/>
+         <short value="Behavioural change"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Abbey_pain_scale.Event_Series.Any_event.data.Behavioural_change.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Abbey_pain_scale.Event_Series.Any_event.data.Physiological_change">
+         <path value="Abbey_pain_scale.Event_Series.Any_event.data.Physiological_change"/>
+         <short value="Physiological change"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Abbey_pain_scale.Event_Series.Any_event.data.Physiological_change"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Abbey_pain_scale.Event_Series.Any_event.data.Physiological_change.value">
+         <path value="Abbey_pain_scale.Event_Series.Any_event.data.Physiological_change.value"/>
+         <short value="Physiological change"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Abbey_pain_scale.Event_Series.Any_event.data.Physiological_change.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Abbey_pain_scale.Event_Series.Any_event.data.Physical_changes">
+         <path value="Abbey_pain_scale.Event_Series.Any_event.data.Physical_changes"/>
+         <short value="Physical changes"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Abbey_pain_scale.Event_Series.Any_event.data.Physical_changes"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Abbey_pain_scale.Event_Series.Any_event.data.Physical_changes.value">
+         <path value="Abbey_pain_scale.Event_Series.Any_event.data.Physical_changes.value"/>
+         <short value="Physical changes"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Abbey_pain_scale.Event_Series.Any_event.data.Physical_changes.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Abbey_pain_scale.Event_Series.Any_event.data.Total_pain_score">
+         <path value="Abbey_pain_scale.Event_Series.Any_event.data.Total_pain_score"/>
+         <short value="Total pain score"/>
+         <definition value="The total sum of each component parameter for the Abbey pain scale."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Abbey_pain_scale.Event_Series.Any_event.data.Total_pain_score"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Abbey_pain_scale.Event_Series.Any_event.data.Total_pain_score.value">
+         <path value="Abbey_pain_scale.Event_Series.Any_event.data.Total_pain_score.value"/>
+         <short value="Total pain score"/>
+         <definition value="The total sum of each component parameter for the Abbey pain scale."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Abbey_pain_scale.Event_Series.Any_event.data.Total_pain_score.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Abbey_pain_scale.Event_Series.Any_event.data.Pain_score_category">
+         <path value="Abbey_pain_scale.Event_Series.Any_event.data.Pain_score_category"/>
+         <short value="Pain score category"/>
+         <definition value="Category of pain, based on the total score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Abbey_pain_scale.Event_Series.Any_event.data.Pain_score_category"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Abbey_pain_scale.Event_Series.Any_event.data.Pain_score_category.value">
+         <path value="Abbey_pain_scale.Event_Series.Any_event.data.Pain_score_category.value"/>
+         <short value="Pain score category"/>
+         <definition value="Category of pain, based on the total score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Abbey_pain_scale.Event_Series.Any_event.data.Pain_score_category.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Abbey_pain_scale.Event_Series.Any_event.data.Type_of_pain">
+         <path value="Abbey_pain_scale.Event_Series.Any_event.data.Type_of_pain"/>
+         <short value="Type of pain"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Abbey_pain_scale.Event_Series.Any_event.data.Type_of_pain"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Abbey_pain_scale.Event_Series.Any_event.data.Type_of_pain.value">
+         <path value="Abbey_pain_scale.Event_Series.Any_event.data.Type_of_pain.value"/>
+         <short value="Type of pain"/>
+         <definition value="DV_CODED_TEXT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Abbey_pain_scale.Event_Series.Any_event.data.Type_of_pain.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Bloodgroup-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-bloodgroup-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-EVALUATION.blood_group.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Bloodgroup"/>
+   <title value="Blood group"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Identification of the persistent blood group and rhesus status of an individual."/>
+   <purpose value="To record the blood group and rhesus status of an individual."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Blood_group">
+         <path value="Blood_group"/>
+         <short value="Blood group"/>
+         <definition value="Identification of the persistent blood group and rhesus status of an individual."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_group"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Blood_group.protocol">
+         <path value="Blood_group.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_group.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Blood_group.protocol.Last_updated">
+         <path value="Blood_group.protocol.Last_updated"/>
+         <short value="Last updated"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_group.protocol.Last_updated"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Blood_group.protocol.Last_updated.value">
+         <path value="Blood_group.protocol.Last_updated.value"/>
+         <short value="Last updated"/>
+         <definition value="DV_DATE_TIME"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_group.protocol.Last_updated.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Blood_group.protocol.Extension">
+         <path value="Blood_group.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="CLUSTER"/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Blood_group.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Blood_group.data">
+         <path value="Blood_group.data"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_group.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Blood_group.data.ABO_blood_group">
+         <path value="Blood_group.data.ABO_blood_group"/>
+         <short value="ABO blood group"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_group.data.ABO_blood_group"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Blood_group.data.ABO_blood_group.value">
+         <path value="Blood_group.data.ABO_blood_group.value"/>
+         <short value="ABO blood group"/>
+         <definition value="DV_CODED_TEXT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_group.data.ABO_blood_group.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Blood_group.data.Rh(D)_antigen_status">
+         <path value="Blood_group.data.Rh(D)_antigen_status"/>
+         <short value="Rh(D) antigen status"/>
+         <definition value="The presence or absence the Rh(D) antigen."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_group.data.Rh(D)_antigen_status"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Blood_group.data.Rh(D)_antigen_status.value">
+         <path value="Blood_group.data.Rh(D)_antigen_status.value"/>
+         <short value="Rh(D) antigen status"/>
+         <definition value="The presence or absence the Rh(D) antigen."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Blood_group.data.Rh(D)_antigen_status.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

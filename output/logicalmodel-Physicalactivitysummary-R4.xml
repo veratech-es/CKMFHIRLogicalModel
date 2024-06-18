@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Physicalactivitysummary-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-physicalactivitysummary-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-EVALUATION.physical_activity_summary.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Physicalactivitysummary"/>
+   <title value="Physical activity summary"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="A summary of the typical level of physical activity undertaken by the individual."/>
+   <purpose value="To record a summary of typical physical activity of an individual."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Physical_activity_summary">
+         <path value="Physical_activity_summary"/>
+         <short value="Physical activity summary"/>
+         <definition value="A summary of the typical level of physical activity undertaken by the individual."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Physical_activity_summary"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Physical_activity_summary.protocol">
+         <path value="Physical_activity_summary.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Physical_activity_summary.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Physical_activity_summary.protocol.Last_updated">
+         <path value="Physical_activity_summary.protocol.Last_updated"/>
+         <short value="Last updated"/>
+         <definition value="The date when the physical activity summary was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Physical_activity_summary.protocol.Last_updated"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Physical_activity_summary.protocol.Last_updated.value">
+         <path value="Physical_activity_summary.protocol.Last_updated.value"/>
+         <short value="Last updated"/>
+         <definition value="The date when the physical activity summary was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Physical_activity_summary.protocol.Last_updated.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Physical_activity_summary.protocol.Extension">
+         <path value="Physical_activity_summary.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Physical_activity_summary.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Physical_activity_summary.data">
+         <path value="Physical_activity_summary.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Physical_activity_summary.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Physical_activity_summary.data.Physical_activity_level_(PAL)_status">
+         <path value="Physical_activity_summary.data.Physical_activity_level_(PAL)_status"/>
+         <short value="Physical activity level (PAL) status"/>
+         <definition value="The category of the typical, or usual, physical activity level of an individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Physical_activity_summary.data.Physical_activity_level_(PAL)_status"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Physical_activity_summary.data.Physical_activity_level_(PAL)_status.value_DV_CODED_TEXT">
+         <path value="Physical_activity_summary.data.Physical_activity_level_(PAL)_status.value_DV_CODED_TEXT"/>
+         <short value="Physical activity level (PAL) status"/>
+         <definition value="The category of the typical, or usual, physical activity level of an individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Physical_activity_summary.data.Physical_activity_level_(PAL)_status.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Physical_activity_summary.data.Physical_activity_level_(PAL)_status.value_DV_TEXT">
+         <path value="Physical_activity_summary.data.Physical_activity_level_(PAL)_status.value_DV_TEXT"/>
+         <short value="Physical activity level (PAL) status"/>
+         <definition value="The category of the typical, or usual, physical activity level of an individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Physical_activity_summary.data.Physical_activity_level_(PAL)_status.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Physical_activity_summary.data.Description">
+         <path value="Physical_activity_summary.data.Description"/>
+         <short value="Description"/>
+         <definition value="A narrative description about the individual's typical level of physical activity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Physical_activity_summary.data.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Physical_activity_summary.data.Description.value">
+         <path value="Physical_activity_summary.data.Description.value"/>
+         <short value="Description"/>
+         <definition value="A narrative description about the individual's typical level of physical activity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Physical_activity_summary.data.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Physical_activity_summary.data.Barrier">
+         <path value="Physical_activity_summary.data.Barrier"/>
+         <short value="Barrier"/>
+         <definition value="Identified factor that prevents the individual to become more physically active."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Physical_activity_summary.data.Barrier"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Physical_activity_summary.data.Barrier.value">
+         <path value="Physical_activity_summary.data.Barrier.value"/>
+         <short value="Barrier"/>
+         <definition value="Identified factor that prevents the individual to become more physically active."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Physical_activity_summary.data.Barrier.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Physical_activity_summary.data.Enabler">
+         <path value="Physical_activity_summary.data.Enabler"/>
+         <short value="Enabler"/>
+         <definition value="Identified factor that may support the individual to become more physically active."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Physical_activity_summary.data.Enabler"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Physical_activity_summary.data.Enabler.value">
+         <path value="Physical_activity_summary.data.Enabler.value"/>
+         <short value="Enabler"/>
+         <definition value="Identified factor that may support the individual to become more physically active."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Physical_activity_summary.data.Enabler.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Physical_activity_summary.data.Typical_moderate_exercise">
+         <path value="Physical_activity_summary.data.Typical_moderate_exercise"/>
+         <short value="Typical moderate exercise"/>
+         <definition value="Typical number of minutes of moderate exercise."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Physical_activity_summary.data.Typical_moderate_exercise"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Physical_activity_summary.data.Typical_moderate_exercise.value">
+         <path value="Physical_activity_summary.data.Typical_moderate_exercise.value"/>
+         <short value="Typical moderate exercise"/>
+         <definition value="Typical number of minutes of moderate exercise."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Physical_activity_summary.data.Typical_moderate_exercise.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Physical_activity_summary.data.Typical_vigorous_exercise">
+         <path value="Physical_activity_summary.data.Typical_vigorous_exercise"/>
+         <short value="Typical vigorous exercise"/>
+         <definition value="Typical number of minutes of vigorous exercise."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Physical_activity_summary.data.Typical_vigorous_exercise"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Physical_activity_summary.data.Typical_vigorous_exercise.value">
+         <path value="Physical_activity_summary.data.Typical_vigorous_exercise.value"/>
+         <short value="Typical vigorous exercise"/>
+         <definition value="Typical number of minutes of vigorous exercise."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Physical_activity_summary.data.Typical_vigorous_exercise.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

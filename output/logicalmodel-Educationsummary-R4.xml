@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Educationsummary-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-educationsummary-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-EVALUATION.education_summary.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Educationsummary"/>
+   <title value="Education summary"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Summary or persistent information about an individual's current and past education or training."/>
+   <purpose value="To record&#x9;summary information about an individual's current and past education or training, which provides an overview of their educational background."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Education_summary">
+         <path value="Education_summary"/>
+         <short value="Education summary"/>
+         <definition value="Summary or persistent information about an individual's current and past education or training."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Education_summary"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Education_summary.protocol">
+         <path value="Education_summary.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Education_summary.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Education_summary.protocol.Extension">
+         <path value="Education_summary.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Education_summary.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Education_summary.protocol.Last_updated">
+         <path value="Education_summary.protocol.Last_updated"/>
+         <short value="Last updated"/>
+         <definition value="The date that this education summary was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Education_summary.protocol.Last_updated"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Education_summary.protocol.Last_updated.value">
+         <path value="Education_summary.protocol.Last_updated.value"/>
+         <short value="Last updated"/>
+         <definition value="The date that this education summary was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Education_summary.protocol.Last_updated.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Education_summary.data">
+         <path value="Education_summary.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Education_summary.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Education_summary.data.Description">
+         <path value="Education_summary.data.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the overall education or training history of an individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Education_summary.data.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Education_summary.data.Description.value">
+         <path value="Education_summary.data.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the overall education or training history of an individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Education_summary.data.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Education_summary.data.Age_started">
+         <path value="Education_summary.data.Age_started"/>
+         <short value="Age started"/>
+         <definition value="Age when an individual first commenced formal education."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Education_summary.data.Age_started"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Education_summary.data.Age_started.value">
+         <path value="Education_summary.data.Age_started.value"/>
+         <short value="Age started"/>
+         <definition value="Age when an individual first commenced formal education."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Education_summary.data.Age_started.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Education_summary.data.Age_ended">
+         <path value="Education_summary.data.Age_ended"/>
+         <short value="Age ended"/>
+         <definition value="Age when an individual last attended formal education."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Education_summary.data.Age_ended"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Education_summary.data.Age_ended.value">
+         <path value="Education_summary.data.Age_ended.value"/>
+         <short value="Age ended"/>
+         <definition value="Age when an individual last attended formal education."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Education_summary.data.Age_ended.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Education_summary.data.Highest_level_completed">
+         <path value="Education_summary.data.Highest_level_completed"/>
+         <short value="Highest level completed"/>
+         <definition value="Description of highest category of education or training completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Education_summary.data.Highest_level_completed"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Education_summary.data.Highest_level_completed.value">
+         <path value="Education_summary.data.Highest_level_completed.value"/>
+         <short value="Highest level completed"/>
+         <definition value="Description of highest category of education or training completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Education_summary.data.Highest_level_completed.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Education_summary.data.Education_record">
+         <path value="Education_summary.data.Education_record"/>
+         <short value="Education record"/>
+         <definition value="Structured details about each education or training, both current and past."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Education_summary.data.Education_record"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Education_summary.data.Additional_details">
+         <path value="Education_summary.data.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="Additional details about the education or training, or previous education history of an individual."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Education_summary.data.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Education_summary.data.Comment">
+         <path value="Education_summary.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about an individual's education, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Education_summary.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Education_summary.data.Comment.value">
+         <path value="Education_summary.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about an individual's education, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Education_summary.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

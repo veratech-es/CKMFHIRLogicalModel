@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Vaccinationlist_SECTION-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-vaccinationlist_SECTION-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-SECTION.immunisation_list.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Vaccinationlist_SECTION"/>
+   <title value="Vaccination list"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Framework for consistent modelling of content within a template for an Vaccination List."/>
+   <purpose value="To provide a framework and design guidance for consistent modelling of content within a template for a Vaccination list."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Vaccination_list">
+         <path value="Vaccination_list"/>
+         <short value="Vaccination list"/>
+         <definition value="Framework for consistent modelling of content within a template for an Vaccination List."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Vaccination_list"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Vaccination_list.Vaccinations_administered">
+         <path value="Vaccination_list.Vaccinations_administered"/>
+         <short value="Vaccinations administered"/>
+         <definition value="Positive statements about vaccinations that have been administered."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Vaccination_list.Vaccinations_administered"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Vaccination_list.Exclusion_statement">
+         <path value="Vaccination_list.Exclusion_statement"/>
+         <short value="Exclusion statement"/>
+         <definition value="A positive statement about the exclusion of vaccinations administered."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Vaccination_list.Exclusion_statement"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Vaccination_list.Absence_statement">
+         <path value="Vaccination_list.Absence_statement"/>
+         <short value="Absence statement"/>
+         <definition value="A positive statement that no information is available about vaccinations administered."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Vaccination_list.Absence_statement"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

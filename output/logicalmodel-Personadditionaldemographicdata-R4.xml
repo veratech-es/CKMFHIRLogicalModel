@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Personadditionaldemographicdata-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-personadditionaldemographicdata-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-DEMOGRAPHIC-CLUSTER.person_additional_data_iso.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Personadditionaldemographicdata"/>
+   <title value="Person additional demographic data"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Person additional demographic data according to ISO 22220: sex and mother's family name"/>
+   <purpose value="Representation of a person's additional demographic data,based on ISO standards."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Person_additional_demographic_data">
+         <path value="Person_additional_demographic_data"/>
+         <short value="Person additional demographic data"/>
+         <definition value="Person additional demographic data according to ISO 22220: sex and mother's family name"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Person_additional_demographic_data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Person_additional_demographic_data.Sex">
+         <path value="Person_additional_demographic_data.Sex"/>
+         <short value="Sex"/>
+         <definition value="The sex of the subject."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Person_additional_demographic_data.Sex"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Person_additional_demographic_data.Sex.value">
+         <path value="Person_additional_demographic_data.Sex.value"/>
+         <short value="Sex"/>
+         <definition value="The sex of the subject."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Person_additional_demographic_data.Sex.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Person_additional_demographic_data.Mother's_family_name">
+         <path value="Person_additional_demographic_data.Mother's_family_name"/>
+         <short value="Mother's family name"/>
+         <definition value="Mother's original family name"/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Person_additional_demographic_data.Mother's_family_name"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Person_additional_demographic_data.Mother's_family_name.value">
+         <path value="Person_additional_demographic_data.Mother's_family_name.value"/>
+         <short value="Mother's family name"/>
+         <definition value="Mother's original family name"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Person_additional_demographic_data.Mother's_family_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Person_additional_demographic_data.Identification_comment">
+         <path value="Person_additional_demographic_data.Identification_comment"/>
+         <short value="Identification comment"/>
+         <definition value="Comments recorded for a person registration to distinguish between two or more persons with the same or similar demographic information"/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Person_additional_demographic_data.Identification_comment"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Person_additional_demographic_data.Identification_comment.value">
+         <path value="Person_additional_demographic_data.Identification_comment.value"/>
+         <short value="Identification comment"/>
+         <definition value="Comments recorded for a person registration to distinguish between two or more persons with the same or similar demographic information"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Person_additional_demographic_data.Identification_comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

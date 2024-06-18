@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Intravascularpressure-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-intravascularpressure-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.intravascular_pressure.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Intravascularpressure"/>
+   <title value="Intravascular pressure"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="The measured pressure in a specific location, blood vessel or heart cavity, at a specific phase of the heart or an average over the heart cycle."/>
+   <purpose value="To record intravascular venous, arterial, pulmonary or cardiac pressure measurement."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Intravascular_pressure">
+         <path value="Intravascular_pressure"/>
+         <short value="Intravascular pressure"/>
+         <definition value="The measured pressure in a specific location, blood vessel or heart cavity, at a specific phase of the heart or an average over the heart cycle."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Intravascular_pressure"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Intravascular_pressure.protocol">
+         <path value="Intravascular_pressure.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Intravascular_pressure.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Intravascular_pressure.protocol.Method">
+         <path value="Intravascular_pressure.protocol.Method"/>
+         <short value="Method"/>
+         <definition value="Description about how the intravascular pressure was measured."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Intravascular_pressure.protocol.Method"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Intravascular_pressure.protocol.Method.value">
+         <path value="Intravascular_pressure.protocol.Method.value"/>
+         <short value="Method"/>
+         <definition value="Description about how the intravascular pressure was measured."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Intravascular_pressure.protocol.Method.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Intravascular_pressure.protocol.Location_of_measurement">
+         <path value="Intravascular_pressure.protocol.Location_of_measurement"/>
+         <short value="Location of measurement"/>
+         <definition value="Simple body site where blood pressure was measured."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Intravascular_pressure.protocol.Location_of_measurement"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Intravascular_pressure.protocol.Location_of_measurement.value">
+         <path value="Intravascular_pressure.protocol.Location_of_measurement.value"/>
+         <short value="Location of measurement"/>
+         <definition value="Simple body site where blood pressure was measured."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Intravascular_pressure.protocol.Location_of_measurement.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Intravascular_pressure.protocol.Structured_measurement_location">
+         <path value="Intravascular_pressure.protocol.Structured_measurement_location"/>
+         <short value="Structured measurement location"/>
+         <definition value="Structured anatomical location of where the measurement was taken."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Intravascular_pressure.protocol.Structured_measurement_location"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Intravascular_pressure.protocol.Device">
+         <path value="Intravascular_pressure.protocol.Device"/>
+         <short value="Device"/>
+         <definition value="Details about the device used to record the measurement."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Intravascular_pressure.protocol.Device"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Intravascular_pressure.protocol.Extension">
+         <path value="Intravascular_pressure.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Intravascular_pressure.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Intravascular_pressure.history">
+         <path value="Intravascular_pressure.history"/>
+         <short value="history"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Intravascular_pressure.history"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Intravascular_pressure.history.Any_event">
+         <path value="Intravascular_pressure.history.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Intravascular_pressure.history.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Intravascular_pressure.history.Any_event.data">
+         <path value="Intravascular_pressure.history.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Intravascular_pressure.history.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Intravascular_pressure.history.Any_event.data.Pressure">
+         <path value="Intravascular_pressure.history.Any_event.data.Pressure"/>
+         <short value="Pressure"/>
+         <definition value="The measured intravascular pressure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Intravascular_pressure.history.Any_event.data.Pressure"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Intravascular_pressure.history.Any_event.data.Pressure.value">
+         <path value="Intravascular_pressure.history.Any_event.data.Pressure.value"/>
+         <short value="Pressure"/>
+         <definition value="The measured intravascular pressure."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Intravascular_pressure.history.Any_event.data.Pressure.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Intravascular_pressure.history.Any_event.data.Multimedia_representation">
+         <path value="Intravascular_pressure.history.Any_event.data.Multimedia_representation"/>
+         <short value="Multimedia representation"/>
+         <definition value="Digital image, video, wave form or diagram representing the findings."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Intravascular_pressure.history.Any_event.data.Multimedia_representation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Intravascular_pressure.history.Any_event.data.Clinical_interpretation">
+         <path value="Intravascular_pressure.history.Any_event.data.Clinical_interpretation"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Single word, phrase or brief description that represents the clinical meaning and significance of the intravascular pressure."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Intravascular_pressure.history.Any_event.data.Clinical_interpretation"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Intravascular_pressure.history.Any_event.data.Clinical_interpretation.value">
+         <path value="Intravascular_pressure.history.Any_event.data.Clinical_interpretation.value"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Single word, phrase or brief description that represents the clinical meaning and significance of the intravascular pressure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Intravascular_pressure.history.Any_event.data.Clinical_interpretation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Intravascular_pressure.history.Any_event.data.Comment">
+         <path value="Intravascular_pressure.history.Any_event.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the intravascular pressure measurement not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Intravascular_pressure.history.Any_event.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Intravascular_pressure.history.Any_event.data.Comment.value">
+         <path value="Intravascular_pressure.history.Any_event.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the intravascular pressure measurement not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Intravascular_pressure.history.Any_event.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Intravascular_pressure.history.Any_event.state">
+         <path value="Intravascular_pressure.history.Any_event.state"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Intravascular_pressure.history.Any_event.state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Intravascular_pressure.history.Any_event.state.Position">
+         <path value="Intravascular_pressure.history.Any_event.state.Position"/>
+         <short value="Position"/>
+         <definition value="Position of patient during measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Intravascular_pressure.history.Any_event.state.Position"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Intravascular_pressure.history.Any_event.state.Position.value">
+         <path value="Intravascular_pressure.history.Any_event.state.Position.value"/>
+         <short value="Position"/>
+         <definition value="Position of patient during measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Intravascular_pressure.history.Any_event.state.Position.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Intravascular_pressure.history.Any_event.state.Confounding_factors">
+         <path value="Intravascular_pressure.history.Any_event.state.Confounding_factors"/>
+         <short value="Confounding factors"/>
+         <definition value="Comment on and record other incidental factors that may be contributing to the intravascular pressure measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Intravascular_pressure.history.Any_event.state.Confounding_factors"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Intravascular_pressure.history.Any_event.state.Confounding_factors.value">
+         <path value="Intravascular_pressure.history.Any_event.state.Confounding_factors.value"/>
+         <short value="Confounding factors"/>
+         <definition value="Comment on and record other incidental factors that may be contributing to the intravascular pressure measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Intravascular_pressure.history.Any_event.state.Confounding_factors.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Intravascular_pressure.history.Any_event.state.Phase_of_heart_cycle">
+         <path value="Intravascular_pressure.history.Any_event.state.Phase_of_heart_cycle"/>
+         <short value="Phase of heart cycle"/>
+         <definition value="The phase of the heart cycle at the time of the measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Intravascular_pressure.history.Any_event.state.Phase_of_heart_cycle"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Intravascular_pressure.history.Any_event.state.Phase_of_heart_cycle.value">
+         <path value="Intravascular_pressure.history.Any_event.state.Phase_of_heart_cycle.value"/>
+         <short value="Phase of heart cycle"/>
+         <definition value="The phase of the heart cycle at the time of the measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Intravascular_pressure.history.Any_event.state.Phase_of_heart_cycle.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Intravascular_pressure.history.Average_over_heart_cycle">
+         <path value="Intravascular_pressure.history.Average_over_heart_cycle"/>
+         <short value="Average over heart cycle"/>
+         <definition value="The average over one heart cycle."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Intravascular_pressure.history.Average_over_heart_cycle"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Intravascular_pressure.history.Average_over_heart_cycle.data">
+         <path value="Intravascular_pressure.history.Average_over_heart_cycle.data"/>
+         <definition value="ITEM_TREE"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Intravascular_pressure.history.Average_over_heart_cycle.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Intravascular_pressure.history.Average_over_heart_cycle.data.Pressure">
+         <path value="Intravascular_pressure.history.Average_over_heart_cycle.data.Pressure"/>
+         <short value="Pressure"/>
+         <definition value="The measured intravascular pressure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Intravascular_pressure.history.Average_over_heart_cycle.data.Pressure"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Intravascular_pressure.history.Average_over_heart_cycle.data.Pressure.value">
+         <path value="Intravascular_pressure.history.Average_over_heart_cycle.data.Pressure.value"/>
+         <short value="Pressure"/>
+         <definition value="The measured intravascular pressure."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Intravascular_pressure.history.Average_over_heart_cycle.data.Pressure.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Intravascular_pressure.history.Average_over_heart_cycle.data.Multimedia_representation">
+         <path value="Intravascular_pressure.history.Average_over_heart_cycle.data.Multimedia_representation"/>
+         <short value="Multimedia representation"/>
+         <definition value="Digital image, video, wave form or diagram representing the findings."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Intravascular_pressure.history.Average_over_heart_cycle.data.Multimedia_representation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Intravascular_pressure.history.Average_over_heart_cycle.data.Clinical_interpretation">
+         <path value="Intravascular_pressure.history.Average_over_heart_cycle.data.Clinical_interpretation"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Single word, phrase or brief description that represents the clinical meaning and significance of the intravascular pressure."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Intravascular_pressure.history.Average_over_heart_cycle.data.Clinical_interpretation"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Intravascular_pressure.history.Average_over_heart_cycle.data.Clinical_interpretation.value">
+         <path value="Intravascular_pressure.history.Average_over_heart_cycle.data.Clinical_interpretation.value"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Single word, phrase or brief description that represents the clinical meaning and significance of the intravascular pressure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Intravascular_pressure.history.Average_over_heart_cycle.data.Clinical_interpretation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Intravascular_pressure.history.Average_over_heart_cycle.data.Comment">
+         <path value="Intravascular_pressure.history.Average_over_heart_cycle.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the intravascular pressure measurement not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Intravascular_pressure.history.Average_over_heart_cycle.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Intravascular_pressure.history.Average_over_heart_cycle.data.Comment.value">
+         <path value="Intravascular_pressure.history.Average_over_heart_cycle.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the intravascular pressure measurement not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Intravascular_pressure.history.Average_over_heart_cycle.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Intravascular_pressure.history.Average_over_heart_cycle.state">
+         <path value="Intravascular_pressure.history.Average_over_heart_cycle.state"/>
+         <definition value="ITEM_TREE"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Intravascular_pressure.history.Average_over_heart_cycle.state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Intravascular_pressure.history.Average_over_heart_cycle.state.Position">
+         <path value="Intravascular_pressure.history.Average_over_heart_cycle.state.Position"/>
+         <short value="Position"/>
+         <definition value="Position of patient during measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Intravascular_pressure.history.Average_over_heart_cycle.state.Position"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Intravascular_pressure.history.Average_over_heart_cycle.state.Position.value">
+         <path value="Intravascular_pressure.history.Average_over_heart_cycle.state.Position.value"/>
+         <short value="Position"/>
+         <definition value="Position of patient during measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Intravascular_pressure.history.Average_over_heart_cycle.state.Position.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Intravascular_pressure.history.Average_over_heart_cycle.state.Confounding_factors">
+         <path value="Intravascular_pressure.history.Average_over_heart_cycle.state.Confounding_factors"/>
+         <short value="Confounding factors"/>
+         <definition value="Comment on and record other incidental factors that may be contributing to the intravascular pressure measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Intravascular_pressure.history.Average_over_heart_cycle.state.Confounding_factors"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Intravascular_pressure.history.Average_over_heart_cycle.state.Confounding_factors.value">
+         <path value="Intravascular_pressure.history.Average_over_heart_cycle.state.Confounding_factors.value"/>
+         <short value="Confounding factors"/>
+         <definition value="Comment on and record other incidental factors that may be contributing to the intravascular pressure measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Intravascular_pressure.history.Average_over_heart_cycle.state.Confounding_factors.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Intravascular_pressure.history.Average_over_heart_cycle.state.Phase_of_heart_cycle">
+         <path value="Intravascular_pressure.history.Average_over_heart_cycle.state.Phase_of_heart_cycle"/>
+         <short value="Phase of heart cycle"/>
+         <definition value="The phase of the heart cycle at the time of the measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Intravascular_pressure.history.Average_over_heart_cycle.state.Phase_of_heart_cycle"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Intravascular_pressure.history.Average_over_heart_cycle.state.Phase_of_heart_cycle.value">
+         <path value="Intravascular_pressure.history.Average_over_heart_cycle.state.Phase_of_heart_cycle.value"/>
+         <short value="Phase of heart cycle"/>
+         <definition value="The phase of the heart cycle at the time of the measurement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Intravascular_pressure.history.Average_over_heart_cycle.state.Phase_of_heart_cycle.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Intravascular_pressure.history.events_Average_over_heart_cycle.math_function">
+         <path value="Intravascular_pressure.history.events_Average_over_heart_cycle.math_function"/>
+         <short value="Average over heart cycle"/>
+         <definition value="The average over one heart cycle."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Intravascular_pressure.history.events_Average_over_heart_cycle.math_function"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

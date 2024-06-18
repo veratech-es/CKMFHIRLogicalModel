@@ -1,0 +1,838 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Careplan_ACTION-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-careplan_ACTION-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-ACTION.care_plan.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Careplan_ACTION"/>
+   <title value="Care Plan"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Plan or sequence of discrete activities developed to achieve a specified management goal or treatment outcome, carried out by health professionals and/or the patient."/>
+   <purpose value="To record activity regarding the planning and carrying out of a single care plan as a whole."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Care_Plan">
+         <path value="Care_Plan"/>
+         <short value="Care Plan"/>
+         <definition value="Plan or sequence of discrete activities developed to achieve a specified management goal or treatment outcome, carried out by health professionals and/or the patient."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_Plan"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Care_Plan.protocol">
+         <path value="Care_Plan.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_Plan.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Care_Plan.protocol.Care_Plan_ID">
+         <path value="Care_Plan.protocol.Care_Plan_ID"/>
+         <short value="Care Plan ID"/>
+         <definition value="Identification of care plan."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_Plan.protocol.Care_Plan_ID"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Care_Plan.protocol.Care_Plan_ID.value">
+         <path value="Care_Plan.protocol.Care_Plan_ID.value"/>
+         <short value="Care Plan ID"/>
+         <definition value="Identification of care plan."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_Plan.protocol.Care_Plan_ID.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Care_Plan.protocol.Expiry_Date">
+         <path value="Care_Plan.protocol.Expiry_Date"/>
+         <short value="Expiry Date"/>
+         <definition value="Anticipated date beyond which the care plan can be deemed 'expired'."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_Plan.protocol.Expiry_Date"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Care_Plan.protocol.Expiry_Date.value">
+         <path value="Care_Plan.protocol.Expiry_Date.value"/>
+         <short value="Expiry Date"/>
+         <definition value="Anticipated date beyond which the care plan can be deemed 'expired'."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_Plan.protocol.Expiry_Date.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Care_Plan.description">
+         <path value="Care_Plan.description"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_Plan.description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Care_Plan.description.Care_Plan_Name">
+         <path value="Care_Plan.description.Care_Plan_Name"/>
+         <short value="Care Plan Name"/>
+         <definition value="Name of care plan."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_Plan.description.Care_Plan_Name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Care_Plan.description.Care_Plan_Name.value">
+         <path value="Care_Plan.description.Care_Plan_Name.value"/>
+         <short value="Care Plan Name"/>
+         <definition value="Name of care plan."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_Plan.description.Care_Plan_Name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Care_Plan.description.Description">
+         <path value="Care_Plan.description.Description"/>
+         <short value="Description"/>
+         <definition value="Description of activity performed/enacted against the plan."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_Plan.description.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Care_Plan.description.Description.value">
+         <path value="Care_Plan.description.Description.value"/>
+         <short value="Description"/>
+         <definition value="Description of activity performed/enacted against the plan."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_Plan.description.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Care_Plan.description.Reason">
+         <path value="Care_Plan.description.Reason"/>
+         <short value="Reason"/>
+         <definition value="Reason for activity  being performed /enacted against the plan."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_Plan.description.Reason"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Care_Plan.description.Reason.value">
+         <path value="Care_Plan.description.Reason.value"/>
+         <short value="Reason"/>
+         <definition value="Reason for activity  being performed /enacted against the plan."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_Plan.description.Reason.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Care_Plan.Care_plan_Need_Identified">
+         <path value="Care_Plan.Care_plan_Need_Identified"/>
+         <short value="Care plan Need Identified"/>
+         <definition value="Need for a care plan has been identified."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_Plan.Care_plan_Need_Identified"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Care_Plan.ism_transition_Care_plan_Need_Identified.current_state">
+         <path value="Care_Plan.ism_transition_Care_plan_Need_Identified.current_state"/>
+         <short value="Care plan Need Identified"/>
+         <definition value="Need for a care plan has been identified."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_Plan.ism_transition_Care_plan_Need_Identified.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Care_Plan.ism_transition_Care_plan_Need_Identified.careflow_step">
+         <path value="Care_Plan.ism_transition_Care_plan_Need_Identified.careflow_step"/>
+         <short value="Care plan Need Identified"/>
+         <definition value="Need for a care plan has been identified."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_Plan.ism_transition_Care_plan_Need_Identified.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Care_Plan.Care_Plan_Developed">
+         <path value="Care_Plan.Care_Plan_Developed"/>
+         <short value="Care Plan Developed"/>
+         <definition value="Care plan components identified and documented."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_Plan.Care_Plan_Developed"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Care_Plan.ism_transition_Care_Plan_Developed.current_state">
+         <path value="Care_Plan.ism_transition_Care_Plan_Developed.current_state"/>
+         <short value="Care Plan Developed"/>
+         <definition value="Care plan components identified and documented."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_Plan.ism_transition_Care_Plan_Developed.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Care_Plan.ism_transition_Care_Plan_Developed.careflow_step">
+         <path value="Care_Plan.ism_transition_Care_Plan_Developed.careflow_step"/>
+         <short value="Care Plan Developed"/>
+         <definition value="Care plan components identified and documented."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_Plan.ism_transition_Care_Plan_Developed.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Care_Plan.Care_Plan_Postponed">
+         <path value="Care_Plan.Care_Plan_Postponed"/>
+         <short value="Care Plan Postponed"/>
+         <definition value="Commencement of care plan has been temporarily postponed to a future date."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_Plan.Care_Plan_Postponed"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Care_Plan.ism_transition_Care_Plan_Postponed.current_state">
+         <path value="Care_Plan.ism_transition_Care_Plan_Postponed.current_state"/>
+         <short value="Care Plan Postponed"/>
+         <definition value="Commencement of care plan has been temporarily postponed to a future date."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_Plan.ism_transition_Care_Plan_Postponed.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Care_Plan.ism_transition_Care_Plan_Postponed.careflow_step">
+         <path value="Care_Plan.ism_transition_Care_Plan_Postponed.careflow_step"/>
+         <short value="Care Plan Postponed"/>
+         <definition value="Commencement of care plan has been temporarily postponed to a future date."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_Plan.ism_transition_Care_Plan_Postponed.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Care_Plan.Care_Plan_Cancelled">
+         <path value="Care_Plan.Care_Plan_Cancelled"/>
+         <short value="Care Plan Cancelled"/>
+         <definition value="Care plan has been cancelled prior to commencement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_Plan.Care_Plan_Cancelled"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Care_Plan.ism_transition_Care_Plan_Cancelled.current_state">
+         <path value="Care_Plan.ism_transition_Care_Plan_Cancelled.current_state"/>
+         <short value="Care Plan Cancelled"/>
+         <definition value="Care plan has been cancelled prior to commencement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_Plan.ism_transition_Care_Plan_Cancelled.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Care_Plan.ism_transition_Care_Plan_Cancelled.careflow_step">
+         <path value="Care_Plan.ism_transition_Care_Plan_Cancelled.careflow_step"/>
+         <short value="Care Plan Cancelled"/>
+         <definition value="Care plan has been cancelled prior to commencement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_Plan.ism_transition_Care_Plan_Cancelled.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Care_Plan.Care_Plan_Scheduled">
+         <path value="Care_Plan.Care_Plan_Scheduled"/>
+         <short value="Care Plan Scheduled"/>
+         <definition value="Care plan has been scheduled."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_Plan.Care_Plan_Scheduled"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Care_Plan.ism_transition_Care_Plan_Scheduled.current_state">
+         <path value="Care_Plan.ism_transition_Care_Plan_Scheduled.current_state"/>
+         <short value="Care Plan Scheduled"/>
+         <definition value="Care plan has been scheduled."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_Plan.ism_transition_Care_Plan_Scheduled.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Care_Plan.ism_transition_Care_Plan_Scheduled.careflow_step">
+         <path value="Care_Plan.ism_transition_Care_Plan_Scheduled.careflow_step"/>
+         <short value="Care Plan Scheduled"/>
+         <definition value="Care plan has been scheduled."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_Plan.ism_transition_Care_Plan_Scheduled.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Care_Plan.Care_Plan_Commenced">
+         <path value="Care_Plan.Care_Plan_Commenced"/>
+         <short value="Care Plan Commenced"/>
+         <definition value="Care plan activities commenced and in progress."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_Plan.Care_Plan_Commenced"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Care_Plan.ism_transition_Care_Plan_Commenced.current_state">
+         <path value="Care_Plan.ism_transition_Care_Plan_Commenced.current_state"/>
+         <short value="Care Plan Commenced"/>
+         <definition value="Care plan activities commenced and in progress."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_Plan.ism_transition_Care_Plan_Commenced.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Care_Plan.ism_transition_Care_Plan_Commenced.careflow_step">
+         <path value="Care_Plan.ism_transition_Care_Plan_Commenced.careflow_step"/>
+         <short value="Care Plan Commenced"/>
+         <definition value="Care plan activities commenced and in progress."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_Plan.ism_transition_Care_Plan_Commenced.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Care_Plan.Care_Plan_Reviewed">
+         <path value="Care_Plan.Care_Plan_Reviewed"/>
+         <short value="Care Plan Reviewed"/>
+         <definition value="Care plan has been reviewed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_Plan.Care_Plan_Reviewed"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Care_Plan.ism_transition_Care_Plan_Reviewed.current_state">
+         <path value="Care_Plan.ism_transition_Care_Plan_Reviewed.current_state"/>
+         <short value="Care Plan Reviewed"/>
+         <definition value="Care plan has been reviewed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_Plan.ism_transition_Care_Plan_Reviewed.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Care_Plan.ism_transition_Care_Plan_Reviewed.careflow_step">
+         <path value="Care_Plan.ism_transition_Care_Plan_Reviewed.careflow_step"/>
+         <short value="Care Plan Reviewed"/>
+         <definition value="Care plan has been reviewed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_Plan.ism_transition_Care_Plan_Reviewed.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Care_Plan.Care_Plan_Suspended">
+         <path value="Care_Plan.Care_Plan_Suspended"/>
+         <short value="Care Plan Suspended"/>
+         <definition value="Care plan is temporarily suspended but intended to resume at a later date."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_Plan.Care_Plan_Suspended"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Care_Plan.ism_transition_Care_Plan_Suspended.current_state">
+         <path value="Care_Plan.ism_transition_Care_Plan_Suspended.current_state"/>
+         <short value="Care Plan Suspended"/>
+         <definition value="Care plan is temporarily suspended but intended to resume at a later date."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_Plan.ism_transition_Care_Plan_Suspended.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Care_Plan.ism_transition_Care_Plan_Suspended.careflow_step">
+         <path value="Care_Plan.ism_transition_Care_Plan_Suspended.careflow_step"/>
+         <short value="Care Plan Suspended"/>
+         <definition value="Care plan is temporarily suspended but intended to resume at a later date."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_Plan.ism_transition_Care_Plan_Suspended.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Care_Plan.Care_Plan_Aborted">
+         <path value="Care_Plan.Care_Plan_Aborted"/>
+         <short value="Care Plan Aborted"/>
+         <definition value="Care plan has been aborted."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_Plan.Care_Plan_Aborted"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Care_Plan.ism_transition_Care_Plan_Aborted.current_state">
+         <path value="Care_Plan.ism_transition_Care_Plan_Aborted.current_state"/>
+         <short value="Care Plan Aborted"/>
+         <definition value="Care plan has been aborted."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_Plan.ism_transition_Care_Plan_Aborted.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Care_Plan.ism_transition_Care_Plan_Aborted.careflow_step">
+         <path value="Care_Plan.ism_transition_Care_Plan_Aborted.careflow_step"/>
+         <short value="Care Plan Aborted"/>
+         <definition value="Care plan has been aborted."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_Plan.ism_transition_Care_Plan_Aborted.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Care_Plan.Care_Plan_Expired">
+         <path value="Care_Plan.Care_Plan_Expired"/>
+         <short value="Care Plan Expired"/>
+         <definition value="Care plan duration has passed the 'Expiry Date'."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_Plan.Care_Plan_Expired"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Care_Plan.ism_transition_Care_Plan_Expired.current_state">
+         <path value="Care_Plan.ism_transition_Care_Plan_Expired.current_state"/>
+         <short value="Care Plan Expired"/>
+         <definition value="Care plan duration has passed the 'Expiry Date'."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_Plan.ism_transition_Care_Plan_Expired.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Care_Plan.ism_transition_Care_Plan_Expired.careflow_step">
+         <path value="Care_Plan.ism_transition_Care_Plan_Expired.careflow_step"/>
+         <short value="Care Plan Expired"/>
+         <definition value="Care plan duration has passed the 'Expiry Date'."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_Plan.ism_transition_Care_Plan_Expired.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Care_Plan.Care_Plan_Completed">
+         <path value="Care_Plan.Care_Plan_Completed"/>
+         <short value="Care Plan Completed"/>
+         <definition value="All activities related to the care plan have been reconciled or completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_Plan.Care_Plan_Completed"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Care_Plan.ism_transition_Care_Plan_Completed.current_state">
+         <path value="Care_Plan.ism_transition_Care_Plan_Completed.current_state"/>
+         <short value="Care Plan Completed"/>
+         <definition value="All activities related to the care plan have been reconciled or completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_Plan.ism_transition_Care_Plan_Completed.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Care_Plan.ism_transition_Care_Plan_Completed.careflow_step">
+         <path value="Care_Plan.ism_transition_Care_Plan_Completed.careflow_step"/>
+         <short value="Care Plan Completed"/>
+         <definition value="All activities related to the care plan have been reconciled or completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_Plan.ism_transition_Care_Plan_Completed.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

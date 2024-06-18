@@ -1,0 +1,1018 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Screeningactivity-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-screeningactivity-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-ACTION.screening.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Screeningactivity"/>
+   <title value="Screening Activity"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Health-related activity or test used to screen a patient for a health condition or assessment of health risks."/>
+   <purpose value="To record information about a health-related activity or test carried out to screen a patient for a health condition or assessment of health risk."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Screening_Activity">
+         <path value="Screening_Activity"/>
+         <short value="Screening Activity"/>
+         <definition value="Health-related activity or test used to screen a patient for a health condition or assessment of health risks."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Screening_Activity.protocol">
+         <path value="Screening_Activity.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Screening_Activity.protocol.Requestor_identifier">
+         <path value="Screening_Activity.protocol.Requestor_identifier"/>
+         <short value="Requestor identifier"/>
+         <definition value="The local ID assigned to the order by the healthcare provider or organisation requesting the service. This is also referred to as Placer Order Identifier."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.protocol.Requestor_identifier"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Screening_Activity.protocol.Requestor_identifier.value">
+         <path value="Screening_Activity.protocol.Requestor_identifier.value"/>
+         <short value="Requestor identifier"/>
+         <definition value="The local ID assigned to the order by the healthcare provider or organisation requesting the service. This is also referred to as Placer Order Identifier."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.protocol.Requestor_identifier.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Screening_Activity.protocol.Requestor">
+         <path value="Screening_Activity.protocol.Requestor"/>
+         <short value="Requestor"/>
+         <definition value="Details about the healthcare provider or organisation requesting the service."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Screening_Activity.protocol.Requestor"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Screening_Activity.protocol.Receiver_identifier">
+         <path value="Screening_Activity.protocol.Receiver_identifier"/>
+         <short value="Receiver identifier"/>
+         <definition value="The ID assigned to the order by the healthcare provider or organisation receiving the request for Screening. This is also referred to as Filler Order Identifier."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.protocol.Receiver_identifier"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Screening_Activity.protocol.Receiver_identifier.value">
+         <path value="Screening_Activity.protocol.Receiver_identifier.value"/>
+         <short value="Receiver identifier"/>
+         <definition value="The ID assigned to the order by the healthcare provider or organisation receiving the request for Screening. This is also referred to as Filler Order Identifier."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.protocol.Receiver_identifier.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Screening_Activity.protocol.Receiver">
+         <path value="Screening_Activity.protocol.Receiver"/>
+         <short value="Receiver"/>
+         <definition value="Details about the healthcare provider or organisation receiving the request for Screening."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Screening_Activity.protocol.Receiver"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Screening_Activity.protocol.Screening_Date_Time">
+         <path value="Screening_Activity.protocol.Screening_Date_Time"/>
+         <short value="Screening Date/Time"/>
+         <definition value="The scheduled date and/or time for the Screening service. This will indicate the scheduled date/time when recorded against the Scheduled care pathway step or the actual Start date/time in the Screening Performed step."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.protocol.Screening_Date_Time"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Screening_Activity.protocol.Screening_Date_Time.value">
+         <path value="Screening_Activity.protocol.Screening_Date_Time.value"/>
+         <short value="Screening Date/Time"/>
+         <definition value="The scheduled date and/or time for the Screening service. This will indicate the scheduled date/time when recorded against the Scheduled care pathway step or the actual Start date/time in the Screening Performed step."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.protocol.Screening_Date_Time.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Screening_Activity.description">
+         <path value="Screening_Activity.description"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Screening_Activity.description.Activity_Name">
+         <path value="Screening_Activity.description.Activity_Name"/>
+         <short value="Activity Name"/>
+         <definition value="Identification of the screening activity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.description.Activity_Name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Screening_Activity.description.Activity_Name.value">
+         <path value="Screening_Activity.description.Activity_Name.value"/>
+         <short value="Activity Name"/>
+         <definition value="Identification of the screening activity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.description.Activity_Name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Screening_Activity.description.Service_type">
+         <path value="Screening_Activity.description.Service_type"/>
+         <short value="Service type"/>
+         <definition value="Type of service to be carried out or being carried out."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.description.Service_type"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Screening_Activity.description.Service_type.value">
+         <path value="Screening_Activity.description.Service_type.value"/>
+         <short value="Service type"/>
+         <definition value="Type of service to be carried out or being carried out."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.description.Service_type.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Screening_Activity.description.Description">
+         <path value="Screening_Activity.description.Description"/>
+         <short value="Description"/>
+         <definition value="Description of the service provided."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.description.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Screening_Activity.description.Description.value">
+         <path value="Screening_Activity.description.Description.value"/>
+         <short value="Description"/>
+         <definition value="Description of the service provided."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.description.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Screening_Activity.description.Reason">
+         <path value="Screening_Activity.description.Reason"/>
+         <short value="Reason"/>
+         <definition value="Reason for activity, for example reason the screening test was aborted or reason the screening test was performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.description.Reason"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Screening_Activity.description.Reason.value">
+         <path value="Screening_Activity.description.Reason.value"/>
+         <short value="Reason"/>
+         <definition value="Reason for activity, for example reason the screening test was aborted or reason the screening test was performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.description.Reason.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Screening_Activity.description.Comment">
+         <path value="Screening_Activity.description.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the screening test not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.description.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Screening_Activity.description.Comment.value">
+         <path value="Screening_Activity.description.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the screening test not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.description.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Screening_Activity.Screening_planned">
+         <path value="Screening_Activity.Screening_planned"/>
+         <short value="Screening planned"/>
+         <definition value="Screening is planned."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.Screening_planned"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Screening_Activity.ism_transition_Screening_planned.current_state">
+         <path value="Screening_Activity.ism_transition_Screening_planned.current_state"/>
+         <short value="Screening planned"/>
+         <definition value="Screening is planned."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.ism_transition_Screening_planned.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Screening_Activity.ism_transition_Screening_planned.careflow_step">
+         <path value="Screening_Activity.ism_transition_Screening_planned.careflow_step"/>
+         <short value="Screening planned"/>
+         <definition value="Screening is planned."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.ism_transition_Screening_planned.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Screening_Activity.Screening_postponed">
+         <path value="Screening_Activity.Screening_postponed"/>
+         <short value="Screening postponed"/>
+         <definition value="The planned Screening has been postponed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.Screening_postponed"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Screening_Activity.ism_transition_Screening_postponed.current_state">
+         <path value="Screening_Activity.ism_transition_Screening_postponed.current_state"/>
+         <short value="Screening postponed"/>
+         <definition value="The planned Screening has been postponed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.ism_transition_Screening_postponed.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Screening_Activity.ism_transition_Screening_postponed.careflow_step">
+         <path value="Screening_Activity.ism_transition_Screening_postponed.careflow_step"/>
+         <short value="Screening postponed"/>
+         <definition value="The planned Screening has been postponed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.ism_transition_Screening_postponed.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Screening_Activity.Screening_cancelled">
+         <path value="Screening_Activity.Screening_cancelled"/>
+         <short value="Screening cancelled"/>
+         <definition value="The planned Screening has been cancelled prior to commencement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.Screening_cancelled"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Screening_Activity.ism_transition_Screening_cancelled.current_state">
+         <path value="Screening_Activity.ism_transition_Screening_cancelled.current_state"/>
+         <short value="Screening cancelled"/>
+         <definition value="The planned Screening has been cancelled prior to commencement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.ism_transition_Screening_cancelled.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Screening_Activity.ism_transition_Screening_cancelled.careflow_step">
+         <path value="Screening_Activity.ism_transition_Screening_cancelled.careflow_step"/>
+         <short value="Screening cancelled"/>
+         <definition value="The planned Screening has been cancelled prior to commencement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.ism_transition_Screening_cancelled.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Screening_Activity.Screening_declined">
+         <path value="Screening_Activity.Screening_declined"/>
+         <short value="Screening declined"/>
+         <definition value="The planned Screening was offered but was declined prior to commencement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.Screening_declined"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Screening_Activity.ism_transition_Screening_declined.current_state">
+         <path value="Screening_Activity.ism_transition_Screening_declined.current_state"/>
+         <short value="Screening declined"/>
+         <definition value="The planned Screening was offered but was declined prior to commencement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.ism_transition_Screening_declined.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Screening_Activity.ism_transition_Screening_declined.careflow_step">
+         <path value="Screening_Activity.ism_transition_Screening_declined.careflow_step"/>
+         <short value="Screening declined"/>
+         <definition value="The planned Screening was offered but was declined prior to commencement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.ism_transition_Screening_declined.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Screening_Activity.Screening_expired">
+         <path value="Screening_Activity.Screening_expired"/>
+         <short value="Screening expired"/>
+         <definition value="The Screening has expired before the Screening episode has been completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.Screening_expired"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Screening_Activity.ism_transition_Screening_expired.current_state">
+         <path value="Screening_Activity.ism_transition_Screening_expired.current_state"/>
+         <short value="Screening expired"/>
+         <definition value="The Screening has expired before the Screening episode has been completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.ism_transition_Screening_expired.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Screening_Activity.ism_transition_Screening_expired.careflow_step">
+         <path value="Screening_Activity.ism_transition_Screening_expired.careflow_step"/>
+         <short value="Screening expired"/>
+         <definition value="The Screening has expired before the Screening episode has been completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.ism_transition_Screening_expired.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Screening_Activity.Screening_scheduled">
+         <path value="Screening_Activity.Screening_scheduled"/>
+         <short value="Screening scheduled"/>
+         <definition value="Appointment for a screening service has been made."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.Screening_scheduled"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Screening_Activity.ism_transition_Screening_scheduled.current_state">
+         <path value="Screening_Activity.ism_transition_Screening_scheduled.current_state"/>
+         <short value="Screening scheduled"/>
+         <definition value="Appointment for a screening service has been made."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.ism_transition_Screening_scheduled.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Screening_Activity.ism_transition_Screening_scheduled.careflow_step">
+         <path value="Screening_Activity.ism_transition_Screening_scheduled.careflow_step"/>
+         <short value="Screening scheduled"/>
+         <definition value="Appointment for a screening service has been made."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.ism_transition_Screening_scheduled.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Screening_Activity.Screening_rescheduled">
+         <path value="Screening_Activity.Screening_rescheduled"/>
+         <short value="Screening rescheduled"/>
+         <definition value="Appointment for a repeat screening service has been made."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.Screening_rescheduled"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Screening_Activity.ism_transition_Screening_rescheduled.current_state">
+         <path value="Screening_Activity.ism_transition_Screening_rescheduled.current_state"/>
+         <short value="Screening rescheduled"/>
+         <definition value="Appointment for a repeat screening service has been made."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.ism_transition_Screening_rescheduled.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Screening_Activity.ism_transition_Screening_rescheduled.careflow_step">
+         <path value="Screening_Activity.ism_transition_Screening_rescheduled.careflow_step"/>
+         <short value="Screening rescheduled"/>
+         <definition value="Appointment for a repeat screening service has been made."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.ism_transition_Screening_rescheduled.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Screening_Activity.Screening_performed">
+         <path value="Screening_Activity.Screening_performed"/>
+         <short value="Screening performed"/>
+         <definition value="The healthcare provider has performed the Screening activity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.Screening_performed"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Screening_Activity.ism_transition_Screening_performed.current_state">
+         <path value="Screening_Activity.ism_transition_Screening_performed.current_state"/>
+         <short value="Screening performed"/>
+         <definition value="The healthcare provider has performed the Screening activity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.ism_transition_Screening_performed.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Screening_Activity.ism_transition_Screening_performed.careflow_step">
+         <path value="Screening_Activity.ism_transition_Screening_performed.careflow_step"/>
+         <short value="Screening performed"/>
+         <definition value="The healthcare provider has performed the Screening activity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.ism_transition_Screening_performed.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Screening_Activity.Screening_incomplete">
+         <path value="Screening_Activity.Screening_incomplete"/>
+         <short value="Screening incomplete"/>
+         <definition value="The Screening was commenced but unable to be completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.Screening_incomplete"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Screening_Activity.ism_transition_Screening_incomplete.current_state">
+         <path value="Screening_Activity.ism_transition_Screening_incomplete.current_state"/>
+         <short value="Screening incomplete"/>
+         <definition value="The Screening was commenced but unable to be completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.ism_transition_Screening_incomplete.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Screening_Activity.ism_transition_Screening_incomplete.careflow_step">
+         <path value="Screening_Activity.ism_transition_Screening_incomplete.careflow_step"/>
+         <short value="Screening incomplete"/>
+         <definition value="The Screening was commenced but unable to be completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.ism_transition_Screening_incomplete.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Screening_Activity.Screening_suspended">
+         <path value="Screening_Activity.Screening_suspended"/>
+         <short value="Screening suspended"/>
+         <definition value="The Screening has been suspended without completion."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.Screening_suspended"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Screening_Activity.ism_transition_Screening_suspended.current_state">
+         <path value="Screening_Activity.ism_transition_Screening_suspended.current_state"/>
+         <short value="Screening suspended"/>
+         <definition value="The Screening has been suspended without completion."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.ism_transition_Screening_suspended.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Screening_Activity.ism_transition_Screening_suspended.careflow_step">
+         <path value="Screening_Activity.ism_transition_Screening_suspended.careflow_step"/>
+         <short value="Screening suspended"/>
+         <definition value="The Screening has been suspended without completion."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.ism_transition_Screening_suspended.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Screening_Activity.Screening_abandoned">
+         <path value="Screening_Activity.Screening_abandoned"/>
+         <short value="Screening abandoned"/>
+         <definition value="The Screening has been ceased before the activity has been completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.Screening_abandoned"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Screening_Activity.ism_transition_Screening_abandoned.current_state">
+         <path value="Screening_Activity.ism_transition_Screening_abandoned.current_state"/>
+         <short value="Screening abandoned"/>
+         <definition value="The Screening has been ceased before the activity has been completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.ism_transition_Screening_abandoned.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Screening_Activity.ism_transition_Screening_abandoned.careflow_step">
+         <path value="Screening_Activity.ism_transition_Screening_abandoned.careflow_step"/>
+         <short value="Screening abandoned"/>
+         <definition value="The Screening has been ceased before the activity has been completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.ism_transition_Screening_abandoned.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Screening_Activity.Screening_activities_complete">
+         <path value="Screening_Activity.Screening_activities_complete"/>
+         <short value="Screening activities complete"/>
+         <definition value="All planned screening activities have been completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.Screening_activities_complete"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Screening_Activity.ism_transition_Screening_activities_complete.current_state">
+         <path value="Screening_Activity.ism_transition_Screening_activities_complete.current_state"/>
+         <short value="Screening activities complete"/>
+         <definition value="All planned screening activities have been completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.ism_transition_Screening_activities_complete.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Screening_Activity.ism_transition_Screening_activities_complete.careflow_step">
+         <path value="Screening_Activity.ism_transition_Screening_activities_complete.careflow_step"/>
+         <short value="Screening activities complete"/>
+         <definition value="All planned screening activities have been completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Screening_Activity.ism_transition_Screening_activities_complete.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Absenceofinformation-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-absenceofinformation-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-EVALUATION.absence.v2"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Absenceofinformation"/>
+   <title value="Absence of information"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Statement that specified health information is not available for inclusion in the health record or extract at the time of recording."/>
+   <purpose value="To enable recording or exchange of an explicit statement by a clinician that specified health information is not available for inclusion in the health record or record extract at the time of recording."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Absence_of_information">
+         <path value="Absence_of_information"/>
+         <short value="Absence of information"/>
+         <definition value="Statement that specified health information is not available for inclusion in the health record or extract at the time of recording."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Absence_of_information"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Absence_of_information.protocol">
+         <path value="Absence_of_information.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Absence_of_information.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Absence_of_information.protocol.Last_updated">
+         <path value="Absence_of_information.protocol.Last_updated"/>
+         <short value="Last updated"/>
+         <definition value="The date at which the absence was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Absence_of_information.protocol.Last_updated"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Absence_of_information.protocol.Last_updated.value">
+         <path value="Absence_of_information.protocol.Last_updated.value"/>
+         <short value="Last updated"/>
+         <definition value="The date at which the absence was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Absence_of_information.protocol.Last_updated.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Absence_of_information.protocol.Extension">
+         <path value="Absence_of_information.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Absence_of_information.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Absence_of_information.data">
+         <path value="Absence_of_information.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Absence_of_information.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Absence_of_information.data.Absence_statement">
+         <path value="Absence_of_information.data.Absence_statement"/>
+         <short value="Absence statement"/>
+         <definition value="Positive statement that no information is available."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Absence_of_information.data.Absence_statement"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Absence_of_information.data.Absence_statement.value">
+         <path value="Absence_of_information.data.Absence_statement.value"/>
+         <short value="Absence statement"/>
+         <definition value="Positive statement that no information is available."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Absence_of_information.data.Absence_statement.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Absence_of_information.data.Reason_for_absence">
+         <path value="Absence_of_information.data.Reason_for_absence"/>
+         <short value="Reason for absence"/>
+         <definition value="Description of the reason why there is no information available."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Absence_of_information.data.Reason_for_absence"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Absence_of_information.data.Reason_for_absence.value">
+         <path value="Absence_of_information.data.Reason_for_absence.value"/>
+         <short value="Reason for absence"/>
+         <definition value="Description of the reason why there is no information available."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Absence_of_information.data.Reason_for_absence.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

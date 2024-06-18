@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Pharmacogeneticgeneprofile-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-pharmacogeneticgeneprofile-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-EVALUATION.pharmacogenetic_gene_profile.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Pharmacogeneticgeneprofile"/>
+   <title value="Pharmacogenetic gene profile"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Details of cumulative pharmacogenetic phenotype findings relating to a single gene, in particular to record metaboliser status / functional activity against an enzyme known to impact the effectiveness/ toxicity of one or more medications.&#xD;&#xA;&#xD;&#xA;As individual pharmacogenetic tests may provide only incomplete allele testing, this archetype is intended to act as an overall cumulative representation of tall individual tests, from which therapeutic recommendations should be derived."/>
+   <purpose value="To record details of pharmacogenetic phenotype findings relating to a single genotype, in particular to record metaboliser status / functional activity against an enzyme known to impact the effectiveness/ toxicity of one or more medications.&#xD;&#xA;&#xD;&#xA;As individual pharmacogenetic tests may provide only incomplete allele testing, this archetype is intended to act as an overall cumulative representation of tall individual tests, from which therapeutic recommendations should be derived."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Pharmacogenetic_gene_profile">
+         <path value="Pharmacogenetic_gene_profile"/>
+         <short value="Pharmacogenetic gene profile"/>
+         <definition value="Details of cumulative pharmacogenetic phenotype findings relating to a single gene, in particular to record metaboliser status / functional activity against an enzyme known to impact the effectiveness/ toxicity of one or more medications.&#xD;&#xA;&#xD;&#xA;As individual pharmacogenetic tests may provide only incomplete allele testing, this archetype is intended to act as an overall cumulative representation of tall individual tests, from which therapeutic recommendations should be derived."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Pharmacogenetic_gene_profile"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pharmacogenetic_gene_profile.protocol">
+         <path value="Pharmacogenetic_gene_profile.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pharmacogenetic_gene_profile.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pharmacogenetic_gene_profile.protocol.Date_assessed">
+         <path value="Pharmacogenetic_gene_profile.protocol.Date_assessed"/>
+         <short value="Date assessed"/>
+         <definition value="The date at which the phenotype was assessed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pharmacogenetic_gene_profile.protocol.Date_assessed"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pharmacogenetic_gene_profile.protocol.Date_assessed.value">
+         <path value="Pharmacogenetic_gene_profile.protocol.Date_assessed.value"/>
+         <short value="Date assessed"/>
+         <definition value="The date at which the phenotype was assessed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pharmacogenetic_gene_profile.protocol.Date_assessed.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pharmacogenetic_gene_profile.protocol.Original_result">
+         <path value="Pharmacogenetic_gene_profile.protocol.Original_result"/>
+         <short value="Original result"/>
+         <definition value="Details of those people who helped me to complete this record."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pharmacogenetic_gene_profile.protocol.Original_result"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Pharmacogenetic_gene_profile.protocol.Original_result.value">
+         <path value="Pharmacogenetic_gene_profile.protocol.Original_result.value"/>
+         <short value="Original result"/>
+         <definition value="Details of those people who helped me to complete this record."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pharmacogenetic_gene_profile.protocol.Original_result.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pharmacogenetic_gene_profile.protocol.Extension">
+         <path value="Pharmacogenetic_gene_profile.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pharmacogenetic_gene_profile.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pharmacogenetic_gene_profile.data">
+         <path value="Pharmacogenetic_gene_profile.data"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pharmacogenetic_gene_profile.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pharmacogenetic_gene_profile.data.Pharmacogenetic_profile">
+         <path value="Pharmacogenetic_gene_profile.data.Pharmacogenetic_profile"/>
+         <short value="Pharmacogenetic profile"/>
+         <definition value="Slot to include details of the genotype which relates to this phenotype."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pharmacogenetic_gene_profile.data.Pharmacogenetic_profile"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

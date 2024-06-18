@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Consumernote-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-consumernote-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-EVALUATION.consumer_note.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Consumernote"/>
+   <title value="Consumer note"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Health related information about an individual, entered into a health record by that individual or their carer."/>
+   <purpose value="To record health-related information about an individual, as entered into a health record by that individual or their carer. &#xD;&#xA;&#xD;&#xA;This note may include details about an individual's health status, events, and issues. The intent of this note could be for the sole use of that individual or for sharing with healthcare providers."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Consumer_note">
+         <path value="Consumer_note"/>
+         <short value="Consumer note"/>
+         <definition value="Health related information about an individual, entered into a health record by that individual or their carer."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Consumer_note"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Consumer_note.data">
+         <path value="Consumer_note.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Consumer_note.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Consumer_note.data.Topic_name">
+         <path value="Consumer_note.data.Topic_name"/>
+         <short value="Topic name"/>
+         <definition value="Identification of the topic of the note, by name."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Consumer_note.data.Topic_name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Consumer_note.data.Topic_name.value">
+         <path value="Consumer_note.data.Topic_name.value"/>
+         <short value="Topic name"/>
+         <definition value="Identification of the topic of the note, by name."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Consumer_note.data.Topic_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Consumer_note.data.Note">
+         <path value="Consumer_note.data.Note"/>
+         <short value="Note"/>
+         <definition value="Narrative description of information that the consumer wishes to record."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Consumer_note.data.Note"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Consumer_note.data.Note.value">
+         <path value="Consumer_note.data.Note.value"/>
+         <short value="Note"/>
+         <definition value="Narrative description of information that the consumer wishes to record."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Consumer_note.data.Note.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Consumer_note.data.Date">
+         <path value="Consumer_note.data.Date"/>
+         <short value="Date"/>
+         <definition value="Option to make the note relevant for a specific date and/or time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Consumer_note.data.Date"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Consumer_note.data.Date.value">
+         <path value="Consumer_note.data.Date.value"/>
+         <short value="Date"/>
+         <definition value="Option to make the note relevant for a specific date and/or time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Consumer_note.data.Date.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

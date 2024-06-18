@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Bodyweight-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-bodyweight-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.body_weight.v2"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Bodyweight"/>
+   <title value="Body weight"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Measurement of the body weight of an individual."/>
+   <purpose value="To record the body weight of an individual - both actual and approximate."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Body_weight">
+         <path value="Body_weight"/>
+         <short value="Body weight"/>
+         <definition value="Measurement of the body weight of an individual."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_weight"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_weight.protocol_structure">
+         <path value="Body_weight.protocol_structure"/>
+         <short value="protocol structure"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_weight.protocol_structure"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_weight.protocol_structure.Device">
+         <path value="Body_weight.protocol_structure.Device"/>
+         <short value="Device"/>
+         <definition value="Details about the weighing device."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_weight.protocol_structure.Device"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_weight.protocol_structure.Extension">
+         <path value="Body_weight.protocol_structure.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Body_weight.protocol_structure.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_weight.history">
+         <path value="Body_weight.history"/>
+         <short value="history"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_weight.history"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_weight.history.Any_event">
+         <path value="Body_weight.history.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Body_weight.history.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_weight.history.Any_event.Simple">
+         <path value="Body_weight.history.Any_event.Simple"/>
+         <short value="Simple"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_weight.history.Any_event.Simple"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_weight.history.Any_event.Simple.Weight">
+         <path value="Body_weight.history.Any_event.Simple.Weight"/>
+         <short value="Weight"/>
+         <definition value="The weight of the individual."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_weight.history.Any_event.Simple.Weight"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_weight.history.Any_event.Simple.Weight.value">
+         <path value="Body_weight.history.Any_event.Simple.Weight.value"/>
+         <short value="Weight"/>
+         <definition value="The weight of the individual."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_weight.history.Any_event.Simple.Weight.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_weight.history.Any_event.Simple.Comment">
+         <path value="Body_weight.history.Any_event.Simple.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the measurement of Body weight, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_weight.history.Any_event.Simple.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_weight.history.Any_event.Simple.Comment.value">
+         <path value="Body_weight.history.Any_event.Simple.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the measurement of Body weight, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_weight.history.Any_event.Simple.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_weight.history.Any_event.state_structure">
+         <path value="Body_weight.history.Any_event.state_structure"/>
+         <short value="state structure"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_weight.history.Any_event.state_structure"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_weight.history.Any_event.state_structure.State_of_dress">
+         <path value="Body_weight.history.Any_event.state_structure.State_of_dress"/>
+         <short value="State of dress"/>
+         <definition value="Description of the state of dress of the person at the time of weighing."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_weight.history.Any_event.state_structure.State_of_dress"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_weight.history.Any_event.state_structure.State_of_dress.value">
+         <path value="Body_weight.history.Any_event.state_structure.State_of_dress.value"/>
+         <short value="State of dress"/>
+         <definition value="Description of the state of dress of the person at the time of weighing."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_weight.history.Any_event.state_structure.State_of_dress.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_weight.history.Any_event.state_structure.Confounding_factors">
+         <path value="Body_weight.history.Any_event.state_structure.Confounding_factors"/>
+         <short value="Confounding factors"/>
+         <definition value="Record any issues or factors that may impact on the measurement of body weight eg timing in menstrual cycle, timing of recent bowel motion or noting of amputation."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Body_weight.history.Any_event.state_structure.Confounding_factors"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Body_weight.history.Any_event.state_structure.Confounding_factors.value">
+         <path value="Body_weight.history.Any_event.state_structure.Confounding_factors.value"/>
+         <short value="Confounding factors"/>
+         <definition value="Record any issues or factors that may impact on the measurement of body weight eg timing in menstrual cycle, timing of recent bowel motion or noting of amputation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_weight.history.Any_event.state_structure.Confounding_factors.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_weight.history.Birth">
+         <path value="Body_weight.history.Birth"/>
+         <short value="Birth"/>
+         <definition value="Usually the first weight, measured soon after birth. This event will only be used once per health record&#xD;&#xA;."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_weight.history.Birth"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_weight.history.Birth.data">
+         <path value="Body_weight.history.Birth.data"/>
+         <definition value="ITEM_TREE"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_weight.history.Birth.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_weight.history.Birth.data.Weight">
+         <path value="Body_weight.history.Birth.data.Weight"/>
+         <short value="Weight"/>
+         <definition value="The weight of the individual."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_weight.history.Birth.data.Weight"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_weight.history.Birth.data.Weight.value">
+         <path value="Body_weight.history.Birth.data.Weight.value"/>
+         <short value="Weight"/>
+         <definition value="The weight of the individual."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_weight.history.Birth.data.Weight.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_weight.history.Birth.data.Comment">
+         <path value="Body_weight.history.Birth.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the measurement of Body weight, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_weight.history.Birth.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_weight.history.Birth.data.Comment.value">
+         <path value="Body_weight.history.Birth.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the measurement of Body weight, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_weight.history.Birth.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_weight.history.Birth.state">
+         <path value="Body_weight.history.Birth.state"/>
+         <definition value="ITEM_TREE"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_weight.history.Birth.state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_weight.history.Birth.state.State_of_dress">
+         <path value="Body_weight.history.Birth.state.State_of_dress"/>
+         <short value="State of dress"/>
+         <definition value="Description of the state of dress of the person at the time of weighing."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_weight.history.Birth.state.State_of_dress"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Body_weight.history.Birth.state.State_of_dress.value">
+         <path value="Body_weight.history.Birth.state.State_of_dress.value"/>
+         <short value="State of dress"/>
+         <definition value="Description of the state of dress of the person at the time of weighing."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_weight.history.Birth.state.State_of_dress.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Body_weight.history.Birth.state.Confounding_factors">
+         <path value="Body_weight.history.Birth.state.Confounding_factors"/>
+         <short value="Confounding factors"/>
+         <definition value="Record any issues or factors that may impact on the measurement of body weight eg timing in menstrual cycle, timing of recent bowel motion or noting of amputation."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Body_weight.history.Birth.state.Confounding_factors"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Body_weight.history.Birth.state.Confounding_factors.value">
+         <path value="Body_weight.history.Birth.state.Confounding_factors.value"/>
+         <short value="Confounding factors"/>
+         <definition value="Record any issues or factors that may impact on the measurement of body weight eg timing in menstrual cycle, timing of recent bowel motion or noting of amputation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Body_weight.history.Birth.state.Confounding_factors.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

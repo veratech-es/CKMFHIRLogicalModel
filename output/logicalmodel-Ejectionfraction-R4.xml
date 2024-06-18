@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Ejectionfraction-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-ejectionfraction-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.ejection_fraction.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Ejectionfraction"/>
+   <title value="Ejection fraction"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="The calculation of the volumetric fraction of fluid volume ejected from a chamber when it contracts."/>
+   <purpose value="To record the calculated ejection fraction from a chamber in the body."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Ejection_fraction">
+         <path value="Ejection_fraction"/>
+         <short value="Ejection fraction"/>
+         <definition value="The calculation of the volumetric fraction of fluid volume ejected from a chamber when it contracts."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Ejection_fraction"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Ejection_fraction.protocol">
+         <path value="Ejection_fraction.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Ejection_fraction.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Ejection_fraction.protocol.Modality">
+         <path value="Ejection_fraction.protocol.Modality"/>
+         <short value="Modality"/>
+         <definition value="The modality used to measure the ejection fraction volumes."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Ejection_fraction.protocol.Modality"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Ejection_fraction.protocol.Modality.value">
+         <path value="Ejection_fraction.protocol.Modality.value"/>
+         <short value="Modality"/>
+         <definition value="The modality used to measure the ejection fraction volumes."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Ejection_fraction.protocol.Modality.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Ejection_fraction.protocol.Equation">
+         <path value="Ejection_fraction.protocol.Equation"/>
+         <short value="Equation"/>
+         <definition value="The equation used to calculate the ejection fraction."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Ejection_fraction.protocol.Equation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Ejection_fraction.protocol.Equation.value">
+         <path value="Ejection_fraction.protocol.Equation.value"/>
+         <short value="Equation"/>
+         <definition value="The equation used to calculate the ejection fraction."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Ejection_fraction.protocol.Equation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Ejection_fraction.protocol.Extension">
+         <path value="Ejection_fraction.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models or formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Ejection_fraction.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Ejection_fraction.History">
+         <path value="Ejection_fraction.History"/>
+         <short value="History"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Ejection_fraction.History"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Ejection_fraction.History.Any_event">
+         <path value="Ejection_fraction.History.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Ejection_fraction.History.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Ejection_fraction.History.Any_event.data">
+         <path value="Ejection_fraction.History.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Ejection_fraction.History.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Ejection_fraction.History.Any_event.data.Chamber">
+         <path value="Ejection_fraction.History.Any_event.data.Chamber"/>
+         <short value="Chamber"/>
+         <definition value="The organ or part of organ where the volumes were measured."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Ejection_fraction.History.Any_event.data.Chamber"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Ejection_fraction.History.Any_event.data.Chamber.value">
+         <path value="Ejection_fraction.History.Any_event.data.Chamber.value"/>
+         <short value="Chamber"/>
+         <definition value="The organ or part of organ where the volumes were measured."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Ejection_fraction.History.Any_event.data.Chamber.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Ejection_fraction.History.Any_event.data.Specific_site">
+         <path value="Ejection_fraction.History.Any_event.data.Specific_site"/>
+         <short value="Specific site"/>
+         <definition value="Specific anatomical location of volume measurements when identification of the 'Chamber' is not sufficient."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Ejection_fraction.History.Any_event.data.Specific_site"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Ejection_fraction.History.Any_event.data.Specific_site.value">
+         <path value="Ejection_fraction.History.Any_event.data.Specific_site.value"/>
+         <short value="Specific site"/>
+         <definition value="Specific anatomical location of volume measurements when identification of the 'Chamber' is not sufficient."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Ejection_fraction.History.Any_event.data.Specific_site.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Ejection_fraction.History.Any_event.data.Ejection_fraction">
+         <path value="Ejection_fraction.History.Any_event.data.Ejection_fraction"/>
+         <short value="Ejection fraction"/>
+         <definition value="The calculated volumetric fraction based on volume measurements taken from the identified chamber or specific site."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Ejection_fraction.History.Any_event.data.Ejection_fraction"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Ejection_fraction.History.Any_event.data.Ejection_fraction.value">
+         <path value="Ejection_fraction.History.Any_event.data.Ejection_fraction.value"/>
+         <short value="Ejection fraction"/>
+         <definition value="The calculated volumetric fraction based on volume measurements taken from the identified chamber or specific site."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Ejection_fraction.History.Any_event.data.Ejection_fraction.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Ejection_fraction.History.Any_event.state">
+         <path value="Ejection_fraction.History.Any_event.state"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Ejection_fraction.History.Any_event.state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Ejection_fraction.History.Any_event.state.Confounding_factors">
+         <path value="Ejection_fraction.History.Any_event.state.Confounding_factors"/>
+         <short value="Confounding factors"/>
+         <definition value="Issues or factors that may impact on the calculation of ejection fraction, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Ejection_fraction.History.Any_event.state.Confounding_factors"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Ejection_fraction.History.Any_event.state.Confounding_factors.value">
+         <path value="Ejection_fraction.History.Any_event.state.Confounding_factors.value"/>
+         <short value="Confounding factors"/>
+         <definition value="Issues or factors that may impact on the calculation of ejection fraction, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Ejection_fraction.History.Any_event.state.Confounding_factors.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

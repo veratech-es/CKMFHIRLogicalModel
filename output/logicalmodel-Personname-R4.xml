@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Personname-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-personname-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-DEMOGRAPHIC-PARTY_IDENTITY.person_name.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Personname"/>
+   <title value="Person name"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Person name details."/>
+   <purpose value="Representation of a personal name, based on ISO/TS 22220 standard."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Person_name">
+         <path value="Person_name"/>
+         <short value="Person name"/>
+         <definition value="Person name details."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Person_name"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Person_name.name_DV_TEXT">
+         <path value="Person_name.name_DV_TEXT"/>
+         <short value="Person name"/>
+         <definition value="Person name details."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Person_name.name_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Person_name.name_DV_CODED_TEXT">
+         <path value="Person_name.name_DV_CODED_TEXT"/>
+         <short value="Person name"/>
+         <definition value="Person name details."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Person_name.name_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Person_name.Name">
+         <path value="Person_name.Name"/>
+         <short value="Name"/>
+         <definition value="Components of a person name."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Person_name.Name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Person_name.Name.Given_name">
+         <path value="Person_name.Name.Given_name"/>
+         <short value="Given name"/>
+         <definition value="The person's identifying name(s) within the family group or by which he/she is uniquely socially identified."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Person_name.Name.Given_name"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Person_name.Name.Given_name.value">
+         <path value="Person_name.Name.Given_name.value"/>
+         <short value="Given name"/>
+         <definition value="The person's identifying name(s) within the family group or by which he/she is uniquely socially identified."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Person_name.Name.Given_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Person_name.Name.Family_name">
+         <path value="Person_name.Name.Family_name"/>
+         <short value="Family name"/>
+         <definition value="The part of a name a person usually has in common with some other members of his/her family, as distinguished from his/her given names."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Person_name.Name.Family_name"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Person_name.Name.Family_name.value">
+         <path value="Person_name.Name.Family_name.value"/>
+         <short value="Family name"/>
+         <definition value="The part of a name a person usually has in common with some other members of his/her family, as distinguished from his/her given names."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Person_name.Name.Family_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Person_name.Name.Title">
+         <path value="Person_name.Name.Title"/>
+         <short value="Title"/>
+         <definition value="An honorific form of address commencing a name, used when addressing a person by name, whether by mail, by phone, or depending upon cultural situation in person."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Person_name.Name.Title"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Person_name.Name.Title.value">
+         <path value="Person_name.Name.Title.value"/>
+         <short value="Title"/>
+         <definition value="An honorific form of address commencing a name, used when addressing a person by name, whether by mail, by phone, or depending upon cultural situation in person."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Person_name.Name.Title.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Person_name.Name.Suffix">
+         <path value="Person_name.Name.Suffix"/>
+         <short value="Suffix"/>
+         <definition value="Additional term used following a person name."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Person_name.Name.Suffix"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Person_name.Name.Suffix.value">
+         <path value="Person_name.Name.Suffix.value"/>
+         <short value="Suffix"/>
+         <definition value="Additional term used following a person name."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Person_name.Name.Suffix.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Person_name.Name.Usage_interval">
+         <path value="Person_name.Name.Usage_interval"/>
+         <short value="Usage interval"/>
+         <definition value="The period of time for which the name usage applies."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Person_name.Name.Usage_interval"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Person_name.Name.Usage_interval.value">
+         <path value="Person_name.Name.Usage_interval.value"/>
+         <short value="Usage interval"/>
+         <definition value="The period of time for which the name usage applies."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Person_name.Name.Usage_interval.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Person_name.Name.Usage_identifier">
+         <path value="Person_name.Name.Usage_identifier"/>
+         <short value="Usage identifier"/>
+         <definition value="The combination of identifier type, identifier issuer and identifier name that specify the link between this name and reporting or other unique identifier usage."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Person_name.Name.Usage_identifier"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Person_name.Name.Usage_identifier.value">
+         <path value="Person_name.Name.Usage_identifier.value"/>
+         <short value="Usage identifier"/>
+         <definition value="The combination of identifier type, identifier issuer and identifier name that specify the link between this name and reporting or other unique identifier usage."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Person_name.Name.Usage_identifier.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Person_name.Name.Alternative_name_representations">
+         <path value="Person_name.Name.Alternative_name_representations"/>
+         <short value="Alternative name representations"/>
+         <definition value="Details of alternative representations such as local codesets or language variations."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Person_name.Name.Alternative_name_representations"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Person_name.Name.Alternative_name_representations.Representation_usage">
+         <path value="Person_name.Name.Alternative_name_representations.Representation_usage"/>
+         <short value="Representation usage"/>
+         <definition value="Name of the representational form used."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Person_name.Name.Alternative_name_representations.Representation_usage"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Person_name.Name.Alternative_name_representations.Representation_usage.value">
+         <path value="Person_name.Name.Alternative_name_representations.Representation_usage.value"/>
+         <short value="Representation usage"/>
+         <definition value="Name of the representational form used."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Person_name.Name.Alternative_name_representations.Representation_usage.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Person_name.Name.Alternative_name_representations.Alternative_representation">
+         <path value="Person_name.Name.Alternative_name_representations.Alternative_representation"/>
+         <short value="Alternative representation"/>
+         <definition value="Alternative Representation of this subject of care name using alternative styles of representation such as characters or language character set variations for local display."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Person_name.Name.Alternative_name_representations.Alternative_representation"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Person_name.Name.Alternative_name_representations.Alternative_representation.value">
+         <path value="Person_name.Name.Alternative_name_representations.Alternative_representation.value"/>
+         <short value="Alternative representation"/>
+         <definition value="Alternative Representation of this subject of care name using alternative styles of representation such as characters or language character set variations for local display."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Person_name.Name.Alternative_name_representations.Alternative_representation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Person_name.Name.Preferred_name">
+         <path value="Person_name.Name.Preferred_name"/>
+         <short value="Preferred name"/>
+         <definition value="Indicates that this is the name by which a person chooses to be identified."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Person_name.Name.Preferred_name"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Person_name.Name.Preferred_name.value">
+         <path value="Person_name.Name.Preferred_name.value"/>
+         <short value="Preferred name"/>
+         <definition value="Indicates that this is the name by which a person chooses to be identified."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Person_name.Name.Preferred_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Person_name.Name.Issues_of_accuracy_and_privacy">
+         <path value="Person_name.Name.Issues_of_accuracy_and_privacy"/>
+         <short value="Issues of accuracy and privacy"/>
+         <definition value="An indicator of specific conditions or rules that should be applied to the use of the person name."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Person_name.Name.Issues_of_accuracy_and_privacy"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Person_name.Name.Issues_of_accuracy_and_privacy.value_DV_TEXT">
+         <path value="Person_name.Name.Issues_of_accuracy_and_privacy.value_DV_TEXT"/>
+         <short value="Issues of accuracy and privacy"/>
+         <definition value="An indicator of specific conditions or rules that should be applied to the use of the person name."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Person_name.Name.Issues_of_accuracy_and_privacy.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Person_name.Name.Issues_of_accuracy_and_privacy.value_DV_CODED_TEXT">
+         <path value="Person_name.Name.Issues_of_accuracy_and_privacy.value_DV_CODED_TEXT"/>
+         <short value="Issues of accuracy and privacy"/>
+         <definition value="An indicator of specific conditions or rules that should be applied to the use of the person name."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Person_name.Name.Issues_of_accuracy_and_privacy.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Person_name.Name.Full_Name">
+         <path value="Person_name.Name.Full_Name"/>
+         <short value="Full Name"/>
+         <definition value="The person's full name as a concatenation of its name parts."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Person_name.Name.Full_Name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Person_name.Name.Full_Name.value">
+         <path value="Person_name.Name.Full_Name.value"/>
+         <short value="Full Name"/>
+         <definition value="The person's full name as a concatenation of its name parts."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Person_name.Name.Full_Name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

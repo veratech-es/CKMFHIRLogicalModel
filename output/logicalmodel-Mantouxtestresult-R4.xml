@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Mantouxtestresult-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-mantouxtestresult-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.mantoux_test_result.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Mantouxtestresult"/>
+   <title value="Mantoux test result"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="The test result, including findings and interpretation, following administration of the Mantoux Tuberculin Skin Test (TST)."/>
+   <purpose value="To record thetest result, including findings and interpretation, following administration of the Mantoux Tuberculin Skin Test (TST)."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Mantoux_test_result">
+         <path value="Mantoux_test_result"/>
+         <short value="Mantoux test result"/>
+         <definition value="The test result, including findings and interpretation, following administration of the Mantoux Tuberculin Skin Test (TST)."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Mantoux_test_result"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Mantoux_test_result.protocol">
+         <path value="Mantoux_test_result.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Mantoux_test_result.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Mantoux_test_result.protocol.Rationale_for_interpretation">
+         <path value="Mantoux_test_result.protocol.Rationale_for_interpretation"/>
+         <short value="Rationale for interpretation"/>
+         <definition value="Rationale used to interpret the reaction."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Mantoux_test_result.protocol.Rationale_for_interpretation"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Mantoux_test_result.protocol.Rationale_for_interpretation.value">
+         <path value="Mantoux_test_result.protocol.Rationale_for_interpretation.value"/>
+         <short value="Rationale for interpretation"/>
+         <definition value="Rationale used to interpret the reaction."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Mantoux_test_result.protocol.Rationale_for_interpretation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Mantoux_test_result.protocol.Extension">
+         <path value="Mantoux_test_result.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Mantoux_test_result.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Mantoux_test_result.Event_Series">
+         <path value="Mantoux_test_result.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Mantoux_test_result.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Mantoux_test_result.Event_Series.Any_point_in_time_event">
+         <path value="Mantoux_test_result.Event_Series.Any_point_in_time_event"/>
+         <short value="Any point-in-time event"/>
+         <definition value="Default, unspecified point-in-time event which may be more explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Mantoux_test_result.Event_Series.Any_point_in_time_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Mantoux_test_result.Event_Series.Any_point_in_time_event.data">
+         <path value="Mantoux_test_result.Event_Series.Any_point_in_time_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Mantoux_test_result.Event_Series.Any_point_in_time_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Mantoux_test_result.Event_Series.Any_point_in_time_event.data.Diameter">
+         <path value="Mantoux_test_result.Event_Series.Any_point_in_time_event.data.Diameter"/>
+         <short value="Diameter"/>
+         <definition value="The measured diameter of the induration reaction."/>
+         <min value="0"/>
+         <max value="3"/>
+         <base>
+            <path value="Mantoux_test_result.Event_Series.Any_point_in_time_event.data.Diameter"/>
+            <min value="0"/>
+            <max value="3"/>
+         </base>
+      </element>
+      <element id="Mantoux_test_result.Event_Series.Any_point_in_time_event.data.Diameter.value">
+         <path value="Mantoux_test_result.Event_Series.Any_point_in_time_event.data.Diameter.value"/>
+         <short value="Diameter"/>
+         <definition value="The measured diameter of the induration reaction."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Mantoux_test_result.Event_Series.Any_point_in_time_event.data.Diameter.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Mantoux_test_result.Event_Series.Any_point_in_time_event.data.Clinical_description">
+         <path value="Mantoux_test_result.Event_Series.Any_point_in_time_event.data.Clinical_description"/>
+         <short value="Clinical description"/>
+         <definition value="Narrative description about the Mantoux reaction findings."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Mantoux_test_result.Event_Series.Any_point_in_time_event.data.Clinical_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Mantoux_test_result.Event_Series.Any_point_in_time_event.data.Clinical_description.value">
+         <path value="Mantoux_test_result.Event_Series.Any_point_in_time_event.data.Clinical_description.value"/>
+         <short value="Clinical description"/>
+         <definition value="Narrative description about the Mantoux reaction findings."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Mantoux_test_result.Event_Series.Any_point_in_time_event.data.Clinical_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Mantoux_test_result.Event_Series.Any_point_in_time_event.data.Interpretation">
+         <path value="Mantoux_test_result.Event_Series.Any_point_in_time_event.data.Interpretation"/>
+         <short value="Interpretation"/>
+         <definition value="Clinical interpretation of the induration response."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Mantoux_test_result.Event_Series.Any_point_in_time_event.data.Interpretation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Mantoux_test_result.Event_Series.Any_point_in_time_event.data.Interpretation.value_DV_CODED_TEXT">
+         <path value="Mantoux_test_result.Event_Series.Any_point_in_time_event.data.Interpretation.value_DV_CODED_TEXT"/>
+         <short value="Interpretation"/>
+         <definition value="Clinical interpretation of the induration response."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Mantoux_test_result.Event_Series.Any_point_in_time_event.data.Interpretation.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Mantoux_test_result.Event_Series.Any_point_in_time_event.data.Interpretation.value_DV_TEXT">
+         <path value="Mantoux_test_result.Event_Series.Any_point_in_time_event.data.Interpretation.value_DV_TEXT"/>
+         <short value="Interpretation"/>
+         <definition value="Clinical interpretation of the induration response."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Mantoux_test_result.Event_Series.Any_point_in_time_event.data.Interpretation.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Mantoux_test_result.Event_Series.Any_point_in_time_event.data.Multimedia_representation">
+         <path value="Mantoux_test_result.Event_Series.Any_point_in_time_event.data.Multimedia_representation"/>
+         <short value="Multimedia representation"/>
+         <definition value="Digital image, video or diagram representing the test result."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Mantoux_test_result.Event_Series.Any_point_in_time_event.data.Multimedia_representation"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Mantoux_test_result.Event_Series.Any_point_in_time_event.data.Comment">
+         <path value="Mantoux_test_result.Event_Series.Any_point_in_time_event.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the Mantoux test result, not captured in other fields."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Mantoux_test_result.Event_Series.Any_point_in_time_event.data.Comment"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Mantoux_test_result.Event_Series.Any_point_in_time_event.data.Comment.value">
+         <path value="Mantoux_test_result.Event_Series.Any_point_in_time_event.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the Mantoux test result, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Mantoux_test_result.Event_Series.Any_point_in_time_event.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

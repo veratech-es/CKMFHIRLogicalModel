@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Exposurescreeningquestionnaire-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-exposurescreeningquestionnaire-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.exposure_screening.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Exposurescreeningquestionnaire"/>
+   <title value="Exposure screening questionnaire"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Series of questions and associated answers used to screen for potential exposure to a chemical, physical or biological agent which has caused or may cause harm to an individual."/>
+   <purpose value="To create a framework for recording answers to pre-defined screening questions about situations or events where the individual has been, or may have been, exposed to a harmful agent."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Exposure_screening_questionnaire">
+         <path value="Exposure_screening_questionnaire"/>
+         <short value="Exposure screening questionnaire"/>
+         <definition value="Series of questions and associated answers used to screen for potential exposure to a chemical, physical or biological agent which has caused or may cause harm to an individual."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Exposure_screening_questionnaire"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Exposure_screening_questionnaire.protocol">
+         <path value="Exposure_screening_questionnaire.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exposure_screening_questionnaire.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Exposure_screening_questionnaire.protocol.Extension">
+         <path value="Exposure_screening_questionnaire.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models or formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Exposure_screening_questionnaire.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Exposure_screening_questionnaire.History">
+         <path value="Exposure_screening_questionnaire.History"/>
+         <short value="History"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exposure_screening_questionnaire.History"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Exposure_screening_questionnaire.History.Any_event">
+         <path value="Exposure_screening_questionnaire.History.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Exposure_screening_questionnaire.History.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Exposure_screening_questionnaire.History.Any_event.data">
+         <path value="Exposure_screening_questionnaire.History.Any_event.data"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exposure_screening_questionnaire.History.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Exposure_screening_questionnaire.History.Any_event.data.Screening_purpose">
+         <path value="Exposure_screening_questionnaire.History.Any_event.data.Screening_purpose"/>
+         <short value="Screening purpose"/>
+         <definition value="The context or reason for screening."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exposure_screening_questionnaire.History.Any_event.data.Screening_purpose"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Exposure_screening_questionnaire.History.Any_event.data.Screening_purpose.value">
+         <path value="Exposure_screening_questionnaire.History.Any_event.data.Screening_purpose.value"/>
+         <short value="Screening purpose"/>
+         <definition value="The context or reason for screening."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exposure_screening_questionnaire.History.Any_event.data.Screening_purpose.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Exposure_screening_questionnaire.History.Any_event.data.Agent_name">
+         <path value="Exposure_screening_questionnaire.History.Any_event.data.Agent_name"/>
+         <short value="Agent name"/>
+         <definition value="The name of the chemical, physical or biological agent or grouping of agents to which an individual may have been exposed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exposure_screening_questionnaire.History.Any_event.data.Agent_name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Exposure_screening_questionnaire.History.Any_event.data.Agent_name.value">
+         <path value="Exposure_screening_questionnaire.History.Any_event.data.Agent_name.value"/>
+         <short value="Agent name"/>
+         <definition value="The name of the chemical, physical or biological agent or grouping of agents to which an individual may have been exposed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exposure_screening_questionnaire.History.Any_event.data.Agent_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Exposure_screening_questionnaire.History.Any_event.data.Any_exposure_">
+         <path value="Exposure_screening_questionnaire.History.Any_event.data.Any_exposure_"/>
+         <short value="Any exposure?"/>
+         <definition value="Presence of any relevant exposure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exposure_screening_questionnaire.History.Any_event.data.Any_exposure_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Exposure_screening_questionnaire.History.Any_event.data.Any_exposure_.value_DV_CODED_TEXT">
+         <path value="Exposure_screening_questionnaire.History.Any_event.data.Any_exposure_.value_DV_CODED_TEXT"/>
+         <short value="Any exposure?"/>
+         <definition value="Presence of any relevant exposure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exposure_screening_questionnaire.History.Any_event.data.Any_exposure_.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Exposure_screening_questionnaire.History.Any_event.data.Any_exposure_.value_DV_TEXT">
+         <path value="Exposure_screening_questionnaire.History.Any_event.data.Any_exposure_.value_DV_TEXT"/>
+         <short value="Any exposure?"/>
+         <definition value="Presence of any relevant exposure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exposure_screening_questionnaire.History.Any_event.data.Any_exposure_.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Exposure_screening_questionnaire.History.Any_event.data.Any_exposure_.value_DV_BOOLEAN">
+         <path value="Exposure_screening_questionnaire.History.Any_event.data.Any_exposure_.value_DV_BOOLEAN"/>
+         <short value="Any exposure?"/>
+         <definition value="Presence of any relevant exposure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exposure_screening_questionnaire.History.Any_event.data.Any_exposure_.value_DV_BOOLEAN"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Exposure_screening_questionnaire.History.Any_event.data.Specific_exposure">
+         <path value="Exposure_screening_questionnaire.History.Any_event.data.Specific_exposure"/>
+         <short value="Specific exposure"/>
+         <definition value="Details about each possible specific exposure circumstance."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Exposure_screening_questionnaire.History.Any_event.data.Specific_exposure"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Exposure_screening_questionnaire.History.Any_event.data.Specific_exposure.Situation">
+         <path value="Exposure_screening_questionnaire.History.Any_event.data.Specific_exposure.Situation"/>
+         <short value="Situation"/>
+         <definition value="The exposure event, or situation or activity where exposure may have occurred."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Exposure_screening_questionnaire.History.Any_event.data.Specific_exposure.Situation"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Exposure_screening_questionnaire.History.Any_event.data.Specific_exposure.Situation.value">
+         <path value="Exposure_screening_questionnaire.History.Any_event.data.Specific_exposure.Situation.value"/>
+         <short value="Situation"/>
+         <definition value="The exposure event, or situation or activity where exposure may have occurred."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exposure_screening_questionnaire.History.Any_event.data.Specific_exposure.Situation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Exposure_screening_questionnaire.History.Any_event.data.Specific_exposure.Presence_">
+         <path value="Exposure_screening_questionnaire.History.Any_event.data.Specific_exposure.Presence_"/>
+         <short value="Presence?"/>
+         <definition value="Has the specified 'Situation' occurred?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exposure_screening_questionnaire.History.Any_event.data.Specific_exposure.Presence_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Exposure_screening_questionnaire.History.Any_event.data.Specific_exposure.Presence_.value_DV_CODED_TEXT">
+         <path value="Exposure_screening_questionnaire.History.Any_event.data.Specific_exposure.Presence_.value_DV_CODED_TEXT"/>
+         <short value="Presence?"/>
+         <definition value="Has the specified 'Situation' occurred?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exposure_screening_questionnaire.History.Any_event.data.Specific_exposure.Presence_.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Exposure_screening_questionnaire.History.Any_event.data.Specific_exposure.Presence_.value_DV_TEXT">
+         <path value="Exposure_screening_questionnaire.History.Any_event.data.Specific_exposure.Presence_.value_DV_TEXT"/>
+         <short value="Presence?"/>
+         <definition value="Has the specified 'Situation' occurred?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exposure_screening_questionnaire.History.Any_event.data.Specific_exposure.Presence_.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Exposure_screening_questionnaire.History.Any_event.data.Specific_exposure.Presence_.value_DV_BOOLEAN">
+         <path value="Exposure_screening_questionnaire.History.Any_event.data.Specific_exposure.Presence_.value_DV_BOOLEAN"/>
+         <short value="Presence?"/>
+         <definition value="Has the specified 'Situation' occurred?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exposure_screening_questionnaire.History.Any_event.data.Specific_exposure.Presence_.value_DV_BOOLEAN"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Exposure_screening_questionnaire.History.Any_event.data.Specific_exposure.Timing">
+         <path value="Exposure_screening_questionnaire.History.Any_event.data.Specific_exposure.Timing"/>
+         <short value="Timing"/>
+         <definition value="Indication of timing related to the exposure situation."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Exposure_screening_questionnaire.History.Any_event.data.Specific_exposure.Timing"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Exposure_screening_questionnaire.History.Any_event.data.Specific_exposure.Timing.value_DV_DATE_TIME">
+         <path value="Exposure_screening_questionnaire.History.Any_event.data.Specific_exposure.Timing.value_DV_DATE_TIME"/>
+         <short value="Timing"/>
+         <definition value="Indication of timing related to the exposure situation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exposure_screening_questionnaire.History.Any_event.data.Specific_exposure.Timing.value_DV_DATE_TIME"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Exposure_screening_questionnaire.History.Any_event.data.Specific_exposure.Timing.value_DV_INTERVAL_DV_DATE_TIME_">
+         <path value="Exposure_screening_questionnaire.History.Any_event.data.Specific_exposure.Timing.value_DV_INTERVAL_DV_DATE_TIME_"/>
+         <short value="Timing"/>
+         <definition value="Indication of timing related to the exposure situation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exposure_screening_questionnaire.History.Any_event.data.Specific_exposure.Timing.value_DV_INTERVAL_DV_DATE_TIME_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Exposure_screening_questionnaire.History.Any_event.data.Specific_exposure.Timing.value_DV_DURATION">
+         <path value="Exposure_screening_questionnaire.History.Any_event.data.Specific_exposure.Timing.value_DV_DURATION"/>
+         <short value="Timing"/>
+         <definition value="Indication of timing related to the exposure situation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exposure_screening_questionnaire.History.Any_event.data.Specific_exposure.Timing.value_DV_DURATION"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Exposure_screening_questionnaire.History.Any_event.data.Specific_exposure.Timing.value_DV_INTERVAL_DV_DURATION_">
+         <path value="Exposure_screening_questionnaire.History.Any_event.data.Specific_exposure.Timing.value_DV_INTERVAL_DV_DURATION_"/>
+         <short value="Timing"/>
+         <definition value="Indication of timing related to the exposure situation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exposure_screening_questionnaire.History.Any_event.data.Specific_exposure.Timing.value_DV_INTERVAL_DV_DURATION_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Exposure_screening_questionnaire.History.Any_event.data.Specific_exposure.Timing.value_DV_TEXT">
+         <path value="Exposure_screening_questionnaire.History.Any_event.data.Specific_exposure.Timing.value_DV_TEXT"/>
+         <short value="Timing"/>
+         <definition value="Indication of timing related to the exposure situation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exposure_screening_questionnaire.History.Any_event.data.Specific_exposure.Timing.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Exposure_screening_questionnaire.History.Any_event.data.Specific_exposure.Additional_details">
+         <path value="Exposure_screening_questionnaire.History.Any_event.data.Specific_exposure.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="Additional details about the specific exposure event, location or associated contacts."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Exposure_screening_questionnaire.History.Any_event.data.Specific_exposure.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Exposure_screening_questionnaire.History.Any_event.data.Specific_exposure.Comment">
+         <path value="Exposure_screening_questionnaire.History.Any_event.data.Specific_exposure.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the specific exposure situation, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exposure_screening_questionnaire.History.Any_event.data.Specific_exposure.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Exposure_screening_questionnaire.History.Any_event.data.Specific_exposure.Comment.value">
+         <path value="Exposure_screening_questionnaire.History.Any_event.data.Specific_exposure.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the specific exposure situation, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exposure_screening_questionnaire.History.Any_event.data.Specific_exposure.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Infectiousdiseasesummary-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-infectiousdiseasesummary-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-EVALUATION.infectious_disease_summary.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Infectiousdiseasesummary"/>
+   <title value="Infectious disease summary"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Summary details about an infectious disease and factors related to assessment of immunity."/>
+   <purpose value="To record summary details about an infectious disease and factors related to assessment of immunity."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Infectious_disease_summary">
+         <path value="Infectious_disease_summary"/>
+         <short value="Infectious disease summary"/>
+         <definition value="Summary details about an infectious disease and factors related to assessment of immunity."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Infectious_disease_summary"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Infectious_disease_summary.protocol">
+         <path value="Infectious_disease_summary.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infectious_disease_summary.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Infectious_disease_summary.protocol.Last_Updated">
+         <path value="Infectious_disease_summary.protocol.Last_Updated"/>
+         <short value="Last Updated"/>
+         <definition value="The date at which the infectious disease summary was last clinically asserted, affirmed or confirmed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infectious_disease_summary.protocol.Last_Updated"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Infectious_disease_summary.protocol.Last_Updated.value">
+         <path value="Infectious_disease_summary.protocol.Last_Updated.value"/>
+         <short value="Last Updated"/>
+         <definition value="The date at which the infectious disease summary was last clinically asserted, affirmed or confirmed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infectious_disease_summary.protocol.Last_Updated.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Infectious_disease_summary.protocol.Extension">
+         <path value="Infectious_disease_summary.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local context or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Infectious_disease_summary.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Infectious_disease_summary.data">
+         <path value="Infectious_disease_summary.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infectious_disease_summary.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Infectious_disease_summary.data.Infectious_disease">
+         <path value="Infectious_disease_summary.data.Infectious_disease"/>
+         <short value="Infectious disease"/>
+         <definition value="Name of the infectious disease."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Infectious_disease_summary.data.Infectious_disease"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Infectious_disease_summary.data.Infectious_disease.value">
+         <path value="Infectious_disease_summary.data.Infectious_disease.value"/>
+         <short value="Infectious disease"/>
+         <definition value="Name of the infectious disease."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infectious_disease_summary.data.Infectious_disease.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Infectious_disease_summary.data.Immune_status">
+         <path value="Infectious_disease_summary.data.Immune_status"/>
+         <short value="Immune status"/>
+         <definition value="Assertion about the immune status of the subject."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infectious_disease_summary.data.Immune_status"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Infectious_disease_summary.data.Immune_status.value">
+         <path value="Infectious_disease_summary.data.Immune_status.value"/>
+         <short value="Immune status"/>
+         <definition value="Assertion about the immune status of the subject."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infectious_disease_summary.data.Immune_status.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Infectious_disease_summary.data.Description_of_immune_status">
+         <path value="Infectious_disease_summary.data.Description_of_immune_status"/>
+         <short value="Description of immune status"/>
+         <definition value="Narrative description about the assessment of immune status for the  infectious disease."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infectious_disease_summary.data.Description_of_immune_status"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Infectious_disease_summary.data.Description_of_immune_status.value">
+         <path value="Infectious_disease_summary.data.Description_of_immune_status.value"/>
+         <short value="Description of immune status"/>
+         <definition value="Narrative description about the assessment of immune status for the  infectious disease."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infectious_disease_summary.data.Description_of_immune_status.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Infectious_disease_summary.data.Previous_infection_">
+         <path value="Infectious_disease_summary.data.Previous_infection_"/>
+         <short value="Previous infection?"/>
+         <definition value="Has the subject been exposed through a previous infection to the same infectious disease?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infectious_disease_summary.data.Previous_infection_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Infectious_disease_summary.data.Previous_infection_.value">
+         <path value="Infectious_disease_summary.data.Previous_infection_.value"/>
+         <short value="Previous infection?"/>
+         <definition value="Has the subject been exposed through a previous infection to the same infectious disease?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infectious_disease_summary.data.Previous_infection_.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Infectious_disease_summary.data.Evidence">
+         <path value="Infectious_disease_summary.data.Evidence"/>
+         <short value="Evidence"/>
+         <definition value="Details about evidence that supports the assertion of an immune status."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Infectious_disease_summary.data.Evidence"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Infectious_disease_summary.data.Comment">
+         <path value="Infectious_disease_summary.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Narrative information about the infectious disease not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infectious_disease_summary.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Infectious_disease_summary.data.Comment.value">
+         <path value="Infectious_disease_summary.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Narrative information about the infectious disease not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Infectious_disease_summary.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

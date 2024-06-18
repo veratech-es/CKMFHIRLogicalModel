@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Sourceinformation-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-sourceinformation-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-EVALUATION.source.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Sourceinformation"/>
+   <title value="Source information"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Information sourced from a third party that is utilised as part of a remote assessment or report."/>
+   <purpose value="To record details about information sourced from a third party that is utilised as part of a remote assessment or report."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Source_information">
+         <path value="Source_information"/>
+         <short value="Source information"/>
+         <definition value="Information sourced from a third party that is utilised as part of a remote assessment or report."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Source_information"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Source_information.protocol">
+         <path value="Source_information.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Source_information.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Source_information.protocol.Extension">
+         <path value="Source_information.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local context or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Source_information.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Source_information.data">
+         <path value="Source_information.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Source_information.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Source_information.data.Source_information">
+         <path value="Source_information.data.Source_information"/>
+         <short value="Source information"/>
+         <definition value="Identification of the original, or source of, information being assessed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Source_information.data.Source_information"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Source_information.data.Source_information.value">
+         <path value="Source_information.data.Source_information.value"/>
+         <short value="Source information"/>
+         <definition value="Identification of the original, or source of, information being assessed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Source_information.data.Source_information.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Source_information.data.Path">
+         <path value="Source_information.data.Path"/>
+         <short value="Path"/>
+         <definition value="Identification of the path to the archetype or data node for  the original information."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Source_information.data.Path"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Source_information.data.Path.value">
+         <path value="Source_information.data.Path.value"/>
+         <short value="Path"/>
+         <definition value="Identification of the path to the archetype or data node for  the original information."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Source_information.data.Path.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="string"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Source_information.data.Quality">
+         <path value="Source_information.data.Quality"/>
+         <short value="Quality"/>
+         <definition value="Assessment regarding 'fitness for use' of the original information."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Source_information.data.Quality"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Source_information.data.Quality.value">
+         <path value="Source_information.data.Quality.value"/>
+         <short value="Quality"/>
+         <definition value="Assessment regarding 'fitness for use' of the original information."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Source_information.data.Quality.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Source_information.data.Comment">
+         <path value="Source_information.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Narrative about the source information not captured in other data fields."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Source_information.data.Comment"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Source_information.data.Comment.value">
+         <path value="Source_information.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Narrative about the source information not captured in other data fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Source_information.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

@@ -1,0 +1,1138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Capriniscore-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-capriniscore-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.caprini_score.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Capriniscore"/>
+   <title value="Caprini score"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Assessment tool used to stratify risk for venous thromboembolism (VTE)."/>
+   <purpose value="To record values for individual Caprini score parameters and the total score."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Caprini_score">
+         <path value="Caprini_score"/>
+         <short value="Caprini score"/>
+         <definition value="Assessment tool used to stratify risk for venous thromboembolism (VTE)."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Caprini_score.protocol">
+         <path value="Caprini_score.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Caprini_score.protocol.Extension">
+         <path value="Caprini_score.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models or formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Caprini_score.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Caprini_score.Event_Series">
+         <path value="Caprini_score.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event">
+         <path value="Caprini_score.Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data">
+         <path value="Caprini_score.Event_Series.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Gender">
+         <path value="Caprini_score.Event_Series.Any_event.data.Gender"/>
+         <short value="Gender"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Gender"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Gender.value">
+         <path value="Caprini_score.Event_Series.Any_event.data.Gender.value"/>
+         <short value="Gender"/>
+         <definition value="DV_CODED_TEXT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Gender.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Age">
+         <path value="Caprini_score.Event_Series.Any_event.data.Age"/>
+         <short value="Age"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Age"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Age.value">
+         <path value="Caprini_score.Event_Series.Any_event.data.Age.value"/>
+         <short value="Age"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Age.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Planned_surgery">
+         <path value="Caprini_score.Event_Series.Any_event.data.Planned_surgery"/>
+         <short value="Planned surgery"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Planned_surgery"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Planned_surgery.value">
+         <path value="Caprini_score.Event_Series.Any_event.data.Planned_surgery.value"/>
+         <short value="Planned surgery"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Planned_surgery.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Overweight_or_obese_(BMI_≥_25)">
+         <path value="Caprini_score.Event_Series.Any_event.data.Overweight_or_obese_(BMI_≥_25)"/>
+         <short value="Overweight or obese (BMI ≥ 25)"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Overweight_or_obese_(BMI_≥_25)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Overweight_or_obese_(BMI_≥_25).value">
+         <path value="Caprini_score.Event_Series.Any_event.data.Overweight_or_obese_(BMI_≥_25).value"/>
+         <short value="Overweight or obese (BMI ≥ 25)"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Overweight_or_obese_(BMI_≥_25).value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Varicose_veins">
+         <path value="Caprini_score.Event_Series.Any_event.data.Varicose_veins"/>
+         <short value="Varicose veins"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Varicose_veins"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Varicose_veins.value">
+         <path value="Caprini_score.Event_Series.Any_event.data.Varicose_veins.value"/>
+         <short value="Varicose veins"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Varicose_veins.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Swollen_legs">
+         <path value="Caprini_score.Event_Series.Any_event.data.Swollen_legs"/>
+         <short value="Swollen legs"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Swollen_legs"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Swollen_legs.value">
+         <path value="Caprini_score.Event_Series.Any_event.data.Swollen_legs.value"/>
+         <short value="Swollen legs"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Swollen_legs.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Abnormal_pulmonary_function_(COPD)">
+         <path value="Caprini_score.Event_Series.Any_event.data.Abnormal_pulmonary_function_(COPD)"/>
+         <short value="Abnormal pulmonary function (COPD)"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Abnormal_pulmonary_function_(COPD)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Abnormal_pulmonary_function_(COPD).value">
+         <path value="Caprini_score.Event_Series.Any_event.data.Abnormal_pulmonary_function_(COPD).value"/>
+         <short value="Abnormal pulmonary function (COPD)"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Abnormal_pulmonary_function_(COPD).value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Pregnant_or_postpartum_&lt;1_month">
+         <path value="Caprini_score.Event_Series.Any_event.data.Pregnant_or_postpartum_&lt;1_month"/>
+         <short value="Pregnant or postpartum &lt;1 month"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Pregnant_or_postpartum_&lt;1_month"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Pregnant_or_postpartum_&lt;1_month.value">
+         <path value="Caprini_score.Event_Series.Any_event.data.Pregnant_or_postpartum_&lt;1_month.value"/>
+         <short value="Pregnant or postpartum &lt;1 month"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Pregnant_or_postpartum_&lt;1_month.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Current_oral_contraceptives_or_hormone_replacement">
+         <path value="Caprini_score.Event_Series.Any_event.data.Current_oral_contraceptives_or_hormone_replacement"/>
+         <short value="Current oral contraceptives or hormone replacement"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Current_oral_contraceptives_or_hormone_replacement"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Current_oral_contraceptives_or_hormone_replacement.value">
+         <path value="Caprini_score.Event_Series.Any_event.data.Current_oral_contraceptives_or_hormone_replacement.value"/>
+         <short value="Current oral contraceptives or hormone replacement"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Current_oral_contraceptives_or_hormone_replacement.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Sepsis_(&lt;1_month)">
+         <path value="Caprini_score.Event_Series.Any_event.data.Sepsis_(&lt;1_month)"/>
+         <short value="Sepsis (&lt;1 month)"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Sepsis_(&lt;1_month)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Sepsis_(&lt;1_month).value">
+         <path value="Caprini_score.Event_Series.Any_event.data.Sepsis_(&lt;1_month).value"/>
+         <short value="Sepsis (&lt;1 month)"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Sepsis_(&lt;1_month).value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Serious_lung_disease,_including_pneumonia_(&lt;1_month)">
+         <path value="Caprini_score.Event_Series.Any_event.data.Serious_lung_disease,_including_pneumonia_(&lt;1_month)"/>
+         <short value="Serious lung disease, including pneumonia (&lt;1 month)"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Serious_lung_disease,_including_pneumonia_(&lt;1_month)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Serious_lung_disease,_including_pneumonia_(&lt;1_month).value">
+         <path value="Caprini_score.Event_Series.Any_event.data.Serious_lung_disease,_including_pneumonia_(&lt;1_month).value"/>
+         <short value="Serious lung disease, including pneumonia (&lt;1 month)"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Serious_lung_disease,_including_pneumonia_(&lt;1_month).value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Congestive_heart_failure_(&lt;1_month)">
+         <path value="Caprini_score.Event_Series.Any_event.data.Congestive_heart_failure_(&lt;1_month)"/>
+         <short value="Congestive heart failure (&lt;1 month)"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Congestive_heart_failure_(&lt;1_month)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Congestive_heart_failure_(&lt;1_month).value">
+         <path value="Caprini_score.Event_Series.Any_event.data.Congestive_heart_failure_(&lt;1_month).value"/>
+         <short value="Congestive heart failure (&lt;1 month)"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Congestive_heart_failure_(&lt;1_month).value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Acute_myocardial_infarction_(&lt;1_month)">
+         <path value="Caprini_score.Event_Series.Any_event.data.Acute_myocardial_infarction_(&lt;1_month)"/>
+         <short value="Acute myocardial infarction (&lt;1 month)"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Acute_myocardial_infarction_(&lt;1_month)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Acute_myocardial_infarction_(&lt;1_month).value">
+         <path value="Caprini_score.Event_Series.Any_event.data.Acute_myocardial_infarction_(&lt;1_month).value"/>
+         <short value="Acute myocardial infarction (&lt;1 month)"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Acute_myocardial_infarction_(&lt;1_month).value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.History_of_major_surgery_(&lt;1_month)">
+         <path value="Caprini_score.Event_Series.Any_event.data.History_of_major_surgery_(&lt;1_month)"/>
+         <short value="History of major surgery (&lt;1 month)"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.History_of_major_surgery_(&lt;1_month)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.History_of_major_surgery_(&lt;1_month).value">
+         <path value="Caprini_score.Event_Series.Any_event.data.History_of_major_surgery_(&lt;1_month).value"/>
+         <short value="History of major surgery (&lt;1 month)"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.History_of_major_surgery_(&lt;1_month).value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.History_of_inflammatory_bowel_disease">
+         <path value="Caprini_score.Event_Series.Any_event.data.History_of_inflammatory_bowel_disease"/>
+         <short value="History of inflammatory bowel disease"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.History_of_inflammatory_bowel_disease"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.History_of_inflammatory_bowel_disease.value">
+         <path value="Caprini_score.Event_Series.Any_event.data.History_of_inflammatory_bowel_disease.value"/>
+         <short value="History of inflammatory bowel disease"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.History_of_inflammatory_bowel_disease.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.History_of_unexplained_stillborn_infant,_recurrent_spontaneous_abortion_(≥3_factors_present),_premature_birth_with_toxaemia_or_growth_restricted_infant_">
+         <path value="Caprini_score.Event_Series.Any_event.data.History_of_unexplained_stillborn_infant,_recurrent_spontaneous_abortion_(≥3_factors_present),_premature_birth_with_toxaemia_or_growth_restricted_infant_"/>
+         <short value="History of unexplained stillborn infant, recurrent spontaneous abortion (≥3 factors present), premature birth with toxaemia or growth restricted infant."/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.History_of_unexplained_stillborn_infant,_recurrent_spontaneous_abortion_(≥3_factors_present),_premature_birth_with_toxaemia_or_growth_restricted_infant_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.History_of_unexplained_stillborn_infant,_recurrent_spontaneous_abortion_(≥3_factors_present),_premature_birth_with_toxaemia_or_growth_restricted_infant_.value">
+         <path value="Caprini_score.Event_Series.Any_event.data.History_of_unexplained_stillborn_infant,_recurrent_spontaneous_abortion_(≥3_factors_present),_premature_birth_with_toxaemia_or_growth_restricted_infant_.value"/>
+         <short value="History of unexplained stillborn infant, recurrent spontaneous abortion (≥3 factors present), premature birth with toxaemia or growth restricted infant."/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.History_of_unexplained_stillborn_infant,_recurrent_spontaneous_abortion_(≥3_factors_present),_premature_birth_with_toxaemia_or_growth_restricted_infant_.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Bed_rest_or_restricted_mobility_during_past_month">
+         <path value="Caprini_score.Event_Series.Any_event.data.Bed_rest_or_restricted_mobility_during_past_month"/>
+         <short value="Bed rest or restricted mobility during past month"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Bed_rest_or_restricted_mobility_during_past_month"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Bed_rest_or_restricted_mobility_during_past_month.value">
+         <path value="Caprini_score.Event_Series.Any_event.data.Bed_rest_or_restricted_mobility_during_past_month.value"/>
+         <short value="Bed rest or restricted mobility during past month"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Bed_rest_or_restricted_mobility_during_past_month.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Malignant_tumour_(current_or_past)">
+         <path value="Caprini_score.Event_Series.Any_event.data.Malignant_tumour_(current_or_past)"/>
+         <short value="Malignant tumour (current or past)"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Malignant_tumour_(current_or_past)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Malignant_tumour_(current_or_past).value">
+         <path value="Caprini_score.Event_Series.Any_event.data.Malignant_tumour_(current_or_past).value"/>
+         <short value="Malignant tumour (current or past)"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Malignant_tumour_(current_or_past).value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Current_central_venous_access">
+         <path value="Caprini_score.Event_Series.Any_event.data.Current_central_venous_access"/>
+         <short value="Current central venous access"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Current_central_venous_access"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Current_central_venous_access.value">
+         <path value="Caprini_score.Event_Series.Any_event.data.Current_central_venous_access.value"/>
+         <short value="Current central venous access"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Current_central_venous_access.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.History_of_VTE">
+         <path value="Caprini_score.Event_Series.Any_event.data.History_of_VTE"/>
+         <short value="History of VTE"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.History_of_VTE"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.History_of_VTE.value">
+         <path value="Caprini_score.Event_Series.Any_event.data.History_of_VTE.value"/>
+         <short value="History of VTE"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.History_of_VTE.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Family_history_of_VTE">
+         <path value="Caprini_score.Event_Series.Any_event.data.Family_history_of_VTE"/>
+         <short value="Family history of VTE"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Family_history_of_VTE"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Family_history_of_VTE.value">
+         <path value="Caprini_score.Event_Series.Any_event.data.Family_history_of_VTE.value"/>
+         <short value="Family history of VTE"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Family_history_of_VTE.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Factor_V_Leiden">
+         <path value="Caprini_score.Event_Series.Any_event.data.Factor_V_Leiden"/>
+         <short value="Factor V Leiden"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Factor_V_Leiden"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Factor_V_Leiden.value">
+         <path value="Caprini_score.Event_Series.Any_event.data.Factor_V_Leiden.value"/>
+         <short value="Factor V Leiden"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Factor_V_Leiden.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Prothrombin_20210A">
+         <path value="Caprini_score.Event_Series.Any_event.data.Prothrombin_20210A"/>
+         <short value="Prothrombin 20210A"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Prothrombin_20210A"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Prothrombin_20210A.value">
+         <path value="Caprini_score.Event_Series.Any_event.data.Prothrombin_20210A.value"/>
+         <short value="Prothrombin 20210A"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Prothrombin_20210A.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Lupus_anticoagulant">
+         <path value="Caprini_score.Event_Series.Any_event.data.Lupus_anticoagulant"/>
+         <short value="Lupus anticoagulant"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Lupus_anticoagulant"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Lupus_anticoagulant.value">
+         <path value="Caprini_score.Event_Series.Any_event.data.Lupus_anticoagulant.value"/>
+         <short value="Lupus anticoagulant"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Lupus_anticoagulant.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Anticardiolipin_antibodies">
+         <path value="Caprini_score.Event_Series.Any_event.data.Anticardiolipin_antibodies"/>
+         <short value="Anticardiolipin antibodies"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Anticardiolipin_antibodies"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Anticardiolipin_antibodies.value">
+         <path value="Caprini_score.Event_Series.Any_event.data.Anticardiolipin_antibodies.value"/>
+         <short value="Anticardiolipin antibodies"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Anticardiolipin_antibodies.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Elevated_serum_homocysteine">
+         <path value="Caprini_score.Event_Series.Any_event.data.Elevated_serum_homocysteine"/>
+         <short value="Elevated serum homocysteine"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Elevated_serum_homocysteine"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Elevated_serum_homocysteine.value">
+         <path value="Caprini_score.Event_Series.Any_event.data.Elevated_serum_homocysteine.value"/>
+         <short value="Elevated serum homocysteine"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Elevated_serum_homocysteine.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Heparin_induced_thrombocytopenia">
+         <path value="Caprini_score.Event_Series.Any_event.data.Heparin_induced_thrombocytopenia"/>
+         <short value="Heparin-induced thrombocytopenia"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Heparin_induced_thrombocytopenia"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Heparin_induced_thrombocytopenia.value">
+         <path value="Caprini_score.Event_Series.Any_event.data.Heparin_induced_thrombocytopenia.value"/>
+         <short value="Heparin-induced thrombocytopenia"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Heparin_induced_thrombocytopenia.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Other_congenital_or_acquired_thrombophilia">
+         <path value="Caprini_score.Event_Series.Any_event.data.Other_congenital_or_acquired_thrombophilia"/>
+         <short value="Other congenital or acquired thrombophilia"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Other_congenital_or_acquired_thrombophilia"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Other_congenital_or_acquired_thrombophilia.value">
+         <path value="Caprini_score.Event_Series.Any_event.data.Other_congenital_or_acquired_thrombophilia.value"/>
+         <short value="Other congenital or acquired thrombophilia"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Other_congenital_or_acquired_thrombophilia.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Stroke_(&lt;1_month)">
+         <path value="Caprini_score.Event_Series.Any_event.data.Stroke_(&lt;1_month)"/>
+         <short value="Stroke (&lt;1 month)"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Stroke_(&lt;1_month)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Stroke_(&lt;1_month).value">
+         <path value="Caprini_score.Event_Series.Any_event.data.Stroke_(&lt;1_month).value"/>
+         <short value="Stroke (&lt;1 month)"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Stroke_(&lt;1_month).value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Malignant_tumour_(current_or_past)">
+         <path value="Caprini_score.Event_Series.Any_event.data.Malignant_tumour_(current_or_past)"/>
+         <short value="Malignant tumour (current or past)"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Malignant_tumour_(current_or_past)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Malignant_tumour_(current_or_past).value">
+         <path value="Caprini_score.Event_Series.Any_event.data.Malignant_tumour_(current_or_past).value"/>
+         <short value="Malignant tumour (current or past)"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Malignant_tumour_(current_or_past).value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Multiple_trauma_(&lt;1_month)">
+         <path value="Caprini_score.Event_Series.Any_event.data.Multiple_trauma_(&lt;1_month)"/>
+         <short value="Multiple trauma (&lt;1 month)"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Multiple_trauma_(&lt;1_month)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Multiple_trauma_(&lt;1_month).value">
+         <path value="Caprini_score.Event_Series.Any_event.data.Multiple_trauma_(&lt;1_month).value"/>
+         <short value="Multiple trauma (&lt;1 month)"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Multiple_trauma_(&lt;1_month).value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Acute_spinal_cord_injury_(&lt;1_month)">
+         <path value="Caprini_score.Event_Series.Any_event.data.Acute_spinal_cord_injury_(&lt;1_month)"/>
+         <short value="Acute spinal cord injury (&lt;1 month)"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Acute_spinal_cord_injury_(&lt;1_month)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Acute_spinal_cord_injury_(&lt;1_month).value">
+         <path value="Caprini_score.Event_Series.Any_event.data.Acute_spinal_cord_injury_(&lt;1_month).value"/>
+         <short value="Acute spinal cord injury (&lt;1 month)"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Acute_spinal_cord_injury_(&lt;1_month).value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Total_score">
+         <path value="Caprini_score.Event_Series.Any_event.data.Total_score"/>
+         <short value="Total score"/>
+         <definition value="The total sum of each component parameter for the Caprini score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Total_score"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Caprini_score.Event_Series.Any_event.data.Total_score.value">
+         <path value="Caprini_score.Event_Series.Any_event.data.Total_score.value"/>
+         <short value="Total score"/>
+         <definition value="The total sum of each component parameter for the Caprini score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Caprini_score.Event_Series.Any_event.data.Total_score.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

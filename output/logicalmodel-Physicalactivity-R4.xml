@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Physicalactivity-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-physicalactivity-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.physical_activity.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Physicalactivity"/>
+   <title value="Physical activity"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Measurement of the actual physical activity of an individual."/>
+   <purpose value="To record actual physical activity level of an individual at a specified point in time or over a specified period of time."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Physical_activity">
+         <path value="Physical_activity"/>
+         <short value="Physical activity"/>
+         <definition value="Measurement of the actual physical activity of an individual."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Physical_activity"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Physical_activity.protocol">
+         <path value="Physical_activity.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Physical_activity.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Physical_activity.protocol.Techniques">
+         <path value="Physical_activity.protocol.Techniques"/>
+         <short value="Techniques"/>
+         <definition value="Details of the techiniques used to assess the body part."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Physical_activity.protocol.Techniques"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Physical_activity.protocol.Techniques.value">
+         <path value="Physical_activity.protocol.Techniques.value"/>
+         <short value="Techniques"/>
+         <definition value="Details of the techiniques used to assess the body part."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Physical_activity.protocol.Techniques.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Physical_activity.protocol.Exclusion">
+         <path value="Physical_activity.protocol.Exclusion"/>
+         <short value="Exclusion"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Physical_activity.protocol.Exclusion"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Physical_activity.Event_Series">
+         <path value="Physical_activity.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Physical_activity.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Physical_activity.Event_Series.Any_event">
+         <path value="Physical_activity.Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Physical_activity.Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Physical_activity.Event_Series.Any_event.data">
+         <path value="Physical_activity.Event_Series.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Physical_activity.Event_Series.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Physical_activity.Event_Series.Any_event.data.Physical_activity_level_(PAL)">
+         <path value="Physical_activity.Event_Series.Any_event.data.Physical_activity_level_(PAL)"/>
+         <short value="Physical activity level (PAL)"/>
+         <definition value="Calculated physical activity level (PAL) of an individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Physical_activity.Event_Series.Any_event.data.Physical_activity_level_(PAL)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Physical_activity.Event_Series.Any_event.data.Physical_activity_level_(PAL).value">
+         <path value="Physical_activity.Event_Series.Any_event.data.Physical_activity_level_(PAL).value"/>
+         <short value="Physical activity level (PAL)"/>
+         <definition value="Calculated physical activity level (PAL) of an individual."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Physical_activity.Event_Series.Any_event.data.Physical_activity_level_(PAL).value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Physical_activity.Event_Series.Any_event.data.Physical_activity_category">
+         <path value="Physical_activity.Event_Series.Any_event.data.Physical_activity_category"/>
+         <short value="Physical activity category"/>
+         <definition value="The category of the physical activity level (PAL) of an individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Physical_activity.Event_Series.Any_event.data.Physical_activity_category"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Physical_activity.Event_Series.Any_event.data.Physical_activity_category.value_DV_CODED_TEXT">
+         <path value="Physical_activity.Event_Series.Any_event.data.Physical_activity_category.value_DV_CODED_TEXT"/>
+         <short value="Physical activity category"/>
+         <definition value="The category of the physical activity level (PAL) of an individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Physical_activity.Event_Series.Any_event.data.Physical_activity_category.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Physical_activity.Event_Series.Any_event.data.Physical_activity_category.value_DV_TEXT">
+         <path value="Physical_activity.Event_Series.Any_event.data.Physical_activity_category.value_DV_TEXT"/>
+         <short value="Physical activity category"/>
+         <definition value="The category of the physical activity level (PAL) of an individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Physical_activity.Event_Series.Any_event.data.Physical_activity_category.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

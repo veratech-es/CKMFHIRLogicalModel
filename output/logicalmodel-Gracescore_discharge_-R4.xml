@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Gracescore_discharge_-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-gracescore_discharge_-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.grace_discharge.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Gracescore_discharge_"/>
+   <title value="GRACE score (discharge)"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="The original 9 variable version of an assessment tool used to risk stratify patients diagnosed with Acute Coronary Syndrome - specifically to estimate their risk of death on discharge and up to 6 months after the ACS event."/>
+   <purpose value="To record the results for each component parameter, the total sum and grade for the GRACE score recorded at or after discharge."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="GRACE_score_(discharge)">
+         <path value="GRACE_score_(discharge)"/>
+         <short value="GRACE score (discharge)"/>
+         <definition value="The original 9 variable version of an assessment tool used to risk stratify patients diagnosed with Acute Coronary Syndrome - specifically to estimate their risk of death on discharge and up to 6 months after the ACS event."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="GRACE_score_(discharge)"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="GRACE_score_(discharge).protocol">
+         <path value="GRACE_score_(discharge).protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="GRACE_score_(discharge).protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="GRACE_score_(discharge).protocol.Extension">
+         <path value="GRACE_score_(discharge).protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to extend the model with local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="GRACE_score_(discharge).protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="GRACE_score_(discharge).Event_Series">
+         <path value="GRACE_score_(discharge).Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="GRACE_score_(discharge).Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="GRACE_score_(discharge).Event_Series.Any_point_in_time_event">
+         <path value="GRACE_score_(discharge).Event_Series.Any_point_in_time_event"/>
+         <short value="Any point in time event"/>
+         <definition value="Default, unspecified point in time event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="GRACE_score_(discharge).Event_Series.Any_point_in_time_event"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data">
+         <path value="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.Age">
+         <path value="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.Age"/>
+         <short value="Age"/>
+         <definition value="Age at assessment."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.Age"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.Age.value">
+         <path value="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.Age.value"/>
+         <short value="Age"/>
+         <definition value="Age at assessment."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.Age.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.History_of_heart_failure">
+         <path value="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.History_of_heart_failure"/>
+         <short value="History of heart failure"/>
+         <definition value="Known history of congestive heart failure?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.History_of_heart_failure"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.History_of_heart_failure.value">
+         <path value="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.History_of_heart_failure.value"/>
+         <short value="History of heart failure"/>
+         <definition value="Known history of congestive heart failure?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.History_of_heart_failure.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.History_of_AMI">
+         <path value="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.History_of_AMI"/>
+         <short value="History of AMI"/>
+         <definition value="Known history of acute myocardial infarction?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.History_of_AMI"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.History_of_AMI.value">
+         <path value="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.History_of_AMI.value"/>
+         <short value="History of AMI"/>
+         <definition value="Known history of acute myocardial infarction?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.History_of_AMI.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.Heart_rate_at_presentation">
+         <path value="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.Heart_rate_at_presentation"/>
+         <short value="Heart rate at presentation"/>
+         <definition value="Category of heart rate at initial hospital presentation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.Heart_rate_at_presentation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.Heart_rate_at_presentation.value">
+         <path value="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.Heart_rate_at_presentation.value"/>
+         <short value="Heart rate at presentation"/>
+         <definition value="Category of heart rate at initial hospital presentation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.Heart_rate_at_presentation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.Systolic_blood_pressure_at_presentation">
+         <path value="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.Systolic_blood_pressure_at_presentation"/>
+         <short value="Systolic blood pressure at presentation"/>
+         <definition value="Category of systolic blood pressure at initial hospital presentation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.Systolic_blood_pressure_at_presentation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.Systolic_blood_pressure_at_presentation.value">
+         <path value="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.Systolic_blood_pressure_at_presentation.value"/>
+         <short value="Systolic blood pressure at presentation"/>
+         <definition value="Category of systolic blood pressure at initial hospital presentation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.Systolic_blood_pressure_at_presentation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.Depressed_ST_segment_at_presentation">
+         <path value="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.Depressed_ST_segment_at_presentation"/>
+         <short value="Depressed ST segment at presentation"/>
+         <definition value="ST segment depression at initial hospital presentation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.Depressed_ST_segment_at_presentation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.Depressed_ST_segment_at_presentation.value">
+         <path value="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.Depressed_ST_segment_at_presentation.value"/>
+         <short value="Depressed ST segment at presentation"/>
+         <definition value="ST segment depression at initial hospital presentation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.Depressed_ST_segment_at_presentation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.Creatinine_level_at_presentation">
+         <path value="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.Creatinine_level_at_presentation"/>
+         <short value="Creatinine level at presentation"/>
+         <definition value="Category of serum creatinine measurement at initial hospital presentation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.Creatinine_level_at_presentation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.Creatinine_level_at_presentation.value">
+         <path value="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.Creatinine_level_at_presentation.value"/>
+         <short value="Creatinine level at presentation"/>
+         <definition value="Category of serum creatinine measurement at initial hospital presentation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.Creatinine_level_at_presentation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.Elevated_cardiac_enzymes_or_markers">
+         <path value="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.Elevated_cardiac_enzymes_or_markers"/>
+         <short value="Elevated cardiac enzymes or markers"/>
+         <definition value="Raised cardiac enzymes or markers during hospitalisation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.Elevated_cardiac_enzymes_or_markers"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.Elevated_cardiac_enzymes_or_markers.value">
+         <path value="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.Elevated_cardiac_enzymes_or_markers.value"/>
+         <short value="Elevated cardiac enzymes or markers"/>
+         <definition value="Raised cardiac enzymes or markers during hospitalisation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.Elevated_cardiac_enzymes_or_markers.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.Percutaneous_revascularisation">
+         <path value="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.Percutaneous_revascularisation"/>
+         <short value="Percutaneous revascularisation"/>
+         <definition value="In-hospital percutaneous coronary intervention."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.Percutaneous_revascularisation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.Percutaneous_revascularisation.value">
+         <path value="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.Percutaneous_revascularisation.value"/>
+         <short value="Percutaneous revascularisation"/>
+         <definition value="In-hospital percutaneous coronary intervention."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.Percutaneous_revascularisation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.Total_score">
+         <path value="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.Total_score"/>
+         <short value="Total score"/>
+         <definition value="Sum of points assigned for each of the component parameters."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.Total_score"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.Total_score.value">
+         <path value="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.Total_score.value"/>
+         <short value="Total score"/>
+         <definition value="Sum of points assigned for each of the component parameters."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="GRACE_score_(discharge).Event_Series.Any_point_in_time_event.data.Total_score.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

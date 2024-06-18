@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Lastmenstrualperiod-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-lastmenstrualperiod-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-EVALUATION.last_menstrual_period.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Lastmenstrualperiod"/>
+   <title value="Last menstrual period"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Identification of the first day of the most recent menstrual cycle for the individual."/>
+   <purpose value="To record the details about the first day of the most recent menstrual cycle for the individual."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Last_menstrual_period">
+         <path value="Last_menstrual_period"/>
+         <short value="Last menstrual period"/>
+         <definition value="Identification of the first day of the most recent menstrual cycle for the individual."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Last_menstrual_period"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Last_menstrual_period.protocol">
+         <path value="Last_menstrual_period.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Last_menstrual_period.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Last_menstrual_period.protocol.Extension">
+         <path value="Last_menstrual_period.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Last_menstrual_period.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Last_menstrual_period.protocol.Last_updated">
+         <path value="Last_menstrual_period.protocol.Last_updated"/>
+         <short value="Last updated"/>
+         <definition value="Date when the Last menstrual period was updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Last_menstrual_period.protocol.Last_updated"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Last_menstrual_period.protocol.Last_updated.value">
+         <path value="Last_menstrual_period.protocol.Last_updated.value"/>
+         <short value="Last updated"/>
+         <definition value="Date when the Last menstrual period was updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Last_menstrual_period.protocol.Last_updated.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Last_menstrual_period.data">
+         <path value="Last_menstrual_period.data"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Last_menstrual_period.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Last_menstrual_period.data.Date_of_onset_(LMP)">
+         <path value="Last_menstrual_period.data.Date_of_onset_(LMP)"/>
+         <short value="Date of onset (LMP)"/>
+         <definition value="Date of onset of menstrual bleeding."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Last_menstrual_period.data.Date_of_onset_(LMP)"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Last_menstrual_period.data.Date_of_onset_(LMP).value">
+         <path value="Last_menstrual_period.data.Date_of_onset_(LMP).value"/>
+         <short value="Date of onset (LMP)"/>
+         <definition value="Date of onset of menstrual bleeding."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Last_menstrual_period.data.Date_of_onset_(LMP).value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="date"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Last_menstrual_period.data.Certainty">
+         <path value="Last_menstrual_period.data.Certainty"/>
+         <short value="Certainty"/>
+         <definition value="The level of certainty the date was accurate."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Last_menstrual_period.data.Certainty"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Last_menstrual_period.data.Certainty.value_DV_TEXT">
+         <path value="Last_menstrual_period.data.Certainty.value_DV_TEXT"/>
+         <short value="Certainty"/>
+         <definition value="The level of certainty the date was accurate."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Last_menstrual_period.data.Certainty.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Last_menstrual_period.data.Certainty.value_DV_CODED_TEXT">
+         <path value="Last_menstrual_period.data.Certainty.value_DV_CODED_TEXT"/>
+         <short value="Certainty"/>
+         <definition value="The level of certainty the date was accurate."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Last_menstrual_period.data.Certainty.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Last_menstrual_period.data.Description">
+         <path value="Last_menstrual_period.data.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the last menstrual period."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Last_menstrual_period.data.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Last_menstrual_period.data.Description.value">
+         <path value="Last_menstrual_period.data.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the last menstrual period."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Last_menstrual_period.data.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Last_menstrual_period.data.Comment">
+         <path value="Last_menstrual_period.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the last menstrual period, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Last_menstrual_period.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Last_menstrual_period.data.Comment.value">
+         <path value="Last_menstrual_period.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the last menstrual period, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Last_menstrual_period.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

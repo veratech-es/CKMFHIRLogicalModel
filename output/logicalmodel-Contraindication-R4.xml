@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Contraindication-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-contraindication-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-EVALUATION.contraindication.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Contraindication"/>
+   <title value="Contraindication"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="A clinical intervention (including, but not limited to, use of a treatment or performance of a test or procedure) that should not be carried out due to the likelihood, or possibility, of harm being caused to an individual."/>
+   <purpose value="To record a contraindication for a clinical intervention (including, but not limited to, a treatment, test or procedure) that should not be carried out due to the likelihood, or possibility, of harm being caused to an individual."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Contraindication">
+         <path value="Contraindication"/>
+         <short value="Contraindication"/>
+         <definition value="A clinical intervention (including, but not limited to, use of a treatment or performance of a test or procedure) that should not be carried out due to the likelihood, or possibility, of harm being caused to an individual."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraindication"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Contraindication.protocol">
+         <path value="Contraindication.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraindication.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Contraindication.protocol.Extension">
+         <path value="Contraindication.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Contraindication.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Contraindication.protocol.Valid_period_start">
+         <path value="Contraindication.protocol.Valid_period_start"/>
+         <short value="Valid period start"/>
+         <definition value="Date/time when the contraindication becomes active."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraindication.protocol.Valid_period_start"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Contraindication.protocol.Valid_period_start.value">
+         <path value="Contraindication.protocol.Valid_period_start.value"/>
+         <short value="Valid period start"/>
+         <definition value="Date/time when the contraindication becomes active."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraindication.protocol.Valid_period_start.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Contraindication.protocol.Valid_period_end">
+         <path value="Contraindication.protocol.Valid_period_end"/>
+         <short value="Valid period end"/>
+         <definition value="Date/time when the contraindication becomes inactive."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraindication.protocol.Valid_period_end"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Contraindication.protocol.Valid_period_end.value">
+         <path value="Contraindication.protocol.Valid_period_end.value"/>
+         <short value="Valid period end"/>
+         <definition value="Date/time when the contraindication becomes inactive."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraindication.protocol.Valid_period_end.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Contraindication.protocol.Review_date">
+         <path value="Contraindication.protocol.Review_date"/>
+         <short value="Review date"/>
+         <definition value="Date when next due for review by a clinician."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraindication.protocol.Review_date"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Contraindication.protocol.Review_date.value">
+         <path value="Contraindication.protocol.Review_date.value"/>
+         <short value="Review date"/>
+         <definition value="Date when next due for review by a clinician."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraindication.protocol.Review_date.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Contraindication.protocol.Last_updated">
+         <path value="Contraindication.protocol.Last_updated"/>
+         <short value="Last updated"/>
+         <definition value="Date when the contraindication information was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraindication.protocol.Last_updated"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Contraindication.protocol.Last_updated.value">
+         <path value="Contraindication.protocol.Last_updated.value"/>
+         <short value="Last updated"/>
+         <definition value="Date when the contraindication information was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraindication.protocol.Last_updated.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Contraindication.data">
+         <path value="Contraindication.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraindication.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Contraindication.data.Contraindicated_intervention">
+         <path value="Contraindication.data.Contraindicated_intervention"/>
+         <short value="Contraindicated intervention"/>
+         <definition value="Identification, by name, of a clinical intervention or class of intervention including, but not limited to, a treatment, test or procedure that should not be performed."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraindication.data.Contraindicated_intervention"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Contraindication.data.Contraindicated_intervention.value">
+         <path value="Contraindication.data.Contraindicated_intervention.value"/>
+         <short value="Contraindicated intervention"/>
+         <definition value="Identification, by name, of a clinical intervention or class of intervention including, but not limited to, a treatment, test or procedure that should not be performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraindication.data.Contraindicated_intervention.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Contraindication.data.Status">
+         <path value="Contraindication.data.Status"/>
+         <short value="Status"/>
+         <definition value="Assertion about the certainty or potential future risk, of the identified 'Contraindicated intervention'."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraindication.data.Status"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Contraindication.data.Status.value_DV_CODED_TEXT">
+         <path value="Contraindication.data.Status.value_DV_CODED_TEXT"/>
+         <short value="Status"/>
+         <definition value="Assertion about the certainty or potential future risk, of the identified 'Contraindicated intervention'."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraindication.data.Status.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Contraindication.data.Status.value_DV_TEXT">
+         <path value="Contraindication.data.Status.value_DV_TEXT"/>
+         <short value="Status"/>
+         <definition value="Assertion about the certainty or potential future risk, of the identified 'Contraindicated intervention'."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraindication.data.Status.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Contraindication.data.Criticality">
+         <path value="Contraindication.data.Criticality"/>
+         <short value="Criticality"/>
+         <definition value="An indication of the potential for critical system organ damage or life threatening consequence."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraindication.data.Criticality"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Contraindication.data.Criticality.value">
+         <path value="Contraindication.data.Criticality.value"/>
+         <short value="Criticality"/>
+         <definition value="An indication of the potential for critical system organ damage or life threatening consequence."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraindication.data.Criticality.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Contraindication.data.Clinical_indication">
+         <path value="Contraindication.data.Clinical_indication"/>
+         <short value="Clinical indication"/>
+         <definition value="Identification of the clinical reason why the identified 'Contraindicated intervention' should not be used or performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraindication.data.Clinical_indication"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Contraindication.data.Clinical_indication.value">
+         <path value="Contraindication.data.Clinical_indication.value"/>
+         <short value="Clinical indication"/>
+         <definition value="Identification of the clinical reason why the identified 'Contraindicated intervention' should not be used or performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraindication.data.Clinical_indication.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Contraindication.data.Rationale">
+         <path value="Contraindication.data.Rationale"/>
+         <short value="Rationale"/>
+         <definition value="Narrative description explaining the relationship between the 'Indication' and the 'Contraindicated intervention'."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraindication.data.Rationale"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Contraindication.data.Rationale.value">
+         <path value="Contraindication.data.Rationale.value"/>
+         <short value="Rationale"/>
+         <definition value="Narrative description explaining the relationship between the 'Indication' and the 'Contraindicated intervention'."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraindication.data.Rationale.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Contraindication.data.Category">
+         <path value="Contraindication.data.Category"/>
+         <short value="Category"/>
+         <definition value="Category of the identified 'Contraindicated intervention'."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraindication.data.Category"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Contraindication.data.Category.value">
+         <path value="Contraindication.data.Category.value"/>
+         <short value="Category"/>
+         <definition value="Category of the identified 'Contraindicated intervention'."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraindication.data.Category.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Contraindication.data.Comment">
+         <path value="Contraindication.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the contraindication, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraindication.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Contraindication.data.Comment.value">
+         <path value="Contraindication.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the contraindication, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Contraindication.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

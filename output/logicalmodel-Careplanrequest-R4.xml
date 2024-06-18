@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Careplanrequest-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-careplanrequest-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-INSTRUCTION.care_plan_request.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Careplanrequest"/>
+   <title value="Care plan request"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Order or instruction for the creation and sequence of activities to achieve a specified management goal or treatment outcome, carried out by health professionals and/or the subject."/>
+   <purpose value="To record the order or instruction regarding the planning, initiation and carrying out of a single care plan as a whole."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Care_plan_request">
+         <path value="Care_plan_request"/>
+         <short value="Care plan request"/>
+         <definition value="Order or instruction for the creation and sequence of activities to achieve a specified management goal or treatment outcome, carried out by health professionals and/or the subject."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_plan_request"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Care_plan_request.protocol">
+         <path value="Care_plan_request.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_plan_request.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Care_plan_request.protocol.Extension">
+         <path value="Care_plan_request.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Care_plan_request.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Care_plan_request.Activity">
+         <path value="Care_plan_request.Activity"/>
+         <short value="Activity"/>
+         <definition value="Current Activity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_plan_request.Activity"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Care_plan_request.Activity.description">
+         <path value="Care_plan_request.Activity.description"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_plan_request.Activity.description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Care_plan_request.Activity.description.Plan_name">
+         <path value="Care_plan_request.Activity.description.Plan_name"/>
+         <short value="Plan name"/>
+         <definition value="Identification of the care plan."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_plan_request.Activity.description.Plan_name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Care_plan_request.Activity.description.Plan_name.value">
+         <path value="Care_plan_request.Activity.description.Plan_name.value"/>
+         <short value="Plan name"/>
+         <definition value="Identification of the care plan."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_plan_request.Activity.description.Plan_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Care_plan_request.Activity.description.Description">
+         <path value="Care_plan_request.Activity.description.Description"/>
+         <short value="Description"/>
+         <definition value="Description of the care plan scope, intent and proposed activities."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_plan_request.Activity.description.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Care_plan_request.Activity.description.Description.value">
+         <path value="Care_plan_request.Activity.description.Description.value"/>
+         <short value="Description"/>
+         <definition value="Description of the care plan scope, intent and proposed activities."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_plan_request.Activity.description.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Care_plan_request.Activity.description.Indication">
+         <path value="Care_plan_request.Activity.description.Indication"/>
+         <short value="Indication"/>
+         <definition value="Indication for the care plan."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_plan_request.Activity.description.Indication"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Care_plan_request.Activity.description.Indication.value">
+         <path value="Care_plan_request.Activity.description.Indication.value"/>
+         <short value="Indication"/>
+         <definition value="Indication for the care plan."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_plan_request.Activity.description.Indication.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Care_plan_request.Activity.description.Date_of_onset">
+         <path value="Care_plan_request.Activity.description.Date_of_onset"/>
+         <short value="Date of onset"/>
+         <definition value="Date of onset for the care plan."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_plan_request.Activity.description.Date_of_onset"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Care_plan_request.Activity.description.Date_of_onset.value">
+         <path value="Care_plan_request.Activity.description.Date_of_onset.value"/>
+         <short value="Date of onset"/>
+         <definition value="Date of onset for the care plan."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_plan_request.Activity.description.Date_of_onset.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Care_plan_request.Activity.description.Comment">
+         <path value="Care_plan_request.Activity.description.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the care plan request, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_plan_request.Activity.description.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Care_plan_request.Activity.description.Comment.value">
+         <path value="Care_plan_request.Activity.description.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the care plan request, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_plan_request.Activity.description.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Care_plan_request.Activity.String">
+         <path value="Care_plan_request.Activity.String"/>
+         <definition value="String"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Care_plan_request.Activity.String"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

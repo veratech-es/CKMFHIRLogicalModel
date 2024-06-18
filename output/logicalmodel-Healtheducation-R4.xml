@@ -1,0 +1,1072 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Healtheducation-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-healtheducation-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-ACTION.health_education.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Healtheducation"/>
+   <title value="Health education"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Communication to improve health literacy and life skills."/>
+   <purpose value="To record details about communication to improve health literacy and life skills."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Health_education">
+         <path value="Health_education"/>
+         <short value="Health education"/>
+         <definition value="Communication to improve health literacy and life skills."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education.protocol">
+         <path value="Health_education.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education.protocol.Requestor_order_identifier">
+         <path value="Health_education.protocol.Requestor_order_identifier"/>
+         <short value="Requestor order identifier"/>
+         <definition value="The local ID assigned to the order by the healthcare provider or organisation requesting the education."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education.protocol.Requestor_order_identifier"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Health_education.protocol.Requestor_order_identifier.value_DV_TEXT">
+         <path value="Health_education.protocol.Requestor_order_identifier.value_DV_TEXT"/>
+         <short value="Requestor order identifier"/>
+         <definition value="The local ID assigned to the order by the healthcare provider or organisation requesting the education."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education.protocol.Requestor_order_identifier.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education.protocol.Requestor_order_identifier.value_DV_IDENTIFIER">
+         <path value="Health_education.protocol.Requestor_order_identifier.value_DV_IDENTIFIER"/>
+         <short value="Requestor order identifier"/>
+         <definition value="The local ID assigned to the order by the healthcare provider or organisation requesting the education."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education.protocol.Requestor_order_identifier.value_DV_IDENTIFIER"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education.protocol.Requestor">
+         <path value="Health_education.protocol.Requestor"/>
+         <short value="Requestor"/>
+         <definition value="Details about the healthcare provider or organisation requesting the education."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Health_education.protocol.Requestor"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education.protocol.Receiver_order_identifier">
+         <path value="Health_education.protocol.Receiver_order_identifier"/>
+         <short value="Receiver order identifier"/>
+         <definition value="The ID assigned to the order by the healthcare provider or organisation receiving the request for education. This is also referred to as Filler Order Identifier."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education.protocol.Receiver_order_identifier"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Health_education.protocol.Receiver_order_identifier.value_DV_TEXT">
+         <path value="Health_education.protocol.Receiver_order_identifier.value_DV_TEXT"/>
+         <short value="Receiver order identifier"/>
+         <definition value="The ID assigned to the order by the healthcare provider or organisation receiving the request for education. This is also referred to as Filler Order Identifier."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education.protocol.Receiver_order_identifier.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education.protocol.Receiver_order_identifier.value_DV_IDENTIFIER">
+         <path value="Health_education.protocol.Receiver_order_identifier.value_DV_IDENTIFIER"/>
+         <short value="Receiver order identifier"/>
+         <definition value="The ID assigned to the order by the healthcare provider or organisation receiving the request for education. This is also referred to as Filler Order Identifier."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education.protocol.Receiver_order_identifier.value_DV_IDENTIFIER"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education.protocol.Receiver">
+         <path value="Health_education.protocol.Receiver"/>
+         <short value="Receiver"/>
+         <definition value="Details about the healthcare provider or organisation who received the request for education."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Health_education.protocol.Receiver"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education.protocol.Recipient">
+         <path value="Health_education.protocol.Recipient"/>
+         <short value="Recipient"/>
+         <definition value="Recipient of the health education."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Health_education.protocol.Recipient"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education.protocol.Interpreter_details">
+         <path value="Health_education.protocol.Interpreter_details"/>
+         <short value="Interpreter details"/>
+         <definition value="Details about the interpretation."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Health_education.protocol.Interpreter_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education.protocol.Extension">
+         <path value="Health_education.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local context or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Health_education.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education.description">
+         <path value="Health_education.description"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education.description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education.description.Topic_name">
+         <path value="Health_education.description.Topic_name"/>
+         <short value="Topic name"/>
+         <definition value="Identification of the topic of health education, by name."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education.description.Topic_name"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Health_education.description.Topic_name.value">
+         <path value="Health_education.description.Topic_name.value"/>
+         <short value="Topic name"/>
+         <definition value="Identification of the topic of health education, by name."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education.description.Topic_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education.description.Description">
+         <path value="Health_education.description.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the health education."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education.description.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Health_education.description.Description.value">
+         <path value="Health_education.description.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the health education."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education.description.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education.description.Clinical_indication">
+         <path value="Health_education.description.Clinical_indication"/>
+         <short value="Clinical indication"/>
+         <definition value="The clinical reason for the education activity."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Health_education.description.Clinical_indication"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Health_education.description.Clinical_indication.value">
+         <path value="Health_education.description.Clinical_indication.value"/>
+         <short value="Clinical indication"/>
+         <definition value="The clinical reason for the education activity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education.description.Clinical_indication.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education.description.Method">
+         <path value="Health_education.description.Method"/>
+         <short value="Method"/>
+         <definition value="Method by which the health education was communicated to the individual."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Health_education.description.Method"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Health_education.description.Method.value">
+         <path value="Health_education.description.Method.value"/>
+         <short value="Method"/>
+         <definition value="Method by which the health education was communicated to the individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education.description.Method.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education.description.Material_details">
+         <path value="Health_education.description.Material_details"/>
+         <short value="Material details"/>
+         <definition value="Structured details about the education material provided to the individual."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Health_education.description.Material_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education.description.Additional_details">
+         <path value="Health_education.description.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="Additional structured details about the health education."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Health_education.description.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education.description.Session_Number">
+         <path value="Health_education.description.Session_Number"/>
+         <short value="Session Number"/>
+         <definition value="Number of the education session in an multi-session course."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education.description.Session_Number"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Health_education.description.Session_Number.value">
+         <path value="Health_education.description.Session_Number.value"/>
+         <short value="Session Number"/>
+         <definition value="Number of the education session in an multi-session course."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education.description.Session_Number.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education.description.Reason">
+         <path value="Health_education.description.Reason"/>
+         <short value="Reason"/>
+         <definition value="Reason that the pathway step for the identified health education was carried out."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education.description.Reason"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Health_education.description.Reason.value">
+         <path value="Health_education.description.Reason.value"/>
+         <short value="Reason"/>
+         <definition value="Reason that the pathway step for the identified health education was carried out."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education.description.Reason.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education.description.Outcome">
+         <path value="Health_education.description.Outcome"/>
+         <short value="Outcome"/>
+         <definition value="Description of the outcome of health education."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Health_education.description.Outcome"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Health_education.description.Outcome.value">
+         <path value="Health_education.description.Outcome.value"/>
+         <short value="Outcome"/>
+         <definition value="Description of the outcome of health education."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education.description.Outcome.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education.description.Scheduled_date__time">
+         <path value="Health_education.description.Scheduled_date__time"/>
+         <short value="Scheduled date/ time"/>
+         <definition value="The date and/or time on which the education activity is intended to be performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education.description.Scheduled_date__time"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Health_education.description.Scheduled_date__time.value">
+         <path value="Health_education.description.Scheduled_date__time.value"/>
+         <short value="Scheduled date/ time"/>
+         <definition value="The date and/or time on which the education activity is intended to be performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education.description.Scheduled_date__time.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education.description.Comment">
+         <path value="Health_education.description.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the activity or care pathway step not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education.description.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Health_education.description.Comment.value">
+         <path value="Health_education.description.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the activity or care pathway step not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education.description.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education.Education_planned">
+         <path value="Health_education.Education_planned"/>
+         <short value="Education planned"/>
+         <definition value="Education has been planned but no steps have been taken to initiate education."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education.Education_planned"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education.ism_transition_Education_planned.current_state">
+         <path value="Health_education.ism_transition_Education_planned.current_state"/>
+         <short value="Education planned"/>
+         <definition value="Education has been planned but no steps have been taken to initiate education."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education.ism_transition_Education_planned.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education.ism_transition_Education_planned.careflow_step">
+         <path value="Health_education.ism_transition_Education_planned.careflow_step"/>
+         <short value="Education planned"/>
+         <definition value="Education has been planned but no steps have been taken to initiate education."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education.ism_transition_Education_planned.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education.Education_recommended">
+         <path value="Health_education.Education_recommended"/>
+         <short value="Education recommended"/>
+         <definition value="Education has been recommended but no steps have been taken to initiate education."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education.Education_recommended"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education.ism_transition_Education_recommended.current_state">
+         <path value="Health_education.ism_transition_Education_recommended.current_state"/>
+         <short value="Education recommended"/>
+         <definition value="Education has been recommended but no steps have been taken to initiate education."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education.ism_transition_Education_recommended.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education.ism_transition_Education_recommended.careflow_step">
+         <path value="Health_education.ism_transition_Education_recommended.careflow_step"/>
+         <short value="Education recommended"/>
+         <definition value="Education has been recommended but no steps have been taken to initiate education."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education.ism_transition_Education_recommended.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education.Education_postponed">
+         <path value="Health_education.Education_postponed"/>
+         <short value="Education postponed"/>
+         <definition value="Education has been postponed prior to commencement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education.Education_postponed"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education.ism_transition_Education_postponed.current_state">
+         <path value="Health_education.ism_transition_Education_postponed.current_state"/>
+         <short value="Education postponed"/>
+         <definition value="Education has been postponed prior to commencement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education.ism_transition_Education_postponed.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education.ism_transition_Education_postponed.careflow_step">
+         <path value="Health_education.ism_transition_Education_postponed.careflow_step"/>
+         <short value="Education postponed"/>
+         <definition value="Education has been postponed prior to commencement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education.ism_transition_Education_postponed.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education.Education_cancelled">
+         <path value="Health_education.Education_cancelled"/>
+         <short value="Education cancelled"/>
+         <definition value="Education has been cancelled prior to commencement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education.Education_cancelled"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education.ism_transition_Education_cancelled.current_state">
+         <path value="Health_education.ism_transition_Education_cancelled.current_state"/>
+         <short value="Education cancelled"/>
+         <definition value="Education has been cancelled prior to commencement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education.ism_transition_Education_cancelled.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education.ism_transition_Education_cancelled.careflow_step">
+         <path value="Health_education.ism_transition_Education_cancelled.careflow_step"/>
+         <short value="Education cancelled"/>
+         <definition value="Education has been cancelled prior to commencement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education.ism_transition_Education_cancelled.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education.Education_scheduled">
+         <path value="Health_education.Education_scheduled"/>
+         <short value="Education scheduled"/>
+         <definition value="Appointment for education scheduled."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education.Education_scheduled"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education.ism_transition_Education_scheduled.current_state">
+         <path value="Health_education.ism_transition_Education_scheduled.current_state"/>
+         <short value="Education scheduled"/>
+         <definition value="Appointment for education scheduled."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education.ism_transition_Education_scheduled.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education.ism_transition_Education_scheduled.careflow_step">
+         <path value="Health_education.ism_transition_Education_scheduled.careflow_step"/>
+         <short value="Education scheduled"/>
+         <definition value="Appointment for education scheduled."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education.ism_transition_Education_scheduled.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education.Education_provided">
+         <path value="Health_education.Education_provided"/>
+         <short value="Education provided"/>
+         <definition value="Education session or material provided."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education.Education_provided"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education.ism_transition_Education_provided.current_state">
+         <path value="Health_education.ism_transition_Education_provided.current_state"/>
+         <short value="Education provided"/>
+         <definition value="Education session or material provided."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education.ism_transition_Education_provided.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education.ism_transition_Education_provided.careflow_step">
+         <path value="Health_education.ism_transition_Education_provided.careflow_step"/>
+         <short value="Education provided"/>
+         <definition value="Education session or material provided."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education.ism_transition_Education_provided.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education.Education_suspended">
+         <path value="Health_education.Education_suspended"/>
+         <short value="Education suspended"/>
+         <definition value="Planned education sessions were suspended after commencement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education.Education_suspended"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education.ism_transition_Education_suspended.current_state">
+         <path value="Health_education.ism_transition_Education_suspended.current_state"/>
+         <short value="Education suspended"/>
+         <definition value="Planned education sessions were suspended after commencement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education.ism_transition_Education_suspended.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education.ism_transition_Education_suspended.careflow_step">
+         <path value="Health_education.ism_transition_Education_suspended.careflow_step"/>
+         <short value="Education suspended"/>
+         <definition value="Planned education sessions were suspended after commencement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education.ism_transition_Education_suspended.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education.Education_not_completed">
+         <path value="Health_education.Education_not_completed"/>
+         <short value="Education not completed"/>
+         <definition value="Education session was abandoned before complete."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education.Education_not_completed"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education.ism_transition_Education_not_completed.current_state">
+         <path value="Health_education.ism_transition_Education_not_completed.current_state"/>
+         <short value="Education not completed"/>
+         <definition value="Education session was abandoned before complete."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education.ism_transition_Education_not_completed.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education.ism_transition_Education_not_completed.careflow_step">
+         <path value="Health_education.ism_transition_Education_not_completed.careflow_step"/>
+         <short value="Education not completed"/>
+         <definition value="Education session was abandoned before complete."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education.ism_transition_Education_not_completed.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education.Education_completed">
+         <path value="Health_education.Education_completed"/>
+         <short value="Education completed"/>
+         <definition value="All planned activities for education have been successfully completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education.Education_completed"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education.ism_transition_Education_completed.current_state">
+         <path value="Health_education.ism_transition_Education_completed.current_state"/>
+         <short value="Education completed"/>
+         <definition value="All planned activities for education have been successfully completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education.ism_transition_Education_completed.current_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_education.ism_transition_Education_completed.careflow_step">
+         <path value="Health_education.ism_transition_Education_completed.careflow_step"/>
+         <short value="Education completed"/>
+         <definition value="All planned activities for education have been successfully completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_education.ism_transition_Education_completed.careflow_step"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

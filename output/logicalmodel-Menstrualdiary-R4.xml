@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Menstrualdiary-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-menstrualdiary-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.menstrual_diary.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Menstrualdiary"/>
+   <title value="Menstrual diary"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Details about menstrual bleeding and associated symptoms within a specified day."/>
+   <purpose value="To record details about menstrual bleeding and associated symptoms within a specified day."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Menstrual_diary">
+         <path value="Menstrual_diary"/>
+         <short value="Menstrual diary"/>
+         <definition value="Details about menstrual bleeding and associated symptoms within a specified day."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstrual_diary"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstrual_diary.protocol">
+         <path value="Menstrual_diary.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstrual_diary.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstrual_diary.protocol.Extension">
+         <path value="Menstrual_diary.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Menstrual_diary.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstrual_diary.History">
+         <path value="Menstrual_diary.History"/>
+         <short value="History"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstrual_diary.History"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstrual_diary.History.Any_event">
+         <path value="Menstrual_diary.History.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Menstrual_diary.History.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstrual_diary.History.Any_event.data">
+         <path value="Menstrual_diary.History.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstrual_diary.History.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstrual_diary.History.Any_event.data.Flow">
+         <path value="Menstrual_diary.History.Any_event.data.Flow"/>
+         <short value="Flow"/>
+         <definition value="Semi-quantitative estimation of menstrual flow per day."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstrual_diary.History.Any_event.data.Flow"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Menstrual_diary.History.Any_event.data.Flow.value_DV_CODED_TEXT">
+         <path value="Menstrual_diary.History.Any_event.data.Flow.value_DV_CODED_TEXT"/>
+         <short value="Flow"/>
+         <definition value="Semi-quantitative estimation of menstrual flow per day."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstrual_diary.History.Any_event.data.Flow.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstrual_diary.History.Any_event.data.Flow.value_DV_TEXT">
+         <path value="Menstrual_diary.History.Any_event.data.Flow.value_DV_TEXT"/>
+         <short value="Flow"/>
+         <definition value="Semi-quantitative estimation of menstrual flow per day."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstrual_diary.History.Any_event.data.Flow.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstrual_diary.History.Any_event.data.Volume">
+         <path value="Menstrual_diary.History.Any_event.data.Volume"/>
+         <short value="Volume"/>
+         <definition value="Estimated volume of menstrual blood loss in any 24hr time period."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstrual_diary.History.Any_event.data.Volume"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Menstrual_diary.History.Any_event.data.Volume.value">
+         <path value="Menstrual_diary.History.Any_event.data.Volume.value"/>
+         <short value="Volume"/>
+         <definition value="Estimated volume of menstrual blood loss in any 24hr time period."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstrual_diary.History.Any_event.data.Volume.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstrual_diary.History.Any_event.data.Blood_clots">
+         <path value="Menstrual_diary.History.Any_event.data.Blood_clots"/>
+         <short value="Blood clots"/>
+         <definition value="Presence of blood clots."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstrual_diary.History.Any_event.data.Blood_clots"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Menstrual_diary.History.Any_event.data.Blood_clots.value">
+         <path value="Menstrual_diary.History.Any_event.data.Blood_clots.value"/>
+         <short value="Blood clots"/>
+         <definition value="Presence of blood clots."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstrual_diary.History.Any_event.data.Blood_clots.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstrual_diary.History.Any_event.data.Color">
+         <path value="Menstrual_diary.History.Any_event.data.Color"/>
+         <short value="Color"/>
+         <definition value="Color of blood."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstrual_diary.History.Any_event.data.Color"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Menstrual_diary.History.Any_event.data.Color.value">
+         <path value="Menstrual_diary.History.Any_event.data.Color.value"/>
+         <short value="Color"/>
+         <definition value="Color of blood."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstrual_diary.History.Any_event.data.Color.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstrual_diary.History.Any_event.data.Description">
+         <path value="Menstrual_diary.History.Any_event.data.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description of the menstrual cycle on the day in question. For example day 2."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstrual_diary.History.Any_event.data.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Menstrual_diary.History.Any_event.data.Description.value">
+         <path value="Menstrual_diary.History.Any_event.data.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description of the menstrual cycle on the day in question. For example day 2."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstrual_diary.History.Any_event.data.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstrual_diary.History.Any_event.data.Additional_details">
+         <path value="Menstrual_diary.History.Any_event.data.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="Additional details about the specific day of the menstrual cycle."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Menstrual_diary.History.Any_event.data.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstrual_diary.History.Any_event.data.Comment">
+         <path value="Menstrual_diary.History.Any_event.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the specific day of the menstrual cycle, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstrual_diary.History.Any_event.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Menstrual_diary.History.Any_event.data.Comment.value">
+         <path value="Menstrual_diary.History.Any_event.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the specific day of the menstrual cycle, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstrual_diary.History.Any_event.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstrual_diary.History.Per_day">
+         <path value="Menstrual_diary.History.Per_day"/>
+         <short value="Per day"/>
+         <definition value="To record a spesific single day in a cycle."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Menstrual_diary.History.Per_day"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstrual_diary.History.Per_day.data">
+         <path value="Menstrual_diary.History.Per_day.data"/>
+         <definition value="ITEM_TREE"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstrual_diary.History.Per_day.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstrual_diary.History.Per_day.data.Flow">
+         <path value="Menstrual_diary.History.Per_day.data.Flow"/>
+         <short value="Flow"/>
+         <definition value="Semi-quantitative estimation of menstrual flow per day."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstrual_diary.History.Per_day.data.Flow"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Menstrual_diary.History.Per_day.data.Flow.value_DV_CODED_TEXT">
+         <path value="Menstrual_diary.History.Per_day.data.Flow.value_DV_CODED_TEXT"/>
+         <short value="Flow"/>
+         <definition value="Semi-quantitative estimation of menstrual flow per day."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstrual_diary.History.Per_day.data.Flow.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstrual_diary.History.Per_day.data.Flow.value_DV_TEXT">
+         <path value="Menstrual_diary.History.Per_day.data.Flow.value_DV_TEXT"/>
+         <short value="Flow"/>
+         <definition value="Semi-quantitative estimation of menstrual flow per day."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstrual_diary.History.Per_day.data.Flow.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstrual_diary.History.Per_day.data.Volume">
+         <path value="Menstrual_diary.History.Per_day.data.Volume"/>
+         <short value="Volume"/>
+         <definition value="Estimated volume of menstrual blood loss in any 24hr time period."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstrual_diary.History.Per_day.data.Volume"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Menstrual_diary.History.Per_day.data.Volume.value">
+         <path value="Menstrual_diary.History.Per_day.data.Volume.value"/>
+         <short value="Volume"/>
+         <definition value="Estimated volume of menstrual blood loss in any 24hr time period."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstrual_diary.History.Per_day.data.Volume.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstrual_diary.History.Per_day.data.Blood_clots">
+         <path value="Menstrual_diary.History.Per_day.data.Blood_clots"/>
+         <short value="Blood clots"/>
+         <definition value="Presence of blood clots."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstrual_diary.History.Per_day.data.Blood_clots"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Menstrual_diary.History.Per_day.data.Blood_clots.value">
+         <path value="Menstrual_diary.History.Per_day.data.Blood_clots.value"/>
+         <short value="Blood clots"/>
+         <definition value="Presence of blood clots."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstrual_diary.History.Per_day.data.Blood_clots.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstrual_diary.History.Per_day.data.Color">
+         <path value="Menstrual_diary.History.Per_day.data.Color"/>
+         <short value="Color"/>
+         <definition value="Color of blood."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstrual_diary.History.Per_day.data.Color"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Menstrual_diary.History.Per_day.data.Color.value">
+         <path value="Menstrual_diary.History.Per_day.data.Color.value"/>
+         <short value="Color"/>
+         <definition value="Color of blood."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstrual_diary.History.Per_day.data.Color.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstrual_diary.History.Per_day.data.Description">
+         <path value="Menstrual_diary.History.Per_day.data.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description of the menstrual cycle on the day in question. For example day 2."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstrual_diary.History.Per_day.data.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Menstrual_diary.History.Per_day.data.Description.value">
+         <path value="Menstrual_diary.History.Per_day.data.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description of the menstrual cycle on the day in question. For example day 2."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstrual_diary.History.Per_day.data.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstrual_diary.History.Per_day.data.Additional_details">
+         <path value="Menstrual_diary.History.Per_day.data.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="Additional details about the specific day of the menstrual cycle."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Menstrual_diary.History.Per_day.data.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstrual_diary.History.Per_day.data.Comment">
+         <path value="Menstrual_diary.History.Per_day.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the specific day of the menstrual cycle, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstrual_diary.History.Per_day.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Menstrual_diary.History.Per_day.data.Comment.value">
+         <path value="Menstrual_diary.History.Per_day.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the specific day of the menstrual cycle, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstrual_diary.History.Per_day.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Menstrual_diary.History.events_Per_day.width">
+         <path value="Menstrual_diary.History.events_Per_day.width"/>
+         <short value="Per day"/>
+         <definition value="To record a spesific single day in a cycle."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Menstrual_diary.History.events_Per_day.width"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

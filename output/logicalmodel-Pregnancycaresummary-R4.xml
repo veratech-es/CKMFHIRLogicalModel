@@ -1,0 +1,2110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Pregnancycaresummary-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-pregnancycaresummary-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-EVALUATION.pregnancy_care_summary.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Pregnancycaresummary"/>
+   <title value="Pregnancy care summary"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Summary details about the antenatal care received during a single pregnancy."/>
+   <purpose value="To record summary details about the antenatal care received during a single pregnancy."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Pregnancy_care_summary">
+         <path value="Pregnancy_care_summary"/>
+         <short value="Pregnancy care summary"/>
+         <definition value="Summary details about the antenatal care received during a single pregnancy."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.protocol">
+         <path value="Pregnancy_care_summary.protocol"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.protocol.Extension">
+         <path value="Pregnancy_care_summary.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="CLUSTER"/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pregnancy_care_summary.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.protocol.Last_updated">
+         <path value="Pregnancy_care_summary.protocol.Last_updated"/>
+         <short value="Last updated"/>
+         <definition value="The date when this care summary was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.protocol.Last_updated"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.protocol.Last_updated.value">
+         <path value="Pregnancy_care_summary.protocol.Last_updated.value"/>
+         <short value="Last updated"/>
+         <definition value="The date when this care summary was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.protocol.Last_updated.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data">
+         <path value="Pregnancy_care_summary.data"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Description">
+         <path value="Pregnancy_care_summary.data.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the care received during a single pregnancy and the related postnatal period."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Description.value">
+         <path value="Pregnancy_care_summary.data.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the care received during a single pregnancy and the related postnatal period."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.No_antenatal_care">
+         <path value="Pregnancy_care_summary.data.No_antenatal_care"/>
+         <short value="No antenatal care"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.No_antenatal_care"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.No_antenatal_care.value">
+         <path value="Pregnancy_care_summary.data.No_antenatal_care.value"/>
+         <short value="No antenatal care"/>
+         <definition value="DV_BOOLEAN"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.No_antenatal_care.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.First_antenatal_visit">
+         <path value="Pregnancy_care_summary.data.First_antenatal_visit"/>
+         <short value="First antenatal visit"/>
+         <definition value="The date of the first antenatal visit."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.First_antenatal_visit"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.First_antenatal_visit.value">
+         <path value="Pregnancy_care_summary.data.First_antenatal_visit.value"/>
+         <short value="First antenatal visit"/>
+         <definition value="The date of the first antenatal visit."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.First_antenatal_visit.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Routine_antenatal_care_summary">
+         <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary"/>
+         <short value="Routine antenatal care summary"/>
+         <definition value="CLUSTER"/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Type_of_care">
+         <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Type_of_care"/>
+         <short value="Type of care"/>
+         <definition value="Type of health professional or clinic providing community or outpatient antenatal care."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Type_of_care"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Type_of_care.value">
+         <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Type_of_care.value"/>
+         <short value="Type of care"/>
+         <definition value="Type of health professional or clinic providing community or outpatient antenatal care."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Type_of_care.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Provider_name">
+         <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Provider_name"/>
+         <short value="Provider name"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Provider_name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Provider_name.value">
+         <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Provider_name.value"/>
+         <short value="Provider name"/>
+         <definition value="DV_TEXT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Provider_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Provider_details">
+         <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Provider_details"/>
+         <short value="Provider details"/>
+         <definition value="CLUSTER"/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Provider_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Description">
+         <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Description"/>
+         <short value="Description"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Description.value">
+         <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Description.value"/>
+         <short value="Description"/>
+         <definition value="DV_TEXT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Date_of_first_visit">
+         <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Date_of_first_visit"/>
+         <short value="Date of first visit"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Date_of_first_visit"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Date_of_first_visit.value">
+         <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Date_of_first_visit.value"/>
+         <short value="Date of first visit"/>
+         <definition value="DV_DATE_TIME"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Date_of_first_visit.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Gestation_at_first_visit">
+         <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Gestation_at_first_visit"/>
+         <short value="Gestation at first visit"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Gestation_at_first_visit"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Gestation_at_first_visit.value">
+         <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Gestation_at_first_visit.value"/>
+         <short value="Gestation at first visit"/>
+         <definition value="DV_DURATION"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Gestation_at_first_visit.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Date_of_last_visit">
+         <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Date_of_last_visit"/>
+         <short value="Date of last visit"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Date_of_last_visit"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Date_of_last_visit.value">
+         <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Date_of_last_visit.value"/>
+         <short value="Date of last visit"/>
+         <definition value="DV_DATE_TIME"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Date_of_last_visit.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Gestation_at_last_visit">
+         <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Gestation_at_last_visit"/>
+         <short value="Gestation at last visit"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Gestation_at_last_visit"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Gestation_at_last_visit.value">
+         <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Gestation_at_last_visit.value"/>
+         <short value="Gestation at last visit"/>
+         <definition value="DV_DURATION"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Gestation_at_last_visit.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Number_of_visits">
+         <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Number_of_visits"/>
+         <short value="Number of visits"/>
+         <definition value="The number of visits to the identified clinic."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Number_of_visits"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Number_of_visits.value">
+         <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Number_of_visits.value"/>
+         <short value="Number of visits"/>
+         <definition value="The number of visits to the identified clinic."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Number_of_visits.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Conditions_managed">
+         <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Conditions_managed"/>
+         <short value="Conditions managed"/>
+         <definition value="Significant issues, problems or diagnoses managed by the specified type of care."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Conditions_managed"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Conditions_managed.value">
+         <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Conditions_managed.value"/>
+         <short value="Conditions managed"/>
+         <definition value="Significant issues, problems or diagnoses managed by the specified type of care."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Conditions_managed.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Treatment_summary">
+         <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Treatment_summary"/>
+         <short value="Treatment summary"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Treatment_summary"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Treatment_summary.value">
+         <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Treatment_summary.value"/>
+         <short value="Treatment summary"/>
+         <definition value="DV_TEXT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Treatment_summary.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Additional_details">
+         <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="CLUSTER"/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Scheduled_follow_up">
+         <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Scheduled_follow_up"/>
+         <short value="Scheduled follow up"/>
+         <definition value="The scheduled date for antenatal admission followup."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Scheduled_follow_up"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Scheduled_follow_up.value">
+         <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Scheduled_follow_up.value"/>
+         <short value="Scheduled follow up"/>
+         <definition value="The scheduled date for antenatal admission followup."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Scheduled_follow_up.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Comment">
+         <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Comment"/>
+         <short value="Comment"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Comment.value">
+         <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="DV_DATE_TIME"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Routine_antenatal_care_summary.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Specialist_antenatal_care_summary">
+         <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary"/>
+         <short value="Specialist antenatal care summary"/>
+         <definition value="CLUSTER"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Type_of_care">
+         <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Type_of_care"/>
+         <short value="Type of care"/>
+         <definition value="Type of health professional or clinic providing community or outpatient antenatal care."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Type_of_care"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Type_of_care.value">
+         <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Type_of_care.value"/>
+         <short value="Type of care"/>
+         <definition value="Type of health professional or clinic providing community or outpatient antenatal care."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Type_of_care.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Provider_name">
+         <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Provider_name"/>
+         <short value="Provider name"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Provider_name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Provider_name.value">
+         <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Provider_name.value"/>
+         <short value="Provider name"/>
+         <definition value="DV_TEXT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Provider_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Provider_details">
+         <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Provider_details"/>
+         <short value="Provider details"/>
+         <definition value="CLUSTER"/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Provider_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Description">
+         <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Description"/>
+         <short value="Description"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Description.value">
+         <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Description.value"/>
+         <short value="Description"/>
+         <definition value="DV_TEXT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Date_of_first_visit">
+         <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Date_of_first_visit"/>
+         <short value="Date of first visit"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Date_of_first_visit"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Date_of_first_visit.value">
+         <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Date_of_first_visit.value"/>
+         <short value="Date of first visit"/>
+         <definition value="DV_DATE_TIME"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Date_of_first_visit.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Gestation_at_first_visit">
+         <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Gestation_at_first_visit"/>
+         <short value="Gestation at first visit"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Gestation_at_first_visit"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Gestation_at_first_visit.value">
+         <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Gestation_at_first_visit.value"/>
+         <short value="Gestation at first visit"/>
+         <definition value="DV_DURATION"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Gestation_at_first_visit.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Date_of_last_visit">
+         <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Date_of_last_visit"/>
+         <short value="Date of last visit"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Date_of_last_visit"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Date_of_last_visit.value">
+         <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Date_of_last_visit.value"/>
+         <short value="Date of last visit"/>
+         <definition value="DV_DATE_TIME"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Date_of_last_visit.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Gestation_at_last_visit">
+         <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Gestation_at_last_visit"/>
+         <short value="Gestation at last visit"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Gestation_at_last_visit"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Gestation_at_last_visit.value">
+         <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Gestation_at_last_visit.value"/>
+         <short value="Gestation at last visit"/>
+         <definition value="DV_DURATION"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Gestation_at_last_visit.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Number_of_visits">
+         <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Number_of_visits"/>
+         <short value="Number of visits"/>
+         <definition value="The number of visits to the identified clinic."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Number_of_visits"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Number_of_visits.value">
+         <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Number_of_visits.value"/>
+         <short value="Number of visits"/>
+         <definition value="The number of visits to the identified clinic."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Number_of_visits.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Conditions_managed">
+         <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Conditions_managed"/>
+         <short value="Conditions managed"/>
+         <definition value="Significant issues, problems or diagnoses managed by the specified type of care."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Conditions_managed"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Conditions_managed.value">
+         <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Conditions_managed.value"/>
+         <short value="Conditions managed"/>
+         <definition value="Significant issues, problems or diagnoses managed by the specified type of care."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Conditions_managed.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Treatment_summary">
+         <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Treatment_summary"/>
+         <short value="Treatment summary"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Treatment_summary"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Treatment_summary.value">
+         <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Treatment_summary.value"/>
+         <short value="Treatment summary"/>
+         <definition value="DV_TEXT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Treatment_summary.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Additional_details">
+         <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="CLUSTER"/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Scheduled_follow_up">
+         <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Scheduled_follow_up"/>
+         <short value="Scheduled follow up"/>
+         <definition value="The scheduled date for antenatal admission followup."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Scheduled_follow_up"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Scheduled_follow_up.value">
+         <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Scheduled_follow_up.value"/>
+         <short value="Scheduled follow up"/>
+         <definition value="The scheduled date for antenatal admission followup."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Scheduled_follow_up.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Comment">
+         <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Comment"/>
+         <short value="Comment"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Comment.value">
+         <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="DV_DATE_TIME"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Specialist_antenatal_care_summary.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Total_number_of_antenatal_visits">
+         <path value="Pregnancy_care_summary.data.Total_number_of_antenatal_visits"/>
+         <short value="Total number of antenatal visits"/>
+         <definition value="Total number of antenatal clinic visits of all types and locations."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Total_number_of_antenatal_visits"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Total_number_of_antenatal_visits.value">
+         <path value="Pregnancy_care_summary.data.Total_number_of_antenatal_visits.value"/>
+         <short value="Total number of antenatal visits"/>
+         <definition value="Total number of antenatal clinic visits of all types and locations."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Total_number_of_antenatal_visits.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Antenatal_admission">
+         <path value="Pregnancy_care_summary.data.Antenatal_admission"/>
+         <short value="Antenatal admission"/>
+         <definition value="CLUSTER"/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Antenatal_admission"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Antenatal_admission.Gestation_at_admission">
+         <path value="Pregnancy_care_summary.data.Antenatal_admission.Gestation_at_admission"/>
+         <short value="Gestation at admission"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Antenatal_admission.Gestation_at_admission"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Antenatal_admission.Gestation_at_admission.value">
+         <path value="Pregnancy_care_summary.data.Antenatal_admission.Gestation_at_admission.value"/>
+         <short value="Gestation at admission"/>
+         <definition value="DV_DURATION"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Antenatal_admission.Gestation_at_admission.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Antenatal_admission.Description">
+         <path value="Pregnancy_care_summary.data.Antenatal_admission.Description"/>
+         <short value="Description"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Antenatal_admission.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Antenatal_admission.Description.value">
+         <path value="Pregnancy_care_summary.data.Antenatal_admission.Description.value"/>
+         <short value="Description"/>
+         <definition value="DV_TEXT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Antenatal_admission.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Antenatal_admission.Inpatient_admission_details">
+         <path value="Pregnancy_care_summary.data.Antenatal_admission.Inpatient_admission_details"/>
+         <short value="Inpatient admission details"/>
+         <definition value="CLUSTER"/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Antenatal_admission.Inpatient_admission_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Antenatal_admission.Conditions_managed">
+         <path value="Pregnancy_care_summary.data.Antenatal_admission.Conditions_managed"/>
+         <short value="Conditions managed"/>
+         <definition value="Significant issues, problems or diagnoses managed by the specified type of care."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Antenatal_admission.Conditions_managed"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Antenatal_admission.Conditions_managed.value">
+         <path value="Pregnancy_care_summary.data.Antenatal_admission.Conditions_managed.value"/>
+         <short value="Conditions managed"/>
+         <definition value="Significant issues, problems or diagnoses managed by the specified type of care."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Antenatal_admission.Conditions_managed.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Antenatal_admission.Treatment_summary">
+         <path value="Pregnancy_care_summary.data.Antenatal_admission.Treatment_summary"/>
+         <short value="Treatment summary"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Antenatal_admission.Treatment_summary"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Antenatal_admission.Treatment_summary.value">
+         <path value="Pregnancy_care_summary.data.Antenatal_admission.Treatment_summary.value"/>
+         <short value="Treatment summary"/>
+         <definition value="DV_TEXT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Antenatal_admission.Treatment_summary.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Antenatal_admission.Additional_details">
+         <path value="Pregnancy_care_summary.data.Antenatal_admission.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="CLUSTER"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Antenatal_admission.Additional_details"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Antenatal_admission.Gestation_at_discharge">
+         <path value="Pregnancy_care_summary.data.Antenatal_admission.Gestation_at_discharge"/>
+         <short value="Gestation at discharge"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Antenatal_admission.Gestation_at_discharge"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Antenatal_admission.Gestation_at_discharge.value">
+         <path value="Pregnancy_care_summary.data.Antenatal_admission.Gestation_at_discharge.value"/>
+         <short value="Gestation at discharge"/>
+         <definition value="DV_DURATION"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Antenatal_admission.Gestation_at_discharge.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Antenatal_admission.Scheduled_follow_up">
+         <path value="Pregnancy_care_summary.data.Antenatal_admission.Scheduled_follow_up"/>
+         <short value="Scheduled follow up"/>
+         <definition value="The scheduled date for antenatal admission followup."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Antenatal_admission.Scheduled_follow_up"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Antenatal_admission.Scheduled_follow_up.value">
+         <path value="Pregnancy_care_summary.data.Antenatal_admission.Scheduled_follow_up.value"/>
+         <short value="Scheduled follow up"/>
+         <definition value="The scheduled date for antenatal admission followup."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Antenatal_admission.Scheduled_follow_up.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Antenatal_admission.Comment">
+         <path value="Pregnancy_care_summary.data.Antenatal_admission.Comment"/>
+         <short value="Comment"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Antenatal_admission.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Antenatal_admission.Comment.value">
+         <path value="Pregnancy_care_summary.data.Antenatal_admission.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="DV_DATE_TIME"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Antenatal_admission.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Total_number_of_antenatal_admissions">
+         <path value="Pregnancy_care_summary.data.Total_number_of_antenatal_admissions"/>
+         <short value="Total number of antenatal admissions"/>
+         <definition value="Total number of antenatal hospital admissions."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Total_number_of_antenatal_admissions"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Total_number_of_antenatal_admissions.value">
+         <path value="Pregnancy_care_summary.data.Total_number_of_antenatal_admissions.value"/>
+         <short value="Total number of antenatal admissions"/>
+         <definition value="Total number of antenatal hospital admissions."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Total_number_of_antenatal_admissions.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Date_of_last_antenatal_visit">
+         <path value="Pregnancy_care_summary.data.Date_of_last_antenatal_visit"/>
+         <short value="Date of last antenatal visit"/>
+         <definition value="The date of the last antenatal visit of any type or location, prior to delivery."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Date_of_last_antenatal_visit"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Date_of_last_antenatal_visit.value">
+         <path value="Pregnancy_care_summary.data.Date_of_last_antenatal_visit.value"/>
+         <short value="Date of last antenatal visit"/>
+         <definition value="The date of the last antenatal visit of any type or location, prior to delivery."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Date_of_last_antenatal_visit.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Delivery_admission">
+         <path value="Pregnancy_care_summary.data.Delivery_admission"/>
+         <short value="Delivery admission"/>
+         <definition value="CLUSTER"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Delivery_admission"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Delivery_admission.Gestation_at_admission">
+         <path value="Pregnancy_care_summary.data.Delivery_admission.Gestation_at_admission"/>
+         <short value="Gestation at admission"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Delivery_admission.Gestation_at_admission"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Delivery_admission.Gestation_at_admission.value">
+         <path value="Pregnancy_care_summary.data.Delivery_admission.Gestation_at_admission.value"/>
+         <short value="Gestation at admission"/>
+         <definition value="DV_DURATION"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Delivery_admission.Gestation_at_admission.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Delivery_admission.Description">
+         <path value="Pregnancy_care_summary.data.Delivery_admission.Description"/>
+         <short value="Description"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Delivery_admission.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Delivery_admission.Description.value">
+         <path value="Pregnancy_care_summary.data.Delivery_admission.Description.value"/>
+         <short value="Description"/>
+         <definition value="DV_DATE_TIME"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Delivery_admission.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Delivery_admission.Inpatient_admission_details">
+         <path value="Pregnancy_care_summary.data.Delivery_admission.Inpatient_admission_details"/>
+         <short value="Inpatient admission details"/>
+         <definition value="CLUSTER"/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Delivery_admission.Inpatient_admission_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Delivery_admission.Scheduled_follow_up">
+         <path value="Pregnancy_care_summary.data.Delivery_admission.Scheduled_follow_up"/>
+         <short value="Scheduled follow up"/>
+         <definition value="The scheduled date for routine postnatal followup."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Delivery_admission.Scheduled_follow_up"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Delivery_admission.Scheduled_follow_up.value">
+         <path value="Pregnancy_care_summary.data.Delivery_admission.Scheduled_follow_up.value"/>
+         <short value="Scheduled follow up"/>
+         <definition value="The scheduled date for routine postnatal followup."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Delivery_admission.Scheduled_follow_up.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Delivery_admission.Comment">
+         <path value="Pregnancy_care_summary.data.Delivery_admission.Comment"/>
+         <short value="Comment"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Delivery_admission.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Delivery_admission.Comment.value">
+         <path value="Pregnancy_care_summary.data.Delivery_admission.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="DV_DATE_TIME"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Delivery_admission.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Postnatal_visit">
+         <path value="Pregnancy_care_summary.data.Postnatal_visit"/>
+         <short value="Postnatal visit"/>
+         <definition value="CLUSTER"/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Postnatal_visit"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Postnatal_visit.Type_of_visit">
+         <path value="Pregnancy_care_summary.data.Postnatal_visit.Type_of_visit"/>
+         <short value="Type of visit"/>
+         <definition value="Type of health professional or clinic providing community or outpatient postnatal care."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Postnatal_visit.Type_of_visit"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Postnatal_visit.Type_of_visit.value">
+         <path value="Pregnancy_care_summary.data.Postnatal_visit.Type_of_visit.value"/>
+         <short value="Type of visit"/>
+         <definition value="Type of health professional or clinic providing community or outpatient postnatal care."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Postnatal_visit.Type_of_visit.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Postnatal_visit.Date_of_visit">
+         <path value="Pregnancy_care_summary.data.Postnatal_visit.Date_of_visit"/>
+         <short value="Date of visit"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Postnatal_visit.Date_of_visit"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Postnatal_visit.Date_of_visit.value">
+         <path value="Pregnancy_care_summary.data.Postnatal_visit.Date_of_visit.value"/>
+         <short value="Date of visit"/>
+         <definition value="DV_DATE_TIME"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Postnatal_visit.Date_of_visit.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Postnatal_visit.Description">
+         <path value="Pregnancy_care_summary.data.Postnatal_visit.Description"/>
+         <short value="Description"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Postnatal_visit.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Postnatal_visit.Description.value">
+         <path value="Pregnancy_care_summary.data.Postnatal_visit.Description.value"/>
+         <short value="Description"/>
+         <definition value="DV_TEXT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Postnatal_visit.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Postnatal_visit.Assessment">
+         <path value="Pregnancy_care_summary.data.Postnatal_visit.Assessment"/>
+         <short value="Assessment"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Postnatal_visit.Assessment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Postnatal_visit.Assessment.value">
+         <path value="Pregnancy_care_summary.data.Postnatal_visit.Assessment.value"/>
+         <short value="Assessment"/>
+         <definition value="DV_TEXT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Postnatal_visit.Assessment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Postnatal_visit.Conditions_managed">
+         <path value="Pregnancy_care_summary.data.Postnatal_visit.Conditions_managed"/>
+         <short value="Conditions managed"/>
+         <definition value="Significant issues, problems or diagnoses managed by the specified type of care."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Postnatal_visit.Conditions_managed"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Postnatal_visit.Conditions_managed.value">
+         <path value="Pregnancy_care_summary.data.Postnatal_visit.Conditions_managed.value"/>
+         <short value="Conditions managed"/>
+         <definition value="Significant issues, problems or diagnoses managed by the specified type of care."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Postnatal_visit.Conditions_managed.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Postnatal_visit.Additional_details">
+         <path value="Pregnancy_care_summary.data.Postnatal_visit.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="CLUSTER"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Postnatal_visit.Additional_details"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Postnatal_visit.Scheduled_follow_up">
+         <path value="Pregnancy_care_summary.data.Postnatal_visit.Scheduled_follow_up"/>
+         <short value="Scheduled follow up"/>
+         <definition value="The scheduled date for postnatal care followup."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Postnatal_visit.Scheduled_follow_up"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Postnatal_visit.Scheduled_follow_up.value">
+         <path value="Pregnancy_care_summary.data.Postnatal_visit.Scheduled_follow_up.value"/>
+         <short value="Scheduled follow up"/>
+         <definition value="The scheduled date for postnatal care followup."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Postnatal_visit.Scheduled_follow_up.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Postnatal_visit.Comment">
+         <path value="Pregnancy_care_summary.data.Postnatal_visit.Comment"/>
+         <short value="Comment"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Postnatal_visit.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Postnatal_visit.Comment.value">
+         <path value="Pregnancy_care_summary.data.Postnatal_visit.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="DV_DATE_TIME"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Postnatal_visit.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Total_number_of_postnatal_visits">
+         <path value="Pregnancy_care_summary.data.Total_number_of_postnatal_visits"/>
+         <short value="Total number of postnatal visits"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Total_number_of_postnatal_visits"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Total_number_of_postnatal_visits.value">
+         <path value="Pregnancy_care_summary.data.Total_number_of_postnatal_visits.value"/>
+         <short value="Total number of postnatal visits"/>
+         <definition value="DV_COUNT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Total_number_of_postnatal_visits.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Postnatal_admission">
+         <path value="Pregnancy_care_summary.data.Postnatal_admission"/>
+         <short value="Postnatal admission"/>
+         <definition value="CLUSTER"/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Postnatal_admission"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Postnatal_admission.Description">
+         <path value="Pregnancy_care_summary.data.Postnatal_admission.Description"/>
+         <short value="Description"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Postnatal_admission.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Postnatal_admission.Description.value">
+         <path value="Pregnancy_care_summary.data.Postnatal_admission.Description.value"/>
+         <short value="Description"/>
+         <definition value="DV_TEXT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Postnatal_admission.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Postnatal_admission.Inpatient_admission_details">
+         <path value="Pregnancy_care_summary.data.Postnatal_admission.Inpatient_admission_details"/>
+         <short value="Inpatient admission details"/>
+         <definition value="CLUSTER"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Postnatal_admission.Inpatient_admission_details"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Postnatal_admission.Conditions_managed">
+         <path value="Pregnancy_care_summary.data.Postnatal_admission.Conditions_managed"/>
+         <short value="Conditions managed"/>
+         <definition value="Significant issues, problems or diagnoses managed by the specified type of care."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Postnatal_admission.Conditions_managed"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Postnatal_admission.Conditions_managed.value">
+         <path value="Pregnancy_care_summary.data.Postnatal_admission.Conditions_managed.value"/>
+         <short value="Conditions managed"/>
+         <definition value="Significant issues, problems or diagnoses managed by the specified type of care."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Postnatal_admission.Conditions_managed.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Postnatal_admission.Treatment_summary">
+         <path value="Pregnancy_care_summary.data.Postnatal_admission.Treatment_summary"/>
+         <short value="Treatment summary"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Postnatal_admission.Treatment_summary"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Postnatal_admission.Treatment_summary.value">
+         <path value="Pregnancy_care_summary.data.Postnatal_admission.Treatment_summary.value"/>
+         <short value="Treatment summary"/>
+         <definition value="DV_TEXT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Postnatal_admission.Treatment_summary.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Postnatal_admission.Additional_details">
+         <path value="Pregnancy_care_summary.data.Postnatal_admission.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="CLUSTER"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Postnatal_admission.Additional_details"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Postnatal_admission.Scheduled_follow_up">
+         <path value="Pregnancy_care_summary.data.Postnatal_admission.Scheduled_follow_up"/>
+         <short value="Scheduled follow up"/>
+         <definition value="The scheduled date for postnatal admission followup."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Postnatal_admission.Scheduled_follow_up"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Postnatal_admission.Scheduled_follow_up.value">
+         <path value="Pregnancy_care_summary.data.Postnatal_admission.Scheduled_follow_up.value"/>
+         <short value="Scheduled follow up"/>
+         <definition value="The scheduled date for postnatal admission followup."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Postnatal_admission.Scheduled_follow_up.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Postnatal_admission.Comment">
+         <path value="Pregnancy_care_summary.data.Postnatal_admission.Comment"/>
+         <short value="Comment"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Postnatal_admission.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Postnatal_admission.Comment.value">
+         <path value="Pregnancy_care_summary.data.Postnatal_admission.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="DV_DATE_TIME"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Postnatal_admission.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Total_number_of_postnatal_admissions">
+         <path value="Pregnancy_care_summary.data.Total_number_of_postnatal_admissions"/>
+         <short value="Total number of postnatal admissions"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Total_number_of_postnatal_admissions"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Total_number_of_postnatal_admissions.value">
+         <path value="Pregnancy_care_summary.data.Total_number_of_postnatal_admissions.value"/>
+         <short value="Total number of postnatal admissions"/>
+         <definition value="DV_COUNT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Total_number_of_postnatal_admissions.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pregnancy_care_summary.data.Comment">
+         <path value="Pregnancy_care_summary.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the care received during a single pregnancy and the related postnatal period, not captured in other data fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pregnancy_care_summary.data.Comment.value">
+         <path value="Pregnancy_care_summary.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the care received during a single pregnancy and the related postnatal period, not captured in other data fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pregnancy_care_summary.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

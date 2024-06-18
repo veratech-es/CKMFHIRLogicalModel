@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Physicalexaminationfindings-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-physicalexaminationfindings-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.exam.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Physicalexaminationfindings"/>
+   <title value="Physical examination findings"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Findings observed during the physical examination of a subject of care."/>
+   <purpose value="For recording details about findings on physical examination of the subject of care."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Physical_examination_findings">
+         <path value="Physical_examination_findings"/>
+         <short value="Physical examination findings"/>
+         <definition value="Findings observed during the physical examination of a subject of care."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Physical_examination_findings"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Physical_examination_findings.protocol">
+         <path value="Physical_examination_findings.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Physical_examination_findings.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Physical_examination_findings.protocol.Device_Details">
+         <path value="Physical_examination_findings.protocol.Device_Details"/>
+         <short value="Device Details"/>
+         <definition value="Details about any device used during the physical examination."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Physical_examination_findings.protocol.Device_Details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Physical_examination_findings.protocol.Extension">
+         <path value="Physical_examination_findings.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Physical_examination_findings.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Physical_examination_findings.Event_Series">
+         <path value="Physical_examination_findings.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Physical_examination_findings.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Physical_examination_findings.Event_Series.Any_event">
+         <path value="Physical_examination_findings.Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Physical_examination_findings.Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Physical_examination_findings.Event_Series.Any_event.data">
+         <path value="Physical_examination_findings.Event_Series.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Physical_examination_findings.Event_Series.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Physical_examination_findings.Event_Series.Any_event.data.Description">
+         <path value="Physical_examination_findings.Event_Series.Any_event.data.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description of the overall findings observed during a physical examination of a patient."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Physical_examination_findings.Event_Series.Any_event.data.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Physical_examination_findings.Event_Series.Any_event.data.Description.value">
+         <path value="Physical_examination_findings.Event_Series.Any_event.data.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description of the overall findings observed during a physical examination of a patient."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Physical_examination_findings.Event_Series.Any_event.data.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Physical_examination_findings.Event_Series.Any_event.data.Examination_detail">
+         <path value="Physical_examination_findings.Event_Series.Any_event.data.Examination_detail"/>
+         <short value="Examination detail"/>
+         <definition value="Structured details of the physical examination."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Physical_examination_findings.Event_Series.Any_event.data.Examination_detail"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Physical_examination_findings.Event_Series.Any_event.data.Interpretation">
+         <path value="Physical_examination_findings.Event_Series.Any_event.data.Interpretation"/>
+         <short value="Interpretation"/>
+         <definition value="Single word, phrase or brief description which represents the clinical meaning and significance of the physical examination findings."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Physical_examination_findings.Event_Series.Any_event.data.Interpretation"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Physical_examination_findings.Event_Series.Any_event.data.Interpretation.value">
+         <path value="Physical_examination_findings.Event_Series.Any_event.data.Interpretation.value"/>
+         <short value="Interpretation"/>
+         <definition value="Single word, phrase or brief description which represents the clinical meaning and significance of the physical examination findings."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Physical_examination_findings.Event_Series.Any_event.data.Interpretation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Physical_examination_findings.Event_Series.Any_event.data.Comment">
+         <path value="Physical_examination_findings.Event_Series.Any_event.data.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the overall physical examination findings not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Physical_examination_findings.Event_Series.Any_event.data.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Physical_examination_findings.Event_Series.Any_event.data.Comment.value">
+         <path value="Physical_examination_findings.Event_Series.Any_event.data.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the overall physical examination findings not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Physical_examination_findings.Event_Series.Any_event.data.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Physical_examination_findings.Event_Series.Any_event.state">
+         <path value="Physical_examination_findings.Event_Series.Any_event.state"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Physical_examination_findings.Event_Series.Any_event.state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Physical_examination_findings.Event_Series.Any_event.state.Confounding_factors">
+         <path value="Physical_examination_findings.Event_Series.Any_event.state.Confounding_factors"/>
+         <short value="Confounding factors"/>
+         <definition value="Description of any incidental factors that may have contributed to the physical examination findings."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Physical_examination_findings.Event_Series.Any_event.state.Confounding_factors"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Physical_examination_findings.Event_Series.Any_event.state.Confounding_factors.value">
+         <path value="Physical_examination_findings.Event_Series.Any_event.state.Confounding_factors.value"/>
+         <short value="Confounding factors"/>
+         <definition value="Description of any incidental factors that may have contributed to the physical examination findings."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Physical_examination_findings.Event_Series.Any_event.state.Confounding_factors.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Physical_examination_findings.Event_Series.Any_event.state.Position">
+         <path value="Physical_examination_findings.Event_Series.Any_event.state.Position"/>
+         <short value="Position"/>
+         <definition value="The body position of the subject during the examination."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Physical_examination_findings.Event_Series.Any_event.state.Position"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Physical_examination_findings.Event_Series.Any_event.state.Position.value">
+         <path value="Physical_examination_findings.Event_Series.Any_event.state.Position.value"/>
+         <short value="Position"/>
+         <definition value="The body position of the subject during the examination."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Physical_examination_findings.Event_Series.Any_event.state.Position.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

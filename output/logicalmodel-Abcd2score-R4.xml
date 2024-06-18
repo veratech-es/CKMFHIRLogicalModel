@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Abcd2score-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-abcd2score-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-OBSERVATION.abcd2_score.v0"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Abcd2score"/>
+   <title value="ABCD2 score"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Tool to assess the risk of subsequent stroke in an individual presenting with a transient ischaemic attack (TIA)."/>
+   <purpose value="To record the results of the ABCD2 assessment tool."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="ABCD2_score">
+         <path value="ABCD2_score"/>
+         <short value="ABCD2 score"/>
+         <definition value="Tool to assess the risk of subsequent stroke in an individual presenting with a transient ischaemic attack (TIA)."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="ABCD2_score"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ABCD2_score.protocol">
+         <path value="ABCD2_score.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ABCD2_score.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ABCD2_score.protocol.Extension">
+         <path value="ABCD2_score.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="ABCD2_score.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ABCD2_score.Event_Series">
+         <path value="ABCD2_score.Event_Series"/>
+         <short value="Event Series"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ABCD2_score.Event_Series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ABCD2_score.Event_Series.Any_event">
+         <path value="ABCD2_score.Event_Series.Any_event"/>
+         <short value="Any event"/>
+         <definition value="Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="ABCD2_score.Event_Series.Any_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ABCD2_score.Event_Series.Any_event.data">
+         <path value="ABCD2_score.Event_Series.Any_event.data"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ABCD2_score.Event_Series.Any_event.data"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ABCD2_score.Event_Series.Any_event.data.Age_≥_60_years">
+         <path value="ABCD2_score.Event_Series.Any_event.data.Age_≥_60_years"/>
+         <short value="Age ≥ 60 years"/>
+         <definition value="Is the person 60 years or older?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ABCD2_score.Event_Series.Any_event.data.Age_≥_60_years"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="ABCD2_score.Event_Series.Any_event.data.Age_≥_60_years.value">
+         <path value="ABCD2_score.Event_Series.Any_event.data.Age_≥_60_years.value"/>
+         <short value="Age ≥ 60 years"/>
+         <definition value="Is the person 60 years or older?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ABCD2_score.Event_Series.Any_event.data.Age_≥_60_years.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ABCD2_score.Event_Series.Any_event.data.Blood_pressure_elevation">
+         <path value="ABCD2_score.Event_Series.Any_event.data.Blood_pressure_elevation"/>
+         <short value="Blood pressure elevation"/>
+         <definition value="Was the initial systolic pressure &gt;140 mmHg and/or diastolic pressure ≥ 90 mmHg?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ABCD2_score.Event_Series.Any_event.data.Blood_pressure_elevation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="ABCD2_score.Event_Series.Any_event.data.Blood_pressure_elevation.value">
+         <path value="ABCD2_score.Event_Series.Any_event.data.Blood_pressure_elevation.value"/>
+         <short value="Blood pressure elevation"/>
+         <definition value="Was the initial systolic pressure &gt;140 mmHg and/or diastolic pressure ≥ 90 mmHg?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ABCD2_score.Event_Series.Any_event.data.Blood_pressure_elevation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ABCD2_score.Event_Series.Any_event.data.Clinical_features">
+         <path value="ABCD2_score.Event_Series.Any_event.data.Clinical_features"/>
+         <short value="Clinical features"/>
+         <definition value="What are the clinical features of the TIA?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ABCD2_score.Event_Series.Any_event.data.Clinical_features"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="ABCD2_score.Event_Series.Any_event.data.Clinical_features.value">
+         <path value="ABCD2_score.Event_Series.Any_event.data.Clinical_features.value"/>
+         <short value="Clinical features"/>
+         <definition value="What are the clinical features of the TIA?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ABCD2_score.Event_Series.Any_event.data.Clinical_features.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ABCD2_score.Event_Series.Any_event.data.Diabetes_history">
+         <path value="ABCD2_score.Event_Series.Any_event.data.Diabetes_history"/>
+         <short value="Diabetes history"/>
+         <definition value="Does the patient have a history of  diabetes mellitus?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ABCD2_score.Event_Series.Any_event.data.Diabetes_history"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="ABCD2_score.Event_Series.Any_event.data.Diabetes_history.value">
+         <path value="ABCD2_score.Event_Series.Any_event.data.Diabetes_history.value"/>
+         <short value="Diabetes history"/>
+         <definition value="Does the patient have a history of  diabetes mellitus?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ABCD2_score.Event_Series.Any_event.data.Diabetes_history.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ABCD2_score.Event_Series.Any_event.data.Symptom_duration">
+         <path value="ABCD2_score.Event_Series.Any_event.data.Symptom_duration"/>
+         <short value="Symptom duration"/>
+         <definition value="What is the duration of symptoms?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ABCD2_score.Event_Series.Any_event.data.Symptom_duration"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="ABCD2_score.Event_Series.Any_event.data.Symptom_duration.value">
+         <path value="ABCD2_score.Event_Series.Any_event.data.Symptom_duration.value"/>
+         <short value="Symptom duration"/>
+         <definition value="What is the duration of symptoms?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ABCD2_score.Event_Series.Any_event.data.Symptom_duration.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="ABCD2_score.Event_Series.Any_event.data.Total_score">
+         <path value="ABCD2_score.Event_Series.Any_event.data.Total_score"/>
+         <short value="Total score"/>
+         <definition value="Sum of the individual scores assigned for each of the contributing variables."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ABCD2_score.Event_Series.Any_event.data.Total_score"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="ABCD2_score.Event_Series.Any_event.data.Total_score.value">
+         <path value="ABCD2_score.Event_Series.Any_event.data.Total_score.value"/>
+         <short value="Total score"/>
+         <definition value="Sum of the individual scores assigned for each of the contributing variables."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="ABCD2_score.Event_Series.Any_event.data.Total_score.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

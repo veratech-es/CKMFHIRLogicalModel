@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Problem_diagnosis-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-problem_diagnosis-R4"/>
+   <identifier>
+      <system value="openEHR-CKM"/>
+      <value value="openEHR-EHR-EVALUATION.problem_diagnosis.v1"/>
+   </identifier>
+   <version value="0"/>
+   <name value="Problem_diagnosis"/>
+   <title value="Problem/Diagnosis"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Details about a single identified health condition, injury, disability or any other issue which impacts on the physical, mental and/or social well-being of an individual."/>
+   <purpose value="For recording details about a single, identified health problem or diagnosis. &#xD;&#xA;&#xD;&#xA;The intended scope of a health problem is deliberately kept loose in the context of clinical documentation, so as to capture any real or perceived concerns that may adversely affect an individual's wellbeing to any degree. A health problem may be identified by the individual, a carer or a healthcare professional. However, a diagnosis is additionally defined based on objective clinical criteria, and usually determined only by a healthcare professional."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Problem_Diagnosis">
+         <path value="Problem_Diagnosis"/>
+         <short value="Problem/Diagnosis"/>
+         <definition value="Details about a single identified health condition, injury, disability or any other issue which impacts on the physical, mental and/or social well-being of an individual."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis.protocol">
+         <path value="Problem_Diagnosis.protocol"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis.protocol"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis.protocol.Last_updated">
+         <path value="Problem_Diagnosis.protocol.Last_updated"/>
+         <short value="Last updated"/>
+         <definition value="The date this problem or diagnosis was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis.protocol.Last_updated"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Problem_Diagnosis.protocol.Last_updated.value">
+         <path value="Problem_Diagnosis.protocol.Last_updated.value"/>
+         <short value="Last updated"/>
+         <definition value="The date this problem or diagnosis was last updated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis.protocol.Last_updated.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis.protocol.Extension">
+         <path value="Problem_Diagnosis.protocol.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Problem_Diagnosis.protocol.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis.structure">
+         <path value="Problem_Diagnosis.structure"/>
+         <short value="structure"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis.structure"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis.structure.Problem_Diagnosis_name">
+         <path value="Problem_Diagnosis.structure.Problem_Diagnosis_name"/>
+         <short value="Problem/Diagnosis name"/>
+         <definition value="Identification of the problem or diagnosis, by name."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis.structure.Problem_Diagnosis_name"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Problem_Diagnosis.structure.Problem_Diagnosis_name.value">
+         <path value="Problem_Diagnosis.structure.Problem_Diagnosis_name.value"/>
+         <short value="Problem/Diagnosis name"/>
+         <definition value="Identification of the problem or diagnosis, by name."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis.structure.Problem_Diagnosis_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis.structure.Variant">
+         <path value="Problem_Diagnosis.structure.Variant"/>
+         <short value="Variant"/>
+         <definition value="Specific variant or subtype of the Diagnosis, if relevant."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Problem_Diagnosis.structure.Variant"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Problem_Diagnosis.structure.Variant.value">
+         <path value="Problem_Diagnosis.structure.Variant.value"/>
+         <short value="Variant"/>
+         <definition value="Specific variant or subtype of the Diagnosis, if relevant."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis.structure.Variant.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis.structure.Clinical_description">
+         <path value="Problem_Diagnosis.structure.Clinical_description"/>
+         <short value="Clinical description"/>
+         <definition value="Narrative description about the problem or diagnosis."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis.structure.Clinical_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Problem_Diagnosis.structure.Clinical_description.value">
+         <path value="Problem_Diagnosis.structure.Clinical_description.value"/>
+         <short value="Clinical description"/>
+         <definition value="Narrative description about the problem or diagnosis."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis.structure.Clinical_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis.structure.Body_site">
+         <path value="Problem_Diagnosis.structure.Body_site"/>
+         <short value="Body site"/>
+         <definition value="Identification of a simple body site for the location of the problem or diagnosis."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Problem_Diagnosis.structure.Body_site"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Problem_Diagnosis.structure.Body_site.value">
+         <path value="Problem_Diagnosis.structure.Body_site.value"/>
+         <short value="Body site"/>
+         <definition value="Identification of a simple body site for the location of the problem or diagnosis."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis.structure.Body_site.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis.structure.Structured_body_site">
+         <path value="Problem_Diagnosis.structure.Structured_body_site"/>
+         <short value="Structured body site"/>
+         <definition value="A structured anatomical location for the problem or diagnosis."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Problem_Diagnosis.structure.Structured_body_site"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis.structure.Cause">
+         <path value="Problem_Diagnosis.structure.Cause"/>
+         <short value="Cause"/>
+         <definition value="A cause, set of causes, or manner of causation of the problem or diagnosis."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Problem_Diagnosis.structure.Cause"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Problem_Diagnosis.structure.Cause.value">
+         <path value="Problem_Diagnosis.structure.Cause.value"/>
+         <short value="Cause"/>
+         <definition value="A cause, set of causes, or manner of causation of the problem or diagnosis."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis.structure.Cause.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis.structure.Date_time_of_onset">
+         <path value="Problem_Diagnosis.structure.Date_time_of_onset"/>
+         <short value="Date/time of onset"/>
+         <definition value="Estimated or actual date/time that signs or symptoms of the problem/diagnosis were first observed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis.structure.Date_time_of_onset"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Problem_Diagnosis.structure.Date_time_of_onset.value">
+         <path value="Problem_Diagnosis.structure.Date_time_of_onset.value"/>
+         <short value="Date/time of onset"/>
+         <definition value="Estimated or actual date/time that signs or symptoms of the problem/diagnosis were first observed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis.structure.Date_time_of_onset.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis.structure.Date_time_clinically_recognised">
+         <path value="Problem_Diagnosis.structure.Date_time_clinically_recognised"/>
+         <short value="Date/time clinically recognised"/>
+         <definition value="Estimated or actual date/time the diagnosis or problem was recognised by a healthcare professional."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis.structure.Date_time_clinically_recognised"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Problem_Diagnosis.structure.Date_time_clinically_recognised.value">
+         <path value="Problem_Diagnosis.structure.Date_time_clinically_recognised.value"/>
+         <short value="Date/time clinically recognised"/>
+         <definition value="Estimated or actual date/time the diagnosis or problem was recognised by a healthcare professional."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis.structure.Date_time_clinically_recognised.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis.structure.Severity">
+         <path value="Problem_Diagnosis.structure.Severity"/>
+         <short value="Severity"/>
+         <definition value="An assessment of the overall severity of the problem or diagnosis."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis.structure.Severity"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Problem_Diagnosis.structure.Severity.value_DV_CODED_TEXT">
+         <path value="Problem_Diagnosis.structure.Severity.value_DV_CODED_TEXT"/>
+         <short value="Severity"/>
+         <definition value="An assessment of the overall severity of the problem or diagnosis."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis.structure.Severity.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis.structure.Severity.value_DV_TEXT">
+         <path value="Problem_Diagnosis.structure.Severity.value_DV_TEXT"/>
+         <short value="Severity"/>
+         <definition value="An assessment of the overall severity of the problem or diagnosis."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis.structure.Severity.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis.structure.Specific_details">
+         <path value="Problem_Diagnosis.structure.Specific_details"/>
+         <short value="Specific details"/>
+         <definition value="Details that are additionally required to record as unique attributes of this problem or diagnosis."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Problem_Diagnosis.structure.Specific_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis.structure.Course_description">
+         <path value="Problem_Diagnosis.structure.Course_description"/>
+         <short value="Course description"/>
+         <definition value="Narrative description about the course of the problem or diagnosis since onset."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis.structure.Course_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Problem_Diagnosis.structure.Course_description.value">
+         <path value="Problem_Diagnosis.structure.Course_description.value"/>
+         <short value="Course description"/>
+         <definition value="Narrative description about the course of the problem or diagnosis since onset."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis.structure.Course_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis.structure.Date_time_of_resolution">
+         <path value="Problem_Diagnosis.structure.Date_time_of_resolution"/>
+         <short value="Date/time of resolution"/>
+         <definition value="Estimated or actual date/time of resolution or remission for this problem or diagnosis, as determined by a healthcare professional."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis.structure.Date_time_of_resolution"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Problem_Diagnosis.structure.Date_time_of_resolution.value">
+         <path value="Problem_Diagnosis.structure.Date_time_of_resolution.value"/>
+         <short value="Date/time of resolution"/>
+         <definition value="Estimated or actual date/time of resolution or remission for this problem or diagnosis, as determined by a healthcare professional."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis.structure.Date_time_of_resolution.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis.structure.Status">
+         <path value="Problem_Diagnosis.structure.Status"/>
+         <short value="Status"/>
+         <definition value="Structured details for location-, domain-, episode- or workflow-specific aspects of the diagnostic process."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Problem_Diagnosis.structure.Status"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis.structure.Diagnostic_certainty">
+         <path value="Problem_Diagnosis.structure.Diagnostic_certainty"/>
+         <short value="Diagnostic certainty"/>
+         <definition value="The level of confidence in the identification of the diagnosis."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis.structure.Diagnostic_certainty"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Problem_Diagnosis.structure.Diagnostic_certainty.value_DV_CODED_TEXT">
+         <path value="Problem_Diagnosis.structure.Diagnostic_certainty.value_DV_CODED_TEXT"/>
+         <short value="Diagnostic certainty"/>
+         <definition value="The level of confidence in the identification of the diagnosis."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis.structure.Diagnostic_certainty.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis.structure.Diagnostic_certainty.value_DV_TEXT">
+         <path value="Problem_Diagnosis.structure.Diagnostic_certainty.value_DV_TEXT"/>
+         <short value="Diagnostic certainty"/>
+         <definition value="The level of confidence in the identification of the diagnosis."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis.structure.Diagnostic_certainty.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis.structure.Comment">
+         <path value="Problem_Diagnosis.structure.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the problem or diagnosis not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis.structure.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Problem_Diagnosis.structure.Comment.value">
+         <path value="Problem_Diagnosis.structure.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the problem or diagnosis not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis.structure.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>
