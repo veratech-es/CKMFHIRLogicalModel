@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Levelofexertion-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-levelofexertion-R4"/>
+   <version value="0"/>
+   <name value="Levelofexertion"/>
+   <title value="Level of exertion"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Record information about level of exertion."/>
+   <purpose value="Record information about the amount of energy expenditure that has been, or is being, experienced by the patient."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Level_of_exertion">
+         <path value="Level_of_exertion"/>
+         <short value="Level of exertion"/>
+         <definition value="Record information about level of exertion."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Level_of_exertion"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Level_of_exertion.Exercise_intensity">
+         <path value="Level_of_exertion.Exercise_intensity"/>
+         <short value="Exercise intensity"/>
+         <definition value="Amount of work being done during exercise."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Level_of_exertion.Exercise_intensity"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Level_of_exertion.Exercise_intensity.Description">
+         <path value="Level_of_exertion.Exercise_intensity.Description"/>
+         <short value="Description"/>
+         <definition value="Description of the exertion."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Level_of_exertion.Exercise_intensity.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Level_of_exertion.Exercise_intensity.Description.value">
+         <path value="Level_of_exertion.Exercise_intensity.Description.value"/>
+         <short value="Description"/>
+         <definition value="Description of the exertion."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Level_of_exertion.Exercise_intensity.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Level_of_exertion.Exercise_intensity.Intensity">
+         <path value="Level_of_exertion.Exercise_intensity.Intensity"/>
+         <short value="Intensity"/>
+         <definition value="Semiquantitative description of the intensity of exercise undertaken."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Level_of_exertion.Exercise_intensity.Intensity"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Level_of_exertion.Exercise_intensity.Intensity.value">
+         <path value="Level_of_exertion.Exercise_intensity.Intensity.value"/>
+         <short value="Intensity"/>
+         <definition value="Semiquantitative description of the intensity of exercise undertaken."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Level_of_exertion.Exercise_intensity.Intensity.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Level_of_exertion.Exercise_intensity.Measured">
+         <path value="Level_of_exertion.Exercise_intensity.Measured"/>
+         <short value="Measured"/>
+         <definition value="The measured level of exertion."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Level_of_exertion.Exercise_intensity.Measured"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Level_of_exertion.Exercise_intensity.Measured.value">
+         <path value="Level_of_exertion.Exercise_intensity.Measured.value"/>
+         <short value="Measured"/>
+         <definition value="The measured level of exertion."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Level_of_exertion.Exercise_intensity.Measured.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Level_of_exertion.Phase">
+         <path value="Level_of_exertion.Phase"/>
+         <short value="Phase"/>
+         <definition value="The phase or context of exercise."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Level_of_exertion.Phase"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Level_of_exertion.Phase.value">
+         <path value="Level_of_exertion.Phase.value"/>
+         <short value="Phase"/>
+         <definition value="The phase or context of exercise."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Level_of_exertion.Phase.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

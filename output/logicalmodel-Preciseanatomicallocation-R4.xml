@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Preciseanatomicallocation-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-preciseanatomicallocation-R4"/>
+   <version value="0"/>
+   <name value="Preciseanatomicallocation"/>
+   <title value="Precise anatomical location"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Record details about precise anatomical location of a specimen or body part, including coordinates."/>
+   <purpose value="To record highly detailed anatomical location."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Precise_anatomical_location">
+         <path value="Precise_anatomical_location"/>
+         <short value="Precise anatomical location"/>
+         <definition value="Record details about precise anatomical location of a specimen or body part, including coordinates."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Precise_anatomical_location"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Precise_anatomical_location.Position_frame_of_reference">
+         <path value="Precise_anatomical_location.Position_frame_of_reference"/>
+         <short value="Position frame of reference"/>
+         <definition value="Description of coordinate system and origin reference point used for localizing the object."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Precise_anatomical_location.Position_frame_of_reference"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Precise_anatomical_location.Position_frame_of_reference.value">
+         <path value="Precise_anatomical_location.Position_frame_of_reference.value"/>
+         <short value="Position frame of reference"/>
+         <definition value="Description of coordinate system and origin reference point used for localizing the object."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Precise_anatomical_location.Position_frame_of_reference.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Precise_anatomical_location.X_offset">
+         <path value="Precise_anatomical_location.X_offset"/>
+         <short value="X offset"/>
+         <definition value="Location of object (nominal center) relative to the Position Frame Reference. Distance can be given in SI units or pixels. of ({pixel}, UCUM, “Pixels”)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Precise_anatomical_location.X_offset"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Precise_anatomical_location.X_offset.value_DvQuantity">
+         <path value="Precise_anatomical_location.X_offset.value_DvQuantity"/>
+         <short value="X offset"/>
+         <definition value="Location of object (nominal center) relative to the Position Frame Reference. Distance can be given in SI units or pixels. of ({pixel}, UCUM, “Pixels”)."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Precise_anatomical_location.X_offset.value_DvQuantity"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Precise_anatomical_location.X_offset.value_DV_COUNT">
+         <path value="Precise_anatomical_location.X_offset.value_DV_COUNT"/>
+         <short value="X offset"/>
+         <definition value="Location of object (nominal center) relative to the Position Frame Reference. Distance can be given in SI units or pixels. of ({pixel}, UCUM, “Pixels”)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Precise_anatomical_location.X_offset.value_DV_COUNT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Precise_anatomical_location.Y_offset">
+         <path value="Precise_anatomical_location.Y_offset"/>
+         <short value="Y offset"/>
+         <definition value="Location of object (nominal center) relative to the Position Frame Reference. Distance can be given in SI units or pixels. of ({pixel}, UCUM, “Pixels”)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Precise_anatomical_location.Y_offset"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Precise_anatomical_location.Y_offset.value_DvQuantity">
+         <path value="Precise_anatomical_location.Y_offset.value_DvQuantity"/>
+         <short value="Y offset"/>
+         <definition value="Location of object (nominal center) relative to the Position Frame Reference. Distance can be given in SI units or pixels. of ({pixel}, UCUM, “Pixels”)."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Precise_anatomical_location.Y_offset.value_DvQuantity"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Precise_anatomical_location.Y_offset.value_DV_COUNT">
+         <path value="Precise_anatomical_location.Y_offset.value_DV_COUNT"/>
+         <short value="Y offset"/>
+         <definition value="Location of object (nominal center) relative to the Position Frame Reference. Distance can be given in SI units or pixels. of ({pixel}, UCUM, “Pixels”)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Precise_anatomical_location.Y_offset.value_DV_COUNT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Precise_anatomical_location.Z_offset">
+         <path value="Precise_anatomical_location.Z_offset"/>
+         <short value="Z offset"/>
+         <definition value="Location of object (nominal center) relative to the Position Frame Reference. Distance can be given in SI units or pixels. of ({pixel}, UCUM, “Pixels”)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Precise_anatomical_location.Z_offset"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Precise_anatomical_location.Z_offset.value_DvQuantity">
+         <path value="Precise_anatomical_location.Z_offset.value_DvQuantity"/>
+         <short value="Z offset"/>
+         <definition value="Location of object (nominal center) relative to the Position Frame Reference. Distance can be given in SI units or pixels. of ({pixel}, UCUM, “Pixels”)."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Precise_anatomical_location.Z_offset.value_DvQuantity"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Precise_anatomical_location.Z_offset.value_DV_COUNT">
+         <path value="Precise_anatomical_location.Z_offset.value_DV_COUNT"/>
+         <short value="Z offset"/>
+         <definition value="Location of object (nominal center) relative to the Position Frame Reference. Distance can be given in SI units or pixels. of ({pixel}, UCUM, “Pixels”)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Precise_anatomical_location.Z_offset.value_DV_COUNT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

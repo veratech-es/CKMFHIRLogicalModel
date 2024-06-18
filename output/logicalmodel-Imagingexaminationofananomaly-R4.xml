@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Imagingexaminationofananomaly-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-imagingexaminationofananomaly-R4"/>
+   <version value="0"/>
+   <name value="Imagingexaminationofananomaly"/>
+   <title value="Imaging examination of an anomaly"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="An incidental or ambiguous finding of an anomaly on radiological examination that deviates from what is expected or normal within an identified body structure or region."/>
+   <purpose value="To record an incidental or ambiguous finding of a single anomaly on radiological examination that deviates from what is expected or normal within an identified body structure or region."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Imaging_examination_of_an_anomaly">
+         <path value="Imaging_examination_of_an_anomaly"/>
+         <short value="Imaging examination of an anomaly"/>
+         <definition value="An incidental or ambiguous finding of an anomaly on radiological examination that deviates from what is expected or normal within an identified body structure or region."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_of_an_anomaly"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_of_an_anomaly.Body_site">
+         <path value="Imaging_examination_of_an_anomaly.Body_site"/>
+         <short value="Body site"/>
+         <definition value="Identification of the area of the body under examination."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_of_an_anomaly.Body_site"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_of_an_anomaly.Body_site.value">
+         <path value="Imaging_examination_of_an_anomaly.Body_site.value"/>
+         <short value="Body site"/>
+         <definition value="Identification of the area of the body under examination."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_of_an_anomaly.Body_site.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_of_an_anomaly.Structured_body_site">
+         <path value="Imaging_examination_of_an_anomaly.Structured_body_site"/>
+         <short value="Structured body site"/>
+         <definition value="Structured details about the area of the body under examination."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Imaging_examination_of_an_anomaly.Structured_body_site"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_of_an_anomaly.Imaging_findings">
+         <path value="Imaging_examination_of_an_anomaly.Imaging_findings"/>
+         <short value="Imaging findings"/>
+         <definition value="Narrative description of the imaging findings observed during this examination."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_of_an_anomaly.Imaging_findings"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_of_an_anomaly.Imaging_findings.value">
+         <path value="Imaging_examination_of_an_anomaly.Imaging_findings.value"/>
+         <short value="Imaging findings"/>
+         <definition value="Narrative description of the imaging findings observed during this examination."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_of_an_anomaly.Imaging_findings.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_of_an_anomaly.Additional_details">
+         <path value="Imaging_examination_of_an_anomaly.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="Additional structured details about imaging findings for the identified body structure or region, or findings of related structures."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Imaging_examination_of_an_anomaly.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_of_an_anomaly.Impression">
+         <path value="Imaging_examination_of_an_anomaly.Impression"/>
+         <short value="Impression"/>
+         <definition value="Single word, phrase or brief description that represents the clinical meaning and significance of all imaging findings for the identified body structure."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Imaging_examination_of_an_anomaly.Impression"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_of_an_anomaly.Impression.value">
+         <path value="Imaging_examination_of_an_anomaly.Impression.value"/>
+         <short value="Impression"/>
+         <definition value="Single word, phrase or brief description that represents the clinical meaning and significance of all imaging findings for the identified body structure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_of_an_anomaly.Impression.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_of_an_anomaly.Label">
+         <path value="Imaging_examination_of_an_anomaly.Label"/>
+         <short value="Label"/>
+         <definition value="A label for the anomaly."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_of_an_anomaly.Label"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_of_an_anomaly.Label.value">
+         <path value="Imaging_examination_of_an_anomaly.Label.value"/>
+         <short value="Label"/>
+         <definition value="A label for the anomaly."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_of_an_anomaly.Label.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_of_an_anomaly.Type">
+         <path value="Imaging_examination_of_an_anomaly.Type"/>
+         <short value="Type"/>
+         <definition value="The type of anomaly."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_of_an_anomaly.Type"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_of_an_anomaly.Type.value">
+         <path value="Imaging_examination_of_an_anomaly.Type.value"/>
+         <short value="Type"/>
+         <definition value="The type of anomaly."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_of_an_anomaly.Type.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_of_an_anomaly.Dimension">
+         <path value="Imaging_examination_of_an_anomaly.Dimension"/>
+         <short value="Dimension"/>
+         <definition value="A measured dimension of the anomaly."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Imaging_examination_of_an_anomaly.Dimension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_of_an_anomaly.Dimension.name">
+         <path value="Imaging_examination_of_an_anomaly.Dimension.name"/>
+         <short value="Dimension"/>
+         <definition value="A measured dimension of the anomaly."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_of_an_anomaly.Dimension.name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_of_an_anomaly.Dimension.value">
+         <path value="Imaging_examination_of_an_anomaly.Dimension.value"/>
+         <short value="Dimension"/>
+         <definition value="A measured dimension of the anomaly."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_of_an_anomaly.Dimension.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_of_an_anomaly.Shape">
+         <path value="Imaging_examination_of_an_anomaly.Shape"/>
+         <short value="Shape"/>
+         <definition value="The contour or silhouette of the anomaly."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_of_an_anomaly.Shape"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_of_an_anomaly.Shape.value">
+         <path value="Imaging_examination_of_an_anomaly.Shape.value"/>
+         <short value="Shape"/>
+         <definition value="The contour or silhouette of the anomaly."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_of_an_anomaly.Shape.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_of_an_anomaly.Texture">
+         <path value="Imaging_examination_of_an_anomaly.Texture"/>
+         <short value="Texture"/>
+         <definition value="Description of the texture or consistency of the anomaly."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_of_an_anomaly.Texture"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_of_an_anomaly.Texture.value">
+         <path value="Imaging_examination_of_an_anomaly.Texture.value"/>
+         <short value="Texture"/>
+         <definition value="Description of the texture or consistency of the anomaly."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_of_an_anomaly.Texture.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_of_an_anomaly.Margin">
+         <path value="Imaging_examination_of_an_anomaly.Margin"/>
+         <short value="Margin"/>
+         <definition value="The border of the anomaly."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_of_an_anomaly.Margin"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_of_an_anomaly.Margin.value">
+         <path value="Imaging_examination_of_an_anomaly.Margin.value"/>
+         <short value="Margin"/>
+         <definition value="The border of the anomaly."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_of_an_anomaly.Margin.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_of_an_anomaly.Calcification">
+         <path value="Imaging_examination_of_an_anomaly.Calcification"/>
+         <short value="Calcification"/>
+         <definition value="Presence of calcification in the anomaly."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_of_an_anomaly.Calcification"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_of_an_anomaly.Calcification.value">
+         <path value="Imaging_examination_of_an_anomaly.Calcification.value"/>
+         <short value="Calcification"/>
+         <definition value="Presence of calcification in the anomaly."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_of_an_anomaly.Calcification.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_of_an_anomaly.Calcification_description">
+         <path value="Imaging_examination_of_an_anomaly.Calcification_description"/>
+         <short value="Calcification description"/>
+         <definition value="Description about the pattern of calcification observed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_of_an_anomaly.Calcification_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_of_an_anomaly.Calcification_description.value">
+         <path value="Imaging_examination_of_an_anomaly.Calcification_description.value"/>
+         <short value="Calcification description"/>
+         <definition value="Description about the pattern of calcification observed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_of_an_anomaly.Calcification_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_of_an_anomaly.Effect">
+         <path value="Imaging_examination_of_an_anomaly.Effect"/>
+         <short value="Effect"/>
+         <definition value="Description about the effect of the anomaly on surrounding structures."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_of_an_anomaly.Effect"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_of_an_anomaly.Effect.value">
+         <path value="Imaging_examination_of_an_anomaly.Effect.value"/>
+         <short value="Effect"/>
+         <definition value="Description about the effect of the anomaly on surrounding structures."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_of_an_anomaly.Effect.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_of_an_anomaly.Vascularisation_description">
+         <path value="Imaging_examination_of_an_anomaly.Vascularisation_description"/>
+         <short value="Vascularisation description"/>
+         <definition value="Description about the blood flow related to to the anomaly."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_of_an_anomaly.Vascularisation_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_of_an_anomaly.Vascularisation_description.value">
+         <path value="Imaging_examination_of_an_anomaly.Vascularisation_description.value"/>
+         <short value="Vascularisation description"/>
+         <definition value="Description about the blood flow related to to the anomaly."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_of_an_anomaly.Vascularisation_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_of_an_anomaly.Comment">
+         <path value="Imaging_examination_of_an_anomaly.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the imaging findings of the anomaly, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_of_an_anomaly.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_of_an_anomaly.Comment.value">
+         <path value="Imaging_examination_of_an_anomaly.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the imaging findings of the anomaly, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_of_an_anomaly.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

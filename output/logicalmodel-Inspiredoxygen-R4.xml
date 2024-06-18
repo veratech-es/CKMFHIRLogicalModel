@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Inspiredoxygen-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-inspiredoxygen-R4"/>
+   <version value="0"/>
+   <name value="Inspiredoxygen"/>
+   <title value="Inspired oxygen"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="The amount of oxygen being delivered, or to be delivered, to the patient given as a fraction, percentage or indirectly as a flow rate."/>
+   <purpose value="To record the amount of oxygen available in the air the subject inspires at the time of observation, or the amount of oxygen that is to be delivered, if part of an order."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Inspired_oxygen">
+         <path value="Inspired_oxygen"/>
+         <short value="Inspired oxygen"/>
+         <definition value="The amount of oxygen being delivered, or to be delivered, to the patient given as a fraction, percentage or indirectly as a flow rate."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Inspired_oxygen"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Inspired_oxygen.Flow_rate">
+         <path value="Inspired_oxygen.Flow_rate"/>
+         <short value="Flow rate"/>
+         <definition value="Oxygen flow rate given to an individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Inspired_oxygen.Flow_rate"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Inspired_oxygen.Flow_rate.value">
+         <path value="Inspired_oxygen.Flow_rate.value"/>
+         <short value="Flow rate"/>
+         <definition value="Oxygen flow rate given to an individual."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Inspired_oxygen.Flow_rate.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Inspired_oxygen.FiO₂">
+         <path value="Inspired_oxygen.FiO₂"/>
+         <short value="FiO₂"/>
+         <definition value="Fraction of oxygen in inspired air."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Inspired_oxygen.FiO₂"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Inspired_oxygen.FiO₂.value">
+         <path value="Inspired_oxygen.FiO₂.value"/>
+         <short value="FiO₂"/>
+         <definition value="Fraction of oxygen in inspired air."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Inspired_oxygen.FiO₂.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Ratio"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Inspired_oxygen.Percent_O₂">
+         <path value="Inspired_oxygen.Percent_O₂"/>
+         <short value="Percent O₂"/>
+         <definition value="Percentage of oxygen in inspired air."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Inspired_oxygen.Percent_O₂"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Inspired_oxygen.Percent_O₂.value">
+         <path value="Inspired_oxygen.Percent_O₂.value"/>
+         <short value="Percent O₂"/>
+         <definition value="Percentage of oxygen in inspired air."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Inspired_oxygen.Percent_O₂.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Ratio"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Inspired_oxygen.On_air">
+         <path value="Inspired_oxygen.On_air"/>
+         <short value="On air"/>
+         <definition value="The patient is receiving air, equivalent to 21% O₂ or 0.21 FiO₂ and an oxygen flow rate of 0 litres per minute."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Inspired_oxygen.On_air"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Inspired_oxygen.On_air.value">
+         <path value="Inspired_oxygen.On_air.value"/>
+         <short value="On air"/>
+         <definition value="The patient is receiving air, equivalent to 21% O₂ or 0.21 FiO₂ and an oxygen flow rate of 0 litres per minute."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Inspired_oxygen.On_air.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Inspired_oxygen.Method_of_oxygen_delivery">
+         <path value="Inspired_oxygen.Method_of_oxygen_delivery"/>
+         <short value="Method of oxygen delivery"/>
+         <definition value="The method used to deliver the oxygen."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Inspired_oxygen.Method_of_oxygen_delivery"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Inspired_oxygen.Method_of_oxygen_delivery.value">
+         <path value="Inspired_oxygen.Method_of_oxygen_delivery.value"/>
+         <short value="Method of oxygen delivery"/>
+         <definition value="The method used to deliver the oxygen."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Inspired_oxygen.Method_of_oxygen_delivery.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Inspired_oxygen.Oxygen_delivery_detail">
+         <path value="Inspired_oxygen.Oxygen_delivery_detail"/>
+         <short value="Oxygen delivery detail"/>
+         <definition value="Further details of the method of oxygen delivery."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Inspired_oxygen.Oxygen_delivery_detail"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

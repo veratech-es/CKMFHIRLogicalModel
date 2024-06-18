@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Notification-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-notification-R4"/>
+   <version value="0"/>
+   <name value="Notification"/>
+   <title value="Notification"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="This is a generic composition used for all sorts of notifications, such as an infection event and surgical site surveillance event.  &#xD;&#xA;Document to communicate notifications to healthcare providers or be used as triggers for automated business rules."/>
+   <purpose value="Generic container archetype to carry information about a notification."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Notification">
+         <path value="Notification"/>
+         <short value="Notification"/>
+         <definition value="This is a generic composition used for all sorts of notifications, such as an infection event and surgical site surveillance event.  &#xD;&#xA;Document to communicate notifications to healthcare providers or be used as triggers for automated business rules."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Notification"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Notification.category">
+         <path value="Notification.category"/>
+         <short value="Notification"/>
+         <definition value="This is a generic composition used for all sorts of notifications, such as an infection event and surgical site surveillance event.  &#xD;&#xA;Document to communicate notifications to healthcare providers or be used as triggers for automated business rules."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Notification.category"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Notification.EVENT_CONTEXT">
+         <path value="Notification.EVENT_CONTEXT"/>
+         <definition value="EVENT_CONTEXT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Notification.EVENT_CONTEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Notification.EVENT_CONTEXT.other_context">
+         <path value="Notification.EVENT_CONTEXT.other_context"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Notification.EVENT_CONTEXT.other_context"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Notification.EVENT_CONTEXT.other_context.Notification_ID">
+         <path value="Notification.EVENT_CONTEXT.other_context.Notification_ID"/>
+         <short value="Notification ID"/>
+         <definition value="Identification information about the notification."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Notification.EVENT_CONTEXT.other_context.Notification_ID"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Notification.EVENT_CONTEXT.other_context.Notification_ID.value">
+         <path value="Notification.EVENT_CONTEXT.other_context.Notification_ID.value"/>
+         <short value="Notification ID"/>
+         <definition value="Identification information about the notification."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Notification.EVENT_CONTEXT.other_context.Notification_ID.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Notification.EVENT_CONTEXT.other_context.Extension">
+         <path value="Notification.EVENT_CONTEXT.other_context.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local context or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Notification.EVENT_CONTEXT.other_context.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

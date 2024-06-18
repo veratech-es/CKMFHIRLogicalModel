@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Waveform-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-waveform-R4"/>
+   <version value="0"/>
+   <name value="Waveform"/>
+   <title value="Waveform"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="A waveform of an equidistant series of time spaced measurements e.g. from a pulse oximeter."/>
+   <purpose value="To record a series of equidistant time-spaced observations that can be represented as a waveform e.g. a pulse plesmythography waveform from a pulse oximeter."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Waveform">
+         <path value="Waveform"/>
+         <short value="Waveform"/>
+         <definition value="A waveform of an equidistant series of time spaced measurements e.g. from a pulse oximeter."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Waveform"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waveform.Waveform_name">
+         <path value="Waveform.Waveform_name"/>
+         <short value="Waveform name"/>
+         <definition value="The name of the waveform e.g. pulse plesmythograph."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waveform.Waveform_name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Waveform.Waveform_name.value">
+         <path value="Waveform.Waveform_name.value"/>
+         <short value="Waveform name"/>
+         <definition value="The name of the waveform e.g. pulse plesmythograph."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waveform.Waveform_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waveform.Waveform_image">
+         <path value="Waveform.Waveform_image"/>
+         <short value="Waveform image"/>
+         <definition value="The waveform as an image or other multimedia/binary type."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waveform.Waveform_image"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Waveform.Waveform_image.value">
+         <path value="Waveform.Waveform_image.value"/>
+         <short value="Waveform image"/>
+         <definition value="The waveform as an image or other multimedia/binary type."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waveform.Waveform_image.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Attachment"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waveform.Sample_period">
+         <path value="Waveform.Sample_period"/>
+         <short value="Sample period"/>
+         <definition value="The time between individual data points in the waveform."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waveform.Sample_period"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Waveform.Sample_period.value">
+         <path value="Waveform.Sample_period.value"/>
+         <short value="Sample period"/>
+         <definition value="The time between individual data points in the waveform."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waveform.Sample_period.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waveform.Waveform_observation">
+         <path value="Waveform.Waveform_observation"/>
+         <short value="Waveform observation"/>
+         <definition value="Multiple waveform observations."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Waveform.Waveform_observation"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waveform.Waveform_observation.Origin">
+         <path value="Waveform.Waveform_observation.Origin"/>
+         <short value="Origin"/>
+         <definition value="The origin of the waveform (typically 0)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waveform.Waveform_observation.Origin"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Waveform.Waveform_observation.Origin.value">
+         <path value="Waveform.Waveform_observation.Origin.value"/>
+         <short value="Origin"/>
+         <definition value="The origin of the waveform (typically 0)."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Waveform.Waveform_observation.Origin.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waveform.Waveform_observation.Scaling_factor">
+         <path value="Waveform.Waveform_observation.Scaling_factor"/>
+         <short value="Scaling factor"/>
+         <definition value="The scaling factor of the waveform observation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waveform.Waveform_observation.Scaling_factor"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Waveform.Waveform_observation.Scaling_factor.value">
+         <path value="Waveform.Waveform_observation.Scaling_factor.value"/>
+         <short value="Scaling factor"/>
+         <definition value="The scaling factor of the waveform observation."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Waveform.Waveform_observation.Scaling_factor.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Waveform.Waveform_observation.Digits_series">
+         <path value="Waveform.Waveform_observation.Digits_series"/>
+         <short value="Digits series"/>
+         <definition value="Inividual data points of a waveform as defined by the CDA-Continua Alliance PHMR documentation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waveform.Waveform_observation.Digits_series"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Waveform.Waveform_observation.Digits_series.value">
+         <path value="Waveform.Waveform_observation.Digits_series.value"/>
+         <short value="Digits series"/>
+         <definition value="Inividual data points of a waveform as defined by the CDA-Continua Alliance PHMR documentation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Waveform.Waveform_observation.Digits_series.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

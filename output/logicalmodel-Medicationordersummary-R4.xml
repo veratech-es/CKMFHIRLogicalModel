@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Medicationordersummary-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-medicationordersummary-R4"/>
+   <version value="0"/>
+   <name value="Medicationordersummary"/>
+   <title value="Medication order summary"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Overall summary of the medication order."/>
+   <purpose value="To provide an overall summary of the status and key dates, related to a medication order."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Medication_order_summary">
+         <path value="Medication_order_summary"/>
+         <short value="Medication order summary"/>
+         <definition value="Overall summary of the medication order."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_order_summary"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_order_summary.Order_status">
+         <path value="Medication_order_summary.Order_status"/>
+         <short value="Order status"/>
+         <definition value="The overall status of this order."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_order_summary.Order_status"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medication_order_summary.Order_status.value">
+         <path value="Medication_order_summary.Order_status.value"/>
+         <short value="Order status"/>
+         <definition value="The overall status of this order."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_order_summary.Order_status.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_order_summary.Key_order_dates">
+         <path value="Medication_order_summary.Key_order_dates"/>
+         <short value="Key order dates"/>
+         <definition value="Key medication event dates."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Medication_order_summary.Key_order_dates"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Medication_order_summary.Key_order_dates.name">
+         <path value="Medication_order_summary.Key_order_dates.name"/>
+         <short value="Key order dates"/>
+         <definition value="Key medication event dates."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_order_summary.Key_order_dates.name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_order_summary.Key_order_dates.value">
+         <path value="Medication_order_summary.Key_order_dates.value"/>
+         <short value="Key order dates"/>
+         <definition value="Key medication event dates."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_order_summary.Key_order_dates.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_order_summary.Date_reported">
+         <path value="Medication_order_summary.Date_reported"/>
+         <short value="Date reported"/>
+         <definition value="The date at which this medication summary was reported to be correct."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_order_summary.Date_reported"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medication_order_summary.Date_reported.value">
+         <path value="Medication_order_summary.Date_reported.value"/>
+         <short value="Date reported"/>
+         <definition value="The date at which this medication summary was reported to be correct."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_order_summary.Date_reported.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

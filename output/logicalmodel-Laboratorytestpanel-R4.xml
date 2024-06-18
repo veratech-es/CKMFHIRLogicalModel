@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Laboratorytestpanel-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-laboratorytestpanel-R4"/>
+   <version value="0"/>
+   <name value="Laboratorytestpanel"/>
+   <title value="Laboratory test panel"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Laboratory test result as a panel/battery/profile structure common to clinical pathology testing."/>
+   <purpose value="To record laboratory test results in a panel/battery/profile structure common to clinical pathology testing for example biochemistry, haematology and immunology."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Laboratory_test_panel">
+         <path value="Laboratory_test_panel"/>
+         <short value="Laboratory test panel"/>
+         <definition value="Laboratory test result as a panel/battery/profile structure common to clinical pathology testing."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_test_panel"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Laboratory_test_panel.Panel_detail">
+         <path value="Laboratory_test_panel.Panel_detail"/>
+         <short value="Panel detail"/>
+         <definition value="Further details including the individual analytes, specimen for the panel or a further nested panel."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Laboratory_test_panel.Panel_detail"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Healthcertificate-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-healthcertificate-R4"/>
+   <version value="0"/>
+   <name value="Healthcertificate"/>
+   <title value="Health certificate"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="A formal statement about the health status or situation related to an individual."/>
+   <purpose value="To record a formal assessment regarding the health status of an individual, usually asserted by the treating clinician and intended for sharing with third parties."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Health_certificate">
+         <path value="Health_certificate"/>
+         <short value="Health certificate"/>
+         <definition value="A formal statement about the health status or situation related to an individual."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_certificate"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_certificate.category">
+         <path value="Health_certificate.category"/>
+         <short value="Health certificate"/>
+         <definition value="A formal statement about the health status or situation related to an individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_certificate.category"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_certificate.Event_Context">
+         <path value="Health_certificate.Event_Context"/>
+         <short value="Event Context"/>
+         <definition value="EVENT_CONTEXT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_certificate.Event_Context"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_certificate.Event_Context.other_context">
+         <path value="Health_certificate.Event_Context.other_context"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_certificate.Event_Context.other_context"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_certificate.Event_Context.other_context.Individual">
+         <path value="Health_certificate.Event_Context.other_context.Individual"/>
+         <short value="Individual"/>
+         <definition value="Identification of the subject of the certificate."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Health_certificate.Event_Context.other_context.Individual"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_certificate.Event_Context.other_context.Certificate_ID">
+         <path value="Health_certificate.Event_Context.other_context.Certificate_ID"/>
+         <short value="Certificate ID"/>
+         <definition value="Identification information about the certificate."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Health_certificate.Event_Context.other_context.Certificate_ID"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Health_certificate.Event_Context.other_context.Certificate_ID.value_DV_IDENTIFIER">
+         <path value="Health_certificate.Event_Context.other_context.Certificate_ID.value_DV_IDENTIFIER"/>
+         <short value="Certificate ID"/>
+         <definition value="Identification information about the certificate."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_certificate.Event_Context.other_context.Certificate_ID.value_DV_IDENTIFIER"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_certificate.Event_Context.other_context.Certificate_ID.value_DV_TEXT">
+         <path value="Health_certificate.Event_Context.other_context.Certificate_ID.value_DV_TEXT"/>
+         <short value="Certificate ID"/>
+         <definition value="Identification information about the certificate."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_certificate.Event_Context.other_context.Certificate_ID.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_certificate.Event_Context.other_context.Extension">
+         <path value="Health_certificate.Event_Context.other_context.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local content or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Health_certificate.Event_Context.other_context.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_certificate.Event_Context.other_context.Certificate_type">
+         <path value="Health_certificate.Event_Context.other_context.Certificate_type"/>
+         <short value="Certificate type"/>
+         <definition value="Type of certificate."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Health_certificate.Event_Context.other_context.Certificate_type"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Health_certificate.Event_Context.other_context.Certificate_type.value">
+         <path value="Health_certificate.Event_Context.other_context.Certificate_type.value"/>
+         <short value="Certificate type"/>
+         <definition value="Type of certificate."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_certificate.Event_Context.other_context.Certificate_type.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

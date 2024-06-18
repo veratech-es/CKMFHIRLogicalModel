@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Therapeuticdirection-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-therapeuticdirection-R4"/>
+   <version value="0"/>
+   <name value="Therapeuticdirection"/>
+   <title value="Therapeutic direction"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Structured details of a single therapeutic direction for an ordered item, such as a medication or blood transfusion order."/>
+   <purpose value="To record structured details of a single therapeutic direction for an ordered therapeutic/prescribable item.&#xD;&#xA;&#xD;&#xA;Each direction generally applies for a given duration, or fixed number of administrations."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Therapeutic_direction">
+         <path value="Therapeutic_direction"/>
+         <short value="Therapeutic direction"/>
+         <definition value="Structured details of a single therapeutic direction for an ordered item, such as a medication or blood transfusion order."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Therapeutic_direction"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Therapeutic_direction.Direction_sequence">
+         <path value="Therapeutic_direction.Direction_sequence"/>
+         <short value="Direction sequence"/>
+         <definition value="The intended position of this direction within the overall sequence of directions."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Therapeutic_direction.Direction_sequence"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Therapeutic_direction.Direction_sequence.value">
+         <path value="Therapeutic_direction.Direction_sequence.value"/>
+         <short value="Direction sequence"/>
+         <definition value="The intended position of this direction within the overall sequence of directions."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Therapeutic_direction.Direction_sequence.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Therapeutic_direction.Dosage">
+         <path value="Therapeutic_direction.Dosage"/>
+         <short value="Dosage"/>
+         <definition value="The combination of a medication dose and administration timing for a single day."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Therapeutic_direction.Dosage"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Therapeutic_direction.Direction_duration">
+         <path value="Therapeutic_direction.Direction_duration"/>
+         <short value="Direction duration"/>
+         <definition value="The length of time for which this direction should be applied."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Therapeutic_direction.Direction_duration"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Therapeutic_direction.Direction_duration.value_DV_CODED_TEXT">
+         <path value="Therapeutic_direction.Direction_duration.value_DV_CODED_TEXT"/>
+         <short value="Direction duration"/>
+         <definition value="The length of time for which this direction should be applied."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Therapeutic_direction.Direction_duration.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Therapeutic_direction.Direction_duration.value_DV_DURATION">
+         <path value="Therapeutic_direction.Direction_duration.value_DV_DURATION"/>
+         <short value="Direction duration"/>
+         <definition value="The length of time for which this direction should be applied."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Therapeutic_direction.Direction_duration.value_DV_DURATION"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Therapeutic_direction.Direction_duration.value_DV_TEXT">
+         <path value="Therapeutic_direction.Direction_duration.value_DV_TEXT"/>
+         <short value="Direction duration"/>
+         <definition value="The length of time for which this direction should be applied."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Therapeutic_direction.Direction_duration.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Therapeutic_direction.Direction_duration.value_DV_INTERVAL_DV_DURATION_">
+         <path value="Therapeutic_direction.Direction_duration.value_DV_INTERVAL_DV_DURATION_"/>
+         <short value="Direction duration"/>
+         <definition value="The length of time for which this direction should be applied."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Therapeutic_direction.Direction_duration.value_DV_INTERVAL_DV_DURATION_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Therapeutic_direction.Maximum_number_of_administrations">
+         <path value="Therapeutic_direction.Maximum_number_of_administrations"/>
+         <short value="Maximum number of administrations"/>
+         <definition value="The maximum number of administrations to be given for this direction."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Therapeutic_direction.Maximum_number_of_administrations"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Therapeutic_direction.Maximum_number_of_administrations.value">
+         <path value="Therapeutic_direction.Maximum_number_of_administrations.value"/>
+         <short value="Maximum number of administrations"/>
+         <definition value="The maximum number of administrations to be given for this direction."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Therapeutic_direction.Maximum_number_of_administrations.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Therapeutic_direction.Review_criterion">
+         <path value="Therapeutic_direction.Review_criterion"/>
+         <short value="Review criterion"/>
+         <definition value="After a number of administrations for when a review is required."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Therapeutic_direction.Review_criterion"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Therapeutic_direction.Review_criterion.value_DV_QUANTITY">
+         <path value="Therapeutic_direction.Review_criterion.value_DV_QUANTITY"/>
+         <short value="Review criterion"/>
+         <definition value="After a number of administrations for when a review is required."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Therapeutic_direction.Review_criterion.value_DV_QUANTITY"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Therapeutic_direction.Review_criterion.value_DV_COUNT">
+         <path value="Therapeutic_direction.Review_criterion.value_DV_COUNT"/>
+         <short value="Review criterion"/>
+         <definition value="After a number of administrations for when a review is required."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Therapeutic_direction.Review_criterion.value_DV_COUNT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Therapeutic_direction.Review_criterion.value_DV_TEXT">
+         <path value="Therapeutic_direction.Review_criterion.value_DV_TEXT"/>
+         <short value="Review criterion"/>
+         <definition value="After a number of administrations for when a review is required."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Therapeutic_direction.Review_criterion.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Therapeutic_direction.Order_start_date_time">
+         <path value="Therapeutic_direction.Order_start_date_time"/>
+         <short value="Order start date/time"/>
+         <definition value="The date and optional time to commence the administration."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Therapeutic_direction.Order_start_date_time"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Therapeutic_direction.Order_start_date_time.value">
+         <path value="Therapeutic_direction.Order_start_date_time.value"/>
+         <short value="Order start date/time"/>
+         <definition value="The date and optional time to commence the administration."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Therapeutic_direction.Order_start_date_time.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Therapeutic_direction.Order_stop_date_time">
+         <path value="Therapeutic_direction.Order_stop_date_time"/>
+         <short value="Order stop date/time"/>
+         <definition value="The date and optional time when it is planned to cease the administration."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Therapeutic_direction.Order_stop_date_time"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Therapeutic_direction.Order_stop_date_time.value">
+         <path value="Therapeutic_direction.Order_stop_date_time.value"/>
+         <short value="Order stop date/time"/>
+         <definition value="The date and optional time when it is planned to cease the administration."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Therapeutic_direction.Order_stop_date_time.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Therapeutic_direction.Repetition_timing">
+         <path value="Therapeutic_direction.Repetition_timing"/>
+         <short value="Repetition timing"/>
+         <definition value="Structured details about pattern of repetition for each set of daily directions."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Therapeutic_direction.Repetition_timing"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Therapeutic_direction.Additional_details">
+         <path value="Therapeutic_direction.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="Further details about an ordered item direction."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Therapeutic_direction.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

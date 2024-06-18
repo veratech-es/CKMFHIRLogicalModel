@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Laboratoryanalyteresult-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-laboratoryanalyteresult-R4"/>
+   <version value="0"/>
+   <name value="Laboratoryanalyteresult"/>
+   <title value="Laboratory analyte result"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="The result of a laboratory test for a single analyte value."/>
+   <purpose value="To record a single value laboratory analyte result, commonly found in clinical pathology testing such as medical biochemistry, haematology, immunology and transfusion medicine."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Laboratory_analyte_result">
+         <path value="Laboratory_analyte_result"/>
+         <short value="Laboratory analyte result"/>
+         <definition value="The result of a laboratory test for a single analyte value."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_analyte_result"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Laboratory_analyte_result.Analyte_result_sequence">
+         <path value="Laboratory_analyte_result.Analyte_result_sequence"/>
+         <short value="Analyte result sequence"/>
+         <definition value="The intended position of this analyte result within the overall sequence of analyte results."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_analyte_result.Analyte_result_sequence"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Laboratory_analyte_result.Analyte_result_sequence.value">
+         <path value="Laboratory_analyte_result.Analyte_result_sequence.value"/>
+         <short value="Analyte result sequence"/>
+         <definition value="The intended position of this analyte result within the overall sequence of analyte results."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_analyte_result.Analyte_result_sequence.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Laboratory_analyte_result.Analyte_name">
+         <path value="Laboratory_analyte_result.Analyte_name"/>
+         <short value="Analyte name"/>
+         <definition value="The name of the analyte result."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_analyte_result.Analyte_name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Laboratory_analyte_result.Analyte_name.value">
+         <path value="Laboratory_analyte_result.Analyte_name.value"/>
+         <short value="Analyte name"/>
+         <definition value="The name of the analyte result."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_analyte_result.Analyte_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Laboratory_analyte_result.Analyte_result">
+         <path value="Laboratory_analyte_result.Analyte_result"/>
+         <short value="Analyte result"/>
+         <definition value="The value of the analyte result."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Laboratory_analyte_result.Analyte_result"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Laboratory_analyte_result.Analyte_result_detail">
+         <path value="Laboratory_analyte_result.Analyte_result_detail"/>
+         <short value="Analyte result detail"/>
+         <definition value="Further detail regarding an individual result."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Laboratory_analyte_result.Analyte_result_detail"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Laboratory_analyte_result.Reference_range_guidance">
+         <path value="Laboratory_analyte_result.Reference_range_guidance"/>
+         <short value="Reference range guidance"/>
+         <definition value="Additional advice on the applicability of the reference range to this result or may carry text or coded textual guidance as to whether the result is within the normal range."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_analyte_result.Reference_range_guidance"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Laboratory_analyte_result.Reference_range_guidance.value">
+         <path value="Laboratory_analyte_result.Reference_range_guidance.value"/>
+         <short value="Reference range guidance"/>
+         <definition value="Additional advice on the applicability of the reference range to this result or may carry text or coded textual guidance as to whether the result is within the normal range."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_analyte_result.Reference_range_guidance.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Laboratory_analyte_result.Test_method">
+         <path value="Laboratory_analyte_result.Test_method"/>
+         <short value="Test method"/>
+         <definition value="Description about the method used to perform the test on this analyte only."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_analyte_result.Test_method"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Laboratory_analyte_result.Validation_time">
+         <path value="Laboratory_analyte_result.Validation_time"/>
+         <short value="Validation time"/>
+         <definition value="The date and time that the analyte result was validated in the laboratory by a healthcare practitioner."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_analyte_result.Validation_time"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Laboratory_analyte_result.Validation_time.value">
+         <path value="Laboratory_analyte_result.Validation_time.value"/>
+         <short value="Validation time"/>
+         <definition value="The date and time that the analyte result was validated in the laboratory by a healthcare practitioner."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_analyte_result.Validation_time.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Laboratory_analyte_result.Result_status">
+         <path value="Laboratory_analyte_result.Result_status"/>
+         <short value="Result status"/>
+         <definition value="The status of the analyte result value."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Laboratory_analyte_result.Result_status"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Laboratory_analyte_result.Result_status.value_DV_CODED_TEXT">
+         <path value="Laboratory_analyte_result.Result_status.value_DV_CODED_TEXT"/>
+         <short value="Result status"/>
+         <definition value="The status of the analyte result value."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_analyte_result.Result_status.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Laboratory_analyte_result.Result_status.value_DV_TEXT">
+         <path value="Laboratory_analyte_result.Result_status.value_DV_TEXT"/>
+         <short value="Result status"/>
+         <definition value="The status of the analyte result value."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_analyte_result.Result_status.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Laboratory_analyte_result.Result_status_time">
+         <path value="Laboratory_analyte_result.Result_status_time"/>
+         <short value="Result status time"/>
+         <definition value="The date and time that the analyte result was issued for the recorded ‘Result status’."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_analyte_result.Result_status_time"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Laboratory_analyte_result.Result_status_time.value">
+         <path value="Laboratory_analyte_result.Result_status_time.value"/>
+         <short value="Result status time"/>
+         <definition value="The date and time that the analyte result was issued for the recorded ‘Result status’."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_analyte_result.Result_status_time.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Laboratory_analyte_result.Specimen">
+         <path value="Laboratory_analyte_result.Specimen"/>
+         <short value="Specimen"/>
+         <definition value="Identification of the specimen used for the analyte result."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_analyte_result.Specimen"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Laboratory_analyte_result.Specimen.value_DV_IDENTIFIER">
+         <path value="Laboratory_analyte_result.Specimen.value_DV_IDENTIFIER"/>
+         <short value="Specimen"/>
+         <definition value="Identification of the specimen used for the analyte result."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_analyte_result.Specimen.value_DV_IDENTIFIER"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Laboratory_analyte_result.Specimen.value_DV_URI">
+         <path value="Laboratory_analyte_result.Specimen.value_DV_URI"/>
+         <short value="Specimen"/>
+         <definition value="Identification of the specimen used for the analyte result."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_analyte_result.Specimen.value_DV_URI"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="string"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Laboratory_analyte_result.Comment">
+         <path value="Laboratory_analyte_result.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the analyte result, not captured in other fields."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Laboratory_analyte_result.Comment"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Laboratory_analyte_result.Comment.value">
+         <path value="Laboratory_analyte_result.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the analyte result, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Laboratory_analyte_result.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

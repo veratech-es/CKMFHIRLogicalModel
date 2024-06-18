@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Timing-daily-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-timing-daily-R4"/>
+   <version value="0"/>
+   <name value="Timing-daily"/>
+   <title value="Timing - daily"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Structured information about the intended timing of a therapeutic or diagnostic activity within any 24 hour period."/>
+   <purpose value="To record structured information about the intended timing of a therapeutic or diagnostic activity within any 24 hour period."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Timing___daily">
+         <path value="Timing___daily"/>
+         <short value="Timing - daily"/>
+         <definition value="Structured information about the intended timing of a therapeutic or diagnostic activity within any 24 hour period."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Timing___daily"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Timing___daily.Frequency">
+         <path value="Timing___daily.Frequency"/>
+         <short value="Frequency"/>
+         <definition value="The frequency as number of times per time period that the activity is to take place."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timing___daily.Frequency"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Timing___daily.Frequency.value_DvQuantity">
+         <path value="Timing___daily.Frequency.value_DvQuantity"/>
+         <short value="Frequency"/>
+         <definition value="The frequency as number of times per time period that the activity is to take place."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Timing___daily.Frequency.value_DvQuantity"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Timing___daily.Frequency.value_DV_INTERVAL_DV_QUANTITY_">
+         <path value="Timing___daily.Frequency.value_DV_INTERVAL_DV_QUANTITY_"/>
+         <short value="Frequency"/>
+         <definition value="The frequency as number of times per time period that the activity is to take place."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timing___daily.Frequency.value_DV_INTERVAL_DV_QUANTITY_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Timing___daily.Interval">
+         <path value="Timing___daily.Interval"/>
+         <short value="Interval"/>
+         <definition value="The time interval or minimum and maximum range of an interval between each scheduled activity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timing___daily.Interval"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Timing___daily.Interval.value">
+         <path value="Timing___daily.Interval.value"/>
+         <short value="Interval"/>
+         <definition value="The time interval or minimum and maximum range of an interval between each scheduled activity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timing___daily.Interval.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Timing___daily.Specific_time">
+         <path value="Timing___daily.Specific_time"/>
+         <short value="Specific time"/>
+         <definition value="A specific time or interval of time when the activity should occur."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Timing___daily.Specific_time"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Timing___daily.Specific_time.value_DV_TIME">
+         <path value="Timing___daily.Specific_time.value_DV_TIME"/>
+         <short value="Specific time"/>
+         <definition value="A specific time or interval of time when the activity should occur."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timing___daily.Specific_time.value_DV_TIME"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="time"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Timing___daily.Specific_time.value_DV_INTERVAL_DV_TIME_">
+         <path value="Timing___daily.Specific_time.value_DV_INTERVAL_DV_TIME_"/>
+         <short value="Specific time"/>
+         <definition value="A specific time or interval of time when the activity should occur."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timing___daily.Specific_time.value_DV_INTERVAL_DV_TIME_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Timing___daily.Timing_description">
+         <path value="Timing___daily.Timing_description"/>
+         <short value="Timing description"/>
+         <definition value="Text description of the daily timing. This element is intended to allow implementers to use the structures for different timings without necessarily specifying the timings in a structured way."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timing___daily.Timing_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Timing___daily.Timing_description.value">
+         <path value="Timing___daily.Timing_description.value"/>
+         <short value="Timing description"/>
+         <definition value="Text description of the daily timing. This element is intended to allow implementers to use the structures for different timings without necessarily specifying the timings in a structured way."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timing___daily.Timing_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Timing___daily.Exact_timing_critical_">
+         <path value="Timing___daily.Exact_timing_critical_"/>
+         <short value="Exact timing critical?"/>
+         <definition value="Is exact timing of the activity critical to effectiveness, or patient safety or wellbeing?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timing___daily.Exact_timing_critical_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Timing___daily.Exact_timing_critical_.value">
+         <path value="Timing___daily.Exact_timing_critical_.value"/>
+         <short value="Exact timing critical?"/>
+         <definition value="Is exact timing of the activity critical to effectiveness, or patient safety or wellbeing?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timing___daily.Exact_timing_critical_.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Timing___daily.As_required">
+         <path value="Timing___daily.As_required"/>
+         <short value="As required"/>
+         <definition value="Record as True if the activity should only occur when the \&#34;'As required' criterion\&#34; is met."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timing___daily.As_required"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Timing___daily.As_required.value">
+         <path value="Timing___daily.As_required.value"/>
+         <short value="As required"/>
+         <definition value="Record as True if the activity should only occur when the \&#34;'As required' criterion\&#34; is met."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timing___daily.As_required.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Timing___daily.'As_required'_criterion">
+         <path value="Timing___daily.'As_required'_criterion"/>
+         <short value="'As required' criterion"/>
+         <definition value="The condition which triggers an 'As required' activity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timing___daily.'As_required'_criterion"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Timing___daily.'As_required'_criterion.value">
+         <path value="Timing___daily.'As_required'_criterion.value"/>
+         <short value="'As required' criterion"/>
+         <definition value="The condition which triggers an 'As required' activity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timing___daily.'As_required'_criterion.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Timing___daily.Specific_event">
+         <path value="Timing___daily.Specific_event"/>
+         <short value="Specific event"/>
+         <definition value="A specific, named time event that the activity should occur in relation to."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Timing___daily.Specific_event"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Timing___daily.Specific_event.Event_name">
+         <path value="Timing___daily.Specific_event.Event_name"/>
+         <short value="Event name"/>
+         <definition value="The name of the event that triggers the activity to take place."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timing___daily.Specific_event.Event_name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Timing___daily.Specific_event.Event_name.value">
+         <path value="Timing___daily.Specific_event.Event_name.value"/>
+         <short value="Event name"/>
+         <definition value="The name of the event that triggers the activity to take place."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timing___daily.Specific_event.Event_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Timing___daily.Specific_event.Time_offset">
+         <path value="Timing___daily.Specific_event.Time_offset"/>
+         <short value="Time offset"/>
+         <definition value="The period of time before or after the named event when the activity should take place. Negative durations can be used to signify that the activity should take place before the event."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timing___daily.Specific_event.Time_offset"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Timing___daily.Specific_event.Time_offset.value">
+         <path value="Timing___daily.Specific_event.Time_offset.value"/>
+         <short value="Time offset"/>
+         <definition value="The period of time before or after the named event when the activity should take place. Negative durations can be used to signify that the activity should take place before the event."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timing___daily.Specific_event.Time_offset.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Timing___daily.On___off_cycle">
+         <path value="Timing___daily.On___off_cycle"/>
+         <short value="On / off cycle"/>
+         <definition value="A cycle of activity where an on-off pattern is required."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Timing___daily.On___off_cycle"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Timing___daily.On___off_cycle.On">
+         <path value="Timing___daily.On___off_cycle.On"/>
+         <short value="On"/>
+         <definition value="The period of time for which the activity should take place."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timing___daily.On___off_cycle.On"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Timing___daily.On___off_cycle.On.value">
+         <path value="Timing___daily.On___off_cycle.On.value"/>
+         <short value="On"/>
+         <definition value="The period of time for which the activity should take place."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timing___daily.On___off_cycle.On.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Timing___daily.On___off_cycle.Off">
+         <path value="Timing___daily.On___off_cycle.Off"/>
+         <short value="Off"/>
+         <definition value="The period of time for which the activity should NOT take place."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timing___daily.On___off_cycle.Off"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Timing___daily.On___off_cycle.Off.value">
+         <path value="Timing___daily.On___off_cycle.Off.value"/>
+         <short value="Off"/>
+         <definition value="The period of time for which the activity should NOT take place."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timing___daily.On___off_cycle.Off.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Timing___daily.On___off_cycle.Repetitions">
+         <path value="Timing___daily.On___off_cycle.Repetitions"/>
+         <short value="Repetitions"/>
+         <definition value="The number of repetitions of the on/off cycle."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timing___daily.On___off_cycle.Repetitions"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Timing___daily.On___off_cycle.Repetitions.value">
+         <path value="Timing___daily.On___off_cycle.Repetitions.value"/>
+         <short value="Repetitions"/>
+         <definition value="The number of repetitions of the on/off cycle."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Timing___daily.On___off_cycle.Repetitions.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

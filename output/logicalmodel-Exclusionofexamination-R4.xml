@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Exclusionofexamination-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-exclusionofexamination-R4"/>
+   <version value="0"/>
+   <name value="Exclusionofexamination"/>
+   <title value="Exclusion of examination"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Positive statement to record that a physical examination or clinical test was not performed."/>
+   <purpose value="To record that a physical examination or clinical test was not performed."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Exclusion_of_examination">
+         <path value="Exclusion_of_examination"/>
+         <short value="Exclusion of examination"/>
+         <definition value="Positive statement to record that a physical examination or clinical test was not performed."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Exclusion_of_examination"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Exclusion_of_examination.Examination_not_done">
+         <path value="Exclusion_of_examination.Examination_not_done"/>
+         <short value="Examination not done"/>
+         <definition value="Statement to explicity record that the examination was not performed."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Exclusion_of_examination.Examination_not_done"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Exclusion_of_examination.Examination_not_done.value">
+         <path value="Exclusion_of_examination.Examination_not_done.value"/>
+         <short value="Examination not done"/>
+         <definition value="Statement to explicity record that the examination was not performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exclusion_of_examination.Examination_not_done.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Exclusion_of_examination.Reason">
+         <path value="Exclusion_of_examination.Reason"/>
+         <short value="Reason"/>
+         <definition value="Reason for the 'not done' statement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exclusion_of_examination.Reason"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Exclusion_of_examination.Reason.value">
+         <path value="Exclusion_of_examination.Reason.value"/>
+         <short value="Reason"/>
+         <definition value="Reason for the 'not done' statement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Exclusion_of_examination.Reason.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

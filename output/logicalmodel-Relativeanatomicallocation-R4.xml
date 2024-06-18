@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Relativeanatomicallocation-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-relativeanatomicallocation-R4"/>
+   <version value="0"/>
+   <name value="Relativeanatomicallocation"/>
+   <title value="Relative anatomical location"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="A physical site on or within the human body that is described in terms of its relationship to other body parts."/>
+   <purpose value="To identify and record structured details about a single physical site on, or within, the human body in terms of its relationship to other macroscopic anatomical landmarks."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Relative_anatomical_location">
+         <path value="Relative_anatomical_location"/>
+         <short value="Relative anatomical location"/>
+         <definition value="A physical site on or within the human body that is described in terms of its relationship to other body parts."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Relative_anatomical_location"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Relative_anatomical_location.Relative_location">
+         <path value="Relative_anatomical_location.Relative_location"/>
+         <short value="Relative location"/>
+         <definition value="Detail to identify a single physical site either on, or within, the human body in terms of its relationship to other macroscopic anatomical landmarks."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Relative_anatomical_location.Relative_location"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Relative_anatomical_location.Relative_location.Landmark_name">
+         <path value="Relative_anatomical_location.Relative_location.Landmark_name"/>
+         <short value="Landmark name"/>
+         <definition value="Identified body site used as a reference point for the actual body site."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Relative_anatomical_location.Relative_location.Landmark_name"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Relative_anatomical_location.Relative_location.Landmark_name.value">
+         <path value="Relative_anatomical_location.Relative_location.Landmark_name.value"/>
+         <short value="Landmark name"/>
+         <definition value="Identified body site used as a reference point for the actual body site."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Relative_anatomical_location.Relative_location.Landmark_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Relative_anatomical_location.Relative_location.Laterality">
+         <path value="Relative_anatomical_location.Relative_location.Laterality"/>
+         <short value="Laterality"/>
+         <definition value="The side of the body on which the identified landmark is located."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Relative_anatomical_location.Relative_location.Laterality"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Relative_anatomical_location.Relative_location.Laterality.value">
+         <path value="Relative_anatomical_location.Relative_location.Laterality.value"/>
+         <short value="Laterality"/>
+         <definition value="The side of the body on which the identified landmark is located."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Relative_anatomical_location.Relative_location.Laterality.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Relative_anatomical_location.Relative_location.Distance_from_landmark">
+         <path value="Relative_anatomical_location.Relative_location.Distance_from_landmark"/>
+         <short value="Distance from landmark"/>
+         <definition value="Distance of location from the identified landmark."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Relative_anatomical_location.Relative_location.Distance_from_landmark"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Relative_anatomical_location.Relative_location.Distance_from_landmark.value">
+         <path value="Relative_anatomical_location.Relative_location.Distance_from_landmark.value"/>
+         <short value="Distance from landmark"/>
+         <definition value="Distance of location from the identified landmark."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Relative_anatomical_location.Relative_location.Distance_from_landmark.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Relative_anatomical_location.Relative_location.Direction">
+         <path value="Relative_anatomical_location.Relative_location.Direction"/>
+         <short value="Direction"/>
+         <definition value="Detail about the relative direction of the body site to the landmark."/>
+         <min value="0"/>
+         <max value="6"/>
+         <base>
+            <path value="Relative_anatomical_location.Relative_location.Direction"/>
+            <min value="0"/>
+            <max value="6"/>
+         </base>
+      </element>
+      <element id="Relative_anatomical_location.Relative_location.Direction.value_DV_CODED_TEXT">
+         <path value="Relative_anatomical_location.Relative_location.Direction.value_DV_CODED_TEXT"/>
+         <short value="Direction"/>
+         <definition value="Detail about the relative direction of the body site to the landmark."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Relative_anatomical_location.Relative_location.Direction.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Relative_anatomical_location.Relative_location.Direction.value_DV_TEXT">
+         <path value="Relative_anatomical_location.Relative_location.Direction.value_DV_TEXT"/>
+         <short value="Direction"/>
+         <definition value="Detail about the relative direction of the body site to the landmark."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Relative_anatomical_location.Relative_location.Direction.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Relative_anatomical_location.Description">
+         <path value="Relative_anatomical_location.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description that can be used to further refine and support the relative location structured data."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Relative_anatomical_location.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Relative_anatomical_location.Description.value">
+         <path value="Relative_anatomical_location.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description that can be used to further refine and support the relative location structured data."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Relative_anatomical_location.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Relative_anatomical_location.Multimedia_representation">
+         <path value="Relative_anatomical_location.Multimedia_representation"/>
+         <short value="Multimedia representation"/>
+         <definition value="Image or other media used to support identification of the location on the body."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Relative_anatomical_location.Multimedia_representation"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

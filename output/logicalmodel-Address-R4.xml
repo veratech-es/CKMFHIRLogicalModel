@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Address-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-address-R4"/>
+   <version value="0"/>
+   <name value="Address"/>
+   <title value="Address"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Details about the location of a person, physical building or landmark."/>
+   <purpose value="To record details about the location of a person, physical building or landmark as they are known or understood in the course of clinical documentation."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Address">
+         <path value="Address"/>
+         <short value="Address"/>
+         <definition value="Details about the location of a person, physical building or landmark."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Address"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Address.Address_line">
+         <path value="Address.Address_line"/>
+         <short value="Address line"/>
+         <definition value="An unstructured address line representing all relevant street-level or post-box details that would support the identification of a location."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Address.Address_line"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Address.Address_line.value">
+         <path value="Address.Address_line.value"/>
+         <short value="Address line"/>
+         <definition value="An unstructured address line representing all relevant street-level or post-box details that would support the identification of a location."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Address.Address_line.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Address.City_Town">
+         <path value="Address.City_Town"/>
+         <short value="City/Town"/>
+         <definition value="The name of the lowest level locality that contains the address."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Address.City_Town"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Address.City_Town.value">
+         <path value="Address.City_Town.value"/>
+         <short value="City/Town"/>
+         <definition value="The name of the lowest level locality that contains the address."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Address.City_Town.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Address.District_County">
+         <path value="Address.District_County"/>
+         <short value="District/County"/>
+         <definition value="The name of a local government district or geographical area that contains the address."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Address.District_County"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Address.District_County.value">
+         <path value="Address.District_County.value"/>
+         <short value="District/County"/>
+         <definition value="The name of a local government district or geographical area that contains the address."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Address.District_County.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Address.State_Territory_Province">
+         <path value="Address.State_Territory_Province"/>
+         <short value="State/Territory/Province"/>
+         <definition value="The name of a major government district or geographical area that contains the address."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Address.State_Territory_Province"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Address.State_Territory_Province.value">
+         <path value="Address.State_Territory_Province.value"/>
+         <short value="State/Territory/Province"/>
+         <definition value="The name of a major government district or geographical area that contains the address."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Address.State_Territory_Province.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Address.Postal_code">
+         <path value="Address.Postal_code"/>
+         <short value="Postal code"/>
+         <definition value="The code for a postal delivery area containing the address, as defined by the relevant postal delivery service."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Address.Postal_code"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Address.Postal_code.value">
+         <path value="Address.Postal_code.value"/>
+         <short value="Postal code"/>
+         <definition value="The code for a postal delivery area containing the address, as defined by the relevant postal delivery service."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Address.Postal_code.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Address.Country">
+         <path value="Address.Country"/>
+         <short value="Country"/>
+         <definition value="The name of the country containing the address."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Address.Country"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Address.Country.value">
+         <path value="Address.Country.value"/>
+         <short value="Country"/>
+         <definition value="The name of the country containing the address."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Address.Country.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Address.Structured_address">
+         <path value="Address.Structured_address"/>
+         <short value="Structured address"/>
+         <definition value="Structured details or extensions to the address."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Address.Structured_address"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Address.Geolocation_code">
+         <path value="Address.Geolocation_code"/>
+         <short value="Geolocation code"/>
+         <definition value="Unique identifier that represents a precise geographical location."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Address.Geolocation_code"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Address.Geolocation_code.value">
+         <path value="Address.Geolocation_code.value"/>
+         <short value="Geolocation code"/>
+         <definition value="Unique identifier that represents a precise geographical location."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Address.Geolocation_code.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Address.Latitude">
+         <path value="Address.Latitude"/>
+         <short value="Latitude"/>
+         <definition value="Horizontal (y) coordinate of a geolocation for the address."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Address.Latitude"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Address.Latitude.value">
+         <path value="Address.Latitude.value"/>
+         <short value="Latitude"/>
+         <definition value="Horizontal (y) coordinate of a geolocation for the address."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Address.Latitude.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Address.Longitude">
+         <path value="Address.Longitude"/>
+         <short value="Longitude"/>
+         <definition value="Horizontal (x) coordinate of a geolocation for the address."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Address.Longitude"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Address.Longitude.value">
+         <path value="Address.Longitude.value"/>
+         <short value="Longitude"/>
+         <definition value="Horizontal (x) coordinate of a geolocation for the address."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Address.Longitude.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Address.Altitude">
+         <path value="Address.Altitude"/>
+         <short value="Altitude"/>
+         <definition value="The vertical coordinate of a geolocation representing height or depth of the address."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Address.Altitude"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Address.Altitude.value">
+         <path value="Address.Altitude.value"/>
+         <short value="Altitude"/>
+         <definition value="The vertical coordinate of a geolocation representing height or depth of the address."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Address.Altitude.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Address.Map_URL">
+         <path value="Address.Map_URL"/>
+         <short value="Map URL"/>
+         <definition value="Link to a location on an online map."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Address.Map_URL"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Address.Map_URL.value">
+         <path value="Address.Map_URL.value"/>
+         <short value="Map URL"/>
+         <definition value="Link to a location on an online map."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Address.Map_URL.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Address.Type">
+         <path value="Address.Type"/>
+         <short value="Type"/>
+         <definition value="The type of address."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Address.Type"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Address.Type.value_DV_CODED_TEXT">
+         <path value="Address.Type.value_DV_CODED_TEXT"/>
+         <short value="Type"/>
+         <definition value="The type of address."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Address.Type.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Address.Type.value_DV_TEXT">
+         <path value="Address.Type.value_DV_TEXT"/>
+         <short value="Type"/>
+         <definition value="The type of address."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Address.Type.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Address.Use">
+         <path value="Address.Use"/>
+         <short value="Use"/>
+         <definition value="The primary purpose or use for the address."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Address.Use"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Address.Use.value_DV_CODED_TEXT">
+         <path value="Address.Use.value_DV_CODED_TEXT"/>
+         <short value="Use"/>
+         <definition value="The primary purpose or use for the address."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Address.Use.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Address.Use.value_DV_TEXT">
+         <path value="Address.Use.value_DV_TEXT"/>
+         <short value="Use"/>
+         <definition value="The primary purpose or use for the address."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Address.Use.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Address.Comment">
+         <path value="Address.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the address not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Address.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Address.Comment.value">
+         <path value="Address.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the address not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Address.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

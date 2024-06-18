@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Cessationattempts-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-cessationattempts-R4"/>
+   <version value="0"/>
+   <name value="Cessationattempts"/>
+   <title value="Cessation attempts"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Cease use or consumption of a substance."/>
+   <purpose value="Record information about single, or multiple, attempts of the individual to cease use of a substance."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Cessation_attempts">
+         <path value="Cessation_attempts"/>
+         <short value="Cessation attempts"/>
+         <definition value="Cease use or consumption of a substance."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Cessation_attempts"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Cessation_attempts.Location">
+         <path value="Cessation_attempts.Location"/>
+         <short value="Location"/>
+         <definition value="Place where attempt to cease use occurred eg home or name of institution."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cessation_attempts.Location"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Cessation_attempts.Location.value">
+         <path value="Cessation_attempts.Location.value"/>
+         <short value="Location"/>
+         <definition value="Place where attempt to cease use occurred eg home or name of institution."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cessation_attempts.Location.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Cessation_attempts.Date_of_attempt">
+         <path value="Cessation_attempts.Date_of_attempt"/>
+         <short value="Date of attempt"/>
+         <definition value="Date of commencement of cessation attempt."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cessation_attempts.Date_of_attempt"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Cessation_attempts.Date_of_attempt.value">
+         <path value="Cessation_attempts.Date_of_attempt.value"/>
+         <short value="Date of attempt"/>
+         <definition value="Date of commencement of cessation attempt."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cessation_attempts.Date_of_attempt.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Cessation_attempts.Description">
+         <path value="Cessation_attempts.Description"/>
+         <short value="Description"/>
+         <definition value="Description of the attempt."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cessation_attempts.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Cessation_attempts.Description.value">
+         <path value="Cessation_attempts.Description.value"/>
+         <short value="Description"/>
+         <definition value="Description of the attempt."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cessation_attempts.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Cessation_attempts.Therapeutic_intervention">
+         <path value="Cessation_attempts.Therapeutic_intervention"/>
+         <short value="Therapeutic intervention"/>
+         <definition value="Details of therapeutic agent/s used."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Cessation_attempts.Therapeutic_intervention"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Cessation_attempts.Therapeutic_intervention.Agent">
+         <path value="Cessation_attempts.Therapeutic_intervention.Agent"/>
+         <short value="Agent"/>
+         <definition value="Name of agent used."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cessation_attempts.Therapeutic_intervention.Agent"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Cessation_attempts.Therapeutic_intervention.Agent.value">
+         <path value="Cessation_attempts.Therapeutic_intervention.Agent.value"/>
+         <short value="Agent"/>
+         <definition value="Name of agent used."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cessation_attempts.Therapeutic_intervention.Agent.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Cessation_attempts.Therapeutic_intervention.Used_optimally">
+         <path value="Cessation_attempts.Therapeutic_intervention.Used_optimally"/>
+         <short value="Used optimally"/>
+         <definition value="Was the agent used optimally?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cessation_attempts.Therapeutic_intervention.Used_optimally"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Cessation_attempts.Therapeutic_intervention.Used_optimally.value">
+         <path value="Cessation_attempts.Therapeutic_intervention.Used_optimally.value"/>
+         <short value="Used optimally"/>
+         <definition value="Was the agent used optimally?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cessation_attempts.Therapeutic_intervention.Used_optimally.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Cessation_attempts.Therapeutic_intervention.Comment">
+         <path value="Cessation_attempts.Therapeutic_intervention.Comment"/>
+         <short value="Comment"/>
+         <definition value="Comment about the effect of the agent on the attempt."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cessation_attempts.Therapeutic_intervention.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Cessation_attempts.Therapeutic_intervention.Comment.value">
+         <path value="Cessation_attempts.Therapeutic_intervention.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Comment about the effect of the agent on the attempt."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cessation_attempts.Therapeutic_intervention.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Cessation_attempts.Outcome">
+         <path value="Cessation_attempts.Outcome"/>
+         <short value="Outcome"/>
+         <definition value="Outcome of attempt."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cessation_attempts.Outcome"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Cessation_attempts.Outcome.value">
+         <path value="Cessation_attempts.Outcome.value"/>
+         <short value="Outcome"/>
+         <definition value="Outcome of attempt."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cessation_attempts.Outcome.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Cessation_attempts.Duration_of_cessation">
+         <path value="Cessation_attempts.Duration_of_cessation"/>
+         <short value="Duration of cessation"/>
+         <definition value="Amount of time activity ceased."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cessation_attempts.Duration_of_cessation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Cessation_attempts.Duration_of_cessation.value">
+         <path value="Cessation_attempts.Duration_of_cessation.value"/>
+         <short value="Duration of cessation"/>
+         <definition value="Amount of time activity ceased."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Cessation_attempts.Duration_of_cessation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

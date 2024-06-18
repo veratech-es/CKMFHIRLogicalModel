@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Dosage-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-dosage-R4"/>
+   <version value="0"/>
+   <name value="Dosage"/>
+   <title value="Dosage"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="The combination of a medication amount and administration timing for a single day, in the context of a medication order or medication management."/>
+   <purpose value="To record the combination of a medication amount and the administration timing within a single day, as part of a medication order or medication management or for other appropriate therapeutic/prescribable items."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Dosage">
+         <path value="Dosage"/>
+         <short value="Dosage"/>
+         <definition value="The combination of a medication amount and administration timing for a single day, in the context of a medication order or medication management."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Dosage"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Dosage.Dosage_sequence">
+         <path value="Dosage.Dosage_sequence"/>
+         <short value="Dosage sequence"/>
+         <definition value="The intended position of this dosage within the overall sequence of dosages."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Dosage.Dosage_sequence"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Dosage.Dosage_sequence.value">
+         <path value="Dosage.Dosage_sequence.value"/>
+         <short value="Dosage sequence"/>
+         <definition value="The intended position of this dosage within the overall sequence of dosages."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Dosage.Dosage_sequence.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Dosage.Dose">
+         <path value="Dosage.Dose"/>
+         <short value="Dose"/>
+         <definition value="The amount of medication administered at one time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Dosage.Dose"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Dosage.Dose.value_DV_QUANTITY">
+         <path value="Dosage.Dose.value_DV_QUANTITY"/>
+         <short value="Dose"/>
+         <definition value="The amount of medication administered at one time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Dosage.Dose.value_DV_QUANTITY"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Dosage.Dose.value_DV_INTERVAL_DV_QUANTITY_">
+         <path value="Dosage.Dose.value_DV_INTERVAL_DV_QUANTITY_"/>
+         <short value="Dose"/>
+         <definition value="The amount of medication administered at one time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Dosage.Dose.value_DV_INTERVAL_DV_QUANTITY_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Dosage.Dose_formula">
+         <path value="Dosage.Dose_formula"/>
+         <short value="Dose formula"/>
+         <definition value="The formula used to calculate the dose amount or administration rate where this is dependent on some other factor, such as body weight or surface area."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Dosage.Dose_formula"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Dosage.Dose_formula.value_DV_TEXT">
+         <path value="Dosage.Dose_formula.value_DV_TEXT"/>
+         <short value="Dose formula"/>
+         <definition value="The formula used to calculate the dose amount or administration rate where this is dependent on some other factor, such as body weight or surface area."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Dosage.Dose_formula.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Dosage.Dose_formula.value_DV_QUANTITY">
+         <path value="Dosage.Dose_formula.value_DV_QUANTITY"/>
+         <short value="Dose formula"/>
+         <definition value="The formula used to calculate the dose amount or administration rate where this is dependent on some other factor, such as body weight or surface area."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Dosage.Dose_formula.value_DV_QUANTITY"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Dosage.Dose_description">
+         <path value="Dosage.Dose_description"/>
+         <short value="Dose description"/>
+         <definition value="Text description of the dose."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Dosage.Dose_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Dosage.Dose_description.value">
+         <path value="Dosage.Dose_description.value"/>
+         <short value="Dose description"/>
+         <definition value="Text description of the dose."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Dosage.Dose_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Dosage.Daily_timing">
+         <path value="Dosage.Daily_timing"/>
+         <short value="Daily timing"/>
+         <definition value="Structured details about the timing pattern for a single day."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Dosage.Daily_timing"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Dosage.Administration_rate">
+         <path value="Dosage.Administration_rate"/>
+         <short value="Administration rate"/>
+         <definition value="The rate at which the medication, such as an infusion, is to be administered."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Dosage.Administration_rate"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Dosage.Administration_rate.value_DvQuantity">
+         <path value="Dosage.Administration_rate.value_DvQuantity"/>
+         <short value="Administration rate"/>
+         <definition value="The rate at which the medication, such as an infusion, is to be administered."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Dosage.Administration_rate.value_DvQuantity"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Dosage.Administration_rate.value_DV_TEXT">
+         <path value="Dosage.Administration_rate.value_DV_TEXT"/>
+         <short value="Administration rate"/>
+         <definition value="The rate at which the medication, such as an infusion, is to be administered."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Dosage.Administration_rate.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Dosage.Administration_duration">
+         <path value="Dosage.Administration_duration"/>
+         <short value="Administration duration"/>
+         <definition value="The period of time over which a single dose of the medication or vaccine should be administered."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Dosage.Administration_duration"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Dosage.Administration_duration.value_DV_DURATION">
+         <path value="Dosage.Administration_duration.value_DV_DURATION"/>
+         <short value="Administration duration"/>
+         <definition value="The period of time over which a single dose of the medication or vaccine should be administered."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Dosage.Administration_duration.value_DV_DURATION"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Dosage.Administration_duration.value_DV_INTERVAL_DV_DURATION_">
+         <path value="Dosage.Administration_duration.value_DV_INTERVAL_DV_DURATION_"/>
+         <short value="Administration duration"/>
+         <definition value="The period of time over which a single dose of the medication or vaccine should be administered."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Dosage.Administration_duration.value_DV_INTERVAL_DV_DURATION_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Dosage.Alternate_dose">
+         <path value="Dosage.Alternate_dose"/>
+         <short value="Alternate dose"/>
+         <definition value="An alternate representation of the amount of medication administered at one time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Dosage.Alternate_dose"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Dosage.Alternate_dose.value_DV_QUANTITY">
+         <path value="Dosage.Alternate_dose.value_DV_QUANTITY"/>
+         <short value="Alternate dose"/>
+         <definition value="An alternate representation of the amount of medication administered at one time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Dosage.Alternate_dose.value_DV_QUANTITY"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Dosage.Alternate_dose.value_DV_INTERVAL_DV_QUANTITY_">
+         <path value="Dosage.Alternate_dose.value_DV_INTERVAL_DV_QUANTITY_"/>
+         <short value="Alternate dose"/>
+         <definition value="An alternate representation of the amount of medication administered at one time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Dosage.Alternate_dose.value_DV_INTERVAL_DV_QUANTITY_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

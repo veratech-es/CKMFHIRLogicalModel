@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Medicaldevice-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-medicaldevice-R4"/>
+   <version value="0"/>
+   <name value="Medicaldevice"/>
+   <title value="Medical device"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="An instrument, apparatus, implant, material or similar, used in the provision of healthcare. In this context, a medical device includes a broad range of devices which act through a variety of physical, mechanical, thermal or similar means but specifically excludes devices which act through medicinal means such as pharmacological, metabolic or immunological methods.  The scope is inclusive of disposable devices as well as durable or persisting devices that require tracking, maintenance activities or regular calibration, recognising that each type of device has specific data recording requirements."/>
+   <purpose value="To record the details of a medical device used in the provision of healthcare."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Medical_device">
+         <path value="Medical_device"/>
+         <short value="Medical device"/>
+         <definition value="An instrument, apparatus, implant, material or similar, used in the provision of healthcare. In this context, a medical device includes a broad range of devices which act through a variety of physical, mechanical, thermal or similar means but specifically excludes devices which act through medicinal means such as pharmacological, metabolic or immunological methods.  The scope is inclusive of disposable devices as well as durable or persisting devices that require tracking, maintenance activities or regular calibration, recognising that each type of device has specific data recording requirements."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medical_device.Device_name">
+         <path value="Medical_device.Device_name"/>
+         <short value="Device name"/>
+         <definition value="Identification of the medical device, preferably by a common name, a formal fully descriptive name or, if required, by class or category of device."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device.Device_name"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medical_device.Device_name.value">
+         <path value="Medical_device.Device_name.value"/>
+         <short value="Device name"/>
+         <definition value="Identification of the medical device, preferably by a common name, a formal fully descriptive name or, if required, by class or category of device."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device.Device_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medical_device.Type">
+         <path value="Medical_device.Type"/>
+         <short value="Type"/>
+         <definition value="The category or kind of device."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device.Type"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medical_device.Type.value">
+         <path value="Medical_device.Type.value"/>
+         <short value="Type"/>
+         <definition value="The category or kind of device."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device.Type.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medical_device.Description">
+         <path value="Medical_device.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description of the medical device."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medical_device.Description.value">
+         <path value="Medical_device.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description of the medical device."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medical_device.Properties">
+         <path value="Medical_device.Properties"/>
+         <short value="Properties"/>
+         <definition value="Further details about specific properties about the medical device."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Medical_device.Properties"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medical_device.Unique_device_identifier_(UDI)">
+         <path value="Medical_device.Unique_device_identifier_(UDI)"/>
+         <short value="Unique device identifier (UDI)"/>
+         <definition value="A numeric or alphanumeric string that is associated with this device within a given system."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device.Unique_device_identifier_(UDI)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medical_device.Unique_device_identifier_(UDI).value">
+         <path value="Medical_device.Unique_device_identifier_(UDI).value"/>
+         <short value="Unique device identifier (UDI)"/>
+         <definition value="A numeric or alphanumeric string that is associated with this device within a given system."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device.Unique_device_identifier_(UDI).value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medical_device.Manufacturer">
+         <path value="Medical_device.Manufacturer"/>
+         <short value="Manufacturer"/>
+         <definition value="Name of manufacturer."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device.Manufacturer"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medical_device.Manufacturer.value">
+         <path value="Medical_device.Manufacturer.value"/>
+         <short value="Manufacturer"/>
+         <definition value="Name of manufacturer."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device.Manufacturer.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medical_device.Date_of_manufacture">
+         <path value="Medical_device.Date_of_manufacture"/>
+         <short value="Date of manufacture"/>
+         <definition value="Date the device was manufactured."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device.Date_of_manufacture"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medical_device.Date_of_manufacture.value">
+         <path value="Medical_device.Date_of_manufacture.value"/>
+         <short value="Date of manufacture"/>
+         <definition value="Date the device was manufactured."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device.Date_of_manufacture.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medical_device.Serial_number">
+         <path value="Medical_device.Serial_number"/>
+         <short value="Serial number"/>
+         <definition value="Number assigned by the manufacturer which can be found on the device, and should be specific to each device., its label, or accompanying packaging."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device.Serial_number"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medical_device.Serial_number.value">
+         <path value="Medical_device.Serial_number.value"/>
+         <short value="Serial number"/>
+         <definition value="Number assigned by the manufacturer which can be found on the device, and should be specific to each device., its label, or accompanying packaging."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device.Serial_number.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medical_device.Catalogue_number">
+         <path value="Medical_device.Catalogue_number"/>
+         <short value="Catalogue number"/>
+         <definition value="The exact number assigned by the manufacturer, as it appears in the manufacturer's catalogue, device labeling, or accompanying packaging."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device.Catalogue_number"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medical_device.Catalogue_number.value">
+         <path value="Medical_device.Catalogue_number.value"/>
+         <short value="Catalogue number"/>
+         <definition value="The exact number assigned by the manufacturer, as it appears in the manufacturer's catalogue, device labeling, or accompanying packaging."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device.Catalogue_number.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medical_device.Model_number">
+         <path value="Medical_device.Model_number"/>
+         <short value="Model number"/>
+         <definition value="The exact model number assigned by the manufacturer and found on the device label or accompanying packaging."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device.Model_number"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medical_device.Model_number.value">
+         <path value="Medical_device.Model_number.value"/>
+         <short value="Model number"/>
+         <definition value="The exact model number assigned by the manufacturer and found on the device label or accompanying packaging."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device.Model_number.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medical_device.Batch_Lot_number">
+         <path value="Medical_device.Batch_Lot_number"/>
+         <short value="Batch/Lot number"/>
+         <definition value="The number assigned by the manufacturer which identifies a group of items manufactured at the same time, usually found on the label or packaging material."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device.Batch_Lot_number"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medical_device.Batch_Lot_number.value">
+         <path value="Medical_device.Batch_Lot_number.value"/>
+         <short value="Batch/Lot number"/>
+         <definition value="The number assigned by the manufacturer which identifies a group of items manufactured at the same time, usually found on the label or packaging material."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device.Batch_Lot_number.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medical_device.Software_version">
+         <path value="Medical_device.Software_version"/>
+         <short value="Software version"/>
+         <definition value="Identification of the version of software being used in the medical device."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device.Software_version"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medical_device.Software_version.value">
+         <path value="Medical_device.Software_version.value"/>
+         <short value="Software version"/>
+         <definition value="Identification of the version of software being used in the medical device."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device.Software_version.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medical_device.Date_of_expiry">
+         <path value="Medical_device.Date_of_expiry"/>
+         <short value="Date of expiry"/>
+         <definition value="Date after which the device/product is no longer fit for use, usually found on the device itself or printed on the accompanying packaging."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device.Date_of_expiry"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medical_device.Date_of_expiry.value">
+         <path value="Medical_device.Date_of_expiry.value"/>
+         <short value="Date of expiry"/>
+         <definition value="Date after which the device/product is no longer fit for use, usually found on the device itself or printed on the accompanying packaging."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device.Date_of_expiry.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medical_device.Other_identifier">
+         <path value="Medical_device.Other_identifier"/>
+         <short value="Other identifier"/>
+         <definition value="Unspecified identifier, which can be further specified in a template or at run time."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Medical_device.Other_identifier"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Medical_device.Other_identifier.value">
+         <path value="Medical_device.Other_identifier.value"/>
+         <short value="Other identifier"/>
+         <definition value="Unspecified identifier, which can be further specified in a template or at run time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device.Other_identifier.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medical_device.Asset_management">
+         <path value="Medical_device.Asset_management"/>
+         <short value="Asset management"/>
+         <definition value="Further details about management and maintenance of the device."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Medical_device.Asset_management"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medical_device.Components">
+         <path value="Medical_device.Components"/>
+         <short value="Components"/>
+         <definition value="Additional structured informations about identified components of the device."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Medical_device.Components"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medical_device.Extension">
+         <path value="Medical_device.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local context or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Medical_device.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medical_device.Multimedia">
+         <path value="Medical_device.Multimedia"/>
+         <short value="Multimedia"/>
+         <definition value="Digital representation of the device."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Medical_device.Multimedia"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medical_device.Comment">
+         <path value="Medical_device.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the device not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medical_device.Comment.value">
+         <path value="Medical_device.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the device not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medical_device.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Procedurereport-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-procedurereport-R4"/>
+   <version value="0"/>
+   <name value="Procedurereport"/>
+   <title value="Procedure report"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Document to communicate information to others about any stand-alone procedure or operation performed."/>
+   <purpose value="Generic container archetype to carry information about any stand-alone procedure or operation performed."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Procedure_report">
+         <path value="Procedure_report"/>
+         <short value="Procedure report"/>
+         <definition value="Document to communicate information to others about any stand-alone procedure or operation performed."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure_report"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure_report.category">
+         <path value="Procedure_report.category"/>
+         <short value="Procedure report"/>
+         <definition value="Document to communicate information to others about any stand-alone procedure or operation performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure_report.category"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure_report.EVENT_CONTEXT">
+         <path value="Procedure_report.EVENT_CONTEXT"/>
+         <definition value="EVENT_CONTEXT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure_report.EVENT_CONTEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure_report.EVENT_CONTEXT.other_context">
+         <path value="Procedure_report.EVENT_CONTEXT.other_context"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure_report.EVENT_CONTEXT.other_context"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure_report.EVENT_CONTEXT.other_context.Report_ID">
+         <path value="Procedure_report.EVENT_CONTEXT.other_context.Report_ID"/>
+         <short value="Report ID"/>
+         <definition value="Identification information about the report."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure_report.EVENT_CONTEXT.other_context.Report_ID"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Procedure_report.EVENT_CONTEXT.other_context.Report_ID.value">
+         <path value="Procedure_report.EVENT_CONTEXT.other_context.Report_ID.value"/>
+         <short value="Report ID"/>
+         <definition value="Identification information about the report."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure_report.EVENT_CONTEXT.other_context.Report_ID.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure_report.EVENT_CONTEXT.other_context.Status">
+         <path value="Procedure_report.EVENT_CONTEXT.other_context.Status"/>
+         <short value="Status"/>
+         <definition value="The status of the entire report. Note: This is not the status of any of the report components."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure_report.EVENT_CONTEXT.other_context.Status"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Procedure_report.EVENT_CONTEXT.other_context.Status.value">
+         <path value="Procedure_report.EVENT_CONTEXT.other_context.Status.value"/>
+         <short value="Status"/>
+         <definition value="The status of the entire report. Note: This is not the status of any of the report components."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure_report.EVENT_CONTEXT.other_context.Status.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure_report.EVENT_CONTEXT.other_context.Extension">
+         <path value="Procedure_report.EVENT_CONTEXT.other_context.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local context or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Procedure_report.EVENT_CONTEXT.other_context.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

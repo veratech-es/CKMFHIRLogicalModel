@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Caseidentification-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-caseidentification-R4"/>
+   <version value="0"/>
+   <name value="Caseidentification"/>
+   <title value="Case identification"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="To record case identification details for public health purposes."/>
+   <purpose value="To record details about the identification of a case."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Case_identification">
+         <path value="Case_identification"/>
+         <short value="Case identification"/>
+         <definition value="To record case identification details for public health purposes."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Case_identification"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Case_identification.Case_identifier">
+         <path value="Case_identification.Case_identifier"/>
+         <short value="Case identifier"/>
+         <definition value="The identifier of this case."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Case_identification.Case_identifier"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Case_identification.Case_identifier.value">
+         <path value="Case_identification.Case_identifier.value"/>
+         <short value="Case identifier"/>
+         <definition value="The identifier of this case."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Case_identification.Case_identifier.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Case_identification.Case_started">
+         <path value="Case_identification.Case_started"/>
+         <short value="Case started"/>
+         <definition value="The date that the case was commenced."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Case_identification.Case_started"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Case_identification.Case_started.value">
+         <path value="Case_identification.Case_started.value"/>
+         <short value="Case started"/>
+         <definition value="The date that the case was commenced."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Case_identification.Case_started.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Case_identification.Status">
+         <path value="Case_identification.Status"/>
+         <short value="Status"/>
+         <definition value="The status of the case. A status of completed means the patient has been associated with the given case number.&#xD;&#xA;A status of aborted means the patient was associated with the case number in error."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Case_identification.Status"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Case_identification.Status.value">
+         <path value="Case_identification.Status.value"/>
+         <short value="Status"/>
+         <definition value="The status of the case. A status of completed means the patient has been associated with the given case number.&#xD;&#xA;A status of aborted means the patient was associated with the case number in error."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Case_identification.Status.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Case_identification.Case_identified">
+         <path value="Case_identification.Case_identified"/>
+         <short value="Case identified"/>
+         <definition value="Text or coded description of the case identified."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Case_identification.Case_identified"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Case_identification.Case_identified.value">
+         <path value="Case_identification.Case_identified.value"/>
+         <short value="Case identified"/>
+         <definition value="Text or coded description of the case identified."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Case_identification.Case_identified.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

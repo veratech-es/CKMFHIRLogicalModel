@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Postmortemreport-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-postmortemreport-R4"/>
+   <version value="0"/>
+   <name value="Postmortemreport"/>
+   <title value="Post mortem report"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Container archetype to carry information about a post mortem or autopsy."/>
+   <purpose value="To carry information about a post mortem or autopsy."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Post_mortem_report">
+         <path value="Post_mortem_report"/>
+         <short value="Post mortem report"/>
+         <definition value="Container archetype to carry information about a post mortem or autopsy."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Post_mortem_report"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Post_mortem_report.category">
+         <path value="Post_mortem_report.category"/>
+         <short value="Post mortem report"/>
+         <definition value="Container archetype to carry information about a post mortem or autopsy."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Post_mortem_report.category"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Post_mortem_report.EVENT_CONTEXT">
+         <path value="Post_mortem_report.EVENT_CONTEXT"/>
+         <definition value="EVENT_CONTEXT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Post_mortem_report.EVENT_CONTEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Post_mortem_report.EVENT_CONTEXT.other_context">
+         <path value="Post_mortem_report.EVENT_CONTEXT.other_context"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Post_mortem_report.EVENT_CONTEXT.other_context"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Post_mortem_report.EVENT_CONTEXT.other_context.Report_ID">
+         <path value="Post_mortem_report.EVENT_CONTEXT.other_context.Report_ID"/>
+         <short value="Report ID"/>
+         <definition value="Identification information about the report."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Post_mortem_report.EVENT_CONTEXT.other_context.Report_ID"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Post_mortem_report.EVENT_CONTEXT.other_context.Report_ID.value">
+         <path value="Post_mortem_report.EVENT_CONTEXT.other_context.Report_ID.value"/>
+         <short value="Report ID"/>
+         <definition value="Identification information about the report."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Post_mortem_report.EVENT_CONTEXT.other_context.Report_ID.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Post_mortem_report.EVENT_CONTEXT.other_context.Status">
+         <path value="Post_mortem_report.EVENT_CONTEXT.other_context.Status"/>
+         <short value="Status"/>
+         <definition value="The status of the entire report. Note: This is not the status of any of the report components."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Post_mortem_report.EVENT_CONTEXT.other_context.Status"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Post_mortem_report.EVENT_CONTEXT.other_context.Status.value">
+         <path value="Post_mortem_report.EVENT_CONTEXT.other_context.Status.value"/>
+         <short value="Status"/>
+         <definition value="The status of the entire report. Note: This is not the status of any of the report components."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Post_mortem_report.EVENT_CONTEXT.other_context.Status.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Post_mortem_report.EVENT_CONTEXT.other_context.Extension">
+         <path value="Post_mortem_report.EVENT_CONTEXT.other_context.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local context or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Post_mortem_report.EVENT_CONTEXT.other_context.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Post_mortem_report.EVENT_CONTEXT.other_context.Date_of_autopsy">
+         <path value="Post_mortem_report.EVENT_CONTEXT.other_context.Date_of_autopsy"/>
+         <short value="Date of autopsy"/>
+         <definition value="The date when the autopsy was completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Post_mortem_report.EVENT_CONTEXT.other_context.Date_of_autopsy"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Post_mortem_report.EVENT_CONTEXT.other_context.Date_of_autopsy.value">
+         <path value="Post_mortem_report.EVENT_CONTEXT.other_context.Date_of_autopsy.value"/>
+         <short value="Date of autopsy"/>
+         <definition value="The date when the autopsy was completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Post_mortem_report.EVENT_CONTEXT.other_context.Date_of_autopsy.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Post_mortem_report.EVENT_CONTEXT.other_context.Pathologist">
+         <path value="Post_mortem_report.EVENT_CONTEXT.other_context.Pathologist"/>
+         <short value="Pathologist"/>
+         <definition value="Identification of the individual(s) who carried out the autopsy."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Post_mortem_report.EVENT_CONTEXT.other_context.Pathologist"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Post_mortem_report.EVENT_CONTEXT.other_context.Pathologist_category">
+         <path value="Post_mortem_report.EVENT_CONTEXT.other_context.Pathologist_category"/>
+         <short value="Pathologist category"/>
+         <definition value="The category/credentials of the individual who carried out the autopsy."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Post_mortem_report.EVENT_CONTEXT.other_context.Pathologist_category"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Post_mortem_report.EVENT_CONTEXT.other_context.Pathologist_category.value">
+         <path value="Post_mortem_report.EVENT_CONTEXT.other_context.Pathologist_category.value"/>
+         <short value="Pathologist category"/>
+         <definition value="The category/credentials of the individual who carried out the autopsy."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Post_mortem_report.EVENT_CONTEXT.other_context.Pathologist_category.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Post_mortem_report.EVENT_CONTEXT.other_context.Investigator">
+         <path value="Post_mortem_report.EVENT_CONTEXT.other_context.Investigator"/>
+         <short value="Investigator"/>
+         <definition value="Details about the individual(s) assigned to investigate the disease notification."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Post_mortem_report.EVENT_CONTEXT.other_context.Investigator"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Post_mortem_report.EVENT_CONTEXT.other_context.Date_report_completed">
+         <path value="Post_mortem_report.EVENT_CONTEXT.other_context.Date_report_completed"/>
+         <short value="Date report completed"/>
+         <definition value="The date when the post mortem report was completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Post_mortem_report.EVENT_CONTEXT.other_context.Date_report_completed"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Post_mortem_report.EVENT_CONTEXT.other_context.Date_report_completed.value">
+         <path value="Post_mortem_report.EVENT_CONTEXT.other_context.Date_report_completed.value"/>
+         <short value="Date report completed"/>
+         <definition value="The date when the post mortem report was completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Post_mortem_report.EVENT_CONTEXT.other_context.Date_report_completed.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Post_mortem_report.EVENT_CONTEXT.other_context.Date_report_submitted">
+         <path value="Post_mortem_report.EVENT_CONTEXT.other_context.Date_report_submitted"/>
+         <short value="Date report submitted"/>
+         <definition value="The date when the post mortem report was submitted to the public health authority."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Post_mortem_report.EVENT_CONTEXT.other_context.Date_report_submitted"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Post_mortem_report.EVENT_CONTEXT.other_context.Date_report_submitted.value">
+         <path value="Post_mortem_report.EVENT_CONTEXT.other_context.Date_report_submitted.value"/>
+         <short value="Date report submitted"/>
+         <definition value="The date when the post mortem report was submitted to the public health authority."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Post_mortem_report.EVENT_CONTEXT.other_context.Date_report_submitted.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

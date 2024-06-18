@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Specimencontainer-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-specimencontainer-R4"/>
+   <version value="0"/>
+   <name value="Specimencontainer"/>
+   <title value="Specimen container"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Details of a container used to hold, transport and/or archive a specimen for laboratory examination."/>
+   <purpose value="To record details of a container used to hold, transport and/or archive a specimen for laboratory examination."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Specimen_container">
+         <path value="Specimen_container"/>
+         <short value="Specimen container"/>
+         <definition value="Details of a container used to hold, transport and/or archive a specimen for laboratory examination."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_container"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_container.Container_type">
+         <path value="Specimen_container.Container_type"/>
+         <short value="Container type"/>
+         <definition value="The type of container associated with the specimen."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_container.Container_type"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Specimen_container.Container_type.value">
+         <path value="Specimen_container.Container_type.value"/>
+         <short value="Container type"/>
+         <definition value="The type of container associated with the specimen."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_container.Container_type.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_container.Container_ID">
+         <path value="Specimen_container.Container_ID"/>
+         <short value="Container ID"/>
+         <definition value="The unique identifier given to the container."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Specimen_container.Container_ID"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Specimen_container.Container_ID.value_DV_IDENTIFIER">
+         <path value="Specimen_container.Container_ID.value_DV_IDENTIFIER"/>
+         <short value="Container ID"/>
+         <definition value="The unique identifier given to the container."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_container.Container_ID.value_DV_IDENTIFIER"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_container.Container_ID.value_DV_TEXT">
+         <path value="Specimen_container.Container_ID.value_DV_TEXT"/>
+         <short value="Container ID"/>
+         <definition value="The unique identifier given to the container."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_container.Container_ID.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_container.Description">
+         <path value="Specimen_container.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the container."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_container.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Specimen_container.Description.value">
+         <path value="Specimen_container.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the container."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_container.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_container.Components">
+         <path value="Specimen_container.Components"/>
+         <short value="Components"/>
+         <definition value="Description about the physical components of the container."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Specimen_container.Components"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Specimen_container.Components.value">
+         <path value="Specimen_container.Components.value"/>
+         <short value="Components"/>
+         <definition value="Description about the physical components of the container."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_container.Components.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_container.Additive_s">
+         <path value="Specimen_container.Additive_s"/>
+         <short value="Additive/s"/>
+         <definition value="Introduced substance to preserve, maintain or enhance the specimen."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Specimen_container.Additive_s"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Specimen_container.Additive_s.value">
+         <path value="Specimen_container.Additive_s.value"/>
+         <short value="Additive/s"/>
+         <definition value="Introduced substance to preserve, maintain or enhance the specimen."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_container.Additive_s.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_container.Capacity">
+         <path value="Specimen_container.Capacity"/>
+         <short value="Capacity"/>
+         <definition value="The capacity of the container."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_container.Capacity"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Specimen_container.Capacity.value_DV_TEXT">
+         <path value="Specimen_container.Capacity.value_DV_TEXT"/>
+         <short value="Capacity"/>
+         <definition value="The capacity of the container."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_container.Capacity.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_container.Capacity.value_DV_QUANTITY">
+         <path value="Specimen_container.Capacity.value_DV_QUANTITY"/>
+         <short value="Capacity"/>
+         <definition value="The capacity of the container."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_container.Capacity.value_DV_QUANTITY"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_container.Minimum_volum">
+         <path value="Specimen_container.Minimum_volum"/>
+         <short value="Minimum volum"/>
+         <definition value="The minimum volume to be conditioned in the container."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_container.Minimum_volum"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Specimen_container.Minimum_volum.value_DV_TEXT">
+         <path value="Specimen_container.Minimum_volum.value_DV_TEXT"/>
+         <short value="Minimum volum"/>
+         <definition value="The minimum volume to be conditioned in the container."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_container.Minimum_volum.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_container.Minimum_volum.value_DV_QUANTITY">
+         <path value="Specimen_container.Minimum_volum.value_DV_QUANTITY"/>
+         <short value="Minimum volum"/>
+         <definition value="The minimum volume to be conditioned in the container."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_container.Minimum_volum.value_DV_QUANTITY"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_container.Additional_details">
+         <path value="Specimen_container.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="Additional structured details related to the specimen container."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Specimen_container.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_container.Contents">
+         <path value="Specimen_container.Contents"/>
+         <short value="Contents"/>
+         <definition value="The contents of this container."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Specimen_container.Contents"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_container.Comment">
+         <path value="Specimen_container.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the transportation process not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_container.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Specimen_container.Comment.value">
+         <path value="Specimen_container.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the transportation process not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_container.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

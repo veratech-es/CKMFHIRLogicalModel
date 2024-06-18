@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Servicedirection-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-servicedirection-R4"/>
+   <version value="0"/>
+   <name value="Servicedirection"/>
+   <title value="Service direction"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Structured details of a complex direction for an ordered or requested service."/>
+   <purpose value="To record structured details of a complex direction for an ordered or requested service."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Service_direction">
+         <path value="Service_direction"/>
+         <short value="Service direction"/>
+         <definition value="Structured details of a complex direction for an ordered or requested service."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_direction"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_direction.Direction_sequence">
+         <path value="Service_direction.Direction_sequence"/>
+         <short value="Direction sequence"/>
+         <definition value="The intended position of this direction within the overall sequence of directions."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_direction.Direction_sequence"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Service_direction.Direction_sequence.value">
+         <path value="Service_direction.Direction_sequence.value"/>
+         <short value="Direction sequence"/>
+         <definition value="The intended position of this direction within the overall sequence of directions."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_direction.Direction_sequence.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_direction.Direction_description">
+         <path value="Service_direction.Direction_description"/>
+         <short value="Direction description"/>
+         <definition value="Narrative description about the whole direction."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_direction.Direction_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Service_direction.Direction_description.value">
+         <path value="Service_direction.Direction_description.value"/>
+         <short value="Direction description"/>
+         <definition value="Narrative description about the whole direction."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_direction.Direction_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_direction.Activity">
+         <path value="Service_direction.Activity"/>
+         <short value="Activity"/>
+         <definition value="A grouping of an amount and timing for a part of a service direction."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Service_direction.Activity"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_direction.Activity.Activity_sequence">
+         <path value="Service_direction.Activity.Activity_sequence"/>
+         <short value="Activity sequence"/>
+         <definition value="The intended sequential position of this activity within all activities for the service direction."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_direction.Activity.Activity_sequence"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Service_direction.Activity.Activity_sequence.value">
+         <path value="Service_direction.Activity.Activity_sequence.value"/>
+         <short value="Activity sequence"/>
+         <definition value="The intended sequential position of this activity within all activities for the service direction."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_direction.Activity.Activity_sequence.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_direction.Activity.Amount">
+         <path value="Service_direction.Activity.Amount"/>
+         <short value="Amount"/>
+         <definition value="The amount of service requested as part of a specified activity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_direction.Activity.Amount"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Service_direction.Activity.Amount.value_DV_COUNT">
+         <path value="Service_direction.Activity.Amount.value_DV_COUNT"/>
+         <short value="Amount"/>
+         <definition value="The amount of service requested as part of a specified activity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_direction.Activity.Amount.value_DV_COUNT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_direction.Activity.Amount.value_DV_DURATION">
+         <path value="Service_direction.Activity.Amount.value_DV_DURATION"/>
+         <short value="Amount"/>
+         <definition value="The amount of service requested as part of a specified activity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_direction.Activity.Amount.value_DV_DURATION"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_direction.Activity.Intraday_timing">
+         <path value="Service_direction.Activity.Intraday_timing"/>
+         <short value="Intraday timing"/>
+         <definition value="Structured details about the timing of the service within a single day."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Service_direction.Activity.Intraday_timing"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_direction.Direction_duration">
+         <path value="Service_direction.Direction_duration"/>
+         <short value="Direction duration"/>
+         <definition value="The length of time for which this direction should be applied."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_direction.Direction_duration"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Service_direction.Direction_duration.value_DV_CODED_TEXT">
+         <path value="Service_direction.Direction_duration.value_DV_CODED_TEXT"/>
+         <short value="Direction duration"/>
+         <definition value="The length of time for which this direction should be applied."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_direction.Direction_duration.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_direction.Direction_duration.value_DV_DURATION">
+         <path value="Service_direction.Direction_duration.value_DV_DURATION"/>
+         <short value="Direction duration"/>
+         <definition value="The length of time for which this direction should be applied."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_direction.Direction_duration.value_DV_DURATION"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_direction.Direction_duration.value_DV_TEXT">
+         <path value="Service_direction.Direction_duration.value_DV_TEXT"/>
+         <short value="Direction duration"/>
+         <definition value="The length of time for which this direction should be applied."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_direction.Direction_duration.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_direction.Repetition_timing">
+         <path value="Service_direction.Repetition_timing"/>
+         <short value="Repetition timing"/>
+         <definition value="Structured details about pattern of repetition for each set of intraday activities."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Service_direction.Repetition_timing"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_direction.Total_amount">
+         <path value="Service_direction.Total_amount"/>
+         <short value="Total amount"/>
+         <definition value="The total number of services or hours available for all activities in this direction."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_direction.Total_amount"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Service_direction.Total_amount.value_DV_COUNT">
+         <path value="Service_direction.Total_amount.value_DV_COUNT"/>
+         <short value="Total amount"/>
+         <definition value="The total number of services or hours available for all activities in this direction."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_direction.Total_amount.value_DV_COUNT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_direction.Total_amount.value_DV_DURATION">
+         <path value="Service_direction.Total_amount.value_DV_DURATION"/>
+         <short value="Total amount"/>
+         <definition value="The total number of services or hours available for all activities in this direction."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Service_direction.Total_amount.value_DV_DURATION"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Service_direction.Additional_details">
+         <path value="Service_direction.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="Further details about an ordered item direction."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Service_direction.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

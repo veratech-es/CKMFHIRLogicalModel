@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Examinationofdeeptendonreflexes-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-examinationofdeeptendonreflexes-R4"/>
+   <version value="0"/>
+   <name value="Examinationofdeeptendonreflexes"/>
+   <title value="Examination of deep tendon reflexes"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Findings observed during the physical examination of deep tendon reflexes in the limbs."/>
+   <purpose value="For recording a description and clinical interpretation of the findings observed during the physical examination of deep tendon reflexes in the limbs."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Examination_of_deep_tendon_reflexes">
+         <path value="Examination_of_deep_tendon_reflexes"/>
+         <short value="Examination of deep tendon reflexes"/>
+         <definition value="Findings observed during the physical examination of deep tendon reflexes in the limbs."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Examination_of_deep_tendon_reflexes"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Examination_of_deep_tendon_reflexes.No_abnormality_detected">
+         <path value="Examination_of_deep_tendon_reflexes.No_abnormality_detected"/>
+         <short value="No abnormality detected"/>
+         <definition value="Statement that no abnormality was detected (NAD) on physical examination."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Examination_of_deep_tendon_reflexes.No_abnormality_detected"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Examination_of_deep_tendon_reflexes.No_abnormality_detected.value">
+         <path value="Examination_of_deep_tendon_reflexes.No_abnormality_detected.value"/>
+         <short value="No abnormality detected"/>
+         <definition value="Statement that no abnormality was detected (NAD) on physical examination."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Examination_of_deep_tendon_reflexes.No_abnormality_detected.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Examination_of_deep_tendon_reflexes.Clinical_description">
+         <path value="Examination_of_deep_tendon_reflexes.Clinical_description"/>
+         <short value="Clinical description"/>
+         <definition value="Narrative description of the overall findings observed during the physical examination."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Examination_of_deep_tendon_reflexes.Clinical_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Examination_of_deep_tendon_reflexes.Clinical_description.value">
+         <path value="Examination_of_deep_tendon_reflexes.Clinical_description.value"/>
+         <short value="Clinical description"/>
+         <definition value="Narrative description of the overall findings observed during the physical examination."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Examination_of_deep_tendon_reflexes.Clinical_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Examination_of_deep_tendon_reflexes.Per_reflex">
+         <path value="Examination_of_deep_tendon_reflexes.Per_reflex"/>
+         <short value="Per reflex"/>
+         <definition value="Details per reflex."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Examination_of_deep_tendon_reflexes.Per_reflex"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Examination_of_deep_tendon_reflexes.items_Per_reflex.name">
+         <path value="Examination_of_deep_tendon_reflexes.items_Per_reflex.name"/>
+         <short value="Per reflex"/>
+         <definition value="Details per reflex."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Examination_of_deep_tendon_reflexes.items_Per_reflex.name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Examination_of_deep_tendon_reflexes.items_Per_reflex.Response">
+         <path value="Examination_of_deep_tendon_reflexes.items_Per_reflex.Response"/>
+         <short value="Response"/>
+         <definition value="Strength of the reflex response."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Examination_of_deep_tendon_reflexes.items_Per_reflex.Response"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Examination_of_deep_tendon_reflexes.items_Per_reflex.Response.value">
+         <path value="Examination_of_deep_tendon_reflexes.items_Per_reflex.Response.value"/>
+         <short value="Response"/>
+         <definition value="Strength of the reflex response."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Examination_of_deep_tendon_reflexes.items_Per_reflex.Response.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Examination_of_deep_tendon_reflexes.items_Per_reflex.With_recruitment_">
+         <path value="Examination_of_deep_tendon_reflexes.items_Per_reflex.With_recruitment_"/>
+         <short value="With recruitment?"/>
+         <definition value="Record as true if muscle recruitment was used to accentuate the response."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Examination_of_deep_tendon_reflexes.items_Per_reflex.With_recruitment_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Examination_of_deep_tendon_reflexes.items_Per_reflex.With_recruitment_.value">
+         <path value="Examination_of_deep_tendon_reflexes.items_Per_reflex.With_recruitment_.value"/>
+         <short value="With recruitment?"/>
+         <definition value="Record as true if muscle recruitment was used to accentuate the response."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Examination_of_deep_tendon_reflexes.items_Per_reflex.With_recruitment_.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Examination_of_deep_tendon_reflexes.items_Per_reflex.Comment">
+         <path value="Examination_of_deep_tendon_reflexes.items_Per_reflex.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the reflex response findings, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Examination_of_deep_tendon_reflexes.items_Per_reflex.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Examination_of_deep_tendon_reflexes.items_Per_reflex.Comment.value">
+         <path value="Examination_of_deep_tendon_reflexes.items_Per_reflex.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the reflex response findings, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Examination_of_deep_tendon_reflexes.items_Per_reflex.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Examination_of_deep_tendon_reflexes.Multimedia_representation">
+         <path value="Examination_of_deep_tendon_reflexes.Multimedia_representation"/>
+         <short value="Multimedia representation"/>
+         <definition value="Digital image, video or diagram representing the physical examination findings."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Examination_of_deep_tendon_reflexes.Multimedia_representation"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Examination_of_deep_tendon_reflexes.Clinical_interpretation">
+         <path value="Examination_of_deep_tendon_reflexes.Clinical_interpretation"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Single word, phrase or brief description that represents the clinical meaning and significance of the physical examination findings."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Examination_of_deep_tendon_reflexes.Clinical_interpretation"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Examination_of_deep_tendon_reflexes.Clinical_interpretation.value">
+         <path value="Examination_of_deep_tendon_reflexes.Clinical_interpretation.value"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Single word, phrase or brief description that represents the clinical meaning and significance of the physical examination findings."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Examination_of_deep_tendon_reflexes.Clinical_interpretation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Examination_of_deep_tendon_reflexes.Comment">
+         <path value="Examination_of_deep_tendon_reflexes.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the physical examination findings, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Examination_of_deep_tendon_reflexes.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Examination_of_deep_tendon_reflexes.Comment.value">
+         <path value="Examination_of_deep_tendon_reflexes.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the physical examination findings, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Examination_of_deep_tendon_reflexes.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Examination_of_deep_tendon_reflexes.Examination_not_done">
+         <path value="Examination_of_deep_tendon_reflexes.Examination_not_done"/>
+         <short value="Examination not done"/>
+         <definition value="Details to explicitly record that this examination was not performed."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Examination_of_deep_tendon_reflexes.Examination_not_done"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

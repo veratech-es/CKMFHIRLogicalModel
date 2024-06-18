@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Issue-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-issue-R4"/>
+   <version value="0"/>
+   <name value="Issue"/>
+   <title value="Issue"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="A health-related issue or concern held by the individual."/>
+   <purpose value="To record a health-related issue or concern held by the individual."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Issue">
+         <path value="Issue"/>
+         <short value="Issue"/>
+         <definition value="A health-related issue or concern held by the individual."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Issue"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Issue.Issue">
+         <path value="Issue.Issue"/>
+         <short value="Issue"/>
+         <definition value="The name of the issue or concern as presented by the person."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Issue.Issue"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Issue.Issue.value">
+         <path value="Issue.Issue.value"/>
+         <short value="Issue"/>
+         <definition value="The name of the issue or concern as presented by the person."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Issue.Issue.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Issue.Nil_significant">
+         <path value="Issue.Nil_significant"/>
+         <short value="Nil significant"/>
+         <definition value="The issue was reported as not being present to any significant degree."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Issue.Nil_significant"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Issue.Nil_significant.value">
+         <path value="Issue.Nil_significant.value"/>
+         <short value="Nil significant"/>
+         <definition value="The issue was reported as not being present to any significant degree."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Issue.Nil_significant.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Issue.Description">
+         <path value="Issue.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the issue or concern."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Issue.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Issue.Description.value">
+         <path value="Issue.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the issue or concern."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Issue.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

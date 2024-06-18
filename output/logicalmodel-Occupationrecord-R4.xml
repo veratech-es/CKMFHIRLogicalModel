@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Occupationrecord-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-occupationrecord-R4"/>
+   <version value="0"/>
+   <name value="Occupationrecord"/>
+   <title value="Occupation record"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="A single job or role carried out by an individual during a specified period of time."/>
+   <purpose value="To record details about a single job or role carried out by an individual during a specified period of time."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Occupation_record">
+         <path value="Occupation_record"/>
+         <short value="Occupation record"/>
+         <definition value="A single job or role carried out by an individual during a specified period of time."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Occupation_record"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Occupation_record.Job_title_role">
+         <path value="Occupation_record.Job_title_role"/>
+         <short value="Job title/role"/>
+         <definition value="The main job title or the role of the individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Occupation_record.Job_title_role"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Occupation_record.Job_title_role.value">
+         <path value="Occupation_record.Job_title_role.value"/>
+         <short value="Job title/role"/>
+         <definition value="The main job title or the role of the individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Occupation_record.Job_title_role.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Occupation_record.Organisation_details">
+         <path value="Occupation_record.Organisation_details"/>
+         <short value="Organisation details"/>
+         <definition value="Details about the employer or institution."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Occupation_record.Organisation_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Occupation_record.Description">
+         <path value="Occupation_record.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the job or role carried out by the individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Occupation_record.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Occupation_record.Description.value">
+         <path value="Occupation_record.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the job or role carried out by the individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Occupation_record.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Occupation_record.Date_commenced">
+         <path value="Occupation_record.Date_commenced"/>
+         <short value="Date commenced"/>
+         <definition value="The date when an individual commenced the job or role."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Occupation_record.Date_commenced"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Occupation_record.Date_commenced.value">
+         <path value="Occupation_record.Date_commenced.value"/>
+         <short value="Date commenced"/>
+         <definition value="The date when an individual commenced the job or role."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Occupation_record.Date_commenced.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Occupation_record.Paid_employment_status">
+         <path value="Occupation_record.Paid_employment_status"/>
+         <short value="Paid employment status"/>
+         <definition value="The status of a worker in terms of being paid or unpaid."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Occupation_record.Paid_employment_status"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Occupation_record.Paid_employment_status.value">
+         <path value="Occupation_record.Paid_employment_status.value"/>
+         <short value="Paid employment status"/>
+         <definition value="The status of a worker in terms of being paid or unpaid."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Occupation_record.Paid_employment_status.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Occupation_record.Full_time_equivalent">
+         <path value="Occupation_record.Full_time_equivalent"/>
+         <short value="Full time equivalent"/>
+         <definition value="The time spent in this job or role relative to full-time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Occupation_record.Full_time_equivalent"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Occupation_record.Full_time_equivalent.value_DV_PROPORTION">
+         <path value="Occupation_record.Full_time_equivalent.value_DV_PROPORTION"/>
+         <short value="Full time equivalent"/>
+         <definition value="The time spent in this job or role relative to full-time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Occupation_record.Full_time_equivalent.value_DV_PROPORTION"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Ratio"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Occupation_record.Full_time_equivalent.value_DV_CODED_TEXT">
+         <path value="Occupation_record.Full_time_equivalent.value_DV_CODED_TEXT"/>
+         <short value="Full time equivalent"/>
+         <definition value="The time spent in this job or role relative to full-time."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Occupation_record.Full_time_equivalent.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Occupation_record.Time_allocated">
+         <path value="Occupation_record.Time_allocated"/>
+         <short value="Time allocated"/>
+         <definition value="The amount of time an individual is allocated to carry out the job or role per specified period of this occupation record."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Occupation_record.Time_allocated"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Occupation_record.Time_allocated.value">
+         <path value="Occupation_record.Time_allocated.value"/>
+         <short value="Time allocated"/>
+         <definition value="The amount of time an individual is allocated to carry out the job or role per specified period of this occupation record."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Occupation_record.Time_allocated.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Occupation_record.Industry_category">
+         <path value="Occupation_record.Industry_category"/>
+         <short value="Industry category"/>
+         <definition value="The type of industry in which the individual works."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Occupation_record.Industry_category"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Occupation_record.Industry_category.value">
+         <path value="Occupation_record.Industry_category.value"/>
+         <short value="Industry category"/>
+         <definition value="The type of industry in which the individual works."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Occupation_record.Industry_category.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Occupation_record.Job_category">
+         <path value="Occupation_record.Job_category"/>
+         <short value="Job category"/>
+         <definition value="The type of job undertaken by the individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Occupation_record.Job_category"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Occupation_record.Job_category.value">
+         <path value="Occupation_record.Job_category.value"/>
+         <short value="Job category"/>
+         <definition value="The type of job undertaken by the individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Occupation_record.Job_category.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Occupation_record.Additional_details">
+         <path value="Occupation_record.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="Further detail about an occupation record."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Occupation_record.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Occupation_record.Date_ceased">
+         <path value="Occupation_record.Date_ceased"/>
+         <short value="Date ceased"/>
+         <definition value="The date when an individual ceased working in a job or role."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Occupation_record.Date_ceased"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Occupation_record.Date_ceased.value">
+         <path value="Occupation_record.Date_ceased.value"/>
+         <short value="Date ceased"/>
+         <definition value="The date when an individual ceased working in a job or role."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Occupation_record.Date_ceased.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Occupation_record.Comment">
+         <path value="Occupation_record.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the occupation record not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Occupation_record.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Occupation_record.Comment.value">
+         <path value="Occupation_record.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the occupation record not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Occupation_record.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

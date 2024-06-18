@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Othersignificantconditions-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-othersignificantconditions-R4"/>
+   <version value="0"/>
+   <name value="Othersignificantconditions"/>
+   <title value="Other significant conditions"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Conditions that may have been of significance with regards to the patients healthstatus, in addition to indirect causes and main cause of death."/>
+   <purpose value="To record conditions that may been of significance with regards to the patients healthstatus, in addition to indirect causes and main cause of death."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Other_significant_conditions">
+         <path value="Other_significant_conditions"/>
+         <short value="Other significant conditions"/>
+         <definition value="Conditions that may have been of significance with regards to the patients healthstatus, in addition to indirect causes and main cause of death."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Other_significant_conditions"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Other_significant_conditions.Significant_condition">
+         <path value="Other_significant_conditions.Significant_condition"/>
+         <short value="Significant condition"/>
+         <definition value="Other significant conditions contributing to death."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Other_significant_conditions.Significant_condition"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Other_significant_conditions.Significant_condition.value">
+         <path value="Other_significant_conditions.Significant_condition.value"/>
+         <short value="Significant condition"/>
+         <definition value="Other significant conditions contributing to death."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Other_significant_conditions.Significant_condition.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

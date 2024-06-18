@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Gleasonscore-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-gleasonscore-R4"/>
+   <version value="0"/>
+   <name value="Gleasonscore"/>
+   <title value="Gleason Score"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Gleason Score (ISUP2005 version) - a prostate cancer grading score ratified by the International Society of Urological Pathologists (ISUP), including Gleason Grade Groups."/>
+   <purpose value="To record findings related to the Gleason Score (ISUP2005 version) - a prostate cancer grading score ratified by the International Society of Urological Pathologists (ISUP)."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Gleason_Score">
+         <path value="Gleason_Score"/>
+         <short value="Gleason Score"/>
+         <definition value="Gleason Score (ISUP2005 version) - a prostate cancer grading score ratified by the International Society of Urological Pathologists (ISUP), including Gleason Grade Groups."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Gleason_Score"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Gleason_Score.Primary_Gleason_grade">
+         <path value="Gleason_Score.Primary_Gleason_grade"/>
+         <short value="Primary Gleason grade"/>
+         <definition value="The primary Gleason grade."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Gleason_Score.Primary_Gleason_grade"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Gleason_Score.Primary_Gleason_grade.value">
+         <path value="Gleason_Score.Primary_Gleason_grade.value"/>
+         <short value="Primary Gleason grade"/>
+         <definition value="The primary Gleason grade."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Gleason_Score.Primary_Gleason_grade.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Gleason_Score.Secondary_Gleason_grade">
+         <path value="Gleason_Score.Secondary_Gleason_grade"/>
+         <short value="Secondary Gleason grade"/>
+         <definition value="The secondary Gleason grade."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Gleason_Score.Secondary_Gleason_grade"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Gleason_Score.Secondary_Gleason_grade.value">
+         <path value="Gleason_Score.Secondary_Gleason_grade.value"/>
+         <short value="Secondary Gleason grade"/>
+         <definition value="The secondary Gleason grade."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Gleason_Score.Secondary_Gleason_grade.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Gleason_Score.Tertiary_Gleason_grade">
+         <path value="Gleason_Score.Tertiary_Gleason_grade"/>
+         <short value="Tertiary Gleason grade"/>
+         <definition value="The tertiary Gleason grade."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Gleason_Score.Tertiary_Gleason_grade"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Gleason_Score.Tertiary_Gleason_grade.value">
+         <path value="Gleason_Score.Tertiary_Gleason_grade.value"/>
+         <short value="Tertiary Gleason grade"/>
+         <definition value="The tertiary Gleason grade."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Gleason_Score.Tertiary_Gleason_grade.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Gleason_Score.Total_Gleason_score">
+         <path value="Gleason_Score.Total_Gleason_score"/>
+         <short value="Total Gleason score"/>
+         <definition value="The sum of the primary and secondary Gleason grades."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Gleason_Score.Total_Gleason_score"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Gleason_Score.Total_Gleason_score.value">
+         <path value="Gleason_Score.Total_Gleason_score.value"/>
+         <short value="Total Gleason score"/>
+         <definition value="The sum of the primary and secondary Gleason grades."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Gleason_Score.Total_Gleason_score.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Gleason_Score.Gleason_Grade_Group">
+         <path value="Gleason_Score.Gleason_Grade_Group"/>
+         <short value="Gleason Grade Group"/>
+         <definition value="The Gleason Grade Group."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Gleason_Score.Gleason_Grade_Group"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Gleason_Score.Gleason_Grade_Group.value">
+         <path value="Gleason_Score.Gleason_Grade_Group.value"/>
+         <short value="Gleason Grade Group"/>
+         <definition value="The Gleason Grade Group."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Gleason_Score.Gleason_Grade_Group.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

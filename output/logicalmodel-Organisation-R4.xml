@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Organisation-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-organisation-R4"/>
+   <version value="0"/>
+   <name value="Organisation"/>
+   <title value="Organisation"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="An entity comprising one or more people and having a particular purpose."/>
+   <purpose value="To record details about an organisation as they are known or understood in the course of clinical documentation."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Organisation">
+         <path value="Organisation"/>
+         <short value="Organisation"/>
+         <definition value="An entity comprising one or more people and having a particular purpose."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Organisation"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Organisation.Name">
+         <path value="Organisation.Name"/>
+         <short value="Name"/>
+         <definition value="The unstructured name or label for the organisation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Organisation.Name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Organisation.Name.value">
+         <path value="Organisation.Name.value"/>
+         <short value="Name"/>
+         <definition value="The unstructured name or label for the organisation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Organisation.Name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Organisation.Identifier">
+         <path value="Organisation.Identifier"/>
+         <short value="Identifier"/>
+         <definition value="Identifier associated with the organisation."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Organisation.Identifier"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Organisation.Identifier.value_DV_IDENTIFIER">
+         <path value="Organisation.Identifier.value_DV_IDENTIFIER"/>
+         <short value="Identifier"/>
+         <definition value="Identifier associated with the organisation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Organisation.Identifier.value_DV_IDENTIFIER"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Organisation.Identifier.value_DV_TEXT">
+         <path value="Organisation.Identifier.value_DV_TEXT"/>
+         <short value="Identifier"/>
+         <definition value="Identifier associated with the organisation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Organisation.Identifier.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Organisation.Role">
+         <path value="Organisation.Role"/>
+         <short value="Role"/>
+         <definition value="The relationship or role of the organisation to the individual or subject of care."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Organisation.Role"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Organisation.Role.value">
+         <path value="Organisation.Role.value"/>
+         <short value="Role"/>
+         <definition value="The relationship or role of the organisation to the individual or subject of care."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Organisation.Role.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Organisation.Address">
+         <path value="Organisation.Address"/>
+         <short value="Address"/>
+         <definition value="Details about an address for the organisation."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Organisation.Address"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Organisation.Electronic_communication">
+         <path value="Organisation.Electronic_communication"/>
+         <short value="Electronic communication"/>
+         <definition value="Details about one or more types of electronic communication for the organisation."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Organisation.Electronic_communication"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Organisation.Contact_person">
+         <path value="Organisation.Contact_person"/>
+         <short value="Contact person"/>
+         <definition value="Details about one or more people within the organisation."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Organisation.Contact_person"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Organisation.Parent_organisation">
+         <path value="Organisation.Parent_organisation"/>
+         <short value="Parent organisation"/>
+         <definition value="A larger organisation of which this organisation is a child or subsidiary."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Organisation.Parent_organisation"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Organisation.Additional_details">
+         <path value="Organisation.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="Additional details about the organisation."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Organisation.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Organisation.Comment">
+         <path value="Organisation.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the organisation not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Organisation.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Organisation.Comment.value">
+         <path value="Organisation.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the organisation not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Organisation.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

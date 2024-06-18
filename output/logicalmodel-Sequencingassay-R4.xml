@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Sequencingassay-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-sequencingassay-R4"/>
+   <version value="0"/>
+   <name value="Sequencingassay"/>
+   <title value="Sequencing assay"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Zur Beschreibung der Details der durchgeführten Sequenzierungsanalyse inclusive einer Aufzählung aller getesteten Gene, wenn eine Panelsequenzierung durchgeführt wurde."/>
+   <purpose value="Zur detaillierten Darstellung der Sequenzierungsanalyse an einer Probe inklusive der Aufzählung aller untersuchten Gene bei einer Panelsequenzierung."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Sequencing_assay">
+         <path value="Sequencing_assay"/>
+         <short value="Sequencing assay"/>
+         <definition value="Zur Beschreibung der Details der durchgeführten Sequenzierungsanalyse inclusive einer Aufzählung aller getesteten Gene, wenn eine Panelsequenzierung durchgeführt wurde."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Sequencing_assay"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Sequencing_assay.Sequenzierungstechnologie">
+         <path value="Sequencing_assay.Sequenzierungstechnologie"/>
+         <short value="Sequenzierungstechnologie"/>
+         <definition value="Technologie, die zur Sequenzierung benutzt wurde."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Sequencing_assay.Sequenzierungstechnologie"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Sequencing_assay.Sequenzierungstechnologie.value_DV_CODED_TEXT">
+         <path value="Sequencing_assay.Sequenzierungstechnologie.value_DV_CODED_TEXT"/>
+         <short value="Sequenzierungstechnologie"/>
+         <definition value="Technologie, die zur Sequenzierung benutzt wurde."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Sequencing_assay.Sequenzierungstechnologie.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Sequencing_assay.Sequenzierungstechnologie.value_DV_TEXT">
+         <path value="Sequencing_assay.Sequenzierungstechnologie.value_DV_TEXT"/>
+         <short value="Sequenzierungstechnologie"/>
+         <definition value="Technologie, die zur Sequenzierung benutzt wurde."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Sequencing_assay.Sequenzierungstechnologie.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Sequencing_assay.Sequenzierungs__oder_Analysegerät">
+         <path value="Sequencing_assay.Sequenzierungs__oder_Analysegerät"/>
+         <short value="Sequenzierungs- oder Analysegerät"/>
+         <definition value="Zur Dokumentation von Geräten und Methoden, die zur Sequenzierung oder Ergebnisauswertung genutzt werden."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Sequencing_assay.Sequenzierungs__oder_Analysegerät"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Sequencing_assay.Kit_Name">
+         <path value="Sequencing_assay.Kit_Name"/>
+         <short value="Kit Name"/>
+         <definition value="Name des Kits, das für das Experiment benutzt wurde."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Sequencing_assay.Kit_Name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Sequencing_assay.Kit_Name.value_DV_TEXT">
+         <path value="Sequencing_assay.Kit_Name.value_DV_TEXT"/>
+         <short value="Kit Name"/>
+         <definition value="Name des Kits, das für das Experiment benutzt wurde."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Sequencing_assay.Kit_Name.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Sequencing_assay.Kit_Name.value_DV_CODED_TEXT">
+         <path value="Sequencing_assay.Kit_Name.value_DV_CODED_TEXT"/>
+         <short value="Kit Name"/>
+         <definition value="Name des Kits, das für das Experiment benutzt wurde."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Sequencing_assay.Kit_Name.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Sequencing_assay.Nukleinsäure">
+         <path value="Sequencing_assay.Nukleinsäure"/>
+         <short value="Nukleinsäure"/>
+         <definition value="Der Nukleinsäuretyp, z.B. DNA, RNA oder cf-DNA, der zur Sequenzierung verwendet wird."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Sequencing_assay.Nukleinsäure"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Sequencing_assay.Nukleinsäure.value_DV_TEXT">
+         <path value="Sequencing_assay.Nukleinsäure.value_DV_TEXT"/>
+         <short value="Nukleinsäure"/>
+         <definition value="Der Nukleinsäuretyp, z.B. DNA, RNA oder cf-DNA, der zur Sequenzierung verwendet wird."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Sequencing_assay.Nukleinsäure.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Sequencing_assay.Nukleinsäure.value_DV_CODED_TEXT">
+         <path value="Sequencing_assay.Nukleinsäure.value_DV_CODED_TEXT"/>
+         <short value="Nukleinsäure"/>
+         <definition value="Der Nukleinsäuretyp, z.B. DNA, RNA oder cf-DNA, der zur Sequenzierung verwendet wird."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Sequencing_assay.Nukleinsäure.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Sequencing_assay.Tumorzellgehalt">
+         <path value="Sequencing_assay.Tumorzellgehalt"/>
+         <short value="Tumorzellgehalt"/>
+         <definition value="Angabe des Tumorzellgehalt in Prozent."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Sequencing_assay.Tumorzellgehalt"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Sequencing_assay.Tumorzellgehalt.value">
+         <path value="Sequencing_assay.Tumorzellgehalt.value"/>
+         <short value="Tumorzellgehalt"/>
+         <definition value="Angabe des Tumorzellgehalt in Prozent."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Sequencing_assay.Tumorzellgehalt.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Sequencing_assay.Getestete_Gene">
+         <path value="Sequencing_assay.Getestete_Gene"/>
+         <short value="Getestete Gene"/>
+         <definition value="Liste aller getesteten Gene, wenn eine Panel-Sequenzierung durchgeführt wurde."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Sequencing_assay.Getestete_Gene"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Sequencing_assay.Getestete_Gene.Gensymbol">
+         <path value="Sequencing_assay.Getestete_Gene.Gensymbol"/>
+         <short value="Gensymbol"/>
+         <definition value="Das offizielle Gensymbol, das von der HGNC genehmigt wurde und eine Kurzform des Gennamens ist."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Sequencing_assay.Getestete_Gene.Gensymbol"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Sequencing_assay.Getestete_Gene.Gensymbol.value">
+         <path value="Sequencing_assay.Getestete_Gene.Gensymbol.value"/>
+         <short value="Gensymbol"/>
+         <definition value="Das offizielle Gensymbol, das von der HGNC genehmigt wurde und eine Kurzform des Gennamens ist."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Sequencing_assay.Getestete_Gene.Gensymbol.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Sequencing_assay.Getestete_Gene.Genname">
+         <path value="Sequencing_assay.Getestete_Gene.Genname"/>
+         <short value="Genname"/>
+         <definition value="Der vollständige vom HGNC genehmigte Genname, der den Charakter oder die Funktion des Gens wiedergibt."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Sequencing_assay.Getestete_Gene.Genname"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Sequencing_assay.Getestete_Gene.Genname.value">
+         <path value="Sequencing_assay.Getestete_Gene.Genname.value"/>
+         <short value="Genname"/>
+         <definition value="Der vollständige vom HGNC genehmigte Genname, der den Charakter oder die Funktion des Gens wiedergibt."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Sequencing_assay.Getestete_Gene.Genname.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Sequencing_assay.Getestete_Gene.Referenzsequenz_des_Gens">
+         <path value="Sequencing_assay.Getestete_Gene.Referenzsequenz_des_Gens"/>
+         <short value="Referenzsequenz des Gens"/>
+         <definition value="Strukturierte Details zur Referenzsequenz des Gens."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Sequencing_assay.Getestete_Gene.Referenzsequenz_des_Gens"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Sequencing_assay.Getestete_Region">
+         <path value="Sequencing_assay.Getestete_Region"/>
+         <short value="Getestete Region"/>
+         <definition value="Liste aller getesteten Regionen, wenn eine Panel-Sequenzierung durchgeführt wurde."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Sequencing_assay.Getestete_Region"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Sequencing_assay.Getestete_Region.Chromosomale_Lokalisation">
+         <path value="Sequencing_assay.Getestete_Region.Chromosomale_Lokalisation"/>
+         <short value="Chromosomale Lokalisation"/>
+         <definition value="Chromosomale Lokalisation der getesteten Region."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Sequencing_assay.Getestete_Region.Chromosomale_Lokalisation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Sequencing_assay.Getestete_Region.Chromosomale_Lokalisation.value_DV_TEXT">
+         <path value="Sequencing_assay.Getestete_Region.Chromosomale_Lokalisation.value_DV_TEXT"/>
+         <short value="Chromosomale Lokalisation"/>
+         <definition value="Chromosomale Lokalisation der getesteten Region."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Sequencing_assay.Getestete_Region.Chromosomale_Lokalisation.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Sequencing_assay.Getestete_Region.Chromosomale_Lokalisation.value_DV_CODED_TEXT">
+         <path value="Sequencing_assay.Getestete_Region.Chromosomale_Lokalisation.value_DV_CODED_TEXT"/>
+         <short value="Chromosomale Lokalisation"/>
+         <definition value="Chromosomale Lokalisation der getesteten Region."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Sequencing_assay.Getestete_Region.Chromosomale_Lokalisation.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Sequencing_assay.Getestete_Region.Start">
+         <path value="Sequencing_assay.Getestete_Region.Start"/>
+         <short value="Start"/>
+         <definition value="Startposition der getesteten Region."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Sequencing_assay.Getestete_Region.Start"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Sequencing_assay.Getestete_Region.Start.value">
+         <path value="Sequencing_assay.Getestete_Region.Start.value"/>
+         <short value="Start"/>
+         <definition value="Startposition der getesteten Region."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Sequencing_assay.Getestete_Region.Start.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Sequencing_assay.Getestete_Region.Ende">
+         <path value="Sequencing_assay.Getestete_Region.Ende"/>
+         <short value="Ende"/>
+         <definition value="Endposition der getesteten Region."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Sequencing_assay.Getestete_Region.Ende"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Sequencing_assay.Getestete_Region.Ende.value">
+         <path value="Sequencing_assay.Getestete_Region.Ende.value"/>
+         <short value="Ende"/>
+         <definition value="Endposition der getesteten Region."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Sequencing_assay.Getestete_Region.Ende.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Sequencing_assay.Getestete_Region.Referenzsequenz_der_Region">
+         <path value="Sequencing_assay.Getestete_Region.Referenzsequenz_der_Region"/>
+         <short value="Referenzsequenz der Region"/>
+         <definition value="Strukturierte Details zur Referenzsequenz der Region."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Sequencing_assay.Getestete_Region.Referenzsequenz_der_Region"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Sequencing_assay.Erweiterungen">
+         <path value="Sequencing_assay.Erweiterungen"/>
+         <short value="Erweiterungen"/>
+         <definition value="Zusätzliche Details, die aufgezeichnet werden sollen."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Sequencing_assay.Erweiterungen"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Sequencing_assay.Kommentar">
+         <path value="Sequencing_assay.Kommentar"/>
+         <short value="Kommentar"/>
+         <definition value="Kommentar zum Sequenzierungsassay, der nicht in anderen Feldern erfasst wurde."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Sequencing_assay.Kommentar"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Sequencing_assay.Kommentar.value">
+         <path value="Sequencing_assay.Kommentar.value"/>
+         <short value="Kommentar"/>
+         <definition value="Kommentar zum Sequenzierungsassay, der nicht in anderen Feldern erfasst wurde."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Sequencing_assay.Kommentar.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

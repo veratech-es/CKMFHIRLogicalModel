@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Documententrymetadata-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-documententrymetadata-R4"/>
+   <version value="0"/>
+   <name value="Documententrymetadata"/>
+   <title value="Document Entry Metadata"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Metadata associated with the documents within the XDM message (XDSDocumentEntry) as defined in the NEHTA CDA Packaging Specification."/>
+   <purpose value="Record metadata associated with the documents within the XDM message."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Document_Entry_Metadata">
+         <path value="Document_Entry_Metadata"/>
+         <short value="Document Entry Metadata"/>
+         <definition value="Metadata associated with the documents within the XDM message (XDSDocumentEntry) as defined in the NEHTA CDA Packaging Specification."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Document_Entry_Metadata"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Document_Entry_Metadata.Document_Creation_Time">
+         <path value="Document_Entry_Metadata.Document_Creation_Time"/>
+         <short value="Document Creation Time"/>
+         <definition value="Date and/or Time the document was created in the system of origin."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Document_Entry_Metadata.Document_Creation_Time"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Document_Entry_Metadata.Document_Creation_Time.value">
+         <path value="Document_Entry_Metadata.Document_Creation_Time.value"/>
+         <short value="Document Creation Time"/>
+         <definition value="Date and/or Time the document was created in the system of origin."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Document_Entry_Metadata.Document_Creation_Time.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Document_Entry_Metadata.Encounter_ID">
+         <path value="Document_Entry_Metadata.Encounter_ID"/>
+         <short value="Encounter ID"/>
+         <definition value="Unique ID for this event from the CIS (note, source of info is the SEHR)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Document_Entry_Metadata.Encounter_ID"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Document_Entry_Metadata.Encounter_ID.value_DV_TEXT">
+         <path value="Document_Entry_Metadata.Encounter_ID.value_DV_TEXT"/>
+         <short value="Encounter ID"/>
+         <definition value="Unique ID for this event from the CIS (note, source of info is the SEHR)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Document_Entry_Metadata.Encounter_ID.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Document_Entry_Metadata.Encounter_ID.value_DV_IDENTIFIER">
+         <path value="Document_Entry_Metadata.Encounter_ID.value_DV_IDENTIFIER"/>
+         <short value="Encounter ID"/>
+         <definition value="Unique ID for this event from the CIS (note, source of info is the SEHR)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Document_Entry_Metadata.Encounter_ID.value_DV_IDENTIFIER"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

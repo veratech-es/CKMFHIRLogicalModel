@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Mediafile-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-mediafile-R4"/>
+   <version value="0"/>
+   <name value="Mediafile"/>
+   <title value="Media file"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="A media file that is acquired or used as part of the healthcare process, and associated metadata."/>
+   <purpose value="To record a media file that is acquired or used as part of the healthcare process, and details about associated metadata."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Media_file">
+         <path value="Media_file"/>
+         <short value="Media file"/>
+         <definition value="A media file that is acquired or used as part of the healthcare process, and associated metadata."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Media_file"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Media_file.Content">
+         <path value="Media_file.Content"/>
+         <short value="Content"/>
+         <definition value="Digital representation of the media file."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Media_file.Content"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Media_file.Content.value">
+         <path value="Media_file.Content.value"/>
+         <short value="Content"/>
+         <definition value="Digital representation of the media file."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Media_file.Content.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Attachment"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Media_file.Content_name">
+         <path value="Media_file.Content_name"/>
+         <short value="Content name"/>
+         <definition value="Descriptive name or title for the media file."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Media_file.Content_name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Media_file.Content_name.value">
+         <path value="Media_file.Content_name.value"/>
+         <short value="Content name"/>
+         <definition value="Descriptive name or title for the media file."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Media_file.Content_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Media_file.Identifier">
+         <path value="Media_file.Identifier"/>
+         <short value="Identifier"/>
+         <definition value="Unique ID for the media file."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Media_file.Identifier"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Media_file.Identifier.value_DV_IDENTIFIER">
+         <path value="Media_file.Identifier.value_DV_IDENTIFIER"/>
+         <short value="Identifier"/>
+         <definition value="Unique ID for the media file."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Media_file.Identifier.value_DV_IDENTIFIER"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Media_file.Identifier.value_DV_TEXT">
+         <path value="Media_file.Identifier.value_DV_TEXT"/>
+         <short value="Identifier"/>
+         <definition value="Unique ID for the media file."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Media_file.Identifier.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Media_file.Description">
+         <path value="Media_file.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the media file."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Media_file.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Media_file.Description.value">
+         <path value="Media_file.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the media file."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Media_file.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Media_file.Created">
+         <path value="Media_file.Created"/>
+         <short value="Created"/>
+         <definition value="The date/time, partial date or period when the media file was generated or authored."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Media_file.Created"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Media_file.Created.value_DV_DATE_TIME">
+         <path value="Media_file.Created.value_DV_DATE_TIME"/>
+         <short value="Created"/>
+         <definition value="The date/time, partial date or period when the media file was generated or authored."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Media_file.Created.value_DV_DATE_TIME"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Media_file.Created.value_DV_INTERVAL_DV_DATE_TIME_">
+         <path value="Media_file.Created.value_DV_INTERVAL_DV_DATE_TIME_"/>
+         <short value="Created"/>
+         <definition value="The date/time, partial date or period when the media file was generated or authored."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Media_file.Created.value_DV_INTERVAL_DV_DATE_TIME_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Media_file.Creator">
+         <path value="Media_file.Creator"/>
+         <short value="Creator"/>
+         <definition value="Details about the individual or organisation who generated or authored the media file."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Media_file.Creator"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Media_file.Source_device">
+         <path value="Media_file.Source_device"/>
+         <short value="Source device"/>
+         <definition value="Details about the device used to generate or author the media file."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Media_file.Source_device"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Media_file.Additional_details">
+         <path value="Media_file.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="Additional structured details about the media file."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Media_file.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Media_file.Comment">
+         <path value="Media_file.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the media file not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Media_file.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Media_file.Comment.value">
+         <path value="Media_file.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the media file not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Media_file.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

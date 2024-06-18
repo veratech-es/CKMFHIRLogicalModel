@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Genomicrepeatedsequencevariant-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-genomicrepeatedsequencevariant-R4"/>
+   <version value="0"/>
+   <name value="Genomicrepeatedsequencevariant"/>
+   <title value="Genomic repeated sequence variant"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="A human genetic sequence change where, compared to a genomic reference sequence, a segment of one or more nucleotides (the repeat unit) is present several times, one after the other."/>
+   <purpose value="To record the details about a repeated sequence variant of human DNA, observed in a genomic sequence."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Genomic_repeated_sequence_variant">
+         <path value="Genomic_repeated_sequence_variant"/>
+         <short value="Genomic repeated sequence variant"/>
+         <definition value="A human genetic sequence change where, compared to a genomic reference sequence, a segment of one or more nucleotides (the repeat unit) is present several times, one after the other."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_repeated_sequence_variant"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_repeated_sequence_variant.Start_position">
+         <path value="Genomic_repeated_sequence_variant.Start_position"/>
+         <short value="Start position"/>
+         <definition value="Position of the first nucleotide of the repeated range."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_repeated_sequence_variant.Start_position"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Genomic_repeated_sequence_variant.Start_position.value">
+         <path value="Genomic_repeated_sequence_variant.Start_position.value"/>
+         <short value="Start position"/>
+         <definition value="Position of the first nucleotide of the repeated range."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_repeated_sequence_variant.Start_position.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_repeated_sequence_variant.End_position">
+         <path value="Genomic_repeated_sequence_variant.End_position"/>
+         <short value="End position"/>
+         <definition value="Position of the last nucleotide of the repeated range."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_repeated_sequence_variant.End_position"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Genomic_repeated_sequence_variant.End_position.value">
+         <path value="Genomic_repeated_sequence_variant.End_position.value"/>
+         <short value="End position"/>
+         <definition value="Position of the last nucleotide of the repeated range."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_repeated_sequence_variant.End_position.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_repeated_sequence_variant.Repeat_unit">
+         <path value="Genomic_repeated_sequence_variant.Repeat_unit"/>
+         <short value="Repeat unit"/>
+         <definition value="A repeated unit consisting of a repeated sequence and a copy number."/>
+         <min value="1"/>
+         <max value="*"/>
+         <base>
+            <path value="Genomic_repeated_sequence_variant.Repeat_unit"/>
+            <min value="1"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_repeated_sequence_variant.Repeat_unit.Repeat_order">
+         <path value="Genomic_repeated_sequence_variant.Repeat_unit.Repeat_order"/>
+         <short value="Repeat order"/>
+         <definition value="The intended position of this repeat unit within the overall sequence of repeat units."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_repeated_sequence_variant.Repeat_unit.Repeat_order"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Genomic_repeated_sequence_variant.Repeat_unit.Repeat_order.value">
+         <path value="Genomic_repeated_sequence_variant.Repeat_unit.Repeat_order.value"/>
+         <short value="Repeat order"/>
+         <definition value="The intended position of this repeat unit within the overall sequence of repeat units."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_repeated_sequence_variant.Repeat_unit.Repeat_order.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_repeated_sequence_variant.Repeat_unit.Repeated_sequence">
+         <path value="Genomic_repeated_sequence_variant.Repeat_unit.Repeated_sequence"/>
+         <short value="Repeated sequence"/>
+         <definition value="The sequence of nucleotides that has been repeated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_repeated_sequence_variant.Repeat_unit.Repeated_sequence"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Genomic_repeated_sequence_variant.Repeat_unit.Repeated_sequence.value">
+         <path value="Genomic_repeated_sequence_variant.Repeat_unit.Repeated_sequence.value"/>
+         <short value="Repeated sequence"/>
+         <definition value="The sequence of nucleotides that has been repeated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_repeated_sequence_variant.Repeat_unit.Repeated_sequence.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_repeated_sequence_variant.Repeat_unit.Copy_number">
+         <path value="Genomic_repeated_sequence_variant.Repeat_unit.Copy_number"/>
+         <short value="Copy number"/>
+         <definition value="The total number of times the 'Repeated sequence' was repeated."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_repeated_sequence_variant.Repeat_unit.Copy_number"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Genomic_repeated_sequence_variant.Repeat_unit.Copy_number.value">
+         <path value="Genomic_repeated_sequence_variant.Repeat_unit.Copy_number.value"/>
+         <short value="Copy number"/>
+         <definition value="The total number of times the 'Repeated sequence' was repeated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_repeated_sequence_variant.Repeat_unit.Copy_number.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_repeated_sequence_variant.Reference_sequence">
+         <path value="Genomic_repeated_sequence_variant.Reference_sequence"/>
+         <short value="Reference sequence"/>
+         <definition value="The sequence file used as a reference to describe this variant."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Genomic_repeated_sequence_variant.Reference_sequence"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Anatomicallocation-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-anatomicallocation-R4"/>
+   <version value="0"/>
+   <name value="Anatomicallocation"/>
+   <title value="Anatomical location"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="A physical site on or within the human body."/>
+   <purpose value="To identify and record structured details about a single physical site on, or within, the human body using macroscopic anatomical terms."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Anatomical_location">
+         <path value="Anatomical_location"/>
+         <short value="Anatomical location"/>
+         <definition value="A physical site on or within the human body."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Anatomical_location"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Anatomical_location.Body_site_name">
+         <path value="Anatomical_location.Body_site_name"/>
+         <short value="Body site name"/>
+         <definition value="Identification of a single physical site either on, or within, the human body."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Anatomical_location.Body_site_name"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Anatomical_location.Body_site_name.value">
+         <path value="Anatomical_location.Body_site_name.value"/>
+         <short value="Body site name"/>
+         <definition value="Identification of a single physical site either on, or within, the human body."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Anatomical_location.Body_site_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Anatomical_location.Specific_site">
+         <path value="Anatomical_location.Specific_site"/>
+         <short value="Specific site"/>
+         <definition value="Additional detail using a specific region or a point on, or within, the identified body site."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Anatomical_location.Specific_site"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Anatomical_location.Specific_site.value">
+         <path value="Anatomical_location.Specific_site.value"/>
+         <short value="Specific site"/>
+         <definition value="Additional detail using a specific region or a point on, or within, the identified body site."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Anatomical_location.Specific_site.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Anatomical_location.Laterality">
+         <path value="Anatomical_location.Laterality"/>
+         <short value="Laterality"/>
+         <definition value="The side of the body on which the identified  body site is located."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Anatomical_location.Laterality"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Anatomical_location.Laterality.value">
+         <path value="Anatomical_location.Laterality.value"/>
+         <short value="Laterality"/>
+         <definition value="The side of the body on which the identified  body site is located."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Anatomical_location.Laterality.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Anatomical_location.Aspect">
+         <path value="Anatomical_location.Aspect"/>
+         <short value="Aspect"/>
+         <definition value="Qualifying detail about the specific aspect of the identified body site."/>
+         <min value="0"/>
+         <max value="2"/>
+         <base>
+            <path value="Anatomical_location.Aspect"/>
+            <min value="0"/>
+            <max value="2"/>
+         </base>
+      </element>
+      <element id="Anatomical_location.Aspect.value_DV_CODED_TEXT">
+         <path value="Anatomical_location.Aspect.value_DV_CODED_TEXT"/>
+         <short value="Aspect"/>
+         <definition value="Qualifying detail about the specific aspect of the identified body site."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Anatomical_location.Aspect.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Anatomical_location.Aspect.value_DV_TEXT">
+         <path value="Anatomical_location.Aspect.value_DV_TEXT"/>
+         <short value="Aspect"/>
+         <definition value="Qualifying detail about the specific aspect of the identified body site."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Anatomical_location.Aspect.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Anatomical_location.Anatomical_Line">
+         <path value="Anatomical_location.Anatomical_Line"/>
+         <short value="Anatomical Line"/>
+         <definition value="Additional detail using theoretical lines drawn through anatomical structures used to provide a consistent reference point on the human body."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Anatomical_location.Anatomical_Line"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Anatomical_location.Anatomical_Line.value_DV_CODED_TEXT">
+         <path value="Anatomical_location.Anatomical_Line.value_DV_CODED_TEXT"/>
+         <short value="Anatomical Line"/>
+         <definition value="Additional detail using theoretical lines drawn through anatomical structures used to provide a consistent reference point on the human body."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Anatomical_location.Anatomical_Line.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Anatomical_location.Anatomical_Line.value_DV_TEXT">
+         <path value="Anatomical_location.Anatomical_Line.value_DV_TEXT"/>
+         <short value="Anatomical Line"/>
+         <definition value="Additional detail using theoretical lines drawn through anatomical structures used to provide a consistent reference point on the human body."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Anatomical_location.Anatomical_Line.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Anatomical_location.Description">
+         <path value="Anatomical_location.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description that can be used to further refine and support the 'Body site name'."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Anatomical_location.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Anatomical_location.Description.value">
+         <path value="Anatomical_location.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description that can be used to further refine and support the 'Body site name'."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Anatomical_location.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Anatomical_location.Alternative_structure">
+         <path value="Anatomical_location.Alternative_structure"/>
+         <short value="Alternative structure"/>
+         <definition value="Additional detail about the anatomical site using alternative approaches to describe the same body site."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Anatomical_location.Alternative_structure"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Anatomical_location.Multimedia_representation">
+         <path value="Anatomical_location.Multimedia_representation"/>
+         <short value="Multimedia representation"/>
+         <definition value="Image or other media used to support identification of the body site."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Anatomical_location.Multimedia_representation"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

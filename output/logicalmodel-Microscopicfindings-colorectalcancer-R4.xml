@@ -1,0 +1,1242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Microscopicfindings-colorectalcancer-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-microscopicfindings-colorectalcancer-R4"/>
+   <version value="0"/>
+   <name value="Microscopicfindings-colorectalcancer"/>
+   <title value="Microscopic findings - Colorectal cancer"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Microscopic anatomical pathology findings related to colorectal cancer."/>
+   <purpose value="To record detailed findings about colorectal cancer found on microscopic histopathological examination."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Microscopic_findings___Colorectal_cancer">
+         <path value="Microscopic_findings___Colorectal_cancer"/>
+         <short value="Microscopic findings - Colorectal cancer"/>
+         <definition value="Microscopic anatomical pathology findings related to colorectal cancer."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Histological_grading">
+         <path value="Microscopic_findings___Colorectal_cancer.Histological_grading"/>
+         <short value="Histological grading"/>
+         <definition value="Histological grading."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Histological_grading"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Histological_grading.Grade">
+         <path value="Microscopic_findings___Colorectal_cancer.Histological_grading.Grade"/>
+         <short value="Grade"/>
+         <definition value="Histological grade of the tumour."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Histological_grading.Grade"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Histological_grading.Grade.value">
+         <path value="Microscopic_findings___Colorectal_cancer.Histological_grading.Grade.value"/>
+         <short value="Grade"/>
+         <definition value="Histological grade of the tumour."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Histological_grading.Grade.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Histological_grading.Comment">
+         <path value="Microscopic_findings___Colorectal_cancer.Histological_grading.Comment"/>
+         <short value="Comment"/>
+         <definition value="A text comment on histological grading."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Histological_grading.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Histological_grading.Comment.value">
+         <path value="Microscopic_findings___Colorectal_cancer.Histological_grading.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="A text comment on histological grading."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Histological_grading.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Local_invasion">
+         <path value="Microscopic_findings___Colorectal_cancer.Local_invasion"/>
+         <short value="Local invasion"/>
+         <definition value="Direct invasion of local tissue by tumour."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Local_invasion"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Local_invasion.Local_invasion_classification">
+         <path value="Microscopic_findings___Colorectal_cancer.Local_invasion.Local_invasion_classification"/>
+         <short value="Local invasion classification"/>
+         <definition value="Local invasion of tumour. Scored using the pT element of the TNM classification."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Local_invasion.Local_invasion_classification"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Local_invasion.Local_invasion_classification.value">
+         <path value="Microscopic_findings___Colorectal_cancer.Local_invasion.Local_invasion_classification.value"/>
+         <short value="Local invasion classification"/>
+         <definition value="Local invasion of tumour. Scored using the pT element of the TNM classification."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Local_invasion.Local_invasion_classification.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Local_invasion.Depth_of_invasion">
+         <path value="Microscopic_findings___Colorectal_cancer.Local_invasion.Depth_of_invasion"/>
+         <short value="Depth of invasion"/>
+         <definition value="The subdivision of pT3 that applies to the tumour."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Local_invasion.Depth_of_invasion"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Local_invasion.Depth_of_invasion.value">
+         <path value="Microscopic_findings___Colorectal_cancer.Local_invasion.Depth_of_invasion.value"/>
+         <short value="Depth of invasion"/>
+         <definition value="The subdivision of pT3 that applies to the tumour."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Local_invasion.Depth_of_invasion.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Local_invasion.Distance_of_invasion">
+         <path value="Microscopic_findings___Colorectal_cancer.Local_invasion.Distance_of_invasion"/>
+         <short value="Distance of invasion"/>
+         <definition value="Distance of tumour invasion beyond the muscularis propria."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Local_invasion.Distance_of_invasion"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Local_invasion.Distance_of_invasion.value">
+         <path value="Microscopic_findings___Colorectal_cancer.Local_invasion.Distance_of_invasion.value"/>
+         <short value="Distance of invasion"/>
+         <definition value="Distance of tumour invasion beyond the muscularis propria."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Local_invasion.Distance_of_invasion.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Surgical_resection_margins">
+         <path value="Microscopic_findings___Colorectal_cancer.Surgical_resection_margins"/>
+         <short value="Surgical resection margins"/>
+         <definition value="Findings related to surgical resection margins."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Surgical_resection_margins"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Surgical_resection_margins.Surgical_resection_margin">
+         <path value="Microscopic_findings___Colorectal_cancer.Surgical_resection_margins.Surgical_resection_margin"/>
+         <short value="Surgical resection margin"/>
+         <definition value="Details of a single surgical resection margin."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Surgical_resection_margins.Surgical_resection_margin"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.In_situ_carcinoma_findings">
+         <path value="Microscopic_findings___Colorectal_cancer.In_situ_carcinoma_findings"/>
+         <short value="In-situ carcinoma findings"/>
+         <definition value="Findings related to in-situ carcinoma."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.In_situ_carcinoma_findings"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.In_situ_carcinoma_findings.In_situ_carcinoma">
+         <path value="Microscopic_findings___Colorectal_cancer.In_situ_carcinoma_findings.In_situ_carcinoma"/>
+         <short value="In-situ carcinoma"/>
+         <definition value="Findings of in-situ carcinoma."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.In_situ_carcinoma_findings.In_situ_carcinoma"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.In_situ_carcinoma_findings.In_situ_carcinoma.value">
+         <path value="Microscopic_findings___Colorectal_cancer.In_situ_carcinoma_findings.In_situ_carcinoma.value"/>
+         <short value="In-situ carcinoma"/>
+         <definition value="Findings of in-situ carcinoma."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.In_situ_carcinoma_findings.In_situ_carcinoma.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.In_situ_carcinoma_findings.Description">
+         <path value="Microscopic_findings___Colorectal_cancer.In_situ_carcinoma_findings.Description"/>
+         <short value="Description"/>
+         <definition value="A text description of in-situ carcinoma."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.In_situ_carcinoma_findings.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.In_situ_carcinoma_findings.Description.value">
+         <path value="Microscopic_findings___Colorectal_cancer.In_situ_carcinoma_findings.Description.value"/>
+         <short value="Description"/>
+         <definition value="A text description of in-situ carcinoma."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.In_situ_carcinoma_findings.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Lymph_node_findings">
+         <path value="Microscopic_findings___Colorectal_cancer.Lymph_node_findings"/>
+         <short value="Lymph node findings"/>
+         <definition value="Findings related to the involvement of tumour in lymph nodes."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Lymph_node_findings"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Lymph_node_findings.Lymph_node_detail">
+         <path value="Microscopic_findings___Colorectal_cancer.Lymph_node_findings.Lymph_node_detail"/>
+         <short value="Lymph node detail"/>
+         <definition value="Findings related to the involvement of tumour in lymph nodes."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Lymph_node_findings.Lymph_node_detail"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Lymph_node_findings.Nodal_involvement_classification">
+         <path value="Microscopic_findings___Colorectal_cancer.Lymph_node_findings.Nodal_involvement_classification"/>
+         <short value="Nodal involvement classification"/>
+         <definition value="An estimate of nodal involvement using the pN element of TNM classification."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Lymph_node_findings.Nodal_involvement_classification"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Lymph_node_findings.Nodal_involvement_classification.value_DV_CODED_TEXT">
+         <path value="Microscopic_findings___Colorectal_cancer.Lymph_node_findings.Nodal_involvement_classification.value_DV_CODED_TEXT"/>
+         <short value="Nodal involvement classification"/>
+         <definition value="An estimate of nodal involvement using the pN element of TNM classification."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Lymph_node_findings.Nodal_involvement_classification.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Lymph_node_findings.Nodal_involvement_classification.value_DV_TEXT">
+         <path value="Microscopic_findings___Colorectal_cancer.Lymph_node_findings.Nodal_involvement_classification.value_DV_TEXT"/>
+         <short value="Nodal involvement classification"/>
+         <definition value="An estimate of nodal involvement using the pN element of TNM classification."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Lymph_node_findings.Nodal_involvement_classification.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Lymph_node_findings.Distance_from_margin">
+         <path value="Microscopic_findings___Colorectal_cancer.Lymph_node_findings.Distance_from_margin"/>
+         <short value="Distance from margin"/>
+         <definition value="Distance of nearest involved node to the circumferential margin."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Lymph_node_findings.Distance_from_margin"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Lymph_node_findings.Distance_from_margin.value">
+         <path value="Microscopic_findings___Colorectal_cancer.Lymph_node_findings.Distance_from_margin.value"/>
+         <short value="Distance from margin"/>
+         <definition value="Distance of nearest involved node to the circumferential margin."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Lymph_node_findings.Distance_from_margin.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Lymph_node_findings.Comment">
+         <path value="Microscopic_findings___Colorectal_cancer.Lymph_node_findings.Comment"/>
+         <short value="Comment"/>
+         <definition value="An additional text comment on lymph node findings."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Lymph_node_findings.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Lymph_node_findings.Comment.value">
+         <path value="Microscopic_findings___Colorectal_cancer.Lymph_node_findings.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="An additional text comment on lymph node findings."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Lymph_node_findings.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Status_of_apical_lymph_node">
+         <path value="Microscopic_findings___Colorectal_cancer.Status_of_apical_lymph_node"/>
+         <short value="Status of apical lymph node"/>
+         <definition value="Status of the apical lymph node."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Status_of_apical_lymph_node"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Status_of_apical_lymph_node.value">
+         <path value="Microscopic_findings___Colorectal_cancer.Status_of_apical_lymph_node.value"/>
+         <short value="Status of apical lymph node"/>
+         <definition value="Status of the apical lymph node."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Status_of_apical_lymph_node.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Local_tissue_invasion">
+         <path value="Microscopic_findings___Colorectal_cancer.Local_tissue_invasion"/>
+         <short value="Local tissue invasion"/>
+         <definition value="Findings related to local tissue invasion by tumour."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Local_tissue_invasion"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Local_tissue_invasion.Venous_(large_vessel)_invasion">
+         <path value="Microscopic_findings___Colorectal_cancer.Local_tissue_invasion.Venous_(large_vessel)_invasion"/>
+         <short value="Venous (large vessel) invasion"/>
+         <definition value="Details of venous (large vessel) invasion by tumour."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Local_tissue_invasion.Venous_(large_vessel)_invasion"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Local_tissue_invasion.Lymphatic_(small_vessel)_invasion">
+         <path value="Microscopic_findings___Colorectal_cancer.Local_tissue_invasion.Lymphatic_(small_vessel)_invasion"/>
+         <short value="Lymphatic (small vessel) invasion"/>
+         <definition value="Details of lymphatic (small vessel)  invasion by tumour."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Local_tissue_invasion.Lymphatic_(small_vessel)_invasion"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Local_tissue_invasion.Perineural_invasion">
+         <path value="Microscopic_findings___Colorectal_cancer.Local_tissue_invasion.Perineural_invasion"/>
+         <short value="Perineural invasion"/>
+         <definition value="Details of perineural invasion by tumour."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Local_tissue_invasion.Perineural_invasion"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Local_tissue_invasion.Discontinuous_extramural_deposit_findings">
+         <path value="Microscopic_findings___Colorectal_cancer.Local_tissue_invasion.Discontinuous_extramural_deposit_findings"/>
+         <short value="Discontinuous extramural deposit findings"/>
+         <definition value="Findings related to discontinuous extramural tumour deposits."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Local_tissue_invasion.Discontinuous_extramural_deposit_findings"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Local_tissue_invasion.Discontinuous_extramural_deposit_findings.Discontinuous_extramural_tumour_deposits">
+         <path value="Microscopic_findings___Colorectal_cancer.Local_tissue_invasion.Discontinuous_extramural_deposit_findings.Discontinuous_extramural_tumour_deposits"/>
+         <short value="Discontinuous extramural tumour deposits"/>
+         <definition value="Findings of discontinuous extramural tumour deposits."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Local_tissue_invasion.Discontinuous_extramural_deposit_findings.Discontinuous_extramural_tumour_deposits"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Local_tissue_invasion.Discontinuous_extramural_deposit_findings.Discontinuous_extramural_tumour_deposits.value">
+         <path value="Microscopic_findings___Colorectal_cancer.Local_tissue_invasion.Discontinuous_extramural_deposit_findings.Discontinuous_extramural_tumour_deposits.value"/>
+         <short value="Discontinuous extramural tumour deposits"/>
+         <definition value="Findings of discontinuous extramural tumour deposits."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Local_tissue_invasion.Discontinuous_extramural_deposit_findings.Discontinuous_extramural_tumour_deposits.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Local_tissue_invasion.Discontinuous_extramural_deposit_findings.Discontinuous_extramural_deposits">
+         <path value="Microscopic_findings___Colorectal_cancer.Local_tissue_invasion.Discontinuous_extramural_deposit_findings.Discontinuous_extramural_deposits"/>
+         <short value="Discontinuous extramural deposits"/>
+         <definition value="Details of discontinuous extramural tumour deposits."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Local_tissue_invasion.Discontinuous_extramural_deposit_findings.Discontinuous_extramural_deposits"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Local_tissue_invasion.Discontinuous_extramural_deposit_findings.Distance_from_margin">
+         <path value="Microscopic_findings___Colorectal_cancer.Local_tissue_invasion.Discontinuous_extramural_deposit_findings.Distance_from_margin"/>
+         <short value="Distance from margin"/>
+         <definition value="Distance from circumferential margin to extramural deposits."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Local_tissue_invasion.Discontinuous_extramural_deposit_findings.Distance_from_margin"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Local_tissue_invasion.Discontinuous_extramural_deposit_findings.Distance_from_margin.value">
+         <path value="Microscopic_findings___Colorectal_cancer.Local_tissue_invasion.Discontinuous_extramural_deposit_findings.Distance_from_margin.value"/>
+         <short value="Distance from margin"/>
+         <definition value="Distance from circumferential margin to extramural deposits."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Local_tissue_invasion.Discontinuous_extramural_deposit_findings.Distance_from_margin.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Distant_metastasis_findings">
+         <path value="Microscopic_findings___Colorectal_cancer.Distant_metastasis_findings"/>
+         <short value="Distant metastasis findings"/>
+         <definition value="Findings related to distant metastasis."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Distant_metastasis_findings"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Distant_metastasis_findings.Distant_metastasis">
+         <path value="Microscopic_findings___Colorectal_cancer.Distant_metastasis_findings.Distant_metastasis"/>
+         <short value="Distant metastasis"/>
+         <definition value="Findings of distant metastasis."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Distant_metastasis_findings.Distant_metastasis"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Distant_metastasis_findings.Distant_metastasis.value">
+         <path value="Microscopic_findings___Colorectal_cancer.Distant_metastasis_findings.Distant_metastasis.value"/>
+         <short value="Distant metastasis"/>
+         <definition value="Findings of distant metastasis."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Distant_metastasis_findings.Distant_metastasis.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Distant_metastasis_findings.Sites_">
+         <path value="Microscopic_findings___Colorectal_cancer.Distant_metastasis_findings.Sites_"/>
+         <short value="Sites "/>
+         <definition value="Details of sites of proven distant metastases."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Distant_metastasis_findings.Sites_"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Distant_metastasis_findings.Description">
+         <path value="Microscopic_findings___Colorectal_cancer.Distant_metastasis_findings.Description"/>
+         <short value="Description"/>
+         <definition value="A text description of distant metastases."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Distant_metastasis_findings.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Distant_metastasis_findings.Description.value">
+         <path value="Microscopic_findings___Colorectal_cancer.Distant_metastasis_findings.Description.value"/>
+         <short value="Description"/>
+         <definition value="A text description of distant metastases."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Distant_metastasis_findings.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Adenomatous_polyps">
+         <path value="Microscopic_findings___Colorectal_cancer.Adenomatous_polyps"/>
+         <short value="Adenomatous polyps"/>
+         <definition value="Findings of adenoatous polyps."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Adenomatous_polyps"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Adenomatous_polyps.Type_of_polyp">
+         <path value="Microscopic_findings___Colorectal_cancer.Adenomatous_polyps.Type_of_polyp"/>
+         <short value="Type of polyp"/>
+         <definition value="Type of adenomatous polyp"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Adenomatous_polyps.Type_of_polyp"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Adenomatous_polyps.Type_of_polyp.value">
+         <path value="Microscopic_findings___Colorectal_cancer.Adenomatous_polyps.Type_of_polyp.value"/>
+         <short value="Type of polyp"/>
+         <definition value="Type of adenomatous polyp"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Adenomatous_polyps.Type_of_polyp.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Adenomatous_polyps.Number_of_polyps">
+         <path value="Microscopic_findings___Colorectal_cancer.Adenomatous_polyps.Number_of_polyps"/>
+         <short value="Number of polyps"/>
+         <definition value="Number of adenomatous polyps."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Adenomatous_polyps.Number_of_polyps"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Adenomatous_polyps.Number_of_polyps.value">
+         <path value="Microscopic_findings___Colorectal_cancer.Adenomatous_polyps.Number_of_polyps.value"/>
+         <short value="Number of polyps"/>
+         <definition value="Number of adenomatous polyps."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Adenomatous_polyps.Number_of_polyps.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Adenomatous_polyps.Polyposis_syndrome">
+         <path value="Microscopic_findings___Colorectal_cancer.Adenomatous_polyps.Polyposis_syndrome"/>
+         <short value="Polyposis syndrome"/>
+         <definition value="Evidence of polyposis syndrome."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Adenomatous_polyps.Polyposis_syndrome"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Adenomatous_polyps.Polyposis_syndrome.value">
+         <path value="Microscopic_findings___Colorectal_cancer.Adenomatous_polyps.Polyposis_syndrome.value"/>
+         <short value="Polyposis syndrome"/>
+         <definition value="Evidence of polyposis syndrome."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Adenomatous_polyps.Polyposis_syndrome.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Adenomatous_polyps.Comment">
+         <path value="Microscopic_findings___Colorectal_cancer.Adenomatous_polyps.Comment"/>
+         <short value="Comment"/>
+         <definition value="Comment concerning adenomatous polyps."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Adenomatous_polyps.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Adenomatous_polyps.Comment.value">
+         <path value="Microscopic_findings___Colorectal_cancer.Adenomatous_polyps.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Comment concerning adenomatous polyps."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Adenomatous_polyps.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Additional_findings">
+         <path value="Microscopic_findings___Colorectal_cancer.Additional_findings"/>
+         <short value="Additional findings"/>
+         <definition value="Additional histopathological findings."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Additional_findings"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Additional_findings.Additional_finding">
+         <path value="Microscopic_findings___Colorectal_cancer.Additional_findings.Additional_finding"/>
+         <short value="Additional finding"/>
+         <definition value="A single additional histopathological finding."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Additional_findings.Additional_finding"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Additional_findings.Additional_finding.value_DV_CODED_TEXT">
+         <path value="Microscopic_findings___Colorectal_cancer.Additional_findings.Additional_finding.value_DV_CODED_TEXT"/>
+         <short value="Additional finding"/>
+         <definition value="A single additional histopathological finding."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Additional_findings.Additional_finding.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Additional_findings.Additional_finding.value_DV_TEXT">
+         <path value="Microscopic_findings___Colorectal_cancer.Additional_findings.Additional_finding.value_DV_TEXT"/>
+         <short value="Additional finding"/>
+         <definition value="A single additional histopathological finding."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Additional_findings.Additional_finding.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Additional_findings.Description">
+         <path value="Microscopic_findings___Colorectal_cancer.Additional_findings.Description"/>
+         <short value="Description"/>
+         <definition value="A text description of additional findings."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Additional_findings.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Additional_findings.Description.value">
+         <path value="Microscopic_findings___Colorectal_cancer.Additional_findings.Description.value"/>
+         <short value="Description"/>
+         <definition value="A text description of additional findings."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Additional_findings.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Residual_tumour_status">
+         <path value="Microscopic_findings___Colorectal_cancer.Residual_tumour_status"/>
+         <short value="Residual tumour status"/>
+         <definition value="Estimate of the completeness of surgical resection."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Residual_tumour_status"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Residual_tumour_status.value">
+         <path value="Microscopic_findings___Colorectal_cancer.Residual_tumour_status.value"/>
+         <short value="Residual tumour status"/>
+         <definition value="Estimate of the completeness of surgical resection."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Residual_tumour_status.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Response_to_neoadjuvant_therapy">
+         <path value="Microscopic_findings___Colorectal_cancer.Response_to_neoadjuvant_therapy"/>
+         <short value="Response to neoadjuvant therapy"/>
+         <definition value="Details of the response to neoadjuvant therapy."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Response_to_neoadjuvant_therapy"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Response_to_neoadjuvant_therapy.Neoadjuvant_therapy_given">
+         <path value="Microscopic_findings___Colorectal_cancer.Response_to_neoadjuvant_therapy.Neoadjuvant_therapy_given"/>
+         <short value="Neoadjuvant therapy given"/>
+         <definition value="Has neoadjuvant therapy been given?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Response_to_neoadjuvant_therapy.Neoadjuvant_therapy_given"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Response_to_neoadjuvant_therapy.Neoadjuvant_therapy_given.value">
+         <path value="Microscopic_findings___Colorectal_cancer.Response_to_neoadjuvant_therapy.Neoadjuvant_therapy_given.value"/>
+         <short value="Neoadjuvant therapy given"/>
+         <definition value="Has neoadjuvant therapy been given?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Response_to_neoadjuvant_therapy.Neoadjuvant_therapy_given.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Response_to_neoadjuvant_therapy.Grade_of_response">
+         <path value="Microscopic_findings___Colorectal_cancer.Response_to_neoadjuvant_therapy.Grade_of_response"/>
+         <short value="Grade of response"/>
+         <definition value="Alternative assessment grades of response to neoadjuvant therapy."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Response_to_neoadjuvant_therapy.Grade_of_response"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Response_to_neoadjuvant_therapy.Grade_of_response.Grade_(AJCC)">
+         <path value="Microscopic_findings___Colorectal_cancer.Response_to_neoadjuvant_therapy.Grade_of_response.Grade_(AJCC)"/>
+         <short value="Grade (AJCC)"/>
+         <definition value="An estimate of the response to neoadjuvant therapy. (AJCC score)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Response_to_neoadjuvant_therapy.Grade_of_response.Grade_(AJCC)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Response_to_neoadjuvant_therapy.Grade_of_response.Grade_(AJCC).value">
+         <path value="Microscopic_findings___Colorectal_cancer.Response_to_neoadjuvant_therapy.Grade_of_response.Grade_(AJCC).value"/>
+         <short value="Grade (AJCC)"/>
+         <definition value="An estimate of the response to neoadjuvant therapy. (AJCC score)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Response_to_neoadjuvant_therapy.Grade_of_response.Grade_(AJCC).value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Response_to_neoadjuvant_therapy.Grade_of_response.Grade_(CAP)">
+         <path value="Microscopic_findings___Colorectal_cancer.Response_to_neoadjuvant_therapy.Grade_of_response.Grade_(CAP)"/>
+         <short value="Grade (CAP)"/>
+         <definition value="An estimate of the response to neoadjuvant therapy. (CAP)  College of American Pathologists."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Response_to_neoadjuvant_therapy.Grade_of_response.Grade_(CAP)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Response_to_neoadjuvant_therapy.Grade_of_response.Grade_(CAP).value">
+         <path value="Microscopic_findings___Colorectal_cancer.Response_to_neoadjuvant_therapy.Grade_of_response.Grade_(CAP).value"/>
+         <short value="Grade (CAP)"/>
+         <definition value="An estimate of the response to neoadjuvant therapy. (CAP)  College of American Pathologists."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Response_to_neoadjuvant_therapy.Grade_of_response.Grade_(CAP).value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Response_to_neoadjuvant_therapy.Grade_of_response.Grade_(RCP)">
+         <path value="Microscopic_findings___Colorectal_cancer.Response_to_neoadjuvant_therapy.Grade_of_response.Grade_(RCP)"/>
+         <short value="Grade (RCP)"/>
+         <definition value="An estimate of the response to neoadjuvant therapy. (RCP) Royal College of Pathologists (UK)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Response_to_neoadjuvant_therapy.Grade_of_response.Grade_(RCP)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Response_to_neoadjuvant_therapy.Grade_of_response.Grade_(RCP).value">
+         <path value="Microscopic_findings___Colorectal_cancer.Response_to_neoadjuvant_therapy.Grade_of_response.Grade_(RCP).value"/>
+         <short value="Grade (RCP)"/>
+         <definition value="An estimate of the response to neoadjuvant therapy. (RCP) Royal College of Pathologists (UK)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Response_to_neoadjuvant_therapy.Grade_of_response.Grade_(RCP).value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Response_to_neoadjuvant_therapy.Comment">
+         <path value="Microscopic_findings___Colorectal_cancer.Response_to_neoadjuvant_therapy.Comment"/>
+         <short value="Comment"/>
+         <definition value="A text comment on the response to neoadjuvant therapy."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Response_to_neoadjuvant_therapy.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Microscopic_findings___Colorectal_cancer.Response_to_neoadjuvant_therapy.Comment.value">
+         <path value="Microscopic_findings___Colorectal_cancer.Response_to_neoadjuvant_therapy.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="A text comment on the response to neoadjuvant therapy."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Microscopic_findings___Colorectal_cancer.Response_to_neoadjuvant_therapy.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

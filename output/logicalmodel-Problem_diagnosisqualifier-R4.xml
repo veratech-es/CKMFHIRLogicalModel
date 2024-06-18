@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Problem_diagnosisqualifier-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-problem_diagnosisqualifier-R4"/>
+   <version value="0"/>
+   <name value="Problem_diagnosisqualifier"/>
+   <title value="Problem/Diagnosis qualifier"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Contextual or temporal qualifier for a specified problem or diagnosis."/>
+   <purpose value="To record a clinical context-specific or time-specific qualifier for a specified problem or diagnosis."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Problem_Diagnosis_qualifier">
+         <path value="Problem_Diagnosis_qualifier"/>
+         <short value="Problem/Diagnosis qualifier"/>
+         <definition value="Contextual or temporal qualifier for a specified problem or diagnosis."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_qualifier"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis_qualifier.Diagnostic_status">
+         <path value="Problem_Diagnosis_qualifier.Diagnostic_status"/>
+         <short value="Diagnostic status"/>
+         <definition value="Stage or phase of diagnostic process."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_qualifier.Diagnostic_status"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Problem_Diagnosis_qualifier.Diagnostic_status.value_DV_CODED_TEXT">
+         <path value="Problem_Diagnosis_qualifier.Diagnostic_status.value_DV_CODED_TEXT"/>
+         <short value="Diagnostic status"/>
+         <definition value="Stage or phase of diagnostic process."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_qualifier.Diagnostic_status.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis_qualifier.Diagnostic_status.value_DV_TEXT">
+         <path value="Problem_Diagnosis_qualifier.Diagnostic_status.value_DV_TEXT"/>
+         <short value="Diagnostic status"/>
+         <definition value="Stage or phase of diagnostic process."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_qualifier.Diagnostic_status.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis_qualifier.Current_Past_">
+         <path value="Problem_Diagnosis_qualifier.Current_Past_"/>
+         <short value="Current/Past?"/>
+         <definition value="Category that supports division of problems and diagnoses into Current or Past problem lists."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_qualifier.Current_Past_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Problem_Diagnosis_qualifier.Current_Past_.value">
+         <path value="Problem_Diagnosis_qualifier.Current_Past_.value"/>
+         <short value="Current/Past?"/>
+         <definition value="Category that supports division of problems and diagnoses into Current or Past problem lists."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_qualifier.Current_Past_.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis_qualifier.Active_Inactive_">
+         <path value="Problem_Diagnosis_qualifier.Active_Inactive_"/>
+         <short value="Active/Inactive?"/>
+         <definition value="Category that supports division of problems and diagnoses into Active or Inactive problem lists."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_qualifier.Active_Inactive_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Problem_Diagnosis_qualifier.Active_Inactive_.value">
+         <path value="Problem_Diagnosis_qualifier.Active_Inactive_.value"/>
+         <short value="Active/Inactive?"/>
+         <definition value="Category that supports division of problems and diagnoses into Active or Inactive problem lists."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_qualifier.Active_Inactive_.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis_qualifier.Level_of_control">
+         <path value="Problem_Diagnosis_qualifier.Level_of_control"/>
+         <short value="Level of control"/>
+         <definition value="Category of the level of control of the problem or diagnosis by the current management."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_qualifier.Level_of_control"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Problem_Diagnosis_qualifier.Level_of_control.value_DV_CODED_TEXT">
+         <path value="Problem_Diagnosis_qualifier.Level_of_control.value_DV_CODED_TEXT"/>
+         <short value="Level of control"/>
+         <definition value="Category of the level of control of the problem or diagnosis by the current management."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_qualifier.Level_of_control.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis_qualifier.Level_of_control.value_DV_TEXT">
+         <path value="Problem_Diagnosis_qualifier.Level_of_control.value_DV_TEXT"/>
+         <short value="Level of control"/>
+         <definition value="Category of the level of control of the problem or diagnosis by the current management."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_qualifier.Level_of_control.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis_qualifier.Progression">
+         <path value="Problem_Diagnosis_qualifier.Progression"/>
+         <short value="Progression"/>
+         <definition value="Category of the progression through the course of a chronic problem or diagnosis."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_qualifier.Progression"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Problem_Diagnosis_qualifier.Progression.value_DV_CODED_TEXT">
+         <path value="Problem_Diagnosis_qualifier.Progression.value_DV_CODED_TEXT"/>
+         <short value="Progression"/>
+         <definition value="Category of the progression through the course of a chronic problem or diagnosis."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_qualifier.Progression.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis_qualifier.Progression.value_DV_TEXT">
+         <path value="Problem_Diagnosis_qualifier.Progression.value_DV_TEXT"/>
+         <short value="Progression"/>
+         <definition value="Category of the progression through the course of a chronic problem or diagnosis."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_qualifier.Progression.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis_qualifier.Resolution_phase">
+         <path value="Problem_Diagnosis_qualifier.Resolution_phase"/>
+         <short value="Resolution phase"/>
+         <definition value="Phase of healing for an acute problem or diagnosis."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_qualifier.Resolution_phase"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Problem_Diagnosis_qualifier.Resolution_phase.value_DV_CODED_TEXT">
+         <path value="Problem_Diagnosis_qualifier.Resolution_phase.value_DV_CODED_TEXT"/>
+         <short value="Resolution phase"/>
+         <definition value="Phase of healing for an acute problem or diagnosis."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_qualifier.Resolution_phase.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis_qualifier.Resolution_phase.value_DV_TEXT">
+         <path value="Problem_Diagnosis_qualifier.Resolution_phase.value_DV_TEXT"/>
+         <short value="Resolution phase"/>
+         <definition value="Phase of healing for an acute problem or diagnosis."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_qualifier.Resolution_phase.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis_qualifier.Remission_status">
+         <path value="Problem_Diagnosis_qualifier.Remission_status"/>
+         <short value="Remission status"/>
+         <definition value="Status of the remission of an incurable diagnosis."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_qualifier.Remission_status"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Problem_Diagnosis_qualifier.Remission_status.value_DV_CODED_TEXT">
+         <path value="Problem_Diagnosis_qualifier.Remission_status.value_DV_CODED_TEXT"/>
+         <short value="Remission status"/>
+         <definition value="Status of the remission of an incurable diagnosis."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_qualifier.Remission_status.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis_qualifier.Remission_status.value_DV_TEXT">
+         <path value="Problem_Diagnosis_qualifier.Remission_status.value_DV_TEXT"/>
+         <short value="Remission status"/>
+         <definition value="Status of the remission of an incurable diagnosis."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_qualifier.Remission_status.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis_qualifier.Episodicity">
+         <path value="Problem_Diagnosis_qualifier.Episodicity"/>
+         <short value="Episodicity"/>
+         <definition value="Category of this episode for the identified problem/diagnosis."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_qualifier.Episodicity"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Problem_Diagnosis_qualifier.Episodicity.value_DV_CODED_TEXT">
+         <path value="Problem_Diagnosis_qualifier.Episodicity.value_DV_CODED_TEXT"/>
+         <short value="Episodicity"/>
+         <definition value="Category of this episode for the identified problem/diagnosis."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_qualifier.Episodicity.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis_qualifier.Episodicity.value_DV_TEXT">
+         <path value="Problem_Diagnosis_qualifier.Episodicity.value_DV_TEXT"/>
+         <short value="Episodicity"/>
+         <definition value="Category of this episode for the identified problem/diagnosis."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_qualifier.Episodicity.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis_qualifier.Reason_for_an_ongoing_episode">
+         <path value="Problem_Diagnosis_qualifier.Reason_for_an_ongoing_episode"/>
+         <short value="Reason for an ongoing episode"/>
+         <definition value="Reason for a problem or diagnosis not resolving as expected."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Problem_Diagnosis_qualifier.Reason_for_an_ongoing_episode"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Problem_Diagnosis_qualifier.Reason_for_an_ongoing_episode.value">
+         <path value="Problem_Diagnosis_qualifier.Reason_for_an_ongoing_episode.value"/>
+         <short value="Reason for an ongoing episode"/>
+         <definition value="Reason for a problem or diagnosis not resolving as expected."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_qualifier.Reason_for_an_ongoing_episode.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis_qualifier.Occurrence">
+         <path value="Problem_Diagnosis_qualifier.Occurrence"/>
+         <short value="Occurrence"/>
+         <definition value="Category of the occurrence for this problem or diagnosis."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_qualifier.Occurrence"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Problem_Diagnosis_qualifier.Occurrence.value_DV_CODED_TEXT">
+         <path value="Problem_Diagnosis_qualifier.Occurrence.value_DV_CODED_TEXT"/>
+         <short value="Occurrence"/>
+         <definition value="Category of the occurrence for this problem or diagnosis."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_qualifier.Occurrence.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis_qualifier.Occurrence.value_DV_TEXT">
+         <path value="Problem_Diagnosis_qualifier.Occurrence.value_DV_TEXT"/>
+         <short value="Occurrence"/>
+         <definition value="Category of the occurrence for this problem or diagnosis."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_qualifier.Occurrence.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis_qualifier.Course_label">
+         <path value="Problem_Diagnosis_qualifier.Course_label"/>
+         <short value="Course label"/>
+         <definition value="Category reflecting the speed of onset and/or duration and persistence of the problem or diagnosis."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_qualifier.Course_label"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Problem_Diagnosis_qualifier.Course_label.value_DV_TEXT">
+         <path value="Problem_Diagnosis_qualifier.Course_label.value_DV_TEXT"/>
+         <short value="Course label"/>
+         <definition value="Category reflecting the speed of onset and/or duration and persistence of the problem or diagnosis."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_qualifier.Course_label.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis_qualifier.Course_label.value_DV_CODED_TEXT">
+         <path value="Problem_Diagnosis_qualifier.Course_label.value_DV_CODED_TEXT"/>
+         <short value="Course label"/>
+         <definition value="Category reflecting the speed of onset and/or duration and persistence of the problem or diagnosis."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_qualifier.Course_label.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis_qualifier.Diagnostic_category">
+         <path value="Problem_Diagnosis_qualifier.Diagnostic_category"/>
+         <short value="Diagnostic category"/>
+         <definition value="Category of the problem or diagnosis within a specified episode of care and/or local care context."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Problem_Diagnosis_qualifier.Diagnostic_category"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Problem_Diagnosis_qualifier.Diagnostic_category.value_DV_CODED_TEXT">
+         <path value="Problem_Diagnosis_qualifier.Diagnostic_category.value_DV_CODED_TEXT"/>
+         <short value="Diagnostic category"/>
+         <definition value="Category of the problem or diagnosis within a specified episode of care and/or local care context."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_qualifier.Diagnostic_category.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis_qualifier.Diagnostic_category.value_DV_TEXT">
+         <path value="Problem_Diagnosis_qualifier.Diagnostic_category.value_DV_TEXT"/>
+         <short value="Diagnostic category"/>
+         <definition value="Category of the problem or diagnosis within a specified episode of care and/or local care context."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_qualifier.Diagnostic_category.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis_qualifier.Admission_diagnosis_">
+         <path value="Problem_Diagnosis_qualifier.Admission_diagnosis_"/>
+         <short value="Admission diagnosis?"/>
+         <definition value="Was the problem or diagnosis present at admission?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_qualifier.Admission_diagnosis_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Problem_Diagnosis_qualifier.Admission_diagnosis_.value_DV_BOOLEAN">
+         <path value="Problem_Diagnosis_qualifier.Admission_diagnosis_.value_DV_BOOLEAN"/>
+         <short value="Admission diagnosis?"/>
+         <definition value="Was the problem or diagnosis present at admission?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_qualifier.Admission_diagnosis_.value_DV_BOOLEAN"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis_qualifier.Admission_diagnosis_.value_DV_CODED_TEXT">
+         <path value="Problem_Diagnosis_qualifier.Admission_diagnosis_.value_DV_CODED_TEXT"/>
+         <short value="Admission diagnosis?"/>
+         <definition value="Was the problem or diagnosis present at admission?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_qualifier.Admission_diagnosis_.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Problem_Diagnosis_qualifier.Comment">
+         <path value="Problem_Diagnosis_qualifier.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the Problem/Diagnosis qualifier values, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_qualifier.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Problem_Diagnosis_qualifier.Comment.value">
+         <path value="Problem_Diagnosis_qualifier.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the Problem/Diagnosis qualifier values, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Problem_Diagnosis_qualifier.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

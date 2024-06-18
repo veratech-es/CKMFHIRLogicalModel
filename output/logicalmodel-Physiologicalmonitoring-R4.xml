@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Physiologicalmonitoring-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-physiologicalmonitoring-R4"/>
+   <version value="0"/>
+   <name value="Physiologicalmonitoring"/>
+   <title value="Physiological monitoring"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Details of the monitoring applied in the provision of healthcare."/>
+   <purpose value="To record details of the monitoring applied in the provision of healthcare."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Physiological_monitoring">
+         <path value="Physiological_monitoring"/>
+         <short value="Physiological monitoring"/>
+         <definition value="Details of the monitoring applied in the provision of healthcare."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Physiological_monitoring"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Physiological_monitoring.Monitoring_type">
+         <path value="Physiological_monitoring.Monitoring_type"/>
+         <short value="Monitoring type"/>
+         <definition value="Narrative description of the category or kind of monitoring."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Physiological_monitoring.Monitoring_type"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Physiological_monitoring.Monitoring_type.value">
+         <path value="Physiological_monitoring.Monitoring_type.value"/>
+         <short value="Monitoring type"/>
+         <definition value="Narrative description of the category or kind of monitoring."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Physiological_monitoring.Monitoring_type.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Physiological_monitoring.Body_site">
+         <path value="Physiological_monitoring.Body_site"/>
+         <short value="Body site"/>
+         <definition value="Identification of a single physical site either on, or within the human body."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Physiological_monitoring.Body_site"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Physiological_monitoring.Body_site.value">
+         <path value="Physiological_monitoring.Body_site.value"/>
+         <short value="Body site"/>
+         <definition value="Identification of a single physical site either on, or within the human body."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Physiological_monitoring.Body_site.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Physiological_monitoring.Structured_body_site">
+         <path value="Physiological_monitoring.Structured_body_site"/>
+         <short value="Structured body site"/>
+         <definition value="Additional detail using specific region or a point on , or within the identified body site."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Physiological_monitoring.Structured_body_site"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Physiological_monitoring.Additional_details">
+         <path value="Physiological_monitoring.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="Structured additional information about the monitoring."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Physiological_monitoring.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Physiological_monitoring.Medical_device">
+         <path value="Physiological_monitoring.Medical_device"/>
+         <short value="Medical device"/>
+         <definition value="To record the details of a medical device to capture physiological monitoring."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Physiological_monitoring.Medical_device"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Physiological_monitoring.Comment">
+         <path value="Physiological_monitoring.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about physiological monitoring not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Physiological_monitoring.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Physiological_monitoring.Comment.value">
+         <path value="Physiological_monitoring.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about physiological monitoring not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Physiological_monitoring.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Physiological_monitoring.Monitoring_not_done">
+         <path value="Physiological_monitoring.Monitoring_not_done"/>
+         <short value="Monitoring not done"/>
+         <definition value="Details to record that the physiological monitoring was not performed."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Physiological_monitoring.Monitoring_not_done"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

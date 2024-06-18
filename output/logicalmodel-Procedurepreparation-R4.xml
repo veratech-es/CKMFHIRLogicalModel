@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Procedurepreparation-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-procedurepreparation-R4"/>
+   <version value="0"/>
+   <name value="Procedurepreparation"/>
+   <title value="Procedure preparation"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Details about a substance or process in the preparatory aspects for a procedure."/>
+   <purpose value="To record details about the preparation aspects for a procedure."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Procedure_preparation">
+         <path value="Procedure_preparation"/>
+         <short value="Procedure preparation"/>
+         <definition value="Details about a substance or process in the preparatory aspects for a procedure."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure_preparation"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure_preparation.Preparation_type">
+         <path value="Procedure_preparation.Preparation_type"/>
+         <short value="Preparation type"/>
+         <definition value="The category or kind of preparation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure_preparation.Preparation_type"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Procedure_preparation.Preparation_type.value">
+         <path value="Procedure_preparation.Preparation_type.value"/>
+         <short value="Preparation type"/>
+         <definition value="The category or kind of preparation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure_preparation.Preparation_type.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure_preparation.Body_site">
+         <path value="Procedure_preparation.Body_site"/>
+         <short value="Body site"/>
+         <definition value="Identification of a single physical site either on, or within, the human body."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure_preparation.Body_site"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Procedure_preparation.Body_site.value">
+         <path value="Procedure_preparation.Body_site.value"/>
+         <short value="Body site"/>
+         <definition value="Identification of a single physical site either on, or within, the human body."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure_preparation.Body_site.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure_preparation.Structured_body_site">
+         <path value="Procedure_preparation.Structured_body_site"/>
+         <short value="Structured body site"/>
+         <definition value="Additional detail using a specific region or a point on, or within, the identified body site."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Procedure_preparation.Structured_body_site"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure_preparation.Description">
+         <path value="Procedure_preparation.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the prepation aspects of a procedure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure_preparation.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Procedure_preparation.Description.value">
+         <path value="Procedure_preparation.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the prepation aspects of a procedure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure_preparation.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure_preparation.Wash_solution">
+         <path value="Procedure_preparation.Wash_solution"/>
+         <short value="Wash solution"/>
+         <definition value="Narrative description of the solution to clean the body site."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure_preparation.Wash_solution"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Procedure_preparation.Wash_solution.value">
+         <path value="Procedure_preparation.Wash_solution.value"/>
+         <short value="Wash solution"/>
+         <definition value="Narrative description of the solution to clean the body site."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure_preparation.Wash_solution.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure_preparation.Method">
+         <path value="Procedure_preparation.Method"/>
+         <short value="Method"/>
+         <definition value="Narrative description of the technique to clean the body site or area."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure_preparation.Method"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Procedure_preparation.Method.value">
+         <path value="Procedure_preparation.Method.value"/>
+         <short value="Method"/>
+         <definition value="Narrative description of the technique to clean the body site or area."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure_preparation.Method.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure_preparation.Instrument">
+         <path value="Procedure_preparation.Instrument"/>
+         <short value="Instrument"/>
+         <definition value="Narrative description of the tool to clean the body site or area."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure_preparation.Instrument"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Procedure_preparation.Instrument.value">
+         <path value="Procedure_preparation.Instrument.value"/>
+         <short value="Instrument"/>
+         <definition value="Narrative description of the tool to clean the body site or area."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure_preparation.Instrument.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure_preparation.Additional_details">
+         <path value="Procedure_preparation.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="*"/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Procedure_preparation.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure_preparation.Outcome">
+         <path value="Procedure_preparation.Outcome"/>
+         <short value="Outcome"/>
+         <definition value="Narrative description of the outcome of the procedure preparation performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure_preparation.Outcome"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Procedure_preparation.Outcome.value">
+         <path value="Procedure_preparation.Outcome.value"/>
+         <short value="Outcome"/>
+         <definition value="Narrative description of the outcome of the procedure preparation performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure_preparation.Outcome.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Procedure_preparation.Comment">
+         <path value="Procedure_preparation.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the procedure preparation not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure_preparation.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Procedure_preparation.Comment.value">
+         <path value="Procedure_preparation.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the procedure preparation not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Procedure_preparation.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

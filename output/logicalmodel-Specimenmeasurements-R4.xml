@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Specimenmeasurements-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-specimenmeasurements-R4"/>
+   <version value="0"/>
+   <name value="Specimenmeasurements"/>
+   <title value="Specimen measurements"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="The measurements of a specimen."/>
+   <purpose value="To record the measurements that represent the physical dimensions of a specimen."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Specimen_measurements">
+         <path value="Specimen_measurements"/>
+         <short value="Specimen measurements"/>
+         <definition value="The measurements of a specimen."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_measurements"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_measurements.Volume">
+         <path value="Specimen_measurements.Volume"/>
+         <short value="Volume"/>
+         <definition value="The measured or calculated space enclosed by a boundary (liquid) or occupied by an object (solid tissue)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_measurements.Volume"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Specimen_measurements.Volume.value_DvQuantity">
+         <path value="Specimen_measurements.Volume.value_DvQuantity"/>
+         <short value="Volume"/>
+         <definition value="The measured or calculated space enclosed by a boundary (liquid) or occupied by an object (solid tissue)."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_measurements.Volume.value_DvQuantity"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_measurements.Volume.value_DV_INTERVAL_DV_QUANTITY_">
+         <path value="Specimen_measurements.Volume.value_DV_INTERVAL_DV_QUANTITY_"/>
+         <short value="Volume"/>
+         <definition value="The measured or calculated space enclosed by a boundary (liquid) or occupied by an object (solid tissue)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_measurements.Volume.value_DV_INTERVAL_DV_QUANTITY_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_measurements.Dimension">
+         <path value="Specimen_measurements.Dimension"/>
+         <short value="Dimension"/>
+         <definition value="A measured dimension of the specimen."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Specimen_measurements.Dimension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Specimen_measurements.Dimension.name">
+         <path value="Specimen_measurements.Dimension.name"/>
+         <short value="Dimension"/>
+         <definition value="A measured dimension of the specimen."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_measurements.Dimension.name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_measurements.Dimension.value_DvQuantity">
+         <path value="Specimen_measurements.Dimension.value_DvQuantity"/>
+         <short value="Dimension"/>
+         <definition value="A measured dimension of the specimen."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_measurements.Dimension.value_DvQuantity"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_measurements.Dimension.value_DV_INTERVAL_DV_QUANTITY_">
+         <path value="Specimen_measurements.Dimension.value_DV_INTERVAL_DV_QUANTITY_"/>
+         <short value="Dimension"/>
+         <definition value="A measured dimension of the specimen."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_measurements.Dimension.value_DV_INTERVAL_DV_QUANTITY_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_measurements.Perimeter">
+         <path value="Specimen_measurements.Perimeter"/>
+         <short value="Perimeter"/>
+         <definition value="The measured length of the circumference of a round or elliptical specimen or the total length of all external surfaces of a square, rectangular or irregularly shaped specimen."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Specimen_measurements.Perimeter"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Specimen_measurements.Perimeter.value_DvQuantity">
+         <path value="Specimen_measurements.Perimeter.value_DvQuantity"/>
+         <short value="Perimeter"/>
+         <definition value="The measured length of the circumference of a round or elliptical specimen or the total length of all external surfaces of a square, rectangular or irregularly shaped specimen."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_measurements.Perimeter.value_DvQuantity"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_measurements.Perimeter.value_DV_INTERVAL_DV_QUANTITY_">
+         <path value="Specimen_measurements.Perimeter.value_DV_INTERVAL_DV_QUANTITY_"/>
+         <short value="Perimeter"/>
+         <definition value="The measured length of the circumference of a round or elliptical specimen or the total length of all external surfaces of a square, rectangular or irregularly shaped specimen."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_measurements.Perimeter.value_DV_INTERVAL_DV_QUANTITY_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_measurements.Weight">
+         <path value="Specimen_measurements.Weight"/>
+         <short value="Weight"/>
+         <definition value="The measured value of the mass of the specimen."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_measurements.Weight"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Specimen_measurements.Weight.value_DvQuantity">
+         <path value="Specimen_measurements.Weight.value_DvQuantity"/>
+         <short value="Weight"/>
+         <definition value="The measured value of the mass of the specimen."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_measurements.Weight.value_DvQuantity"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_measurements.Weight.value_DV_INTERVAL_DV_QUANTITY_">
+         <path value="Specimen_measurements.Weight.value_DV_INTERVAL_DV_QUANTITY_"/>
+         <short value="Weight"/>
+         <definition value="The measured value of the mass of the specimen."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_measurements.Weight.value_DV_INTERVAL_DV_QUANTITY_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

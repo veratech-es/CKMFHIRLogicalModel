@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Delaydetails-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-delaydetails-R4"/>
+   <version value="0"/>
+   <name value="Delaydetails"/>
+   <title value="Delay details"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Information about subcategories of delay or specific delays in seeking, reaching or receiving healthcare using the \&#34;Three Delays\&#34; framework."/>
+   <purpose value="To record information about recognised subcategories of delay or specific delays in seeking, reaching or receiving healthcare using the \&#34;Three Delays\&#34; framework."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Delay_details">
+         <path value="Delay_details"/>
+         <short value="Delay details"/>
+         <definition value="Information about subcategories of delay or specific delays in seeking, reaching or receiving healthcare using the \&#34;Three Delays\&#34; framework."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Delay_details"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Delay_details.Delay_name">
+         <path value="Delay_details.Delay_name"/>
+         <short value="Delay name"/>
+         <definition value="The name of one or more subcategories of delay or of a specific delay."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Delay_details.Delay_name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Delay_details.Delay_name.value">
+         <path value="Delay_details.Delay_name.value"/>
+         <short value="Delay name"/>
+         <definition value="The name of one or more subcategories of delay or of a specific delay."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Delay_details.Delay_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Delay_details.Delay_presence_">
+         <path value="Delay_details.Delay_presence_"/>
+         <short value="Delay presence?"/>
+         <definition value="Was the delay recognised as present, relevant to the identified 'Delay name'?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Delay_details.Delay_presence_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Delay_details.Delay_presence_.value">
+         <path value="Delay_details.Delay_presence_.value"/>
+         <short value="Delay presence?"/>
+         <definition value="Was the delay recognised as present, relevant to the identified 'Delay name'?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Delay_details.Delay_presence_.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Delay_details.Description">
+         <path value="Delay_details.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the identified delay."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Delay_details.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Delay_details.Description.value">
+         <path value="Delay_details.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the identified delay."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Delay_details.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Delay_details.Delay_duration">
+         <path value="Delay_details.Delay_duration"/>
+         <short value="Delay duration"/>
+         <definition value="The duration of the recognised delay."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Delay_details.Delay_duration"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Delay_details.Delay_duration.value">
+         <path value="Delay_details.Delay_duration.value"/>
+         <short value="Delay duration"/>
+         <definition value="The duration of the recognised delay."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Delay_details.Delay_duration.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Delay_details.Additional_details">
+         <path value="Delay_details.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="Additional details about the identified delay."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Delay_details.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Delay_details.Solution_responsibility">
+         <path value="Delay_details.Solution_responsibility"/>
+         <short value="Solution responsibility"/>
+         <definition value="The name of the person or organisation assigned responsibility to solve or mitigate the identified delay."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Delay_details.Solution_responsibility"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Delay_details.Solution_timeline">
+         <path value="Delay_details.Solution_timeline"/>
+         <short value="Solution timeline"/>
+         <definition value="The due date or proposed timeframe for resolution or mitigation of the identified delay."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Delay_details.Solution_timeline"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Delay_details.Solution_timeline.value_DV_DATE_TIME">
+         <path value="Delay_details.Solution_timeline.value_DV_DATE_TIME"/>
+         <short value="Solution timeline"/>
+         <definition value="The due date or proposed timeframe for resolution or mitigation of the identified delay."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Delay_details.Solution_timeline.value_DV_DATE_TIME"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Delay_details.Solution_timeline.value_DV_DURATION">
+         <path value="Delay_details.Solution_timeline.value_DV_DURATION"/>
+         <short value="Solution timeline"/>
+         <definition value="The due date or proposed timeframe for resolution or mitigation of the identified delay."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Delay_details.Solution_timeline.value_DV_DURATION"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Delay_details.Comment">
+         <path value="Delay_details.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the identified delay, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Delay_details.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Delay_details.Comment.value">
+         <path value="Delay_details.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the identified delay, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Delay_details.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

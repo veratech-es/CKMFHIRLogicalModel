@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Environmentalconditions-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-environmentalconditions-R4"/>
+   <version value="0"/>
+   <name value="Environmentalconditions"/>
+   <title value="Environmental conditions"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="The physical environment surrounding an individual."/>
+   <purpose value="To record information about environmental conditions that may be impacting on the individual's wellbeing."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Environmental_conditions">
+         <path value="Environmental_conditions"/>
+         <short value="Environmental conditions"/>
+         <definition value="The physical environment surrounding an individual."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Environmental_conditions"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Environmental_conditions.Ambient_temperature">
+         <path value="Environmental_conditions.Ambient_temperature"/>
+         <short value="Ambient temperature"/>
+         <definition value="The temperature of the environment in which the individual is situated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Environmental_conditions.Ambient_temperature"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Environmental_conditions.Ambient_temperature.value">
+         <path value="Environmental_conditions.Ambient_temperature.value"/>
+         <short value="Ambient temperature"/>
+         <definition value="The temperature of the environment in which the individual is situated."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Environmental_conditions.Ambient_temperature.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Environmental_conditions.Relative_humidity">
+         <path value="Environmental_conditions.Relative_humidity"/>
+         <short value="Relative humidity"/>
+         <definition value="Humidity of the environment in which the individual is situated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Environmental_conditions.Relative_humidity"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Environmental_conditions.Relative_humidity.value">
+         <path value="Environmental_conditions.Relative_humidity.value"/>
+         <short value="Relative humidity"/>
+         <definition value="Humidity of the environment in which the individual is situated."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Environmental_conditions.Relative_humidity.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Environmental_conditions.Wind_velocity">
+         <path value="Environmental_conditions.Wind_velocity"/>
+         <short value="Wind velocity"/>
+         <definition value="Measure of wind velocity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Environmental_conditions.Wind_velocity"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Environmental_conditions.Wind_velocity.value">
+         <path value="Environmental_conditions.Wind_velocity.value"/>
+         <short value="Wind velocity"/>
+         <definition value="Measure of wind velocity."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Environmental_conditions.Wind_velocity.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Environmental_conditions.Wind_chill_temperature">
+         <path value="Environmental_conditions.Wind_chill_temperature"/>
+         <short value="Wind chill temperature"/>
+         <definition value="The apparent temperature felt on exposed skin, which is a function of the air temperature and wind speed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Environmental_conditions.Wind_chill_temperature"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Environmental_conditions.Wind_chill_temperature.value">
+         <path value="Environmental_conditions.Wind_chill_temperature.value"/>
+         <short value="Wind chill temperature"/>
+         <definition value="The apparent temperature felt on exposed skin, which is a function of the air temperature and wind speed."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Environmental_conditions.Wind_chill_temperature.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Environmental_conditions.Wet_bulb_globe_temperature">
+         <path value="Environmental_conditions.Wet_bulb_globe_temperature"/>
+         <short value="Wet bulb globe temperature"/>
+         <definition value="A composite temperature used to estimate the effect of temperature, humidity, and solar radiation on humans."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Environmental_conditions.Wet_bulb_globe_temperature"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Environmental_conditions.Wet_bulb_globe_temperature.value">
+         <path value="Environmental_conditions.Wet_bulb_globe_temperature.value"/>
+         <short value="Wet bulb globe temperature"/>
+         <definition value="A composite temperature used to estimate the effect of temperature, humidity, and solar radiation on humans."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Environmental_conditions.Wet_bulb_globe_temperature.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Environmental_conditions.Atmospheric_pressure">
+         <path value="Environmental_conditions.Atmospheric_pressure"/>
+         <short value="Atmospheric pressure"/>
+         <definition value="The pressure of the atmosphere surrounding an individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Environmental_conditions.Atmospheric_pressure"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Environmental_conditions.Atmospheric_pressure.value">
+         <path value="Environmental_conditions.Atmospheric_pressure.value"/>
+         <short value="Atmospheric pressure"/>
+         <definition value="The pressure of the atmosphere surrounding an individual."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Environmental_conditions.Atmospheric_pressure.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

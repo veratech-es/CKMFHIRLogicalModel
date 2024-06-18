@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Knowledgebasereference-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-knowledgebasereference-R4"/>
+   <version value="0"/>
+   <name value="Knowledgebasereference"/>
+   <title value="Knowledge base reference"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="A citation of a digital resource used as an source of authoritative or expert information, and/or to items contained within the resource."/>
+   <purpose value="To record a reference to a knowledge base, and/or to items contained within the knowledge base, in relation to specific health record information which uses that knowledge base."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Knowledge_base_reference">
+         <path value="Knowledge_base_reference"/>
+         <short value="Knowledge base reference"/>
+         <definition value="A citation of a digital resource used as an source of authoritative or expert information, and/or to items contained within the resource."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Knowledge_base_reference"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Knowledge_base_reference.Knowledge_base_name">
+         <path value="Knowledge_base_reference.Knowledge_base_name"/>
+         <short value="Knowledge base name"/>
+         <definition value="The name of the knowledge base."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Knowledge_base_reference.Knowledge_base_name"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Knowledge_base_reference.Knowledge_base_name.value">
+         <path value="Knowledge_base_reference.Knowledge_base_name.value"/>
+         <short value="Knowledge base name"/>
+         <definition value="The name of the knowledge base."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Knowledge_base_reference.Knowledge_base_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Knowledge_base_reference.Knowledge_base_version">
+         <path value="Knowledge_base_reference.Knowledge_base_version"/>
+         <short value="Knowledge base version"/>
+         <definition value="The version of the referenced knowledge base."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Knowledge_base_reference.Knowledge_base_version"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Knowledge_base_reference.Knowledge_base_version.value">
+         <path value="Knowledge_base_reference.Knowledge_base_version.value"/>
+         <short value="Knowledge base version"/>
+         <definition value="The version of the referenced knowledge base."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Knowledge_base_reference.Knowledge_base_version.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Knowledge_base_reference.Knowledge_base_URI">
+         <path value="Knowledge_base_reference.Knowledge_base_URI"/>
+         <short value="Knowledge base URI"/>
+         <definition value="The hyperlink to the referenced knowledge base."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Knowledge_base_reference.Knowledge_base_URI"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Knowledge_base_reference.Knowledge_base_URI.value">
+         <path value="Knowledge_base_reference.Knowledge_base_URI.value"/>
+         <short value="Knowledge base URI"/>
+         <definition value="The hyperlink to the referenced knowledge base."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Knowledge_base_reference.Knowledge_base_URI.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="string"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Knowledge_base_reference.Item_name">
+         <path value="Knowledge_base_reference.Item_name"/>
+         <short value="Item name"/>
+         <definition value="The name of the referenced item within the knowledge base."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Knowledge_base_reference.Item_name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Knowledge_base_reference.Item_name.value">
+         <path value="Knowledge_base_reference.Item_name.value"/>
+         <short value="Item name"/>
+         <definition value="The name of the referenced item within the knowledge base."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Knowledge_base_reference.Item_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Knowledge_base_reference.Item_version">
+         <path value="Knowledge_base_reference.Item_version"/>
+         <short value="Item version"/>
+         <definition value="The version of the referenced item within the knowledge base."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Knowledge_base_reference.Item_version"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Knowledge_base_reference.Item_version.value">
+         <path value="Knowledge_base_reference.Item_version.value"/>
+         <short value="Item version"/>
+         <definition value="The version of the referenced item within the knowledge base."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Knowledge_base_reference.Item_version.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Knowledge_base_reference.Item_publication">
+         <path value="Knowledge_base_reference.Item_publication"/>
+         <short value="Item publication"/>
+         <definition value="Date and/or time when the item within the database was published."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Knowledge_base_reference.Item_publication"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Knowledge_base_reference.Item_publication.value">
+         <path value="Knowledge_base_reference.Item_publication.value"/>
+         <short value="Item publication"/>
+         <definition value="Date and/or time when the item within the database was published."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Knowledge_base_reference.Item_publication.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Knowledge_base_reference.Item_URI">
+         <path value="Knowledge_base_reference.Item_URI"/>
+         <short value="Item URI"/>
+         <definition value="The hyperlink to the referenced item within the knowledge base."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Knowledge_base_reference.Item_URI"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Knowledge_base_reference.Item_URI.value">
+         <path value="Knowledge_base_reference.Item_URI.value"/>
+         <short value="Item URI"/>
+         <definition value="The hyperlink to the referenced item within the knowledge base."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Knowledge_base_reference.Item_URI.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="string"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Knowledge_base_reference.Comment">
+         <path value="Knowledge_base_reference.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the knowledge base, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Knowledge_base_reference.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Knowledge_base_reference.Comment.value">
+         <path value="Knowledge_base_reference.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the knowledge base, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Knowledge_base_reference.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

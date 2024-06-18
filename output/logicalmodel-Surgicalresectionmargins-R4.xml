@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Surgicalresectionmargins-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-surgicalresectionmargins-R4"/>
+   <version value="0"/>
+   <name value="Surgicalresectionmargins"/>
+   <title value="Surgical resection margins"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Details of tumour involvement at margins of surgical resections/biopsies."/>
+   <purpose value="Details of surgical resection margin involvement of malignant tumours. May be used to describe scenarios where tumour is present at the resection margin, detailing the length of tumour involvement, or where tumour is absent from the margin, to indicate the distance of tumour from that margin."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Surgical_resection_margins">
+         <path value="Surgical_resection_margins"/>
+         <short value="Surgical resection margins"/>
+         <definition value="Details of tumour involvement at margins of surgical resections/biopsies."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Surgical_resection_margins"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Surgical_resection_margins.Margin_name">
+         <path value="Surgical_resection_margins.Margin_name"/>
+         <short value="Margin name"/>
+         <definition value="The name of the margin being described."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Surgical_resection_margins.Margin_name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Surgical_resection_margins.Margin_name.value">
+         <path value="Surgical_resection_margins.Margin_name.value"/>
+         <short value="Margin name"/>
+         <definition value="The name of the margin being described."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Surgical_resection_margins.Margin_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Surgical_resection_margins.Margin_location">
+         <path value="Surgical_resection_margins.Margin_location"/>
+         <short value="Margin location"/>
+         <definition value="The location of the margin being described."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Surgical_resection_margins.Margin_location"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Surgical_resection_margins.Marginal_involvement">
+         <path value="Surgical_resection_margins.Marginal_involvement"/>
+         <short value="Marginal involvement"/>
+         <definition value="Evidence of tumour at a surgical resection margin."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Surgical_resection_margins.Marginal_involvement"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Surgical_resection_margins.Marginal_involvement.value">
+         <path value="Surgical_resection_margins.Marginal_involvement.value"/>
+         <short value="Marginal involvement"/>
+         <definition value="Evidence of tumour at a surgical resection margin."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Surgical_resection_margins.Marginal_involvement.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Surgical_resection_margins.Tumour_present">
+         <path value="Surgical_resection_margins.Tumour_present"/>
+         <short value="Tumour present"/>
+         <definition value="Details where tumour is present at the surgical resection margin."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Surgical_resection_margins.Tumour_present"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Surgical_resection_margins.Tumour_present.Maximum_linear_involvement">
+         <path value="Surgical_resection_margins.Tumour_present.Maximum_linear_involvement"/>
+         <short value="Maximum linear involvement"/>
+         <definition value="When tumour is present at surgical resection margin, the maximal length of involvement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Surgical_resection_margins.Tumour_present.Maximum_linear_involvement"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Surgical_resection_margins.Tumour_present.Maximum_linear_involvement.value">
+         <path value="Surgical_resection_margins.Tumour_present.Maximum_linear_involvement.value"/>
+         <short value="Maximum linear involvement"/>
+         <definition value="When tumour is present at surgical resection margin, the maximal length of involvement."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Surgical_resection_margins.Tumour_present.Maximum_linear_involvement.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Surgical_resection_margins.Tumour_present.Nature_of_involvement">
+         <path value="Surgical_resection_margins.Tumour_present.Nature_of_involvement"/>
+         <short value="Nature of involvement"/>
+         <definition value="The nature of involvement of the tumour with the surgical margin."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Surgical_resection_margins.Tumour_present.Nature_of_involvement"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Surgical_resection_margins.Tumour_present.Nature_of_involvement.value">
+         <path value="Surgical_resection_margins.Tumour_present.Nature_of_involvement.value"/>
+         <short value="Nature of involvement"/>
+         <definition value="The nature of involvement of the tumour with the surgical margin."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Surgical_resection_margins.Tumour_present.Nature_of_involvement.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Surgical_resection_margins.Tumour_absent">
+         <path value="Surgical_resection_margins.Tumour_absent"/>
+         <short value="Tumour absent"/>
+         <definition value="Details where tumour is absent from surgical resection margins."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Surgical_resection_margins.Tumour_absent"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Surgical_resection_margins.Tumour_absent.Distance_from_resection_margin">
+         <path value="Surgical_resection_margins.Tumour_absent.Distance_from_resection_margin"/>
+         <short value="Distance from resection margin"/>
+         <definition value="When tumour is absent, the distance from tumour to the named surgical resection margin."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Surgical_resection_margins.Tumour_absent.Distance_from_resection_margin"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Surgical_resection_margins.Tumour_absent.Distance_from_resection_margin.value">
+         <path value="Surgical_resection_margins.Tumour_absent.Distance_from_resection_margin.value"/>
+         <short value="Distance from resection margin"/>
+         <definition value="When tumour is absent, the distance from tumour to the named surgical resection margin."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Surgical_resection_margins.Tumour_absent.Distance_from_resection_margin.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Surgical_resection_margins.Tumour_absent.Tumour_name">
+         <path value="Surgical_resection_margins.Tumour_absent.Tumour_name"/>
+         <short value="Tumour name"/>
+         <definition value="Name of the tumour for which the 'Distance from resection margin' applies."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Surgical_resection_margins.Tumour_absent.Tumour_name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Surgical_resection_margins.Tumour_absent.Tumour_name.value">
+         <path value="Surgical_resection_margins.Tumour_absent.Tumour_name.value"/>
+         <short value="Tumour name"/>
+         <definition value="Name of the tumour for which the 'Distance from resection margin' applies."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Surgical_resection_margins.Tumour_absent.Tumour_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Surgical_resection_margins.Description">
+         <path value="Surgical_resection_margins.Description"/>
+         <short value="Description"/>
+         <definition value="A text description of tumour involvement at the surgical resection margin."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Surgical_resection_margins.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Surgical_resection_margins.Description.value">
+         <path value="Surgical_resection_margins.Description.value"/>
+         <short value="Description"/>
+         <definition value="A text description of tumour involvement at the surgical resection margin."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Surgical_resection_margins.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Pi_rads_2_1-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-pi_rads_2_1-R4"/>
+   <version value="0"/>
+   <name value="Pi_rads_2_1"/>
+   <title value="pi_rads_2_1"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="A scale used to record an assessment of the likelihood of clinically significant cancer in a suspicious area in the prostate gland."/>
+   <purpose value="To record the PI-RADS assessment category from the result of mpMRI (multiparametric magnetic resonance imaging) scans on the prostate."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="pi_rads_2_1">
+         <path value="pi_rads_2_1"/>
+         <short value="pi_rads_2_1"/>
+         <definition value="A scale used to record an assessment of the likelihood of clinically significant cancer in a suspicious area in the prostate gland."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="pi_rads_2_1"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="pi_rads_2_1.PI_RADS">
+         <path value="pi_rads_2_1.PI_RADS"/>
+         <short value="PI-RADS"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="pi_rads_2_1.PI_RADS"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="pi_rads_2_1.PI_RADS.value">
+         <path value="pi_rads_2_1.PI_RADS.value"/>
+         <short value="PI-RADS"/>
+         <definition value="DvOrdinal"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="pi_rads_2_1.PI_RADS.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

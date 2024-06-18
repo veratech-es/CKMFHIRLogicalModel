@@ -1,0 +1,1374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Genomicvariantresult-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-genomicvariantresult-R4"/>
+   <version value="0"/>
+   <name value="Genomicvariantresult"/>
+   <title value="Genomic variant result"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Findings and annotations related to one variant found in a human individual by a sequencing test."/>
+   <purpose value="To report findings and annotations related to one variant found in the genome by a sequencing test."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Genomic_variant_result">
+         <path value="Genomic_variant_result"/>
+         <short value="Genomic variant result"/>
+         <definition value="Findings and annotations related to one variant found in a human individual by a sequencing test."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.Bioinformatic_analysis_workflow">
+         <path value="Genomic_variant_result.Bioinformatic_analysis_workflow"/>
+         <short value="Bioinformatic analysis workflow"/>
+         <definition value="Structured details about the bioinformatic analysis workflow or the protocol that is used."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Bioinformatic_analysis_workflow"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.Reference_genome">
+         <path value="Genomic_variant_result.Reference_genome"/>
+         <short value="Reference genome"/>
+         <definition value="Structured details about the specific version of the human sequence assembly used for annotation."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Reference_genome"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.Variant_identification">
+         <path value="Genomic_variant_result.Variant_identification"/>
+         <short value="Variant identification"/>
+         <definition value="A reference to a specific variation recorded into an external biological variation database."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Genomic_variant_result.Variant_identification"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.Variant">
+         <path value="Genomic_variant_result.Variant"/>
+         <short value="Variant"/>
+         <definition value="Description of the variation at the genomic level following the HGVS nomenclature."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Variant"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Genomic_variant_result.Variant.value">
+         <path value="Genomic_variant_result.Variant.value"/>
+         <short value="Variant"/>
+         <definition value="Description of the variation at the genomic level following the HGVS nomenclature."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Variant.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.Structured_variant">
+         <path value="Genomic_variant_result.Structured_variant"/>
+         <short value="Structured variant"/>
+         <definition value="Structured description of the genomic variant."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Genomic_variant_result.Structured_variant"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.Transcript">
+         <path value="Genomic_variant_result.Transcript"/>
+         <short value="Transcript"/>
+         <definition value="Structured details about the transcript which is potentially affected by the variant."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Genomic_variant_result.Transcript"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.Transcript.Transcript_reference_sequence">
+         <path value="Genomic_variant_result.Transcript.Transcript_reference_sequence"/>
+         <short value="Transcript reference sequence"/>
+         <definition value="Structured details about the transcribed reference sequence."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Transcript.Transcript_reference_sequence"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.Transcript.DNA_region_name">
+         <path value="Genomic_variant_result.Transcript.DNA_region_name"/>
+         <short value="DNA region name"/>
+         <definition value="The human readable name for the region of interest."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Genomic_variant_result.Transcript.DNA_region_name"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Genomic_variant_result.Transcript.DNA_region_name.value">
+         <path value="Genomic_variant_result.Transcript.DNA_region_name.value"/>
+         <short value="DNA region name"/>
+         <definition value="The human readable name for the region of interest."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Transcript.DNA_region_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.Transcript.Distance_from_splicing_site">
+         <path value="Genomic_variant_result.Transcript.Distance_from_splicing_site"/>
+         <short value="Distance from splicing site"/>
+         <definition value="Distance in nucleotides between mutation and exon–intron junction."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Transcript.Distance_from_splicing_site"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Genomic_variant_result.Transcript.Distance_from_splicing_site.value">
+         <path value="Genomic_variant_result.Transcript.Distance_from_splicing_site.value"/>
+         <short value="Distance from splicing site"/>
+         <definition value="Distance in nucleotides between mutation and exon–intron junction."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Transcript.Distance_from_splicing_site.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.Transcript.DNA_change">
+         <path value="Genomic_variant_result.Transcript.DNA_change"/>
+         <short value="DNA change"/>
+         <definition value="Description of the variation at the DNA level following the HGVS nomenclature."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Transcript.DNA_change"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Genomic_variant_result.Transcript.DNA_change.value">
+         <path value="Genomic_variant_result.Transcript.DNA_change.value"/>
+         <short value="DNA change"/>
+         <definition value="Description of the variation at the DNA level following the HGVS nomenclature."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Transcript.DNA_change.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.Transcript.Amino_acid_change">
+         <path value="Genomic_variant_result.Transcript.Amino_acid_change"/>
+         <short value="Amino acid change"/>
+         <definition value="Description of the variation at the protein level following the HGVS nomenclature."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Transcript.Amino_acid_change"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Genomic_variant_result.Transcript.Amino_acid_change.value">
+         <path value="Genomic_variant_result.Transcript.Amino_acid_change.value"/>
+         <short value="Amino acid change"/>
+         <definition value="Description of the variation at the protein level following the HGVS nomenclature."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Transcript.Amino_acid_change.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.Transcript.Amino_acid_change_type">
+         <path value="Genomic_variant_result.Transcript.Amino_acid_change_type"/>
+         <short value="Amino acid change type"/>
+         <definition value="Codified type for associated amino acid marker."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Transcript.Amino_acid_change_type"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Genomic_variant_result.Transcript.Amino_acid_change_type.value_DV_CODED_TEXT">
+         <path value="Genomic_variant_result.Transcript.Amino_acid_change_type.value_DV_CODED_TEXT"/>
+         <short value="Amino acid change type"/>
+         <definition value="Codified type for associated amino acid marker."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Transcript.Amino_acid_change_type.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.Transcript.Amino_acid_change_type.value_DV_TEXT">
+         <path value="Genomic_variant_result.Transcript.Amino_acid_change_type.value_DV_TEXT"/>
+         <short value="Amino acid change type"/>
+         <definition value="Codified type for associated amino acid marker."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Transcript.Amino_acid_change_type.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.Transcript.RNA_change">
+         <path value="Genomic_variant_result.Transcript.RNA_change"/>
+         <short value="RNA change"/>
+         <definition value="Description of the variation at the RNA level following the HGVS nomenclature."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Transcript.RNA_change"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Genomic_variant_result.Transcript.RNA_change.value">
+         <path value="Genomic_variant_result.Transcript.RNA_change.value"/>
+         <short value="RNA change"/>
+         <definition value="Description of the variation at the RNA level following the HGVS nomenclature."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Transcript.RNA_change.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.Transcript.Predicted_impact">
+         <path value="Genomic_variant_result.Transcript.Predicted_impact"/>
+         <short value="Predicted impact"/>
+         <definition value="Estimate of the effects that the variant may have on the transcript."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Genomic_variant_result.Transcript.Predicted_impact"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.Transcript.Predicted_impact.Predicted_impact_knowledge_base">
+         <path value="Genomic_variant_result.Transcript.Predicted_impact.Predicted_impact_knowledge_base"/>
+         <short value="Predicted impact knowledge base"/>
+         <definition value="Structured details about the reference used to calculate the predicted impact."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Transcript.Predicted_impact.Predicted_impact_knowledge_base"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.Transcript.Predicted_impact.Score">
+         <path value="Genomic_variant_result.Transcript.Predicted_impact.Score"/>
+         <short value="Score"/>
+         <definition value="The calculated value."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Transcript.Predicted_impact.Score"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Genomic_variant_result.Transcript.Predicted_impact.Score.value">
+         <path value="Genomic_variant_result.Transcript.Predicted_impact.Score.value"/>
+         <short value="Score"/>
+         <definition value="The calculated value."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Transcript.Predicted_impact.Score.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.Transcript.Predicted_impact.Qualitative_prediction">
+         <path value="Genomic_variant_result.Transcript.Predicted_impact.Qualitative_prediction"/>
+         <short value="Qualitative prediction"/>
+         <definition value="Human readable version of the predicted impact."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Transcript.Predicted_impact.Qualitative_prediction"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Genomic_variant_result.Transcript.Predicted_impact.Qualitative_prediction.value">
+         <path value="Genomic_variant_result.Transcript.Predicted_impact.Qualitative_prediction.value"/>
+         <short value="Qualitative prediction"/>
+         <definition value="Human readable version of the predicted impact."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Transcript.Predicted_impact.Qualitative_prediction.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.Transcript.Functional_impact">
+         <path value="Genomic_variant_result.Transcript.Functional_impact"/>
+         <short value="Functional impact"/>
+         <definition value="Interpretation of the variation linked to a specific paper."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Genomic_variant_result.Transcript.Functional_impact"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.Transcript.Functional_impact.Impact">
+         <path value="Genomic_variant_result.Transcript.Functional_impact.Impact"/>
+         <short value="Impact"/>
+         <definition value="Single word or phrase describing the reported impact of the specific variant."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Transcript.Functional_impact.Impact"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Genomic_variant_result.Transcript.Functional_impact.Impact.value">
+         <path value="Genomic_variant_result.Transcript.Functional_impact.Impact.value"/>
+         <short value="Impact"/>
+         <definition value="Single word or phrase describing the reported impact of the specific variant."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Transcript.Functional_impact.Impact.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.Transcript.Functional_impact.Source">
+         <path value="Genomic_variant_result.Transcript.Functional_impact.Source"/>
+         <short value="Source"/>
+         <definition value="The reference to the specific research paper."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Genomic_variant_result.Transcript.Functional_impact.Source"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.Transcript.Gene">
+         <path value="Genomic_variant_result.Transcript.Gene"/>
+         <short value="Gene"/>
+         <definition value="Structured details about the gene carrying the variant."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Transcript.Gene"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.Transcript.Gene.Gene_symbol">
+         <path value="Genomic_variant_result.Transcript.Gene.Gene_symbol"/>
+         <short value="Gene symbol"/>
+         <definition value="The official gene symbol approved by the HGNC, which is a short abbreviated form of the gene name."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Transcript.Gene.Gene_symbol"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Genomic_variant_result.Transcript.Gene.Gene_symbol.value">
+         <path value="Genomic_variant_result.Transcript.Gene.Gene_symbol.value"/>
+         <short value="Gene symbol"/>
+         <definition value="The official gene symbol approved by the HGNC, which is a short abbreviated form of the gene name."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Transcript.Gene.Gene_symbol.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.Transcript.Gene.Gene_name">
+         <path value="Genomic_variant_result.Transcript.Gene.Gene_name"/>
+         <short value="Gene name"/>
+         <definition value="The full gene name approved by the HGNC that conveys the character or function of the gene."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Transcript.Gene.Gene_name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Genomic_variant_result.Transcript.Gene.Gene_name.value">
+         <path value="Genomic_variant_result.Transcript.Gene.Gene_name.value"/>
+         <short value="Gene name"/>
+         <definition value="The full gene name approved by the HGNC that conveys the character or function of the gene."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Transcript.Gene.Gene_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.Transcript.Gene.Copy_number_overlap">
+         <path value="Genomic_variant_result.Transcript.Gene.Copy_number_overlap"/>
+         <short value="Copy number overlap"/>
+         <definition value="The fraction of gene region covered by copy number."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Transcript.Gene.Copy_number_overlap"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Genomic_variant_result.Transcript.Gene.Copy_number_overlap.value">
+         <path value="Genomic_variant_result.Transcript.Gene.Copy_number_overlap.value"/>
+         <short value="Copy number overlap"/>
+         <definition value="The fraction of gene region covered by copy number."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Transcript.Gene.Copy_number_overlap.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Ratio"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.Transcript.Gene.Part_of_fusion">
+         <path value="Genomic_variant_result.Transcript.Gene.Part_of_fusion"/>
+         <short value="Part of fusion"/>
+         <definition value="States if the gene is part of a fusion gene and if it is the first or second part of the fusion gene."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Transcript.Gene.Part_of_fusion"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Genomic_variant_result.Transcript.Gene.Part_of_fusion.value">
+         <path value="Genomic_variant_result.Transcript.Gene.Part_of_fusion.value"/>
+         <short value="Part of fusion"/>
+         <definition value="States if the gene is part of a fusion gene and if it is the first or second part of the fusion gene."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Transcript.Gene.Part_of_fusion.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.Transcript.ACMG_classification">
+         <path value="Genomic_variant_result.Transcript.ACMG_classification"/>
+         <short value="ACMG classification"/>
+         <definition value="The clinical significance according to the ACMG recommendations."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Transcript.ACMG_classification"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Genomic_variant_result.Transcript.ACMG_classification.value">
+         <path value="Genomic_variant_result.Transcript.ACMG_classification.value"/>
+         <short value="ACMG classification"/>
+         <definition value="The clinical significance according to the ACMG recommendations."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Transcript.ACMG_classification.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.Transcript.Fusion_exon">
+         <path value="Genomic_variant_result.Transcript.Fusion_exon"/>
+         <short value="Fusion exon"/>
+         <definition value="The number of the exon which is part of the fusion."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Transcript.Fusion_exon"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Genomic_variant_result.Transcript.Fusion_exon.value">
+         <path value="Genomic_variant_result.Transcript.Fusion_exon.value"/>
+         <short value="Fusion exon"/>
+         <definition value="The number of the exon which is part of the fusion."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Transcript.Fusion_exon.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.Best_transcript_candidate">
+         <path value="Genomic_variant_result.Best_transcript_candidate"/>
+         <short value="Best transcript candidate"/>
+         <definition value="The ID of the transcript with the highest predicted impact."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Best_transcript_candidate"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Genomic_variant_result.Best_transcript_candidate.value">
+         <path value="Genomic_variant_result.Best_transcript_candidate.value"/>
+         <short value="Best transcript candidate"/>
+         <definition value="The ID of the transcript with the highest predicted impact."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Best_transcript_candidate.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.Conservation">
+         <path value="Genomic_variant_result.Conservation"/>
+         <short value="Conservation"/>
+         <definition value="Structured details about the evolutionary conservation."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Genomic_variant_result.Conservation"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.Conservation.Conservation_score_knowledge_base">
+         <path value="Genomic_variant_result.Conservation.Conservation_score_knowledge_base"/>
+         <short value="Conservation score knowledge base"/>
+         <definition value="Structured details about the reference used to calculate the conservation score."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Conservation.Conservation_score_knowledge_base"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.Conservation.Score">
+         <path value="Genomic_variant_result.Conservation.Score"/>
+         <short value="Score"/>
+         <definition value="The conservation score."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Conservation.Score"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Genomic_variant_result.Conservation.Score.value">
+         <path value="Genomic_variant_result.Conservation.Score.value"/>
+         <short value="Score"/>
+         <definition value="The conservation score."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Conservation.Score.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.Read_depth">
+         <path value="Genomic_variant_result.Read_depth"/>
+         <short value="Read depth"/>
+         <definition value="The total number of reads mapped at this specific location."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Read_depth"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Genomic_variant_result.Read_depth.value">
+         <path value="Genomic_variant_result.Read_depth.value"/>
+         <short value="Read depth"/>
+         <definition value="The total number of reads mapped at this specific location."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Read_depth.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.Allele_depth">
+         <path value="Genomic_variant_result.Allele_depth"/>
+         <short value="Allele depth"/>
+         <definition value="The number of reads that support the reported variant."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Allele_depth"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Genomic_variant_result.Allele_depth.value">
+         <path value="Genomic_variant_result.Allele_depth.value"/>
+         <short value="Allele depth"/>
+         <definition value="The number of reads that support the reported variant."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Allele_depth.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.Allele_frequency">
+         <path value="Genomic_variant_result.Allele_frequency"/>
+         <short value="Allele frequency"/>
+         <definition value="The relative frequency of an allele at a particular locus."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Allele_frequency"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Genomic_variant_result.Allele_frequency.value">
+         <path value="Genomic_variant_result.Allele_frequency.value"/>
+         <short value="Allele frequency"/>
+         <definition value="The relative frequency of an allele at a particular locus."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Allele_frequency.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.Population_allele_frequency_details">
+         <path value="Genomic_variant_result.Population_allele_frequency_details"/>
+         <short value="Population allele frequency details"/>
+         <definition value="The relative frequency of a particular allele in the population."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Genomic_variant_result.Population_allele_frequency_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.Population_allele_frequency_details.Population_allele_frequency_knowledge_base">
+         <path value="Genomic_variant_result.Population_allele_frequency_details.Population_allele_frequency_knowledge_base"/>
+         <short value="Population allele frequency knowledge base"/>
+         <definition value="Structured details about the database used to calculate the allele frequency."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Population_allele_frequency_details.Population_allele_frequency_knowledge_base"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.Population_allele_frequency_details.Population_allele_frequency">
+         <path value="Genomic_variant_result.Population_allele_frequency_details.Population_allele_frequency"/>
+         <short value="Population allele frequency"/>
+         <definition value="The population allele frequency."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Population_allele_frequency_details.Population_allele_frequency"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Genomic_variant_result.Population_allele_frequency_details.Population_allele_frequency.value">
+         <path value="Genomic_variant_result.Population_allele_frequency_details.Population_allele_frequency.value"/>
+         <short value="Population allele frequency"/>
+         <definition value="The population allele frequency."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Population_allele_frequency_details.Population_allele_frequency.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.VCF_quality_filter">
+         <path value="Genomic_variant_result.VCF_quality_filter"/>
+         <short value="VCF quality filter"/>
+         <definition value="Structured details about the quality filters that have been applied to the data."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Genomic_variant_result.VCF_quality_filter"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.VCF_quality_filter.Filter_name">
+         <path value="Genomic_variant_result.VCF_quality_filter.Filter_name"/>
+         <short value="Filter name"/>
+         <definition value="Name of the quality filter."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.VCF_quality_filter.Filter_name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Genomic_variant_result.VCF_quality_filter.Filter_name.value">
+         <path value="Genomic_variant_result.VCF_quality_filter.Filter_name.value"/>
+         <short value="Filter name"/>
+         <definition value="Name of the quality filter."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.VCF_quality_filter.Filter_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.VCF_quality_filter.Description">
+         <path value="Genomic_variant_result.VCF_quality_filter.Description"/>
+         <short value="Description"/>
+         <definition value="Quality filter extended description."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.VCF_quality_filter.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Genomic_variant_result.VCF_quality_filter.Description.value">
+         <path value="Genomic_variant_result.VCF_quality_filter.Description.value"/>
+         <short value="Description"/>
+         <definition value="Quality filter extended description."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.VCF_quality_filter.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.VCF_quality_filter.Filter_passed">
+         <path value="Genomic_variant_result.VCF_quality_filter.Filter_passed"/>
+         <short value="Filter passed"/>
+         <definition value="Did the variant pass the quality filter?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.VCF_quality_filter.Filter_passed"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Genomic_variant_result.VCF_quality_filter.Filter_passed.value">
+         <path value="Genomic_variant_result.VCF_quality_filter.Filter_passed.value"/>
+         <short value="Filter passed"/>
+         <definition value="Did the variant pass the quality filter?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.VCF_quality_filter.Filter_passed.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.Strand_bias_ratio">
+         <path value="Genomic_variant_result.Strand_bias_ratio"/>
+         <short value="Strand bias ratio"/>
+         <definition value="The ratio of the strand bias."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Strand_bias_ratio"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Genomic_variant_result.Strand_bias_ratio.value">
+         <path value="Genomic_variant_result.Strand_bias_ratio.value"/>
+         <short value="Strand bias ratio"/>
+         <definition value="The ratio of the strand bias."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Strand_bias_ratio.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.Strand_bias_p_value">
+         <path value="Genomic_variant_result.Strand_bias_p_value"/>
+         <short value="Strand bias p-value"/>
+         <definition value="The Phred-scaled p-value of the strand bias."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Strand_bias_p_value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Genomic_variant_result.Strand_bias_p_value.value">
+         <path value="Genomic_variant_result.Strand_bias_p_value.value"/>
+         <short value="Strand bias p-value"/>
+         <definition value="The Phred-scaled p-value of the strand bias."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Strand_bias_p_value.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.Genotype">
+         <path value="Genomic_variant_result.Genotype"/>
+         <short value="Genotype"/>
+         <definition value="Genotype encoded as allele values."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Genotype"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Genomic_variant_result.Genotype.value">
+         <path value="Genomic_variant_result.Genotype.value"/>
+         <short value="Genotype"/>
+         <definition value="Genotype encoded as allele values."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Genotype.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.Allelic_state">
+         <path value="Genomic_variant_result.Allelic_state"/>
+         <short value="Allelic state"/>
+         <definition value="The level of occurrence of a single DNA marker within a set of chromosomes."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Allelic_state"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Genomic_variant_result.Allelic_state.value_DV_CODED_TEXT">
+         <path value="Genomic_variant_result.Allelic_state.value_DV_CODED_TEXT"/>
+         <short value="Allelic state"/>
+         <definition value="The level of occurrence of a single DNA marker within a set of chromosomes."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Allelic_state.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.Allelic_state.value_DV_TEXT">
+         <path value="Genomic_variant_result.Allelic_state.value_DV_TEXT"/>
+         <short value="Allelic state"/>
+         <definition value="The level of occurrence of a single DNA marker within a set of chromosomes."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Allelic_state.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.Genotype_quality">
+         <path value="Genomic_variant_result.Genotype_quality"/>
+         <short value="Genotype quality"/>
+         <definition value="Conditional genotype quality, encoded as a Phred quality."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Genotype_quality"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Genomic_variant_result.Genotype_quality.value">
+         <path value="Genomic_variant_result.Genotype_quality.value"/>
+         <short value="Genotype quality"/>
+         <definition value="Conditional genotype quality, encoded as a Phred quality."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Genotype_quality.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.Genotype_probability">
+         <path value="Genomic_variant_result.Genotype_probability"/>
+         <short value="Genotype probability"/>
+         <definition value="A comma separated list of the log10-scaled genotype likelihoods for all possible genotypes, given the reference and the alternate alleles."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Genotype_probability"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Genomic_variant_result.Genotype_probability.value">
+         <path value="Genomic_variant_result.Genotype_probability.value"/>
+         <short value="Genotype probability"/>
+         <definition value="A comma separated list of the log10-scaled genotype likelihoods for all possible genotypes, given the reference and the alternate alleles."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Genotype_probability.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.Specimen_identifier">
+         <path value="Genomic_variant_result.Specimen_identifier"/>
+         <short value="Specimen identifier"/>
+         <definition value="Identification of the specimen used for the genomic result."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Specimen_identifier"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Genomic_variant_result.Specimen_identifier.value_DV_IDENTIFIER">
+         <path value="Genomic_variant_result.Specimen_identifier.value_DV_IDENTIFIER"/>
+         <short value="Specimen identifier"/>
+         <definition value="Identification of the specimen used for the genomic result."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Specimen_identifier.value_DV_IDENTIFIER"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.Specimen_identifier.value_DV_URI">
+         <path value="Genomic_variant_result.Specimen_identifier.value_DV_URI"/>
+         <short value="Specimen identifier"/>
+         <definition value="Identification of the specimen used for the genomic result."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_variant_result.Specimen_identifier.value_DV_URI"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="string"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_variant_result.Additional_details">
+         <path value="Genomic_variant_result.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="Additional details to be captured."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Genomic_variant_result.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

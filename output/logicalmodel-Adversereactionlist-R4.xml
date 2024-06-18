@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Adversereactionlist-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-adversereactionlist-R4"/>
+   <version value="0"/>
+   <name value="Adversereactionlist"/>
+   <title value="Adverse reaction list"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="A persistent and managed list of adverse reactions experienced by the subject that may influence clinical decision-making and care provision."/>
+   <purpose value="To record a persistent and managed list of all previous adverse reactions experienced by the subject or, alternatively, positive statements about known exclusions or actual absence of any information about adverse reactions; all of which may contribute to or influence clinical decision-making and care provision."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Adverse_reaction_list">
+         <path value="Adverse_reaction_list"/>
+         <short value="Adverse reaction list"/>
+         <definition value="A persistent and managed list of adverse reactions experienced by the subject that may influence clinical decision-making and care provision."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Adverse_reaction_list"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Adverse_reaction_list.category">
+         <path value="Adverse_reaction_list.category"/>
+         <short value="Adverse reaction list"/>
+         <definition value="A persistent and managed list of adverse reactions experienced by the subject that may influence clinical decision-making and care provision."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Adverse_reaction_list.category"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Adverse_reaction_list.EVENT_CONTEXT">
+         <path value="Adverse_reaction_list.EVENT_CONTEXT"/>
+         <definition value="EVENT_CONTEXT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Adverse_reaction_list.EVENT_CONTEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Adverse_reaction_list.EVENT_CONTEXT.other_context">
+         <path value="Adverse_reaction_list.EVENT_CONTEXT.other_context"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Adverse_reaction_list.EVENT_CONTEXT.other_context"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Adverse_reaction_list.EVENT_CONTEXT.other_context.Extension">
+         <path value="Adverse_reaction_list.EVENT_CONTEXT.other_context.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local context or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Adverse_reaction_list.EVENT_CONTEXT.other_context.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

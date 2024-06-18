@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Conditionalmedicationinstructions-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-conditionalmedicationinstructions-R4"/>
+   <version value="0"/>
+   <name value="Conditionalmedicationinstructions"/>
+   <title value="Conditional medication instructions"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Details of conditions on which determine the dose amount or administration rate."/>
+   <purpose value="To record conditional factors which impact the dose amount or administration rate of a medication."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Conditional_medication_instructions">
+         <path value="Conditional_medication_instructions"/>
+         <short value="Conditional medication instructions"/>
+         <definition value="Details of conditions on which determine the dose amount or administration rate."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Conditional_medication_instructions"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Conditional_medication_instructions.Condition_rule">
+         <path value="Conditional_medication_instructions.Condition_rule"/>
+         <short value="Condition rule"/>
+         <definition value="Details of the condition and associated dose amount or administration rate."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Conditional_medication_instructions.Condition_rule"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Conditional_medication_instructions.Condition_rule.Condition">
+         <path value="Conditional_medication_instructions.Condition_rule.Condition"/>
+         <short value="Condition"/>
+         <definition value="The value which is required for the associated dose amount or admistration to be applied."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Conditional_medication_instructions.Condition_rule.Condition"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Conditional_medication_instructions.Condition_rule.Condition.value_DvQuantity">
+         <path value="Conditional_medication_instructions.Condition_rule.Condition.value_DvQuantity"/>
+         <short value="Condition"/>
+         <definition value="The value which is required for the associated dose amount or admistration to be applied."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Conditional_medication_instructions.Condition_rule.Condition.value_DvQuantity"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Conditional_medication_instructions.Condition_rule.Condition.value_DV_INTERVAL_DV_QUANTITY_">
+         <path value="Conditional_medication_instructions.Condition_rule.Condition.value_DV_INTERVAL_DV_QUANTITY_"/>
+         <short value="Condition"/>
+         <definition value="The value which is required for the associated dose amount or admistration to be applied."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Conditional_medication_instructions.Condition_rule.Condition.value_DV_INTERVAL_DV_QUANTITY_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Conditional_medication_instructions.Condition_rule.Condition.value_DV_COUNT">
+         <path value="Conditional_medication_instructions.Condition_rule.Condition.value_DV_COUNT"/>
+         <short value="Condition"/>
+         <definition value="The value which is required for the associated dose amount or admistration to be applied."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Conditional_medication_instructions.Condition_rule.Condition.value_DV_COUNT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Conditional_medication_instructions.Condition_rule.Condition.value_DV_INTERVAL_DV_COUNT_">
+         <path value="Conditional_medication_instructions.Condition_rule.Condition.value_DV_INTERVAL_DV_COUNT_"/>
+         <short value="Condition"/>
+         <definition value="The value which is required for the associated dose amount or admistration to be applied."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Conditional_medication_instructions.Condition_rule.Condition.value_DV_INTERVAL_DV_COUNT_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Conditional_medication_instructions.Condition_rule.Condition.value_DV_PROPORTION">
+         <path value="Conditional_medication_instructions.Condition_rule.Condition.value_DV_PROPORTION"/>
+         <short value="Condition"/>
+         <definition value="The value which is required for the associated dose amount or admistration to be applied."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Conditional_medication_instructions.Condition_rule.Condition.value_DV_PROPORTION"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Ratio"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Conditional_medication_instructions.Condition_rule.Condition.value_DV_TEXT">
+         <path value="Conditional_medication_instructions.Condition_rule.Condition.value_DV_TEXT"/>
+         <short value="Condition"/>
+         <definition value="The value which is required for the associated dose amount or admistration to be applied."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Conditional_medication_instructions.Condition_rule.Condition.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Conditional_medication_instructions.Condition_rule.Condition.value_DV_BOOLEAN">
+         <path value="Conditional_medication_instructions.Condition_rule.Condition.value_DV_BOOLEAN"/>
+         <short value="Condition"/>
+         <definition value="The value which is required for the associated dose amount or admistration to be applied."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Conditional_medication_instructions.Condition_rule.Condition.value_DV_BOOLEAN"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Conditional_medication_instructions.Condition_rule.Dose_amount">
+         <path value="Conditional_medication_instructions.Condition_rule.Dose_amount"/>
+         <short value="Dose amount"/>
+         <definition value="The dose amount to be administered if the condition applies."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Conditional_medication_instructions.Condition_rule.Dose_amount"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Conditional_medication_instructions.Condition_rule.Dose_amount.value">
+         <path value="Conditional_medication_instructions.Condition_rule.Dose_amount.value"/>
+         <short value="Dose amount"/>
+         <definition value="The dose amount to be administered if the condition applies."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Conditional_medication_instructions.Condition_rule.Dose_amount.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Conditional_medication_instructions.Condition_rule.Dose_administration_rate">
+         <path value="Conditional_medication_instructions.Condition_rule.Dose_administration_rate"/>
+         <short value="Dose administration rate"/>
+         <definition value="The dose administration rate to be used if the condition applies."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Conditional_medication_instructions.Condition_rule.Dose_administration_rate"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Conditional_medication_instructions.Condition_rule.Dose_administration_rate.value">
+         <path value="Conditional_medication_instructions.Condition_rule.Dose_administration_rate.value"/>
+         <short value="Dose administration rate"/>
+         <definition value="The dose administration rate to be used if the condition applies."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Conditional_medication_instructions.Condition_rule.Dose_administration_rate.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Conditional_medication_instructions.Condition_rule.Dosage_formula">
+         <path value="Conditional_medication_instructions.Condition_rule.Dosage_formula"/>
+         <short value="Dosage formula"/>
+         <definition value="The dosage formula used to calculate the dose amount or administration rate."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Conditional_medication_instructions.Condition_rule.Dosage_formula"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Conditional_medication_instructions.Condition_rule.Dosage_formula.value">
+         <path value="Conditional_medication_instructions.Condition_rule.Dosage_formula.value"/>
+         <short value="Dosage formula"/>
+         <definition value="The dosage formula used to calculate the dose amount or administration rate."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Conditional_medication_instructions.Condition_rule.Dosage_formula.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Simplegeneticvariant-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-simplegeneticvariant-R4"/>
+   <version value="0"/>
+   <name value="Simplegeneticvariant"/>
+   <title value="Simple genetic variant"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="A sequence change where, compared to a reference sequence, a one or more nucleotides are changed."/>
+   <purpose value="To describe a variant observed in a sequence, where the variant type is unknown, for example, because no annotation of the data has yet been made, or because the specific variant is not covered by the specialized variant archetypes."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Simple_genetic_variant">
+         <path value="Simple_genetic_variant"/>
+         <short value="Simple genetic variant"/>
+         <definition value="A sequence change where, compared to a reference sequence, a one or more nucleotides are changed."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Simple_genetic_variant"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Simple_genetic_variant.Chromosome_label">
+         <path value="Simple_genetic_variant.Chromosome_label"/>
+         <short value="Chromosome label"/>
+         <definition value="Chromosome identifier."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Simple_genetic_variant.Chromosome_label"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Simple_genetic_variant.Chromosome_label.value_DV_CODED_TEXT">
+         <path value="Simple_genetic_variant.Chromosome_label.value_DV_CODED_TEXT"/>
+         <short value="Chromosome label"/>
+         <definition value="Chromosome identifier."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Simple_genetic_variant.Chromosome_label.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Simple_genetic_variant.Chromosome_label.value_DV_TEXT">
+         <path value="Simple_genetic_variant.Chromosome_label.value_DV_TEXT"/>
+         <short value="Chromosome label"/>
+         <definition value="Chromosome identifier."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Simple_genetic_variant.Chromosome_label.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Simple_genetic_variant.Start_position_of_variant">
+         <path value="Simple_genetic_variant.Start_position_of_variant"/>
+         <short value="Start position of variant"/>
+         <definition value="The position of the first nucleotide of the changed range for a simple variant. (\&#34;Start\&#34; in vcf-file)."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Simple_genetic_variant.Start_position_of_variant"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Simple_genetic_variant.Start_position_of_variant.value">
+         <path value="Simple_genetic_variant.Start_position_of_variant.value"/>
+         <short value="Start position of variant"/>
+         <definition value="The position of the first nucleotide of the changed range for a simple variant. (\&#34;Start\&#34; in vcf-file)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Simple_genetic_variant.Start_position_of_variant.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Simple_genetic_variant.End_position_of_variant">
+         <path value="Simple_genetic_variant.End_position_of_variant"/>
+         <short value="End position of variant"/>
+         <definition value="The position of the last nucleotide of the changed range for a simple variant. (\&#34;End\&#34; in vcf-file)."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Simple_genetic_variant.End_position_of_variant"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Simple_genetic_variant.End_position_of_variant.value">
+         <path value="Simple_genetic_variant.End_position_of_variant.value"/>
+         <short value="End position of variant"/>
+         <definition value="The position of the last nucleotide of the changed range for a simple variant. (\&#34;End\&#34; in vcf-file)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Simple_genetic_variant.End_position_of_variant.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Simple_genetic_variant.Alternate_nucleotide_sequence">
+         <path value="Simple_genetic_variant.Alternate_nucleotide_sequence"/>
+         <short value="Alternate nucleotide sequence"/>
+         <definition value="The observed alternate nucleotide or nucleotide sequence (\&#34;Alt\&#34; in vcf-file)."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Simple_genetic_variant.Alternate_nucleotide_sequence"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Simple_genetic_variant.Alternate_nucleotide_sequence.value">
+         <path value="Simple_genetic_variant.Alternate_nucleotide_sequence.value"/>
+         <short value="Alternate nucleotide sequence"/>
+         <definition value="The observed alternate nucleotide or nucleotide sequence (\&#34;Alt\&#34; in vcf-file)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Simple_genetic_variant.Alternate_nucleotide_sequence.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Simple_genetic_variant.Reference_nucleotide_sequence">
+         <path value="Simple_genetic_variant.Reference_nucleotide_sequence"/>
+         <short value="Reference nucleotide sequence"/>
+         <definition value="The reference nucleotide or nucleotide sequence. (\&#34;Ref\&#34; in vcf-file)."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Simple_genetic_variant.Reference_nucleotide_sequence"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Simple_genetic_variant.Reference_nucleotide_sequence.value">
+         <path value="Simple_genetic_variant.Reference_nucleotide_sequence.value"/>
+         <short value="Reference nucleotide sequence"/>
+         <definition value="The reference nucleotide or nucleotide sequence. (\&#34;Ref\&#34; in vcf-file)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Simple_genetic_variant.Reference_nucleotide_sequence.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Simple_genetic_variant.Reference_sequence">
+         <path value="Simple_genetic_variant.Reference_sequence"/>
+         <short value="Reference sequence"/>
+         <definition value="The sequence file that has been used as a reference to describe the variant."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Simple_genetic_variant.Reference_sequence"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

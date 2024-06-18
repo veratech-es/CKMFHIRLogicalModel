@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Householdcrowding-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-householdcrowding-R4"/>
+   <version value="0"/>
+   <name value="Householdcrowding"/>
+   <title value="Household crowding"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="A mismatch between the number of available rooms in a dwelling and the composition of the household."/>
+   <purpose value="To record parameters used to identify a mismatch between the number of available rooms in a dwelling and the composition of the household."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Household_crowding">
+         <path value="Household_crowding"/>
+         <short value="Household crowding"/>
+         <definition value="A mismatch between the number of available rooms in a dwelling and the composition of the household."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Household_crowding"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Household_crowding.Description">
+         <path value="Household_crowding.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description about household crowding."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Household_crowding.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Household_crowding.Description.value">
+         <path value="Household_crowding.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description about household crowding."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Household_crowding.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Household_crowding.Status">
+         <path value="Household_crowding.Status"/>
+         <short value="Status"/>
+         <definition value="Assessed crowding status."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Household_crowding.Status"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Household_crowding.Status.value_DV_CODED_TEXT">
+         <path value="Household_crowding.Status.value_DV_CODED_TEXT"/>
+         <short value="Status"/>
+         <definition value="Assessed crowding status."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Household_crowding.Status.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Household_crowding.Status.value_DV_TEXT">
+         <path value="Household_crowding.Status.value_DV_TEXT"/>
+         <short value="Status"/>
+         <definition value="Assessed crowding status."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Household_crowding.Status.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Household_crowding.Number_of_rooms">
+         <path value="Household_crowding.Number_of_rooms"/>
+         <short value="Number of rooms"/>
+         <definition value="Number of habitable rooms available to the household."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Household_crowding.Number_of_rooms"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Household_crowding.Number_of_rooms.value">
+         <path value="Household_crowding.Number_of_rooms.value"/>
+         <short value="Number of rooms"/>
+         <definition value="Number of habitable rooms available to the household."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Household_crowding.Number_of_rooms.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Household_crowding.Persons_per_room">
+         <path value="Household_crowding.Persons_per_room"/>
+         <short value="Persons per room"/>
+         <definition value="Number of household members per available room."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Household_crowding.Persons_per_room"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Household_crowding.Persons_per_room.value">
+         <path value="Household_crowding.Persons_per_room.value"/>
+         <short value="Persons per room"/>
+         <definition value="Number of household members per available room."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Household_crowding.Persons_per_room.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

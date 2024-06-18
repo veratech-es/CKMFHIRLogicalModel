@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Healthevent-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-healthevent-R4"/>
+   <version value="0"/>
+   <name value="Healthevent"/>
+   <title value="Health event"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Details about a specific health-related event."/>
+   <purpose value="To record details about a health related event."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Health_event">
+         <path value="Health_event"/>
+         <short value="Health event"/>
+         <definition value="Details about a specific health-related event."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_event"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_event.Event_name">
+         <path value="Health_event.Event_name"/>
+         <short value="Event name"/>
+         <definition value="Identification of the event that occurred."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_event.Event_name"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Health_event.Event_name.value">
+         <path value="Health_event.Event_name.value"/>
+         <short value="Event name"/>
+         <definition value="Identification of the event that occurred."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_event.Event_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_event.Description">
+         <path value="Health_event.Description"/>
+         <short value="Description"/>
+         <definition value="A narrative description of the event."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_event.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Health_event.Description.value">
+         <path value="Health_event.Description.value"/>
+         <short value="Description"/>
+         <definition value="A narrative description of the event."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_event.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_event.Preceding_symptoms_and_events">
+         <path value="Health_event.Preceding_symptoms_and_events"/>
+         <short value="Preceding symptoms and events"/>
+         <definition value="Symptoms and events which preceded the index event."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Health_event.Preceding_symptoms_and_events"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_event.Associated_symptoms_and_events">
+         <path value="Health_event.Associated_symptoms_and_events"/>
+         <short value="Associated symptoms and events"/>
+         <definition value="Symptoms and events which occurred at the time of the index event."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Health_event.Associated_symptoms_and_events"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_event.Time_elapsed">
+         <path value="Health_event.Time_elapsed"/>
+         <short value="Time elapsed"/>
+         <definition value="The time between the event and the time of clinical assessment."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_event.Time_elapsed"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Health_event.Time_elapsed.value">
+         <path value="Health_event.Time_elapsed.value"/>
+         <short value="Time elapsed"/>
+         <definition value="The time between the event and the time of clinical assessment."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_event.Time_elapsed.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_event.Witness">
+         <path value="Health_event.Witness"/>
+         <short value="Witness"/>
+         <definition value="Identification of an individual who witnessed the event."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Health_event.Witness"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_event.Circumstances">
+         <path value="Health_event.Circumstances"/>
+         <short value="Circumstances"/>
+         <definition value="Narrative description the context and circumstances surrounding the event."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_event.Circumstances"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Health_event.Circumstances.value">
+         <path value="Health_event.Circumstances.value"/>
+         <short value="Circumstances"/>
+         <definition value="Narrative description the context and circumstances surrounding the event."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_event.Circumstances.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_event.Contributing_factor">
+         <path value="Health_event.Contributing_factor"/>
+         <short value="Contributing factor"/>
+         <definition value="Identification of factors contributing to the occurrence of the event."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Health_event.Contributing_factor"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Health_event.Contributing_factor.value">
+         <path value="Health_event.Contributing_factor.value"/>
+         <short value="Contributing factor"/>
+         <definition value="Identification of factors contributing to the occurrence of the event."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_event.Contributing_factor.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_event.Additional_details">
+         <path value="Health_event.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="Structured details about specific aspects of the event."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Health_event.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Health_event.Comment">
+         <path value="Health_event.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the health event, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_event.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Health_event.Comment.value">
+         <path value="Health_event.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the health event, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Health_event.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

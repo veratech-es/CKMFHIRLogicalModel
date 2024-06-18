@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Palpationofthecervix-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-palpationofthecervix-R4"/>
+   <version value="0"/>
+   <name value="Palpationofthecervix"/>
+   <title value="Palpation of the cervix"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Findings observed by palpation of the cervix."/>
+   <purpose value="To record a narrative description and clinical interpretation of the findings observed only by palpation of the cervix."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Palpation_of_the_cervix">
+         <path value="Palpation_of_the_cervix"/>
+         <short value="Palpation of the cervix"/>
+         <definition value="Findings observed by palpation of the cervix."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Palpation_of_the_cervix"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Palpation_of_the_cervix.System_or_structure_examined">
+         <path value="Palpation_of_the_cervix.System_or_structure_examined"/>
+         <short value="System or structure examined"/>
+         <definition value="Identification of the examined body system or anatomical structure."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Palpation_of_the_cervix.System_or_structure_examined"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Palpation_of_the_cervix.System_or_structure_examined.value">
+         <path value="Palpation_of_the_cervix.System_or_structure_examined.value"/>
+         <short value="System or structure examined"/>
+         <definition value="Identification of the examined body system or anatomical structure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Palpation_of_the_cervix.System_or_structure_examined.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Palpation_of_the_cervix.Body_site">
+         <path value="Palpation_of_the_cervix.Body_site"/>
+         <short value="Body site"/>
+         <definition value="Identification of the area of the body under examination."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Palpation_of_the_cervix.Body_site"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Palpation_of_the_cervix.Body_site.value">
+         <path value="Palpation_of_the_cervix.Body_site.value"/>
+         <short value="Body site"/>
+         <definition value="Identification of the area of the body under examination."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Palpation_of_the_cervix.Body_site.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Palpation_of_the_cervix.Structured_body_site">
+         <path value="Palpation_of_the_cervix.Structured_body_site"/>
+         <short value="Structured body site"/>
+         <definition value="A structured description of the area of the body under examination."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Palpation_of_the_cervix.Structured_body_site"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Palpation_of_the_cervix.No_abnormality_detected">
+         <path value="Palpation_of_the_cervix.No_abnormality_detected"/>
+         <short value="No abnormality detected"/>
+         <definition value="Statement that no abnormality was detected (NAD) on physical examination."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Palpation_of_the_cervix.No_abnormality_detected"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Palpation_of_the_cervix.No_abnormality_detected.value">
+         <path value="Palpation_of_the_cervix.No_abnormality_detected.value"/>
+         <short value="No abnormality detected"/>
+         <definition value="Statement that no abnormality was detected (NAD) on physical examination."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Palpation_of_the_cervix.No_abnormality_detected.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Palpation_of_the_cervix.Clinical_description">
+         <path value="Palpation_of_the_cervix.Clinical_description"/>
+         <short value="Clinical description"/>
+         <definition value="Narrative description of the overall findings observed during the physical examination."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Palpation_of_the_cervix.Clinical_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Palpation_of_the_cervix.Clinical_description.value">
+         <path value="Palpation_of_the_cervix.Clinical_description.value"/>
+         <short value="Clinical description"/>
+         <definition value="Narrative description of the overall findings observed during the physical examination."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Palpation_of_the_cervix.Clinical_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Palpation_of_the_cervix.Relative_position">
+         <path value="Palpation_of_the_cervix.Relative_position"/>
+         <short value="Relative position"/>
+         <definition value="Actual cervical position in relation to the expected, central anatomical position."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Palpation_of_the_cervix.Relative_position"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Palpation_of_the_cervix.Relative_position.value">
+         <path value="Palpation_of_the_cervix.Relative_position.value"/>
+         <short value="Relative position"/>
+         <definition value="Actual cervical position in relation to the expected, central anatomical position."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Palpation_of_the_cervix.Relative_position.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Palpation_of_the_cervix.Consistency">
+         <path value="Palpation_of_the_cervix.Consistency"/>
+         <short value="Consistency"/>
+         <definition value="The firmness of the cervix."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Palpation_of_the_cervix.Consistency"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Palpation_of_the_cervix.Consistency.value">
+         <path value="Palpation_of_the_cervix.Consistency.value"/>
+         <short value="Consistency"/>
+         <definition value="The firmness of the cervix."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Palpation_of_the_cervix.Consistency.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Palpation_of_the_cervix.Surface_description">
+         <path value="Palpation_of_the_cervix.Surface_description"/>
+         <short value="Surface description"/>
+         <definition value="Narrative description about the surface of the cervix."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Palpation_of_the_cervix.Surface_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Palpation_of_the_cervix.Surface_description.value">
+         <path value="Palpation_of_the_cervix.Surface_description.value"/>
+         <short value="Surface description"/>
+         <definition value="Narrative description about the surface of the cervix."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Palpation_of_the_cervix.Surface_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Palpation_of_the_cervix.Mobility">
+         <path value="Palpation_of_the_cervix.Mobility"/>
+         <short value="Mobility"/>
+         <definition value="Narrative description of the mobility of the cervix."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Palpation_of_the_cervix.Mobility"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Palpation_of_the_cervix.Mobility.value">
+         <path value="Palpation_of_the_cervix.Mobility.value"/>
+         <short value="Mobility"/>
+         <definition value="Narrative description of the mobility of the cervix."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Palpation_of_the_cervix.Mobility.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Palpation_of_the_cervix.Tenderness">
+         <path value="Palpation_of_the_cervix.Tenderness"/>
+         <short value="Tenderness"/>
+         <definition value="Narrative description of the tenderness of the cervix, especially on movement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Palpation_of_the_cervix.Tenderness"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Palpation_of_the_cervix.Tenderness.value">
+         <path value="Palpation_of_the_cervix.Tenderness.value"/>
+         <short value="Tenderness"/>
+         <definition value="Narrative description of the tenderness of the cervix, especially on movement."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Palpation_of_the_cervix.Tenderness.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Palpation_of_the_cervix.Thickness">
+         <path value="Palpation_of_the_cervix.Thickness"/>
+         <short value="Thickness"/>
+         <definition value="The thickness of the cervix."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Palpation_of_the_cervix.Thickness"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Palpation_of_the_cervix.Thickness.value">
+         <path value="Palpation_of_the_cervix.Thickness.value"/>
+         <short value="Thickness"/>
+         <definition value="The thickness of the cervix."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Palpation_of_the_cervix.Thickness.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Palpation_of_the_cervix.Effacement">
+         <path value="Palpation_of_the_cervix.Effacement"/>
+         <short value="Effacement"/>
+         <definition value="Estimation of the proportion of cervical effacement during late pregnancy or labour."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Palpation_of_the_cervix.Effacement"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Palpation_of_the_cervix.Effacement.value">
+         <path value="Palpation_of_the_cervix.Effacement.value"/>
+         <short value="Effacement"/>
+         <definition value="Estimation of the proportion of cervical effacement during late pregnancy or labour."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Palpation_of_the_cervix.Effacement.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Ratio"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Palpation_of_the_cervix.Cervical_length">
+         <path value="Palpation_of_the_cervix.Cervical_length"/>
+         <short value="Cervical length"/>
+         <definition value="Estimation of the length of the cervix during late pregnancy or labour."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Palpation_of_the_cervix.Cervical_length"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Palpation_of_the_cervix.Cervical_length.value">
+         <path value="Palpation_of_the_cervix.Cervical_length.value"/>
+         <short value="Cervical length"/>
+         <definition value="Estimation of the length of the cervix during late pregnancy or labour."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Palpation_of_the_cervix.Cervical_length.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Palpation_of_the_cervix.Application_to_presenting_part">
+         <path value="Palpation_of_the_cervix.Application_to_presenting_part"/>
+         <short value="Application to presenting part"/>
+         <definition value="Application of the cervix to the presenting part of the fetus during late pregnancy or labour."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Palpation_of_the_cervix.Application_to_presenting_part"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Palpation_of_the_cervix.Application_to_presenting_part.value">
+         <path value="Palpation_of_the_cervix.Application_to_presenting_part.value"/>
+         <short value="Application to presenting part"/>
+         <definition value="Application of the cervix to the presenting part of the fetus during late pregnancy or labour."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Palpation_of_the_cervix.Application_to_presenting_part.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Palpation_of_the_cervix.Anterior_lip_presence">
+         <path value="Palpation_of_the_cervix.Anterior_lip_presence"/>
+         <short value="Anterior lip presence"/>
+         <definition value="The presence of an anterior lip of the cervix."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Palpation_of_the_cervix.Anterior_lip_presence"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Palpation_of_the_cervix.Anterior_lip_presence.value">
+         <path value="Palpation_of_the_cervix.Anterior_lip_presence.value"/>
+         <short value="Anterior lip presence"/>
+         <definition value="The presence of an anterior lip of the cervix."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Palpation_of_the_cervix.Anterior_lip_presence.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Palpation_of_the_cervix.External_os_dilation">
+         <path value="Palpation_of_the_cervix.External_os_dilation"/>
+         <short value="External os dilation"/>
+         <definition value="The amount of dilation of the external opening of the cervix."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Palpation_of_the_cervix.External_os_dilation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Palpation_of_the_cervix.External_os_dilation.value">
+         <path value="Palpation_of_the_cervix.External_os_dilation.value"/>
+         <short value="External os dilation"/>
+         <definition value="The amount of dilation of the external opening of the cervix."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Palpation_of_the_cervix.External_os_dilation.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Palpation_of_the_cervix.Internal_os_dilation">
+         <path value="Palpation_of_the_cervix.Internal_os_dilation"/>
+         <short value="Internal os dilation"/>
+         <definition value="The amount of dilation of the internal opening of the cervix to the uterus."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Palpation_of_the_cervix.Internal_os_dilation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Palpation_of_the_cervix.Internal_os_dilation.value">
+         <path value="Palpation_of_the_cervix.Internal_os_dilation.value"/>
+         <short value="Internal os dilation"/>
+         <definition value="The amount of dilation of the internal opening of the cervix to the uterus."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Palpation_of_the_cervix.Internal_os_dilation.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Palpation_of_the_cervix.Cervical_os_description">
+         <path value="Palpation_of_the_cervix.Cervical_os_description"/>
+         <short value="Cervical os description"/>
+         <definition value="Narrative description of findings on palpation of cervical os."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Palpation_of_the_cervix.Cervical_os_description"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Palpation_of_the_cervix.Cervical_os_description.value">
+         <path value="Palpation_of_the_cervix.Cervical_os_description.value"/>
+         <short value="Cervical os description"/>
+         <definition value="Narrative description of findings on palpation of cervical os."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Palpation_of_the_cervix.Cervical_os_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Palpation_of_the_cervix.Examination_findings">
+         <path value="Palpation_of_the_cervix.Examination_findings"/>
+         <short value="Examination findings"/>
+         <definition value="Structured details about the physical examination findings."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Palpation_of_the_cervix.Examination_findings"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Palpation_of_the_cervix.Multimedia_representation">
+         <path value="Palpation_of_the_cervix.Multimedia_representation"/>
+         <short value="Multimedia representation"/>
+         <definition value="Digital image, video or diagram representing the physical examination findings."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Palpation_of_the_cervix.Multimedia_representation"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Palpation_of_the_cervix.Clinical_interpretation">
+         <path value="Palpation_of_the_cervix.Clinical_interpretation"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Single word, phrase or brief description that represents the clinical meaning and significance of the physical examination findings."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Palpation_of_the_cervix.Clinical_interpretation"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Palpation_of_the_cervix.Clinical_interpretation.value">
+         <path value="Palpation_of_the_cervix.Clinical_interpretation.value"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Single word, phrase or brief description that represents the clinical meaning and significance of the physical examination findings."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Palpation_of_the_cervix.Clinical_interpretation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Palpation_of_the_cervix.Comment">
+         <path value="Palpation_of_the_cervix.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the physical examination findings, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Palpation_of_the_cervix.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Palpation_of_the_cervix.Comment.value">
+         <path value="Palpation_of_the_cervix.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the physical examination findings, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Palpation_of_the_cervix.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Palpation_of_the_cervix.Examination_not_done">
+         <path value="Palpation_of_the_cervix.Examination_not_done"/>
+         <short value="Examination not done"/>
+         <definition value="Details to explicitly record that this examination was not performed."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Palpation_of_the_cervix.Examination_not_done"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

@@ -1,0 +1,791 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Clinicalinvestigationreport-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-clinicalinvestigationreport-R4"/>
+   <version value="0"/>
+   <name value="Clinicalinvestigationreport"/>
+   <title value="Clinical investigation report"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Container archetype to carry information about a clinical investigation."/>
+   <purpose value="To carry information about a clinical investigation, such as the result of an interview or complete investigation into a death or occurrence of an infectious disease."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Clinical_investigation_report">
+         <path value="Clinical_investigation_report"/>
+         <short value="Clinical investigation report"/>
+         <definition value="Container archetype to carry information about a clinical investigation."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_investigation_report"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Clinical_investigation_report.category">
+         <path value="Clinical_investigation_report.category"/>
+         <short value="Clinical investigation report"/>
+         <definition value="Container archetype to carry information about a clinical investigation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_investigation_report.category"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Clinical_investigation_report.EVENT_CONTEXT">
+         <path value="Clinical_investigation_report.EVENT_CONTEXT"/>
+         <definition value="EVENT_CONTEXT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_investigation_report.EVENT_CONTEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Clinical_investigation_report.EVENT_CONTEXT.other_context">
+         <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Clinical_investigation_report.EVENT_CONTEXT.other_context.Report_ID">
+         <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Report_ID"/>
+         <short value="Report ID"/>
+         <definition value="Identification information about the report."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Report_ID"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Clinical_investigation_report.EVENT_CONTEXT.other_context.Report_ID.value">
+         <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Report_ID.value"/>
+         <short value="Report ID"/>
+         <definition value="Identification information about the report."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Report_ID.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Clinical_investigation_report.EVENT_CONTEXT.other_context.Status">
+         <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Status"/>
+         <short value="Status"/>
+         <definition value="The status of the entire report. Note: This is not the status of any of the report components."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Status"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Clinical_investigation_report.EVENT_CONTEXT.other_context.Status.value">
+         <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Status.value"/>
+         <short value="Status"/>
+         <definition value="The status of the entire report. Note: This is not the status of any of the report components."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Status.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Clinical_investigation_report.EVENT_CONTEXT.other_context.Extension">
+         <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local context or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Clinical_investigation_report.EVENT_CONTEXT.other_context.Index_item">
+         <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Index_item"/>
+         <short value="Index item"/>
+         <definition value="The name or type of the health item under investigation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Index_item"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Clinical_investigation_report.EVENT_CONTEXT.other_context.Index_item.name">
+         <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Index_item.name"/>
+         <short value="Index item"/>
+         <definition value="The name or type of the health item under investigation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Index_item.name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Clinical_investigation_report.EVENT_CONTEXT.other_context.Index_item.value">
+         <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Index_item.value"/>
+         <short value="Index item"/>
+         <definition value="The name or type of the health item under investigation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Index_item.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Clinical_investigation_report.EVENT_CONTEXT.other_context.Report_type">
+         <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Report_type"/>
+         <short value="Report type"/>
+         <definition value="The type of report."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Report_type"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Clinical_investigation_report.EVENT_CONTEXT.other_context.Report_type.value">
+         <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Report_type.value"/>
+         <short value="Report type"/>
+         <definition value="The type of report."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Report_type.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Clinical_investigation_report.EVENT_CONTEXT.other_context.Detection_method">
+         <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Detection_method"/>
+         <short value="Detection method"/>
+         <definition value="Method of detection of the index disease or event."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Detection_method"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Clinical_investigation_report.EVENT_CONTEXT.other_context.Detection_method.value">
+         <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Detection_method.value"/>
+         <short value="Detection method"/>
+         <definition value="Method of detection of the index disease or event."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Detection_method.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Clinical_investigation_report.EVENT_CONTEXT.other_context.Date_of_notification">
+         <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Date_of_notification"/>
+         <short value="Date of notification"/>
+         <definition value="Date when the disease or event notification was submitted."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Date_of_notification"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Clinical_investigation_report.EVENT_CONTEXT.other_context.Date_of_notification.value">
+         <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Date_of_notification.value"/>
+         <short value="Date of notification"/>
+         <definition value="Date when the disease or event notification was submitted."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Date_of_notification.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Clinical_investigation_report.EVENT_CONTEXT.other_context.Notifier">
+         <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Notifier"/>
+         <short value="Notifier"/>
+         <definition value="Identification of the facility or individual notifying about the disease or event."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Notifier"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Clinical_investigation_report.EVENT_CONTEXT.other_context.Date_investigation_initiated">
+         <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Date_investigation_initiated"/>
+         <short value="Date investigation initiated"/>
+         <definition value="The date when the investigation was assigned to an investigator."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Date_investigation_initiated"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Clinical_investigation_report.EVENT_CONTEXT.other_context.Date_investigation_initiated.value">
+         <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Date_investigation_initiated.value"/>
+         <short value="Date investigation initiated"/>
+         <definition value="The date when the investigation was assigned to an investigator."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Date_investigation_initiated.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Clinical_investigation_report.EVENT_CONTEXT.other_context.Investigator">
+         <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Investigator"/>
+         <short value="Investigator"/>
+         <definition value="Details about the individual(s) assigned to investigate the disease notification."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Investigator"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Clinical_investigation_report.EVENT_CONTEXT.other_context.Investigation_location">
+         <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Investigation_location"/>
+         <short value="Investigation location"/>
+         <definition value="The place where the investigation was carried out."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Investigation_location"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Clinical_investigation_report.EVENT_CONTEXT.other_context.Information_source">
+         <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Information_source"/>
+         <short value="Information source"/>
+         <definition value="Description about one or more source types for the information contained in the report."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Information_source"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Clinical_investigation_report.EVENT_CONTEXT.other_context.Information_source.value">
+         <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Information_source.value"/>
+         <short value="Information source"/>
+         <definition value="Description about one or more source types for the information contained in the report."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Information_source.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Clinical_investigation_report.EVENT_CONTEXT.other_context.Epidemiological_week">
+         <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Epidemiological_week"/>
+         <short value="Epidemiological week"/>
+         <definition value="The number of completed weeks in the year."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Epidemiological_week"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Clinical_investigation_report.EVENT_CONTEXT.other_context.Epidemiological_week.value">
+         <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Epidemiological_week.value"/>
+         <short value="Epidemiological week"/>
+         <definition value="The number of completed weeks in the year."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Epidemiological_week.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Clinical_investigation_report.EVENT_CONTEXT.other_context.Treating_Physician">
+         <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Treating_Physician"/>
+         <short value="Treating Physician"/>
+         <definition value="CLUSTER"/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Treating_Physician"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Clinical_investigation_report.EVENT_CONTEXT.other_context.Health_region">
+         <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Health_region"/>
+         <short value="Health region"/>
+         <definition value="Identification of the local health region where the index case was identified or the index event happened."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Health_region"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Clinical_investigation_report.EVENT_CONTEXT.other_context.Health_region.value">
+         <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Health_region.value"/>
+         <short value="Health region"/>
+         <definition value="Identification of the local health region where the index case was identified or the index event happened."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Health_region.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Clinical_investigation_report.EVENT_CONTEXT.other_context.Date_investigation_completed">
+         <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Date_investigation_completed"/>
+         <short value="Date investigation completed"/>
+         <definition value="The date when the investigation report was completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Date_investigation_completed"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Clinical_investigation_report.EVENT_CONTEXT.other_context.Date_investigation_completed.value">
+         <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Date_investigation_completed.value"/>
+         <short value="Date investigation completed"/>
+         <definition value="The date when the investigation report was completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Date_investigation_completed.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Clinical_investigation_report.EVENT_CONTEXT.other_context.Reviewed_by">
+         <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Reviewed_by"/>
+         <short value="Reviewed by"/>
+         <definition value="Details about the review process and reviewers of the report."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Reviewed_by"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Clinical_investigation_report.EVENT_CONTEXT.other_context.Reviewed_by.Date_received_for_review">
+         <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Reviewed_by.Date_received_for_review"/>
+         <short value="Date received for review"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Reviewed_by.Date_received_for_review"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Clinical_investigation_report.EVENT_CONTEXT.other_context.Reviewed_by.Date_received_for_review.value">
+         <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Reviewed_by.Date_received_for_review.value"/>
+         <short value="Date received for review"/>
+         <definition value="DV_DATE_TIME"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Reviewed_by.Date_received_for_review.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Clinical_investigation_report.EVENT_CONTEXT.other_context.Reviewed_by.Review_type">
+         <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Reviewed_by.Review_type"/>
+         <short value="Review type"/>
+         <definition value="Identification of the category or level of review."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Reviewed_by.Review_type"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Clinical_investigation_report.EVENT_CONTEXT.other_context.Reviewed_by.Review_type.value">
+         <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Reviewed_by.Review_type.value"/>
+         <short value="Review type"/>
+         <definition value="Identification of the category or level of review."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Reviewed_by.Review_type.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Clinical_investigation_report.EVENT_CONTEXT.other_context.Reviewed_by.Reviewer">
+         <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Reviewed_by.Reviewer"/>
+         <short value="Reviewer"/>
+         <definition value="Structured details about the individual or organisation who reviewed the report."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Reviewed_by.Reviewer"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Clinical_investigation_report.EVENT_CONTEXT.other_context.Reviewed_by.Reviewer_role">
+         <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Reviewed_by.Reviewer_role"/>
+         <short value="Reviewer role"/>
+         <definition value="The formal role or position of the reviewer."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Reviewed_by.Reviewer_role"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Clinical_investigation_report.EVENT_CONTEXT.other_context.Reviewed_by.Reviewer_role.value">
+         <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Reviewed_by.Reviewer_role.value"/>
+         <short value="Reviewer role"/>
+         <definition value="The formal role or position of the reviewer."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Reviewed_by.Reviewer_role.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Clinical_investigation_report.EVENT_CONTEXT.other_context.Reviewed_by.Report_comment">
+         <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Reviewed_by.Report_comment"/>
+         <short value="Report comment"/>
+         <definition value="Narrative response to the content of the report by the reviewer."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Reviewed_by.Report_comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Clinical_investigation_report.EVENT_CONTEXT.other_context.Reviewed_by.Report_comment.value">
+         <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Reviewed_by.Report_comment.value"/>
+         <short value="Report comment"/>
+         <definition value="Narrative response to the content of the report by the reviewer."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Reviewed_by.Report_comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Clinical_investigation_report.EVENT_CONTEXT.other_context.Reviewed_by.Date_review_completed">
+         <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Reviewed_by.Date_review_completed"/>
+         <short value="Date review completed"/>
+         <definition value="Date when the review of the report was completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Reviewed_by.Date_review_completed"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Clinical_investigation_report.EVENT_CONTEXT.other_context.Reviewed_by.Date_review_completed.value">
+         <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Reviewed_by.Date_review_completed.value"/>
+         <short value="Date review completed"/>
+         <definition value="Date when the review of the report was completed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Reviewed_by.Date_review_completed.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Clinical_investigation_report.EVENT_CONTEXT.other_context.Reviewed_by.Date_review_submitted">
+         <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Reviewed_by.Date_review_submitted"/>
+         <short value="Date review submitted"/>
+         <definition value="Date when the review was submitted to the next level of review."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Reviewed_by.Date_review_submitted"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Clinical_investigation_report.EVENT_CONTEXT.other_context.Reviewed_by.Date_review_submitted.value">
+         <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Reviewed_by.Date_review_submitted.value"/>
+         <short value="Date review submitted"/>
+         <definition value="Date when the review was submitted to the next level of review."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Reviewed_by.Date_review_submitted.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Clinical_investigation_report.EVENT_CONTEXT.other_context.Date_report_submitted">
+         <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Date_report_submitted"/>
+         <short value="Date report submitted"/>
+         <definition value="Date when the final report was submitted to the final health authority."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Date_report_submitted"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Clinical_investigation_report.EVENT_CONTEXT.other_context.Date_report_submitted.value">
+         <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Date_report_submitted.value"/>
+         <short value="Date report submitted"/>
+         <definition value="Date when the final report was submitted to the final health authority."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_investigation_report.EVENT_CONTEXT.other_context.Date_report_submitted.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

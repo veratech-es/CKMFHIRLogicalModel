@@ -1,0 +1,1218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Symptom_sign-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-symptom_sign-R4"/>
+   <version value="0"/>
+   <name value="Symptom_sign"/>
+   <title value="Symptom/Sign"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Reported observation of a physical or mental disturbance in an individual."/>
+   <purpose value="To record details about a single episode of a reported symptom or sign including context, but not details, of previous episodes if appropriate."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Symptom_Sign">
+         <path value="Symptom_Sign"/>
+         <short value="Symptom/Sign"/>
+         <definition value="Reported observation of a physical or mental disturbance in an individual."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_Sign.Symptom_Sign_name">
+         <path value="Symptom_Sign.Symptom_Sign_name"/>
+         <short value="Symptom/Sign name"/>
+         <definition value="The name of the reported symptom or sign."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Symptom_Sign_name"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Symptom_Sign.Symptom_Sign_name.value">
+         <path value="Symptom_Sign.Symptom_Sign_name.value"/>
+         <short value="Symptom/Sign name"/>
+         <definition value="The name of the reported symptom or sign."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Symptom_Sign_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_Sign.Body_site">
+         <path value="Symptom_Sign.Body_site"/>
+         <short value="Body site"/>
+         <definition value="Simple body site where the symptom or sign was reported."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Symptom_Sign.Body_site"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Symptom_Sign.Body_site.value">
+         <path value="Symptom_Sign.Body_site.value"/>
+         <short value="Body site"/>
+         <definition value="Simple body site where the symptom or sign was reported."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Body_site.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_Sign.Structured_body_site">
+         <path value="Symptom_Sign.Structured_body_site"/>
+         <short value="Structured body site"/>
+         <definition value="Structured body site where the symptom or sign was reported."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Symptom_Sign.Structured_body_site"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_Sign.Description">
+         <path value="Symptom_Sign.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the reported symptom or sign."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Symptom_Sign.Description.value">
+         <path value="Symptom_Sign.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the reported symptom or sign."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_Sign.Episodicity">
+         <path value="Symptom_Sign.Episodicity"/>
+         <short value="Episodicity"/>
+         <definition value="Category of this episode for the identified symptom or sign."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Episodicity"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Symptom_Sign.Episodicity.value">
+         <path value="Symptom_Sign.Episodicity.value"/>
+         <short value="Episodicity"/>
+         <definition value="Category of this episode for the identified symptom or sign."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Episodicity.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_Sign.Occurrence">
+         <path value="Symptom_Sign.Occurrence"/>
+         <short value="Occurrence"/>
+         <definition value="Type of occurrence for this symptom or sign?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Occurrence"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Symptom_Sign.Occurrence.value">
+         <path value="Symptom_Sign.Occurrence.value"/>
+         <short value="Occurrence"/>
+         <definition value="Type of occurrence for this symptom or sign?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Occurrence.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_Sign.Episode_onset">
+         <path value="Symptom_Sign.Episode_onset"/>
+         <short value="Episode onset"/>
+         <definition value="The onset for this episode of the symptom or sign."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Episode_onset"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Symptom_Sign.Episode_onset.value_DV_DATE_TIME">
+         <path value="Symptom_Sign.Episode_onset.value_DV_DATE_TIME"/>
+         <short value="Episode onset"/>
+         <definition value="The onset for this episode of the symptom or sign."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Episode_onset.value_DV_DATE_TIME"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_Sign.Episode_onset.value_DV_INTERVAL_DV_DATE_TIME_">
+         <path value="Symptom_Sign.Episode_onset.value_DV_INTERVAL_DV_DATE_TIME_"/>
+         <short value="Episode onset"/>
+         <definition value="The onset for this episode of the symptom or sign."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Episode_onset.value_DV_INTERVAL_DV_DATE_TIME_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_Sign.Onset_timing">
+         <path value="Symptom_Sign.Onset_timing"/>
+         <short value="Onset timing"/>
+         <definition value="Timing of the onset and development of the symptom or sign."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Onset_timing"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Symptom_Sign.Onset_timing.value_DV_TEXT">
+         <path value="Symptom_Sign.Onset_timing.value_DV_TEXT"/>
+         <short value="Onset timing"/>
+         <definition value="Timing of the onset and development of the symptom or sign."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Onset_timing.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_Sign.Onset_timing.value_DV_DURATION">
+         <path value="Symptom_Sign.Onset_timing.value_DV_DURATION"/>
+         <short value="Onset timing"/>
+         <definition value="Timing of the onset and development of the symptom or sign."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Onset_timing.value_DV_DURATION"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_Sign.Onset_timing.value_DV_INTERVAL_DV_DURATION_">
+         <path value="Symptom_Sign.Onset_timing.value_DV_INTERVAL_DV_DURATION_"/>
+         <short value="Onset timing"/>
+         <definition value="Timing of the onset and development of the symptom or sign."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Onset_timing.value_DV_INTERVAL_DV_DURATION_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_Sign.Nadir">
+         <path value="Symptom_Sign.Nadir"/>
+         <short value="Nadir"/>
+         <definition value="Date/time when a monophasic, progressive symptom or sign reached its' maximal intensity or functional impact."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Nadir"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Symptom_Sign.Nadir.value">
+         <path value="Symptom_Sign.Nadir.value"/>
+         <short value="Nadir"/>
+         <definition value="Date/time when a monophasic, progressive symptom or sign reached its' maximal intensity or functional impact."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Nadir.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_Sign.Episode_duration">
+         <path value="Symptom_Sign.Episode_duration"/>
+         <short value="Episode duration"/>
+         <definition value="The duration of this episode of the symptom or sign since initial onset."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Episode_duration"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Symptom_Sign.Episode_duration.value_DV_DURATION">
+         <path value="Symptom_Sign.Episode_duration.value_DV_DURATION"/>
+         <short value="Episode duration"/>
+         <definition value="The duration of this episode of the symptom or sign since initial onset."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Episode_duration.value_DV_DURATION"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_Sign.Episode_duration.value_DV_INTERVAL_DV_DURATION_">
+         <path value="Symptom_Sign.Episode_duration.value_DV_INTERVAL_DV_DURATION_"/>
+         <short value="Episode duration"/>
+         <definition value="The duration of this episode of the symptom or sign since initial onset."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Episode_duration.value_DV_INTERVAL_DV_DURATION_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_Sign.Episode_duration.value_DV_TEXT">
+         <path value="Symptom_Sign.Episode_duration.value_DV_TEXT"/>
+         <short value="Episode duration"/>
+         <definition value="The duration of this episode of the symptom or sign since initial onset."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Episode_duration.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_Sign.Severity_category">
+         <path value="Symptom_Sign.Severity_category"/>
+         <short value="Severity category"/>
+         <definition value="Category representing the overall severity of the symptom or sign."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Severity_category"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Symptom_Sign.Severity_category.value_DV_CODED_TEXT">
+         <path value="Symptom_Sign.Severity_category.value_DV_CODED_TEXT"/>
+         <short value="Severity category"/>
+         <definition value="Category representing the overall severity of the symptom or sign."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Severity_category.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_Sign.Severity_category.value_DV_TEXT">
+         <path value="Symptom_Sign.Severity_category.value_DV_TEXT"/>
+         <short value="Severity category"/>
+         <definition value="Category representing the overall severity of the symptom or sign."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Severity_category.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_Sign.Severity_rating">
+         <path value="Symptom_Sign.Severity_rating"/>
+         <short value="Severity rating"/>
+         <definition value="Numerical rating scale representing the overall severity of the symptom or sign."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Symptom_Sign.Severity_rating"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_Sign.Character">
+         <path value="Symptom_Sign.Character"/>
+         <short value="Character"/>
+         <definition value="Word or short phrase describing the nature of the symptom or sign."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Symptom_Sign.Character"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Symptom_Sign.Character.value">
+         <path value="Symptom_Sign.Character.value"/>
+         <short value="Character"/>
+         <definition value="Word or short phrase describing the nature of the symptom or sign."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Character.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_Sign.Progression">
+         <path value="Symptom_Sign.Progression"/>
+         <short value="Progression"/>
+         <definition value="Description progression of the symptom or sign at the time of reporting."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Symptom_Sign.Progression"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Symptom_Sign.Progression.value_DV_CODED_TEXT">
+         <path value="Symptom_Sign.Progression.value_DV_CODED_TEXT"/>
+         <short value="Progression"/>
+         <definition value="Description progression of the symptom or sign at the time of reporting."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Progression.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_Sign.Progression.value_DV_TEXT">
+         <path value="Symptom_Sign.Progression.value_DV_TEXT"/>
+         <short value="Progression"/>
+         <definition value="Description progression of the symptom or sign at the time of reporting."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Progression.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_Sign.Pattern">
+         <path value="Symptom_Sign.Pattern"/>
+         <short value="Pattern"/>
+         <definition value="Narrative description about the pattern of the symptom or sign during this episode."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Pattern"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Symptom_Sign.Pattern.value">
+         <path value="Symptom_Sign.Pattern.value"/>
+         <short value="Pattern"/>
+         <definition value="Narrative description about the pattern of the symptom or sign during this episode."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Pattern.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_Sign.Modifying_factor">
+         <path value="Symptom_Sign.Modifying_factor"/>
+         <short value="Modifying factor"/>
+         <definition value="Detail about how a specific factor effects the identified symptom or sign during this episode."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Symptom_Sign.Modifying_factor"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_Sign.Modifying_factor.Factor">
+         <path value="Symptom_Sign.Modifying_factor.Factor"/>
+         <short value="Factor"/>
+         <definition value="Name of the modifying factor."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Modifying_factor.Factor"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Symptom_Sign.Modifying_factor.Factor.value">
+         <path value="Symptom_Sign.Modifying_factor.Factor.value"/>
+         <short value="Factor"/>
+         <definition value="Name of the modifying factor."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Modifying_factor.Factor.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_Sign.Modifying_factor.Factor_detail">
+         <path value="Symptom_Sign.Modifying_factor.Factor_detail"/>
+         <short value="Factor detail"/>
+         <definition value="Structured detail about the factor associated with the identified symptom or sign."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Modifying_factor.Factor_detail"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_Sign.Modifying_factor.Effect">
+         <path value="Symptom_Sign.Modifying_factor.Effect"/>
+         <short value="Effect"/>
+         <definition value="Perceived effect of the modifying factor on the symptom or sign."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Modifying_factor.Effect"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Symptom_Sign.Modifying_factor.Effect.value">
+         <path value="Symptom_Sign.Modifying_factor.Effect.value"/>
+         <short value="Effect"/>
+         <definition value="Perceived effect of the modifying factor on the symptom or sign."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Modifying_factor.Effect.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_Sign.Modifying_factor.Description">
+         <path value="Symptom_Sign.Modifying_factor.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description of the effect of the modifying factor on the symptom or sign."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Modifying_factor.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Symptom_Sign.Modifying_factor.Description.value">
+         <path value="Symptom_Sign.Modifying_factor.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description of the effect of the modifying factor on the symptom or sign."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Modifying_factor.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_Sign.Precipitating_factor">
+         <path value="Symptom_Sign.Precipitating_factor"/>
+         <short value="Precipitating factor"/>
+         <definition value="Details about specified factors that are associated with the precipitation of the symptom or sign."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Symptom_Sign.Precipitating_factor"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_Sign.Precipitating_factor.Factor">
+         <path value="Symptom_Sign.Precipitating_factor.Factor"/>
+         <short value="Factor"/>
+         <definition value="Name of the health event, symptom, reported sign or other factor."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Precipitating_factor.Factor"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Symptom_Sign.Precipitating_factor.Factor.value">
+         <path value="Symptom_Sign.Precipitating_factor.Factor.value"/>
+         <short value="Factor"/>
+         <definition value="Name of the health event, symptom, reported sign or other factor."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Precipitating_factor.Factor.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_Sign.Precipitating_factor.Factor_detail">
+         <path value="Symptom_Sign.Precipitating_factor.Factor_detail"/>
+         <short value="Factor detail"/>
+         <definition value="Structured detail about the factor associated with the identified symptom or sign."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Symptom_Sign.Precipitating_factor.Factor_detail"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_Sign.Precipitating_factor.Time_interval">
+         <path value="Symptom_Sign.Precipitating_factor.Time_interval"/>
+         <short value="Time interval"/>
+         <definition value="The interval of time between the occurrence or onset of the factor and onset of the symptom or sign."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Precipitating_factor.Time_interval"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Symptom_Sign.Precipitating_factor.Time_interval.value">
+         <path value="Symptom_Sign.Precipitating_factor.Time_interval.value"/>
+         <short value="Time interval"/>
+         <definition value="The interval of time between the occurrence or onset of the factor and onset of the symptom or sign."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Precipitating_factor.Time_interval.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_Sign.Precipitating_factor.Description">
+         <path value="Symptom_Sign.Precipitating_factor.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the effect of the factor on the identified symptom or sign."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Precipitating_factor.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Symptom_Sign.Precipitating_factor.Description.value">
+         <path value="Symptom_Sign.Precipitating_factor.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the effect of the factor on the identified symptom or sign."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Precipitating_factor.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_Sign.Resolving_factor">
+         <path value="Symptom_Sign.Resolving_factor"/>
+         <short value="Resolving factor"/>
+         <definition value="Details about specified factors that are associated with the resolution of the symptom or sign."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Symptom_Sign.Resolving_factor"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_Sign.Resolving_factor.Factor">
+         <path value="Symptom_Sign.Resolving_factor.Factor"/>
+         <short value="Factor"/>
+         <definition value="Name of the health event, symptom, reported sign or other factor."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Resolving_factor.Factor"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Symptom_Sign.Resolving_factor.Factor.value">
+         <path value="Symptom_Sign.Resolving_factor.Factor.value"/>
+         <short value="Factor"/>
+         <definition value="Name of the health event, symptom, reported sign or other factor."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Resolving_factor.Factor.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_Sign.Resolving_factor.Factor_detail">
+         <path value="Symptom_Sign.Resolving_factor.Factor_detail"/>
+         <short value="Factor detail"/>
+         <definition value="Structured detail about the factor associated with the identified symptom or sign."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Symptom_Sign.Resolving_factor.Factor_detail"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_Sign.Resolving_factor.Time_interval">
+         <path value="Symptom_Sign.Resolving_factor.Time_interval"/>
+         <short value="Time interval"/>
+         <definition value="The interval of time between the occurrence or onset of the factor and resolution of the symptom or sign."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Resolving_factor.Time_interval"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Symptom_Sign.Resolving_factor.Time_interval.value">
+         <path value="Symptom_Sign.Resolving_factor.Time_interval.value"/>
+         <short value="Time interval"/>
+         <definition value="The interval of time between the occurrence or onset of the factor and resolution of the symptom or sign."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Resolving_factor.Time_interval.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_Sign.Resolving_factor.Description">
+         <path value="Symptom_Sign.Resolving_factor.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the effect of the factor on the identified symptom or sign."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Resolving_factor.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Symptom_Sign.Resolving_factor.Description.value">
+         <path value="Symptom_Sign.Resolving_factor.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the effect of the factor on the identified symptom or sign."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Resolving_factor.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_Sign.Impact">
+         <path value="Symptom_Sign.Impact"/>
+         <short value="Impact"/>
+         <definition value="Description of the impact of this symptom or sign."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Symptom_Sign.Impact"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Symptom_Sign.Impact.value">
+         <path value="Symptom_Sign.Impact.value"/>
+         <short value="Impact"/>
+         <definition value="Description of the impact of this symptom or sign."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Impact.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_Sign.Episode_description">
+         <path value="Symptom_Sign.Episode_description"/>
+         <short value="Episode description"/>
+         <definition value="Narrative description about the course of the symptom or sign during this episode."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Episode_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Symptom_Sign.Episode_description.value">
+         <path value="Symptom_Sign.Episode_description.value"/>
+         <short value="Episode description"/>
+         <definition value="Narrative description about the course of the symptom or sign during this episode."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Episode_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_Sign.Specific_details">
+         <path value="Symptom_Sign.Specific_details"/>
+         <short value="Specific details"/>
+         <definition value="Specific data elements that are additionally required to record as unique attributes of the identified symptom or sign."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Symptom_Sign.Specific_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_Sign.Resolution_date_time">
+         <path value="Symptom_Sign.Resolution_date_time"/>
+         <short value="Resolution date/time"/>
+         <definition value="The timing of the cessation of this episode of the symptom or sign."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Resolution_date_time"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Symptom_Sign.Resolution_date_time.value">
+         <path value="Symptom_Sign.Resolution_date_time.value"/>
+         <short value="Resolution date/time"/>
+         <definition value="The timing of the cessation of this episode of the symptom or sign."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Resolution_date_time.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_Sign.Description_of_previous_episodes">
+         <path value="Symptom_Sign.Description_of_previous_episodes"/>
+         <short value="Description of previous episodes"/>
+         <definition value="Narrative description of any or all previous episodes."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Description_of_previous_episodes"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Symptom_Sign.Description_of_previous_episodes.value">
+         <path value="Symptom_Sign.Description_of_previous_episodes.value"/>
+         <short value="Description of previous episodes"/>
+         <definition value="Narrative description of any or all previous episodes."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Description_of_previous_episodes.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_Sign.Number_of_previous_episodes">
+         <path value="Symptom_Sign.Number_of_previous_episodes"/>
+         <short value="Number of previous episodes"/>
+         <definition value="The number of times this symptom or sign has previously occurred."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Number_of_previous_episodes"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Symptom_Sign.Number_of_previous_episodes.value">
+         <path value="Symptom_Sign.Number_of_previous_episodes.value"/>
+         <short value="Number of previous episodes"/>
+         <definition value="The number of times this symptom or sign has previously occurred."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Number_of_previous_episodes.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_Sign.Previous_episodes">
+         <path value="Symptom_Sign.Previous_episodes"/>
+         <short value="Previous episodes"/>
+         <definition value="Structured details of the symptom or sign during a previous episode."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Symptom_Sign.Previous_episodes"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_Sign.Associated_symptom_sign">
+         <path value="Symptom_Sign.Associated_symptom_sign"/>
+         <short value="Associated symptom/sign"/>
+         <definition value="Structured details about any associated symptoms or signs that are concurrent."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Symptom_Sign.Associated_symptom_sign"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Symptom_Sign.Comment">
+         <path value="Symptom_Sign.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the symptom or sign not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Symptom_Sign.Comment.value">
+         <path value="Symptom_Sign.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the symptom or sign not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Symptom_Sign.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

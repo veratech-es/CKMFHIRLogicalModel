@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Educationrecord-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-educationrecord-R4"/>
+   <version value="0"/>
+   <name value="Educationrecord"/>
+   <title value="Education record"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Record of a period of education or training undertaken by an individual."/>
+   <purpose value="To record details about a single period of formal education or training undertaken by an individual, which will contribute to an overview of their educational background."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Education_record">
+         <path value="Education_record"/>
+         <short value="Education record"/>
+         <definition value="Record of a period of education or training undertaken by an individual."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Education_record"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Education_record.Educational_institution">
+         <path value="Education_record.Educational_institution"/>
+         <short value="Educational institution"/>
+         <definition value="Name of the facility, institution or school where the education or training took place."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Education_record.Educational_institution"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Education_record.Educational_institution.value">
+         <path value="Education_record.Educational_institution.value"/>
+         <short value="Educational institution"/>
+         <definition value="Name of the facility, institution or school where the education or training took place."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Education_record.Educational_institution.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Education_record.Organisation_details">
+         <path value="Education_record.Organisation_details"/>
+         <short value="Organisation details"/>
+         <definition value="Structured details about the facility, institution or school."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Education_record.Organisation_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Education_record.Milestone">
+         <path value="Education_record.Milestone"/>
+         <short value="Milestone"/>
+         <definition value="Name of the education milestone or academic qualification achieved."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Education_record.Milestone"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Education_record.Milestone.value">
+         <path value="Education_record.Milestone.value"/>
+         <short value="Milestone"/>
+         <definition value="Name of the education milestone or academic qualification achieved."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Education_record.Milestone.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Education_record.Field_of_study">
+         <path value="Education_record.Field_of_study"/>
+         <short value="Field of study"/>
+         <definition value="The field of study covered by the education or training."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Education_record.Field_of_study"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Education_record.Field_of_study.value">
+         <path value="Education_record.Field_of_study.value"/>
+         <short value="Field of study"/>
+         <definition value="The field of study covered by the education or training."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Education_record.Field_of_study.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Education_record.Description">
+         <path value="Education_record.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the education or training undertaken by the individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Education_record.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Education_record.Description.value">
+         <path value="Education_record.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description about the education or training undertaken by the individual."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Education_record.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Education_record.Date_started">
+         <path value="Education_record.Date_started"/>
+         <short value="Date started"/>
+         <definition value="The date when the individual commenced the education or training."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Education_record.Date_started"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Education_record.Date_started.value">
+         <path value="Education_record.Date_started.value"/>
+         <short value="Date started"/>
+         <definition value="The date when the individual commenced the education or training."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Education_record.Date_started.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="date"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Education_record.Date_ended">
+         <path value="Education_record.Date_ended"/>
+         <short value="Date ended"/>
+         <definition value="The date when the milestone was achieved or the individual ceased the education or training."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Education_record.Date_ended"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Education_record.Date_ended.value">
+         <path value="Education_record.Date_ended.value"/>
+         <short value="Date ended"/>
+         <definition value="The date when the milestone was achieved or the individual ceased the education or training."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Education_record.Date_ended.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="date"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Education_record.Additional_details">
+         <path value="Education_record.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="Further details about the education record."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Education_record.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Education_record.Comment">
+         <path value="Education_record.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the education record not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Education_record.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Education_record.Comment.value">
+         <path value="Education_record.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the education record not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Education_record.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

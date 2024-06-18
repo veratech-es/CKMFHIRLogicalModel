@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Genomicduplicationvariant-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-genomicduplicationvariant-R4"/>
+   <version value="0"/>
+   <name value="Genomicduplicationvariant"/>
+   <title value="Genomic duplication variant"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="A human genetic sequence change where, compared to a genomic reference sequence, a copy of one or more nucleotides are inserted directly 3' of the original copy of that sequence."/>
+   <purpose value="To record the details about a duplication variant of human DNA, observed in a genomic sequence."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Genomic_duplication_variant">
+         <path value="Genomic_duplication_variant"/>
+         <short value="Genomic duplication variant"/>
+         <definition value="A human genetic sequence change where, compared to a genomic reference sequence, a copy of one or more nucleotides are inserted directly 3' of the original copy of that sequence."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_duplication_variant"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_duplication_variant.Start_position">
+         <path value="Genomic_duplication_variant.Start_position"/>
+         <short value="Start position"/>
+         <definition value="Position of the duplicated nucleotide or the first nucleotide of the duplicated range."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_duplication_variant.Start_position"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Genomic_duplication_variant.Start_position.value">
+         <path value="Genomic_duplication_variant.Start_position.value"/>
+         <short value="Start position"/>
+         <definition value="Position of the duplicated nucleotide or the first nucleotide of the duplicated range."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_duplication_variant.Start_position.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_duplication_variant.End_position">
+         <path value="Genomic_duplication_variant.End_position"/>
+         <short value="End position"/>
+         <definition value="Position of the last nucleotide of the duplicated range."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_duplication_variant.End_position"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Genomic_duplication_variant.End_position.value">
+         <path value="Genomic_duplication_variant.End_position.value"/>
+         <short value="End position"/>
+         <definition value="Position of the last nucleotide of the duplicated range."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_duplication_variant.End_position.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_duplication_variant.Duplicated_sequence">
+         <path value="Genomic_duplication_variant.Duplicated_sequence"/>
+         <short value="Duplicated sequence"/>
+         <definition value="The duplicated nucleotide or sequence."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_duplication_variant.Duplicated_sequence"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Genomic_duplication_variant.Duplicated_sequence.value">
+         <path value="Genomic_duplication_variant.Duplicated_sequence.value"/>
+         <short value="Duplicated sequence"/>
+         <definition value="The duplicated nucleotide or sequence."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_duplication_variant.Duplicated_sequence.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_duplication_variant.Reference_sequence">
+         <path value="Genomic_duplication_variant.Reference_sequence"/>
+         <short value="Reference sequence"/>
+         <definition value="The sequence file used as a reference to describe this variant."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Genomic_duplication_variant.Reference_sequence"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

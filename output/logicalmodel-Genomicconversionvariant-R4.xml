@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Genomicconversionvariant-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-genomicconversionvariant-R4"/>
+   <version value="0"/>
+   <name value="Genomicconversionvariant"/>
+   <title value="Genomic conversion variant"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="A human genetic sequence change where, compared to a genomic reference sequence, a range of nucleotides are replaced by a sequence from elsewhere in the genome."/>
+   <purpose value="To record the details about a conversion variant of human DNA, observed in a genomic sequence."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Genomic_conversion_variant">
+         <path value="Genomic_conversion_variant"/>
+         <short value="Genomic conversion variant"/>
+         <definition value="A human genetic sequence change where, compared to a genomic reference sequence, a range of nucleotides are replaced by a sequence from elsewhere in the genome."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_conversion_variant"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_conversion_variant.Start_converted_position">
+         <path value="Genomic_conversion_variant.Start_converted_position"/>
+         <short value="Start converted position"/>
+         <definition value="The position of the first nucleotide of the converted range."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_conversion_variant.Start_converted_position"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Genomic_conversion_variant.Start_converted_position.value">
+         <path value="Genomic_conversion_variant.Start_converted_position.value"/>
+         <short value="Start converted position"/>
+         <definition value="The position of the first nucleotide of the converted range."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_conversion_variant.Start_converted_position.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_conversion_variant.End_converted_position">
+         <path value="Genomic_conversion_variant.End_converted_position"/>
+         <short value="End converted position"/>
+         <definition value="The position of the last nucleotide of the converted range."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_conversion_variant.End_converted_position"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Genomic_conversion_variant.End_converted_position.value">
+         <path value="Genomic_conversion_variant.End_converted_position.value"/>
+         <short value="End converted position"/>
+         <definition value="The position of the last nucleotide of the converted range."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_conversion_variant.End_converted_position.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_conversion_variant.Replacing_sequence_start_position">
+         <path value="Genomic_conversion_variant.Replacing_sequence_start_position"/>
+         <short value="Replacing sequence start position"/>
+         <definition value="The position of the first nucleotide of the replacing sequence."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_conversion_variant.Replacing_sequence_start_position"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Genomic_conversion_variant.Replacing_sequence_start_position.value">
+         <path value="Genomic_conversion_variant.Replacing_sequence_start_position.value"/>
+         <short value="Replacing sequence start position"/>
+         <definition value="The position of the first nucleotide of the replacing sequence."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_conversion_variant.Replacing_sequence_start_position.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_conversion_variant.Replacing_sequence_end_position">
+         <path value="Genomic_conversion_variant.Replacing_sequence_end_position"/>
+         <short value="Replacing sequence end position"/>
+         <definition value="The position of the last nucleotide of the replacing sequence."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_conversion_variant.Replacing_sequence_end_position"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Genomic_conversion_variant.Replacing_sequence_end_position.value">
+         <path value="Genomic_conversion_variant.Replacing_sequence_end_position.value"/>
+         <short value="Replacing sequence end position"/>
+         <definition value="The position of the last nucleotide of the replacing sequence."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Genomic_conversion_variant.Replacing_sequence_end_position.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_conversion_variant.Converted_reference_sequence">
+         <path value="Genomic_conversion_variant.Converted_reference_sequence"/>
+         <short value="Converted reference sequence"/>
+         <definition value="The sequence file used as a reference to describe the converted region."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Genomic_conversion_variant.Converted_reference_sequence"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Genomic_conversion_variant.Replacing_reference_sequence">
+         <path value="Genomic_conversion_variant.Replacing_reference_sequence"/>
+         <short value="Replacing reference sequence"/>
+         <definition value="The sequence file used as a reference to describe the replacing region."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Genomic_conversion_variant.Replacing_reference_sequence"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

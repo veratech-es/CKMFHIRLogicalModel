@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Circularanatomicallocation-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-circularanatomicallocation-R4"/>
+   <version value="0"/>
+   <name value="Circularanatomicallocation"/>
+   <title value="Circular anatomical location"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="A physical site on or within the human body that is described in terms of the direction, and optionally the distance, of the site from a central landmark."/>
+   <purpose value="To record structured details about a physical site on or within the human body that is described in terms of the direction, and optionally the distance, of the site from a central landmark."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Circular_anatomical_location">
+         <path value="Circular_anatomical_location"/>
+         <short value="Circular anatomical location"/>
+         <definition value="A physical site on or within the human body that is described in terms of the direction, and optionally the distance, of the site from a central landmark."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Circular_anatomical_location"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Circular_anatomical_location.Reference_direction">
+         <path value="Circular_anatomical_location.Reference_direction"/>
+         <short value="Reference direction"/>
+         <definition value="Identification of a single direction which represents the 12 o'clock or 0° position on an imaginary circle superimposed over the body site, as seen by the examiner."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Circular_anatomical_location.Reference_direction"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Circular_anatomical_location.Reference_direction.value">
+         <path value="Circular_anatomical_location.Reference_direction.value"/>
+         <short value="Reference direction"/>
+         <definition value="Identification of a single direction which represents the 12 o'clock or 0° position on an imaginary circle superimposed over the body site, as seen by the examiner."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Circular_anatomical_location.Reference_direction.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Circular_anatomical_location.Centre_landmark">
+         <path value="Circular_anatomical_location.Centre_landmark"/>
+         <short value="Centre landmark"/>
+         <definition value="Identified body site used as a reference point for centre of the imaginary circle."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Circular_anatomical_location.Centre_landmark"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Circular_anatomical_location.Centre_landmark.value">
+         <path value="Circular_anatomical_location.Centre_landmark.value"/>
+         <short value="Centre landmark"/>
+         <definition value="Identified body site used as a reference point for centre of the imaginary circle."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Circular_anatomical_location.Centre_landmark.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Circular_anatomical_location.Circular_direction">
+         <path value="Circular_anatomical_location.Circular_direction"/>
+         <short value="Circular direction"/>
+         <definition value="Identification of the angle of the direction to the physical site relative to the reference direction, either as the position of an hour hand on a clockface or number of degrees."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Circular_anatomical_location.Circular_direction"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Circular_anatomical_location.Circular_direction.value_DV_CODED_TEXT">
+         <path value="Circular_anatomical_location.Circular_direction.value_DV_CODED_TEXT"/>
+         <short value="Circular direction"/>
+         <definition value="Identification of the angle of the direction to the physical site relative to the reference direction, either as the position of an hour hand on a clockface or number of degrees."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Circular_anatomical_location.Circular_direction.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Circular_anatomical_location.Circular_direction.value_DV_DURATION">
+         <path value="Circular_anatomical_location.Circular_direction.value_DV_DURATION"/>
+         <short value="Circular direction"/>
+         <definition value="Identification of the angle of the direction to the physical site relative to the reference direction, either as the position of an hour hand on a clockface or number of degrees."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Circular_anatomical_location.Circular_direction.value_DV_DURATION"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Circular_anatomical_location.Circular_direction.value_DvQuantity">
+         <path value="Circular_anatomical_location.Circular_direction.value_DvQuantity"/>
+         <short value="Circular direction"/>
+         <definition value="Identification of the angle of the direction to the physical site relative to the reference direction, either as the position of an hour hand on a clockface or number of degrees."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Circular_anatomical_location.Circular_direction.value_DvQuantity"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Circular_anatomical_location.Distance_from_landmark">
+         <path value="Circular_anatomical_location.Distance_from_landmark"/>
+         <short value="Distance from landmark"/>
+         <definition value="Distance of location from the identified central landmark."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Circular_anatomical_location.Distance_from_landmark"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Circular_anatomical_location.Distance_from_landmark.value">
+         <path value="Circular_anatomical_location.Distance_from_landmark.value"/>
+         <short value="Distance from landmark"/>
+         <definition value="Distance of location from the identified central landmark."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Circular_anatomical_location.Distance_from_landmark.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Circular_anatomical_location.Description">
+         <path value="Circular_anatomical_location.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description that can be used to further refine and support structured data about the circular location."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Circular_anatomical_location.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Circular_anatomical_location.Description.value">
+         <path value="Circular_anatomical_location.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description that can be used to further refine and support structured data about the circular location."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Circular_anatomical_location.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Circular_anatomical_location.Multimedia_representation">
+         <path value="Circular_anatomical_location.Multimedia_representation"/>
+         <short value="Multimedia representation"/>
+         <definition value="Image or other media used to support identification of the location on the body."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Circular_anatomical_location.Multimedia_representation"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

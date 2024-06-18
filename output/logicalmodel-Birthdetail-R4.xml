@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Birthdetail-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-birthdetail-R4"/>
+   <version value="0"/>
+   <name value="Birthdetail"/>
+   <title value="Birth detail"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="A subset of persistent or summary information about the pregnancy and birth of an infant, selected for utility of use within both the maternal and infant health records."/>
+   <purpose value="To record a subset of persistent or summary information about the pregnancy and birth of an infant, that may be used within both the mother's and infant's health record."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Birth_detail">
+         <path value="Birth_detail"/>
+         <short value="Birth detail"/>
+         <definition value="A subset of persistent or summary information about the pregnancy and birth of an infant, selected for utility of use within both the maternal and infant health records."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Birth_detail"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Birth_detail.Description">
+         <path value="Birth_detail.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description of the newborn, including observed congenital abnormalities."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Birth_detail.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Birth_detail.Description.value">
+         <path value="Birth_detail.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description of the newborn, including observed congenital abnormalities."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Birth_detail.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Birth_detail.Birth_order">
+         <path value="Birth_detail.Birth_order"/>
+         <short value="Birth order"/>
+         <definition value="The sequential order of the birth of the infant within a multiple birth pregnancy."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Birth_detail.Birth_order"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Birth_detail.Birth_order.value">
+         <path value="Birth_detail.Birth_order.value"/>
+         <short value="Birth order"/>
+         <definition value="The sequential order of the birth of the infant within a multiple birth pregnancy."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Birth_detail.Birth_order.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Birth_detail.Gestation">
+         <path value="Birth_detail.Gestation"/>
+         <short value="Gestation"/>
+         <definition value="The length of the pregnancy at the time of delivery of the infant."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Birth_detail.Gestation"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Birth_detail.Gestation.value">
+         <path value="Birth_detail.Gestation.value"/>
+         <short value="Gestation"/>
+         <definition value="The length of the pregnancy at the time of delivery of the infant."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Birth_detail.Gestation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Birth_detail.Gestational_age">
+         <path value="Birth_detail.Gestational_age"/>
+         <short value="Gestational age"/>
+         <definition value="The estimated gestational maturity of the newborn at, or very near, birth."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Birth_detail.Gestational_age"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Birth_detail.Gestational_age.value">
+         <path value="Birth_detail.Gestational_age.value"/>
+         <short value="Gestational age"/>
+         <definition value="The estimated gestational maturity of the newborn at, or very near, birth."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Birth_detail.Gestational_age.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Birth_detail.Method_of_delivery">
+         <path value="Birth_detail.Method_of_delivery"/>
+         <short value="Method of delivery"/>
+         <definition value="Method by which the newborn was delivered."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Birth_detail.Method_of_delivery"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Birth_detail.Method_of_delivery.value_DV_CODED_TEXT">
+         <path value="Birth_detail.Method_of_delivery.value_DV_CODED_TEXT"/>
+         <short value="Method of delivery"/>
+         <definition value="Method by which the newborn was delivered."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Birth_detail.Method_of_delivery.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Birth_detail.Method_of_delivery.value_DV_TEXT">
+         <path value="Birth_detail.Method_of_delivery.value_DV_TEXT"/>
+         <short value="Method of delivery"/>
+         <definition value="Method by which the newborn was delivered."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Birth_detail.Method_of_delivery.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Birth_detail.Delivery_timing">
+         <path value="Birth_detail.Delivery_timing"/>
+         <short value="Delivery timing"/>
+         <definition value="The level of urgency identified at or around the time of delivery."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Birth_detail.Delivery_timing"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Birth_detail.Delivery_timing.value_DV_CODED_TEXT">
+         <path value="Birth_detail.Delivery_timing.value_DV_CODED_TEXT"/>
+         <short value="Delivery timing"/>
+         <definition value="The level of urgency identified at or around the time of delivery."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Birth_detail.Delivery_timing.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Birth_detail.Delivery_timing.value_DV_TEXT">
+         <path value="Birth_detail.Delivery_timing.value_DV_TEXT"/>
+         <short value="Delivery timing"/>
+         <definition value="The level of urgency identified at or around the time of delivery."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Birth_detail.Delivery_timing.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Medicationsupplyamount-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-medicationsupplyamount-R4"/>
+   <version value="0"/>
+   <name value="Medicationsupplyamount"/>
+   <title value="Medication supply amount"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Details related to the amount of a medication, vaccine or other therapeutic item to be supplied or supplied to the patient, as part of authorisation, dispensing or administration."/>
+   <purpose value="To record the amount of a medication, vaccine or other therapeutic item to be supplied or supplied to the patient, as part of authorisation, dispensing or administration, both in the context of the original medication order and in a subsequent action. "/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Medication_supply_amount">
+         <path value="Medication_supply_amount"/>
+         <short value="Medication supply amount"/>
+         <definition value="Details related to the amount of a medication, vaccine or other therapeutic item to be supplied or supplied to the patient, as part of authorisation, dispensing or administration."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_supply_amount"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_supply_amount.Amount_description">
+         <path value="Medication_supply_amount.Amount_description"/>
+         <short value="Amount description"/>
+         <definition value="A narrative representation of the amount The amount of medication, vaccine or therapeutic good intended to be supplied or actually supplied."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_supply_amount.Amount_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medication_supply_amount.Amount_description.value">
+         <path value="Medication_supply_amount.Amount_description.value"/>
+         <short value="Amount description"/>
+         <definition value="A narrative representation of the amount The amount of medication, vaccine or therapeutic good intended to be supplied or actually supplied."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_supply_amount.Amount_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_supply_amount.Amount">
+         <path value="Medication_supply_amount.Amount"/>
+         <short value="Amount"/>
+         <definition value="The amount of medication, vaccine or therapeutic good intended to be supplied or actually supplied."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_supply_amount.Amount"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medication_supply_amount.Amount.value">
+         <path value="Medication_supply_amount.Amount.value"/>
+         <short value="Amount"/>
+         <definition value="The amount of medication, vaccine or therapeutic good intended to be supplied or actually supplied."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_supply_amount.Amount.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_supply_amount.Units">
+         <path value="Medication_supply_amount.Units"/>
+         <short value="Units"/>
+         <definition value="The dose unit or pack unit associated with the dispense amount."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_supply_amount.Units"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medication_supply_amount.Units.value">
+         <path value="Medication_supply_amount.Units.value"/>
+         <short value="Units"/>
+         <definition value="The dose unit or pack unit associated with the dispense amount."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_supply_amount.Units.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_supply_amount.Number_of_packs">
+         <path value="Medication_supply_amount.Number_of_packs"/>
+         <short value="Number of packs"/>
+         <definition value="The number of packs specified by the prescriber or dispensed by the dispenser."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_supply_amount.Number_of_packs"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medication_supply_amount.Number_of_packs.value">
+         <path value="Medication_supply_amount.Number_of_packs.value"/>
+         <short value="Number of packs"/>
+         <definition value="The number of packs specified by the prescriber or dispensed by the dispenser."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_supply_amount.Number_of_packs.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_supply_amount.Pack_size">
+         <path value="Medication_supply_amount.Pack_size"/>
+         <short value="Pack size"/>
+         <definition value="The pack size specifed by the prescriber or dispensed by the dispenser."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_supply_amount.Pack_size"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medication_supply_amount.Pack_size.value">
+         <path value="Medication_supply_amount.Pack_size.value"/>
+         <short value="Pack size"/>
+         <definition value="The pack size specifed by the prescriber or dispensed by the dispenser."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_supply_amount.Pack_size.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_supply_amount.Pack_units">
+         <path value="Medication_supply_amount.Pack_units"/>
+         <short value="Pack units"/>
+         <definition value="The units of measurement associated with pack size."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_supply_amount.Pack_units"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medication_supply_amount.Pack_units.value">
+         <path value="Medication_supply_amount.Pack_units.value"/>
+         <short value="Pack units"/>
+         <definition value="The units of measurement associated with pack size."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_supply_amount.Pack_units.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_supply_amount.Duration_of_supply">
+         <path value="Medication_supply_amount.Duration_of_supply"/>
+         <short value="Duration of supply"/>
+         <definition value="The period of time for which the medication should be dispensed or for which a suppy was dispensed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_supply_amount.Duration_of_supply"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medication_supply_amount.Duration_of_supply.value">
+         <path value="Medication_supply_amount.Duration_of_supply.value"/>
+         <short value="Duration of supply"/>
+         <definition value="The period of time for which the medication should be dispensed or for which a suppy was dispensed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_supply_amount.Duration_of_supply.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Duration"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

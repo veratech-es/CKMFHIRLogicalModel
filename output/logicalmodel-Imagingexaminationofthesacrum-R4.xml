@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Imagingexaminationofthesacrum-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-imagingexaminationofthesacrum-R4"/>
+   <version value="0"/>
+   <name value="Imagingexaminationofthesacrum"/>
+   <title value="Imaging examination of the sacrum"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Findings on radiological examination of the sacrum."/>
+   <purpose value="To record the findings on radiological examination of the pelvis, and their interpretation."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Imaging_examination_of_the_sacrum">
+         <path value="Imaging_examination_of_the_sacrum"/>
+         <short value="Imaging examination of the sacrum"/>
+         <definition value="Findings on radiological examination of the sacrum."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_of_the_sacrum"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_of_the_sacrum.Body_structure">
+         <path value="Imaging_examination_of_the_sacrum.Body_structure"/>
+         <short value="Body structure"/>
+         <definition value="Identification of the body structure or region examined."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_of_the_sacrum.Body_structure"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_of_the_sacrum.Body_structure.value">
+         <path value="Imaging_examination_of_the_sacrum.Body_structure.value"/>
+         <short value="Body structure"/>
+         <definition value="Identification of the body structure or region examined."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_of_the_sacrum.Body_structure.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_of_the_sacrum.Body_site">
+         <path value="Imaging_examination_of_the_sacrum.Body_site"/>
+         <short value="Body site"/>
+         <definition value="Identification of the area of the body under examination."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_of_the_sacrum.Body_site"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_of_the_sacrum.Body_site.value">
+         <path value="Imaging_examination_of_the_sacrum.Body_site.value"/>
+         <short value="Body site"/>
+         <definition value="Identification of the area of the body under examination."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_of_the_sacrum.Body_site.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_of_the_sacrum.Structured_body_site">
+         <path value="Imaging_examination_of_the_sacrum.Structured_body_site"/>
+         <short value="Structured body site"/>
+         <definition value="Structured details about the area of the body under examination."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Imaging_examination_of_the_sacrum.Structured_body_site"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_of_the_sacrum.Imaging_findings">
+         <path value="Imaging_examination_of_the_sacrum.Imaging_findings"/>
+         <short value="Imaging findings"/>
+         <definition value="Narrative description of the imaging findings observed during this examination."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_of_the_sacrum.Imaging_findings"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_of_the_sacrum.Imaging_findings.value">
+         <path value="Imaging_examination_of_the_sacrum.Imaging_findings.value"/>
+         <short value="Imaging findings"/>
+         <definition value="Narrative description of the imaging findings observed during this examination."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_of_the_sacrum.Imaging_findings.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_of_the_sacrum.Additional_details">
+         <path value="Imaging_examination_of_the_sacrum.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="Additional structured details about imaging findings for the identified body structure or region, or findings of related structures."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Imaging_examination_of_the_sacrum.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_of_the_sacrum.Impression">
+         <path value="Imaging_examination_of_the_sacrum.Impression"/>
+         <short value="Impression"/>
+         <definition value="Single word, phrase or brief description that represents the clinical meaning and significance of all imaging findings for the identified body structure."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Imaging_examination_of_the_sacrum.Impression"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_of_the_sacrum.Impression.value">
+         <path value="Imaging_examination_of_the_sacrum.Impression.value"/>
+         <short value="Impression"/>
+         <definition value="Single word, phrase or brief description that represents the clinical meaning and significance of all imaging findings for the identified body structure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_of_the_sacrum.Impression.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_of_the_sacrum.Comment">
+         <path value="Imaging_examination_of_the_sacrum.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the imaging findings of the body structure, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_of_the_sacrum.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_of_the_sacrum.Comment.value">
+         <path value="Imaging_examination_of_the_sacrum.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the imaging findings of the body structure, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_of_the_sacrum.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_examination_of_the_sacrum.Sacral_slope">
+         <path value="Imaging_examination_of_the_sacrum.Sacral_slope"/>
+         <short value="Sacral slope"/>
+         <definition value="The measured angle between a line parallel to the sacral endplate and a horizontal reference line."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_of_the_sacrum.Sacral_slope"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_examination_of_the_sacrum.Sacral_slope.value">
+         <path value="Imaging_examination_of_the_sacrum.Sacral_slope.value"/>
+         <short value="Sacral slope"/>
+         <definition value="The measured angle between a line parallel to the sacral endplate and a horizontal reference line."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_examination_of_the_sacrum.Sacral_slope.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Myringotomy-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-myringotomy-R4"/>
+   <version value="0"/>
+   <name value="Myringotomy"/>
+   <title value="Myringotomy"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Surgical procedure in which an incision is made in the tympanic membrane to relieve pressure and/or drain fluid. This is often accompanied by insertion of a ventilation tube to keep the middle ear aerated and prevent reaccumulation of fluid."/>
+   <purpose value="To record details about the myringotomy performed."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Myringotomy">
+         <path value="Myringotomy"/>
+         <short value="Myringotomy"/>
+         <definition value="Surgical procedure in which an incision is made in the tympanic membrane to relieve pressure and/or drain fluid. This is often accompanied by insertion of a ventilation tube to keep the middle ear aerated and prevent reaccumulation of fluid."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Myringotomy"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Myringotomy.Fluid">
+         <path value="Myringotomy.Fluid"/>
+         <short value="Fluid"/>
+         <definition value="Description of the fluid observed in the middle ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Myringotomy.Fluid"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Myringotomy.Fluid.value">
+         <path value="Myringotomy.Fluid.value"/>
+         <short value="Fluid"/>
+         <definition value="Description of the fluid observed in the middle ear."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Myringotomy.Fluid.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Myringotomy.Ventilation_Tube_Inserted">
+         <path value="Myringotomy.Ventilation_Tube_Inserted"/>
+         <short value="Ventilation Tube Inserted"/>
+         <definition value="Was a ventilation tube inserted?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Myringotomy.Ventilation_Tube_Inserted"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Myringotomy.Ventilation_Tube_Inserted.value">
+         <path value="Myringotomy.Ventilation_Tube_Inserted.value"/>
+         <short value="Ventilation Tube Inserted"/>
+         <definition value="Was a ventilation tube inserted?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Myringotomy.Ventilation_Tube_Inserted.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Myringotomy.Ventilation_Tube">
+         <path value="Myringotomy.Ventilation_Tube"/>
+         <short value="Ventilation Tube"/>
+         <definition value="Details of the ventilation tubes inserted."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Myringotomy.Ventilation_Tube"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

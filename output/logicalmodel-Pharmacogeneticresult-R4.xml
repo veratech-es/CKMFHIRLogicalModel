@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Pharmacogeneticresult-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-pharmacogeneticresult-R4"/>
+   <version value="0"/>
+   <name value="Pharmacogeneticresult"/>
+   <title value="Pharmacogenetic result"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Findings on pharmacogenetic testing for a single gene."/>
+   <purpose value="To record findings on pharmacogenetic testing for a single gene."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Pharmacogenetic_result">
+         <path value="Pharmacogenetic_result"/>
+         <short value="Pharmacogenetic result"/>
+         <definition value="Findings on pharmacogenetic testing for a single gene."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Pharmacogenetic_result"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pharmacogenetic_result.Gene_symbol">
+         <path value="Pharmacogenetic_result.Gene_symbol"/>
+         <short value="Gene symbol"/>
+         <definition value="The official gene symbol approved by the HGNC, which is a short abbreviated form of the gene name."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Pharmacogenetic_result.Gene_symbol"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pharmacogenetic_result.Gene_symbol.value">
+         <path value="Pharmacogenetic_result.Gene_symbol.value"/>
+         <short value="Gene symbol"/>
+         <definition value="The official gene symbol approved by the HGNC, which is a short abbreviated form of the gene name."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pharmacogenetic_result.Gene_symbol.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pharmacogenetic_result.Diplotype">
+         <path value="Pharmacogenetic_result.Diplotype"/>
+         <short value="Diplotype"/>
+         <definition value="A textual representation of the diplotype, normally as string of characters, either as as gene change descriptors or star allele diplotypes."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pharmacogenetic_result.Diplotype"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pharmacogenetic_result.Diplotype.value">
+         <path value="Pharmacogenetic_result.Diplotype.value"/>
+         <short value="Diplotype"/>
+         <definition value="A textual representation of the diplotype, normally as string of characters, either as as gene change descriptors or star allele diplotypes."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pharmacogenetic_result.Diplotype.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pharmacogenetic_result.Phenotype">
+         <path value="Pharmacogenetic_result.Phenotype"/>
+         <short value="Phenotype"/>
+         <definition value="The estimated pharmacological impact of the identified genotype."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pharmacogenetic_result.Phenotype"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pharmacogenetic_result.Phenotype.value_DV_CODED_TEXT">
+         <path value="Pharmacogenetic_result.Phenotype.value_DV_CODED_TEXT"/>
+         <short value="Phenotype"/>
+         <definition value="The estimated pharmacological impact of the identified genotype."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pharmacogenetic_result.Phenotype.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pharmacogenetic_result.Phenotype.value_DV_TEXT">
+         <path value="Pharmacogenetic_result.Phenotype.value_DV_TEXT"/>
+         <short value="Phenotype"/>
+         <definition value="The estimated pharmacological impact of the identified genotype."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pharmacogenetic_result.Phenotype.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pharmacogenetic_result.Overall_activity_score">
+         <path value="Pharmacogenetic_result.Overall_activity_score"/>
+         <short value="Overall activity score"/>
+         <definition value="An associated derived activity score, based on known association with specific genotypes and individual allele activity values, which is required to assess metaboliser status for some phenotypes."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pharmacogenetic_result.Overall_activity_score"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pharmacogenetic_result.Overall_activity_score.value">
+         <path value="Pharmacogenetic_result.Overall_activity_score.value"/>
+         <short value="Overall activity score"/>
+         <definition value="An associated derived activity score, based on known association with specific genotypes and individual allele activity values, which is required to assess metaboliser status for some phenotypes."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Pharmacogenetic_result.Overall_activity_score.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pharmacogenetic_result.Individual_activity_value">
+         <path value="Pharmacogenetic_result.Individual_activity_value"/>
+         <short value="Individual activity value"/>
+         <definition value="A list of enzyme activity values each associated with a specific allele, which are used to derive the Overall activity score."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pharmacogenetic_result.Individual_activity_value"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pharmacogenetic_result.Individual_activity_value.Allele_haplotype">
+         <path value="Pharmacogenetic_result.Individual_activity_value.Allele_haplotype"/>
+         <short value="Allele haplotype"/>
+         <definition value="The allele haplotype descriptor associated with the activity value."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pharmacogenetic_result.Individual_activity_value.Allele_haplotype"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pharmacogenetic_result.Individual_activity_value.Allele_haplotype.value">
+         <path value="Pharmacogenetic_result.Individual_activity_value.Allele_haplotype.value"/>
+         <short value="Allele haplotype"/>
+         <definition value="The allele haplotype descriptor associated with the activity value."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pharmacogenetic_result.Individual_activity_value.Allele_haplotype.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pharmacogenetic_result.Individual_activity_value.Activity_value">
+         <path value="Pharmacogenetic_result.Individual_activity_value.Activity_value"/>
+         <short value="Activity value"/>
+         <definition value="An associated derived activity score, based on known association with specific genotypes, which is required to assess metaboliser status for some phenotypes."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pharmacogenetic_result.Individual_activity_value.Activity_value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Pharmacogenetic_result.Individual_activity_value.Activity_value.value">
+         <path value="Pharmacogenetic_result.Individual_activity_value.Activity_value.value"/>
+         <short value="Activity value"/>
+         <definition value="An associated derived activity score, based on known association with specific genotypes, which is required to assess metaboliser status for some phenotypes."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Pharmacogenetic_result.Individual_activity_value.Activity_value.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pharmacogenetic_result.Per_allele_tested">
+         <path value="Pharmacogenetic_result.Per_allele_tested"/>
+         <short value="Per-allele tested"/>
+         <definition value="A list of the specific alleles tested by this pharmacogenetic test, as the specific alleles may vary between tests."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Pharmacogenetic_result.Per_allele_tested"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pharmacogenetic_result.Per_allele_tested.SNP_rsNumber">
+         <path value="Pharmacogenetic_result.Per_allele_tested.SNP_rsNumber"/>
+         <short value="SNP rsNumber"/>
+         <definition value="The rsNumber (rs ID) of the allele tested, based on the dbSNP identifier."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pharmacogenetic_result.Per_allele_tested.SNP_rsNumber"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Pharmacogenetic_result.Variant_detail">
+         <path value="Pharmacogenetic_result.Variant_detail"/>
+         <short value="Variant detail"/>
+         <definition value="Details of variant findings."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Pharmacogenetic_result.Variant_detail"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

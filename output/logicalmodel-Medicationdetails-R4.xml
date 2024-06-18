@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Medicationdetails-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-medicationdetails-R4"/>
+   <version value="0"/>
+   <name value="Medicationdetails"/>
+   <title value="Medication details"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Details about a medication or component of a medication, including strength, form and details of any specific constituents."/>
+   <purpose value="To record details about a medication or component of a medication, including strength, form and details of any specific constituents."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Medication_details">
+         <path value="Medication_details"/>
+         <short value="Medication details"/>
+         <definition value="Details about a medication or component of a medication, including strength, form and details of any specific constituents."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_details"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_details.Name">
+         <path value="Medication_details.Name"/>
+         <short value="Name"/>
+         <definition value="The name of the medication or medication component."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_details.Name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medication_details.Name.value">
+         <path value="Medication_details.Name.value"/>
+         <short value="Name"/>
+         <definition value="The name of the medication or medication component."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_details.Name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_details.Form">
+         <path value="Medication_details.Form"/>
+         <short value="Form"/>
+         <definition value="The formulation or presentation of the medication or medication component."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Medication_details.Form"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Medication_details.Form.value">
+         <path value="Medication_details.Form.value"/>
+         <short value="Form"/>
+         <definition value="The formulation or presentation of the medication or medication component."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_details.Form.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_details.Category">
+         <path value="Medication_details.Category"/>
+         <short value="Category"/>
+         <definition value="The category of the medication or medication component, with regard to manufacturing or preparation, and the number of ingredients."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_details.Category"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medication_details.Category.value_DV_CODED_TEXT">
+         <path value="Medication_details.Category.value_DV_CODED_TEXT"/>
+         <short value="Category"/>
+         <definition value="The category of the medication or medication component, with regard to manufacturing or preparation, and the number of ingredients."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_details.Category.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_details.Category.value_DV_TEXT">
+         <path value="Medication_details.Category.value_DV_TEXT"/>
+         <short value="Category"/>
+         <definition value="The category of the medication or medication component, with regard to manufacturing or preparation, and the number of ingredients."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_details.Category.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_details.Strength_(presentation)">
+         <path value="Medication_details.Strength_(presentation)"/>
+         <short value="Strength (presentation)"/>
+         <definition value="The strength of the medication or medication component, expressed as a ratio."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_details.Strength_(presentation)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_details.Strength_(presentation).Strength_numerator">
+         <path value="Medication_details.Strength_(presentation).Strength_numerator"/>
+         <short value="Strength numerator"/>
+         <definition value="The numerator of the strength fraction."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_details.Strength_(presentation).Strength_numerator"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medication_details.Strength_(presentation).Strength_numerator.value">
+         <path value="Medication_details.Strength_(presentation).Strength_numerator.value"/>
+         <short value="Strength numerator"/>
+         <definition value="The numerator of the strength fraction."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_details.Strength_(presentation).Strength_numerator.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_details.Strength_(presentation).Strength_denominator">
+         <path value="Medication_details.Strength_(presentation).Strength_denominator"/>
+         <short value="Strength denominator"/>
+         <definition value="The denominator of the strength fraction."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_details.Strength_(presentation).Strength_denominator"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medication_details.Strength_(presentation).Strength_denominator.value">
+         <path value="Medication_details.Strength_(presentation).Strength_denominator.value"/>
+         <short value="Strength denominator"/>
+         <definition value="The denominator of the strength fraction."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_details.Strength_(presentation).Strength_denominator.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_details.Strength_(concentration)">
+         <path value="Medication_details.Strength_(concentration)"/>
+         <short value="Strength (concentration)"/>
+         <definition value="The strength of the medication or medication component, as a concentration."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_details.Strength_(concentration)"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medication_details.Strength_(concentration).value">
+         <path value="Medication_details.Strength_(concentration).value"/>
+         <short value="Strength (concentration)"/>
+         <definition value="The strength of the medication or medication component, as a concentration."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_details.Strength_(concentration).value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_details.Manufacturer">
+         <path value="Medication_details.Manufacturer"/>
+         <short value="Manufacturer"/>
+         <definition value="The manufacturer of the medication or medication component."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_details.Manufacturer"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medication_details.Manufacturer.value">
+         <path value="Medication_details.Manufacturer.value"/>
+         <short value="Manufacturer"/>
+         <definition value="The manufacturer of the medication or medication component."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_details.Manufacturer.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_details.Batch_ID">
+         <path value="Medication_details.Batch_ID"/>
+         <short value="Batch ID"/>
+         <definition value="The identifier assigned to the production batch by the manufacturer during production."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Medication_details.Batch_ID"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Medication_details.Batch_ID.value_DV_TEXT">
+         <path value="Medication_details.Batch_ID.value_DV_TEXT"/>
+         <short value="Batch ID"/>
+         <definition value="The identifier assigned to the production batch by the manufacturer during production."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_details.Batch_ID.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_details.Batch_ID.value_DV_IDENTIFIER">
+         <path value="Medication_details.Batch_ID.value_DV_IDENTIFIER"/>
+         <short value="Batch ID"/>
+         <definition value="The identifier assigned to the production batch by the manufacturer during production."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_details.Batch_ID.value_DV_IDENTIFIER"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_details.Expiry">
+         <path value="Medication_details.Expiry"/>
+         <short value="Expiry"/>
+         <definition value="The expiry date and/or time of the medication or medication component, as given by the manufacturer or individual preparing the mixture."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_details.Expiry"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medication_details.Expiry.value">
+         <path value="Medication_details.Expiry.value"/>
+         <short value="Expiry"/>
+         <definition value="The expiry date and/or time of the medication or medication component, as given by the manufacturer or individual preparing the mixture."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_details.Expiry.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_details.Constituent">
+         <path value="Medication_details.Constituent"/>
+         <short value="Constituent"/>
+         <definition value="Details of an ingredient or product used to make up a mixed pack, preparation or infusion."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Medication_details.Constituent"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_details.Amount">
+         <path value="Medication_details.Amount"/>
+         <short value="Amount"/>
+         <definition value="The amount of medication or medication component."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_details.Amount"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medication_details.Amount.value">
+         <path value="Medication_details.Amount.value"/>
+         <short value="Amount"/>
+         <definition value="The amount of medication or medication component."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_details.Amount.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_details.Alternate_amount">
+         <path value="Medication_details.Alternate_amount"/>
+         <short value="Alternate amount"/>
+         <definition value="An equivalent representation of the amount of the medication or medication component."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_details.Alternate_amount"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medication_details.Alternate_amount.value">
+         <path value="Medication_details.Alternate_amount.value"/>
+         <short value="Alternate amount"/>
+         <definition value="An equivalent representation of the amount of the medication or medication component."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_details.Alternate_amount.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_details.Role">
+         <path value="Medication_details.Role"/>
+         <short value="Role"/>
+         <definition value="The role of the medication or medication component within a mixture."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_details.Role"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medication_details.Role.value_DV_CODED_TEXT">
+         <path value="Medication_details.Role.value_DV_CODED_TEXT"/>
+         <short value="Role"/>
+         <definition value="The role of the medication or medication component within a mixture."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_details.Role.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_details.Role.value_DV_TEXT">
+         <path value="Medication_details.Role.value_DV_TEXT"/>
+         <short value="Role"/>
+         <definition value="The role of the medication or medication component within a mixture."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_details.Role.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_details.Description">
+         <path value="Medication_details.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description of the medication or medication component where it is not possible to describe this fully using structured elements."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_details.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Medication_details.Description.value">
+         <path value="Medication_details.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description of the medication or medication component where it is not possible to describe this fully using structured elements."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Medication_details.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Medication_details.Structured_details">
+         <path value="Medication_details.Structured_details"/>
+         <short value="Structured details"/>
+         <definition value="Additional details about the medication or medication component."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Medication_details.Structured_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

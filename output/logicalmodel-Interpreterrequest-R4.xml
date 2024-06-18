@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Interpreterrequest-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-interpreterrequest-R4"/>
+   <version value="0"/>
+   <name value="Interpreterrequest"/>
+   <title value="Interpreter request"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Requirements and preferences for appropriate interpretation to assist with communication."/>
+   <purpose value="To record requirements and preferences for appropriate interpretation to assist with communication."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Interpreter_request">
+         <path value="Interpreter_request"/>
+         <short value="Interpreter request"/>
+         <definition value="Requirements and preferences for appropriate interpretation to assist with communication."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Interpreter_request"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Interpreter_request.Communication_channel">
+         <path value="Interpreter_request.Communication_channel"/>
+         <short value="Communication channel"/>
+         <definition value="The preferred way of delivery for the interpretation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Interpreter_request.Communication_channel"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Interpreter_request.Communication_channel.value_DV_CODED_TEXT">
+         <path value="Interpreter_request.Communication_channel.value_DV_CODED_TEXT"/>
+         <short value="Communication channel"/>
+         <definition value="The preferred way of delivery for the interpretation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Interpreter_request.Communication_channel.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Interpreter_request.Communication_channel.value_DV_TEXT">
+         <path value="Interpreter_request.Communication_channel.value_DV_TEXT"/>
+         <short value="Communication channel"/>
+         <definition value="The preferred way of delivery for the interpretation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Interpreter_request.Communication_channel.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Interpreter_request.Per_language">
+         <path value="Interpreter_request.Per_language"/>
+         <short value="Per language"/>
+         <definition value="Details about the requested language."/>
+         <min value="1"/>
+         <max value="*"/>
+         <base>
+            <path value="Interpreter_request.Per_language"/>
+            <min value="1"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Interpreter_request.items_Per_language.name">
+         <path value="Interpreter_request.items_Per_language.name"/>
+         <short value="Per language"/>
+         <definition value="Details about the requested language."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Interpreter_request.items_Per_language.name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Interpreter_request.items_Per_language.Language">
+         <path value="Interpreter_request.items_Per_language.Language"/>
+         <short value="Language"/>
+         <definition value="Language and method of communication for the interpretation."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Interpreter_request.items_Per_language.Language"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Interpreter_request.items_Per_language.Comment">
+         <path value="Interpreter_request.items_Per_language.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative description about the requested language not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Interpreter_request.items_Per_language.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Interpreter_request.items_Per_language.Comment.value">
+         <path value="Interpreter_request.items_Per_language.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative description about the requested language not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Interpreter_request.items_Per_language.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Interpreter_request.Preferred_gender">
+         <path value="Interpreter_request.Preferred_gender"/>
+         <short value="Preferred gender"/>
+         <definition value="The preferred gender of the interpreter."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Interpreter_request.Preferred_gender"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Interpreter_request.Preferred_gender.value">
+         <path value="Interpreter_request.Preferred_gender.value"/>
+         <short value="Preferred gender"/>
+         <definition value="The preferred gender of the interpreter."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Interpreter_request.Preferred_gender.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Interpreter_request.Preferred_interpreter">
+         <path value="Interpreter_request.Preferred_interpreter"/>
+         <short value="Preferred interpreter"/>
+         <definition value="Identification of the individual interpreter that is preferred for the interpretation."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Interpreter_request.Preferred_interpreter"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Interpreter_request.Comment">
+         <path value="Interpreter_request.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative description about the requirements for the interpretation not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Interpreter_request.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Interpreter_request.Comment.value">
+         <path value="Interpreter_request.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative description about the requirements for the interpretation not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Interpreter_request.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Religiousaffiliation-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-religiousaffiliation-R4"/>
+   <version value="0"/>
+   <name value="Religiousaffiliation"/>
+   <title value="Religious affiliation"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Identification of the individual's religious or non-religious beliefs and/or practices by which people order the conduct of their lives both practically and in a moral sense."/>
+   <purpose value="To record the identification of the individual's religious or non-religious beliefs and/or practices which may be used for purposes related to provision of healthcare or other services."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Religious_affiliation">
+         <path value="Religious_affiliation"/>
+         <short value="Religious affiliation"/>
+         <definition value="Identification of the individual's religious or non-religious beliefs and/or practices by which people order the conduct of their lives both practically and in a moral sense."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Religious_affiliation"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Religious_affiliation.Religious_affiliation">
+         <path value="Religious_affiliation.Religious_affiliation"/>
+         <short value="Religious affiliation"/>
+         <definition value="Name of the belief and/or practice to which the individual is affiliated."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Religious_affiliation.Religious_affiliation"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Religious_affiliation.Religious_affiliation.value">
+         <path value="Religious_affiliation.Religious_affiliation.value"/>
+         <short value="Religious affiliation"/>
+         <definition value="Name of the belief and/or practice to which the individual is affiliated."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Religious_affiliation.Religious_affiliation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Religious_affiliation.Impact_on_care">
+         <path value="Religious_affiliation.Impact_on_care"/>
+         <short value="Impact on care"/>
+         <definition value="Narrative description about how care needs to be modified to support the individual's religious practice."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Religious_affiliation.Impact_on_care"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Religious_affiliation.Impact_on_care.value">
+         <path value="Religious_affiliation.Impact_on_care.value"/>
+         <short value="Impact on care"/>
+         <definition value="Narrative description about how care needs to be modified to support the individual's religious practice."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Religious_affiliation.Impact_on_care.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Religious_affiliation.Details">
+         <path value="Religious_affiliation.Details"/>
+         <short value="Details"/>
+         <definition value="Additional details about the individual's religious affiliation."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Religious_affiliation.Details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Religious_affiliation.Comment">
+         <path value="Religious_affiliation.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the religious affiliation not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Religious_affiliation.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Religious_affiliation.Comment.value">
+         <path value="Religious_affiliation.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the religious affiliation not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Religious_affiliation.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

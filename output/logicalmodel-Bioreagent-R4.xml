@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Bioreagent-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-bioreagent-R4"/>
+   <version value="0"/>
+   <name value="Bioreagent"/>
+   <title value="Bioreagent"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="A substance, compound, product or material used to identify or manipulate the chemical matter, or used to support the growth of cells or tissues, as part of a diagnostic or therapeutic procedure in healthcare."/>
+   <purpose value="To record the details about a bioreagent or laboratory consumable used as part of a diagnostic or therapeutic procedure in healthcare."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Bioreagent">
+         <path value="Bioreagent"/>
+         <short value="Bioreagent"/>
+         <definition value="A substance, compound, product or material used to identify or manipulate the chemical matter, or used to support the growth of cells or tissues, as part of a diagnostic or therapeutic procedure in healthcare."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Bioreagent"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Bioreagent.Name">
+         <path value="Bioreagent.Name"/>
+         <short value="Name"/>
+         <definition value="Identification of the reagent or consumable, preferably by a common name, a formal fully descriptive name or, if required, by class or category."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Bioreagent.Name"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Bioreagent.Name.value">
+         <path value="Bioreagent.Name.value"/>
+         <short value="Name"/>
+         <definition value="Identification of the reagent or consumable, preferably by a common name, a formal fully descriptive name or, if required, by class or category."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Bioreagent.Name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Bioreagent.Type">
+         <path value="Bioreagent.Type"/>
+         <short value="Type"/>
+         <definition value="The category or type of reagent or consumable."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Bioreagent.Type"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Bioreagent.Type.value">
+         <path value="Bioreagent.Type.value"/>
+         <short value="Type"/>
+         <definition value="The category or type of reagent or consumable."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Bioreagent.Type.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Bioreagent.Identifier">
+         <path value="Bioreagent.Identifier"/>
+         <short value="Identifier"/>
+         <definition value="A unique identifier allocated by a specified registry."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Bioreagent.Identifier"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Bioreagent.Identifier.value">
+         <path value="Bioreagent.Identifier.value"/>
+         <short value="Identifier"/>
+         <definition value="A unique identifier allocated by a specified registry."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Bioreagent.Identifier.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Bioreagent.Manufacturer">
+         <path value="Bioreagent.Manufacturer"/>
+         <short value="Manufacturer"/>
+         <definition value="Name of manufacturer."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Bioreagent.Manufacturer"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Bioreagent.Manufacturer.value">
+         <path value="Bioreagent.Manufacturer.value"/>
+         <short value="Manufacturer"/>
+         <definition value="Name of manufacturer."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Bioreagent.Manufacturer.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Bioreagent.Catalogue_number">
+         <path value="Bioreagent.Catalogue_number"/>
+         <short value="Catalogue number"/>
+         <definition value="The number assigned by the manufacturer, as it appears in the manufacturer's catalogue, labeling, or accompanying packaging."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Bioreagent.Catalogue_number"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Bioreagent.Catalogue_number.value">
+         <path value="Bioreagent.Catalogue_number.value"/>
+         <short value="Catalogue number"/>
+         <definition value="The number assigned by the manufacturer, as it appears in the manufacturer's catalogue, labeling, or accompanying packaging."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Bioreagent.Catalogue_number.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Bioreagent.Batch_number">
+         <path value="Bioreagent.Batch_number"/>
+         <short value="Batch number"/>
+         <definition value="The number assigned by the manufacturer which identifies a group of items manufactured at the same time, usually found on the label or packaging material."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Bioreagent.Batch_number"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Bioreagent.Batch_number.value">
+         <path value="Bioreagent.Batch_number.value"/>
+         <short value="Batch number"/>
+         <definition value="The number assigned by the manufacturer which identifies a group of items manufactured at the same time, usually found on the label or packaging material."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Bioreagent.Batch_number.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Bioreagent.Date_of_expiry">
+         <path value="Bioreagent.Date_of_expiry"/>
+         <short value="Date of expiry"/>
+         <definition value="Date after which the device/product is no longer fit for use, usually found on the reagent itself or printed on the accompanying packaging."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Bioreagent.Date_of_expiry"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Bioreagent.Date_of_expiry.value">
+         <path value="Bioreagent.Date_of_expiry.value"/>
+         <short value="Date of expiry"/>
+         <definition value="Date after which the device/product is no longer fit for use, usually found on the reagent itself or printed on the accompanying packaging."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Bioreagent.Date_of_expiry.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Bioreagent.Comment">
+         <path value="Bioreagent.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the bioreagent not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Bioreagent.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Bioreagent.Comment.value">
+         <path value="Bioreagent.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the bioreagent not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Bioreagent.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

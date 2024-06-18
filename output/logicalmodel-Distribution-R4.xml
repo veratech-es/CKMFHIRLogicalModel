@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Distribution-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-distribution-R4"/>
+   <version value="0"/>
+   <name value="Distribution"/>
+   <title value="Distribution"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Details of the target of communication distribution, whether to identified individual parties or as a category."/>
+   <purpose value="To record the details of the target of a distribution or notification. This may be to a named group or category or to individual persons or organisations."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Distribution">
+         <path value="Distribution"/>
+         <short value="Distribution"/>
+         <definition value="Details of the target of communication distribution, whether to identified individual parties or as a category."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Distribution"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Distribution.Group_category">
+         <path value="Distribution.Group_category"/>
+         <short value="Group category"/>
+         <definition value="A named category of group e.g. Social work, patient representatives to whom the distribution applies."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Distribution.Group_category"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Distribution.Group_category.value">
+         <path value="Distribution.Group_category.value"/>
+         <short value="Group category"/>
+         <definition value="A named category of group e.g. Social work, patient representatives to whom the distribution applies."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Distribution.Group_category.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Distribution.Communication_mode">
+         <path value="Distribution.Communication_mode"/>
+         <short value="Communication mode"/>
+         <definition value="The communications mode by which the distribution is to be made."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Distribution.Communication_mode"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Distribution.Communication_mode.value">
+         <path value="Distribution.Communication_mode.value"/>
+         <short value="Communication mode"/>
+         <definition value="The communications mode by which the distribution is to be made."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Distribution.Communication_mode.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Distribution.Urgent">
+         <path value="Distribution.Urgent"/>
+         <short value="Urgent"/>
+         <definition value="If true the notification should be distributed made as a matter of urgency."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Distribution.Urgent"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Distribution.Urgent.value">
+         <path value="Distribution.Urgent.value"/>
+         <short value="Urgent"/>
+         <definition value="If true the notification should be distributed made as a matter of urgency."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Distribution.Urgent.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Distribution.Date_sent">
+         <path value="Distribution.Date_sent"/>
+         <short value="Date sent"/>
+         <definition value="Date that the distribution was sent."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Distribution.Date_sent"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Distribution.Date_sent.value">
+         <path value="Distribution.Date_sent.value"/>
+         <short value="Date sent"/>
+         <definition value="Date that the distribution was sent."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Distribution.Date_sent.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Distribution.Individual_recipient">
+         <path value="Distribution.Individual_recipient"/>
+         <short value="Individual recipient"/>
+         <definition value="Distribution details for an individual recipient."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Distribution.Individual_recipient"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Distribution.Individual_recipient.Recipient_identifier">
+         <path value="Distribution.Individual_recipient.Recipient_identifier"/>
+         <short value="Recipient identifier"/>
+         <definition value="Unique identifier for an individual recipient."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Distribution.Individual_recipient.Recipient_identifier"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Distribution.Individual_recipient.Recipient_identifier.value">
+         <path value="Distribution.Individual_recipient.Recipient_identifier.value"/>
+         <short value="Recipient identifier"/>
+         <definition value="Unique identifier for an individual recipient."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Distribution.Individual_recipient.Recipient_identifier.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Distribution.Individual_recipient.ELEMENT">
+         <path value="Distribution.Individual_recipient.ELEMENT"/>
+         <definition value="ELEMENT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Distribution.Individual_recipient.ELEMENT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Distribution.Individual_recipient.ELEMENT.value">
+         <path value="Distribution.Individual_recipient.ELEMENT.value"/>
+         <definition value="DV_TEXT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Distribution.Individual_recipient.ELEMENT.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Distribution.Individual_recipient.Recipient_details">
+         <path value="Distribution.Individual_recipient.Recipient_details"/>
+         <short value="Recipient details"/>
+         <definition value="An individual person or organisation to whom the distribution applies."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Distribution.Individual_recipient.Recipient_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

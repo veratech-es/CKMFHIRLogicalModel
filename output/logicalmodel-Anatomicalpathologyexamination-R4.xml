@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Anatomicalpathologyexamination-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-anatomicalpathologyexamination-R4"/>
+   <version value="0"/>
+   <name value="Anatomicalpathologyexamination"/>
+   <title value="Anatomical pathology examination"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Findings and interpretation of an anatomical pathology examination performed on tissues and body fluids."/>
+   <purpose value="To record the findings and interpretation of anatomical pathology tests performed on tissues, cells and body fluids."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Anatomical_pathology_examination">
+         <path value="Anatomical_pathology_examination"/>
+         <short value="Anatomical pathology examination"/>
+         <definition value="Findings and interpretation of an anatomical pathology examination performed on tissues and body fluids."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Anatomical_pathology_examination"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Anatomical_pathology_examination.Examination_type">
+         <path value="Anatomical_pathology_examination.Examination_type"/>
+         <short value="Examination type"/>
+         <definition value="Identification of the type of anatomical pathology examination performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Anatomical_pathology_examination.Examination_type"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Anatomical_pathology_examination.Examination_type.value_DV_CODED_TEXT">
+         <path value="Anatomical_pathology_examination.Examination_type.value_DV_CODED_TEXT"/>
+         <short value="Examination type"/>
+         <definition value="Identification of the type of anatomical pathology examination performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Anatomical_pathology_examination.Examination_type.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Anatomical_pathology_examination.Examination_type.value_DV_TEXT">
+         <path value="Anatomical_pathology_examination.Examination_type.value_DV_TEXT"/>
+         <short value="Examination type"/>
+         <definition value="Identification of the type of anatomical pathology examination performed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Anatomical_pathology_examination.Examination_type.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Anatomical_pathology_examination.Anatomical_pathology_finding">
+         <path value="Anatomical_pathology_examination.Anatomical_pathology_finding"/>
+         <short value="Anatomical pathology finding"/>
+         <definition value="Details of an individual anatomical pathology finding, often related to a specific anatomical location or specimen."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Anatomical_pathology_examination.Anatomical_pathology_finding"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Anatomical_pathology_examination.Anatomical_pathology_finding.Finding_label">
+         <path value="Anatomical_pathology_examination.Anatomical_pathology_finding.Finding_label"/>
+         <short value="Finding label"/>
+         <definition value="A text label for the specific finding."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Anatomical_pathology_examination.Anatomical_pathology_finding.Finding_label"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Anatomical_pathology_examination.Anatomical_pathology_finding.Finding_label.value">
+         <path value="Anatomical_pathology_examination.Anatomical_pathology_finding.Finding_label.value"/>
+         <short value="Finding label"/>
+         <definition value="A text label for the specific finding."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Anatomical_pathology_examination.Anatomical_pathology_finding.Finding_label.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Anatomical_pathology_examination.Anatomical_pathology_finding.Finding_description">
+         <path value="Anatomical_pathology_examination.Anatomical_pathology_finding.Finding_description"/>
+         <short value="Finding description"/>
+         <definition value="A narrative description of the anatomical pathology finding."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Anatomical_pathology_examination.Anatomical_pathology_finding.Finding_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Anatomical_pathology_examination.Anatomical_pathology_finding.Finding_description.value">
+         <path value="Anatomical_pathology_examination.Anatomical_pathology_finding.Finding_description.value"/>
+         <short value="Finding description"/>
+         <definition value="A narrative description of the anatomical pathology finding."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Anatomical_pathology_examination.Anatomical_pathology_finding.Finding_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Anatomical_pathology_examination.Anatomical_pathology_finding.Structured_findings">
+         <path value="Anatomical_pathology_examination.Anatomical_pathology_finding.Structured_findings"/>
+         <short value="Structured findings"/>
+         <definition value="Detailed structured findings."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Anatomical_pathology_examination.Anatomical_pathology_finding.Structured_findings"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Anatomical_pathology_examination.Anatomical_pathology_finding.Pathology_interpretation">
+         <path value="Anatomical_pathology_examination.Anatomical_pathology_finding.Pathology_interpretation"/>
+         <short value="Pathology interpretation"/>
+         <definition value="Single word, phrase of brief description representing the interpretation of the anatomical pathology finding. A coded term is preferred."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Anatomical_pathology_examination.Anatomical_pathology_finding.Pathology_interpretation"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Anatomical_pathology_examination.Anatomical_pathology_finding.Pathology_interpretation.value">
+         <path value="Anatomical_pathology_examination.Anatomical_pathology_finding.Pathology_interpretation.value"/>
+         <short value="Pathology interpretation"/>
+         <definition value="Single word, phrase of brief description representing the interpretation of the anatomical pathology finding. A coded term is preferred."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Anatomical_pathology_examination.Anatomical_pathology_finding.Pathology_interpretation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Anatomical_pathology_examination.Anatomical_pathology_finding.Multimedia_representation">
+         <path value="Anatomical_pathology_examination.Anatomical_pathology_finding.Multimedia_representation"/>
+         <short value="Multimedia representation"/>
+         <definition value="Digital image, video or diagram representing the examination."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Anatomical_pathology_examination.Anatomical_pathology_finding.Multimedia_representation"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Anatomical_pathology_examination.Anatomical_pathology_finding.Specimen_container_ID">
+         <path value="Anatomical_pathology_examination.Anatomical_pathology_finding.Specimen_container_ID"/>
+         <short value="Specimen container ID"/>
+         <definition value="Reference ID, URI or text for a specimen container related to this finding."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Anatomical_pathology_examination.Anatomical_pathology_finding.Specimen_container_ID"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Anatomical_pathology_examination.Anatomical_pathology_finding.Specimen_container_ID.value_DV_IDENTIFIER">
+         <path value="Anatomical_pathology_examination.Anatomical_pathology_finding.Specimen_container_ID.value_DV_IDENTIFIER"/>
+         <short value="Specimen container ID"/>
+         <definition value="Reference ID, URI or text for a specimen container related to this finding."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Anatomical_pathology_examination.Anatomical_pathology_finding.Specimen_container_ID.value_DV_IDENTIFIER"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Anatomical_pathology_examination.Anatomical_pathology_finding.Specimen_container_ID.value_DV_URI">
+         <path value="Anatomical_pathology_examination.Anatomical_pathology_finding.Specimen_container_ID.value_DV_URI"/>
+         <short value="Specimen container ID"/>
+         <definition value="Reference ID, URI or text for a specimen container related to this finding."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Anatomical_pathology_examination.Anatomical_pathology_finding.Specimen_container_ID.value_DV_URI"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="string"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Anatomical_pathology_examination.Anatomical_pathology_finding.Specimen_container_ID.value_DV_TEXT">
+         <path value="Anatomical_pathology_examination.Anatomical_pathology_finding.Specimen_container_ID.value_DV_TEXT"/>
+         <short value="Specimen container ID"/>
+         <definition value="Reference ID, URI or text for a specimen container related to this finding."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Anatomical_pathology_examination.Anatomical_pathology_finding.Specimen_container_ID.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Anatomical_pathology_examination.Anatomical_pathology_finding.Tissue_available">
+         <path value="Anatomical_pathology_examination.Anatomical_pathology_finding.Tissue_available"/>
+         <short value="Tissue available"/>
+         <definition value="True if the tissue is available for examination."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Anatomical_pathology_examination.Anatomical_pathology_finding.Tissue_available"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Anatomical_pathology_examination.Anatomical_pathology_finding.Tissue_available.value">
+         <path value="Anatomical_pathology_examination.Anatomical_pathology_finding.Tissue_available.value"/>
+         <short value="Tissue available"/>
+         <definition value="True if the tissue is available for examination."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Anatomical_pathology_examination.Anatomical_pathology_finding.Tissue_available.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Anatomical_pathology_examination.Examination_description">
+         <path value="Anatomical_pathology_examination.Examination_description"/>
+         <short value="Examination description"/>
+         <definition value="A narrative description of the entire anatomical pathology examination."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Anatomical_pathology_examination.Examination_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Anatomical_pathology_examination.Examination_description.value">
+         <path value="Anatomical_pathology_examination.Examination_description.value"/>
+         <short value="Examination description"/>
+         <definition value="A narrative description of the entire anatomical pathology examination."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Anatomical_pathology_examination.Examination_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Anatomical_pathology_examination.Specimen_container_ID">
+         <path value="Anatomical_pathology_examination.Specimen_container_ID"/>
+         <short value="Specimen container ID"/>
+         <definition value="Reference ID, URI or text for a specimen containera related to this finding."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Anatomical_pathology_examination.Specimen_container_ID"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Anatomical_pathology_examination.Specimen_container_ID.value_DV_IDENTIFIER">
+         <path value="Anatomical_pathology_examination.Specimen_container_ID.value_DV_IDENTIFIER"/>
+         <short value="Specimen container ID"/>
+         <definition value="Reference ID, URI or text for a specimen containera related to this finding."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Anatomical_pathology_examination.Specimen_container_ID.value_DV_IDENTIFIER"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Anatomical_pathology_examination.Specimen_container_ID.value_DV_URI">
+         <path value="Anatomical_pathology_examination.Specimen_container_ID.value_DV_URI"/>
+         <short value="Specimen container ID"/>
+         <definition value="Reference ID, URI or text for a specimen containera related to this finding."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Anatomical_pathology_examination.Specimen_container_ID.value_DV_URI"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="string"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Anatomical_pathology_examination.Specimen_container_ID.value_DV_TEXT">
+         <path value="Anatomical_pathology_examination.Specimen_container_ID.value_DV_TEXT"/>
+         <short value="Specimen container ID"/>
+         <definition value="Reference ID, URI or text for a specimen containera related to this finding."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Anatomical_pathology_examination.Specimen_container_ID.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

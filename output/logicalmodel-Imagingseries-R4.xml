@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Imagingseries-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-imagingseries-R4"/>
+   <version value="0"/>
+   <name value="Imagingseries"/>
+   <title value="Imaging series"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Details about a series of images, as part of a DICOM study."/>
+   <purpose value="To record details about a DICOM series."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Imaging_series">
+         <path value="Imaging_series"/>
+         <short value="Imaging series"/>
+         <definition value="Details about a series of images, as part of a DICOM study."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_series"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_series.Series_instance_identifier">
+         <path value="Imaging_series.Series_instance_identifier"/>
+         <short value="Series instance identifier"/>
+         <definition value="Unique identifier for the imaging series assigned by the radiology service."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_series.Series_instance_identifier"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_series.Series_instance_identifier.value">
+         <path value="Imaging_series.Series_instance_identifier.value"/>
+         <short value="Series instance identifier"/>
+         <definition value="Unique identifier for the imaging series assigned by the radiology service."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_series.Series_instance_identifier.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_series.Series_number">
+         <path value="Imaging_series.Series_number"/>
+         <short value="Series number"/>
+         <definition value="The numeric identifier of this series in the study."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_series.Series_number"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_series.Series_number.value">
+         <path value="Imaging_series.Series_number.value"/>
+         <short value="Series number"/>
+         <definition value="The numeric identifier of this series in the study."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_series.Series_number.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_series.Series_description">
+         <path value="Imaging_series.Series_description"/>
+         <short value="Series description"/>
+         <definition value="Description about the series."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_series.Series_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_series.Series_description.value">
+         <path value="Imaging_series.Series_description.value"/>
+         <short value="Series description"/>
+         <definition value="Description about the series."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_series.Series_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_series.Modality">
+         <path value="Imaging_series.Modality"/>
+         <short value="Modality"/>
+         <definition value="The type of diagnostic equipment, or function or technique of that equipment, that originally acquired, the data used to create the image series."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_series.Modality"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_series.Modality.value">
+         <path value="Imaging_series.Modality.value"/>
+         <short value="Modality"/>
+         <definition value="The type of diagnostic equipment, or function or technique of that equipment, that originally acquired, the data used to create the image series."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_series.Modality.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_series.Number_of_instances">
+         <path value="Imaging_series.Number_of_instances"/>
+         <short value="Number of instances"/>
+         <definition value="The number of instances contained in the series."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_series.Number_of_instances"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Imaging_series.Number_of_instances.value">
+         <path value="Imaging_series.Number_of_instances.value"/>
+         <short value="Number of instances"/>
+         <definition value="The number of instances contained in the series."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_series.Number_of_instances.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_series.Series_end_point">
+         <path value="Imaging_series.Series_end_point"/>
+         <short value="Series end point"/>
+         <definition value="Location of where to query for imaging content and metadata (QIDO-RS, WADO-RS, or WADO-URI)."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Imaging_series.Series_end_point"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Imaging_series.Series_end_point.value_DV_URI">
+         <path value="Imaging_series.Series_end_point.value_DV_URI"/>
+         <short value="Series end point"/>
+         <definition value="Location of where to query for imaging content and metadata (QIDO-RS, WADO-RS, or WADO-URI)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_series.Series_end_point.value_DV_URI"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="string"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_series.Series_end_point.value_DV_TEXT">
+         <path value="Imaging_series.Series_end_point.value_DV_TEXT"/>
+         <short value="Series end point"/>
+         <definition value="Location of where to query for imaging content and metadata (QIDO-RS, WADO-RS, or WADO-URI)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Imaging_series.Series_end_point.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Imaging_series.Device">
+         <path value="Imaging_series.Device"/>
+         <short value="Device"/>
+         <definition value="Details about imaging device/s used to capture the series."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Imaging_series.Device"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

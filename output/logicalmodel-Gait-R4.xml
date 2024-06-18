@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Gait-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-gait-R4"/>
+   <version value="0"/>
+   <name value="Gait"/>
+   <title value="Gait"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Findings observed about an individual's manner of walking."/>
+   <purpose value="To record a narrative description and clinical interpretation of the findings observed about an individual's manner of walking."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Gait">
+         <path value="Gait"/>
+         <short value="Gait"/>
+         <definition value="Findings observed about an individual's manner of walking."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Gait"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Gait.No_abnormality_detected">
+         <path value="Gait.No_abnormality_detected"/>
+         <short value="No abnormality detected"/>
+         <definition value="Statement that no abnormality was detected (NAD) on physical examination."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Gait.No_abnormality_detected"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Gait.No_abnormality_detected.value">
+         <path value="Gait.No_abnormality_detected.value"/>
+         <short value="No abnormality detected"/>
+         <definition value="Statement that no abnormality was detected (NAD) on physical examination."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Gait.No_abnormality_detected.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Gait.Clinical_description">
+         <path value="Gait.Clinical_description"/>
+         <short value="Clinical description"/>
+         <definition value="Narrative description of the overall findings observed during the physical examination."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Gait.Clinical_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Gait.Clinical_description.value">
+         <path value="Gait.Clinical_description.value"/>
+         <short value="Clinical description"/>
+         <definition value="Narrative description of the overall findings observed during the physical examination."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Gait.Clinical_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Gait.Character">
+         <path value="Gait.Character"/>
+         <short value="Character"/>
+         <definition value="Description about the nature of the gait."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Gait.Character"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Gait.Character.value">
+         <path value="Gait.Character.value"/>
+         <short value="Character"/>
+         <definition value="Description about the nature of the gait."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Gait.Character.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Gait.Examination_findings">
+         <path value="Gait.Examination_findings"/>
+         <short value="Examination findings"/>
+         <definition value="Structured details about the physical examination findings."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Gait.Examination_findings"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Gait.Multimedia_representation">
+         <path value="Gait.Multimedia_representation"/>
+         <short value="Multimedia representation"/>
+         <definition value="Digital image, video or diagram representing the physical examination findings."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Gait.Multimedia_representation"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Gait.Clinical_interpretation">
+         <path value="Gait.Clinical_interpretation"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Single word, phrase or brief description that represents the clinical meaning and significance of the physical examination findings."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Gait.Clinical_interpretation"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Gait.Clinical_interpretation.value">
+         <path value="Gait.Clinical_interpretation.value"/>
+         <short value="Clinical interpretation"/>
+         <definition value="Single word, phrase or brief description that represents the clinical meaning and significance of the physical examination findings."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Gait.Clinical_interpretation.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Gait.Comment">
+         <path value="Gait.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the physical examination findings, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Gait.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Gait.Comment.value">
+         <path value="Gait.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the physical examination findings, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Gait.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Gait.Examination_not_done">
+         <path value="Gait.Examination_not_done"/>
+         <short value="Examination not done"/>
+         <definition value="Details to explicitly record that this examination was not performed."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Gait.Examination_not_done"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

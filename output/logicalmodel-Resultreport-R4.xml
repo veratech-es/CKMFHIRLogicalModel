@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Resultreport-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-resultreport-R4"/>
+   <version value="0"/>
+   <name value="Resultreport"/>
+   <title value="Result report"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Document to communicate information to others about the result of a test or assessment."/>
+   <purpose value="Generic container archetype to carry information about the result of a test or assessment."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Result_report">
+         <path value="Result_report"/>
+         <short value="Result report"/>
+         <definition value="Document to communicate information to others about the result of a test or assessment."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Result_report"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Result_report.category">
+         <path value="Result_report.category"/>
+         <short value="Result report"/>
+         <definition value="Document to communicate information to others about the result of a test or assessment."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Result_report.category"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Result_report.EVENT_CONTEXT">
+         <path value="Result_report.EVENT_CONTEXT"/>
+         <definition value="EVENT_CONTEXT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Result_report.EVENT_CONTEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Result_report.EVENT_CONTEXT.other_context">
+         <path value="Result_report.EVENT_CONTEXT.other_context"/>
+         <short value="Tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Result_report.EVENT_CONTEXT.other_context"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Result_report.EVENT_CONTEXT.other_context.Report_ID">
+         <path value="Result_report.EVENT_CONTEXT.other_context.Report_ID"/>
+         <short value="Report ID"/>
+         <definition value="Identification information about the report."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Result_report.EVENT_CONTEXT.other_context.Report_ID"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Result_report.EVENT_CONTEXT.other_context.Report_ID.value">
+         <path value="Result_report.EVENT_CONTEXT.other_context.Report_ID.value"/>
+         <short value="Report ID"/>
+         <definition value="Identification information about the report."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Result_report.EVENT_CONTEXT.other_context.Report_ID.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Result_report.EVENT_CONTEXT.other_context.Status">
+         <path value="Result_report.EVENT_CONTEXT.other_context.Status"/>
+         <short value="Status"/>
+         <definition value="The status of the entire report. Note: This is not the status of any of the report components."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Result_report.EVENT_CONTEXT.other_context.Status"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Result_report.EVENT_CONTEXT.other_context.Status.value">
+         <path value="Result_report.EVENT_CONTEXT.other_context.Status.value"/>
+         <short value="Status"/>
+         <definition value="The status of the entire report. Note: This is not the status of any of the report components."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Result_report.EVENT_CONTEXT.other_context.Status.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Result_report.EVENT_CONTEXT.other_context.Extension">
+         <path value="Result_report.EVENT_CONTEXT.other_context.Extension"/>
+         <short value="Extension"/>
+         <definition value="Additional information required to capture local context or to align with other reference models/formalisms."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Result_report.EVENT_CONTEXT.other_context.Extension"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

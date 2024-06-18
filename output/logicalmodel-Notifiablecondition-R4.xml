@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Notifiablecondition-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-notifiablecondition-R4"/>
+   <version value="0"/>
+   <name value="Notifiablecondition"/>
+   <title value="Notifiable condition"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="To record details of a notifiable condition as part of a microbiology result."/>
+   <purpose value="To record details of a notifiable condition as part of a microbiology result."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Notifiable_condition">
+         <path value="Notifiable_condition"/>
+         <short value="Notifiable condition"/>
+         <definition value="To record details of a notifiable condition as part of a microbiology result."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Notifiable_condition"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Notifiable_condition.Specimen_surce">
+         <path value="Notifiable_condition.Specimen_surce"/>
+         <short value="Specimen surce"/>
+         <definition value="Identifies the specimen source of the condition – patient, food, soil,..."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Notifiable_condition.Specimen_surce"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Notifiable_condition.Specimen_surce.value">
+         <path value="Notifiable_condition.Specimen_surce.value"/>
+         <short value="Specimen surce"/>
+         <definition value="Identifies the specimen source of the condition – patient, food, soil,..."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Notifiable_condition.Specimen_surce.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Notifiable_condition.Status">
+         <path value="Notifiable_condition.Status"/>
+         <short value="Status"/>
+         <definition value="A status of completed means the patient has been associated with the given notifiable condition.&#xD;&#xA;A status of aborted means the patient was associated with the notifiable condition in error."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Notifiable_condition.Status"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Notifiable_condition.Status.value">
+         <path value="Notifiable_condition.Status.value"/>
+         <short value="Status"/>
+         <definition value="A status of completed means the patient has been associated with the given notifiable condition.&#xD;&#xA;A status of aborted means the patient was associated with the notifiable condition in error."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Notifiable_condition.Status.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Notifiable_condition.Date_of_notification">
+         <path value="Notifiable_condition.Date_of_notification"/>
+         <short value="Date of notification"/>
+         <definition value="The data and time that the notification was made."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Notifiable_condition.Date_of_notification"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Notifiable_condition.Date_of_notification.value">
+         <path value="Notifiable_condition.Date_of_notification.value"/>
+         <short value="Date of notification"/>
+         <definition value="The data and time that the notification was made."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Notifiable_condition.Date_of_notification.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Notifiable_condition.Notifiable_condition">
+         <path value="Notifiable_condition.Notifiable_condition"/>
+         <short value="Notifiable condition"/>
+         <definition value="A description or coded entry for the notifiable condition."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Notifiable_condition.Notifiable_condition"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Notifiable_condition.Notifiable_condition.value">
+         <path value="Notifiable_condition.Notifiable_condition.value"/>
+         <short value="Notifiable condition"/>
+         <definition value="A description or coded entry for the notifiable condition."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Notifiable_condition.Notifiable_condition.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Notifiable_condition.Record_of_notifiable_condition">
+         <path value="Notifiable_condition.Record_of_notifiable_condition"/>
+         <short value="Record of notifiable condition"/>
+         <definition value="A link to the original record identifying the notifiable condition."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Notifiable_condition.Record_of_notifiable_condition"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Notifiable_condition.Record_of_notifiable_condition.value">
+         <path value="Notifiable_condition.Record_of_notifiable_condition.value"/>
+         <short value="Record of notifiable condition"/>
+         <definition value="A link to the original record identifying the notifiable condition."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Notifiable_condition.Record_of_notifiable_condition.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

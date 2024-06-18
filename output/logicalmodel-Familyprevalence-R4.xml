@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Familyprevalence-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-familyprevalence-R4"/>
+   <version value="0"/>
+   <name value="Familyprevalence"/>
+   <title value="Family prevalence"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Summary information about the prevalence of a risk factor, problem or diagnosis in all family members."/>
+   <purpose value="To record information about the prevalence of an identified risk factor, problem or diagnosis in genetic and non-genetic family members."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Family_prevalence">
+         <path value="Family_prevalence"/>
+         <short value="Family prevalence"/>
+         <definition value="Summary information about the prevalence of a risk factor, problem or diagnosis in all family members."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_prevalence"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Family_prevalence.Description">
+         <path value="Family_prevalence.Description"/>
+         <short value="Description"/>
+         <definition value="Narrative description about occurrence in family members."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_prevalence.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Family_prevalence.Description.value">
+         <path value="Family_prevalence.Description.value"/>
+         <short value="Description"/>
+         <definition value="Narrative description about occurrence in family members."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_prevalence.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Family_prevalence.Genetic_predisposition_">
+         <path value="Family_prevalence.Genetic_predisposition_"/>
+         <short value="Genetic predisposition?"/>
+         <definition value="Is there a genetic basis for the identified risk factor, problem or diagnosis?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_prevalence.Genetic_predisposition_"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Family_prevalence.Genetic_predisposition_.value">
+         <path value="Family_prevalence.Genetic_predisposition_.value"/>
+         <short value="Genetic predisposition?"/>
+         <definition value="Is there a genetic basis for the identified risk factor, problem or diagnosis?"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_prevalence.Genetic_predisposition_.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="boolean"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Family_prevalence.Inheritance_type">
+         <path value="Family_prevalence.Inheritance_type"/>
+         <short value="Inheritance type"/>
+         <definition value="Category of inheritance for the identified risk factor, problem or diagnosis."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_prevalence.Inheritance_type"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Family_prevalence.Inheritance_type.value">
+         <path value="Family_prevalence.Inheritance_type.value"/>
+         <short value="Inheritance type"/>
+         <definition value="Category of inheritance for the identified risk factor, problem or diagnosis."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_prevalence.Inheritance_type.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Family_prevalence.Affected_family">
+         <path value="Family_prevalence.Affected_family"/>
+         <short value="Affected family"/>
+         <definition value="Details about the numbers of family members affected."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Family_prevalence.Affected_family"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Family_prevalence.Affected_family.Relationship">
+         <path value="Family_prevalence.Affected_family.Relationship"/>
+         <short value="Relationship"/>
+         <definition value="The degree of relationship between the subject of care and a selected group of family members."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_prevalence.Affected_family.Relationship"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Family_prevalence.Affected_family.Relationship.value">
+         <path value="Family_prevalence.Affected_family.Relationship.value"/>
+         <short value="Relationship"/>
+         <definition value="The degree of relationship between the subject of care and a selected group of family members."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_prevalence.Affected_family.Relationship.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Family_prevalence.Affected_family.Family_line">
+         <path value="Family_prevalence.Affected_family.Family_line"/>
+         <short value="Family line"/>
+         <definition value="Identification of the maternal or paternal family line in the relationship."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_prevalence.Affected_family.Family_line"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Family_prevalence.Affected_family.Family_line.value">
+         <path value="Family_prevalence.Affected_family.Family_line.value"/>
+         <short value="Family line"/>
+         <definition value="Identification of the maternal or paternal family line in the relationship."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_prevalence.Affected_family.Family_line.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Family_prevalence.Affected_family.Biological_sex">
+         <path value="Family_prevalence.Affected_family.Biological_sex"/>
+         <short value="Biological sex"/>
+         <definition value="The biological sex of the family member/s."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_prevalence.Affected_family.Biological_sex"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Family_prevalence.Affected_family.Biological_sex.value">
+         <path value="Family_prevalence.Affected_family.Biological_sex.value"/>
+         <short value="Biological sex"/>
+         <definition value="The biological sex of the family member/s."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_prevalence.Affected_family.Biological_sex.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Family_prevalence.Affected_family.Number_affected">
+         <path value="Family_prevalence.Affected_family.Number_affected"/>
+         <short value="Number affected"/>
+         <definition value="The number of family members known to be affected."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_prevalence.Affected_family.Number_affected"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Family_prevalence.Affected_family.Number_affected.value">
+         <path value="Family_prevalence.Affected_family.Number_affected.value"/>
+         <short value="Number affected"/>
+         <definition value="The number of family members known to be affected."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_prevalence.Affected_family.Number_affected.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Family_prevalence.Affected_family.Number_eligible">
+         <path value="Family_prevalence.Affected_family.Number_eligible"/>
+         <short value="Number eligible"/>
+         <definition value="The number of eligible family members."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_prevalence.Affected_family.Number_eligible"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Family_prevalence.Affected_family.Number_eligible.value">
+         <path value="Family_prevalence.Affected_family.Number_eligible.value"/>
+         <short value="Number eligible"/>
+         <definition value="The number of eligible family members."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Family_prevalence.Affected_family.Number_eligible.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

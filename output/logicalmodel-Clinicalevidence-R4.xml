@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Clinicalevidence-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-clinicalevidence-R4"/>
+   <version value="0"/>
+   <name value="Clinicalevidence"/>
+   <title value="Clinical evidence"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Details about findings that support a clinical assertion."/>
+   <purpose value="To record an explicit finding in support of a clinical assertion, such as a problem/diagnosis, adverse reaction risk, health risk assessment, or contraindication."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Clinical_evidence">
+         <path value="Clinical_evidence"/>
+         <short value="Clinical evidence"/>
+         <definition value="Details about findings that support a clinical assertion."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_evidence"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Clinical_evidence.Finding">
+         <path value="Clinical_evidence.Finding"/>
+         <short value="Finding"/>
+         <definition value="Identification of the finding that supports the assertion."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_evidence.Finding"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Clinical_evidence.Finding.value">
+         <path value="Clinical_evidence.Finding.value"/>
+         <short value="Finding"/>
+         <definition value="Identification of the finding that supports the assertion."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_evidence.Finding.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Clinical_evidence.Finding_description">
+         <path value="Clinical_evidence.Finding_description"/>
+         <short value="Finding description"/>
+         <definition value="Narrative description of the finding."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_evidence.Finding_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Clinical_evidence.Finding_description.value">
+         <path value="Clinical_evidence.Finding_description.value"/>
+         <short value="Finding description"/>
+         <definition value="Narrative description of the finding."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_evidence.Finding_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Clinical_evidence.Result">
+         <path value="Clinical_evidence.Result"/>
+         <short value="Result"/>
+         <definition value="Measurement or value associated with the finding."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Clinical_evidence.Result"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Clinical_evidence.Date_identified">
+         <path value="Clinical_evidence.Date_identified"/>
+         <short value="Date identified"/>
+         <definition value="The date on which the finding was clinically identified."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_evidence.Date_identified"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Clinical_evidence.Date_identified.value">
+         <path value="Clinical_evidence.Date_identified.value"/>
+         <short value="Date identified"/>
+         <definition value="The date on which the finding was clinically identified."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_evidence.Date_identified.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Clinical_evidence.Citation">
+         <path value="Clinical_evidence.Citation"/>
+         <short value="Citation"/>
+         <definition value="Detailed data available about the evidence held in another part of the health record."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Clinical_evidence.Citation"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Clinical_evidence.Method">
+         <path value="Clinical_evidence.Method"/>
+         <short value="Method"/>
+         <definition value="Type of examination or investigation used to identify the evidence."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Clinical_evidence.Method"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Clinical_evidence.Method.value">
+         <path value="Clinical_evidence.Method.value"/>
+         <short value="Method"/>
+         <definition value="Type of examination or investigation used to identify the evidence."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_evidence.Method.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Clinical_evidence.Method_description">
+         <path value="Clinical_evidence.Method_description"/>
+         <short value="Method description"/>
+         <definition value="Narrative description of the method/s used to identify the evidence."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_evidence.Method_description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Clinical_evidence.Method_description.value">
+         <path value="Clinical_evidence.Method_description.value"/>
+         <short value="Method description"/>
+         <definition value="Narrative description of the method/s used to identify the evidence."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_evidence.Method_description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Clinical_evidence.Multimedia_representation">
+         <path value="Clinical_evidence.Multimedia_representation"/>
+         <short value="Multimedia representation"/>
+         <definition value="Digital image, video or diagram representing the clinical evidence."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Clinical_evidence.Multimedia_representation"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Clinical_evidence.Additional_details">
+         <path value="Clinical_evidence.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="Additional structured details about the finding."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Clinical_evidence.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Clinical_evidence.Comment">
+         <path value="Clinical_evidence.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the finding not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_evidence.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Clinical_evidence.Comment.value">
+         <path value="Clinical_evidence.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the finding not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Clinical_evidence.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

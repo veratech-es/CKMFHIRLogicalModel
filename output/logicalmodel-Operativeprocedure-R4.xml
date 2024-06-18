@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Operativeprocedure-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-operativeprocedure-R4"/>
+   <version value="0"/>
+   <name value="Operativeprocedure"/>
+   <title value="Operative procedure"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Details about the operative aspects of a procedure."/>
+   <purpose value="To record details about the operative aspects of a procedure."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Operative_procedure">
+         <path value="Operative_procedure"/>
+         <short value="Operative procedure"/>
+         <definition value="Details about the operative aspects of a procedure."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Operative_procedure"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Operative_procedure.Episode">
+         <path value="Operative_procedure.Episode"/>
+         <short value="Episode"/>
+         <definition value="Sequence order of the procedure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Operative_procedure.Episode"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Operative_procedure.Episode.value">
+         <path value="Operative_procedure.Episode.value"/>
+         <short value="Episode"/>
+         <definition value="Sequence order of the procedure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Operative_procedure.Episode.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Operative_procedure.Pre_operative_assessment">
+         <path value="Operative_procedure.Pre_operative_assessment"/>
+         <short value="Pre-operative assessment"/>
+         <definition value="Structured details about pre-procedure activities."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Operative_procedure.Pre_operative_assessment"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Operative_procedure.Approach">
+         <path value="Operative_procedure.Approach"/>
+         <short value="Approach"/>
+         <definition value="Description about the surgical technique."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Operative_procedure.Approach"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Operative_procedure.Approach.value">
+         <path value="Operative_procedure.Approach.value"/>
+         <short value="Approach"/>
+         <definition value="Description about the surgical technique."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Operative_procedure.Approach.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Operative_procedure.Operation_details">
+         <path value="Operative_procedure.Operation_details"/>
+         <short value="Operation details"/>
+         <definition value="Specific details about the operation."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Operative_procedure.Operation_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Operative_procedure.Closure">
+         <path value="Operative_procedure.Closure"/>
+         <short value="Closure"/>
+         <definition value="Narrative description about the closure of the wound."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Operative_procedure.Closure"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Operative_procedure.Closure.value">
+         <path value="Operative_procedure.Closure.value"/>
+         <short value="Closure"/>
+         <definition value="Narrative description about the closure of the wound."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Operative_procedure.Closure.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Operative_procedure.Closure_details">
+         <path value="Operative_procedure.Closure_details"/>
+         <short value="Closure details"/>
+         <definition value="Specific details about the closure of the wound."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Operative_procedure.Closure_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Operative_procedure.Operative_diagnosis">
+         <path value="Operative_procedure.Operative_diagnosis"/>
+         <short value="Operative diagnosis"/>
+         <definition value="Single word, phrase or brief description representing the clinical findings from the operation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Operative_procedure.Operative_diagnosis"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Operative_procedure.Operative_diagnosis.value">
+         <path value="Operative_procedure.Operative_diagnosis.value"/>
+         <short value="Operative diagnosis"/>
+         <definition value="Single word, phrase or brief description representing the clinical findings from the operation."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Operative_procedure.Operative_diagnosis.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Operative_procedure.Outcomes">
+         <path value="Operative_procedure.Outcomes"/>
+         <short value="Outcomes"/>
+         <definition value="Narrative description of the result or consequences of the operation or procedure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Operative_procedure.Outcomes"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Operative_procedure.Outcomes.value">
+         <path value="Operative_procedure.Outcomes.value"/>
+         <short value="Outcomes"/>
+         <definition value="Narrative description of the result or consequences of the operation or procedure."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Operative_procedure.Outcomes.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Operative_procedure.Comment">
+         <path value="Operative_procedure.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the operative procedure, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Operative_procedure.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Operative_procedure.Comment.value">
+         <path value="Operative_procedure.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the operative procedure, not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Operative_procedure.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Refractiondetails-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-refractiondetails-R4"/>
+   <version value="0"/>
+   <name value="Refractiondetails"/>
+   <title value="Refraction Details"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Details of ocular refraction for both measurement and therapetic purposes."/>
+   <purpose value="To record details of ocular refraction applied either as part of visual acuity testing, to report a subject's current correction of spectacles or contact lenses, or to request a new ocular prescription."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Refraction_Details">
+         <path value="Refraction_Details"/>
+         <short value="Refraction Details"/>
+         <definition value="Details of ocular refraction for both measurement and therapetic purposes."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Refraction_Details"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Refraction_Details.Power_of_Sphere">
+         <path value="Refraction_Details.Power_of_Sphere"/>
+         <short value="Power of Sphere"/>
+         <definition value="Correction of the sphere,  the base correction upon which cylinder, reading addition and prism may be superimposed."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Refraction_Details.Power_of_Sphere"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Refraction_Details.Power_of_Sphere.value">
+         <path value="Refraction_Details.Power_of_Sphere.value"/>
+         <short value="Power of Sphere"/>
+         <definition value="Correction of the sphere,  the base correction upon which cylinder, reading addition and prism may be superimposed."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Refraction_Details.Power_of_Sphere.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Refraction_Details.Power_of_Cylinder">
+         <path value="Refraction_Details.Power_of_Cylinder"/>
+         <short value="Power of Cylinder"/>
+         <definition value="Correction of the cylinder."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Refraction_Details.Power_of_Cylinder"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Refraction_Details.Power_of_Cylinder.value">
+         <path value="Refraction_Details.Power_of_Cylinder.value"/>
+         <short value="Power of Cylinder"/>
+         <definition value="Correction of the cylinder."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Refraction_Details.Power_of_Cylinder.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Refraction_Details.Axis_of_Cylinder">
+         <path value="Refraction_Details.Axis_of_Cylinder"/>
+         <short value="Axis of Cylinder"/>
+         <definition value="Correction of the axis."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Refraction_Details.Axis_of_Cylinder"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Refraction_Details.Axis_of_Cylinder.value">
+         <path value="Refraction_Details.Axis_of_Cylinder.value"/>
+         <short value="Axis of Cylinder"/>
+         <definition value="Correction of the axis."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Refraction_Details.Axis_of_Cylinder.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Refraction_Details.Prism_Strength">
+         <path value="Refraction_Details.Prism_Strength"/>
+         <short value="Prism Strength"/>
+         <definition value="Strength of the prism."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Refraction_Details.Prism_Strength"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Refraction_Details.Prism_Strength.value">
+         <path value="Refraction_Details.Prism_Strength.value"/>
+         <short value="Prism Strength"/>
+         <definition value="Strength of the prism."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Refraction_Details.Prism_Strength.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Refraction_Details.Prism_Base_Direction">
+         <path value="Refraction_Details.Prism_Base_Direction"/>
+         <short value="Prism Base Direction"/>
+         <definition value="Prism base direction expressed as a numeric angle or as coded text."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Refraction_Details.Prism_Base_Direction"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Refraction_Details.Prism_Base_Direction.value_DV_CODED_TEXT">
+         <path value="Refraction_Details.Prism_Base_Direction.value_DV_CODED_TEXT"/>
+         <short value="Prism Base Direction"/>
+         <definition value="Prism base direction expressed as a numeric angle or as coded text."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Refraction_Details.Prism_Base_Direction.value_DV_CODED_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Refraction_Details.Prism_Base_Direction.value_DvQuantity">
+         <path value="Refraction_Details.Prism_Base_Direction.value_DvQuantity"/>
+         <short value="Prism Base Direction"/>
+         <definition value="Prism base direction expressed as a numeric angle or as coded text."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Refraction_Details.Prism_Base_Direction.value_DvQuantity"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Refraction_Details.Reading_Addition_Power">
+         <path value="Refraction_Details.Reading_Addition_Power"/>
+         <short value="Reading Addition Power"/>
+         <definition value="The difference in spherical power between distance and near corrections."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Refraction_Details.Reading_Addition_Power"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Refraction_Details.Reading_Addition_Power.value">
+         <path value="Refraction_Details.Reading_Addition_Power.value"/>
+         <short value="Reading Addition Power"/>
+         <definition value="The difference in spherical power between distance and near corrections."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Refraction_Details.Reading_Addition_Power.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Refraction_Details.Intermediate_Distance_Power">
+         <path value="Refraction_Details.Intermediate_Distance_Power"/>
+         <short value="Intermediate Distance Power"/>
+         <definition value="The intermediate distance power applied to the correction."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Refraction_Details.Intermediate_Distance_Power"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Refraction_Details.Intermediate_Distance_Power.value">
+         <path value="Refraction_Details.Intermediate_Distance_Power.value"/>
+         <short value="Intermediate Distance Power"/>
+         <definition value="The intermediate distance power applied to the correction."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Refraction_Details.Intermediate_Distance_Power.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Refraction_Details.Interpupillary_Distance">
+         <path value="Refraction_Details.Interpupillary_Distance"/>
+         <short value="Interpupillary Distance"/>
+         <definition value="The distance between the center of the pupils of the two eyes."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Refraction_Details.Interpupillary_Distance"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Refraction_Details.Interpupillary_Distance.value">
+         <path value="Refraction_Details.Interpupillary_Distance.value"/>
+         <short value="Interpupillary Distance"/>
+         <definition value="The distance between the center of the pupils of the two eyes."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Refraction_Details.Interpupillary_Distance.value"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

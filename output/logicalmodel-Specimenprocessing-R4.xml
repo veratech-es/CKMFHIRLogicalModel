@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Specimenprocessing-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-specimenprocessing-R4"/>
+   <version value="0"/>
+   <name value="Specimenprocessing"/>
+   <title value="Specimen processing"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Details about the processing or preparation of a specimen."/>
+   <purpose value="To record details about the processing of a specimen collected from, or related to, an individual for further analysis, preservation or storage."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Specimen_processing">
+         <path value="Specimen_processing"/>
+         <short value="Specimen processing"/>
+         <definition value="Details about the processing or preparation of a specimen."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_processing"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_processing.Process_name">
+         <path value="Specimen_processing.Process_name"/>
+         <short value="Process name"/>
+         <definition value="The name of the processing activity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_processing.Process_name"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Specimen_processing.Process_name.value">
+         <path value="Specimen_processing.Process_name.value"/>
+         <short value="Process name"/>
+         <definition value="The name of the processing activity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_processing.Process_name.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_processing.Description">
+         <path value="Specimen_processing.Description"/>
+         <short value="Description"/>
+         <definition value="A narrative description of the processing activity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_processing.Description"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Specimen_processing.Description.value">
+         <path value="Specimen_processing.Description.value"/>
+         <short value="Description"/>
+         <definition value="A narrative description of the processing activity."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_processing.Description.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_processing.Method">
+         <path value="Specimen_processing.Method"/>
+         <short value="Method"/>
+         <definition value="The technique or method used to process the specimen."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_processing.Method"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Specimen_processing.Method.value">
+         <path value="Specimen_processing.Method.value"/>
+         <short value="Method"/>
+         <definition value="The technique or method used to process the specimen."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_processing.Method.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_processing.Start_date_time">
+         <path value="Specimen_processing.Start_date_time"/>
+         <short value="Start date/time"/>
+         <definition value="The date and time when the process activity started."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_processing.Start_date_time"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Specimen_processing.Start_date_time.value">
+         <path value="Specimen_processing.Start_date_time.value"/>
+         <short value="Start date/time"/>
+         <definition value="The date and time when the process activity started."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_processing.Start_date_time.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_processing.End_date_time">
+         <path value="Specimen_processing.End_date_time"/>
+         <short value="End date/time"/>
+         <definition value="The date and time when the process activity ended."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_processing.End_date_time"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Specimen_processing.End_date_time.value">
+         <path value="Specimen_processing.End_date_time.value"/>
+         <short value="End date/time"/>
+         <definition value="The date and time when the process activity ended."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_processing.End_date_time.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="dateTime"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_processing.Additive">
+         <path value="Specimen_processing.Additive"/>
+         <short value="Additive"/>
+         <definition value="Identification of a substance used in the processing."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Specimen_processing.Additive"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+      </element>
+      <element id="Specimen_processing.Additive.value">
+         <path value="Specimen_processing.Additive.value"/>
+         <short value="Additive"/>
+         <definition value="Identification of a substance used in the processing."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_processing.Additive.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_processing.Device_details">
+         <path value="Specimen_processing.Device_details"/>
+         <short value="Device details"/>
+         <definition value="Details of the device used in the processing activity."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Specimen_processing.Device_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_processing.Process_activity">
+         <path value="Specimen_processing.Process_activity"/>
+         <short value="Process activity"/>
+         <definition value="Details of a single activity carried out during a multi-step process."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Specimen_processing.Process_activity"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_processing.Process_activity.Sequence">
+         <path value="Specimen_processing.Process_activity.Sequence"/>
+         <short value="Sequence"/>
+         <definition value="The sequence number within a multi-step sequence."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_processing.Process_activity.Sequence"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Specimen_processing.Process_activity.Sequence.value_DV_TEXT">
+         <path value="Specimen_processing.Process_activity.Sequence.value_DV_TEXT"/>
+         <short value="Sequence"/>
+         <definition value="The sequence number within a multi-step sequence."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_processing.Process_activity.Sequence.value_DV_TEXT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_processing.Process_activity.Sequence.value_DV_COUNT">
+         <path value="Specimen_processing.Process_activity.Sequence.value_DV_COUNT"/>
+         <short value="Sequence"/>
+         <definition value="The sequence number within a multi-step sequence."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_processing.Process_activity.Sequence.value_DV_COUNT"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="Quantity"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_processing.Process_activity.Process_activity_details">
+         <path value="Specimen_processing.Process_activity.Process_activity_details"/>
+         <short value="Process activity details"/>
+         <definition value="Details about a single activity within a multistep process."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Specimen_processing.Process_activity.Process_activity_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_processing.Additional_details">
+         <path value="Specimen_processing.Additional_details"/>
+         <short value="Additional details"/>
+         <definition value="Additional details about the processing of a specimen."/>
+         <min value="0"/>
+         <max value="*"/>
+         <base>
+            <path value="Specimen_processing.Additional_details"/>
+            <min value="0"/>
+            <max value="*"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Specimen_processing.Comment">
+         <path value="Specimen_processing.Comment"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the processing of a specimen not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_processing.Comment"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+      </element>
+      <element id="Specimen_processing.Comment.value">
+         <path value="Specimen_processing.Comment.value"/>
+         <short value="Comment"/>
+         <definition value="Additional narrative about the processing of a specimen not captured in other fields."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Specimen_processing.Comment.value"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>

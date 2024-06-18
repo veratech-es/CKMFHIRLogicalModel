@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="logicalmodel-Obstetrichistory-R4"/>
+   <url value="http://linkehr.com/fhir/logicalmodel-obstetrichistory-R4"/>
+   <version value="0"/>
+   <name value="Obstetrichistory"/>
+   <title value="Obstetric history"/>
+   <status value="draft"/>
+   <date value="2024-06-18"/>
+   <publisher value="openEHR"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.veratech.es"/>
+      </telecom>
+   </contact>
+   <description value="Information about current and previous pregnancies which may include a summary count of outcomes."/>
+   <purpose value="To record and update a summary of all pregnancies and outcomes as well as detailed summaries of all individual pregnancies."/>
+   <fhirVersion value="4.0.0"/>
+   <mapping>
+      <identity value="openEHR"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR Mapping"/>
+   </mapping>
+   <mapping>
+      <identity value="openEHR-natural"/>
+      <uri value="http://openehr.org"/>
+      <name value="openEHR natural path"/>
+   </mapping>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="StructureDefinition"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <snapshot>
+      <element id="Obstetric_history">
+         <path value="Obstetric_history"/>
+         <short value="Obstetric history"/>
+         <definition value="Information about current and previous pregnancies which may include a summary count of outcomes."/>
+         <min value="1"/>
+         <max value="1"/>
+         <base>
+            <path value="Obstetric_history"/>
+            <min value="1"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="true"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Obstetric_history.category">
+         <path value="Obstetric_history.category"/>
+         <short value="Obstetric history"/>
+         <definition value="Information about current and previous pregnancies which may include a summary count of outcomes."/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Obstetric_history.category"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Obstetric_history.Event_Context">
+         <path value="Obstetric_history.Event_Context"/>
+         <short value="Event Context"/>
+         <definition value="EVENT_CONTEXT"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Obstetric_history.Event_Context"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+      <element id="Obstetric_history.Event_Context.other_context">
+         <path value="Obstetric_history.Event_Context.other_context"/>
+         <short value="Item tree"/>
+         <definition value="@ internal @"/>
+         <min value="0"/>
+         <max value="1"/>
+         <base>
+            <path value="Obstetric_history.Event_Context.other_context"/>
+            <min value="0"/>
+            <max value="1"/>
+         </base>
+         <type>
+            <code value="BackboneElement"/>
+         </type>
+         <mustSupport value="false"/>
+         <isModifier value="false"/>
+         <isSummary value="true"/>
+      </element>
+   </snapshot>
+</StructureDefinition>
